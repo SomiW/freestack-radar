@@ -6,5 +6,5 @@
 逐条核实使用 .agents/skills/resource-research/SKILL.md；多源采集及发布遵守 .agents/skills/resource-collection-publishing/SKILL.md。
 运行方式：**项目按 Skill 驱动运行**——不实现定时采集器，也不新增 GitHub Actions `schedule` 定时 workflow。发现、复核、写入与发布由人工或 Agent 按需触发，按上述两个 Skill 的流程执行，每次运行的真实结果记录到 `docs/research/`。
 Skill 不是定时程序，Pages 工作流只负责构建部署；不得把 Skill 或 `.github/workflows/pages.yml` 描述成“已自动监控”“已无人值守运行”，也不得虚构核实与发布结果。
-只有网站无法正常访问才尝试 Firecrawl。
+读取社区线索优先用已验证的 RSS 订阅端点（见 sources.md「已实测可读路径」），正文再按需走只读渲染代理；只有网站完全无法访问才尝试 Firecrawl，不引入绕过 Cloudflare 的方案。
 数据发布仅要求 JSON Schema/语义有效与 npm run build 能构建；完整 npm run check 可在独立 CI 运行，不再阻塞待核实草案。任何失败都要报告，不得虚构已发布结果。

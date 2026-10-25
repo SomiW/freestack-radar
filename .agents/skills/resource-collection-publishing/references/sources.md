@@ -4,8 +4,8 @@
 
 | 发现源 | 线索类型 | 使用方式 | 能否单独认定活动有效 |
 | --- | --- | --- | --- |
-| LINUX DO · 福利羊毛区 | 免费或超低价 VPS、AI 工具、Token、Agent 沙箱与开发者福利 | 优先仅查福利羊毛相关栏目；RSS/API/可公开读取的帖文；保留原帖 | 否 |
-| NodeSeek | 免费/低价 VPS、云主机、海外计算资源、代金券 | 公开主题与官方链接 | 否 |
+| LINUX DO · 福利羊毛区 | 免费或超低价 VPS、AI 工具、Token、Agent 沙箱与开发者福利 | 只查福利羊毛栏目；用 `/c/welfare/36.rss` 读取列表，正文按需走 Jina 只读代理；保留原帖 | 否 |
+| NodeSeek | 免费/低价 VPS、云主机、海外计算资源、代金券 | 仅 `rss.nodeseek.com` 可读（标题+摘要，无全文）；保留帖文链接供人工查看 | 否 |
 | NodeLoc | 免费/低价海外 VPS、云服务器、机房限免 | 公开主题与官方链接 | 否 |
 | AI Spoils | AI 编程工具、模型 API Credits、开发者福利 | 聚合线索，确认其当前站点与许可 | 否 |
 | AIdeal | AI 编程工具、云端 Agent/沙箱、免费模型额度 | 聚合线索，确认其当前站点与许可 | 否 |
@@ -14,6 +14,26 @@
 | 赚客大家谈 | 开发者服务福利、云服务器/代金券相关线索 | 仅筛选与监控范围相关的公开线索 | 否 |
 | 掘金 | AI 编程工具、Agent 沙箱、云服务及官方开发者活动 | 公开文章，仅用于发现 | 否 |
 | 有关厂商官方活动页 | 服务器/沙箱/编程工具/API 免费额度、开发者计划及代金券 | 对照官网活动页、开发者中心、条款、定价，保存官方链接与核实时间 | 是，但仍须核对关键限制 |
+
+## 已实测可读路径（2026-10-26 验证）
+
+两家主源都用 Cloudflare 拦直连：普通 HTML 与 Discourse JSON API 一律 403 `Just a moment...`。实测可用的是**订阅源端点 + 只读渲染代理**，不需要登录、不绕过验证。
+
+| 站点 | 可用端点 | 实测结果 | 说明 |
+| --- | --- | --- | --- |
+| LINUX DO · 福利羊毛 | `https://linux.do/c/welfare/36.rss` | 200，25 条 | **首选**。分类 RSS（`welfare` 分类 id=36），含标题、`/t/topic/<id>` 链接、`pubDate`、首帖摘要 `description`、`dc:creator`、`discourse:topicClosed/Pinned` |
+| LINUX DO · 全站 | `https://linux.do/latest.rss` | 200，30 条 | 备用；每条带 `<category>`，可只留“福利羊毛”条目；`/c/resource/14.rss` 为上级“资源荟萃”分类，25 条 |
+| LINUX DO · 正文 | `https://r.jina.ai/https://linux.do/t/topic/<id>` | 200，Markdown | 帖子正文、发布时间可读；仅在 RSS 摘要不足时按需调用 |
+| NodeSeek | `https://rss.nodeseek.com/` | 200，20 条 | **唯一可用路径**。`www.nodeseek.com/rss.xml` 会 302 跳到这里；条目含标题、`post-<id>-1` 链接、`pubDate`、正文摘要 |
+| NodeSeek · 其余 | `www.nodeseek.com/*`、`/api/*`、`/rss`、`r.jina.ai` 代理 | 403 / 被封 | 直连、JSON API、Jina 匿名代理全部不可用（Jina 因该域名历史滥用被封至 2027）；NodeSeek 只能靠 RSS 标题+摘要，看不到完整回帖 |
+| 其他聚合站 | AI Spoils、AIdeal 等 | 可读 | 仅作发现线索，仍需回到厂商官网核实 |
+
+使用约束：
+
+- 请求头带常见浏览器 `User-Agent`；LINUX DO 连续请求会返回 **429**，实测 20–30 秒间隔可恢复，一次运行不要超过约 5 次拉取，分页 `?page=N` 可接受但不保证返回不同内容。
+- RSS 摘要足以判断相关性；**不得**把摘要当成官方条款，标 `active` 仍需厂商官网证据。
+- 需要 NodeSeek 帖子全文时，只能作为“线索待人工确认”记录，或换用已授权的浏览器控制能力在真实浏览器中人工查看，不引入破解/绕过方案。
+- 站点结构可能变化；上述路径每次运行须复核，失效即回到 Jina 只读代理或 Firecrawl（仅在完全无法访问时，见 AGENTS.md）。
 
 ## 监控主题与筛选准则
 
