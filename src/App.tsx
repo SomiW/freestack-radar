@@ -7,7 +7,7 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString('z
 function ResourceCard({resource: r, now}: {resource: Resource; now: Date}) {
   return <article className="resource">
     <div className="eyebrow">{r.provider} · {r.category.toUpperCase()}</div>
-    <h3>{r.title}</h3><p>{r.description}</p><span className="badge">{labels[displayStatus(r, now)]}</span>
+    <h3>{r.title}</h3><p>{r.description}</p><span className="badge">{displayStatus(r, now)==='pending'?'草案 · 待核实':labels[displayStatus(r, now)]}</span>
     <span className="badge">可信程度：{{high:'高',medium:'中',low:'低'}[r.confidence]}</span>
     {needsReview(r, now) && <span className="badge warning">已到复核时间</span>}
     <dl>
@@ -39,7 +39,7 @@ export function App() {
   return <><header><a className="brand" href="./"><span className="radar">◎</span> FreeStack Radar</a><span className="header-note">公开 · 免费 · 只读</span></header>
     <main><section className="hero"><p className="eyebrow">AI & CLOUD RESOURCE DIRECTORY</p>
       <h1>发现免费资源，<br/><span>先看清条件。</span></h1>
-      <p className="intro">汇集 AI 与云资源的免费额度和限时活动。<br/>每条信息都带上官方证据、领取限制与复核时间。</p>
+      <p className="intro">汇集 AI 与云资源的免费额度和限时活动。<br/>真实福利线索可标“草案 · 待核实”先公开；实际领取条件和库存以官方最新信息为准。</p>
       <div className="principles"><span>01 官方来源</span><span>02 条件透明</span><span>03 历史可查</span></div>
     </section>
     <section aria-label="资源目录"><div className="toolbar"><div className="tabs" aria-label="目录范围">
@@ -52,6 +52,6 @@ export function App() {
         <div className="empty"><span className="empty-icon">◎</span><h2>{view==='archive'?'暂无历史归档':group.length?'没有符合条件的资源':'第一批资源，等待核实'}</h2>
           <p>{view==='archive'?'已过期或已失效的信息将保留在这里，方便追溯。':group.length?'试试其他状态。':'目前尚未收录正式资源。核实官方证据后，才会发布额度、领取条件和有效期。'}</p>
           <span className="small">只展示有依据的信息，不用示例填充目录。</span></div>}
-    </section><aside className="method"><h2>如何阅读这份目录</h2><p>“有效”表示最后一次官方核实的结论，不保证你符合领取资格。请同时查看截止时间和复核提示；未披露截止时间不等于永久有效。</p></aside>
+    </section><aside className="method"><h2>如何阅读这份目录</h2><p>“草案 · 待核实”不代表已确认可领取；“有效”只代表最后一次官网条款核实，不保证个人资格或库存。请关注收费、时效与复核提示。</p></aside>
     </main><footer>FreeStack Radar · 信息以官方最新条款为准。<span>时间显示：北京时间</span></footer></>;
 }

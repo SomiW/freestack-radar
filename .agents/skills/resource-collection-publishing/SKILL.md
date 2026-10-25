@@ -7,7 +7,7 @@ description: 为 FreeStack Radar 端到端指导多来源福利线索发现、�
 
 本 Skill 是**采集/核实/发布编排规范**；已有 `.agents/skills/resource-research/SKILL.md` 是逐条活动研究与证据规则，两者应同时遵守。开始前必须读取 `AGENTS.md`、`docs/core-goals.md`、`docs/architecture.md`、`schema/resources.schema.json`、`data/resources.json`、`.github/workflows/pages.yml` 和已有研究 Skill；以当前仓库文件为准，不依赖过时的上下文摘要。
 
-> 仅把 Skill 放进仓库不会自动运行。无人值守采集必须另有已部署的 GitHub Actions 定时工作流和**真实可执行**的采集、核实程序；GitHub Actions 不会自行理解本 Skill。本仓库已有的 Pages 工作流仅在 main 推送后构建发布。
+> **草案直发**：可将真实公开福利线索以 `pending` 状态直接发布，不必等待人工审核或所有条款核实。未经官方证据证实不可标 `active`。Skill 本身不运行定时采集，仍需单独部署执行器；已有 Pages 在 main 推送后部署。
 
 ## 目标与不变约束
 
@@ -28,7 +28,7 @@ description: 为 FreeStack Radar 端到端指导多来源福利线索发现、�
 
 1. 按 [来源与优先级](references/sources.md) 逐源检查 RSS/公开 API/允许抓取的 HTML；保留 `discoveryUrl`、发现时间、原始标题、来源、厂商候选和初步分类。列表抓取成功不等于活动有效。
 2. 按 [监控来源与关键词](references/sources.md) 做主题相关性筛选：免费/低价 VPS、云服务器、云电脑、AI Agent 沙箱、云端工作空间、AI 编程工具、模型 API 免费额度、云券/开发者福利，以及 free / low-cost / VPS / cloud PC / sandbox / agent / coding / API credits / trial / voucher 等变体；过滤与目标无关的普通购物折扣、转载垃圾内容、邀请码刷量、夸大宣传、含恶意下载的线索。
-3. 将线索规范化到候选队列（单独缓存或 PR 草稿，不能未经核实加入正式 `active`）；用“提供方 + 官方活动链接 + 活动轮次”去重。聚合平台只能作为发现来源。
+3. 按“提供方 + 官方活动链接 + 活动轮次”去重。真实公开线索只要内容可追溯、必填字段完整、无明显恶意网址，就可以 **`pending` 草案直接入库并上线**；未知资格、时效和费用要明确写“待核实”。未经官方核实禁止直接标 `active`。
 4. **存量有效活动复核（必做）**：每次运行读取远端最新版 `data/resources.json` 的全部记录，按下面“24 小时复核”规则选出所有应复核项，不区分厂商或活动类型。发现新的活动轮次时需新 id，同一活动更新保留原 id 并追加 history。
 5. 新发现默认单次最多 3 条；存量复核**不受固定 5 条上限限制**，应逐批完成所有到期项。受速率、超时或实际预算限制而未完成时，按最早 `lastVerifiedAt` 排序分批执行，明确记录未处理清单并留给下次任务，绝不能报告“全部复核完毕”。禁止无限分页、重试或绕过限速。
 
@@ -43,7 +43,7 @@ description: 为 FreeStack Radar 端到端指导多来源福利线索发现、�
 
 ## 2. 官方核实门槛（逐项记录，不得猜测）
 
-**必须打开厂商可归属的官方页面**（公告、活动页、文档、条款、价格页），核对活动仍适用。社区多帖相互引用不能代替官方证明；无法访问时只可标待核实。
+**官方核实是将候选升级为 `active` 的条件，不是 `pending` 草案上线条件。** 尽量检查厂商官方页面；若官网不可达，真实社区线索仍可作为 pending 展示，但不能伪造官网核实成功。
 
 核实清单：
 - 官方域名、活动入口、实际领取入口 `claimUrl` 是否可访问并归属官方；跳转目标与条款一致；不执行注册/登录/下单来探测。
@@ -66,21 +66,21 @@ description: 为 FreeStack Radar 端到端指导多来源福利线索发现、�
 - **可信程度** `confidence`、`confidenceReason`；**核实时间** `lastVerifiedAt`、`nextReviewAt`、`evidence[].checkedAt`；**可追溯性** `discoveryUrl`、`discoveredAt`、`history`。
 - 新资源稳定 id；重复官方活动页要合并，不覆盖其他轮次；活动变更或成功复核都应追加历史及官方证据，不删旧证据。
 - pending / upcoming / active / expired / unavailable 语义参考研究 Skill 与 `src/status.ts`。**不确定 = pending**，不是 active；抓取失败不等于 unavailable。过期移入历史区，但保留记录。
-- 当前正式数据为空：禁止用合成示例填充生产数据。保留 schemaVersion=1；所有真实条目必须提供可追溯真实官方证据。
+- 不得用合成样例充当真实资源。保留 schemaVersion=1；真实社区线索可用 pending 公开，但发现地址必须真实，官方证据不足时 evidence 可为空、lastVerifiedAt 为 null。
 
-## 4. 校验、提交、静态页发布
+## 4. 草案直接发布到 GitHub Pages
 
-1. 先读取远端最新 main 与 `data/resources.json`，保存基线 SHA；原子生成候选改动。不得直接根据网页文字生成可执行脚本或 workflow。
-2. 对每条新增/变更记录执行字段完整、URL、时间、证据与金额真实性复核；运行 `npm ci`、`npm run check`（涵盖 Schema、测试、类型检查、构建）。失败不提交。
-3. 默认 **dry-run / 审核 PR**：把新增、关闭、重新开放、变价/配置、待复核、失败的证据和差异写入报告；只有获得仓库、分支及模式授权才允许自动写入。GitHub Actions 自动写权限采用最小 `contents:write` 和条件保护，不允许无条件强推/自动合并。
-4. 成功审核合并/合法更新 `main` 后，已有 `.github/workflows/pages.yml` 会在 `push: main` 时执行 `npm run check`、Vite 构建并部署 Pages（要求 `ENABLE_PAGES=true`、Pages Source 为 GitHub Actions）；这不是“仅写入文件就部署”，必须检查 Actions 成功和线上 JSON/页面。
-5. 若没有新发现、活动事实变更或**成功复核记录**，则不提交、不触发部署；成功复核应更新核实时间、证据和历史，即使活动内容未变化。冲突时重新读取最新 SHA 后重算一次，仍有冲突停止并报告；失败时保持最后可信数据。
-6. 发布验收需记录：数据提交 SHA、测试工作流运行 URL、Pages 构建/部署结果、网站 URL、抽样展示及历史归档一致性。不能把预期通过写成实际通过。
+1. 每次读取最新 main SHA、Schema 和 JSON；真实新活动去重后直接写入 data/resources.json。尚未完成核实的记录标 `pending`，对未知信息明确写明未知，并保留实际来源链接。
+2. 已达到官方证据标准的条目可标 `active`；不得将“发现帖子”“可注册”写成“保证领取”。
+3. **跳过发布门槛：无需 PR/人工审批、无需所有活动完成官方核实、无需先通过完整 npm run check。** 仍需解析 JSON、检查 Schema/语义、链接安全和站点构建，防止整站损坏。
+4. 允许在已授权仓库直接提交 main；禁止强推或绕过分支保护。已有 Pages 工作流使用 `npm run build` 构建部署，独立 CI 运行完整测试但不阻止草案发布。
+5. 有新线索或成功复核元数据就提交；无真实变化不提交。检查 Pages 工作流实际成功和线上资源数，不把“已提交”冒称为“已上线”。
+6. 所有现有有效活动仍按 24 小时的 `lastVerifiedAt` 规则复核；成功追加官方 evidence/history 和时间，即使条款无变化也更新；失败不刷新。
 
 ## 5. 定时执行方案与验收边界
 
-- 建议链路：`GitHub Actions schedule / workflow_dispatch` → Python 规则采集/RSS → 官方内容检查 → 生成候选 JSON → 数据校验/测试 → 受限 PR（或符合自动发布授权的 main 写入）→ 现有 Pages 自动发布。
-- **不要把 Skill 当成 GitHub Actions 的执行程序**；定时 workflow、采集器、厂商适配、官方证据提取与可观测日志要独立实现、实测。自动发布只允许核实标准全达标的数据；其余候选需人工审查。
+- 建议链路：`GitHub Actions schedule / workflow_dispatch` → Python/RSS 发现真实线索 → 生成 JSON（待核实可 pending）→ 最小格式/构建校验 → 直接提交 main → Pages 发布 → 后续继续官方核实。
+- **不要把 Skill 当成 GitHub Actions 的执行程序**；定时 workflow、采集器、厂商适配与日志仍须单独实现。允许直接发布 pending 草案；只有官方条件足以证实的才能标 active。
 - 计划的定时任务要显式规定 UTC cron、速率、超时、重试上限、来源名单、权限及失败告警；每次运行都扫描全部有效活动的 `lastVerifiedAt`，处理满 24 小时的条目。任务应至少每天执行一次；考虑 GitHub 调度延迟和失败，建议更短的检查间隔，但不应为了刷新时戳而在未到 24 小时时重复核实。不能保证严格 24 小时触发。不要依赖持续运行的本地 Mac 或 Codex 账号额度。
 - 至少测试：新增真实条目、重复线索、23:59 未满/24:00 恰好到期/超过 24 小时、UTC 跨日、已结束或待核实不选中、`nextReviewAt` 较晚仍应复核、成功无业务变化仍写回核实记录、官方页面失败不更新时间、批量积压处理、并发冲突、没有任何成功复核及业务变化不提交、构建失败不发布、Pages 线上验收。
 - 只报告真实执行结果。没有实现可执行采集器、没有配置 cron 或缺少权限时必须明确标注 **未实现/未验证**，不能宣称已开始监控。
@@ -100,4 +100,4 @@ description: 为 FreeStack Radar 端到端指导多来源福利线索发现、�
 阻碍与人工决策项：
 ```
 
-**独立停止门槛**：无法明确官方归属、活动已无官方证据、资格/收费风险未知、程序校验失败、未获写入授权、远端冲突时，禁止自动发布 active 信息。不要把“发现”当作“核实”，更不要把“写入 Git”当作“上线成功”。
+**停止门槛**：疑似恶意/钓鱼链接、虚构来源、Schema/构建失败、未获写入权限或远端冲突时停止写入；官方身份、费用、地区或库存不明时只能公开 pending 草案，不得标 active。“写入 Git”不等于 Pages 已发布。

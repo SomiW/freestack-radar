@@ -22,7 +22,8 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - run: npm run check
+      # 草案直发：基础数据/类型/构建通过即可发布；完整测试由独立 CI 负责
+      - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

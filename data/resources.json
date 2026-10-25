@@ -1,4 +1,138 @@
 {
   "schemaVersion": 1,
-  "resources": []
+  "resources": [
+    {
+      "id": "instabox-free-agent-machine-2026",
+      "title": "InstaBox 免费 Agent 云机器（新账户 1 台）",
+      "provider": "InstaBox",
+      "category": "cloud",
+      "description": "官方 Free 计划提供云端微型 Linux 虚拟机，适合 AI Agent、远程开发和云端浏览器场景；闲置 30 分钟自动暂停。",
+      "quota": "1 台云机器：4 vCPU、8 GiB 内存；5 个快照；免费套餐含每月 100 GiB 出站流量。",
+      "benefitValue": "官方 Free 计划 $0；不将机器按使用量模拟付费价值。",
+      "eligibility": "需注册 InstaBox；公开社区报道存在候补名单或邀请码，新账号是否立刻能创建未实测。2026-10-20 以前创建的账户到 12 月 1 日之前可能保留 5 台免费机器旧权益。",
+      "regions": "官方页面未完整列出注册及地区限制，待进一步核实。",
+      "validity": "免费套餐持续期限未披露；机器闲置 30 分钟后自动暂停。",
+      "deadlineNote": "官网未公布 Free 套餐结束日期；个别早期账户 5 台免费机过渡至 2026-12-01。",
+      "officialUrl": "https://instabox.sh/pricing",
+      "claimUrl": "https://dashboard.instabox.sh/auth/workos/login?screen_hint=sign-up",
+      "discoveryUrl": "https://instabox.sh/changelog",
+      "discoveredAt": "2026-10-25T15:59:12Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "Free $0；100 GiB/月出站流量；价格页显示超额出站流量参考费率 $0.02/GiB，免费档超额如何结算尚未确认；是否要求绑卡不明。不可按传统 24/7 VPS 理解。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官网证实 Free 套餐为每月 1 台；新账号开通资格、绑卡、超额处理以及当前可领取情况未实测。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-26T15:59:12Z",
+      "evidence": [
+        {
+          "url": "https://instabox.sh/pricing",
+          "summary": "Free $0；1 台 4 vCPU/8 GiB、5 个快照、100 GiB/月出站流量；网页价格版可用。",
+          "checkedAt": "2026-10-25T15:59:12Z"
+        },
+        {
+          "url": "https://instabox.sh/changelog",
+          "summary": "2026-10-20 更新：新 Free 为 1 台，老账户有 5 台临时过渡安排，闲置 30 分钟自动暂停。",
+          "checkedAt": "2026-10-25T15:59:12Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T15:59:12Z",
+          "status": "pending",
+          "note": "官网免费档和配置可核对；草案直发，当前开通及费用条件尚未全面核实。"
+        }
+      ]
+    },
+    {
+      "id": "vyce-vps-mini-free-2026",
+      "title": "vyce.cloud 免费 Linux VPS Mini",
+      "provider": "vyce.cloud",
+      "category": "cloud",
+      "description": "社区支持的免费 Linux VPS，提供 SSH root 访问；免费库存有限，需要每天续期，不适合无人值守关键业务。",
+      "quota": "1 vCore、2 GB RAM、6 GB NVMe；SSH root；官网介绍有 IPv6，免费名额先到先得。",
+      "benefitValue": "官方套餐免费（$0），不提供可核实的等价付费估值。",
+      "eligibility": "需 GitHub 账户注册且账户年龄至少 30 天；免费机实时名额有限，未确认当前是否有可抢名额。",
+      "regions": "官方首页未公布可选机房/所有国家资格。",
+      "validity": "每次免费续期需在控制台每天手动完成；未续期停机，连续停机 3 天会删除。",
+      "deadlineNote": "官网未披露福利结束时间；受实时库存限制，不能保证当前有空位。",
+      "officialUrl": "https://vyce.cloud/",
+      "claimUrl": "https://vyce.cloud/",
+      "discoveryUrl": "https://linux.do/t/topic/3041812",
+      "discoveredAt": "2026-10-25T15:59:12Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "官方确认不需要信用卡且 Vps-Mini 不产生后续费用；需要每日续期；免费机器不足时须等待空位。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官网确认免费配置、无需绑卡、GitHub 账号门槛、续期和删除规则；实际可抢库存无法在未登录情况下确认，活动有效不代表保证领取。",
+      "lastVerifiedAt": "2026-10-25T15:59:12Z",
+      "nextReviewAt": "2026-10-26T15:59:12Z",
+      "evidence": [
+        {
+          "url": "https://vyce.cloud/",
+          "summary": "官方明确 Vps-Mini 免费，1vCore/2GB/6GB，无需信用卡，每天续期，GitHub 账户至少 30 天，名额动态开放。",
+          "checkedAt": "2026-10-25T15:59:12Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T15:59:12Z",
+          "status": "active",
+          "note": "官网条款可确认免费计划及关键限制；未实际登录领取。"
+        }
+      ]
+    },
+    {
+      "id": "render-free-web-service-2026",
+      "title": "Render 免费云端 Web 服务与开发者部署",
+      "provider": "Render",
+      "category": "cloud",
+      "description": "Render 面向开发者提供免费 Web Service、静态网站以及受限免费数据库，不是带 root 权限的传统 VPS。",
+      "quota": "每工作区每自然月 750 个免费 Web 实例小时；免费 Web Service 512 MB RAM；静态站点可免费部署。",
+      "benefitValue": "Free 计算档为每月 $0；价值不可直接等同付费服务器额度。",
+      "eligibility": "注册 Render 账号、连接 Git 代码仓库并创建 Free 实例；无需信用卡即可开始；不保证适合生产使用。",
+      "regions": "免费产品具体地区以注册时实际可选区域为准，文档未承诺所有地区。",
+      "validity": "每自然月重置 750 小时；Web 服务空闲 15 分钟休眠；免费 PostgreSQL 数据库创建后 30 天到期。",
+      "deadlineNote": "官方长期 Free 档未披露固定结束日期，不代表承诺永久免费。",
+      "officialUrl": "https://render.com/docs/free",
+      "claimUrl": "https://dashboard.render.com/",
+      "discoveryUrl": "https://render.com/articles/platforms-with-a-real-free-tier-for-developers-in-2026",
+      "discoveredAt": "2026-10-25T15:59:12Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "若添加支付方式并超出包含的出站带宽或构建分钟数，可能产生额外收费；无支付方式超额时服务可能暂停。无持久化本地文件系统；免费 PostgreSQL 30 天过期。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Render 官方免费部署指南及 2026 免费套餐说明明确免费服务、750 小时、无信用卡和超额计费机制；未实际创建账号或部署实例。",
+      "lastVerifiedAt": "2026-10-25T15:59:12Z",
+      "nextReviewAt": "2026-10-26T15:59:12Z",
+      "evidence": [
+        {
+          "url": "https://render.com/docs/free",
+          "summary": "官方免费实例支持 Web Service、静态站点、Postgres/Key Value；750 实例小时/月，空闲 15 分钟休眠，超额带宽或构建分钟存在收费/暂停规则。",
+          "checkedAt": "2026-10-25T15:59:12Z"
+        },
+        {
+          "url": "https://render.com/articles/platforms-with-a-real-free-tier-for-developers-in-2026",
+          "summary": "Render 官方 2026 说明明确免费 Web/数据库/静态部署不需信用卡，免费数据库有限期。",
+          "checkedAt": "2026-10-25T15:59:12Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T15:59:12Z",
+          "status": "active",
+          "note": "官网条款可确认免费计划及关键限制；未实际登录领取。"
+        }
+      ]
+    }
+  ]
 }
