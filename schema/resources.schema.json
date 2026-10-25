@@ -1,0 +1,226 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "resources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "provider",
+          "quota",
+          "eligibility",
+          "regions",
+          "validity",
+          "deadlineNote",
+          "id",
+          "category",
+          "officialUrl",
+          "discoveryUrl",
+          "discoveredAt",
+          "startsAt",
+          "endsAt",
+          "status",
+          "creditCard",
+          "autoRenewal",
+          "lastVerifiedAt",
+          "nextReviewAt",
+          "evidence",
+          "history"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "quota": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "eligibility": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "regions": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "validity": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "deadlineNote": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "category": {
+            "enum": [
+              "ai",
+              "cloud",
+              "both"
+            ]
+          },
+          "officialUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "discoveryUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "discoveredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "startsAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "endsAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "enum": [
+              "pending",
+              "active",
+              "upcoming",
+              "expired",
+              "unavailable"
+            ]
+          },
+          "creditCard": {
+            "enum": [
+              "required",
+              "not-required",
+              "unknown"
+            ]
+          },
+          "autoRenewal": {
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "lastVerifiedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "nextReviewAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "url",
+                "summary",
+                "checkedAt"
+              ],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                },
+                "summary": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "checkedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          },
+          "history": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "at",
+                "status",
+                "note"
+              ],
+              "properties": {
+                "at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "status": {
+                  "enum": [
+                    "pending",
+                    "active",
+                    "upcoming",
+                    "expired",
+                    "unavailable"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

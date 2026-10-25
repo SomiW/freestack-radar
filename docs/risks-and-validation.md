@@ -9,7 +9,7 @@
 | 当前 Codex 账户 | Plus，有用量限制 | 账户用量接口返回 ordinaryUsageAllowed=true；不保存账户标识或凭据 |
 | GitHub 连接身份 | 通过 | GitHub get_profile 返回 SomiW；不代表仓库写权限或云端任务权限 |
 | 桌面调度工具 | 可见本地模式 | 当前 automation_update 类型暴露 local 执行环境；不能据此声称具备云端调度 |
-| 云端账户界面 | 探测中 | 访问 chatgpt.com/codex，最终结果在本轮验收记录补充 |
+| 云端账户界面 | 受阻 | 实际访问 chatgpt.com/codex 并复查，持续停在“请稍候…”页面，未进入账户管理界面 |
 | 远端 Git 写入 | 未执行 | 用户明确禁止自动推送；当前未授权具体测试仓库/分支写入 |
 | 云端按时触发且无人干预 | 未验证 | 尚无已确认云端调度入口及真实运行记录 |
 | GitHub Actions / Pages | 未验证 | 未建远端、未推送、未启用部署 |

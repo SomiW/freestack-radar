@@ -23,6 +23,7 @@ npm run dev
 
 ## 项目约定
 
+- [本轮检查记录](docs/validation-report.md)：本地验证结果与限制。
 - [核心目标](docs/core-goals.md)：本次用户明确要求的确认基线。
 - [MVP 范围](docs/mvp-scope.md)：首阶段交付和排除项。
 - [架构](docs/architecture.md)：数据、研究任务和发布链路。
