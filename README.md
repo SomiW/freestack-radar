@@ -5,8 +5,9 @@
 
 ## 当前进度
 
-首阶段：本地工程与规则建设。正式活动数据为空；不会把测试样本当作采集成果。
-云端定时执行、无人值守 Git 写入和 Pages 发布尚未通过端到端实测。
+静态站点已部署：[访问 FreeStack Radar](https://somiw.github.io/freestack-radar/)。
+正式活动数据为空；不会把测试样本当作采集成果。
+GitHub Actions 测试、构建与 Pages 发布已实际通过；云端定时研究和无人值守内容写入仍待验证。
 
 ## 本地运行
 
@@ -32,4 +33,6 @@ npm run dev
 - [Resource Research Skill](.agents/skills/resource-research/SKILL.md)：后续研究任务方法。
 
 正式数据在 `data/resources.json`，契约在 `schema/resources.schema.json`。
-本地只做 Git 初始化和提交，不设置远端，不自动推送，不开启付费资源。
+远端仓库为 `SomiW/freestack-radar`。用户已授权创建远端及静态站点部署。
+`ENABLE_PAGES=true`，Pages 使用 GitHub Actions；main 分支更新会自动检查、构建和发布。
+不自动开启付费资源；研究任务的远端写入和定时启用仍需单独配置。

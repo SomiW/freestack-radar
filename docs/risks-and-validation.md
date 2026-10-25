@@ -12,7 +12,7 @@
 | 云端账户界面 | 受阻 | 实际访问 chatgpt.com/codex 并复查，持续停在“请稍候…”页面，未进入账户管理界面 |
 | 远端 Git 写入 | 未执行 | 用户明确禁止自动推送；当前未授权具体测试仓库/分支写入 |
 | 云端按时触发且无人干预 | 未验证 | 尚无已确认云端调度入口及真实运行记录 |
-| GitHub Actions / Pages | 未验证 | 未建远端、未推送、未启用部署 |
+| GitHub Actions / Pages | 已验证 | 公开仓库 SomiW/freestack-radar；用户授权部署后启用 workflow 模式和 ENABLE_PAGES=true，运行 40204226600 成功 |
 
 ## 官方说明与账户事实的边界
 
@@ -44,3 +44,15 @@
 时间过期可由日期推导，资格和额度必须来自官方资料。
 Schema 只能校验结构，不能自动证明域名属于官方或内容真实。
 地区、信用卡、自动扣费不明时明确标为未知。
+
+## 静态站点部署记录
+
+2026-10-25 用户后续明确授权创建远程仓库并部署静态页面。
+仓库已存在且 main 已推送，本次复用仓库并将 Pages 从 gh-pages 分支发布切换为 Actions。
+
+- [公开站点](https://somiw.github.io/freestack-radar/)
+- [仓库](https://github.com/SomiW/freestack-radar)
+- [实测成功的构建与发布](https://github.com/SomiW/freestack-radar/actions/runs/40204226600)
+
+该结果证明静态页面的检查、构建和部署链路可用；不构成 Codex 云端定时研究
+或无人值守 Git 内容更新成功的证据。

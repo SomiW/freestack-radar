@@ -5,7 +5,7 @@
 ## 实际结果
 
 - 新建路径：当前聊天工作区的 `outputs/freestack-radar`，创建前确认不存在。
-- 本机 Node.js 26.0.0、npm 11.12.1；CI 配置 Node.js 22，尚未在 GitHub 执行。
+- 本机 Node.js 26.0.0、npm 11.12.1；CI 配置 Node.js 22，后续 GitHub Actions 已实际执行通过。
 - 实际安装 React 19.3.1、Vite 8.3.5、TypeScript 7.0.2，锁定依赖版本。
 - 先执行测试确认缺少 resources 模块失败，再完成实现；13 项测试全部通过。
 - `npm run build` 通过：正式 JSON 校验、TypeScript 检查及 Vite 生产构建。
@@ -28,8 +28,17 @@ Skill 检查依赖 PyYAML，安装在聊天工作区 work/python-deps，不改�
 
 检查范围：数据边界、状态时间、空态、权限、依赖和文档一致性。
 前端不解析原始 HTML，正式来源限制 HTTPS；官方归属与事实仍须人工/研究核实。
-发布配置默认关闭，构建任务只读内容和 Pages 元数据，部署任务才有发布权限。
+发布配置初始默认关闭；用户授权部署后已启用。构建任务只读内容和 Pages 元数据，部署任务才有发布权限。
 Skill 格式通过不等于研究能力已实测；尚未采集真实内容，也未验证真实卡片的完整浏览器流程。
-未完成移动设备专项测试、GitHub CI 运行、Pages 部署、云端触发或远端写入测试。
+后续 GitHub CI 与 Pages 部署已通过；仍未完成移动设备专项测试、云端触发或无人值守内容写入测试。
 云端访问停在“请稍候…”页面；不能推断账户无此功能，也不能声称可用。
 详细阻碍和下一次实测步骤见 [风险与验证](risks-and-validation.md)。
+
+## 后续部署验收
+
+用户于 2026-10-25 明确授权远端仓库和静态页面部署。
+本地重新执行 npm run check 通过（13 项测试、数据校验、类型检查和生产构建）。
+远端 main 为 d19fe4f4c07cec27a4fe59f70d4dbe445d96dcbe，
+[Pages 运行 40204226600](https://github.com/SomiW/freestack-radar/actions/runs/40204226600)
+的 build 和 deploy 均成功，Node.js 22 的实际检查也通过。
+[线上站点](https://somiw.github.io/freestack-radar/) 已在浏览器加载资源目录。
