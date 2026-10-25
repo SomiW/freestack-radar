@@ -8,7 +8,10 @@ const resource = () => ({
   id: 'synthetic-only', title: '合成测试资源（非真实活动）', provider: '测试提供方',
   category: 'ai', officialUrl: 'https://example.com/test',
   discoveryUrl: 'https://example.com/discovery', discoveredAt: '2026-10-20T00:00:00Z',
-  quota: '测试额度', eligibility: '测试资格', regions: '未知',
+  quota: '测试额度', description: '仅用于测试的合成活动介绍', benefitValue: '不能估值：测试数据',
+  claimUrl: 'https://example.com/claim', costNotes: '未知：测试数据',
+  confidence: 'high', confidenceReason: '合成测试：模拟官方核实',
+  eligibility: '测试资格', regions: '未知',
   creditCard: 'unknown', autoRenewal: 'unknown', validity: '未披露',
   startsAt: null, endsAt: null, deadlineNote: '官方未披露截止时间',
   status: 'active', lastVerifiedAt: '2026-10-24T00:00:00Z', nextReviewAt: '2026-10-26T00:00:00Z',
@@ -22,7 +25,7 @@ test('缺少官方证据不能标记有效', () => {
   assert.ok(validateCatalog(catalog([{...resource(),evidence:[]}]),now).length);
 });
 test('待核实可没有成功核实时间', () => {
-  const r={...resource(),status:'pending',lastVerifiedAt:null,evidence:[],history:[]};
+  const r={...resource(),status:'pending',confidence:'low',confidenceReason:'仅社区线索',lastVerifiedAt:null,evidence:[],history:[]};
   assert.deepEqual(validateCatalog(catalog([r]),now),[]);
 });
 test('拒绝重复 id 和重复官方链接', () => {
@@ -57,4 +60,24 @@ test('即将开始时间到了但没有复核时标为待核实', () => {
 test('复核到期独立于资源状态', () => {
   assert.equal(needsReview({...resource(),nextReviewAt:'2026-10-25T12:00:00Z'} as any,now),true);
   assert.equal(needsReview(resource() as any,now),false);
+});
+
+test('公开条目必须包含介绍、福利价值、领取入口、费用风险及可信解释', () => {
+  for (const key of ['description','benefitValue','claimUrl','costNotes','confidence','confidenceReason']) {
+    const r = resource() as Record<string,unknown>;
+    delete r[key];
+    assert.ok(validateCatalog(catalog([r]), now).length, key);
+  }
+});
+test('无效领取地址与错误可信等级不能进入目录', () => {
+  for (const patch of [{claimUrl:'javascript:alert(1)'},{confidence:'unverified'}])
+    assert.ok(validateCatalog(catalog([{...resource(),...patch}]), now).length);
+});
+test('缺少高可信官方依据不允许标记有效', () => {
+  const low={...resource(),confidence:'low',confidenceReason:'只有社区帖子'};
+  assert.ok(validateCatalog(catalog([low]), now).some(x=>x.includes('高可信')));
+});
+test('待核实线索不能冒充高可信', () => {
+  const pending={...resource(),status:'pending',lastVerifiedAt:null,evidence:[],history:[]};
+  assert.ok(validateCatalog(catalog([pending]), now).some(x=>x.includes('高可信')));
 });
