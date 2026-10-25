@@ -37,3 +37,9 @@ GitHub 仓库保存 JSON；GitHub Actions 测试构建并发布到 Pages。
 任何展示条目均能追溯至官方证据并读到限制条件；无证据不标有效。
 定时更新必须有真实运行记录、远端提交及无人干预证据才能标记通过。
 没有新发现时保持数据不变；失败时保留最后可信记录，不伪造复核成功。
+
+## 2026-10-25 新增的采集与发布约束
+
+监控 LINUX DO、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、掘金与厂商官网；重点覆盖 VPS/云服务器/云电脑/海外算力、AI/API/编程额度、云券、新用户和限时活动，并追踪华为云、InstaBox、LightVela、CodeBuddy、Muse 等重新开放和额度变化。
+
+以独立 Collection Publishing Skill 指导发现→官方核实→JSON 更新→校验→Pages；新增活动介绍、福利价值、领取入口、费用风险、核实时间和可信程度字段。仅社区线索不得直接标记为有效。电脑关机仍执行、定时不消耗 Codex 模型额度是正式调度的优先验收目标，优先 GitHub Actions 非 LLM 规则采集；不得把技能文件或已有 Pages 工作流误称为采集任务已运行。
