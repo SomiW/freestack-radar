@@ -5,6 +5,7 @@
 
 在已授权的 FreeStack Radar 远端仓库上，先读取最新提交、项目核心目标、
 数据契约以及 `.agents/skills/resource-collection-publishing/SKILL.md` 和 `.agents/skills/resource-research/SKILL.md`，按两个 Skill 发现和复核资源。
+重点发现免费/超低价 VPS 与云服务器、云电脑及 AI Agent 沙箱、AI 编程工具、模型 API 免费额度、代金券及官方开发者福利。线索来源覆盖 LINUX DO 福利羊毛区、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、赚客大家谈、掘金和有关厂商官方活动页。只把论坛/聚合信息作为线索，以厂商官方活动页、条款和真实价格为核实依据；超低价记录实际配置、计费周期与续费价。
 每次最多发现 3 条新线索。每次必须扫描仓库全部当前有效的活动，按每条 lastVerifiedAt 距本次 UTC 时间已满 24 小时筛选复核，按最久未核实优先逐批处理全部到期项；不得使用固定 5 条复核上限，积压要明确列出。官方核实成功即使信息未变化也要写回真实核实时间、证据、历史及下次 24 小时复核时间；失败则保留原最后核实时间。正常访问失败后才尝试 Firecrawl。
 维护 data/resources.json 的来源、条件、额度、时间、状态和历史。
 执行 npm run check；无法执行则报告阻碍，不以“预期通过”代替结果。
