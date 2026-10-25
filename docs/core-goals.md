@@ -22,7 +22,7 @@
 
 ## 已确定技术方向
 
-Codex Scheduled Tasks + Resource Research Skill 负责发现、核实与更新。
+Resource Collection & Publishing Skill 与 Resource Research Skill 负责规范发现、核实与更新；优先考虑 GitHub Actions 云端非 LLM 采集执行器（尚未落地），而不是依赖 Codex 桌面定时任务。
 GitHub 仓库保存 JSON；GitHub Actions 测试构建并发布到 Pages。
 前端采用 React + Vite + TypeScript，无业务后端和用户数据库。
 优先验证针对远端仓库的云端无人值守更新，不能用桌面定时运行代替验收。
@@ -40,6 +40,6 @@ GitHub 仓库保存 JSON；GitHub Actions 测试构建并发布到 Pages。
 
 ## 2026-10-25 新增的采集与发布约束
 
-监控 LINUX DO、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、掘金与厂商官网；重点覆盖 VPS/云服务器/云电脑/海外算力、AI/API/编程额度、云券、新用户和限时活动，。所有已入库有效活动不分厂商，距上次成功官方核实已满 24 小时必须复核，结果写入正式 JSON（含核实时间、证据、历史和变化）；失败不伪造核实记录。
+重点关注免费/超低价 VPS 与云服务器、云电脑与 AI Agent 沙箱、AI 编程工具、模型 API 免费额度、代金券及官方开发者福利。信息来源涵盖 LINUX DO 的福利羊毛区、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、赚客大家谈、掘金，以及相关厂商官方活动页。所有已入库有效活动不分厂商，距上次成功官方核实已满 24 小时必须复核，结果写入正式 JSON（含核实时间、证据、历史和变化）；失败不伪造核实记录。
 
 以独立 Collection Publishing Skill 指导发现→官方核实→JSON 更新→校验→Pages；新增活动介绍、福利价值、领取入口、费用风险、核实时间和可信程度字段。仅社区线索不得直接标记为有效。电脑关机仍执行、定时不消耗 Codex 模型额度是正式调度的优先验收目标，优先 GitHub Actions 非 LLM 规则采集；不得把技能文件或已有 Pages 工作流误称为采集任务已运行。
