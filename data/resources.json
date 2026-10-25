@@ -139,13 +139,13 @@
       "title": "Qoder DeepSeek Flash 限免延期线索（待核实）",
       "provider": "Qoder",
       "category": "ai",
-      "description": "LINUX DO 用户报告 Qoder 内的 DeepSeek Flash 限免延长至 11 月 1 日；官网活动页未返回可读条款，尚不能确认延期及适用版本。",
-      "quota": "社区称 DeepSeek-V4.1-Flash-1017 可按 0 Credits 使用；调用次数、排队规则和每日上限均未获官方确认。",
+      "description": "LINUX DO 用户报告 Qoder 内的 DeepSeek Flash 限免延长至 11 月 1 日；2026-10-26 复核时官网活动页已可读，但官方仅公告 Qwen3.8-Flash 限免，未提及 DeepSeek 模型，社区说法与官方条款不一致，本条保持待核实。",
+      "quota": "社区称 DeepSeek-V4.1-Flash-1017 可按 0 Credits 使用；官方活动页只列出 Qwen3.8-Flash 按 0.0× 计费，DeepSeek 相关额度、调用次数和每日上限均未获官方确认。",
       "benefitValue": "若活动成立，可免除指定模型在 Qoder 内的 Credits 消耗；无法可靠估值，不等同赠送模型 API 余额。",
       "eligibility": "社区讨论涉及免费和付费用户；国际版与国内版、账号资格及可用模型须在官方客户端核对，未登录测试。",
       "regions": "活动支持的国家/地区及国内外版本差异待核实。",
-      "validity": "社区 10 月 25 日帖子称延期至 11 月 1 日；此前掘金文章仍写 10 月 25 日，最终以官方客户端活动说明为准。",
-      "deadlineNote": "官方未披露可读截止条款；社区日期未确认具体时刻和时区，endsAt 保持 null，不能当作确定截止时间。",
+      "validity": "社区 10 月 25 日帖子称延期至 11 月 1 日；官方活动页仅写 Qwen3.8-Flash 的结束日期另行公告，未给出 DeepSeek 模型的截止时间，两者无法对齐。",
+      "deadlineNote": "官方未披露 DeepSeek 模型的可读截止条款；社区日期未确认具体时刻和时区，endsAt 保持 null，不能当作确定截止时间。",
       "officialUrl": "https://qoder.com/activities",
       "claimUrl": "https://qoder.com/",
       "discoveryUrl": "https://linux.do/t/topic/3072678",
@@ -153,19 +153,35 @@
       "autoRenewal": "unknown",
       "costNotes": "0 Credits、每日次数与免订阅资格尚未官方确认；不推定其他模型、Cloud Agents 沙箱或自带 API Key 免费，不自动订阅或购买。",
       "confidence": "low",
-      "confidenceReason": "公开原帖可追溯且官网产品入口可访问；官网活动/定价页没有可读活动条款，延期、次数和收费边界均未核实。",
+      "confidenceReason": "社区原帖可追溯；官方活动页现已可读，但只确认 Qwen3.8-Flash 限免（见 qoder-qwen38-flash-free-202609），未确认 DeepSeek 模型限免或延期至 11 月 1 日，冲突未消，保持低可信。",
       "discoveredAt": "2026-10-25T16:23:24.401Z",
       "startsAt": null,
       "endsAt": null,
       "status": "pending",
       "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-26T16:23:24.401Z",
-      "evidence": [],
+      "nextReviewAt": "2026-10-27T16:32:10Z",
+      "evidence": [
+        {
+          "url": "https://docs.qoder.com/events/flashoffer",
+          "summary": "官方活动文档仅列 Qwen3.8-Flash 由 0.1× 降至 0.0×、个人用户免 Credit 使用并已延期；全文未出现 DeepSeek 模型，无法佐证社区所说的 DeepSeek 限免延期。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://qoder.com/activities",
+          "summary": "活动页 2026-10-26 复核已可读，列新用户 300 Credits、每日 100 Credits、Qwen3.8-Flash 限免等活动，同样未列 DeepSeek 限免。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        }
+      ],
       "history": [
         {
           "at": "2026-10-25T16:23:24.401Z",
           "status": "pending",
           "note": "新增真实公开线索；已读取 LINUX DO 原帖和掘金旧文，官网活动与定价页正文为空，未确认限免延期，不设置成功核实时间。"
+        },
+        {
+          "at": "2026-10-25T16:32:10Z",
+          "status": "pending",
+          "note": "复核：官方活动页与 docs 活动文档已可读，但只公告 Qwen3.8-Flash 限免，未提 DeepSeek；与社区“延期至 11 月 1 日”不符，转人工判断，状态与 lastVerifiedAt 不变。"
         }
       ]
     },
@@ -248,6 +264,149 @@
           "at": "2026-10-25T16:23:24.401Z",
           "status": "pending",
           "note": "从 AI Spoils 沙箱专题发现并读取 E2B 官方定价；关键额度有官方佐证，但时效和用尽处理尚未完成核实，未登录控制台或创建沙箱。"
+        }
+      ]
+    },
+    {
+      "id": "qoder-qwen38-flash-free-202609",
+      "title": "Qoder 国际版 Qwen3.8-Flash 限时免 Credits",
+      "provider": "Qoder",
+      "category": "ai",
+      "description": "Qoder 官方活动文档说明：Qwen3.8-Flash 多模态模型在 Qoder International 限时免费，Credit 倍率由 0.1× 降为 0.0×，调用不消耗 Credits，无需领取，零 Credits 余额的个人账户也可直接使用；原定 9 月 30 日结束，目前处于已延期状态。",
+      "quota": "Qwen3.8-Flash 调用按 0.0× 计费，即 0 Credits；官方未公布该模型的调用次数、速率或并发上限。",
+      "benefitValue": "免除此模型在 Qoder 内的 Credits 消耗；官方未给出等价金额或兑换比例，无法可靠估值。",
+      "eligibility": "Qoder International 个人用户，Free、Pro Trial、Lite、Pro、Pro+、Ultra 均适用；Teams 与 Enterprise 订阅者不适用；无需付费订阅、无需领取，在客户端选择该模型即生效。",
+      "regions": "仅 Qoder 国际版（International）个人账户；官方按新加坡时间 UTC+8 表述活动时间，未逐个国家列明限制。",
+      "validity": "自 2026-09-18 10:00（UTC+8）起；原定 2026-09-30 23:59:59 结束，已延期且官方未公布新结束时间。",
+      "deadlineNote": "官方写明结束日期会在活动页提前公告；endsAt 保持 null，不能视为永久免费，结束后按届时公布的倍率计费。",
+      "officialUrl": "https://docs.qoder.com/events/flashoffer",
+      "claimUrl": "https://qoder.com/",
+      "discoveryUrl": "https://qoder.com/activities",
+      "discoveredAt": "2026-10-25T16:32:10Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "活动期内该模型 0 Credits，且不扣减每日领取的 100 Credits；其他模型与 Cloud Agents 仍按各自规则计费，活动结束后可能产生费用；无自动订阅。高峰期官方提示响应可能变慢。",
+      "confidence": "high",
+      "confidenceReason": "官方活动文档明确列出模型名、0.1×→0.0× 倍率、适用产品清单、个人用户资格、开始时间与延期状态；未登录实测调用。",
+      "startsAt": "2026-09-18T02:00:00Z",
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-10-25T16:32:10Z",
+      "nextReviewAt": "2026-10-26T16:32:10Z",
+      "evidence": [
+        {
+          "url": "https://docs.qoder.com/events/flashoffer",
+          "summary": "官方文档：2026-09-18 10:00 (UTC+8) 起 Qwen3.8-Flash 对国际版个人用户 0.0× 计费；免领取、零余额可用；原定 9/30 结束已延期，结束日期另行公告；Teams/Enterprise 不适用。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://qoder.com/activities",
+          "summary": "活动页列“Qwen3.8-Flash: Free for a Limited Time”，与 docs 活动文档一致，并提供活动入口链接。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T16:32:10Z",
+          "status": "active",
+          "note": "复核旧 Qoder 待核实线索时发现官方活动页已可读并链接到 docs 活动文档；官方仅确认 Qwen3.8-Flash 限免（非 DeepSeek），据此新增本活动并标 active。"
+        }
+      ]
+    },
+    {
+      "id": "qoder-daily-100-credits-202609",
+      "title": "Qoder 国际版每日领取 100 Credits",
+      "provider": "Qoder",
+      "category": "ai",
+      "description": "Qoder 官方活动文档：Qoder International 个人用户每天可在 Qoder 桌面应用内手动领取 100 Credits，可用于 Qoder/IDE/CLI/Cloud Agents 等产品；单笔奖励自领取日起 30 天有效，未用完可跨天保留。",
+      "quota": "每个领取窗口 100 Credits，账号每窗口限领一次；奖励计入 Add-on Credits，单笔有效期 30 天。",
+      "benefitValue": "每日 100 Credits，可累积（每笔独立 30 天有效期）；官方未公布 Credits 与货币的兑换比例，无法可靠估值。",
+      "eligibility": "Qoder International 新老个人用户，Free、Pro Trial、Lite、Pro、Pro+、Ultra 均可；Teams 与 Enterprise 订阅者不适用；必须在 Qoder 桌面应用「Usage 面板 → 左下角礼盒图标」手动领取，错过窗口不可补领。",
+      "regions": "仅 Qoder 国际版个人账户；官方按新加坡时间 UTC+8 表述窗口时间。",
+      "validity": "自 2026-09-18 10:00（UTC+8）起，每个窗口 10:00 至次日 10:00 前；结束时间官方待公告。",
+      "deadlineNote": "官方写明结束时间为“To be announced”，endsAt 保持 null；错过当日窗口不可补领，未领取额度不结转。",
+      "officialUrl": "https://docs.qoder.com/events/100credits",
+      "claimUrl": "https://qoder.com/",
+      "discoveryUrl": "https://qoder.com/activities",
+      "discoveredAt": "2026-10-25T16:32:10Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费用户同样可领；领取不改变订阅等级与功能权限；Credits 按“先到期先扣”规则消耗，用尽后如需继续使用则受套餐或付费规则限制。",
+      "confidence": "high",
+      "confidenceReason": "官方活动文档明确每日额度、领取入口、窗口时间、30 天有效期、适用计划与不可补领规则；未登录实测领取。",
+      "startsAt": "2026-09-18T02:00:00Z",
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-10-25T16:32:10Z",
+      "nextReviewAt": "2026-10-26T16:32:10Z",
+      "evidence": [
+        {
+          "url": "https://docs.qoder.com/events/100credits",
+          "summary": "官方文档：国际版个人用户每日在桌面应用领取 100 Credits，窗口 10:00 至次日 10:00（UTC+8），单笔 30 天有效，可跨天累积，结束时间待公告。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://qoder.com/activities",
+          "summary": "活动页列“Claim 100 Credits Every Day”并提供 docs 活动文档入口，与官方文档一致。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T16:32:10Z",
+          "status": "active",
+          "note": "复核 Qoder 官方活动页时发现该常驻活动并读取 docs 条款；额度、窗口与有效期均有官方证据，标为 active，未登录领取。"
+        }
+      ]
+    },
+    {
+      "id": "daytona-200-free-compute-2026",
+      "title": "Daytona 注册赠送 200 美元沙箱算力（AI Agent 代码执行）",
+      "provider": "Daytona",
+      "category": "both",
+      "description": "Daytona 提供毫秒级启动的 AI 代码执行沙箱（容器/VM/GPU），官方定价页标注注册含 200 美元免费算力；免费层级需邮箱验证，按 vCPU/内存/磁盘预留量计费。",
+      "quota": "赠金 200 美元；Tier 1（邮箱验证）资源池 10 vCPU / 10 GiB RAM / 30 GiB 存储；单价 vCPU $0.0504/小时、内存 $0.0162/GiB/小时、存储 $0.000108/GiB/小时（前 5 GiB 免费）。",
+      "benefitValue": "官方面值 200 美元的免费算力额度；不可提现，且免费额度不能用于 GPU 沙箱。",
+      "eligibility": "注册 Daytona 组织并完成邮箱验证即进入 Tier 1；更高 Tier 需绑卡并充值（Tier 2 为绑卡 + 25 美元充值）。赠金是否需绑卡领取、是否有新用户限制，官方定价页未明示。",
+      "regions": "资源按组织默认区域配额；GPU 沙箱单独在 earth region 计配额，本次未核实全部可选区域与地区限制。",
+      "validity": "赠金为一次性免费算力余额，官方未公布有效期与每次活动轮次；沙箱停止/暂停/归档后的计费口径按官方 billing 文档执行。",
+      "deadlineNote": "官方未披露赠金领取截止日期与到期日；endsAt 保持 null，不能视为长期有效。",
+      "officialUrl": "https://www.daytona.io/pricing",
+      "claimUrl": "https://app.daytona.io/",
+      "discoveryUrl": "https://aispoils.com/deal/daytona-sandbox.html",
+      "discoveredAt": "2026-10-25T16:32:10Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "超出赠金后按预留资源按量扣费；wallet 支持一次性充值与自动充值（自动充值需用户自行开启）；GPU 沙箱单独计费且不可用免费额度；网络出口、税费与快照存储费用本次未核实。",
+      "confidence": "medium",
+      "confidenceReason": "官方定价页确认 200 美元免费算力与单价，limits 文档确认 Tier 1 资源池与邮箱验证要求；赠金有效期、是否必须绑卡、完整地区与网络计费仍缺项，故保持待核实。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-26T16:32:10Z",
+      "evidence": [
+        {
+          "url": "https://www.daytona.io/pricing",
+          "summary": "定价页写明“$200 in free compute included”，付费按量：vCPU $0.0504/h、内存 $0.0162/GiB/h、存储 $0.000108/GiB/h（前 5 GiB 免费）；未列赠金有效期。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://www.daytona.io/docs/en/limits/",
+          "summary": "limits 文档：Tier 1 需邮箱验证，资源 10 vCPU/10 GiB/30 GiB；Tier 2 需绑卡并充值 25 美元；GPU 沙箱独立配额。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://www.daytona.io/docs/en/billing",
+          "summary": "billing 文档：免费额度与付费额度分列、免费额度先消耗、不能用于 GPU 沙箱；wallet 支持优惠码与充值，自动充值需自行开启。",
+          "checkedAt": "2026-10-25T16:32:10Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T16:32:10Z",
+          "status": "pending",
+          "note": "从 AI Spoils 沙箱分类发现，读取 Daytona 官方定价、limits、billing 文档；200 美元额度与 Tier 1 资源有官方佐证，但有效期与绑卡要求未明，保持待核实，未注册或创建沙箱。"
         }
       ]
     }
