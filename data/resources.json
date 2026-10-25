@@ -133,6 +133,123 @@
           "note": "官网条款可确认免费计划及关键限制；未实际登录领取。"
         }
       ]
+    },
+    {
+      "id": "qoder-deepseek-v41-flash-free-202610",
+      "title": "Qoder DeepSeek Flash 限免延期线索（待核实）",
+      "provider": "Qoder",
+      "category": "ai",
+      "description": "LINUX DO 用户报告 Qoder 内的 DeepSeek Flash 限免延长至 11 月 1 日；官网活动页未返回可读条款，尚不能确认延期及适用版本。",
+      "quota": "社区称 DeepSeek-V4.1-Flash-1017 可按 0 Credits 使用；调用次数、排队规则和每日上限均未获官方确认。",
+      "benefitValue": "若活动成立，可免除指定模型在 Qoder 内的 Credits 消耗；无法可靠估值，不等同赠送模型 API 余额。",
+      "eligibility": "社区讨论涉及免费和付费用户；国际版与国内版、账号资格及可用模型须在官方客户端核对，未登录测试。",
+      "regions": "活动支持的国家/地区及国内外版本差异待核实。",
+      "validity": "社区 10 月 25 日帖子称延期至 11 月 1 日；此前掘金文章仍写 10 月 25 日，最终以官方客户端活动说明为准。",
+      "deadlineNote": "官方未披露可读截止条款；社区日期未确认具体时刻和时区，endsAt 保持 null，不能当作确定截止时间。",
+      "officialUrl": "https://qoder.com/activities",
+      "claimUrl": "https://qoder.com/",
+      "discoveryUrl": "https://linux.do/t/topic/3072678",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "0 Credits、每日次数与免订阅资格尚未官方确认；不推定其他模型、Cloud Agents 沙箱或自带 API Key 免费，不自动订阅或购买。",
+      "confidence": "low",
+      "confidenceReason": "公开原帖可追溯且官网产品入口可访问；官网活动/定价页没有可读活动条款，延期、次数和收费边界均未核实。",
+      "discoveredAt": "2026-10-25T16:23:24.401Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-26T16:23:24.401Z",
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-10-25T16:23:24.401Z",
+          "status": "pending",
+          "note": "新增真实公开线索；已读取 LINUX DO 原帖和掘金旧文，官网活动与定价页正文为空，未确认限免延期，不设置成功核实时间。"
+        }
+      ]
+    },
+    {
+      "id": "lightvela-membership-cloud-trial-202610",
+      "title": "LightVela 云电脑会员赠送线索（待核实）",
+      "provider": "LightVela",
+      "category": "both",
+      "description": "LINUX DO 用户报告 LightVela 赠送会员及活跃奖励，合计可能达到三个月；官网可确认云端 AI Agent 产品，但会员赠送和云电脑配置仍待官方条款证实。",
+      "quota": "社区称初始会员、额外赠送及活跃 3 天奖励可累计约 3 个月；帖子标题写 2C8G，正文写 4C8G，实际 CPU、内存、磁盘、流量和并发未确认。",
+      "benefitValue": "社区所述会员时长最多约 3 个月，官方面值和实际发放条件待核实，无法可靠估值。",
+      "eligibility": "需 LightVela 账号；社区提到实名和活跃天数门槛，新老用户适用性、奖励领取入口及当前库存待核实。",
+      "regions": "社区涉及国内版及国际版；本条仅追踪 lightvela.com 入口，地区和实名支持范围未知。",
+      "validity": "赠送时长、领取期限、会员起算和到期回收规则待官方确认；不保证叠加三个月。",
+      "deadlineNote": "官网未提供本次赠送活动的可读截止条款；开始、领取截止和个人会员到期均未知。",
+      "officialUrl": "https://lightvela.com/",
+      "claimUrl": "https://lightvela.com/subscribe",
+      "discoveryUrl": "https://linux.do/t/topic/3071717",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "会员、模型积分和云电脑资源可能分别受限；试用后价格、自动续费、额外积分、存储/网络计费及停机回收规则未知，不能视作免费常驻 VPS。",
+      "confidence": "low",
+      "confidenceReason": "官网关于页标注腾讯轻量云出品，但订阅页无可读条款；赠送时长仅有社区说法，帖子自身配置不一致，保持待核实。",
+      "discoveredAt": "2026-10-25T16:23:24.401Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-26T16:23:24.401Z",
+      "evidence": [
+        {
+          "url": "https://lightvela.com/about",
+          "summary": "官网关于页自述由腾讯轻量云团队出品；仅佐证产品归属，不证明三个月赠送、云电脑规格或费用条件。",
+          "checkedAt": "2026-10-25T16:23:24.401Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T16:23:24.401Z",
+          "status": "pending",
+          "note": "新增社区会员福利线索；读取产品官网及关于页，订阅页无可读正文。未采信互相不一致的 2C8G/4C8G 配置，未登录或领取。"
+        }
+      ]
+    },
+    {
+      "id": "e2b-hobby-one-time-100-credit-2026",
+      "title": "E2B Hobby 一次性 100 美元沙箱额度（待核实）",
+      "provider": "E2B",
+      "category": "both",
+      "description": "E2B 面向 AI Agent 代码执行提供 Hobby 计划及一次性使用赠金；官网确认基础额度，赠金有效期及用尽后的处理还需核对。",
+      "quota": "官网列示一次性 $100 usage credit、最多 20 个并发沙箱、单次会话最长 1 小时；默认 2 vCPU/4 GiB RAM，Hobby 10 GiB 存储。",
+      "benefitValue": "官方面值 100 美元的一次性沙箱使用额度；不是每月赠送，不可提现。",
+      "eligibility": "需创建 E2B 账号；官网写明无需信用卡即可开始。聚合源标注新用户，完整发放资格与账户审核条件尚未确认。",
+      "regions": "本次读取的定价页未列出完整可注册国家/地区及沙箱可选区域，待核实。",
+      "validity": "一次性赠金，不按月补充；单次会话上限 1 小时；赠金有效期及暂停/保留策略未从本次官方证据确认。",
+      "deadlineNote": "官网定价页未披露该赠金额度的领取截止或个人额度到期日，不能视为永久有效。",
+      "officialUrl": "https://e2b.dev/pricing",
+      "claimUrl": "https://console.e2b.dev/",
+      "discoveryUrl": "https://aispoils.com/type/dev.html",
+      "creditCard": "not-required",
+      "autoRenewal": "unknown",
+      "costNotes": "Hobby 计划无基础月费，但计算另按秒消耗额度：默认 2 vCPU $0.000028/秒、4 GiB RAM $0.000018/秒；Hobby 10 GiB 存储标为免费。额度用尽后的停用/扣费、网络、税费和暂停存储收费仍待确认，不自动升级 Pro（$150/月另加用量）。",
+      "confidence": "medium",
+      "confidenceReason": "E2B 官方定价页确认 $100 一次性赠金、无需绑卡、会话/并发上限和基础费率；赠金有效期、完整地区资格及用尽处理尚不充分，控制台跳转登录未继续。",
+      "discoveredAt": "2026-10-25T16:23:24.401Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-26T16:23:24.401Z",
+      "evidence": [
+        {
+          "url": "https://e2b.dev/pricing",
+          "summary": "Hobby 列示 $100 一次性赠金、20 并发、1 小时会话、无需信用卡；默认 2 vCPU/4 GiB，计算另按秒收费，Hobby 10 GiB 存储免费；未列明赠金有效期。",
+          "checkedAt": "2026-10-25T16:23:24.401Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T16:23:24.401Z",
+          "status": "pending",
+          "note": "从 AI Spoils 沙箱专题发现并读取 E2B 官方定价；关键额度有官方佐证，但时效和用尽处理尚未完成核实，未登录控制台或创建沙箱。"
+        }
+      ]
     }
   ]
 }
