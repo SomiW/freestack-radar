@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { validateCatalog, displayStatus, needsReview } from '../src/resources.ts';
+import { validateCatalog, displayStatus, needsReview, isActiveReviewDue, dueActiveResources } from '../src/resources.ts';
 
 // 明确的合成夹具，只用于测试，不导入正式页面或 data。
 const now = new Date('2026-10-25T12:00:00Z');
@@ -57,9 +57,10 @@ test('待核实不会因为日期被升级为有效', () => {
 test('即将开始时间到了但没有复核时标为待核实', () => {
   assert.equal(displayStatus({...resource(),status:'upcoming',startsAt:'2026-10-25T00:00:00Z'} as any,now),'pending');
 });
-test('复核到期独立于资源状态', () => {
+test('复核到期考虑预设复核时间和有效活动 24 小时阈值', () => {
   assert.equal(needsReview({...resource(),nextReviewAt:'2026-10-25T12:00:00Z'} as any,now),true);
-  assert.equal(needsReview(resource() as any,now),false);
+  assert.equal(needsReview(resource() as any,now),true); // 距离 lastVerifiedAt 已超过 24 小时
+  assert.equal(needsReview({...resource(),lastVerifiedAt:'2026-10-24T12:01:00Z'} as any,now),false);
 });
 
 test('公开条目必须包含介绍、福利价值、领取入口、费用风险及可信解释', () => {
@@ -80,4 +81,41 @@ test('缺少高可信官方依据不允许标记有效', () => {
 test('待核实线索不能冒充高可信', () => {
   const pending={...resource(),status:'pending',lastVerifiedAt:null,evidence:[],history:[]};
   assert.ok(validateCatalog(catalog([pending]), now).some(x=>x.includes('高可信')));
+});
+
+test('有效活动 24 小时边界使用 UTC 时间差而非日历日', () => {
+  assert.equal(isActiveReviewDue({...resource(),lastVerifiedAt:'2026-10-24T12:01:00Z'} as any,now),false);
+  assert.equal(isActiveReviewDue({...resource(),lastVerifiedAt:'2026-10-24T12:00:00Z'} as any,now),true);
+  assert.equal(isActiveReviewDue({...resource(),lastVerifiedAt:'2026-10-24T11:59:59Z'} as any,now),true);
+  assert.equal(isActiveReviewDue({...resource(),lastVerifiedAt:'2026-10-25T00:01:00+08:00'} as any,new Date('2026-10-25T15:59:00Z')),false);
+});
+
+test('晚于 24 小时的 nextReviewAt 不能压制到期复核', () => {
+  const r={...resource(),nextReviewAt:'2026-11-15T00:00:00Z'};
+  assert.equal(isActiveReviewDue(r as any,now),true);
+});
+
+test('只扫描真正有效活动：已过期、未开始、待核实和失效都不加入 24 小时队列', () => {
+  for (const patch of [
+    {status:'expired'}, {status:'unavailable'}, {status:'pending'},
+    {status:'upcoming',startsAt:'2026-10-30T00:00:00Z'},
+    {status:'active',endsAt:'2026-10-25T11:00:00Z'}
+  ]) assert.equal(isActiveReviewDue({...resource(),...patch} as any,now),false);
+});
+
+test('24 小时到期资源全部入队并以最久未核实优先，不能只取前五条', () => {
+  const all=Array.from({length:8},(_,i)=>({
+    ...resource(),id:'review-'+i,
+    lastVerifiedAt:i<6?'2026-10-22T00:00:00Z':'2026-10-25T00:00:00Z'
+  }));
+  const due=dueActiveResources(all as any,now);
+  assert.equal(due.length,6);
+  assert.deepEqual(due.map(r=>r.id),Array.from({length:6},(_,i)=>'review-'+i));
+  assert.equal(all.length,8);
+});
+
+test('缺失核实时间不会跳过到期活动，核实时间刷新后重置 24 小时窗口', () => {
+  const original={...resource(),lastVerifiedAt:null};
+  assert.equal(isActiveReviewDue(original as any,now),true);
+  assert.equal(isActiveReviewDue({...resource(),lastVerifiedAt:'2026-10-25T11:55:00Z'} as any,now),false);
 });
