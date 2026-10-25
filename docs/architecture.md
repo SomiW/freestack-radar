@@ -21,6 +21,7 @@
 时间采用含时区的 ISO 8601；不公开的起止时间使用 null 并补充说明。
 `lastVerifiedAt` 只表示官方核实成功；抓取失败不能刷新它。
 `nextReviewAt` 是复核期限，过期不会自动把失败记录变成有效。
+存量活动每次运行必须扫描全部资源，使用当前 UTC 时间和单条 `lastVerifiedAt` 精确计算间隔；当前有效且距离上次成功核实已满 24 小时者全部列入复核队列，不依赖 Git commit 时间、页面更新时间或旧的 `nextReviewAt`。成功复核（包括没有条款变化）需增加官方证据与历史记录，更新 `lastVerifiedAt` 和 `nextReviewAt`（24 小时后或更早边界），再按已授权提交与构建发布流程更新；失败不刷新核实时间。
 
 状态包含 pending、active、upcoming、expired、unavailable。
 终止状态进入历史区。页面根据当前时间覆盖过期的有效状态，复核逾期显示提示。
