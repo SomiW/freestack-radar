@@ -35,7 +35,13 @@
           "lastVerifiedAt",
           "nextReviewAt",
           "evidence",
-          "history"
+          "history",
+          "description",
+          "benefitValue",
+          "claimUrl",
+          "costNotes",
+          "confidence",
+          "confidenceReason"
         ],
         "properties": {
           "title": {
@@ -217,6 +223,38 @@
                 }
               }
             }
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "benefitValue": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "claimUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "costNotes": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "confidenceReason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
           }
         }
       }
