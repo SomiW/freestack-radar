@@ -409,6 +409,144 @@
           "note": "从 AI Spoils 沙箱分类发现，读取 Daytona 官方定价、limits、billing 文档；200 美元额度与 Tier 1 资源有官方佐证，但有效期与绑卡要求未明，保持待核实，未注册或创建沙箱。"
         }
       ]
+    },
+    {
+      "id": "github-codespaces-personal-free-quota-2026",
+      "title": "GitHub Codespaces 个人账户每月内置免费额度",
+      "provider": "GitHub",
+      "category": "cloud",
+      "description": "GitHub 个人账户每月自带 Codespaces 计算与存储额度，可在浏览器或 VS Code 中直接启动云端 dev container，适合随时可用的远程开发环境和 AI 编码 Agent 的工作空间底座。",
+      "quota": "GitHub Free 个人账户：计算 120 hrs/月 + 存储 15 GB-month；GitHub Pro：计算 180 hrs/月 + 存储 20 GB-month。按官方计价表，2 核机型每小时消耗 2 个计算单位，120 hrs 等于约 60 小时 2 核运行。",
+      "benefitValue": "每月免费额度，按官方 2 核 $0.18/小时与存储 $0.07/GB-month 折算，Free 档约合 $10.8 计算 + $1.05 存储（约 $11.85/月）；不可提现，仅限 Codespaces 使用。",
+      "eligibility": "所有 GitHub 个人账户（Free、Pro）均内置额度，无需申请或领取；组织与企业账户不享免费额度；由 managed user account（EMU）拥有的仓库不可用 Codespaces。",
+      "regions": "官方 billing 文档未列地区限制；实际可用区域取决于账户与仓库的 Codespaces 区域设置。",
+      "validity": "计算额度在每个计费周期开始时重置为全额，不累积；存储按小时累计为 GB-month，同样在计费周期开始时归零。",
+      "deadlineNote": "官方未公布该内置免费额度的结束日期；属长期随账户附带的配额，但不代表永久不变，额度耗尽且无支付方式时会被阻断。",
+      "officialUrl": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+      "claimUrl": "https://github.com/codespaces",
+      "discoveryUrl": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+      "discoveredAt": "2026-10-25T22:32:42Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "额度用尽且账户无有效支付方式时，无法创建或恢复 codespace，需等下个计费周期重置；添加支付方式后超额按 2 核 $0.18/h、4 核 $0.36/h、8 核 $0.72/h、16 核 $1.44/h、32 核 $2.88/h 与存储 $0.07/GB-month 计费；prebuild 另消耗 Actions 分钟。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "GitHub 官方 billing 文档明确列出 Free/Pro 档的每月计算与存储额度、各机型单价、无支付方式时的阻断规则与重置方式；未登录实测创建 codespace。",
+      "lastVerifiedAt": "2026-10-25T22:32:42Z",
+      "nextReviewAt": "2026-10-26T22:32:42Z",
+      "evidence": [
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "官方免费配额表：GitHub Free 15 GB-month + 120 hrs，Pro 20 GB-month + 180 hrs；组织/企业无免费额度；无有效支付方式时额度用尽即阻断，需等下周期重置。",
+          "checkedAt": "2026-10-25T22:32:42Z"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "同页计价表：2 核 $0.18/h、4 核 $0.36/h、8 核 $0.72/h、16 核 $1.44/h、32 核 $2.88/h，存储 $0.07/GB-month；2 核机型每小时的额度倍率为 2。",
+          "checkedAt": "2026-10-25T22:32:42Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T22:32:42Z",
+          "status": "active",
+          "note": "读取 GitHub 官方 Codespaces billing 文档，确认 Free/Pro 每月配额、单价与超额阻断规则；前一次运行因单次上限未写入，本次补录。未登录创建 codespace。"
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-shell-free-weekly-quota-2026",
+      "title": "Google Cloud Shell 免费云端 Shell（50 小时/周 + 5 GB 主目录）",
+      "provider": "Google Cloud",
+      "category": "cloud",
+      "description": "浏览器内直接打开的免费 Debian 虚拟机 Shell，自带 Cloud CLI、Docker、git 与主流语言运行时，拥有 root 权限和 5 GB 持久 $HOME，适合临时开发、云资源操作和免安装的远端工作空间。",
+      "quota": "每周 50 小时使用配额；5 GB 永久性磁盘挂载为 $HOME；临时 Debian 虚拟机（root 权限），预装 Cloud CLI、gsutil、Docker、git、Python 3.12、Node LTS、Java 17/21、Go、Ruby 3.2、PHP 8.3、.NET SDK 等，容器镜像每周更新。",
+      "benefitValue": "官方明确 Cloud Shell 对 Cloud 账号用户免费（$0）；官方未给出等价市场价，不折算货币价值。",
+      "eligibility": "需要 Google Cloud 账号，打开即用、无需领取；不适用于 18 周岁以下或年龄未知用户，Google Workspace 教育版默认禁用；组织可整体关闭访问权限。",
+      "regions": "分布在多个 Google Cloud 区域，首次连接自动分配最近的可用区域，用户不能手动选择；每用户每会话独立分配实例。",
+      "validity": "每周 50 小时配额，按周重置，用完需等到重置时间；实例在 40 分钟不活动后终止（官方“运作方式”页写 1 小时，两页不一致，以限制页 40 分钟为准）；单会话上限 12 小时；$HOME 连续 120 天未访问会被删除且不可恢复。",
+      "deadlineNote": "官方未公布免费策略结束日期；属长期免费产品，但不等同承诺永久免费，配额不可扩容。",
+      "officialUrl": "https://docs.cloud.google.com/shell/docs/limitations",
+      "claimUrl": "https://shell.cloud.google.com/",
+      "discoveryUrl": "https://docs.cloud.google.com/shell/docs/limitations",
+      "discoveredAt": "2026-10-25T22:32:42Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "Cloud Shell 本身免费；超出每周配额只能等待重置，官方未提供 Cloud Shell 付费扩容，需要更大额度或更强持久化须改用 Cloud Workstations 或 Compute Engine（另行计费）；$HOME 固定 5 GB 不可扩容，虚拟机本体除 $HOME 外不留存；文档未规定必须绑定结算账号，本次未登录实测。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Google 官方限制页确认每周 50 小时配额、5 GB 持久盘及 120 天删除规则、40 分钟空闲终止与 12 小时会话上限，价格页确认免费；绑卡要求未在文档中规定、未实测登录，故 creditCard 记 unknown。",
+      "lastVerifiedAt": "2026-10-25T22:32:42Z",
+      "nextReviewAt": "2026-10-26T22:32:42Z",
+      "evidence": [
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/limitations",
+          "summary": "限制页：默认每周配额 50 小时；免费预配 5 GB 永久性磁盘作为 $HOME；不活动 40 分钟实例终止、非交互会话 40 分钟结束、单会话上限 12 小时；$HOME 120 天未访问自动删除且不可恢复；18 周岁以下不可用。",
+          "checkedAt": "2026-10-25T22:32:42Z"
+        },
+        {
+          "url": "https://cloud.google.com/shell/pricing",
+          "summary": "官方价格页：拥有 Google Cloud 账号的用户可免费使用 Cloud Shell，未列出 Cloud Shell 自身收费项。",
+          "checkedAt": "2026-10-25T22:32:42Z"
+        },
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/how-cloud-shell-works",
+          "summary": "运作方式页：临时 Compute Engine 虚拟机跑 Debian 容器，用户有 root，预装 Cloud CLI/Docker/git 与各语言运行时；仅 $HOME 持久；区域自动就近分配且不可手动选；该页写不活动 1 小时终止，与限制页 40 分钟冲突。",
+          "checkedAt": "2026-10-25T22:32:42Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T22:32:42Z",
+          "status": "active",
+          "note": "读取 Cloud Shell 限制页、价格页与运作方式页，确认 50 小时/周、5 GB $HOME、会话与空闲上限，并记录两页空闲超时不一致；前一次运行因单次上限未写入，本次补录。未登录实测。"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-ecs-99-yuan-year-202610",
+      "title": "阿里云 ECS 入门实例 99 元/年（2 核 2G，续费同价）",
+      "provider": "阿里云",
+      "category": "cloud",
+      "description": "阿里云官方活动页列出的入门云服务器：2 核 2G、3M 固定带宽、40G ESSD Entry 系统盘，限购 1 台、续费同价 99 元/年；首购价、活动截止与“锁价至 2029 年”等说法来自社区且未在活动页正文确认。",
+      "quota": "2 vCPU、2 GiB 内存、3 Mbps 固定带宽、40 GB ESSD Entry 系统盘；每账号限购 1 台。",
+      "benefitValue": "99 元/年续费价（约 8.25 元/月）；官方活动页未给出同配置原价，无法可靠折算折扣幅度。",
+      "eligibility": "需阿里云账号并完成实名认证（国内站惯例，活动规则区由脚本加载、本次未读到完整规则）；限购 1 台；是否新老用户同享未在页面静态文本中确认。",
+      "regions": "阿里云中国内地地域，具体可选地域与可用区以购买页为准，本次未逐一确认。",
+      "validity": "按年计费，官方页面写明“续费 99 元 1 年”；社区所称“一口价锁至 2029 年”“不限流量”未在活动页静态文本出现，待核实。",
+      "deadlineNote": "活动起止时间官方页面未在可读文本中给出（活动规则区为异步加载），endsAt 保持 null；不能视为长期有效价格。",
+      "officialUrl": "https://www.aliyun.com/daily-act/ecs/activity_selection",
+      "claimUrl": "https://www.aliyun.com/daily-act/ecs/activity_selection",
+      "discoveryUrl": "https://linux.do/t/topic/3069603",
+      "discoveredAt": "2026-10-25T22:32:42Z",
+      "creditCard": "required",
+      "autoRenewal": "unknown",
+      "costNotes": "99 元/年为付费购买而非免费额度，续费按官方页面同价 99 元/年；套餐外带宽升级、公网流量超出、快照、备份、额外云盘与公网 IP 按阿里云标准价另计，活动页未列明；是否默认自动续费、到期后数据保留期未确认。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "阿里云官方活动页确认 2 核 2G/3M/40G ESSD Entry 配置与“续费 99 元 1 年”；首购价、活动起止、锁价年限、新老用户资格、是否不限流量均由脚本加载或仅见社区说法，故保持待核实。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-26T22:32:42Z",
+      "evidence": [
+        {
+          "url": "https://www.aliyun.com/daily-act/ecs/activity_selection",
+          "summary": "官方活动页正文：限购 1 台，持续低价“续费 99 元 1 年”，热门配置 2 核 2G、3M 固定带宽、40G ESSD Entry 盘；活动规则区由脚本加载，未读到活动时间与完整资格条款。",
+          "checkedAt": "2026-10-25T22:32:42Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-25T22:32:42Z",
+          "status": "pending",
+          "note": "从 LINUX DO 福利羊毛 RSS 发现并读取阿里云官方活动页；配置与 99 元/年续费价有官方佐证，首购价、活动期与锁价年限未确认，保持待核实。未登录、未购买。"
+        }
+      ]
     }
   ]
 }
