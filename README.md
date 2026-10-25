@@ -7,7 +7,7 @@
 
 静态站点已部署：[访问 FreeStack Radar](https://somiw.github.io/freestack-radar/)。
 正式活动数据为空；不会把测试样本当作采集成果。
-GitHub Actions 测试、构建与 Pages 发布已实际通过；云端定时研究和无人值守内容写入仍待验证。
+GitHub Actions 测试、构建与 Pages 发布已实际通过；新增采集发布 Skill 及活动可信度字段，但**尚未实现/启用定时采集执行器与无人值守官方核实和数据写入**。
 
 ## 本地运行
 
@@ -30,9 +30,12 @@ npm run dev
 - [架构](docs/architecture.md)：数据、研究任务和发布链路。
 - [风险与实测记录](docs/risks-and-validation.md)：区分支持声明与账户实测。
 - [分阶段计划](docs/plans/2026-10-25-phase-one.md)：执行顺序与验收条件。
-- [Resource Research Skill](.agents/skills/resource-research/SKILL.md)：后续研究任务方法。
+- [Resource Research Skill](.agents/skills/resource-research/SKILL.md)：逐条核实官方证据和活动变更。
+- [Resource Collection & Publishing Skill](.agents/skills/resource-collection-publishing/SKILL.md)：论坛/聚合站/厂商来源发现、官方核实、可信等级、增量 JSON 更新及 Pages 自动发布的端到端操作规范。
+- [监控源与重点厂商](.agents/skills/resource-collection-publishing/references/sources.md)：LINUX DO、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、掘金和厂商官网。
 
 正式数据在 `data/resources.json`，契约在 `schema/resources.schema.json`。
 远端仓库为 `SomiW/freestack-radar`。用户已授权创建远端及静态站点部署。
 `ENABLE_PAGES=true`，Pages 使用 GitHub Actions；main 分支更新会自动检查、构建和发布。
+新增的活动字段包括介绍、福利价值、官方领取入口、费用风险、可信程度和核实说明。更新 main 并通过校验后会触发 Pages 发布；仅新增 Skill 不会产生数据、不代表定时监控已运行。
 不自动开启付费资源；研究任务的远端写入和定时启用仍需单独配置。
