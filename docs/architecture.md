@@ -3,7 +3,7 @@
 页面直接消费仓库中的 JSON，研究与发布分离，保持静态站点可复现。
 
 ```text
-社区/聚合站/厂商官网 ← 采集器（待实现）+ Collection Publishing Skill
+社区/聚合站/厂商官网 ← Skill 驱动运行（人工/Agent 触发，无定时采集器）+ Collection Publishing Skill
                ↓ 官方资料核实 + Resource Research Skill
                           ↓ 证据核实、差异更新
                     data/resources.json
@@ -55,6 +55,6 @@ Vite 使用相对资源路径，适配项目子路径且无客户端多级路由
 
 ## 采集发布 Skill 与实际执行的区别
 
-新增 `.agents/skills/resource-collection-publishing/SKILL.md` 统一定义来源、官网复核门槛、权益价值/收费风险、可信等级、JSON 差异与 Pages 验收；`resource-research` 保持单条证据复核职责。具体需要落实可执行的非 LLM 采集器与云端 GitHub Actions `schedule` 后才能自动运行。发布由 `pages.yml` 在 main 推送时触发；真实候选草案可直接显示 pending，未经官网确认不得称 active。
+新增 `.agents/skills/resource-collection-publishing/SKILL.md` 统一定义来源、官网复核门槛、权益价值/收费风险、可信等级、JSON 差异与 Pages 验收；`resource-research` 保持单条证据复核职责。项目已决定**不实现采集器、不配置 `schedule` 定时 workflow**：每次运行由人工或 Agent 显式触发，`pages.yml` 仅在 main 推送后构建部署，`ci.yml` 只跑测试。发布由 `pages.yml` 在 main 推送时触发；真实候选草案可直接显示 pending，未经官网确认不得称 active。
 
 新数据字段（schemaVersion 1 的首批正式内容前扩展）：`description`、`benefitValue`、`claimUrl`、`costNotes`、`confidence`、`confidenceReason`；当前数据为空，合成测试更新在 tests，禁止假样例进入 data。

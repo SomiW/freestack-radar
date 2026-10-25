@@ -1,13 +1,13 @@
 ---
 name: resource-collection-publishing
-description: 为 FreeStack Radar 端到端指导多来源福利线索发现、官方核实、增量更新 JSON、质量门禁以及 GitHub Pages 发布。用于采集任务设计、定时运行、活动复核和发布排障，不负责代领或注册账号。
+description: 为 FreeStack Radar 端到端指导多来源福利线索发现、官方核实、增量更新 JSON、质量门禁以及 GitHub Pages 发布。用于采集任务设计、按需运行、活动复核和发布排障，不负责代领或注册账号。
 ---
 
 # Resource Collection & Publishing
 
 本 Skill 是**采集/核实/发布编排规范**；已有 `.agents/skills/resource-research/SKILL.md` 是逐条活动研究与证据规则，两者应同时遵守。开始前必须读取 `AGENTS.md`、`docs/core-goals.md`、`docs/architecture.md`、`schema/resources.schema.json`、`data/resources.json`、`.github/workflows/pages.yml` 和已有研究 Skill；以当前仓库文件为准，不依赖过时的上下文摘要。
 
-> **草案直发**：可将真实公开福利线索以 `pending` 状态直接发布，不必等待人工审核或所有条款核实。未经官方证据证实不可标 `active`。Skill 本身不运行定时采集，仍需单独部署执行器；已有 Pages 在 main 推送后部署。
+> **草案直发**：可将真实公开福利线索以 `pending` 状态直接发布，不必等待人工审核或所有条款核实。未经官方证据证实不可标 `active`。**本项目按 Skill 驱动运行，不实现定时采集器、不配置 `schedule` 定时 workflow**；每次运行由人工或 Agent 显式发起，已有 Pages 在 main 推送后部署。
 
 ## 目标与不变约束
 
@@ -77,13 +77,15 @@ description: 为 FreeStack Radar 端到端指导多来源福利线索发现、�
 5. 有新线索或成功复核元数据就提交；无真实变化不提交。检查 Pages 工作流实际成功和线上资源数，不把“已提交”冒称为“已上线”。
 6. 所有现有有效活动仍按 24 小时的 `lastVerifiedAt` 规则复核；成功追加官方 evidence/history 和时间，即使条款无变化也更新；失败不刷新。
 
-## 5. 定时执行方案与验收边界
+## 5. 运行方式与验收边界
 
-- 建议链路：`GitHub Actions schedule / workflow_dispatch` → Python/RSS 发现真实线索 → 生成 JSON（待核实可 pending）→ 最小格式/构建校验 → 直接提交 main → Pages 发布 → 后续继续官方核实。
-- **不要把 Skill 当成 GitHub Actions 的执行程序**；定时 workflow、采集器、厂商适配与日志仍须单独实现。允许直接发布 pending 草案；只有官方条件足以证实的才能标 active。
-- 计划的定时任务要显式规定 UTC cron、速率、超时、重试上限、来源名单、权限及失败告警；每次运行都扫描全部有效活动的 `lastVerifiedAt`，处理满 24 小时的条目。任务应至少每天执行一次；考虑 GitHub 调度延迟和失败，建议更短的检查间隔，但不应为了刷新时戳而在未到 24 小时时重复核实。不能保证严格 24 小时触发。不要依赖持续运行的本地 Mac 或 Codex 账号额度。
-- 至少测试：新增真实条目、重复线索、23:59 未满/24:00 恰好到期/超过 24 小时、UTC 跨日、已结束或待核实不选中、`nextReviewAt` 较晚仍应复核、成功无业务变化仍写回核实记录、官方页面失败不更新时间、批量积压处理、并发冲突、没有任何成功复核及业务变化不提交、构建失败不发布、Pages 线上验收。
-- 只报告真实执行结果。没有实现可执行采集器、没有配置 cron 或缺少权限时必须明确标注 **未实现/未验证**，不能宣称已开始监控。
+- **运行模型：Skill 驱动，不做定时调度。** 不实现采集器、不新增 GitHub Actions `schedule` 定时 workflow、不依赖常驻本地机器或后台执行器；每次运行由人工或 Agent 显式发起并完整走一遍本 Skill（发现 → 官方核实 → 写 JSON → 校验 → 推送 → Pages 验收）。
+- 运行频率由人决定，但**每次运行都必须扫描全部当前有效活动的 `lastVerifiedAt`**，逐条处理已满 24 小时者；未完成时按最早 `lastVerifiedAt` 排序留待下次，并明确报告积压，不能声称“全部复核完毕”。不应为了刷新时戳而在未满 24 小时时重复核实。
+- `.github/workflows/pages.yml` 只做构建与部署，`ci.yml` 只做测试；两者都不是采集任务，不得用它们的存在暗示“已在自动监控”。
+- 每次运行的真实结果（来源成功率、复核计数、证据、校验输出、提交 SHA、Pages run 与线上抽检）记录到 `docs/research/YYYY-MM-DD-*.md`；`automation/research-prompt.md` 是单次运行的提示词模板，不是定时任务配置。
+- 若将来要恢复定时调度，须先显式修改本约定并另行验收，不得默认假定存在后台执行器。
+- 只报告真实执行结果。未执行校验、未推送、未部署或缺少权限时必须明确标注 **未执行/未验证**，不能宣称已核实或已上线。
+- 至少保留测试覆盖：新增真实条目、重复线索、23:59 未满/24:00 恰好到期/超过 24 小时、UTC 跨日、已结束或待核实不选中、`nextReviewAt` 较晚仍应复核、成功无业务变化仍写回核实记录、官方页面失败不更新时间、批量积压处理、并发冲突、无成功复核无业务变化不提交、构建失败不发布。
 
 ## 6. 单次运行报告格式
 

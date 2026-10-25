@@ -22,10 +22,10 @@
 
 ## 已确定技术方向
 
-Resource Collection & Publishing Skill 与 Resource Research Skill 负责规范发现、核实与更新；优先考虑 GitHub Actions 云端非 LLM 采集执行器（尚未落地），而不是依赖 Codex 桌面定时任务。
-GitHub 仓库保存 JSON；GitHub Actions 测试构建并发布到 Pages。
+Resource Collection & Publishing Skill 与 Resource Research Skill 负责规范发现、核实与更新；**运行方式为 Skill 驱动**（2026-10-26 决策，取代此前的云端执行器方向）：不实现定时采集器，也不配置 GitHub Actions `schedule` 定时 workflow，采集由人工或 Agent 按需触发。
+GitHub 仓库保存 JSON；GitHub Actions 测试构建并发布到 Pages（`pages.yml` 仅构建部署，不承担采集）。
 前端采用 React + Vite + TypeScript，无业务后端和用户数据库。
-优先验证针对远端仓库的云端无人值守更新，不能用桌面定时运行代替验收。
+不再以“云端无人值守更新”为验收目标；验收以每次 Skill 驱动运行的真实记录（来源、证据、提交、发布结果）为准。
 
 ## 明确不做
 
@@ -35,15 +35,21 @@ GitHub 仓库保存 JSON；GitHub Actions 测试构建并发布到 Pages。
 ## 成功标准
 
 任何展示条目都必须有真实可追溯的发现来源；没有官方证据只能以 pending 草案展示，不能标有效。
-定时更新必须有真实运行记录、远端提交及无人干预证据才能标记通过。
+每次 Skill 驱动运行必须有真实记录：来源、官方证据与读取时间、提交 SHA、Pages 运行与线上抽检结果；不得把 Skill 文件或 Pages 工作流当作已运行的采集任务。
 没有新发现、活动变更或成功复核时保持数据不变；成功复核即使条款未变也记录真实核实元数据；失败时保留最后可信记录，不伪造复核成功。
 
 ## 2026-10-25 新增的采集与发布约束
 
 重点关注免费/超低价 VPS 与云服务器、云电脑与 AI Agent 沙箱、AI 编程工具、模型 API 免费额度、代金券及官方开发者福利。信息来源涵盖 LINUX DO 的福利羊毛区、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、赚客大家谈、掘金，以及相关厂商官方活动页。所有已入库有效活动不分厂商，距上次成功官方核实已满 24 小时必须复核，结果写入正式 JSON（含核实时间、证据、历史和变化）；失败不伪造核实记录。
 
-以独立 Collection Publishing Skill 指导发现→官方核实→JSON 更新→校验→Pages；新增活动介绍、福利价值、领取入口、费用风险、核实时间和可信程度字段。仅社区线索不得直接标记为有效。电脑关机仍执行、定时不消耗 Codex 模型额度是正式调度的优先验收目标，优先 GitHub Actions 非 LLM 规则采集；不得把技能文件或已有 Pages 工作流误称为采集任务已运行。
+以独立 Collection Publishing Skill 指导发现→官方核实→JSON 更新→校验→Pages；新增活动介绍、福利价值、领取入口、费用风险、核实时间和可信程度字段。仅社区线索不得直接标记为有效。~~电脑关机仍执行、定时不消耗 Codex 模型额度是正式调度的优先验收目标~~（已于 2026-10-26 决策放弃定时调度，改为 Skill 驱动运行）；不得把技能文件或已有 Pages 工作流误称为采集任务已运行。
+
+## 2026-10-26 运行方式决策（取代定时调度方向）
+
+**不实现定时采集器，不新增 `schedule` 定时 workflow。** 项目按 Skill 驱动运行：每次由人工或 Agent 显式发起，按 `resource-collection-publishing` + `resource-research` 执行发现→官方核实→写 JSON→校验→推送→Pages 验收，真实结果记录到 `docs/research/YYYY-MM-DD-*.md`。
+因此不再要求 UTC cron、调度延迟补偿或后台执行器；但 24 小时 `lastVerifiedAt` 复核规则不变——每次运行仍须扫描全部当前有效活动并处理已满 24 小时者，未处理项必须列为积压，不能报告“全部复核完毕”。
+`automation/research-prompt.md` 保留为单次运行的提示词模板，不是定时任务配置。
 
 ## 2026-10-26 草案直发决策
 
-真实新线索可跳过人工审核、PR 和全部官方核实的发布前置条件，以 pending 状态直接写入 main 更新静态页面；已有官方充分核实的活动可以标 active。不能伪造条款、库存、核实时间或实际领取。仅保留 JSON Schema/语义与站点构建的技术底线；完整测试交由独立 CI。24 小时存量有效活动复核仍保留。定时采集器尚未实现，不能把 Skill 当作采集任务。
+真实新线索可跳过人工审核、PR 和全部官方核实的发布前置条件，以 pending 状态直接写入 main 更新静态页面；已有官方充分核实的活动可以标 active。不能伪造条款、库存、核实时间或实际领取。仅保留 JSON Schema/语义与站点构建的技术底线；完整测试交由独立 CI。24 小时存量有效活动复核仍保留。没有定时采集器，也不计划实现，采集一律由 Skill 驱动运行。

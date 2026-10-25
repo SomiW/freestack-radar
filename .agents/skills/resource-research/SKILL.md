@@ -43,4 +43,4 @@ description: 为 FreeStack Radar 发现和复核 AI 与云资源免费额度及�
 
 ## 与采集发布编排的关系
 
-当任务涉及多源线索发现、GitHub 定时采集、写入 JSON、发布 GitHub Pages 时，先遵循 `../resource-collection-publishing/SKILL.md`；本 Skill 只负责逐条官方证据与状态复核。新资源必须按当前 Schema 提供 `description`、`benefitValue`、`claimUrl`、`costNotes`、`confidence`、`confidenceReason`；仅高可信且有官方证据的活动可标为 active。缺少官方证明/重要收费或资格信息的记录只保留待核实，不可强行提高可信级别。
+当任务涉及多源线索发现、写入 JSON、发布 GitHub Pages 时（本项目按 Skill 驱动运行，不做定时采集），先遵循 `../resource-collection-publishing/SKILL.md`；本 Skill 只负责逐条官方证据与状态复核。新资源必须按当前 Schema 提供 `description`、`benefitValue`、`claimUrl`、`costNotes`、`confidence`、`confidenceReason`；仅高可信且有官方证据的活动可标为 active。缺少官方证明/重要收费或资格信息的记录只保留待核实，不可强行提高可信级别。
