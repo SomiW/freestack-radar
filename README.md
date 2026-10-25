@@ -32,7 +32,7 @@ npm run dev
 - [分阶段计划](docs/plans/2026-10-25-phase-one.md)：执行顺序与验收条件。
 - [Resource Research Skill](.agents/skills/resource-research/SKILL.md)：逐条核实官方证据和活动变更。
 - [Resource Collection & Publishing Skill](.agents/skills/resource-collection-publishing/SKILL.md)：论坛/聚合站/厂商来源发现、官方核实、可信等级、增量 JSON 更新及 Pages 自动发布的端到端操作规范。
-- [监控来源与统一复核规则](.agents/skills/resource-collection-publishing/references/sources.md)：LINUX DO、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、掘金和厂商官网。
+- [监控来源与统一复核规则](.agents/skills/resource-collection-publishing/references/sources.md)：LINUX DO 福利羊毛区、NodeSeek、NodeLoc、AI Spoils、AIdeal、线报酷、AI 福利雷达、赚客大家谈、掘金和厂商官方活动页；重点覆盖免费/超低价 VPS、云服务器、云电脑/AI Agent 沙箱、AI 编程工具、模型 API 免费额度、代金券和官方开发者福利。
 
 正式数据在 `data/resources.json`，契约在 `schema/resources.schema.json`。
 远端仓库为 `SomiW/freestack-radar`。用户已授权创建远端及静态站点部署。
