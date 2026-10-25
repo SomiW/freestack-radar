@@ -7,16 +7,20 @@ const date = (value: string | null) => value ? new Date(value).toLocaleString('z
 function ResourceCard({resource: r, now}: {resource: Resource; now: Date}) {
   return <article className="resource">
     <div className="eyebrow">{r.provider} · {r.category.toUpperCase()}</div>
-    <h3>{r.title}</h3><span className="badge">{labels[displayStatus(r, now)]}</span>
+    <h3>{r.title}</h3><p>{r.description}</p><span className="badge">{labels[displayStatus(r, now)]}</span>
+    <span className="badge">可信程度：{{high:'高',medium:'中',low:'低'}[r.confidence]}</span>
     {needsReview(r, now) && <span className="badge warning">已到复核时间</span>}
     <dl>
-      <dt>额度 / 福利</dt><dd>{r.quota}</dd><dt>领取条件</dt><dd>{r.eligibility}</dd>
+      <dt>额度 / 福利</dt><dd>{r.quota}</dd><dt>福利价值</dt><dd>{r.benefitValue}</dd>
+      <dt>核实依据</dt><dd>{r.confidenceReason}</dd><dt>费用与风险</dt><dd>{r.costNotes}</dd>
+      <dt>领取条件</dt><dd>{r.eligibility}</dd>
       <dt>适用地区</dt><dd>{r.regions}</dd><dt>信用卡</dt><dd>{{required:'需要', 'not-required':'不需要', unknown:'未知'}[r.creditCard]}</dd>
       <dt>自动续费</dt><dd>{{yes:'是', no:'否', unknown:'未知'}[r.autoRenewal]}</dd>
       <dt>额度有效期</dt><dd>{r.validity}</dd><dt>活动时间</dt><dd>{date(r.startsAt)} 至 {date(r.endsAt)}；{r.deadlineNote}</dd>
       <dt>最后核实</dt><dd>{r.lastVerifiedAt ? date(r.lastVerifiedAt) : '尚未核实'}</dd><dt>下次复核</dt><dd>{date(r.nextReviewAt)}</dd>
     </dl>
-    <a href={r.officialUrl} target="_blank" rel="noreferrer">查看官方入口 ↗</a>
+    <a href={r.officialUrl} target="_blank" rel="noopener noreferrer">查看官方活动介绍 ↗</a>{' · '}
+    <a href={r.claimUrl} target="_blank" rel="noopener noreferrer">打开官方领取入口 ↗</a>
     <details><summary>官方证据与核实历史</summary>
       <p>发现于 {date(r.discoveredAt)} · <a href={r.discoveryUrl}>发现来源</a></p>
       {r.evidence.map((e,i)=><p key={i}><a href={e.url}>官方证据 {i+1}</a> · {date(e.checkedAt)}<br/>{e.summary}</p>)}

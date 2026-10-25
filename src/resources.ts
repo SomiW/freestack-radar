@@ -2,7 +2,7 @@ import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import schema from '../schema/resources.schema.json';
 import type { Catalog } from './types';
-export { displayStatus, needsReview } from './status';
+export { displayStatus, needsReview, isActiveReviewDue, dueActiveResources, ACTIVE_REVIEW_INTERVAL_MS } from './status';
 const ajv = new Ajv({allErrors:true, strict:true});
 addFormats(ajv);
 const check = ajv.compile<Catalog>(schema);
@@ -19,6 +19,9 @@ export function validateCatalog(input: unknown, now = new Date()): string[] {
     if (Date.parse(r.discoveredAt) > +now) fail('发现时间不能在未来');
     if (r.startsAt && r.endsAt && Date.parse(r.startsAt) >= Date.parse(r.endsAt)) fail('活动起止时间倒序');
     if (r.status !== 'pending' && (!r.lastVerifiedAt || !r.evidence.length || !r.history.length)) fail('非待核实状态必须有官方证据和核实历史');
+    if (r.status === 'active' && r.confidence !== 'high') fail('有效状态必须有高可信官方证据');
+    if (r.confidence === 'high' && (!r.lastVerifiedAt || !r.evidence.length)) fail('高可信必须有成功核实时间及官方证据');
+    if (r.status === 'pending' && r.confidence === 'high') fail('待核实不能标高可信');
     if (r.lastVerifiedAt) {
       const verified = Date.parse(r.lastVerifiedAt);
       if (verified > +now || verified < Date.parse(r.discoveredAt)) fail('核实时间不能在未来或早于发现');
