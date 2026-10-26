@@ -15,6 +15,16 @@ const categories = [['all', '全部'], ['ai', 'AI 工具'], ['cloud', '云与基
 // 与 style.css 中切换为底部筛选面板的断点保持一致。
 const DESKTOP_QUERY = '(min-width: 900px)';
 
+// 主题默认浅色；仅当用户手动切到深色并持久化后才用深色。
+type Theme = 'light' | 'dark';
+function readTheme(): Theme {
+  try {
+    return localStorage.getItem('fsr-theme') === 'dark' ? 'dark' : 'light';
+  } catch {
+    return 'light';
+  }
+}
+
 function dateTime(value: string | null): string {
   if (!value) return '未披露';
   const d = new Date(value);
@@ -46,13 +56,15 @@ function relative(value: string | null, now: Date): string {
   return diff < 0 ? `${n}${unit}前` : `${n}${unit}后`;
 }
 
-function Logo() {
-  return (
-    <svg className="logo" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-      <circle cx="14" cy="14" r="11" opacity=".35" />
-      <circle cx="14" cy="14" r="6" opacity=".6" />
-      <path d="M14 14 21.5 7.5" strokeLinecap="round" />
-      <circle cx="14" cy="14" r="1.8" fill="currentColor" stroke="none" />
+function ThemeIcon({ dark }: { dark: boolean }) {
+  return dark ? (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+      <path d="M16 12.2A6.6 6.6 0 0 1 7.8 4a6.6 6.6 0 1 0 8.2 8.2Z" strokeLinejoin="round" />
+    </svg>
+  ) : (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+      <circle cx="10" cy="10" r="4" />
+      <path d="M10 1.8v1.8M10 16.4v1.8M1.8 10h1.8M16.4 10h1.8M4.2 4.2l1.3 1.3M14.5 14.5l1.3 1.3M15.8 4.2l-1.3 1.3M5.5 14.5l-1.3 1.3" strokeLinecap="round" />
     </svg>
   );
 }
@@ -160,10 +172,16 @@ export function App() {
   const sheetRef = useRef<HTMLElement>(null);
   const filterBtnRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
+  const [theme, setTheme] = useState<Theme>(readTheme);
   useEffect(() => {
     const timer = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(timer);
   }, []);
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#0f1512' : '#f4f6f0');
+    try { localStorage.setItem('fsr-theme', theme); } catch { /* 忽略写入失败 */ }
+  }, [theme]);
 
   // 移动端筛选面板：锁定背景滚动、Esc 关闭、切到桌面宽度时自动收起。
   useEffect(() => {
@@ -217,16 +235,9 @@ export function App() {
   return (
     <>
       <a className="skip" href="#catalog">跳到资源目录</a>
-      <header className="top">
-        <div className="wrap top-inner">
-          <a className="brand" href="./"><Logo /><span>FreeStack Radar</span></a>
-          <span className="tag">公开 · 免费 · 只读</span>
-        </div>
-      </header>
 
       <main>
         <section className="wrap hero">
-          <p className="kicker">AI 与云资源福利目录</p>
           <h1>免费额度，<em>先看清条件。</em></h1>
           <p className="lede">
             汇集 AI 与云资源的免费额度与限时活动。每条记录标注官方证据、领取门槛、费用风险与下次复核时间；
@@ -336,6 +347,14 @@ export function App() {
                 {visible.length} 条{filtered ? ` / ${group.length}` : ''}
                 {filtered && <button className="link" onClick={resetFilters}>清除</button>}
               </p>
+              <button
+                className="btn icon-btn theme-toggle"
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                aria-label={theme === 'dark' ? '切换到浅色模式' : '切换到深色模式'}
+                title={theme === 'dark' ? '切换到浅色模式' : '切换到深色模式'}
+              >
+                <ThemeIcon dark={theme === 'dark'} />
+              </button>
             </div>
 
             {visible.length ? (

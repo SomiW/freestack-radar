@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="可追溯的 AI 与云资源福利目录，展示官方证据、领取条件、额度和复核时间。" />
-    <meta name="theme-color" content="#f4f6f0" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f4f6f0" />
+    <meta name="color-scheme" content="light" />
     <title>FreeStack Radar · AI 与云资源雷达</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="canonical" href="https://somiw.github.io/freestack-radar/" />
@@ -19,6 +18,16 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="FreeStack Radar · AI 与云资源雷达" />
     <meta name="twitter:description" content="免费额度，先看清条件。每条记录标注官方证据、领取门槛、费用风险与下次复核时间。" />
+    <script>
+      // 在 React 挂载前定主题，避免深色用户看到浅色闪白。
+      (function () {
+        var dark = false;
+        try { dark = localStorage.getItem('fsr-theme') === 'dark'; } catch (e) {}
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', dark ? '#0f1512' : '#f4f6f0');
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

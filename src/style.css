@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #f4f6f0;
   --bg-glass: rgba(244, 246, 240, .9);
   --surface: #ffffff;
@@ -35,9 +35,10 @@
     "Noto Sans SC", "Microsoft YaHei", "Segoe UI", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1512;
+/* 默认浅色；仅在 html[data-theme="dark"] 时切换到深色 token。 */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0f1512;
     --bg-glass: rgba(15, 21, 18, .88);
     --surface: #161e1a;
     --surface-2: #1c2621;
@@ -64,7 +65,6 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, .3);
     --shadow-hover: 0 4px 16px rgba(0, 0, 0, .35);
     --shadow-sheet: 0 -8px 32px rgba(0, 0, 0, .5);
-  }
 }
 
 * { box-sizing: border-box; }
@@ -132,36 +132,11 @@ button { font: inherit; color: inherit; }
   text-decoration: none;
 }
 
-/* header */
-
-.top { border-bottom: 1px solid var(--line); padding-top: env(safe-area-inset-top); }
-.top-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -.01em;
-  text-decoration: none;
-  color: var(--ink);
-}
-.logo { width: 26px; height: 26px; color: var(--green); flex: none; }
-.tag { font-size: 12px; color: var(--ink-3); letter-spacing: .04em; }
-
 /* hero */
 
-.hero { padding-top: 44px; padding-bottom: 28px; }
-.kicker { font-size: 12px; letter-spacing: .14em; color: var(--ink-3); font-weight: 500; }
+.hero { padding-top: 56px; padding-bottom: 28px; }
 h1 {
-  margin: 12px 0 14px;
+  margin: 0 0 14px;
   font-size: clamp(28px, 4.4vw, 42px);
   line-height: 1.2;
   letter-spacing: -.01em;
@@ -509,6 +484,8 @@ h1 em { font-style: normal; color: var(--green); }
 .btn:hover { border-color: var(--ink-3); background: var(--surface-hover); color: var(--ink); }
 .btn-primary { background: var(--green-deep); border-color: var(--green-deep); color: var(--on-green); font-weight: 500; }
 .btn-primary:hover { background: var(--green-deep-hover); border-color: var(--green-deep-hover); color: var(--on-green); }
+.icon-btn { width: 38px; padding: 0; flex: none; }
+.icon-btn svg { width: 17px; height: 17px; }
 .meta { display: flex; flex-direction: column; margin-top: 4px; font-size: 11.5px; line-height: 1.7; color: var(--ink-3); }
 
 .empty {
@@ -572,8 +549,8 @@ footer { margin-top: 40px; border-top: 1px solid var(--line); }
 
   .toolbar {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas: "search btn" "seg count";
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-areas: "search btn theme" "seg count count";
     gap: 8px 10px;
     margin-left: calc(-1 * max(var(--gutter), env(safe-area-inset-left)));
     margin-right: calc(-1 * max(var(--gutter), env(safe-area-inset-right)));
@@ -583,6 +560,7 @@ footer { margin-top: 40px; border-top: 1px solid var(--line); }
   }
   .toolbar .search { grid-area: search; }
   .toolbar .filter-btn { grid-area: btn; }
+  .toolbar .theme-toggle { grid-area: theme; }
   .toolbar .seg { grid-area: seg; justify-self: start; }
   .toolbar .count { grid-area: count; justify-self: end; }
 
@@ -667,8 +645,6 @@ footer { margin-top: 40px; border-top: 1px solid var(--line); }
 @media (max-width: 640px) {
   :root { --gutter: 16px; }
   body { font-size: 14.5px; }
-  .top-inner { padding-top: 14px; padding-bottom: 14px; }
-  .tag { display: none; }
   .hero { padding-top: 28px; padding-bottom: 20px; }
   .lede { font-size: 14px; line-height: 1.75; }
 
