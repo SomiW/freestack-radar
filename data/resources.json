@@ -71,13 +71,18 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官网确认免费配置、无需绑卡、GitHub 账号门槛、续期和删除规则；实际可抢库存无法在未登录情况下确认，活动有效不代表保证领取。",
-      "lastVerifiedAt": "2026-10-25T15:59:12Z",
-      "nextReviewAt": "2026-10-26T15:59:12Z",
+      "lastVerifiedAt": "2026-10-26T17:28:57Z",
+      "nextReviewAt": "2026-10-27T17:28:57Z",
       "evidence": [
         {
           "url": "https://vyce.cloud/",
           "summary": "官方明确 Vps-Mini 免费，1vCore/2GB/6GB，无需信用卡，每天续期，GitHub 账户至少 30 天，名额动态开放。",
           "checkedAt": "2026-10-25T15:59:12Z"
+        },
+        {
+          "url": "https://vyce.cloud/",
+          "summary": "复核仍有 Vps-Mini Free 档：2 GB RAM、1 vCore、6 GB NVMe、SSH root、每日续期；FAQ 明确“costs nothing, nothing to pay for later”、需 GitHub 账号满 30 天、停机 3 天删除；Vps-Plus/Pro 标 Coming soon。条款未见变化。",
+          "checkedAt": "2026-10-26T17:28:57Z"
         }
       ],
       "history": [
@@ -85,6 +90,11 @@
           "at": "2026-10-25T15:59:12Z",
           "status": "active",
           "note": "官网条款可确认免费计划及关键限制；未实际登录领取。"
+        },
+        {
+          "at": "2026-10-26T17:28:57Z",
+          "status": "active",
+          "note": "复核成功：官方首页与 FAQ 条款未见变化（配置、免绑卡、GitHub 30 天、每日续期、停机 3 天删除）。未登录、未领取。"
         }
       ]
     },
@@ -112,8 +122,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Render 官方免费部署指南及 2026 免费套餐说明明确免费服务、750 小时、无信用卡和超额计费机制；未实际创建账号或部署实例。",
-      "lastVerifiedAt": "2026-10-25T15:59:12Z",
-      "nextReviewAt": "2026-10-26T15:59:12Z",
+      "lastVerifiedAt": "2026-10-26T17:28:57Z",
+      "nextReviewAt": "2026-10-27T17:28:57Z",
       "evidence": [
         {
           "url": "https://render.com/docs/free",
@@ -124,6 +134,11 @@
           "url": "https://render.com/articles/platforms-with-a-real-free-tier-for-developers-in-2026",
           "summary": "Render 官方 2026 说明明确免费 Web/数据库/静态部署不需信用卡，免费数据库有限期。",
           "checkedAt": "2026-10-25T15:59:12Z"
+        },
+        {
+          "url": "https://render.com/docs/free",
+          "summary": "复核 Deploy for Free 文档：仍在 750 Free instance hours/月、空闲 15 分钟 spin down、免费 Postgres 1 GB 且 30 天过期（另有 14 天宽限后删除）、免费 Key Value 仅内存、超额带宽/构建分钟无付款方式时暂停；条款未见变化。",
+          "checkedAt": "2026-10-26T17:28:57Z"
         }
       ],
       "history": [
@@ -131,6 +146,11 @@
           "at": "2026-10-25T15:59:12Z",
           "status": "active",
           "note": "官网条款可确认免费计划及关键限制；未实际登录领取。"
+        },
+        {
+          "at": "2026-10-26T17:28:57Z",
+          "status": "active",
+          "note": "复核成功：官方免费部署文档条款未见变化（750 小时/月、15 分钟休眠、Postgres 30 天过期）。未创建账号或实例。"
         }
       ]
     },
@@ -316,8 +336,8 @@
       "startsAt": "2026-09-18T02:00:00Z",
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-10-25T16:32:10Z",
-      "nextReviewAt": "2026-10-26T16:32:10Z",
+      "lastVerifiedAt": "2026-10-26T17:28:57Z",
+      "nextReviewAt": "2026-10-27T17:28:57Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/flashoffer",
@@ -328,6 +348,11 @@
           "url": "https://qoder.com/activities",
           "summary": "活动页列“Qwen3.8-Flash: Free for a Limited Time”，与 docs 活动文档一致，并提供活动入口链接。",
           "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/flashoffer",
+          "summary": "复核：Qwen3.8-Flash 仍为 0.1×→0.0× 限免，个人用户（Free/Pro Trial/Lite/Pro/Pro+/Ultra）适用、Teams/Enterprise 不适用，已延期且结束日另行公告；全文仍未出现 DeepSeek 模型。条款未见变化。",
+          "checkedAt": "2026-10-26T17:28:57Z"
         }
       ],
       "history": [
@@ -335,6 +360,11 @@
           "at": "2026-10-25T16:32:10Z",
           "status": "active",
           "note": "复核旧 Qoder 待核实线索时发现官方活动页已可读并链接到 docs 活动文档；官方仅确认 Qwen3.8-Flash 限免（非 DeepSeek），据此新增本活动并标 active。"
+        },
+        {
+          "at": "2026-10-26T17:28:57Z",
+          "status": "active",
+          "note": "复核成功：官方活动文档仍只对 Qwen3.8-Flash 限免并处于延期状态，结束日待公告；仍未出现 DeepSeek 模型。未登录实测。"
         }
       ]
     },
@@ -362,8 +392,8 @@
       "startsAt": "2026-09-18T02:00:00Z",
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-10-25T16:32:10Z",
-      "nextReviewAt": "2026-10-26T16:32:10Z",
+      "lastVerifiedAt": "2026-10-26T17:28:57Z",
+      "nextReviewAt": "2026-10-27T17:28:57Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/100credits",
@@ -374,6 +404,11 @@
           "url": "https://qoder.com/activities",
           "summary": "活动页列“Claim 100 Credits Every Day”并提供 docs 活动文档入口，与官方文档一致。",
           "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/100credits",
+          "summary": "复核：每日在 Qoder 桌面应用领取 100 Credits，窗口 10:00 至次日 10:00（UTC+8），单笔 30 天有效、可跨天累积、错过不补领，结束时间 To be announced；条款未见变化。",
+          "checkedAt": "2026-10-26T17:28:57Z"
         }
       ],
       "history": [
@@ -381,6 +416,11 @@
           "at": "2026-10-25T16:32:10Z",
           "status": "active",
           "note": "复核 Qoder 官方活动页时发现该常驻活动并读取 docs 条款；额度、窗口与有效期均有官方证据，标为 active，未登录领取。"
+        },
+        {
+          "at": "2026-10-26T17:28:57Z",
+          "status": "active",
+          "note": "复核成功：官方文档的额度、窗口、30 天有效期与不可补领规则均未变化，结束时间仍待公告。未登录领取。"
         }
       ]
     },
@@ -630,10 +670,10 @@
       "provider": "GreenCloud（绿云）",
       "category": "cloud",
       "description": "GreenCloud 官方博客公告 13 周年庆活动：2026-10-26 至 10-31（UTC+0）开放限时闪购，含每年周年庆的 1313 系列套餐，部分闪购套餐叠加双倍资源，另有 13% 账户余额返现、Windows VPS 买 12 个月送 6 个月和转盘抽奖；具体套餐规格与价格在结算商店页，本轮被 Cloudflare 挑战拦截，未能读取。",
-      "quota": "官方公告只说明含 1313 套餐与其它限时闪购套餐、部分套餐可叠加双倍资源；具体 CPU/内存/磁盘/流量/带宽/地区与价格未在公告页列出，商店页本轮不可读，均待核实。",
-      "benefitValue": "无法可靠估值：官方公告未列套餐价格，商店页被拦截未读到具体档位报价；返现比例为 13% 但要求单张已付账单满 500 美元。",
+      "quota": "13 周年 1313 系列官方商店标价 $123.00 USD / 三年付：13 GB RAM、113 GB NVMe RAID-10、6 个 fair-share EPYC Milan 核心、1 IPv4 + /64 IPv6、10 Gbps 端口；美/加/欧机房 12 TB 流量，日本（Softbank/IIJ）、香港 DC2、新加坡 DC1/DC2 为 3333 GB 流量；含 1 次免费备份/快照，Linux，VirtFusion 面板。核查时 14 个 1313 机房档位全部显示 0 Available（售罄）；另有 4th of July Storage 4TB 档 $168/三年付、少量有货。",
+      "benefitValue": "官方商店页给出 1313 套餐 $123 USD/三年付（约 $41/年、$3.4/月）；页面未列同配置常规价，无法可靠折算折扣幅度。13% 返现要求单张已付账单满 500 美元，普通单机用户难以触发。",
       "eligibility": "需注册 GreenCloud 客户中心账号；公告未限定新老用户。13% 返现要求符合条件的已付购买/续费账单总额 ≥ 500 美元，充值余额与未付账单不计入；转盘按活动期真实付款消费计算，账户余额抵扣部分不计入。",
-      "regions": "社区讨论涉及新加坡 DC1、日本（IIJ/SoftBank）、美国等多个地区套餐；官方公告页未逐条列出参与地区与库存分配。",
+      "regions": "1313 覆盖 14 个机房：Toronto、Frankfurt、Chicago IL2、Kansas City、Buffalo NY、Staten Island NYC2、San Jose、Dallas、Coventry UK、Tokyo Softbank、Tokyo IIJ、Hong Kong DC2、Singapore DC1、Singapore DC2。",
       "validity": "活动期 2026-10-26 至 2026-10-31（UTC+0）；闪购库存有限、可能售罄；Windows VPS 送 6 个月仅限标准套餐 12 个月付或续费，促销套餐与折扣套餐续费不适用。",
       "deadlineNote": "官方公告写明 Campaign period: October 26–31, 2026 (UTC+0)，未给出具体时刻，endsAt 按 UTC 10-31 23:59:59 折算；库存售完即止。",
       "officialUrl": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
@@ -642,14 +682,14 @@
       "discoveredAt": "2026-10-26T04:37:32Z",
       "creditCard": "unknown",
       "autoRenewal": "unknown",
-      "costNotes": "付费低价套餐，不是免费资源。返现门槛为 500 美元级别账单，普通单机用户难以触发；转盘需活动期累计真实付款满 50 美元起、每客户最多 5 次；续费价格、资源翻倍条件、超流量与 IPv4 附加费均未核实。",
+      "costNotes": "付费低价套餐，不是免费资源。商店页明确 1313 各档 “No refund/money back on this plan”，且为三年付一次性付款 $123；续费价格未在页面给出；返现门槛为 500 美元级别账单；转盘需活动期累计真实付款满 50 美元起、每客户最多 5 次；超流量、IPv4 附加费、Windows 授权与升级配置费用均未核实。核查时全部 1313 档售罄，需等补货。",
       "startsAt": "2026-10-26T00:00:00Z",
       "endsAt": "2026-10-31T23:59:59Z",
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方博客可读并确认活动周期、1313 闪购存在、13% 返现门槛、Windows VPS 12+6 与转盘规则；但结算商店页与官网主站均返回 Cloudflare 挑战，套餐规格、价格、地区与续费条件无法读取，社区帖只给出一张套餐图与“1313”口头评价，故保持待核实。",
       "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-27T04:37:32Z",
+      "nextReviewAt": "2026-10-27T17:28:57Z",
       "evidence": [
         {
           "url": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
@@ -660,6 +700,16 @@
           "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
           "summary": "结算商店页 2026-10-26 读取返回 Cloudflare “Just a moment” 挑战，未获取套餐列表与价格；仅确认该 store 路径存在并出现在导航中。",
           "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
+          "summary": "2026-10-26 复核商店页已可读：1313 共 14 个机房档位，均 $123.00 USD / Triennially，13GB RAM/113GB NVMe/6 cores/1 IPv4/64 IPv6/10Gbps；美加欧 12TB、亚洲 3333GB；均标 “0 Available”；页面注明 No refund/money back。",
+          "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
+          "summary": "同页另有 4th of July Storage 4TB 档 $168.00 USD/三年付（7GB RAM、4 cores、20GB NVMe 引导盘 + 4TB SATA RAID-10），SG DC2 剩 5 台、IL2 剩 2 台，其余机房 0 Available。",
+          "checkedAt": "2026-10-26T17:28:57Z"
         }
       ],
       "history": [
@@ -667,6 +717,11 @@
           "at": "2026-10-26T04:37:32Z",
           "status": "pending",
           "note": "NodeSeek 当日大量讨论绿云 13 周年抢购，据此读取官方博客公告确认活动周期与规则；商店页被 Cloudflare 拦截，套餐价格与规格未知，故以 pending 草案入库，未注册、未下单。"
+        },
+        {
+          "at": "2026-10-26T17:28:57Z",
+          "status": "pending",
+          "note": "复核：此前被 Cloudflare 拦截的结算商店页本次可读，补录 1313 套餐官方价格（$123/三年付）、规格、14 个机房与“No refund”条款；核查时全部 1313 档 0 Available（售罄），仍无法确认补货节奏、续费价与购买资格，维持 pending/medium，lastVerifiedAt 仍为 null。"
         }
       ]
     },
@@ -856,6 +911,57 @@
           "at": "2026-10-26T10:45:00Z",
           "status": "active",
           "note": "由 AI Spoils 线索转官方定价页核实：Hobby 为 $0 档，自托管 Orb 不限量免费、BYOK 不计 Amp token 费用，托管 Orb 按量计费；按官方条文标 active/high，未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "zcode-5-day-free-trial-202610",
+      "title": "ZCode 新用户 5 天免费体验：GLM-5.3 300 万 + GLM-5-turbo 200 万 Token/天",
+      "provider": "ZCode（智谱 Z.ai / BigModel）",
+      "category": "ai",
+      "description": "ZCode 是智谱的 GLM-5.3 官方编程 Agent 桌面端。官方文档写明「首次使用 ZCode 可享 5 天免费权益，开箱即用、无需额外配置」，每日发放 GLM-5.3 300 万 Token 与 GLM-5-turbo 200 万 Token，5 天后失效，并非长期每日额度；另有仅面向订阅用户的「闲时任务」在算力富余时段免费执行、不消耗套餐额度。",
+      "quota": "新用户 5 天体验：GLM-5.3 300 万 Token/天 + GLM-5-turbo 200 万 Token/天，每日合计 500 万 Token，仅限首次使用起的 5 天；官方未公布并发数、请求速率与单次上下文用量上限。",
+      "benefitValue": "按官方 5 天×500 万 Token 计，约 2,500 万 Token 的体验额度；官方未给出货币等价，不可提现，也不是长期每日额度。",
+      "eligibility": "首次使用 ZCode 的新用户；需下载桌面端并以 BigModel 或 Z.ai 账号登录（官方文档写明可绑定两者之一以使用 GLM-5.3、GLM-5.3-Flash 等内置模型）；是否要求手机号、实名或企业认证未披露。",
+      "regions": "官方文档未列地区限制；账号体系分 BigModel（国内）与 Z.ai（国际）两套入口，具体地区可用性未核实。",
+      "validity": "权益自首次使用时起算 5 天，额度按天发放、5 天后失效；官方明确「并非长期每天都有」。",
+      "deadlineNote": "官方未公布该新用户体验活动的结束日期，也不能当作长期免费额度；单账号 5 天窗口与每日额度以官方文档当前表述为准，endsAt 保持 null。",
+      "officialUrl": "https://zcode.z.ai/cn/docs",
+      "claimUrl": "https://zcode.z.ai/",
+      "discoveryUrl": "https://linux.do/t/topic/3077665",
+      "discoveredAt": "2026-10-26T17:28:57Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "5 天体验期内不消耗套餐额度；到期后继续使用需订阅 GLM Coding Plan（官方个人版标价 Lite ¥118/月，连续包月 ¥94.4/月；Pro ¥538/月、连续包月 ¥430.4/月；Max ¥1078/月、连续包月 ¥862.4/月），或改用标准 API 按量计费（官方称 GLM-5.3-Flash 定价为 GLM-5.3 的 1/10、限时折扣内 1/20）；官方文档未说明体验是否需要绑卡，未自动订阅。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "zcode.z.ai 官方文档直接列出「首次使用 5 天免费体验」、每日 GLM-5.3 300 万 + GLM-5-turbo 200 万 Token 及「5 天后失效，并非长期每天都有」的警示；BigModel 官方 GLM Coding Plan 页可佐证订阅价格与模型归属；未注册实测领取，地区、绑卡与限速未披露。",
+      "lastVerifiedAt": "2026-10-26T17:28:57Z",
+      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "evidence": [
+        {
+          "url": "https://zcode.z.ai/cn/docs",
+          "summary": "官方文档「新用户专享 5 天免费体验」：首次使用可享 5 天免费权益、无需额外配置；GLM-5.3 300 万 Token/天、GLM-5-turbo 200 万 Token/天、每日合计 500 万 Token（仅限 5 天），5 天后失效；另有订阅用户「闲时任务」免费执行、套餐额度消耗 0。",
+          "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://bigmodel.cn/glm-coding",
+          "summary": "官方 GLM Coding Plan 价格页：Lite ¥118/月（连续包月 ¥94.4）、Pro ¥538/月（¥430.4）、Max ¥1078/月（¥862.4），套餐支持 ZCode 与 Claude Code 等 20+ 工具，用于界定免费体验结束后的付费边界。",
+          "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://docs.bigmodel.cn/cn/guide/models/vlm/glm-5.3-flash",
+          "summary": "官方模型文档：GLM-5.3-Flash 已全量上线 GLM Coding Plan，1M 上下文、最大输出 128K；价格为 GLM-5.3 的 1/10、限时折扣 1/20，说明免费额度之外为按量付费。",
+          "checkedAt": "2026-10-26T17:28:57Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-26T17:28:57Z",
+          "status": "active",
+          "note": "从 LINUX DO 福利羊毛区多帖（「GLM-5.3-Flash 活动又来了，3亿速领」等，均只发截图、无官方链接，且声称次日 9 点失效）发现线索后，转读 zcode.z.ai 官方文档，确认存在「新用户 5 天免费体验、每日 500 万 Token」的官方免费额度；该额度与社区「3 亿 Token 限时领取」说法不是同一项，后者无官方页面可核，未采信。按官方条文标 active/high，未注册实测。"
         }
       ]
     }
