@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import data from '../data/resources.json';
 import type { Catalog, Resource, Status } from './types';
 import { displayStatus, needsReview, labels } from './status';
@@ -11,6 +11,9 @@ const creditLabel = { required: '需要信用卡', 'not-required': '无需信用
 const autoLabel = { yes: '会自动续费', no: '不会自动续费', unknown: '续费未知' } as const;
 const sortLabel = { default: '优先级', verified: '最近核实', review: '复核最早' } as const;
 const statusRank: Record<Status, number> = { active: 0, upcoming: 1, pending: 2, expired: 3, unavailable: 4 };
+const categories = [['all', '全部'], ['ai', 'AI 工具'], ['cloud', '云与基础设施'], ['both', 'AI + 云']] as const;
+// 与 style.css 中切换为底部筛选面板的断点保持一致。
+const DESKTOP_QUERY = '(min-width: 900px)';
 
 function dateTime(value: string | null): string {
   if (!value) return '未披露';
@@ -77,19 +80,16 @@ function ResourceRow({ resource: r, now }: { resource: Resource; now: Date }) {
 
   return (
     <article className={`row s-${status}`}>
-      <div className="rail">
-        <span className="pill">{labels[status]}</span>
-        <span className={`conf conf-${r.confidence}`}>
-          <i aria-hidden="true" />
-          {confidenceLabel[r.confidence]}
-        </span>
-        {needsReview(r, now) && <span className="due">{overdue ? '复核逾期' : '待复核'}</span>}
-      </div>
-
       <div className="body">
-        <p className="source">
-          {r.provider} <span aria-hidden="true">·</span> {categoryLabel[r.category]}
-        </p>
+        <div className="row-meta">
+          <span className="pill">{labels[status]}</span>
+          <span className="source">{r.provider} <span aria-hidden="true">·</span> {categoryLabel[r.category]}</span>
+          <span className={`conf conf-${r.confidence}`}>
+            <i aria-hidden="true" />
+            {confidenceLabel[r.confidence]}
+          </span>
+          {needsReview(r, now) && <span className="due">{overdue ? '复核逾期' : '待复核'}</span>}
+        </div>
         <h3>{r.title}</h3>
         <p className="desc">{r.description}</p>
         <dl className="facts">
@@ -142,8 +142,8 @@ function ResourceRow({ resource: r, now }: { resource: Resource; now: Date }) {
         <a className="btn btn-primary" href={r.claimUrl} target="_blank" rel="noopener noreferrer">领取入口 ↗</a>
         <a className="btn" href={r.officialUrl} target="_blank" rel="noopener noreferrer">官方介绍 ↗</a>
         <p className="meta">
-          最后核实 {relative(r.lastVerifiedAt, now)}<br />
-          下次复核 {overdue ? '已逾期' : dateShort(r.nextReviewAt)}
+          <span>最后核实 {relative(r.lastVerifiedAt, now)}</span>
+          <span>下次复核 {overdue ? '已逾期' : dateShort(r.nextReviewAt)}</span>
         </p>
       </div>
     </article>
@@ -156,11 +156,33 @@ export function App() {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState<'all' | Resource['category']>('all');
   const [sort, setSort] = useState<'default' | 'verified' | 'review'>('default');
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const sheetRef = useRef<HTMLElement>(null);
+  const filterBtnRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
     const timer = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(timer);
   }, []);
+
+  // 移动端筛选面板：锁定背景滚动、Esc 关闭、切到桌面宽度时自动收起。
+  useEffect(() => {
+    document.documentElement.classList.toggle('sheet-lock', sheetOpen);
+    if (!sheetOpen) return;
+    sheetRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') closeSheet(); };
+    const mq = window.matchMedia(DESKTOP_QUERY);
+    const onChange = () => { if (mq.matches) setSheetOpen(false); };
+    window.addEventListener('keydown', onKey);
+    mq.addEventListener('change', onChange);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      mq.removeEventListener('change', onChange);
+      document.documentElement.classList.remove('sheet-lock');
+    };
+  }, [sheetOpen]);
+
+  const closeSheet = () => { setSheetOpen(false); filterBtnRef.current?.focus(); };
 
   const archive = (r: Resource) => ['expired', 'unavailable'].includes(displayStatus(r, now));
   const group = catalog.resources.filter(r => archive(r) === (view === 'archive'));
@@ -185,8 +207,12 @@ export function App() {
   const evidenceTotal = catalog.resources.reduce((sum, r) => sum + r.evidence.length, 0);
   const archivedTotal = counts.expired + counts.unavailable;
   const filtered = filter !== 'all' || category !== 'all' || needle.length > 0;
+  const activeFilters = Number(filter !== 'all') + Number(category !== 'all');
+  const statusOptions: Status[] = view === 'current' ? ['active', 'pending', 'upcoming'] : ['expired', 'unavailable'];
+  const categoryCount = (c: typeof category) => c === 'all' ? group.length : group.filter(r => r.category === c).length;
 
   const resetFilters = () => { setFilter('all'); setCategory('all'); setQuery(''); };
+  const switchView = (next: typeof view) => { setView(next); setFilter('all'); };
 
   return (
     <>
@@ -206,21 +232,81 @@ export function App() {
             汇集 AI 与云资源的免费额度与限时活动。每条记录标注官方证据、领取门槛、费用风险与下次复核时间；
             草案经真实来源先行公开，领取条件以官网最新条款为准。
           </p>
-          <ul className="stats">
-            <li>{catalog.resources.length} 条记录</li>
-            <li>{counts.active} 条有效</li>
-            <li>{counts.pending} 条待核实</li>
-            <li>{archivedTotal} 条已归档</li>
-            <li>{evidenceTotal} 条官方证据</li>
+          <ul className="stats" aria-label="目录统计">
+            <li className="stat stat-active"><b>{counts.active}</b> 有效</li>
+            <li className="stat stat-pending"><b>{counts.pending}</b> 待核实</li>
+            {counts.upcoming > 0 && <li className="stat stat-upcoming"><b>{counts.upcoming}</b> 即将开始</li>}
+            <li className="stat"><b>{evidenceTotal}</b> 条官方证据</li>
+            <li className="stat"><b>{archivedTotal}</b> 已归档</li>
+            <li className="stat"><b>{catalog.resources.length}</b> 条记录</li>
           </ul>
         </section>
 
-        <div className="toolbar">
-          <div className="wrap toolbar-inner">
-            <div className="toolbar-row">
+        <div className="wrap layout">
+          <aside
+            id="filters"
+            ref={sheetRef}
+            tabIndex={-1}
+            className={`filters${sheetOpen ? ' open' : ''}`}
+            aria-label="筛选条件"
+          >
+            <div className="sheet-grip" aria-hidden="true" />
+            <div className="filters-head">
+              <h2>筛选</h2>
+              {(activeFilters > 0 || sort !== 'default') && (
+                <button className="link" onClick={() => { setFilter('all'); setCategory('all'); setSort('default'); }}>重置</button>
+              )}
+            </div>
+
+            <div className="group" role="group" aria-labelledby="g-category">
+              <h3 id="g-category">分类</h3>
+              <div className="opts">
+                {categories.map(([value, text]) => (
+                  <button key={value} className="opt" aria-pressed={category === value} onClick={() => setCategory(value)}>
+                    <span>{text}</span><span className="n">{categoryCount(value)}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="group" role="group" aria-labelledby="g-status">
+              <h3 id="g-status">状态</h3>
+              <div className="opts">
+                <button className="opt" aria-pressed={filter === 'all'} onClick={() => setFilter('all')}>
+                  <span>全部状态</span><span className="n">{group.length}</span>
+                </button>
+                {statusOptions.map(s => (
+                  <button key={s} className={`opt dot-${s}`} aria-pressed={filter === s} onClick={() => setFilter(s)}>
+                    <span><i aria-hidden="true" />{labels[s]}</span>
+                    <span className="n">{group.filter(r => displayStatus(r, now) === s).length}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="group" role="group" aria-labelledby="g-sort">
+              <h3 id="g-sort">排序</h3>
+              <div className="opts">
+                {(Object.entries(sortLabel) as Array<[typeof sort, string]>).map(([value, text]) => (
+                  <button key={value} className="opt" aria-pressed={sort === value} onClick={() => setSort(value)}>
+                    <span>{text}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <button className="btn btn-primary sheet-done" onClick={closeSheet}>查看 {visible.length} 条结果</button>
+          </aside>
+          <div className="scrim" hidden={!sheetOpen} onClick={closeSheet} />
+
+          <section className="content catalog" id="catalog" aria-label="资源目录">
+            <h2 className="sr-only">资源目录</h2>
+            <div className="toolbar">
               <div className="seg" role="group" aria-label="目录范围">
-                <button aria-pressed={view === 'current'} onClick={() => { setView('current'); setFilter('all'); }}>资源目录</button>
-                <button aria-pressed={view === 'archive'} onClick={() => { setView('archive'); setFilter('all'); }}>历史归档</button>
+                <button aria-pressed={view === 'current'} onClick={() => switchView('current')}>资源目录</button>
+                <button aria-pressed={view === 'archive'} onClick={() => switchView('archive')}>
+                  历史归档{archivedTotal > 0 && <span className="n">{archivedTotal}</span>}
+                </button>
               </div>
               <div className="search">
                 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
@@ -234,61 +320,52 @@ export function App() {
                   aria-label="搜索厂商、资源或条件"
                 />
               </div>
-            </div>
-
-            <div className="toolbar-row filters">
-              <div className="chips" role="group" aria-label="按分类筛选">
-                {([['all', '全部'], ['ai', 'AI 工具'], ['cloud', '云与基础设施'], ['both', 'AI + 云']] as const).map(([value, text]) => (
-                  <button key={value} aria-pressed={category === value} onClick={() => setCategory(value)}>{text}</button>
-                ))}
-              </div>
-              <label className="field">状态
-                <select value={filter} onChange={e => setFilter(e.target.value)}>
-                  <option value="all">全部状态</option>
-                  {(view === 'current' ? ['pending', 'active', 'upcoming'] : ['expired', 'unavailable']).map(s => (
-                    <option key={s} value={s}>{labels[s as Status]}</option>
-                  ))}
-                </select>
-              </label>
-              <label className="field">排序
-                <select value={sort} onChange={e => setSort(e.target.value as typeof sort)}>
-                  {Object.entries(sortLabel).map(([value, text]) => <option key={value} value={value}>{text}</option>)}
-                </select>
-              </label>
-              <p className="count" aria-live="polite">{visible.length} 条{filtered ? ` / ${group.length}` : ''}</p>
-            </div>
-          </div>
-        </div>
-
-        <section className="wrap catalog" id="catalog" aria-label="资源目录">
-          <h2 className="sr-only">资源目录</h2>
-          {visible.length ? (
-            <div className="list">
-              {visible.map(r => <ResourceRow key={r.id} resource={r} now={now} />)}
-            </div>
-          ) : (
-            <div className="empty">
-              <h2>{view === 'archive' ? '暂无历史归档' : filtered ? '没有符合条件的记录' : '第一批资源，等待核实'}</h2>
-              <p>
-                {view === 'archive'
-                  ? '已过期或已失效的信息会保留在这里，方便追溯。'
-                  : filtered
-                    ? '换个关键词或状态试试；目录只展示有真实来源的信息。'
-                    : '目前尚未收录正式资源。核实官方证据后，才会发布额度、领取条件和有效期。'}
+              <button
+                ref={filterBtnRef}
+                className="btn filter-btn"
+                aria-expanded={sheetOpen}
+                aria-controls="filters"
+                onClick={() => setSheetOpen(true)}
+              >
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                  <path d="M3 5h14M6 10h8M8.5 15h3" strokeLinecap="round" />
+                </svg>
+                筛选{activeFilters > 0 && <span className="badge">{activeFilters}</span>}
+              </button>
+              <p className="count" aria-live="polite">
+                {visible.length} 条{filtered ? ` / ${group.length}` : ''}
+                {filtered && <button className="link" onClick={resetFilters}>清除</button>}
               </p>
-              {filtered && <button className="btn" onClick={resetFilters}>清除筛选条件</button>}
             </div>
-          )}
-        </section>
 
-        <aside className="wrap read">
-          <h2>如何阅读这份目录</h2>
-          <div className="read-grid">
-            <p><strong>状态</strong>「待核实」代表来源真实但条款未完全确认；「有效」只代表最后一次官网核实通过，不等于个人资格或库存仍然成立。</p>
-            <p><strong>复核</strong>有效活动距上次核实满 24 小时会重新核对；逾期未复核单独标出，历史记录保留每次结论与变化。</p>
-            <p><strong>费用</strong>额度、地区、信用卡与自动续费按官方原文填写，未披露就写未知，不用估算值补全。</p>
-          </div>
-        </aside>
+            {visible.length ? (
+              <div className="list">
+                {visible.map(r => <ResourceRow key={r.id} resource={r} now={now} />)}
+              </div>
+            ) : (
+              <div className="empty">
+                <h2>{view === 'archive' ? '暂无历史归档' : filtered ? '没有符合条件的记录' : '第一批资源，等待核实'}</h2>
+                <p>
+                  {view === 'archive'
+                    ? '已过期或已失效的信息会保留在这里，方便追溯。'
+                    : filtered
+                      ? '换个关键词或状态试试；目录只展示有真实来源的信息。'
+                      : '目前尚未收录正式资源。核实官方证据后，才会发布额度、领取条件和有效期。'}
+                </p>
+                {filtered && <button className="btn" onClick={resetFilters}>清除筛选条件</button>}
+              </div>
+            )}
+
+            <aside className="read">
+              <h2>如何阅读这份目录</h2>
+              <div className="read-grid">
+                <p><strong>状态</strong>「待核实」代表来源真实但条款未完全确认；「有效」只代表最后一次官网核实通过，不等于个人资格或库存仍然成立。</p>
+                <p><strong>复核</strong>有效活动距上次核实满 24 小时会重新核对；逾期未复核单独标出，历史记录保留每次结论与变化。</p>
+                <p><strong>费用</strong>额度、地区、信用卡与自动续费按官方原文填写，未披露就写未知，不用估算值补全。</p>
+              </div>
+            </aside>
+          </section>
+        </div>
       </main>
 
       <footer>
