@@ -499,8 +499,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "GitHub 官方 billing 文档明确列出 Free/Pro 档的每月计算与存储额度、各机型单价、无支付方式时的阻断规则与重置方式；未登录实测创建 codespace。",
-      "lastVerifiedAt": "2026-10-25T22:32:42Z",
-      "nextReviewAt": "2026-10-26T22:32:42Z",
+      "lastVerifiedAt": "2026-10-26T23:34:07Z",
+      "nextReviewAt": "2026-10-27T23:34:07Z",
       "evidence": [
         {
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
@@ -511,6 +511,11 @@
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
           "summary": "同页计价表：2 核 $0.18/h、4 核 $0.36/h、8 核 $0.72/h、16 核 $1.44/h、32 核 $2.88/h，存储 $0.07/GB-month；2 核机型每小时的额度倍率为 2。",
           "checkedAt": "2026-10-25T22:32:42Z"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "复核：免费配额表仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；单价 2/4/8/16/32 核 $0.18/$0.36/$0.72/$1.44/$2.88 与存储 $0.07/GB-month 未变；仍写明企业/组织计划无免费配额、EMU 仓库不可用、无有效支付方式超额即阻断。条款未见变化。",
+          "checkedAt": "2026-10-26T23:34:07Z"
         }
       ],
       "history": [
@@ -518,6 +523,11 @@
           "at": "2026-10-25T22:32:42Z",
           "status": "active",
           "note": "读取 GitHub 官方 Codespaces billing 文档，确认 Free/Pro 每月配额、单价与超额阻断规则；前一次运行因单次上限未写入，本次补录。未登录创建 codespace。"
+        },
+        {
+          "at": "2026-10-26T23:34:07Z",
+          "status": "active",
+          "note": "复核成功：官方 billing 文档的 Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month、各机型单价、存储 $0.07/GB-month 与「无有效支付方式超额即阻断」均未见变化。未登录创建 codespace。"
         }
       ]
     },
@@ -545,8 +555,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Google 官方限制页确认每周 50 小时配额、5 GB 持久盘及 120 天删除规则、40 分钟空闲终止与 12 小时会话上限，价格页确认免费；绑卡要求未在文档中规定、未实测登录，故 creditCard 记 unknown。",
-      "lastVerifiedAt": "2026-10-25T22:32:42Z",
-      "nextReviewAt": "2026-10-26T22:32:42Z",
+      "lastVerifiedAt": "2026-10-26T23:34:07Z",
+      "nextReviewAt": "2026-10-27T23:34:07Z",
       "evidence": [
         {
           "url": "https://docs.cloud.google.com/shell/docs/limitations",
@@ -562,6 +572,16 @@
           "url": "https://docs.cloud.google.com/shell/docs/how-cloud-shell-works",
           "summary": "运作方式页：临时 Compute Engine 虚拟机跑 Debian 容器，用户有 root，预装 Cloud CLI/Docker/git 与各语言运行时；仅 $HOME 持久；区域自动就近分配且不可手动选；该页写不活动 1 小时终止，与限制页 40 分钟冲突。",
           "checkedAt": "2026-10-25T22:32:42Z"
+        },
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/limitations",
+          "summary": "复核限制页：默认每周配额仍为 50 小时、$HOME 仍为 5 GB 免费持久盘、120 天未访问删除、单会话上限 12 小时、非交互会话 40 分钟结束、虚拟机空闲 40 分钟终止、18 周岁以下或年龄未知不可用；条款未见变化。",
+          "checkedAt": "2026-10-26T23:34:07Z"
+        },
+        {
+          "url": "https://cloud.google.com/shell/pricing",
+          "summary": "复核价格页：正文仍为一句「Cloud Shell is free for users with a Google Cloud account」，未列出 Cloud Shell 自身收费项。",
+          "checkedAt": "2026-10-26T23:34:07Z"
         }
       ],
       "history": [
@@ -569,6 +589,11 @@
           "at": "2026-10-25T22:32:42Z",
           "status": "active",
           "note": "读取 Cloud Shell 限制页、价格页与运作方式页，确认 50 小时/周、5 GB $HOME、会话与空闲上限，并记录两页空闲超时不一致；前一次运行因单次上限未写入，本次补录。未登录实测。"
+        },
+        {
+          "at": "2026-10-26T23:34:07Z",
+          "status": "active",
+          "note": "复核成功：官方限制页的 50 小时/周配额、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟空闲终止与年龄限制均未变化，价格页仍写明对 Google Cloud 账号用户免费。未登录实测。"
         }
       ]
     },
@@ -962,6 +987,93 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区多帖（「GLM-5.3-Flash 活动又来了，3亿速领」等，均只发截图、无官方链接，且声称次日 9 点失效）发现线索后，转读 zcode.z.ai 官方文档，确认存在「新用户 5 天免费体验、每日 500 万 Token」的官方免费额度；该额度与社区「3 亿 Token 限时领取」说法不是同一项，后者无官方页面可核，未采信。按官方条文标 active/high，未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "nuyek-black-friday-vps-11-usd-202611",
+      "title": "Nuyek 黑五特价 VPS：1 核 2G / 25G NVMe / 8TB 流量，$11/年（11-14 开售）",
+      "provider": "Nuyek, LLC",
+      "category": "cloud",
+      "description": "Nuyek 官网首页横幅预告 2026 黑五促销：2026-11-14 起发售特价 VPS（1 vCore、2 GB DDR4、25 GB NVMe、100 Mbps 端口、8 TB 月流量）年付 $11.00，开售放 15 台，之后每天 1 台直到 2027-01-01；同页另有 i5-10500/16GB/2×256GB NVMe 独服 $15.00/月，仅月付、限 20 台。属于超低价美国方向 VPS 线索，目前尚未开售。",
+      "quota": "特价 VPS：1 vCore、2 GB DDR4、25 GB NVMe、100 Mbps 共享端口、8 TB 月流量，年付 $11.00；首发 15 台，其后每日 1 台至 2027-01-01。独服档：i5-10500 (Non-T)、16 GB DDR4、2×256 GB NVMe、100 Mbps、33 TB 流量，$15.00/月，仅月付、限 20 台。",
+      "benefitValue": "官方标价 $11.00 USD/年（约 $0.92/月、约 ¥6.5/月，按汇率浮动）；同页独服 $15.00/月另行计价。",
+      "eligibility": "需在 Nuyek 注册账号下单；官方横幅未限定新老用户，也未说明是否需要实名或押金；库存限量，先到先得。",
+      "regions": "官方横幅与首页均未标注特价机的机房位置与可选区域；第三方资料称公司在伊利诺伊州 Highland，未在官网核实，机房位置待确认。",
+      "validity": "活动自 2026-11-14 起；首发 15 台，之后每天放出 1 台直到 2027-01-01；官方未标注每日放货时刻与时区。",
+      "deadlineNote": "官方首页横幅原文为「BLACK FRIDAY SALE — Starting November 14, 2026」与「15 at Launch, Then 1 daily till January 1st, 2027」，未给出具体时刻与时区；startsAt 按 UTC 零点记录，endsAt 保持 null，售完即止。",
+      "officialUrl": "https://nuyek.com/",
+      "claimUrl": "https://nuyek.com/",
+      "discoveryUrl": "https://www.nodeseek.com/post-1011583-1",
+      "discoveredAt": "2026-10-26T23:34:07Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "年付 $11 属于付费低价套餐，不是免费资源。横幅未标注续费价格、超额流量计费、IPv4 附加费与税费；首页仅链接 Refund Policy 页，本次未读取退款条款；「Monthly Only」只针对独服档，VPS 档为年付。",
+      "startsAt": "2026-11-14T00:00:00Z",
+      "endsAt": null,
+      "status": "upcoming",
+      "confidence": "medium",
+      "confidenceReason": "nuyek.com 官方首页横幅直接写出黑五开售日期、VPS 配置、$11.00/年、首发 15 台与每日 1 台的放货节奏；但机房位置、具体开售时刻与时区、续费价、退款与支付方式均未在该页披露，故不足以标为 active。",
+      "lastVerifiedAt": "2026-10-26T23:34:07Z",
+      "nextReviewAt": "2026-11-14T00:00:00Z",
+      "evidence": [
+        {
+          "url": "https://nuyek.com/",
+          "summary": "首页顶部横幅：BLACK FRIDAY SALE — Starting November 14, 2026；VPS: 1 vCore · 2GB DDR4 · 25GB NVMe · 100 Mbps Port · 8TB Bandwidth，$11.00/yr，15 at Launch, Then 1 daily till January 1st, 2027；Dedicated: i5-10500 · 16GB DDR4 · 2×256GB NVMe · 100 Mbps · 33TB，$15.00/mo，Monthly Only · Stock Limited to 20 Servers。",
+          "checkedAt": "2026-10-26T23:34:07Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-26T23:34:07Z",
+          "status": "upcoming",
+          "note": "NodeSeek 出现「Nuyek BLACK FRIDAY SALE」讨论，据此读取 nuyek.com 官方首页横幅，确认 11-14 开售的 $11/年 VPS 配置与放货节奏；因尚未开售且机房/续费/时区未披露，按 upcoming/medium 入库，未注册、未下单。"
+        }
+      ]
+    },
+    {
+      "id": "trae-cn-free-500-credits-2026",
+      "title": "TRAE 国内版免费档：¥0，每月 500 积分 + 全部功能",
+      "provider": "TRAE（火山引擎）",
+      "category": "ai",
+      "description": "TRAE 官方定价页（trae.cn）列出个人方案免费 Free 档：¥0，每月 500 积分，所有功能均可免费使用，支持 2 个云端任务同时执行；付费会员 Lite ¥49/月（首月低至 ¥39）起含 2,000 积分/月，并有 Seed-2.1 与 GLM、DeepSeek-V4.1 的模型折扣。国际版 trae.ai 另有独立 Free 档（$0，仅 Auto 模式、额度受限）。",
+      "quota": "免费档：500 积分/月、全部功能可用、2 个云端任务并发。付费档参考：Lite 2,000 积分/月、Pro 4,000、Pro+ 12,000、Ultra 40,000，并含会员签到 +3,000 积分与模型折扣。",
+      "benefitValue": "官方标价 ¥0；按 Lite 档 ¥49/月含 2,000 积分折算，500 积分约合 ¥12/月，仅供参考——官方未对积分单独定价。",
+      "eligibility": "注册 TRAE 账号即可使用免费档，无需付费订阅；官方定价页未说明是否需要国内手机号或实名认证。",
+      "regions": "本条为国内版（trae.cn）；国际版 trae.ai 为独立站点与独立 Free 档（$0、Auto 模式、额度受限），额度与活动不互通。",
+      "validity": "积分按官方表述「每月」发放；免费档未标注结束日期，也未公布积分清零与结转规则。",
+      "deadlineNote": "官方未公布免费档结束时间；免费积分是否月底清零、超额后能否单独购买积分均未披露，不能视为永久或无限额度。",
+      "officialUrl": "https://www.trae.cn/pricing",
+      "claimUrl": "https://www.trae.cn/",
+      "discoveryUrl": "https://aispoils.com/type/dev.html",
+      "discoveredAt": "2026-10-26T23:34:07Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费档 ¥0；升级按官方标价 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），会员为连续包月且自动续费。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均需另查；不推定第三方模型调用完全免费。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "trae.cn 官方定价页明确列示免费档 ¥0 / 每月 500 积分 / 所有功能免费使用 / 2 个云端任务并发，并同页给出各付费档价格与积分；积分清零规则、免费档可用模型清单与实名要求未在该页披露，未注册实测额度消耗。",
+      "lastVerifiedAt": "2026-10-26T23:34:07Z",
+      "nextReviewAt": "2026-10-27T23:34:07Z",
+      "evidence": [
+        {
+          "url": "https://www.trae.cn/pricing",
+          "summary": "个人方案表：免费 Free ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」；Lite 首月 ¥39（¥49）含 2,000 积分/月，Pro ¥69（¥99）4,000，Pro+ ¥219（¥239）12,000，Ultra ¥629（¥699）40,000，均含会员签到 +3,000 积分与 Seed-2.1/GLM/DeepSeek-V4.1 折扣。",
+          "checkedAt": "2026-10-26T23:34:07Z"
+        },
+        {
+          "url": "https://www.trae.ai/pricing",
+          "summary": "国际版定价页：Free $0，仅 Auto 模式、有限使用与有限自动补全；Pro $20/月含 $20 用量与无限自动补全、TraeWork 最多 10 个并发云任务，用于区分国内外两套免费档。",
+          "checkedAt": "2026-10-26T23:34:07Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-26T23:34:07Z",
+          "status": "active",
+          "note": "由 AI Spoils 开发工具分类的 Trae 线索转读官方定价页：trae.cn 明确存在 ¥0 免费档（500 积分/月、全部功能、2 并发云端任务），国际版 trae.ai 另有 $0 但仅 Auto 模式的免费档；按官方条文标 active/high，未注册实测。"
         }
       ]
     }
