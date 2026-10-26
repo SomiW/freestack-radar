@@ -547,6 +547,154 @@
           "note": "从 LINUX DO 福利羊毛 RSS 发现并读取阿里云官方活动页；配置与 99 元/年续费价有官方佐证，首购价、活动期与锁价年限未确认，保持待核实。未登录、未购买。"
         }
       ]
+    },
+    {
+      "id": "huawei-cloud-flexus-l-36-yuan-2026",
+      "title": "华为云 Flexus L 实例 2核2G2M 新客 36 元/年",
+      "provider": "华为云",
+      "category": "cloud",
+      "description": "华为云普惠上云专区「新客优选」的每日限时秒杀：Flexus L 实例 2 核 2G、2 Mbps 固定带宽、100 GB/月流量、40 GB 系统盘，1 年实付 36 元（同页原价 395.28 元），适合建站、开发测试和轻量常驻服务；仅 V0 新客可买且限购 1 台。",
+      "quota": "2 vCPU / 2 GiB 内存、2 Mbps 固定带宽、100 GB/月 流量、40 GB 系统盘、华北-北京四、1 年时长；每账号限购 1 台。",
+      "benefitValue": "官方页面标价 36 元/年，同页原价 395.28 元，约合 0.9 折；折算约 3 元/月。续费不享受此价。",
+      "eligibility": "仅 V0 新客：已在华为云官网完成注册和实名认证（个人或企业均可），且从未购买过华为云任何资源的用户；购买任意其它云资源后客户等级不再是 V0，即失去新客资格；同一用户（同证件号等关联信息）视为一人。",
+      "regions": "活动页该档固定为华北-北京四；其它地域不参与本档价格，国际站为独立站点。",
+      "validity": "购买时长为 1 年（365 天）；活动时间 2026-08-28 至 2026-12-31（北京时间），秒杀每日 0 点限量发售，售完即止。",
+      "deadlineNote": "官方活动页写明活动时间 2026-08-28 至 2026-12-31，未给出具体时刻，endsAt 按北京时间当月末日 23:59:59 折算；每日 0 点限量、库存有限，售罄需次日重试。",
+      "officialUrl": "https://activity.huaweicloud.com/phbcecs.html",
+      "claimUrl": "https://activity.huaweicloud.com/phbcecs.html",
+      "discoveryUrl": "https://linux.do/t/topic/3074589",
+      "discoveredAt": "2026-10-26T04:37:32Z",
+      "creditCard": "required",
+      "autoRenewal": "unknown",
+      "costNotes": "36 元/年是付费购买，不是免费额度。官方活动规则写明“续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格”，即第二年续费不是 36 元，须按当时官网价支付；2 Mbps 带宽、100 GB/月流量，超出流量按量计费；快照、备份、额外云盘、公网 IP 等按标准价另计。社区提到可叠加“2026 华为开发者大赛”200 元无门槛代金券续费，但该券不属于本活动条款，名额、有效期与适用机型均未核实，不并入本条权益。",
+      "startsAt": "2026-08-27T16:00:00Z",
+      "endsAt": "2026-12-31T15:59:59Z",
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "华为云官方活动页内嵌商品数据与规则文本可读，确认机型规格（2 核 2G2M/100G 月流量/40G 盘/华北-北京四/1 年）、现价 36 元与同页原价 395.28 元、V0 新客与限购 1 台条件、活动期 2026-08-28 至 12-31、以及“续费不适用促销价”规则；未登录下单实测，实时库存无法确认。",
+      "lastVerifiedAt": "2026-10-26T04:37:32Z",
+      "nextReviewAt": "2026-10-27T04:37:32Z",
+      "evidence": [
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "页面内嵌商品 JSON：L 实例 2核2G2M、100G/月、40GB 系统盘、华北-北京四、1 年，current 36、origin 395.28；对应规格码 ahf.large.1.40g.2m.linux。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "页面规则文本：V0 新客（已注册+实名且从未购买过华为云资源）可买，限购 1 台；活动时间 2026 年 8 月 28 日-2026 年 12 月 31 日，秒杀每日 0 点限量发售。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "页面通用规则：续费价格以当期官网价为准，本活动页面促销价不适用于续费价格；超出套餐的流量/功能按标准资费另付。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-26T04:37:32Z",
+          "status": "active",
+          "note": "从 LINUX DO 福利羊毛区发现“华为云 36 元一年”线索，随后直接读取华为云官方活动页与其内嵌商品数据/规则文本，确认配置、价格、资格与活动期，并确认续费不适用促销价；未登录、未下单。"
+        }
+      ]
+    },
+    {
+      "id": "greencloud-13th-birthday-sale-2026",
+      "title": "绿云 GreenCloud 13 周年庆：1313 特价 VPS 闪购 + 返现（套餐价格未读到）",
+      "provider": "GreenCloud（绿云）",
+      "category": "cloud",
+      "description": "GreenCloud 官方博客公告 13 周年庆活动：2026-10-26 至 10-31（UTC+0）开放限时闪购，含每年周年庆的 1313 系列套餐，部分闪购套餐叠加双倍资源，另有 13% 账户余额返现、Windows VPS 买 12 个月送 6 个月和转盘抽奖；具体套餐规格与价格在结算商店页，本轮被 Cloudflare 挑战拦截，未能读取。",
+      "quota": "官方公告只说明含 1313 套餐与其它限时闪购套餐、部分套餐可叠加双倍资源；具体 CPU/内存/磁盘/流量/带宽/地区与价格未在公告页列出，商店页本轮不可读，均待核实。",
+      "benefitValue": "无法可靠估值：官方公告未列套餐价格，商店页被拦截未读到具体档位报价；返现比例为 13% 但要求单张已付账单满 500 美元。",
+      "eligibility": "需注册 GreenCloud 客户中心账号；公告未限定新老用户。13% 返现要求符合条件的已付购买/续费账单总额 ≥ 500 美元，充值余额与未付账单不计入；转盘按活动期真实付款消费计算，账户余额抵扣部分不计入。",
+      "regions": "社区讨论涉及新加坡 DC1、日本（IIJ/SoftBank）、美国等多个地区套餐；官方公告页未逐条列出参与地区与库存分配。",
+      "validity": "活动期 2026-10-26 至 2026-10-31（UTC+0）；闪购库存有限、可能售罄；Windows VPS 送 6 个月仅限标准套餐 12 个月付或续费，促销套餐与折扣套餐续费不适用。",
+      "deadlineNote": "官方公告写明 Campaign period: October 26–31, 2026 (UTC+0)，未给出具体时刻，endsAt 按 UTC 10-31 23:59:59 折算；库存售完即止。",
+      "officialUrl": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
+      "claimUrl": "https://greencloudvps.com/billing/store/13th-birthday-sale",
+      "discoveryUrl": "https://www.nodeseek.com/post-1009411-1",
+      "discoveredAt": "2026-10-26T04:37:32Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "付费低价套餐，不是免费资源。返现门槛为 500 美元级别账单，普通单机用户难以触发；转盘需活动期累计真实付款满 50 美元起、每客户最多 5 次；续费价格、资源翻倍条件、超流量与 IPv4 附加费均未核实。",
+      "startsAt": "2026-10-26T00:00:00Z",
+      "endsAt": "2026-10-31T23:59:59Z",
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方博客可读并确认活动周期、1313 闪购存在、13% 返现门槛、Windows VPS 12+6 与转盘规则；但结算商店页与官网主站均返回 Cloudflare 挑战，套餐规格、价格、地区与续费条件无法读取，社区帖只给出一张套餐图与“1313”口头评价，故保持待核实。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-27T04:37:32Z",
+      "evidence": [
+        {
+          "url": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
+          "summary": "官方 13 周年公告：活动期 2026-10-26 至 10-31（UTC+0）；Birthday Flash Sale 含 1313 套餐与其它限时套餐、部分叠加双倍资源、库存有限；13% 返现需账单 ≥ 500 美元；Windows VPS 12 个月付送 6 个月；转盘按 50 美元起真实付款累计、最多 5 次。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
+          "summary": "结算商店页 2026-10-26 读取返回 Cloudflare “Just a moment” 挑战，未获取套餐列表与价格；仅确认该 store 路径存在并出现在导航中。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-26T04:37:32Z",
+          "status": "pending",
+          "note": "NodeSeek 当日大量讨论绿云 13 周年抢购，据此读取官方博客公告确认活动周期与规则；商店页被 Cloudflare 拦截，套餐价格与规格未知，故以 pending 草案入库，未注册、未下单。"
+        }
+      ]
+    },
+    {
+      "id": "kiro-free-tier-50-credits-2026",
+      "title": "Kiro 免费档：每月 50 Credits，可用 Claude Sonnet 4.5 与开源权重模型",
+      "provider": "Kiro (AWS)",
+      "category": "ai",
+      "description": "Kiro 官方定价页写明提供长期存在的 Kiro Free 档（$0/月，50 credits），用社交登录或 AWS Builder ID 注册即可使用 Claude Sonnet 4.5 以及 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1 等开源权重模型，属于无需付费即可长期使用的 AI 编程 Agent/IDE 额度。",
+      "quota": "50 credits/月（官网以 $0 per month 列示该档额度）；可用模型：Claude Sonnet 4.5 与开源权重模型（Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1 等），受官方 rate limits 约束，具体限速数值未在可读页面公布。",
+      "benefitValue": "官方标价 $0/月；付费 Pro 档 $20/月含 1000 credits，按此内部比例折算 50 credits 约合 $1/月，仅供参考，官方未给出 credits 的独立货币定价。",
+      "eligibility": "注册 Kiro 账号并使用社交登录或 AWS Builder ID 登录；用 AWS Identity Center（原 IAM Identity Center）身份接入的账号不在此免费档适用范围；免费档无需付费订阅。",
+      "regions": "免费档官方未列国家/地区限制；付费档注明部分高级模型并非所有国家/地区可用；AWS GovCloud 版不含免费档且价格约高 20%。",
+      "validity": "官方称该免费档为“perpetual”，50 credits 按月计；rate limits 与超额后的降级行为具体规则未公布。",
+      "deadlineNote": "官方未公布免费档结束日期；\"perpetual\" 是官方当前表述，不代表永久不变的承诺。",
+      "officialUrl": "https://kiro.dev/pricing/",
+      "claimUrl": "https://kiro.dev/",
+      "discoveryUrl": "https://aispoils.com/type/dev.html",
+      "discoveredAt": "2026-10-26T04:37:32Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费档 $0，官方仅说明升级付费档需要有效信用卡，未要求免费档绑卡。超出 50 credits 后需升级 Pro $20/月（1000 credits）、Pro+ $40、Pro Max $100、Power $200，或按 $0.04/credit 购买 add-on；付费订阅每月 1 日扣费；日本账单地址另计消费税；企业版与 GovCloud 不适用本免费档。首次升级任一付费档可获 $20 抵扣（需通过社交登录或 Builder ID 注册）。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Kiro 官方定价页可读，明确 Kiro Free 为 $0/月 50 credits 的长期免费档、可用模型清单、登录方式限制（社交/AWS Builder ID，Identity Center 不适用）、GovCloud 例外，以及付费档价格与 add-on 单价；限速具体数值未公布，未登录实测额度消耗。",
+      "lastVerifiedAt": "2026-10-26T04:37:32Z",
+      "nextReviewAt": "2026-10-27T04:37:32Z",
+      "evidence": [
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "定价表：KIRO FREE $0/月、50 credits；Pro $20/1000 credits、Pro+ $40/2000、Pro Max $100/5000、Power $200/10000；add-on $0.04/credit；FAQ 称免费档为 perpetual 且含 50 credits。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "脚注：社交登录或 AWS Builder ID 注册的免费档用户可用 Claude Sonnet 4.5 与 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1 等开源权重模型，受 rate limits 约束；部分高级模型非所有国家/地区可用；GovCloud 约贵 20% 且不含免费档。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "FAQ：首次升级任一付费档可获 $20 抵扣（仅社交登录或 Builder ID，不含 AWS Identity Center），升级需有效信用卡，付费订阅每月 1 日处理。",
+          "checkedAt": "2026-10-26T04:37:32Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-26T04:37:32Z",
+          "status": "active",
+          "note": "从 AI Spoils 沙箱/开发工具分类发现 Kiro 免费档线索，读取 kiro.dev 官方定价页确认额度、可用模型、登录方式限制与付费档定价；未注册、未实测额度消耗。"
+        }
+      ]
     }
   ]
 }
