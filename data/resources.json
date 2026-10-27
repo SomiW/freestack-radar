@@ -662,8 +662,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "华为云官方活动页内嵌商品数据与规则文本可读，确认机型规格（2 核 2G2M/100G 月流量/40G 盘/华北-北京四/1 年）、现价 36 元与同页原价 395.28 元、V0 新客与限购 1 台条件、活动期 2026-08-28 至 12-31、以及“续费不适用促销价”规则；未登录下单实测，实时库存无法确认。",
-      "lastVerifiedAt": "2026-10-26T04:37:32Z",
-      "nextReviewAt": "2026-10-27T04:37:32Z",
+      "lastVerifiedAt": "2026-10-27T05:40:45Z",
+      "nextReviewAt": "2026-10-28T05:40:45Z",
       "evidence": [
         {
           "url": "https://activity.huaweicloud.com/phbcecs.html",
@@ -679,6 +679,11 @@
           "url": "https://activity.huaweicloud.com/phbcecs.html",
           "summary": "页面通用规则：续费价格以当期官网价为准，本活动页面促销价不适用于续费价格；超出套餐的流量/功能按标准资费另付。",
           "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "复核活动页：Flexus L实例-2核2G2M、固定带宽 100G/月、系统盘 40GB、数据中心 华北-北京四、时长 1 年，内嵌商品数据 current 36 / origin 395.28，规格码 ahf.large.1.40g.2m.linux；标签仍为「V0新客专享」「限购1台」。规则区仍写活动时间 2026年8月28日-2026年12月31日、秒杀每日0点限量发售，且「续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格」。条款未见变化。",
+          "checkedAt": "2026-10-27T05:40:45Z"
         }
       ],
       "history": [
@@ -686,6 +691,11 @@
           "at": "2026-10-26T04:37:32Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区发现“华为云 36 元一年”线索，随后直接读取华为云官方活动页与其内嵌商品数据/规则文本，确认配置、价格、资格与活动期，并确认续费不适用促销价；未登录、未下单。"
+        },
+        {
+          "at": "2026-10-27T05:40:45Z",
+          "status": "active",
+          "note": "复核成功：官方活动页配置（2核2G2M/100G月流量/40G盘/华北-北京四/1年）、36 元与 395.28 元原价、V0 新客限购 1 台、活动期 8-28 至 12-31、续费不适用促销价均未见变化。未登录、未下单。"
         }
       ]
     },
@@ -774,8 +784,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Kiro 官方定价页可读，明确 Kiro Free 为 $0/月 50 credits 的长期免费档、可用模型清单、登录方式限制（社交/AWS Builder ID，Identity Center 不适用）、GovCloud 例外，以及付费档价格与 add-on 单价；限速具体数值未公布，未登录实测额度消耗。",
-      "lastVerifiedAt": "2026-10-26T04:37:32Z",
-      "nextReviewAt": "2026-10-27T04:37:32Z",
+      "lastVerifiedAt": "2026-10-27T05:40:45Z",
+      "nextReviewAt": "2026-10-28T05:40:45Z",
       "evidence": [
         {
           "url": "https://kiro.dev/pricing/",
@@ -791,6 +801,11 @@
           "url": "https://kiro.dev/pricing/",
           "summary": "FAQ：首次升级任一付费档可获 $20 抵扣（仅社交登录或 Builder ID，不含 AWS Identity Center），升级需有效信用卡，付费订阅每月 1 日处理。",
           "checkedAt": "2026-10-26T04:37:32Z"
+        },
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "复核定价页：KIRO FREE 仍为 $0/月、50 credits，脚注仍列出 Free 档可用 Claude Sonnet 4.5 与 Qwen3 Coder Next / DeepSeek 3.2 / MiniMax M2.1 等开源权重模型（受 rate limits 约束）；付费档 Pro $20/1,000、Pro+ $40/2,000、Pro Max $100/5,000、Power $200/10,000，add-on $0.04/credit；FAQ 仍称 Free 档为 perpetual，GovCloud 约贵 20% 且不含 Free 档。条款未见变化。",
+          "checkedAt": "2026-10-27T05:40:45Z"
         }
       ],
       "history": [
@@ -798,6 +813,11 @@
           "at": "2026-10-26T04:37:32Z",
           "status": "active",
           "note": "从 AI Spoils 沙箱/开发工具分类发现 Kiro 免费档线索，读取 kiro.dev 官方定价页确认额度、可用模型、登录方式限制与付费档定价；未注册、未实测额度消耗。"
+        },
+        {
+          "at": "2026-10-27T05:40:45Z",
+          "status": "active",
+          "note": "复核成功：官方定价页 Free 档 $0/50 credits、可用模型清单、perpetual 表述、付费档与 add-on 单价、GovCloud 例外均未见变化。未注册、未实测额度消耗。"
         }
       ]
     },
@@ -1074,6 +1094,98 @@
           "at": "2026-10-26T23:34:07Z",
           "status": "active",
           "note": "由 AI Spoils 开发工具分类的 Trae 线索转读官方定价页：trae.cn 明确存在 ¥0 免费档（500 积分/月、全部功能、2 并发云端任务），国际版 trae.ai 另有 $0 但仅 Auto 模式的免费档；按官方条文标 active/high，未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "huawei-dev-growth-voucher-202610",
+      "title": "华为云开发者成长中心：成长积分兑换云代金券（50 元档，约 30 天有效）",
+      "provider": "华为云",
+      "category": "cloud",
+      "description": "华为云开发者成长中心（developer.huaweicloud.com/grow）以成长积分兑换云代金券，2026-10-27 上午社区多次报告券池补货、11:30 再次放量；回帖提到 50 元面额券单账号最多兑 6 张、券有效期约 30 天。该入口为纯前端渲染，本次未读到官方面额、积分比例与可用范围原文，按待核实草案记录。",
+      "quota": "社区口径：50 元面额券单账号上限 6 张、有效期约 30 天；官方页面无可读文本，面额档位、所需成长积分、每日库存与抵扣范围均待核实。",
+      "benefitValue": "若按社区口径成立，等价于对应面额的华为云代金券（50 元档、最多 6 张）；官方未可读披露面额与限制，无法可靠估值。",
+      "eligibility": "需华为云账号并完成实名认证，在开发者成长中心积累成长积分后兑换；是否新老用户同享、积分来源任务与兑换次数限制未获官方文本确认。",
+      "regions": "华为云中国站开发者成长中心；国际站是否同步同活动未核实。",
+      "validity": "社区称券有效期约 30 天；兑换窗口、每日补货时间与库存官方未提供可读条款。",
+      "deadlineNote": "官方未公布可读的活动起止时间与领取截止；社区称补货发生于 2026-10-27、券 30 天内到期，endsAt 保持 null，不能视为长期有效。",
+      "officialUrl": "https://developer.huaweicloud.com/grow",
+      "claimUrl": "https://developer.huaweicloud.com/grow",
+      "discoveryUrl": "https://linux.do/t/topic/3080322",
+      "discoveredAt": "2026-10-27T05:40:45Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "代金券只能抵扣符合规则的用量，超出部分与不可抵扣项（部分包周期/第三方产品）须自付；兑换消耗成长积分，积分需通过官方任务获取；券到期作废、不可提现；官方未提供可读条款，不得推定「无门槛任意抵扣」。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "low",
+      "confidenceReason": "三篇同日 LINUX DO 帖一致指向成长中心券池补货，其中一篇回帖明确「50 元的兑换已打 6 张上限」，但 developer.huaweicloud.com/grow 仅返回「HDGrowthPortal doesn't work properly without JavaScript enabled」，官方面额、积分比例、有效期与抵扣范围未获原文佐证。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-28T05:40:45Z",
+      "evidence": [
+        {
+          "url": "https://developer.huaweicloud.com/grow",
+          "summary": "官方成长中心入口返回 200，但为纯前端（Vue/JS）应用，HTML 仅含「成长中心_开发者-华为云」与「HDGrowthPortal doesn't work properly without JavaScript enabled」，未读到代金券面额、积分规则与有效期。",
+          "checkedAt": "2026-10-27T05:40:45Z"
+        },
+        {
+          "url": "https://linux.do/t/topic/3080322",
+          "summary": "社区帖（2026-10-27 03:33 UTC，572 浏览 / 47 赞）标题「11：30华为代金券再次补货」，正文仅催促领取，唯一外链指向 developer.huaweicloud.com/grow；回帖称 50 元券已打满 6 张上限、另帖称券 30 天有效。",
+          "checkedAt": "2026-10-27T05:40:45Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T05:40:45Z",
+          "status": "pending",
+          "note": "同日福利羊毛区出现多帖（3079603 / 3079622 / 3079637 / 3079670 / 3080322）称华为云代金券池刷新、11:30 补货；经 Jina 只读代理读到主帖正文与官方入口链接，因官方页面为纯前端渲染无法核对条款，按 low/pending 草案入库，未登录、未兑换。"
+        }
+      ]
+    },
+    {
+      "id": "yunzhi-cloud-phone-checkin-2days-202610",
+      "title": "云智手机（yunzhi.play.cn）每日签到领 2 天云手机",
+      "provider": "云智手机（yunzhi.play.cn）",
+      "category": "cloud",
+      "description": "社区报告云智手机的网页端活动页每日访问会自动弹出签到，领取后可在「我的权益」里新开或续费云手机 2 天，宣称 24 小时挂机不休眠；该活动此前一度下架，2026-10-27 恢复。属于国内云手机/云电脑类免费体验线索，官方页面为单页应用，规格与条款未读到。",
+      "quota": "社区口径：每次签到领取 2 天云手机使用时长；实例规格（vCPU/内存/存储/带宽）、并发数与是否含公网流量均未知。",
+      "benefitValue": "2 天云手机使用时长；官方未可读披露对应价格，无法可靠估值。",
+      "eligibility": "需注册并登录云智账号；是否要求中国大陆手机号与实名、单账号领取次数上限、库存与地区限制均未确认。",
+      "regions": "仅中国大陆站点 yunzhi.play.cn；境外访问与可用性未核实。",
+      "validity": "每次领取为 2 天；能否连续签到叠加、到期后实例与数据是否保留官方未披露。",
+      "deadlineNote": "官方活动页为纯前端渲染，未读到活动起止、每日签到时段与名额；endsAt 保持 null，不能视为长期有效。",
+      "officialUrl": "https://yunzhi.play.cn/ai/",
+      "claimUrl": "https://yunzhi.play.cn/ai/",
+      "discoveryUrl": "https://linux.do/t/topic/3079290",
+      "discoveredAt": "2026-10-27T05:40:45Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "免费时长仅 2 天，超出后需按官方价格续费（本次未读到价格）；长期挂机的流量、存储与增值功能是否另计费未确认；云手机不能 root、不能自定义系统，不适合当作常规 VPS。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "low",
+      "confidenceReason": "官方入口 https://yunzhi.play.cn/ai/ 返回 200 但只是 Vue 单页应用（HTML 约 1.3 KB），签到与权益规则全在前端脚本内，未读到任何条款；仅有社区帖描述「每天访问自动弹出、领 2 天、24 小时不休眠」。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-28T05:40:45Z",
+      "evidence": [
+        {
+          "url": "https://yunzhi.play.cn/ai/",
+          "summary": "官方活动页返回 200，标题「云智手机」，但为 Vue 单页应用（仅加载 /ai/assets/index-*.js），静态抓取无可读正文，签到规则、权益与价格均未获取。",
+          "checkedAt": "2026-10-27T05:40:45Z"
+        },
+        {
+          "url": "https://linux.do/t/topic/3079290",
+          "summary": "社区帖（2026-10-27 01:03 UTC）：称此前下架的活动「今天又回来了」，链接 yunzhi.play.cn/ai/?channel_code=00000042，每天访问会自动弹窗，领取后在「我的权益」新开或续费，可 24 小时挂机不休眠。",
+          "checkedAt": "2026-10-27T05:40:45Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T05:40:45Z",
+          "status": "pending",
+          "note": "从 LINUX DO 福利羊毛 RSS 发现云手机签到线索，官方入口可访问但为纯前端渲染，无法核对规格、续费与领取限制；按 low/pending 草案入库，未注册、未领取。"
         }
       ]
     }
