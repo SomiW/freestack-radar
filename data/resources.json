@@ -845,8 +845,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方活动页（qoder.com/activities）直接列示 300 Credits 欢迎礼、2 周试用、领取方式、邀请奖励规则与 Credits 30 天有效期，并同期展示 Qwen3.8-Flash 限免与每日 100 Credits 活动的官方条文；未注册实测领取，欢迎礼截止日与 Credits 货币折算官方未披露。",
-      "lastVerifiedAt": "2026-10-26T10:45:00Z",
-      "nextReviewAt": "2026-10-27T10:45:00Z",
+      "lastVerifiedAt": "2026-10-27T11:45:47Z",
+      "nextReviewAt": "2026-10-28T11:45:47Z",
       "evidence": [
         {
           "url": "https://qoder.com/activities",
@@ -857,6 +857,11 @@
           "url": "https://qoder.com/activities",
           "summary": "同页 Activities 区：Qwen3.8-Flash 自 2026-09-18 10:00 起按 0.1×→0.0× 限免、每日 100 Credits、首次订阅双倍 Credits（参见 docs.qoder.com/events/newbogo，起始 2026-10-21 00:00 UTC+8、结束待公布）；页末说明 Credits 自发放起 30 天有效、未用清零，邀请奖励需好友 30 天内首付、14 天后到账。",
           "checkedAt": "2026-10-26T10:45:00Z"
+        },
+        {
+          "url": "https://qoder.com/activities",
+          "summary": "复核：首屏仍为 \"Sign up now 300 Credits as your welcome gift\"、\"New users 2-Week Trial\"、\"Register to claim 300 Credits\"；邀请奖励 1,000/500、社区助力 1,024 SOTA Credits、\"Double Credits on Your First Subscription\"、Qwen3.8-Flash 限免（2026-09-18 10:00 起 0.1x→0.0x）、每日 100 Credits 等条文均在，未见撤销或额度缩减；页面仍未公布欢迎礼截止日与 Credits 货币折算。",
+          "checkedAt": "2026-10-27T11:45:47Z"
         }
       ],
       "history": [
@@ -864,6 +869,11 @@
           "at": "2026-10-26T10:45:00Z",
           "status": "active",
           "note": "复核官方活动页时发现新用户欢迎礼未入库：官方写明注册送 300 Credits、2 周试用、客户端领取，与已有的每日 100 Credits、Qwen3.8-Flash 限免为不同活动，按「提供方+官方活动页+活动轮次」新建 id；未注册实测。"
+        },
+        {
+          "at": "2026-10-27T11:45:47Z",
+          "status": "active",
+          "note": "满 24 小时例行复核（上次 2026-10-26T10:45:00Z）：官方活动页可读，300 Credits 欢迎礼、2 周试用、每日 100 Credits、Qwen3.8-Flash 限免均未见变化，未注册实测。"
         }
       ]
     },
@@ -919,7 +929,7 @@
       "provider": "Amp（Sourcegraph）",
       "category": "ai",
       "description": "Amp 官方定价页列出 Hobby 档为 Free：可使用全部产品功能，自托管 Orb（self-hosted orbs）不限量且免费，支持自带密钥（BYOK）或接入自有 ChatGPT/Claude 订阅，Amp 不对 token 加价也不设 token 上限；由 Amp 托管的 Orb 则按量付费（pay-as-you-go），Individual $20/月含 45,000 分钟托管 Orb 时长。",
-      "quota": "Hobby（Free）：产品功能全开、自托管 Orb 不限量免费、可自带 API Key 或自有 ChatGPT/Claude 订阅、无 Amp token 加价与上限；Amp 托管 Orb 无免费分钟数，按量计费。Individual $20/月含 45,000 分钟托管时长。",
+      "quota": "Hobby（Free）：产品功能全开、自托管 Orb 不限量免费、可用自有 runner、可自带 API Key 或自有 ChatGPT/Claude 等订阅、无 Amp token 加价与上限、支持公有/私有仓库；Amp 托管 Orb 无免费分钟数，按量计费。Individual $20/月含 45,000 分钟托管时长。",
       "benefitValue": "官方标价 $0/月；自托管 Orb 与 BYOK 使用不收 Amp 费用（模型成本由用户自己的 Key/订阅承担）；托管 Orb 按量付费，Individual 档 $20/月对 45,000 分钟可作单价参考。",
       "eligibility": "注册 Amp 账号即可开通 Hobby 档（官方 Sign Up 入口）；使用自托管 Orb 需自备运行环境与模型凭证（自带 Key 或自有订阅）；官方未说明地区限制。",
       "regions": "官方定价页未列国家/地区限制；Amp 服务可用性与模型供应商的地区政策另计，本次未核实。",
@@ -937,8 +947,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "ampcode.com 官方定价页明确写出 Hobby=Free 档的免费范围（自托管 Orb 不限量免费、BYOK、无 token 费用与上限）与付费边界（托管 Orb 按量、Individual $20/45,000 分钟），无冲突信息；托管 Orb 单价与是否需要绑卡未展开，未注册实测。",
-      "lastVerifiedAt": "2026-10-26T10:45:00Z",
-      "nextReviewAt": "2026-10-27T10:45:00Z",
+      "lastVerifiedAt": "2026-10-27T11:45:47Z",
+      "nextReviewAt": "2026-10-28T11:45:47Z",
       "evidence": [
         {
           "url": "https://ampcode.com/pricing",
@@ -949,6 +959,11 @@
           "url": "https://ampcode.com/pricing",
           "summary": "Individual $20/月含 45,000 minutes of orbin' time（托管）；Teams 不额外收费；Enterprise 定制。用于界定免费档的付费边界。",
           "checkedAt": "2026-10-26T10:45:00Z"
+        },
+        {
+          "url": "https://ampcode.com/pricing",
+          "summary": "复核：Hobby = Free 档条文仍在（all product features、unlimited self-hosted orbs free、pay-as-you-go for Amp-hosted orbs、BYOK、no Amp token fees or limits、public/private repositories）；本轮新增两行表述 \"Or use your own runners for free\" 与 \"Use your ChatGPT, Claude & other subs\"/\"Use tokens from anywhere\"。Individual 仍 $20/mo 含 45,000 minutes of orbin' time（托管）。免费与付费边界未变。",
+          "checkedAt": "2026-10-27T11:45:47Z"
         }
       ],
       "history": [
@@ -956,6 +971,11 @@
           "at": "2026-10-26T10:45:00Z",
           "status": "active",
           "note": "由 AI Spoils 线索转官方定价页核实：Hobby 为 $0 档，自托管 Orb 不限量免费、BYOK 不计 Amp token 费用，托管 Orb 按量计费；按官方条文标 active/high，未注册实测。"
+        },
+        {
+          "at": "2026-10-27T11:45:47Z",
+          "status": "active",
+          "note": "满 24 小时例行复核（上次 2026-10-26T10:45:00Z）：Hobby 免费范围与 Individual $20/45,000 分钟未变，页面新增「可用自有 runner 免费运行」「可使用自有 ChatGPT/Claude 订阅」表述，已同步到 quota。"
         }
       ]
     },
@@ -1188,6 +1208,98 @@
           "note": "从 LINUX DO 福利羊毛 RSS 发现云手机签到线索，官方入口可访问但为纯前端渲染，无法核对规格、续费与领取限制；按 low/pending 草案入库，未注册、未领取。"
         }
       ]
+    },
+    {
+      "id": "tencent-tokenhub-new-user-free-tokens-202610",
+      "title": "腾讯云 TokenHub 新用户免费体验包：每个模型 100 万 tokens（90 天）",
+      "provider": "腾讯云（TokenHub 大模型服务平台）",
+      "category": "ai",
+      "description": "腾讯云大模型服务平台 TokenHub 面向新用户提供免费体验包：登录控制台开通 TokenHub 后，在「模型广场」右上角「新用户福利免费体验」中勾选模型领取，官方文档称每个主账号可领一次；语言模型多为每模型 100 万 tokens（部分 50 万），有效期 90 天，另含图像/视频/3D 生成体验额度。覆盖混元 Hy3/HY 2.0 系列及 DeepSeek-V4-Pro/Flash、GLM-5/5.1、Kimi-K2.5/2.6、MiniMax-M2.5/2.7 等第三方模型。",
+      "quota": "免费体验包每个主账号一次：语言模型通常每模型 100 万 tokens（HY 2.0 Think/Instruct、Deepseek-v3.1/v3.2/v3-0324、GLM-5.1、GLM-5V-Turbo、Kimi-K2.5/K2.6 为 50 万），有效期 90 天；HY-Image-V3.0 50 次生成/365 天；生视频 50 积分/365 天；3D 生成 100 积分/365 天。完整清单以官方计费文档「新人免费体验包」为准。",
+      "benefitValue": "官方口径为「每模型 100 万 tokens」。按官网当前展示的广州地域模型价换算差异极大（示例：DeepSeek-V4.1-Flash 空闲/高峰时段 0.02/0.04 元每百万 tokens，GLM-5.3 28 元每百万 tokens 输入等），无法折算成单一金额，故按官方表述记为每模型 100 万 tokens 体验额度。",
+      "eligibility": "腾讯云新用户、每个主账号可领取一次；路径为登录 TokenHub 控制台 → 模型广场 → 新用户福利免费体验 → 勾选模型 → 立即领取；官方文档说明对支持免费体验的模型，首次调用时平台也会自动领取。本次读取的官方页面未逐项说明是否需实名认证或绑定支付方式（中国站开通云产品通常需实名认证，但页面未明确写于此活动）。",
+      "regions": "以中国站（cloud.tencent.com）TokenHub 为准；国际站 tencentcloud.com 的 TokenHub 活动页另标注 new users up to 1 million free tokens / 90 days，两站账号与额度相互独立，本次未核实国际站领取条件。",
+      "validity": "语言模型额度自领取起 90 天内有效，图像/视频/3D 为 365 天；官方提示过期未使用的额度自动失效，建议只领取近期计划使用的模型。",
+      "deadlineNote": "官方计费文档写明本期活动时间截至 2026-12-31，后续安排视运营情况延续或调整，以页面展示或平台公告为准；官方只写日期未写时区，此处按北京时间当日 24:00（UTC 2026-12-31T16:00Z）记录 endsAt。",
+      "officialUrl": "https://cloud.tencent.com/product/tokenhub",
+      "claimUrl": "https://cloud.tencent.com/product/tokenhub",
+      "discoveryUrl": "https://aispoils.com/type/dev.html",
+      "discoveredAt": "2026-10-27T11:45:47Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "免费体验包之外的调用按量计费：TokenHub 对每个模型给出输入/输出/缓存命中阶梯价（官网页面当前展示广州地域部分模型），另有 Lite/Standard/Pro/Max 订阅套餐（约 1,000–15,900 Credits/月）。DeepSeek-V4 系列自 2026-08-17 起按高峰（9:00–12:00、14:00–18:00 北京时间）与空闲时段分别计价。额度用尽或过期后调用不会自动停止而产生正常账单，需自行监控用量；是否需绑定支付方式未在活动页面明确。",
+      "startsAt": null,
+      "endsAt": "2026-12-31T16:00:00Z",
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方产品页（cloud.tencent.com/product/tokenhub）明确写「免费领取，可享 100 万 tokens」「新用户零门槛领取百万免费 tokens」，官方计费文档 1823_130052 给出各模型免费额度表、两种领取方式与 2026-12-31 截止时间，国际站活动页同样标注 new users up to 1 million free tokens / 90 days；三处官方表述一致。未登录实测领取，实名/绑卡要求未在页面逐项说明。",
+      "evidence": [
+        {
+          "url": "https://cloud.tencent.com/product/tokenhub",
+          "summary": "产品页首屏福利位：「免费领取，可享100万 tokens｜新用户零门槛领取百万免费 tokens，随心体验大模型」；同页展示 Hy4 preview、GLM-5.3-FlashX、Kimi-K3、DeepSeek-V4.1-Flash 等模型及输入/输出/缓存命中阶梯价。",
+          "checkedAt": "2026-10-27T11:45:47Z"
+        },
+        {
+          "url": "https://main.qcloudimg.com/raw/document/product/pdf/1823_130052_cn.pdf",
+          "summary": "官方《TokenHub 产品计费》文档（文档中心 1823/130052 的 PDF 版）：本期活动时间截至 2026-12-31；领取方式一为模型广场「新用户福利免费体验」勾选模型领取、方式二为首次调用自动领取；免费额度表列出 Hy3 preview 100 万、HY 2.0 Think/Instruct 50 万、DeepSeek-V4-Flash/Pro 100 万、GLM-5 100 万、GLM-5.1 50 万、Kimi-K2.6 50 万、MiniMax-M2.7 100 万等，均 90 天；图像 50 次/365 天、视频 50 积分/365 天、3D 100 积分/365 天。",
+          "checkedAt": "2026-10-27T11:45:47Z"
+        },
+        {
+          "url": "https://www.tencentcloud.com/act/pro/tokenhub",
+          "summary": "国际站 TokenHub 活动页：「Exclusive for new users · Up to 1 million free tokens, valid for 90 days」，并列出 Lite 1,000 / Standard 2,600 / Pro 7,900 / Max 15,900 Credits per month 订阅档，用于界定免费与付费边界（国际站额度独立）。",
+          "checkedAt": "2026-10-27T11:45:47Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T11:45:47Z",
+          "status": "active",
+          "note": "由 AI Spoils 线索（「Tencent Cloud AI Model Square：新用户每模型送 1M 免费 tokens（90 天有效）」）转腾讯云官方产品页、官方计费文档与国际站活动页核实：新用户免费体验包与额度表、90 天有效期、2026-12-31 截止均可查证，按 active/high 入库；未注册实测领取。"
+        }
+      ],
+      "lastVerifiedAt": "2026-10-27T11:45:47Z",
+      "nextReviewAt": "2026-10-28T11:45:47Z"
+    },
+    {
+      "id": "memoh-cloud-free-plan-202610",
+      "title": "Memoh Cloud 免费档：每个 Agent 一台云电脑（社区称 2C2G，申请审批制）",
+      "provider": "Memoh",
+      "category": "ai",
+      "description": "Memoh 是面向多 Agent 的平台，官方定位为「给每个 Agent 一台云电脑」，每台带桌面、文件系统与网络。官方中文文档显示 Memoh Cloud 内置托管模型（DeepSeek、Kimi、GPT、Claude 等），支持 Bot 工作区、Browser/Computer Use、MCP、Hooks、长期记忆与定时任务，并提供 macOS/Windows/Linux 桌面客户端。LINUX DO 福利羊毛区 2026-10-27 帖称其 10-13 提交申请后收到 approval 邮件，进入后可使用 2C2G 的 free plan。",
+      "quota": "社区帖口径：免费档为 2 vCPU / 2GB 内存（2C2G）；磁盘、可用时长、并发数、休眠/回收策略均未在官方页面披露，故无法确认实际配置。",
+      "benefitValue": "无法可靠估值：官方未公布免费档资源规格与价格，社区口径为 2C2G 云电脑，属 Agent 云电脑/沙箱类免费实例。",
+      "eligibility": "Memoh Cloud 账号可自助注册登录，但免费档资格未知：社区帖称为先提交申请、收到 approval 邮件后开通，官方页面（memoh.ai 为纯前端 SPA）本次未取到定价或免费档入口，是否限名额、限地区、需绑定支付方式均未知。",
+      "regions": "官方文档未列地区限制；服务可用性与托管模型供应商地区政策需另行确认，本次未核实。",
+      "validity": "未知：官方未公布免费档有效期限、额度重置或实例回收规则。",
+      "deadlineNote": "官方未披露免费档开放时间与截止时间，不能视为永久有效；本条为待核实线索，需人工在浏览器登录确认实际档位与配额。",
+      "officialUrl": "https://docs.memoh.ai/zh/guides/quick-start",
+      "claimUrl": "https://memoh.ai/",
+      "discoveryUrl": "https://linux.do/t/topic/3080801",
+      "discoveredAt": "2026-10-27T11:45:47Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "免费档之外的托管模型调用、额外算力、存储与网络是否计费未知；官方文档说明可自带 API Key（BYOK）接 OpenAI/Anthropic/Gemini/DeepSeek/智谱 等服务商，托管模型开箱即用但计费方式未公开。不推定免费档无隐藏限制或永久免费。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "low",
+      "confidenceReason": "仅社区帖（LINUX DO 3080801：10-13 提交申请，收到 approval 邮件，进入后为 2c2g 的 free plan）作为线索；官方 memoh.ai 为纯前端 SPA，本次未取到定价或免费档页面，官方中文文档只确认产品形态（Agent 云电脑、Memoh Cloud 托管模型），未提供免费档条款，故保持 pending/low。",
+      "evidence": [
+        {
+          "url": "https://docs.memoh.ai/zh/guides/quick-start",
+          "summary": "官方中文文档：Memoh 为多 Bot/多 Agent 平台，Memoh Cloud 内置托管模型（DeepSeek、Kimi、GPT、Claude 等），支持 BYOK 接入 OpenAI/Anthropic/Gemini/DeepSeek/智谱 等；未提及免费档规格或价格。",
+          "checkedAt": "2026-10-27T11:45:47Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T11:45:47Z",
+          "status": "pending",
+          "note": "由 LINUX DO 福利羊毛 RSS（topic 3080801）发现：申请审批通过后为 2C2G free plan。官方文档可确认产品为 Agent 云电脑平台，但免费档条款与价格未公开，按 pending/low 入库，待人工登录核实。"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-28T11:45:47Z"
     }
   ]
 }
