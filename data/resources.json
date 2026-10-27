@@ -549,8 +549,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "GitHub 官方 billing 文档明确列出 Free/Pro 档的每月计算与存储额度、各机型单价、无支付方式时的阻断规则与重置方式；未登录实测创建 codespace。",
-      "lastVerifiedAt": "2026-10-26T23:34:07Z",
-      "nextReviewAt": "2026-10-27T23:34:07Z",
+      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
+      "nextReviewAt": "2026-10-28T23:57:08.603Z",
       "evidence": [
         {
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
@@ -566,6 +566,11 @@
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
           "summary": "复核：免费配额表仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；单价 2/4/8/16/32 核 $0.18/$0.36/$0.72/$1.44/$2.88 与存储 $0.07/GB-month 未变；仍写明企业/组织计划无免费配额、EMU 仓库不可用、无有效支付方式超额即阻断。条款未见变化。",
           "checkedAt": "2026-10-26T23:34:07Z"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "复核：官方 billing 文档免费配额表仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；计价表 2/4/8/16/32 核 $0.18/$0.36/$0.72/$1.44/$2.88 与存储 $0.07/GB-month 未变；仍写明组织与企业计划无免费配额、EMU 仓库不可用 Codespaces、无有效支付方式超额即阻断。条款未见变化。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
         }
       ],
       "history": [
@@ -576,6 +581,11 @@
         },
         {
           "at": "2026-10-26T23:34:07Z",
+          "status": "active",
+          "note": "复核成功：官方 billing 文档的 Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month、各机型单价、存储 $0.07/GB-month 与「无有效支付方式超额即阻断」均未见变化。未登录创建 codespace。"
+        },
+        {
+          "at": "2026-10-27T23:57:08.603Z",
           "status": "active",
           "note": "复核成功：官方 billing 文档的 Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month、各机型单价、存储 $0.07/GB-month 与「无有效支付方式超额即阻断」均未见变化。未登录创建 codespace。"
         }
@@ -605,8 +615,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Google 官方限制页确认每周 50 小时配额、5 GB 持久盘及 120 天删除规则、40 分钟空闲终止与 12 小时会话上限，价格页确认免费；绑卡要求未在文档中规定、未实测登录，故 creditCard 记 unknown。",
-      "lastVerifiedAt": "2026-10-26T23:34:07Z",
-      "nextReviewAt": "2026-10-27T23:34:07Z",
+      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
+      "nextReviewAt": "2026-10-28T23:57:08.603Z",
       "evidence": [
         {
           "url": "https://docs.cloud.google.com/shell/docs/limitations",
@@ -632,6 +642,16 @@
           "url": "https://cloud.google.com/shell/pricing",
           "summary": "复核价格页：正文仍为一句「Cloud Shell is free for users with a Google Cloud account」，未列出 Cloud Shell 自身收费项。",
           "checkedAt": "2026-10-26T23:34:07Z"
+        },
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/limitations",
+          "summary": "复核限制页：默认每周配额仍为 50 小时、$HOME 仍为 5 GB 免费持久盘、120 天未访问删除、单会话上限 12 小时、非交互会话与虚拟机空闲均 40 分钟终止、18 周岁以下或年龄未知不可用；另写明仅限交互式使用、禁止挖矿与网络扫描、Cloud Shell Editor 不支持自定义扩展。条款未见变化。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://cloud.google.com/shell/pricing",
+          "summary": "复核价格页：仍为一句「Cloud Shell is free for users with a Google Cloud account」，页面未列出 Cloud Shell 自身任何收费项。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
         }
       ],
       "history": [
@@ -644,6 +664,11 @@
           "at": "2026-10-26T23:34:07Z",
           "status": "active",
           "note": "复核成功：官方限制页的 50 小时/周配额、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟空闲终止与年龄限制均未变化，价格页仍写明对 Google Cloud 账号用户免费。未登录实测。"
+        },
+        {
+          "at": "2026-10-27T23:57:08.603Z",
+          "status": "active",
+          "note": "复核成功：官方限制页 50 小时/周、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟空闲终止与年龄限制均未变化；价格页仍写明对 Google Cloud 账号用户免费。未登录实测。"
         }
       ]
     },
@@ -755,26 +780,26 @@
       "provider": "GreenCloud（绿云）",
       "category": "cloud",
       "description": "GreenCloud 官方博客公告 13 周年庆活动：2026-10-26 至 10-31（UTC+0）开放限时闪购，含每年周年庆的 1313 系列套餐，部分闪购套餐叠加双倍资源，另有 13% 账户余额返现、Windows VPS 买 12 个月送 6 个月和转盘抽奖；具体套餐规格与价格在结算商店页，本轮被 Cloudflare 挑战拦截，未能读取。",
-      "quota": "13 周年 1313 系列官方商店标价 $123.00 USD / 三年付：13 GB RAM、113 GB NVMe RAID-10、6 个 fair-share EPYC Milan 核心、1 IPv4 + /64 IPv6、10 Gbps 端口；美/加/欧机房 12 TB 流量，日本（Softbank/IIJ）、香港 DC2、新加坡 DC1/DC2 为 3333 GB 流量；含 1 次免费备份/快照，Linux，VirtFusion 面板。核查时 14 个 1313 机房档位全部显示 0 Available（售罄）；另有 4th of July Storage 4TB 档 $168/三年付、少量有货。",
+      "quota": "1313 系列（13 个机房统一规格）：13GB RAM、113GB NVMe 4.0 RAID-10、6 个 fair-share EPYC Milan 核、1 IPv4 + /64 IPv6（SG DC2 为 /112）、10Gbps 端口、12TB 月流量（日本 Softbank/IIJ、香港 DC2、新加坡 DC1/DC2 为 3333GB）、Linux、VirtFusion 面板、1 个免费备份/快照；统一 $123.00 USD / 三年付。另有 4th of July Storage 4TB 机型 $168.00 USD / 三年付（7GB RAM、4 核、20GB NVMe 系统盘 + 4TB SATA）。",
       "benefitValue": "官方商店页给出 1313 套餐 $123 USD/三年付（约 $41/年、$3.4/月）；页面未列同配置常规价，无法可靠折算折扣幅度。13% 返现要求单张已付账单满 500 美元，普通单机用户难以触发。",
       "eligibility": "需注册 GreenCloud 客户中心账号；公告未限定新老用户。13% 返现要求符合条件的已付购买/续费账单总额 ≥ 500 美元，充值余额与未付账单不计入；转盘按活动期真实付款消费计算，账户余额抵扣部分不计入。",
       "regions": "1313 覆盖 14 个机房：Toronto、Frankfurt、Chicago IL2、Kansas City、Buffalo NY、Staten Island NYC2、San Jose、Dallas、Coventry UK、Tokyo Softbank、Tokyo IIJ、Hong Kong DC2、Singapore DC1、Singapore DC2。",
       "validity": "活动期 2026-10-26 至 2026-10-31（UTC+0）；闪购库存有限、可能售罄；Windows VPS 送 6 个月仅限标准套餐 12 个月付或续费，促销套餐与折扣套餐续费不适用。",
-      "deadlineNote": "官方公告写明 Campaign period: October 26–31, 2026 (UTC+0)，未给出具体时刻，endsAt 按 UTC 10-31 23:59:59 折算；库存售完即止。",
+      "deadlineNote": "官方博客公告活动期为 2026-10-26 至 10-31（UTC+0），商店页未写补货时间；2026-10-31 之后应视为结束。库存多次读取均为 0 Available，不能视为可立即购买。",
       "officialUrl": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
       "claimUrl": "https://greencloudvps.com/billing/store/13th-birthday-sale",
       "discoveryUrl": "https://www.nodeseek.com/post-1009411-1",
       "discoveredAt": "2026-10-26T04:37:32Z",
       "creditCard": "unknown",
       "autoRenewal": "unknown",
-      "costNotes": "付费低价套餐，不是免费资源。商店页明确 1313 各档 “No refund/money back on this plan”，且为三年付一次性付款 $123；续费价格未在页面给出；返现门槛为 500 美元级别账单；转盘需活动期累计真实付款满 50 美元起、每客户最多 5 次；超流量、IPv4 附加费、Windows 授权与升级配置费用均未核实。核查时全部 1313 档售罄，需等补货。",
+      "costNotes": "1313 系列为三年付 $123.00 USD（折合约 $41/年、$3.4/月），商店页明确标注「No refund/money back on this plan」，即该特价机型不支持退款。续费价未在商店页披露，需在账单/续费时确认；新加坡 DC2 为 /112 IPv6 而非 /64。本次读取时 13 个机房的 1313 系列与全部 Storage 4TB 机型库存均为 0 Available（售罄），下单按钮仍在但无法立即购买。",
       "startsAt": "2026-10-26T00:00:00Z",
       "endsAt": "2026-10-31T23:59:59Z",
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方博客可读并确认活动周期、1313 闪购存在、13% 返现门槛、Windows VPS 12+6 与转盘规则；但结算商店页与官网主站均返回 Cloudflare 挑战，套餐规格、价格、地区与续费条件无法读取，社区帖只给出一张套餐图与“1313”口头评价，故保持待核实。",
-      "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
+      "nextReviewAt": "2026-10-28T23:57:08.603Z",
       "evidence": [
         {
           "url": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
@@ -795,6 +820,11 @@
           "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
           "summary": "同页另有 4th of July Storage 4TB 档 $168.00 USD/三年付（7GB RAM、4 cores、20GB NVMe 引导盘 + 4TB SATA RAID-10），SG DC2 剩 5 台、IL2 剩 2 台，其余机房 0 Available。",
           "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
+          "summary": "官方商店 13 周年页本次可读：1313 系列覆盖 CAN/DE/IL2/MO/NY/NYC2/SJC/TX/UK/JP(Softbank)/JP(IIJ)/HK DC2/SG DC1/SG DC2 共 13 个机房，统一 $123.00 USD / 三年付，13GB RAM + 113GB NVMe + 6 核 EPYC Milan + 1 IPv4 + /64 IPv6 + 10Gbps + 12TB（JP/HK/SG 为 3333GB），标注 No refund；读取时全部机型库存 0 Available。4th of July Storage 4TB 各机房 $168.00 USD / 三年付，同样 0 Available。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
         }
       ],
       "history": [
@@ -807,6 +837,11 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "pending",
           "note": "复核：此前被 Cloudflare 拦截的结算商店页本次可读，补录 1313 套餐官方价格（$123/三年付）、规格、14 个机房与“No refund”条款；核查时全部 1313 档 0 Available（售罄），仍无法确认补货节奏、续费价与购买资格，维持 pending/medium，lastVerifiedAt 仍为 null。"
+        },
+        {
+          "at": "2026-10-27T23:57:08.603Z",
+          "status": "pending",
+          "note": "官方商店活动页本次成功读取，补齐 1313 系列统一配置与 $123/三年付价格、13 个机房清单、不退款条款与 Storage 4TB $168/三年付；全部机型库存为 0 Available（售罄）。续费价仍未披露，保持 pending/medium。"
         }
       ]
     },
@@ -1149,14 +1184,14 @@
       "discoveredAt": "2026-10-26T23:34:07Z",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "costNotes": "免费档 ¥0；升级按官方标价 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），会员为连续包月且自动续费。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均需另查；不推定第三方模型调用完全免费。",
+      "costNotes": "免费档 ¥0；付费档 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），均连续包月自动续费。权益表显示免费档使用 GLM-5.3 无折扣，Seed-2.1-Turbo、Seed-Code、DeepSeek-V4.1-Flash 为闲时 5 折，DeepSeek-V4-Pro 闲时 5 折——即免费档调用这些模型仍需消耗积分但享折扣。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均未披露。",
       "startsAt": null,
       "endsAt": null,
       "status": "active",
       "confidence": "high",
       "confidenceReason": "trae.cn 官方定价页明确列示免费档 ¥0 / 每月 500 积分 / 所有功能免费使用 / 2 个云端任务并发，并同页给出各付费档价格与积分；积分清零规则、免费档可用模型清单与实名要求未在该页披露，未注册实测额度消耗。",
-      "lastVerifiedAt": "2026-10-26T23:34:07Z",
-      "nextReviewAt": "2026-10-27T23:34:07Z",
+      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
+      "nextReviewAt": "2026-10-28T23:57:08.603Z",
       "evidence": [
         {
           "url": "https://www.trae.cn/pricing",
@@ -1167,6 +1202,11 @@
           "url": "https://www.trae.ai/pricing",
           "summary": "国际版定价页：Free $0，仅 Auto 模式、有限使用与有限自动补全；Pro $20/月含 $20 用量与无限自动补全、TraeWork 最多 10 个并发云任务，用于区分国内外两套免费档。",
           "checkedAt": "2026-10-26T23:34:07Z"
+        },
+        {
+          "url": "https://www.trae.cn/pricing",
+          "summary": "复核定价页：免费 Free 档仍为 ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」；付费档 Lite ¥39（¥49）2,000 积分、Pro ¥69（¥99）4,000、Pro+ ¥219（¥239）12,000、Ultra ¥629（¥699）40,000，签到多得 3,000，云端并发 2/2/10/10/20。权益表新增按模型折扣细目：免费档 GLM-5.3 无折扣，Seed-2.1-Turbo/Seed-Code/DeepSeek-V4.1-Flash 均为「闲时 5 折」，DeepSeek-V4-Pro 闲时 5 折。核心免费条款未见变化。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
         }
       ],
       "history": [
@@ -1174,6 +1214,11 @@
           "at": "2026-10-26T23:34:07Z",
           "status": "active",
           "note": "由 AI Spoils 开发工具分类的 Trae 线索转读官方定价页：trae.cn 明确存在 ¥0 免费档（500 积分/月、全部功能、2 并发云端任务），国际版 trae.ai 另有 $0 但仅 Auto 模式的免费档；按官方条文标 active/high，未注册实测。"
+        },
+        {
+          "at": "2026-10-27T23:57:08.603Z",
+          "status": "active",
+          "note": "复核成功：官方定价页免费档仍为 ¥0/每月 500 积分/全部功能/2 并发云端任务，付费档价格与积分数未变；同页权益表补充了各档按模型折扣细目（免费档 GLM-5.3 无折扣、其余模型闲时 5 折），已同步 costNotes。未注册实测。"
         }
       ]
     },
@@ -1447,6 +1492,103 @@
         }
       ],
       "discoveredAt": "2026-10-27T17:51:23Z"
+    },
+    {
+      "id": "morph-student-free-year-202610",
+      "title": "Morph 学生认证：免费 12 个月全量 API（含 Kimi K3、GLM-5.3、DeepSeek V4.1）",
+      "provider": "Morph (MorphLLM)",
+      "category": "ai",
+      "description": "Morph 是为编码 Agent 提供推理与工具 API 的服务商（Fast Apply、WarpGrep 代码搜索、Compact 上下文压缩，并提供 Kimi K3、GLM-5.3、DeepSeek V4.1 Flash 等开源模型的 OpenAI 兼容端点）。官方学生页提供一年免费全量 API 访问，经 SheerID 验证在读身份，无需信用卡。",
+      "quota": "官方学生页仅写明「Full API access for 12 months」「All models including Morph v3」「No credit card required」；未公布学生档的月度 token/请求上限、并发与速率限制。社区称每月约 $2.5 额度，官方页面无对应表述，未采信。",
+      "benefitValue": "12 个月全量 API 访问，按官方按量价目折算的潜在价值取决于实际用量：Kimi K3 输入 $2.50/1M、输出 $14.00/1M；GLM-5.3 输入 $1.19/1M、输出 $6.00/1M；GLM-5.3-Flash $0.20/$0.70；DeepSeek V4.1 Flash $0.12/$0.80；Fast Apply morph-v3-fast $0.80/$1.20。官方未公布学生额度上限，无法给出确定金额。",
+      "eligibility": "在读学生：需填写姓名、学校邮箱、学校/大学、国家、预计毕业年份与专业，经 SheerID 验证在读状态。官方国家下拉列出美国、加拿大、英国、印度、德国、法国、澳大利亚、日本、韩国、巴西与 Other，未单列中国大陆，需按 Other 提交并等待审核；是否接受中国大陆高校邮箱未披露。",
+      "regions": "官网未公布服务地区限制，API 端点为全球可达的 https://api.morphllm.com/v1；学生审核按上述国家列表，中国大陆仅能选 Other。",
+      "validity": "免费期 12 个月，官方未写清起算时间（推测为审核通过日）与是否可续期。",
+      "deadlineNote": "官方未公布该学生计划的申请截止日期；12 个月期满后是否自动转按量计费、账号与 API Key 是否保留均未披露，不能视为长期免费。",
+      "officialUrl": "https://www.morphllm.com/students",
+      "claimUrl": "https://www.morphllm.com/students",
+      "discoveryUrl": "https://linux.do/t/topic/3083725",
+      "discoveredAt": "2026-10-27T23:57:08.603Z",
+      "creditCard": "not-required",
+      "autoRenewal": "unknown",
+      "costNotes": "学生计划官方写明无需信用卡。超出学生额度或 12 个月后按官方 token 价计费：充值 $10 起（首充额外送 $5）、Scale 档 $200/月含 $400 额度、Dedicated GPU 按 $8.16–8.64/GPU-hr 计费；学生档是否有硬性月度上限、超限是否直接拒绝请求均未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方学生页明确写出 12 个月全量 API、含 Morph v3 全部模型、免信用卡、SheerID 验证；但月度额度、限速、是否接受中国大陆院校均未披露，社区「每月 $2.5」说法在官方页面无对应，故保持待核实。",
+      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
+      "nextReviewAt": "2026-10-28T23:57:08.603Z",
+      "evidence": [
+        {
+          "url": "https://www.morphllm.com/students",
+          "summary": "官方学生页：「Free for students. Full access to Morph for a year, no credit card required. We verify your student status through your school email and enrollment.」三条权益为 Full API access for 12 months、All models including Morph v3、No credit card required、Verified through SheerID；申请表单需学校邮箱、学校、国家（美/加/英/印/德/法/澳/日/韩/巴西/Other）、预计毕业年份。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://www.morphllm.com/pricing",
+          "summary": "官方定价页为纯按 token 计费：Kimi K3 $2.50/$14.00、GLM-5.3 $1.19/$6.00、GLM-5.3-Flash $0.20/$0.70、DeepSeek V4.1 Flash $0.12/$0.80（每 1M）；充值 $10 起、首充送 $5，Scale $200/月含 $400 额度；页面未出现学生档额度说明。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://docs.morphllm.com/quickstart",
+          "summary": "官方文档确认 OpenAI 兼容端点 https://api.morphllm.com/v1 与 Anthropic Messages 兼容（可直接改 base URL 供 Claude Code 使用），并列出 Fast Apply、WarpGrep、Compact 等工具；未提及学生额度或免费层限制。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T23:57:08.603Z",
+          "status": "pending",
+          "note": "由 LINUX DO 两条线索（学生认证免费一年、每月约 $2.5）转读官方学生页与定价页：确认 12 个月全量 API、免信用卡、SheerID 验证与按量价目，但月度额度/限速未披露，社区 $2.5 说法无官方对应，按 pending/medium 入库。"
+        }
+      ]
+    },
+    {
+      "id": "hkcloudx-miniv6-nat-6usd-year-202610",
+      "title": "HKCloudX MiniV6 香港 NAT VPS：1 核 1G / 500GB 流量，约 $6/年",
+      "provider": "HKCloudX（KKCLOUD L.L.C）",
+      "category": "cloud",
+      "description": "NodeSeek 测评贴显示香港服务商 HKCloudX 有一款 MiniV6 NAT 机型：1 核 1G、500GB 月流量、500Mbps 端口，NAT 共享 IPv4 + IPv6，年付 $6（约 ¥45/年）。官方站为 KVM 云服务器动态配置器，首页标香港云服务器 $29/年起，该 $6 档未在可读页面列出。",
+      "quota": "社区测评口径：1 vCPU / 1 GB 内存 / 500 GB 月流量 / 500 Mbps 端口，NAT IPv4 + IPv6（无独立 IPv4）。官方页面未渲染出该档配置，需在购物车确认。",
+      "benefitValue": "年付 $6（约 ¥45/年，折合约 $0.5/月）为社区测评报价；官方可读页面仅见香港云服务器 $29/年起，故该价格尚未获官方确认。",
+      "eligibility": "注册即可下单，官方支持 STRIPE 在线付款；官方关于页写明云服务器首次购买 72 小时内可申请全额退款，其他产品见退款政策；是否需实名或绑定支付方式未披露。",
+      "regions": "香港 HKCOLO 机房（NAT 机型）；官方另有美国洛杉矶节点，与本机型无关。",
+      "validity": "年付周期；续费价格与服务期限未披露。",
+      "deadlineNote": "官方未公布该特价档的结束日期与库存状态，不能视为长期在售。",
+      "officialUrl": "https://hkcloudx.com/cloud.html",
+      "claimUrl": "https://hkcloudx.com/cart/goodsList.htm",
+      "discoveryUrl": "https://www.nodeseek.com/post-1013871-1",
+      "discoveredAt": "2026-10-27T23:57:08.603Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "$6/年为测评贴报价，非官方页面价格；续费价、超额流量计费、DDoS 附加费、IPv4 NAT 端口数量限制均未披露。NAT 机型无独立 IPv4，部分依赖 IPv4 入站的服务（建站、部分 API 回调）不可用；超低价机型通常存在超售与稳定性风险，官方主体为美国怀俄明州 KKCLOUD L.L.C。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "low",
+      "confidenceReason": "仅 NodeSeek 测评贴与第三方聚合文章提到 $6/年 MiniV6；官方 cloud.html 为动态配置器（页面初始计费 $0.00）、购物车页需脚本渲染，无法读取该档价格与库存，续费价与资格亦缺失，故标 pending/low。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-28T23:57:08.603Z",
+      "evidence": [
+        {
+          "url": "https://hkcloudx.com/cloud.html",
+          "summary": "官方云服务器页为 KVM 动态配置器（镜像、配置、优惠码，初始显示 $0.00），未渲染出固定套餐表，无法确认 MiniV6 或 $6/年档存在；首页热门产品写「香港云服务器 $29/年起」「KVM 虚拟化、200M–500M 带宽」。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://hkcloudx.com/about_us.html",
+          "summary": "官方关于页：运营主体 KKCLOUD L.L.C（美国怀俄明州），机房香港 HKCOLO 与美国洛杉矶，支持 STRIPE 付款，云服务器首购 72 小时内可申请全额退款，云服务器付款后自动开通。",
+          "checkedAt": "2026-10-27T23:57:08.603Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T23:57:08.603Z",
+          "status": "pending",
+          "note": "由 NodeSeek 测评贴发现 HKCloudX MiniV6（1C1G、500GB@500Mbps、NAT、约 $6/年）。读取官方云服务器页与关于页，确认主体、机房与退款政策，但 $6 档价格与库存无法从官方页面读取，按 pending/low 入库待人工在购物车核对。"
+        }
+      ]
     }
   ]
 }
