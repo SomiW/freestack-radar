@@ -71,8 +71,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官网确认免费配置、无需绑卡、GitHub 账号门槛、续期和删除规则；实际可抢库存无法在未登录情况下确认，活动有效不代表保证领取。",
-      "lastVerifiedAt": "2026-10-26T17:28:57Z",
-      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
       "evidence": [
         {
           "url": "https://vyce.cloud/",
@@ -83,6 +83,11 @@
           "url": "https://vyce.cloud/",
           "summary": "复核仍有 Vps-Mini Free 档：2 GB RAM、1 vCore、6 GB NVMe、SSH root、每日续期；FAQ 明确“costs nothing, nothing to pay for later”、需 GitHub 账号满 30 天、停机 3 天删除；Vps-Plus/Pro 标 Coming soon。条款未见变化。",
           "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://vyce.cloud/",
+          "summary": "复核官方首页（静态 HTML 为 SPA，经只读渲染代理读取正文）：Vps-Mini 仍为 2 GB RAM / 1 vCore / 6 GB NVMe、SSH root、每日手动续期；FAQ 仍写 Vps-Mini「costs nothing, nothing to pay for later」、GitHub 账号须满 30 天、免费名额实时先到先得、停机 3 天删除；页面另列出 4 GB/2 vCore/20 GB 与 8 GB/4 vCore/40 GB 两档（付费档，未标价）。免费条款未见变化。",
+          "checkedAt": "2026-10-27T17:51:23Z"
         }
       ],
       "history": [
@@ -95,6 +100,11 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "active",
           "note": "复核成功：官方首页与 FAQ 条款未见变化（配置、免绑卡、GitHub 30 天、每日续期、停机 3 天删除）。未登录、未领取。"
+        },
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "复核成功：官方首页与 FAQ 的免费配置（2 GB/1 vCore/6 GB）、免绑卡、GitHub 30 天门槛、每日续期与停机 3 天删除规则均未变化；新增可见两档付费规格（未标价）。未登录、未领取。"
         }
       ]
     },
@@ -122,8 +132,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Render 官方免费部署指南及 2026 免费套餐说明明确免费服务、750 小时、无信用卡和超额计费机制；未实际创建账号或部署实例。",
-      "lastVerifiedAt": "2026-10-26T17:28:57Z",
-      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
       "evidence": [
         {
           "url": "https://render.com/docs/free",
@@ -139,6 +149,11 @@
           "url": "https://render.com/docs/free",
           "summary": "复核 Deploy for Free 文档：仍在 750 Free instance hours/月、空闲 15 分钟 spin down、免费 Postgres 1 GB 且 30 天过期（另有 14 天宽限后删除）、免费 Key Value 仅内存、超额带宽/构建分钟无付款方式时暂停；条款未见变化。",
           "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://render.com/docs/free",
+          "summary": "复核 Deploy for Free 文档：仍为每工作区每月 750 Free instance hours（不结转）、免费 Web Service 空闲 15 分钟 spin down、临时文件系统、免费 Postgres 1 GB 且创建 30 天后过期（14 天宽限后删除）、免费 Key Value 仅内存、超额出站带宽或构建分钟在未绑支付方式时暂停。条款未见变化。",
+          "checkedAt": "2026-10-27T17:51:23Z"
         }
       ],
       "history": [
@@ -151,35 +166,40 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "active",
           "note": "复核成功：官方免费部署文档条款未见变化（750 小时/月、15 分钟休眠、Postgres 30 天过期）。未创建账号或实例。"
+        },
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "复核成功：750 小时/月、15 分钟休眠、Postgres 30 天过期等条款未见变化；文档未再逐项标注内存数值，故不改配置字段。未创建账号或实例。"
         }
       ]
     },
     {
       "id": "qoder-deepseek-v41-flash-free-202610",
-      "title": "Qoder DeepSeek Flash 限免延期线索（待核实）",
+      "title": "Qoder 国际版 DeepSeek-Flash 每日免费额度（至 11 月 1 日 00:00）",
       "provider": "Qoder",
       "category": "ai",
-      "description": "LINUX DO 用户报告 Qoder 内的 DeepSeek Flash 限免延长至 11 月 1 日；2026-10-26 复核时官网活动页已可读，但官方仅公告 Qwen3.8-Flash 限免，未提及 DeepSeek 模型，社区说法与官方条款不一致，本条保持待核实。",
-      "quota": "社区称 DeepSeek-V4.1-Flash-1017 可按 0 Credits 使用；官方活动页只列出 Qwen3.8-Flash 按 0.0× 计费，DeepSeek 相关额度、调用次数和每日上限均未获官方确认。",
-      "benefitValue": "若活动成立，可免除指定模型在 Qoder 内的 Credits 消耗；无法可靠估值，不等同赠送模型 API 余额。",
-      "eligibility": "社区讨论涉及免费和付费用户；国际版与国内版、账号资格及可用模型须在官方客户端核对，未登录测试。",
-      "regions": "活动支持的国家/地区及国内外版本差异待核实。",
-      "validity": "社区 10 月 25 日帖子称延期至 11 月 1 日；官方活动页仅写 Qwen3.8-Flash 的结束日期另行公告，未给出 DeepSeek 模型的截止时间，两者无法对齐。",
-      "deadlineNote": "官方未披露 DeepSeek 模型的可读截止条款；社区日期未确认具体时刻和时区，endsAt 保持 null，不能当作确定截止时间。",
-      "officialUrl": "https://qoder.com/activities",
+      "description": "Qoder 官方活动文档（docs.qoder.com/events/deepseek-flash-free）说明：DeepSeek-Flash（DeepSeek-V4.1-Flash-1017，1M 上下文）自 2026-10-20 00:00（UTC+8）起向 Qoder International 全体新老个人用户提供每日免费额度，额度内倍率由 0.1× 降为 0.0×、不消耗 Credits；无需领取，模型选择器选 DeepSeek-Flash 即可，零 Credits 余额的免费账号同样可用。原定 10-24 24:00 结束，已延期至 10-31 24:00（即 11-01 00:00，UTC+8）。",
+      "quota": "每日免费调用额度：每账号每天固定次数（官方未公布具体次数），额度内 0.0× 即 0 Credits，即使把 reasoning effort 开到最高也不扣；付费订阅者每日免费次数多于免费用户，额度用尽后次日恢复。模型为 DeepSeek-V4.1-Flash-1017，上下文 1M。",
+      "benefitValue": "每日若干次 DeepSeek-Flash 免费调用（官方未公布次数与等价金额，无法可靠估值）；不赠送 API 余额，也不抵扣每日 100 Credits。",
+      "eligibility": "Qoder International 个人用户，Free、Pro Trial、Lite、Pro、Pro+、Ultra 均适用；Teams 与 Enterprise 订阅者不适用；无需付费订阅、无需领取、无需绑卡，在客户端模型选择器选 DeepSeek-Flash 即生效。禁止转售、反代或共享账号。",
+      "regions": "仅 Qoder 国际版（International）个人账户；官方按新加坡时间 UTC+8 表述活动时间，未逐国列明限制。",
+      "validity": "2026-10-20 00:00 至 2026-10-31 24:00（即 2026-11-01 00:00，UTC+8）；每日免费额度按天重置。",
+      "deadlineNote": "官方明确结束时间为 2026-10-31 24:00（UTC+8，即 2026-10-31T16:00:00Z）；结束后按届时公布的 Credit 倍率计费，官方未承诺再次延期。",
+      "officialUrl": "https://docs.qoder.com/events/deepseek-flash-free",
       "claimUrl": "https://qoder.com/",
       "discoveryUrl": "https://linux.do/t/topic/3072678",
-      "creditCard": "unknown",
-      "autoRenewal": "unknown",
-      "costNotes": "0 Credits、每日次数与免订阅资格尚未官方确认；不推定其他模型、Cloud Agents 沙箱或自带 API Key 免费，不自动订阅或购买。",
-      "confidence": "low",
-      "confidenceReason": "社区原帖可追溯；官方活动页现已可读，但只确认 Qwen3.8-Flash 限免（见 qoder-qwen38-flash-free-202609），未确认 DeepSeek 模型限免或延期至 11 月 1 日，冲突未消，保持低可信。",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "额度内 0 Credits；额度用尽后继续使用按原倍率扣 Credits，或换用其他模型，不会自动订阅或自动扣费。该免费额度与每日 100 Credits 互不抵扣；其他模型与 Cloud Agents 仍按各自规则计费。高峰期官方提示可能限速或排队。",
+      "confidence": "high",
+      "confidenceReason": "Qoder 官方活动文档直接列出模型名 DeepSeek-V4.1-Flash-1017、0.1×→0.0× 倍率、每日免费额度的重置规则、适用计划清单与延期后的截止时间（10-31 24:00 UTC+8）；未登录实测调用，具体每日次数官方未公布。",
       "discoveredAt": "2026-10-25T16:23:24.401Z",
-      "startsAt": null,
-      "endsAt": null,
-      "status": "pending",
-      "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-27T10:45:00Z",
+      "startsAt": "2026-10-19T16:00:00Z",
+      "endsAt": "2026-10-31T16:00:00Z",
+      "status": "active",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/flashoffer",
@@ -195,6 +215,11 @@
           "url": "https://qoder.com/activities",
           "summary": "2026-10-26 复核官方活动页：Activities 区仍只列 Qwen3.8-Flash 限时免 Credits、每日 100 Credits、首次订阅双倍 Credits、社区助力与大使计划，全页未出现 DeepSeek 模型限免或「延期至 11 月 1 日」的表述。",
           "checkedAt": "2026-10-26T10:45:00Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/deepseek-flash-free",
+          "summary": "官方文档「DeepSeek-Flash: Free for a Limited Time」：DeepSeek-V4.1-Flash-1017（10-17 发布、1M 上下文）自 2026-10-20 00:00（UTC+8）向国际版个人用户提供每日免费额度，倍率 0.1×→0.0×、免领取、零余额可用；原定 10-24 24:00 结束已延期至 10-31 24:00（11-01 00:00）；Teams/Enterprise 不适用；额度耗尽后按原倍率计费。",
+          "checkedAt": "2026-10-27T17:51:23Z"
         }
       ],
       "history": [
@@ -212,6 +237,11 @@
           "at": "2026-10-26T10:45:00Z",
           "status": "pending",
           "note": "再次读取官方活动页（含 docs.qoder.com/events/newbogo）复核：官方仍未列出 DeepSeek-V4.1-Flash 限免或 11/1 延期，社区说法持续无官方佐证，维持 pending/low；lastVerifiedAt 仍为 null。"
+        },
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "冲突消解：通过 docs.qoder.com/llms.txt 文档索引找到此前未收录的官方活动页 events/deepseek-flash-free，官方明确 DeepSeek-V4.1-Flash-1017 每日免费额度且延期至 10-31 24:00（UTC+8）。此前 6 轮「无官方佐证」的原因是该页未出现在活动页导航中。据官方条文由 pending/low 升为 active/high，endsAt 设为 2026-10-31T16:00:00Z；未注册实测。"
         }
       ]
     },
@@ -336,8 +366,8 @@
       "startsAt": "2026-09-18T02:00:00Z",
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-10-26T17:28:57Z",
-      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/flashoffer",
@@ -353,6 +383,11 @@
           "url": "https://docs.qoder.com/events/flashoffer",
           "summary": "复核：Qwen3.8-Flash 仍为 0.1×→0.0× 限免，个人用户（Free/Pro Trial/Lite/Pro/Pro+/Ultra）适用、Teams/Enterprise 不适用，已延期且结束日另行公告；全文仍未出现 DeepSeek 模型。条款未见变化。",
           "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/flashoffer",
+          "summary": "复核官方活动文档：Qwen3.8-Flash 仍按 0.1×→0.0× 限免，个人用户（Free/Pro Trial/Lite/Pro/Pro+/Ultra）适用、Teams/Enterprise 不适用；原定 9/30 结束已延期，结束日仍在该页提前公告。条款未见变化。",
+          "checkedAt": "2026-10-27T17:51:23Z"
         }
       ],
       "history": [
@@ -365,6 +400,11 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "active",
           "note": "复核成功：官方活动文档仍只对 Qwen3.8-Flash 限免并处于延期状态，结束日待公告；仍未出现 DeepSeek 模型。未登录实测。"
+        },
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "复核成功：Qwen3.8-Flash 限免倍率、适用计划与延期状态均未变化，结束日仍待公告。未登录实测。"
         }
       ]
     },
@@ -392,8 +432,8 @@
       "startsAt": "2026-09-18T02:00:00Z",
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-10-26T17:28:57Z",
-      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/100credits",
@@ -409,6 +449,11 @@
           "url": "https://docs.qoder.com/events/100credits",
           "summary": "复核：每日在 Qoder 桌面应用领取 100 Credits，窗口 10:00 至次日 10:00（UTC+8），单笔 30 天有效、可跨天累积、错过不补领，结束时间 To be announced；条款未见变化。",
           "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/100credits",
+          "summary": "复核官方活动文档：每日 10:00（UTC+8）开窗、每账号每窗口限领 100 Credits，须在桌面应用「Usage 面板→左下角礼盒」手动领取，单笔 30 天有效、可跨窗口累积、错过不补、未领取不结转；结束时间 To be announced。新增 FAQ 明确 DeepSeek-Flash 免额期内不抵扣该 100 Credits。",
+          "checkedAt": "2026-10-27T17:51:23Z"
         }
       ],
       "history": [
@@ -421,6 +466,11 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "active",
           "note": "复核成功：官方文档的额度、窗口、30 天有效期与不可补领规则均未变化，结束时间仍待公告。未登录领取。"
+        },
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "复核成功：100 Credits/日、10:00 窗口、30 天有效期与不可补领规则未变化；补充官方说明「DeepSeek-Flash 限免不消耗每日 100 Credits」。未登录领取。"
         }
       ]
     },
@@ -1003,8 +1053,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "zcode.z.ai 官方文档直接列出「首次使用 5 天免费体验」、每日 GLM-5.3 300 万 + GLM-5-turbo 200 万 Token 及「5 天后失效，并非长期每天都有」的警示；BigModel 官方 GLM Coding Plan 页可佐证订阅价格与模型归属；未注册实测领取，地区、绑卡与限速未披露。",
-      "lastVerifiedAt": "2026-10-26T17:28:57Z",
-      "nextReviewAt": "2026-10-27T17:28:57Z",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
       "evidence": [
         {
           "url": "https://zcode.z.ai/cn/docs",
@@ -1020,6 +1070,11 @@
           "url": "https://docs.bigmodel.cn/cn/guide/models/vlm/glm-5.3-flash",
           "summary": "官方模型文档：GLM-5.3-Flash 已全量上线 GLM Coding Plan，1M 上下文、最大输出 128K；价格为 GLM-5.3 的 1/10、限时折扣 1/20，说明免费额度之外为按量付费。",
           "checkedAt": "2026-10-26T17:28:57Z"
+        },
+        {
+          "url": "https://zcode.z.ai/cn/docs",
+          "summary": "复核官方文档：仍写「首次使用 ZCode 可享 5 天免费权益」，GLM-5.3 300 万 Token/天 + GLM-5-turbo 200 万 Token/天、每日合计 500 万且仅限这 5 天、5 天后失效；订阅用户「闲时任务」仍为执行费用免费、套餐额度消耗 0。条款未见变化。",
+          "checkedAt": "2026-10-27T17:51:23Z"
         }
       ],
       "history": [
@@ -1027,6 +1082,11 @@
           "at": "2026-10-26T17:28:57Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区多帖（「GLM-5.3-Flash 活动又来了，3亿速领」等，均只发截图、无官方链接，且声称次日 9 点失效）发现线索后，转读 zcode.z.ai 官方文档，确认存在「新用户 5 天免费体验、每日 500 万 Token」的官方免费额度；该额度与社区「3 亿 Token 限时领取」说法不是同一项，后者无官方页面可核，未采信。按官方条文标 active/high，未注册实测。"
+        },
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "复核成功：5 天体验额度、每日 500 万 Token 与「5 天后失效、并非长期每天都有」表述未变化；社区所称「每晚 23:00–09:00 发放 3 亿 Token」在官方文档中仍无对应条目，未采信、未写库。"
         }
       ]
     },
@@ -1300,6 +1360,93 @@
       ],
       "lastVerifiedAt": null,
       "nextReviewAt": "2026-10-28T11:45:47Z"
+    },
+    {
+      "id": "qoder-1024-community-boost-202610",
+      "title": "Qoder 1024 社区助力：1,024 SOTA Credits 欢迎包 + 分轮解锁最高 22,528",
+      "provider": "Qoder",
+      "category": "ai",
+      "description": "Qoder 官方活动文档（docs.qoder.com/events/communityboost）：2026 程序员节期间加入 Community Boost 社区助力，个人用户可领 1,024 SOTA Credits 欢迎包，并与社区一起累计助力点数分 4 轮解锁更多 SOTA Credit 礼包。SOTA Credits 仅可用于 Sonus 模型，礼包有独立领取窗口与有效期。",
+      "quota": "加入即领 1,024 SOTA Credits 欢迎包；社区累计助力 2 万 / 5 万 / 10 万 / 20 万点分别解锁 2,048 / 3,072 / 4,096 / 12,288 SOTA Credits；全部拿满合计 22,528 SOTA Credits，仅限 Sonus 模型使用。",
+      "benefitValue": "最高 22,528 SOTA Credits（1024+2048+3072+4096+12288）；官方未公布 Credits 与货币换算比例，无法可靠估值。",
+      "eligibility": "Qoder 个人用户：Pro 及以上订阅自动参与（活动期内新订阅或升级者同样适用）；Lite 暂不支持 Sonus，需升级 Pro 及以上才能领取；Free 用户须在活动页提交申请并通过审核后参与。需在活动页加入并每日助力。",
+      "regions": "Qoder 国际版个人账户；活动页 qoder.com/community-boost，时间按 UTC+8 表述。",
+      "validity": "活动期 2026-10-22 至 2026-10-30 23:59（UTC+8）；欢迎包有效期至 2026-10-31 23:59；Round 1–3 礼包自领取起 24 小时内有效；Round 4 礼包仅限发放当日使用（最后一批 10-30 23:59 到期）。",
+      "deadlineNote": "官方明确活动与所有领取在 2026-10-30 23:59（UTC+8，即 2026-10-30T15:59:00Z）关闭，逾期不可补领；Round 4 每日礼包须当日领取当日用。",
+      "costNotes": "礼包不可与 off-peak 折扣叠加、不可转让或折现；Sonus 用量超出礼包后按标准 Credits 规则计费；Lite 用户升级 Pro 需付费订阅。异常注册/领取/使用可能被取消资格并回收奖励。",
+      "officialUrl": "https://docs.qoder.com/events/communityboost",
+      "claimUrl": "https://qoder.com/community-boost",
+      "discoveryUrl": "https://docs.qoder.com/llms.txt",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "startsAt": "2026-10-21T16:00:00Z",
+      "endsAt": "2026-10-30T15:59:00Z",
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方活动文档逐项列出欢迎包与 4 轮礼包的解锁门槛、Credits 数量、领取窗口、有效期、资格分层（Pro 自动参与 / Lite 需升级 / Free 需申请）与不可叠加规则；未登录实测领取，剩余 3 天窗口，Round 4 能否拿满取决于社区助力进度。",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-30T15:59:00Z",
+      "evidence": [
+        {
+          "url": "https://docs.qoder.com/events/communityboost",
+          "summary": "官方文档：活动 2026-10-22 至 10-30 23:59（UTC+8）；欢迎包 1,024 SOTA Credits，2 万/5 万/10 万/20 万助力点解锁 2,048/3,072/4,096/12,288；Pro 及以上自动参与、Lite 需升级、Free 需申请；欢迎包有效至 10-31 23:59，Round 1–3 礼包 24 小时有效，Round 4 当日有效；仅可用于 Sonus，不可与 off-peak 折扣叠加。",
+          "checkedAt": "2026-10-27T17:51:23Z"
+        },
+        {
+          "url": "https://docs.qoder.com/llms.txt",
+          "summary": "Qoder 官方文档索引（llms.txt）列出全部活动页，本次经此索引定位到 communityboost、deepseek-flash-free、efficientunlimited 等活动文档；活动页导航未完整暴露这些条目。",
+          "checkedAt": "2026-10-27T17:51:23Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "经官方文档索引发现活动页并按官方条文新增：程序员节社区助力，欢迎包 1,024 + 分轮最高 12,288 SOTA Credits，10-30 23:59（UTC+8）结束。未登录参与或领取。"
+        }
+      ],
+      "discoveredAt": "2026-10-27T17:51:23Z"
+    },
+    {
+      "id": "qoder-efficient-tier-free-202610",
+      "title": "Qoder Efficient 档位对付费用户限时 0 Credits（0.3×→0.0×）",
+      "provider": "Qoder",
+      "category": "ai",
+      "description": "Qoder 官方活动文档（docs.qoder.com/events/efficientunlimited）：Efficient 是 Qoder 的标准推理档位（原生多模态、低单价），活动期内所有付费用户选择该档位时计费倍率由 0.3× 降为 0.0×，不消耗 Credits，无需兑换、无需设置，选择即生效。",
+      "quota": "Efficient 档位调用按 0.0× 计费即 0 Credits，官方未公布调用次数、速率或并发上限；官方提示活动期高峰可能限速或响应变慢。",
+      "benefitValue": "免除此档位 0.3× 的 Credits 消耗；官方未给出等价金额，无法可靠估值。",
+      "eligibility": "付费用户：个人 Lite、Pro、Pro+、Ultra 订阅及 Teams/Enterprise 席位；Free 计划在 Pro 试用期内且账号仍有 Credits 时同样适用。Service Account 集成调用不参与本优惠，按 0.3× 正常计费。",
+      "regions": "Qoder / Qoder IDE / JetBrains 插件 / CLI / QoderWake / Mobile / Web App；按账号所在版本执行，官方未列地区限制。",
+      "validity": "自 2026-09-03 14:00（UTC+8）起，结束时间 To be determined；官方称结束前会在该页提前公告。",
+      "deadlineNote": "官方未公布结束日期（To be determined），endsAt 保持 null，不能视为永久免费；结束后恢复 0.3× 计费。",
+      "costNotes": "仅 Efficient 档位免费，其他档位与模型仍按各自倍率扣 Credits；服务账号（Service Account）调用不适用；不会自动订阅或扣费。",
+      "officialUrl": "https://docs.qoder.com/events/efficientunlimited",
+      "claimUrl": "https://qoder.com/",
+      "discoveryUrl": "https://docs.qoder.com/llms.txt",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "startsAt": "2026-09-03T06:00:00Z",
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方活动文档明确倍率变化（0.3×→0.0×）、适用产品线、付费计划清单、Free 计划在 Pro 试用期内的例外，以及 Service Account 不参与的限制；结束时间官方仅写「To be determined」，故 endsAt 为 null。未登录实测。",
+      "lastVerifiedAt": "2026-10-27T17:51:23Z",
+      "nextReviewAt": "2026-10-28T17:51:23Z",
+      "evidence": [
+        {
+          "url": "https://docs.qoder.com/events/efficientunlimited",
+          "summary": "官方文档：Efficient 标准推理档位自 2026-09-03 14:00 SGT 起对付费用户 0.3×→0.0× 计费，选择即生效、无需兑换；适用个人 Lite/Pro/Pro+/Ultra 与 Teams/Enterprise 席位，Free 计划在 Pro 试用期有 Credits 时亦适用；Service Account 集成不参与；结束时间待定。",
+          "checkedAt": "2026-10-27T17:51:23Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-27T17:51:23Z",
+          "status": "active",
+          "note": "经官方文档索引发现并按官方条文新增：Efficient 档位对付费用户限时 0 Credits，结束时间待公告。未登录实测。"
+        }
+      ],
+      "discoveredAt": "2026-10-27T17:51:23Z"
     }
   ]
 }
