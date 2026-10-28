@@ -950,8 +950,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方活动页（qoder.com/activities）直接列示 300 Credits 欢迎礼、2 周试用、领取方式、邀请奖励规则与 Credits 30 天有效期，并同期展示 Qwen3.8-Flash 限免与每日 100 Credits 活动的官方条文；未注册实测领取，欢迎礼截止日与 Credits 货币折算官方未披露。",
-      "lastVerifiedAt": "2026-10-27T11:45:47Z",
-      "nextReviewAt": "2026-10-28T11:45:47Z",
+      "lastVerifiedAt": "2026-10-28T12:08:08Z",
+      "nextReviewAt": "2026-10-29T12:08:08Z",
       "evidence": [
         {
           "url": "https://qoder.com/activities",
@@ -967,6 +967,11 @@
           "url": "https://qoder.com/activities",
           "summary": "复核：首屏仍为 \"Sign up now 300 Credits as your welcome gift\"、\"New users 2-Week Trial\"、\"Register to claim 300 Credits\"；邀请奖励 1,000/500、社区助力 1,024 SOTA Credits、\"Double Credits on Your First Subscription\"、Qwen3.8-Flash 限免（2026-09-18 10:00 起 0.1x→0.0x）、每日 100 Credits 等条文均在，未见撤销或额度缩减；页面仍未公布欢迎礼截止日与 Credits 货币折算。",
           "checkedAt": "2026-10-27T11:45:47Z"
+        },
+        {
+          "url": "https://qoder.com/activities",
+          "summary": "复核（满 24 小时）：首屏仍为 \"Sign up now 300 Credits as your welcome gift\"、\"New users 2-Week Trial\"、\"Register to claim 300 Credits\"，邀请奖励 1,000/500、Community Boost 1,024 SOTA Credits、首次订阅双倍 Credits、Qwen3.8-Flash 限免（2026-09-18 10:00 起 0.1x→0.0x）、每日 100 Credits 条文均在，未见额度缩减或撤销；页面新增 Qoder Ambassador Program 招募（全年 Ultra + 内测 + 周边），属独立项目，不代表欢迎礼变化；仍未见欢迎礼截止日与 Credits 货币折算。",
+          "checkedAt": "2026-10-28T12:08:08Z"
         }
       ],
       "history": [
@@ -979,6 +984,11 @@
           "at": "2026-10-27T11:45:47Z",
           "status": "active",
           "note": "满 24 小时例行复核（上次 2026-10-26T10:45:00Z）：官方活动页可读，300 Credits 欢迎礼、2 周试用、每日 100 Credits、Qwen3.8-Flash 限免均未见变化，未注册实测。"
+        },
+        {
+          "at": "2026-10-28T12:08:08Z",
+          "status": "active",
+          "note": "满 24 小时例行复核（上次 2026-10-27T11:45:47Z）：300 Credits 欢迎礼、2 周试用、每日 100 Credits、Qwen3.8-Flash 限免均未变；活动页新增 Ambassador Program 招募，与本条目权益无关；未注册实测。"
         }
       ]
     },
@@ -1052,8 +1062,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "ampcode.com 官方定价页明确写出 Hobby=Free 档的免费范围（自托管 Orb 不限量免费、BYOK、无 token 费用与上限）与付费边界（托管 Orb 按量、Individual $20/45,000 分钟），无冲突信息；托管 Orb 单价与是否需要绑卡未展开，未注册实测。",
-      "lastVerifiedAt": "2026-10-27T11:45:47Z",
-      "nextReviewAt": "2026-10-28T11:45:47Z",
+      "lastVerifiedAt": "2026-10-28T12:08:08Z",
+      "nextReviewAt": "2026-10-29T12:08:08Z",
       "evidence": [
         {
           "url": "https://ampcode.com/pricing",
@@ -1069,6 +1079,11 @@
           "url": "https://ampcode.com/pricing",
           "summary": "复核：Hobby = Free 档条文仍在（all product features、unlimited self-hosted orbs free、pay-as-you-go for Amp-hosted orbs、BYOK、no Amp token fees or limits、public/private repositories）；本轮新增两行表述 \"Or use your own runners for free\" 与 \"Use your ChatGPT, Claude & other subs\"/\"Use tokens from anywhere\"。Individual 仍 $20/mo 含 45,000 minutes of orbin' time（托管）。免费与付费边界未变。",
           "checkedAt": "2026-10-27T11:45:47Z"
+        },
+        {
+          "url": "https://ampcode.com/pricing",
+          "summary": "复核（满 24 小时）：Hobby = Free 档条文未变——all product features、pay-as-you-go for Amp-hosted orbs、unlimited self-hosted orbs free、use your own runners for free、use tokens from anywhere/自有 ChatGPT·Claude 订阅、BYOK、no Amp token fees or limits、public/private repositories。付费档位现以 Megawatt/Gigawatt 命名并保留 $20/mo 含 45,000 minutes of orbin' time（托管）；Teams 仍标 No extra charge，Enterprise 定制。免费与付费边界未变。",
+          "checkedAt": "2026-10-28T12:08:08Z"
         }
       ],
       "history": [
@@ -1081,6 +1096,11 @@
           "at": "2026-10-27T11:45:47Z",
           "status": "active",
           "note": "满 24 小时例行复核（上次 2026-10-26T10:45:00Z）：Hobby 免费范围与 Individual $20/45,000 分钟未变，页面新增「可用自有 runner 免费运行」「可使用自有 ChatGPT/Claude 订阅」表述，已同步到 quota。"
+        },
+        {
+          "at": "2026-10-28T12:08:08Z",
+          "status": "active",
+          "note": "满 24 小时例行复核（上次 2026-10-27T11:45:47Z）：Hobby 免费范围不变；付费档 UI 改为 Megawatt/Gigawatt 切换（原 Individual $20/mo），45,000 托管分钟数与 BYOK/自托管免费条款保持，未影响免费档结论；未注册实测。"
         }
       ]
     },
@@ -1339,12 +1359,12 @@
       "title": "腾讯云 TokenHub 新用户免费体验包：每个模型 100 万 tokens（90 天）",
       "provider": "腾讯云（TokenHub 大模型服务平台）",
       "category": "ai",
-      "description": "腾讯云大模型服务平台 TokenHub 面向新用户提供免费体验包：登录控制台开通 TokenHub 后，在「模型广场」右上角「新用户福利免费体验」中勾选模型领取，官方文档称每个主账号可领一次；语言模型多为每模型 100 万 tokens（部分 50 万），有效期 90 天，另含图像/视频/3D 生成体验额度。覆盖混元 Hy3/HY 2.0 系列及 DeepSeek-V4-Pro/Flash、GLM-5/5.1、Kimi-K2.5/2.6、MiniMax-M2.5/2.7 等第三方模型。",
-      "quota": "免费体验包每个主账号一次：语言模型通常每模型 100 万 tokens（HY 2.0 Think/Instruct、Deepseek-v3.1/v3.2/v3-0324、GLM-5.1、GLM-5V-Turbo、Kimi-K2.5/K2.6 为 50 万），有效期 90 天；HY-Image-V3.0 50 次生成/365 天；生视频 50 积分/365 天；3D 生成 100 积分/365 天。完整清单以官方计费文档「新人免费体验包」为准。",
+      "description": "腾讯云大模型服务平台 TokenHub 面向新用户提供免费体验包：登录控制台开通 TokenHub 后，在「模型广场」右上角「新用户福利免费体验」勾选模型领取（或在「启用管理」领取，部分模型首次调用自动领取），官方文档称每个账号每个模型仅可领取一次。官方计费文档（最近更新 2026-09-04）现口径为：所有语言模型与所有多模态理解模型均提供每模型 100 万 Tokens 免费额度、有效期 1 年；视频生成 50 积分、混元生 3D 各 100 积分，同为 1 年。覆盖混元及 DeepSeek、GLM、Kimi、MiniMax 等第三方模型。",
+      "quota": "免费体验包每个账号每个模型一次：所有语言模型、多模态理解模型均为每模型 100 万 tokens，有效期 1 年（自领取起算，到期未用自动失效）；生视频 YT-Video-HumanActor 50 积分/1 年；混元生 3D（HY-3D-3.0/3.1/Express/Component/Format/Motion/Retopology/Rigging/Texture/UV）各 100 积分/1 年。免费额度在主账号维度生效、账号下所有模型共享；不可转让、不可叠加、不可兑换现金；调用时优先消耗免费额度，用尽后若未开启后付费则服务自动停止。",
       "benefitValue": "官方口径为「每模型 100 万 tokens」。按官网当前展示的广州地域模型价换算差异极大（示例：DeepSeek-V4.1-Flash 空闲/高峰时段 0.02/0.04 元每百万 tokens，GLM-5.3 28 元每百万 tokens 输入等），无法折算成单一金额，故按官方表述记为每模型 100 万 tokens 体验额度。",
       "eligibility": "腾讯云新用户、每个主账号可领取一次；路径为登录 TokenHub 控制台 → 模型广场 → 新用户福利免费体验 → 勾选模型 → 立即领取；官方文档说明对支持免费体验的模型，首次调用时平台也会自动领取。本次读取的官方页面未逐项说明是否需实名认证或绑定支付方式（中国站开通云产品通常需实名认证，但页面未明确写于此活动）。",
       "regions": "以中国站（cloud.tencent.com）TokenHub 为准；国际站 tencentcloud.com 的 TokenHub 活动页另标注 new users up to 1 million free tokens / 90 days，两站账号与额度相互独立，本次未核实国际站领取条件。",
-      "validity": "语言模型额度自领取起 90 天内有效，图像/视频/3D 为 365 天；官方提示过期未使用的额度自动失效，建议只领取近期计划使用的模型。",
+      "validity": "语言模型与多模态理解模型额度自领取起 1 年内有效；视频/3D 积分同为 1 年。官方提示过期未使用部分自动失效，建议只领取近期计划使用的模型。",
       "deadlineNote": "官方计费文档写明本期活动时间截至 2026-12-31，后续安排视运营情况延续或调整，以页面展示或平台公告为准；官方只写日期未写时区，此处按北京时间当日 24:00（UTC 2026-12-31T16:00Z）记录 endsAt。",
       "officialUrl": "https://cloud.tencent.com/product/tokenhub",
       "claimUrl": "https://cloud.tencent.com/product/tokenhub",
@@ -1352,12 +1372,12 @@
       "discoveredAt": "2026-10-27T11:45:47Z",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "costNotes": "免费体验包之外的调用按量计费：TokenHub 对每个模型给出输入/输出/缓存命中阶梯价（官网页面当前展示广州地域部分模型），另有 Lite/Standard/Pro/Max 订阅套餐（约 1,000–15,900 Credits/月）。DeepSeek-V4 系列自 2026-08-17 起按高峰（9:00–12:00、14:00–18:00 北京时间）与空闲时段分别计价。额度用尽或过期后调用不会自动停止而产生正常账单，需自行监控用量；是否需绑定支付方式未在活动页面明确。",
+      "costNotes": "免费体验包之外的调用按量计费：TokenHub 对每个模型给出输入/输出/缓存命中阶梯价，另有 Lite/Standard/Pro/Max 订阅套餐。DeepSeek-V4 系列自 2026-08-17 起按高峰（9:00–12:00、14:00–18:00 北京时间）与空闲时段分别计价。免费额度用尽后若未开启后付费，服务会自动停止而不产生账单；若开启则按量计费。领取弹窗与活动页面未明确是否需绑定支付方式。",
       "startsAt": null,
       "endsAt": "2026-12-31T16:00:00Z",
       "status": "active",
       "confidence": "high",
-      "confidenceReason": "官方产品页（cloud.tencent.com/product/tokenhub）明确写「免费领取，可享 100 万 tokens」「新用户零门槛领取百万免费 tokens」，官方计费文档 1823_130052 给出各模型免费额度表、两种领取方式与 2026-12-31 截止时间，国际站活动页同样标注 new users up to 1 million free tokens / 90 days；三处官方表述一致。未登录实测领取，实名/绑卡要求未在页面逐项说明。",
+      "confidenceReason": "腾讯云官方产品页写明「免费领取，可享 100 万 tokens」「新用户零门槛领取百万免费 tokens」；官方计费文档 1823_130052（最近更新 2026-09-04）明确本期活动截至 2026-12-31、三种领取方式、语言/多模态模型每模型 100 万 tokens 且有效期 1 年、视频 50 积分、3D 各 100 积分、每账号每模型限领一次；国际站活动页同样标注 up to 1 million free tokens / 90 days（国际站额度独立）。未登录实测领取，实名/绑卡要求未逐项写明。",
       "evidence": [
         {
           "url": "https://cloud.tencent.com/product/tokenhub",
@@ -1373,6 +1393,11 @@
           "url": "https://www.tencentcloud.com/act/pro/tokenhub",
           "summary": "国际站 TokenHub 活动页：「Exclusive for new users · Up to 1 million free tokens, valid for 90 days」，并列出 Lite 1,000 / Standard 2,600 / Pro 7,900 / Max 15,900 Credits per month 订阅档，用于界定免费与付费边界（国际站额度独立）。",
           "checkedAt": "2026-10-27T11:45:47Z"
+        },
+        {
+          "url": "https://main.qcloudimg.com/raw/document/product/pdf/1823_130052_cn.pdf",
+          "summary": "复核（满 24 小时，PDF 全文 53 页提取）：文档「新人免费体验包」最近更新时间 2026-09-04，本期活动时间截至 2026-12-31；三种领取方式（模型广场、启用管理、首次调用自动领取）；「语言模型：所有语言模型均提供 100 万 Tokens 的免费体验额度，有效期 1 年」「多模态理解模型：均提供 100 万 Tokens，有效期 1 年」；生视频 YT-Video-HumanActor 50 积分/1 年；混元生 3D 10 个模型各 100 积分/1 年；额度在主账号维度生效、账号内共享，不可转让/叠加/兑换现金，每账号每模型仅领一次；用尽后未开后付费则服务自动停止。相比上轮记录（部分模型 50 万、90 天）为实质性放宽。",
+          "checkedAt": "2026-10-28T12:08:08Z"
         }
       ],
       "history": [
@@ -1380,10 +1405,15 @@
           "at": "2026-10-27T11:45:47Z",
           "status": "active",
           "note": "由 AI Spoils 线索（「Tencent Cloud AI Model Square：新用户每模型送 1M 免费 tokens（90 天有效）」）转腾讯云官方产品页、官方计费文档与国际站活动页核实：新用户免费体验包与额度表、90 天有效期、2026-12-31 截止均可查证，按 active/high 入库；未注册实测领取。"
+        },
+        {
+          "at": "2026-10-28T12:08:08Z",
+          "status": "active",
+          "note": "满 24 小时例行复核（上次 2026-10-27T11:45:47Z）：官方计费文档更新后条款有实质变化——语言模型与多模态理解模型统一为每模型 100 万 tokens、有效期由 90 天延长为 1 年（原「部分模型 50 万」表述消失），视频 50 积分/3D 每模型 100 积分同为 1 年；截止时间仍为 2026-12-31。已同步 description/quota/validity/costNotes。"
         }
       ],
-      "lastVerifiedAt": "2026-10-27T11:45:47Z",
-      "nextReviewAt": "2026-10-28T11:45:47Z"
+      "lastVerifiedAt": "2026-10-28T12:08:08Z",
+      "nextReviewAt": "2026-10-29T12:08:08Z"
     },
     {
       "id": "memoh-cloud-free-plan-202610",
@@ -1658,6 +1688,88 @@
           "at": "2026-10-28T06:00:09Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区「Modal 30+250美元」帖发现线索，直接读取 modal.com/pricing 与 FAQ 核实：Starter 档为 $0/月含 $30/月计算额度，覆盖 Functions/Sandboxes 与 1 TiB 卷，Shared Endpoints token 不计入；帖子所称 $250/$280 额度在官方页面无对应（$250 为 Team 档月费），故不采信。未注册、未实测额度。"
+        }
+      ]
+    },
+    {
+      "id": "regolo-free-trial-30-days-1m-tokens-daily-202610",
+      "title": "Regolo AI 免费试用 30 天：每日 100 万 tokens、全量 Core 模型、无需绑卡",
+      "provider": "Regolo.ai（欧盟托管推理平台）",
+      "category": "ai",
+      "description": "Regolo.ai 官方定价页的 Free Trial 档写明：注册即开 30 天免费试用，无需信用卡、无承诺，期内可用全部 Core 模型，每日上限 100 万 tokens，速率限制比付费档更严格（fair usage throttling）。平台为 OpenAI 兼容接口（替换 base URL 即可），宣称欧盟数据中心托管、Zero Data Retention 与 100% 可再生能源供电。30 天后需转入订阅（Core €39/月起，首 3 个月 7 折）或按量付费。",
+      "quota": "免费试用：30 天，每日 100 万 tokens 上限，可用全部 Core Chat 模型（页面列有 glm5.2、qwen3.8-27b、qwen3.5-122b、qwen3.5-9b、mistral-small-4-119b、gemma4-31b、gpt-oss-120b/20b、apertus-70b 等），速率按公平使用原则被限制；Embedding、STT、图像生成、OCR 在订阅档列示为「Not included」，免费试用是否覆盖这些非 Chat 能力官方页面未逐项说明。",
+      "benefitValue": "30 天免费 API 调用，每日 100 万 tokens；按官网 Core 档 €39/月含最多 6 亿 tokens 线性折算，30 天 3,000 万 tokens 约合 €2 的调用量，官方未给出试用额度的货币面值。",
+      "eligibility": "注册 Regolo 账号即开试用，官方明确 No credit card required、no commitment；是否需要企业邮箱或有无地区/实名限制官方页面未说明；按账号一次性开通。",
+      "regions": "官方称服务托管于欧盟数据中心（GDPR、Zero Data Retention）；本次读取的定价页未列出禁止使用的国家或地区，免费试用是否对全部地区开放未说明。",
+      "validity": "试用期 30 天，自开通起算；每日 100 万 tokens 上限按日重置（官方表述 1M tokens per day）；30 天后需选择订阅（Core €39/月起，首 3 个月 7 折，其后 Boost €89、Pro €169、Scale €319）或转 Pay-as-you-go（€0 月费按 token 计费）。",
+      "deadlineNote": "官方未公布该 30 天试用的报名/开通截止日期，不能视为长期免费档；「免费」仅指 30 天试用期，之后不订阅即按量计费或停止调用。",
+      "officialUrl": "https://regolo.ai/pricing",
+      "claimUrl": "https://regolo.ai/pricing",
+      "discoveryUrl": "https://linux.do/t/topic/3087426",
+      "discoveredAt": "2026-10-28T12:08:35Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "试用期内不收费、无需绑卡；30 天后若不订阅则无法继续以试用条件调用，Pay-as-you-go 为 €0 月费按 token 计费（如 glm5.2 €2.00/€5.20 每百万 tokens 输入/输出、qwen3.8-27b €0.50/€2.10）。订阅档为月费制：Core €39、Boost €89、Pro €169、Scale €319，分别对应日 2,000 万/5,000 万/1 亿/2 亿 tokens 上限。Embedding（€0.001/次）、STT（€0.00015/秒）、图像（€0.000000015/像素）在订阅档标注 Not included，需另计；免费试用对上述能力的覆盖未在页面写明。",
+      "confidence": "high",
+      "confidenceReason": "regolo.ai 官方定价页 Free Trial 档直接写明 30 days、1M tokens per day、All Core Models、Stricter rate limits、No credit card required，并列出各订阅档价格与日额度、Pay-as-you-go 单价，条款内部一致；残留未知项为试用对非 Chat 能力的覆盖、地区资格与活动截止日，不影响「30 天每日 100 万 tokens 免费试用」这一核心结论。未注册实测。",
+      "status": "active",
+      "startsAt": null,
+      "endsAt": null,
+      "lastVerifiedAt": "2026-10-28T12:08:35Z",
+      "nextReviewAt": "2026-10-29T12:08:35Z",
+      "evidence": [
+        {
+          "url": "https://regolo.ai/pricing",
+          "summary": "Free Trial 档：「START YOUR 30-DAY FREE TRIAL」「Get full access to all Core Models. No credit card required, no commitment.」「1 month duration」「1M tokens per day」「Stricter rate limits — Fair usage throttling applies」「All Core Models」。订阅档 Core €39（首 3 个月 7 折、月 6 亿 tokens、日 2,000 万）、Boost €89、Pro €169、Scale €319；Pay-as-you-go €0 月费按 token 计费。模型价目含 glm5.2 €2.00/€5.20、qwen3.8-27b €0.50/€2.10、gpt-oss-120b €1.00/€4.20（每百万 tokens 输入/输出）。",
+          "checkedAt": "2026-10-28T12:08:35Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-28T12:08:35Z",
+          "status": "active",
+          "note": "由 LINUX DO 福利羊毛线索（「regolo.ai 每日 1M qwen3.8-27b glm5.2」）转官方定价页核实：30 天免费试用、每日 100 万 tokens、全量 Core 模型、无需绑卡均可查证，另从页面提取订阅档价格与日额度用于界定后续成本，按 active/high 入库；未注册实测，非 Chat 能力覆盖未写明。"
+        }
+      ]
+    },
+    {
+      "id": "iflytek-spark-x26-free-1b-tokens-202610",
+      "title": "讯飞星辰 MaaS：Spark-X2.6 免费 10 亿 tokens（领取后 31 天有效）",
+      "provider": "科大讯飞（讯飞星辰 MaaS 平台）",
+      "category": "ai",
+      "description": "讯飞在 1024 开发者节发布端云一体模型星火 Spark-X2.6，并在星辰 MaaS 平台首页「常用功能」第一格挂出活动位，官方文案为「Spark-X2.6 赋能开发者零门槛领取 10 亿 tokens 免费额度」。领取路径为模型广场 Spark-X2.6 卡片「立即领取」，选择或新建 API Key 绑定额度；接口兼容 OpenAI Chat、OpenAI Responses 与 Anthropic 协议（Base URL maas-api.cn-huabei-1.xf-yun.com），模型标识 spark-x2.6。",
+      "quota": "每个用户一次性 10 亿（1,000,000,000）tokens，仅对模型 spark-x2.6 生效、绑定单个 API Key；额度自领取之日起 31 天内有效，到期未用归零；额度用尽或到期后，未勾选「自动按量付费」则服务停止。",
+      "benefitValue": "官方未给额度货币面值；按公开报道引述的星火官方 6 折价（输入 0.9 元/百万 tokens、输出 3.6 元/百万 tokens、缓存命中 0.08 元）粗估，10 亿 tokens 全走输入约 900 元、全走输出约 3,600 元，混合场景约千元量级，仅作量级参考（本次未直接读取星火价格页）。",
+      "eligibility": "手机号注册 + 个人实名认证；每位用户限领一次；需在模型广场 Spark-X2.6 卡片领取并绑定 API Key；领取弹窗底部有「免费额度用尽将自动切换为按量计费」的勾选项，本次未能直接读取官方默认状态（多方报道称默认勾选，建议手动取消以避免额度耗尽后扣费）。",
+      "regions": "中国站平台 maas.xfyun.cn，推理节点为华北（maas-api.cn-huabei-1.xf-yun.com）；官方页面未说明境外用户能否完成实名领取。",
+      "validity": "自「确认领取」之日起 31 天内有效，非自首次调用起算；仅 spark-x2.6 单模型可用，不能挪用到其他模型。",
+      "deadlineNote": "官方未公布活动结束日期（首页仅标注「10.24 开发者节活动」），不能视为长期有效；额度倒计时从领取动作开始，未领取不消耗。",
+      "officialUrl": "https://maas.xfyun.cn/overview",
+      "claimUrl": "https://maas.xfyun.cn/modelSquare",
+      "discoveryUrl": "https://linux.do/t/topic/3086649",
+      "discoveredAt": "2026-10-28T12:08:35Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "领取与额度本身不收费；额度仅覆盖 spark-x2.6，调用其他模型按正常价目计费。超出 10 亿或 31 天到期后，若勾选「自动切换为按量计费」则按星火 API 价目扣费（报道引述限时 6 折：输入 0.9 元、输出 3.6 元每百万 tokens），未勾选则服务停止。官方价格页未在本次核实范围内直接读取，具体单价以下单前页面为准。",
+      "confidence": "medium",
+      "confidenceReason": "maas.xfyun.cn 官方首页「常用功能」直接写有「Spark-X2.6 赋能开发者零门槛领取 10 亿 tokens 免费额度」，确认活动与额度存在且零门槛；但「31 天有效、每人一次、仅 spark-x2.6 可用、需实名」等关键限制来自领取弹窗与多方报道（含官方弹窗截图），本次未在官方可公开页面直接读到规则原文，活动截止日官方未公布，故保持待核实，待人工登录核对弹窗条款后再升级。",
+      "status": "pending",
+      "startsAt": null,
+      "endsAt": null,
+      "lastVerifiedAt": "2026-10-28T12:08:35Z",
+      "nextReviewAt": "2026-10-29T12:08:35Z",
+      "evidence": [
+        {
+          "url": "https://maas.xfyun.cn/overview",
+          "summary": "官方平台首页「常用功能」第一格：「Spark-X2.6 赋能开发者零门槛领取10亿tokens免费额度」，同页模型集市公告为「【新增模型】Spark-X2.6系列上线模型广场」；页面未给出活动截止日期或额度有效期。",
+          "checkedAt": "2026-10-28T12:08:35Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-28T12:08:35Z",
+          "status": "pending",
+          "note": "由 LINUX DO 福利羊毛线索（「讯飞星火十亿token，有效期一个月」）转官方核实：maas.xfyun.cn 首页确认「零门槛领取 10 亿 tokens 免费额度」，但 31 天有效期、每人限领一次、仅限 spark-x2.6、需手机号+实名等条款只在登录后的领取弹窗中出现，本次无法在不注册的前提下读取，故按 pending/medium 入库并附官方首页截图级证据；未注册实测。"
         }
       ]
     }
