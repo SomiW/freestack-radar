@@ -737,8 +737,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "华为云官方活动页内嵌商品数据与规则文本可读，确认机型规格（2 核 2G2M/100G 月流量/40G 盘/华北-北京四/1 年）、现价 36 元与同页原价 395.28 元、V0 新客与限购 1 台条件、活动期 2026-08-28 至 12-31、以及“续费不适用促销价”规则；未登录下单实测，实时库存无法确认。",
-      "lastVerifiedAt": "2026-10-27T05:40:45Z",
-      "nextReviewAt": "2026-10-28T05:40:45Z",
+      "lastVerifiedAt": "2026-10-28T06:00:09Z",
+      "nextReviewAt": "2026-10-29T06:00:09Z",
       "evidence": [
         {
           "url": "https://activity.huaweicloud.com/phbcecs.html",
@@ -759,6 +759,11 @@
           "url": "https://activity.huaweicloud.com/phbcecs.html",
           "summary": "复核活动页：Flexus L实例-2核2G2M、固定带宽 100G/月、系统盘 40GB、数据中心 华北-北京四、时长 1 年，内嵌商品数据 current 36 / origin 395.28，规格码 ahf.large.1.40g.2m.linux；标签仍为「V0新客专享」「限购1台」。规则区仍写活动时间 2026年8月28日-2026年12月31日、秒杀每日0点限量发售，且「续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格」。条款未见变化。",
           "checkedAt": "2026-10-27T05:40:45Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "复核活动页：内嵌商品数据仍为 Flexus L实例-2核2G2M、系统盘 40GB SAS、华北-北京四、1 年，current 36 / origin 395.28，规格码 ahf.large.1.40g.2m.linux；标签仍为「V0新客专享」「限购1台」；规则区仍写活动时间 2026年8月28日-2026年12月31日、秒杀每日0点限量发售，并注明「续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格」。条款未见变化。",
+          "checkedAt": "2026-10-28T06:00:09Z"
         }
       ],
       "history": [
@@ -771,6 +776,11 @@
           "at": "2026-10-27T05:40:45Z",
           "status": "active",
           "note": "复核成功：官方活动页配置（2核2G2M/100G月流量/40G盘/华北-北京四/1年）、36 元与 395.28 元原价、V0 新客限购 1 台、活动期 8-28 至 12-31、续费不适用促销价均未见变化。未登录、未下单。"
+        },
+        {
+          "at": "2026-10-28T06:00:09Z",
+          "status": "active",
+          "note": "复核成功：官方活动页价格 36 元/原价 395.28 元、2核2G2M/40G 盘/华北-北京四/1 年规格、V0 新客限购 1 台、活动期 8-28 至 12-31、续费不适用促销价均未见变化。未登录、未下单。"
         }
       ]
     },
@@ -869,8 +879,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Kiro 官方定价页可读，明确 Kiro Free 为 $0/月 50 credits 的长期免费档、可用模型清单、登录方式限制（社交/AWS Builder ID，Identity Center 不适用）、GovCloud 例外，以及付费档价格与 add-on 单价；限速具体数值未公布，未登录实测额度消耗。",
-      "lastVerifiedAt": "2026-10-27T05:40:45Z",
-      "nextReviewAt": "2026-10-28T05:40:45Z",
+      "lastVerifiedAt": "2026-10-28T06:00:09Z",
+      "nextReviewAt": "2026-10-29T06:00:09Z",
       "evidence": [
         {
           "url": "https://kiro.dev/pricing/",
@@ -891,6 +901,11 @@
           "url": "https://kiro.dev/pricing/",
           "summary": "复核定价页：KIRO FREE 仍为 $0/月、50 credits，脚注仍列出 Free 档可用 Claude Sonnet 4.5 与 Qwen3 Coder Next / DeepSeek 3.2 / MiniMax M2.1 等开源权重模型（受 rate limits 约束）；付费档 Pro $20/1,000、Pro+ $40/2,000、Pro Max $100/5,000、Power $200/10,000，add-on $0.04/credit；FAQ 仍称 Free 档为 perpetual，GovCloud 约贵 20% 且不含 Free 档。条款未见变化。",
           "checkedAt": "2026-10-27T05:40:45Z"
+        },
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "复核定价页：KIRO FREE 仍为 $0 per month / 50 credits，可用开源权重模型与 Claude Sonnet 4.5；Pro $20/1,000、Pro+ $40/2,000、Pro Max $100/5,000、Power $200/10,000，add-on $0.04/credit；FAQ 仍称 Free tier 为 perpetual；脚注仍限定社交登录或 AWS Builder ID，并注明 rate limits 与「部分高级模型非所有国家/地区可用」。条款未见变化。",
+          "checkedAt": "2026-10-28T06:00:09Z"
         }
       ],
       "history": [
@@ -903,6 +918,11 @@
           "at": "2026-10-27T05:40:45Z",
           "status": "active",
           "note": "复核成功：官方定价页 Free 档 $0/50 credits、可用模型清单、perpetual 表述、付费档与 add-on 单价、GovCloud 例外均未见变化。未注册、未实测额度消耗。"
+        },
+        {
+          "at": "2026-10-28T06:00:09Z",
+          "status": "active",
+          "note": "复核成功：官方定价页 Free 档 $0/50 credits、perpetual 表述、可用模型、付费档与 add-on 单价均未见变化。未注册、未实测额度消耗。"
         }
       ]
     },
@@ -1587,6 +1607,57 @@
           "at": "2026-10-27T23:57:08.603Z",
           "status": "pending",
           "note": "由 NodeSeek 测评贴发现 HKCloudX MiniV6（1C1G、500GB@500Mbps、NAT、约 $6/年）。读取官方云服务器页与关于页，确认主体、机房与退款政策，但 $6 档价格与库存无法从官方页面读取，按 pending/low 入库待人工在购物车核对。"
+        }
+      ]
+    },
+    {
+      "id": "modal-starter-free-30-compute-202610",
+      "title": "Modal Starter 免费档：每月 30 美元计算额度（Functions / Sandbox / GPU）",
+      "provider": "Modal",
+      "category": "ai",
+      "description": "Modal 官方定价页的 Starter 档：$0/月 + 按量计算，每 workspace 每月附带 $30 计算额度，可抵扣 Functions 与 Sandboxes 的按秒 CPU/内存/GPU 费用，含 3 个 seat、100 个容器并发、10 个 GPU 并发、1 TiB 卷存储与 1 TiB/月免费出网。适合跑 Agent 沙箱、批量任务与短时 GPU 推理。注意：LLM 类 Shared Endpoints 按 token 计费，不在 $30 额度内。",
+      "quota": "每 workspace $30/月 计算额度（按秒计费 CPU/内存/GPU，覆盖 Functions 与 Sandboxes）；卷存储免费 1 TiB；出网 1 TiB/月；并发上限 100 容器 + 10 GPU；最多 3 个 workspace seat。",
+      "benefitValue": "官方标价 $30/月 included compute（约合 30 美元算力/月，可叠加使用）；Sandbox 按非抢占价 3 倍 list price 计费，故 $30 折算的实际可用时长取决于机型与占用；官方未给固定小时数，无法进一步折算。",
+      "eligibility": "注册 Modal workspace 即可使用 Starter 档，无需预付或购买 credit；同一 workspace 最多 3 名成员；超出 $30 后按量计费，需要可用的付款方式。学生/研究者可另行申请最高 $10,000 学术 credit；AWS Activate 成员可申请额外 Modal credit。",
+      "regions": "定价页在 Starter 权益中列出 Region selection，但未公布具体可用地域清单；未列国家/地区限制。",
+      "validity": "$30/月为 Starter 档的长期内置额度，按月重置；官方未公布该档结束日期。",
+      "deadlineNote": "官方未披露结束日期；这不是限时活动，而是长期定价档位，条款可能随官方定价调整（如 2026-09-01 起 Shared Endpoints token 不再计入免费额度）。",
+      "officialUrl": "https://modal.com/pricing",
+      "claimUrl": "https://modal.com/signup",
+      "discoveryUrl": "https://linux.do/t/topic/3085413",
+      "discoveredAt": "2026-10-28T06:00:09Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "Starter 无月费，超额按量计费，可在 workspace 设 budget 上限；Sandboxes 按非抢占费率 3 倍 list price 计费；Shared Endpoints（LLM token）自首次请求即计费，明确不包含在 $30 额度内（官方称 2026-09-01 起生效）；卷存储超 1 TiB 按 $0.09/GiB/月，出网超 1 TiB 按 $0.04/GiB；Team 档为 $250/月 + $100 额度，不是免费档；AWS/GCP/Azure 的 credit 不能用于 Modal。社区帖所称「30+250 美元」「老号 280 刀」与官方定价页不符：$250 是 Team 档月费，非赠送额度。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Modal 官方定价页与 FAQ 可读，明确 Starter 档 $0/月含 $30 计算额度、覆盖 Functions/Sandboxes（按秒计 CPU/内存/GPU）与 1 TiB 卷、1 TiB 出网、3 seat、100 容器/10 GPU 并发，并明确 Shared Endpoints token 不计入额度、Sandbox 按 3 倍非抢占价计费；未注册实测额度，绑卡要求官方页面未说明。",
+      "lastVerifiedAt": "2026-10-28T06:00:09Z",
+      "nextReviewAt": "2026-10-29T06:00:09Z",
+      "evidence": [
+        {
+          "url": "https://modal.com/pricing",
+          "summary": "定价计划表：Starter $0 + compute/月，含 $30/月 free credits、3 workspace seat、100 容器 + 10 GPU 并发、1 TiB/月免费出网；Team $250 + compute/月含 $100/月 credits；Enterprise 自定义。计划对比表列明 Included compute $30/月 与卷/出网额度。",
+          "checkedAt": "2026-10-28T06:00:09Z"
+        },
+        {
+          "url": "https://modal.com/pricing",
+          "summary": "FAQ「What does my included usage cover?」：额度适用于 compute（Functions 与 Sandboxes，按秒计 CPU/内存/GPU）与最多 1 TiB 卷，不适用于按 token 计费的 Shared Endpoints；token 自首次请求即计费。",
+          "checkedAt": "2026-10-28T06:00:09Z"
+        },
+        {
+          "url": "https://modal.com/pricing",
+          "summary": "FAQ「I'm on the Starter plan. Why am I being charged?」：Starter 无月费、含每月 $30 compute，超出或不覆盖的用量计费；「Free usage of Shared Endpoints is not part of the Starter plan」，该规则 2026-09-01 起生效。定价页另载 Sandboxes 按非抢占费率 3 倍 list price 计费、学术 credit 最高 $10k。",
+          "checkedAt": "2026-10-28T06:00:09Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-28T06:00:09Z",
+          "status": "active",
+          "note": "从 LINUX DO 福利羊毛区「Modal 30+250美元」帖发现线索，直接读取 modal.com/pricing 与 FAQ 核实：Starter 档为 $0/月含 $30/月计算额度，覆盖 Functions/Sandboxes 与 1 TiB 卷，Shared Endpoints token 不计入；帖子所称 $250/$280 额度在官方页面无对应（$250 为 Team 档月费），故不采信。未注册、未实测额度。"
         }
       ]
     }
