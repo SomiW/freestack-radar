@@ -1496,7 +1496,7 @@
     },
     {
       "id": "tencent-tokenhub-new-user-free-tokens-202610",
-      "title": "腾讯云 TokenHub 新用户免费体验包：每个模型 100 万 tokens（90 天）",
+      "title": "腾讯云 TokenHub 新用户免费体验包：每个模型 100 万 tokens（有效期 1 年）",
       "provider": "腾讯云（TokenHub 大模型服务平台）",
       "category": "ai",
       "description": "腾讯云大模型服务平台 TokenHub 面向新用户提供免费体验包：登录控制台开通 TokenHub 后，在「模型广场」右上角「新用户福利免费体验」勾选模型领取（或在「启用管理」领取，部分模型首次调用自动领取），官方文档称每个账号每个模型仅可领取一次。官方计费文档（最近更新 2026-09-04）现口径为：所有语言模型与所有多模态理解模型均提供每模型 100 万 Tokens 免费额度、有效期 1 年；视频生成 50 积分、混元生 3D 各 100 积分，同为 1 年。覆盖混元及 DeepSeek、GLM、Kimi、MiniMax 等第三方模型。",
@@ -1512,7 +1512,7 @@
       "discoveredAt": "2026-10-27T11:45:47Z",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "costNotes": "免费体验包之外的调用按量计费：TokenHub 对每个模型给出输入/输出/缓存命中阶梯价，另有 Lite/Standard/Pro/Max 订阅套餐。DeepSeek-V4 系列自 2026-08-17 起按高峰（9:00–12:00、14:00–18:00 北京时间）与空闲时段分别计价。免费额度用尽后若未开启后付费，服务会自动停止而不产生账单；若开启则按量计费。领取弹窗与活动页面未明确是否需绑定支付方式。",
+      "costNotes": "免费体验包之外的调用按量计费：TokenHub 对每个模型给出输入/输出/缓存命中阶梯价，另有 Lite/Standard/Pro/Max 订阅套餐。DeepSeek-V4 系列自 2026-08-17 起按高峰（9:00–12:00、14:00–18:00 北京时间）与空闲时段分别计价。免费额度用尽后若未开启后付费，服务会自动停止而不产生账单；若开启则按量计费。领取弹窗与活动页面未明确是否需绑定支付方式。 国际站文档（intl.cloud.tencent.com 对应 TokenHub 文档）另写明：每领取一个模型的免费资源包或开启一个模型的后付费服务，系统会自动冻结账户中 10 美元，余额或授信不足则领取失败，删除该模型全部 endpoint 后退回；中国站是否同样预冻结本次未核实。",
       "startsAt": null,
       "endsAt": "2026-12-31T16:00:00Z",
       "status": "active",
@@ -1543,6 +1543,11 @@
           "url": "https://main.qcloudimg.com/raw/document/product/pdf/1823_130052_cn.pdf",
           "summary": "复核（满 24 小时，PDF 53 页重取）：「新人免费体验包」页最近更新时间仍为 2026-09-04，本期活动时间截至 2026 年 12 月 31 日未变；语言模型「所有语言模型均提供 100 万 Tokens，有效期 1 年」、多模态理解模型同为 100 万/1 年；生视频 YT-Video-HumanActor 50 积分/1 年、混元生 3D 10 个模型各 100 积分/1 年；三种领取方式、主账号共享、每模型仅一次、用尽未开后付费即停服等规则未变。同期「模型价格」章节更新时间 2026-10-29 17:57（北京时间），属价格页常规更新，免费额度条款未见变化。",
           "checkedAt": "2026-10-29T12:58:56Z"
+        },
+        {
+          "url": "https://intl.cloud.tencent.com/zh/document/product/1300/80423",
+          "summary": "补充核对国际站 TokenHub《新人免费体验包》文档：领取方式（模型广场右上角「新用户福利免费体验」或首次调用自动领取）、所有语言模型 100 万 tokens/有效期 1 年、每账号每模型限一次，并新增「每领取一个模型免费包自动冻结账户 10 美金、删除 endpoint 后退回」的费用条款；该预冻结条款为中国站记录此前未覆盖的细节。",
+          "checkedAt": "2026-10-29T13:25:00Z"
         }
       ],
       "history": [
@@ -1560,10 +1565,15 @@
           "at": "2026-10-29T12:58:56Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：官方页面条文与上轮记录一致，额度/资格/期限未见变化；仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-10-29T13:25:00Z",
+          "status": "active",
+          "note": "补充性核对（未满 24 小时，不计入复核）：读国际站同产品文档发现「领取即预冻结 10 美元、删除 endpoint 退回」条款，已写入 costNotes 并追加证据；同时修正标题中残留的「90 天」表述，与已核实的 1 年有效期保持一致。"
         }
       ],
-      "lastVerifiedAt": "2026-10-29T12:58:56Z",
-      "nextReviewAt": "2026-10-30T12:58:56Z"
+      "lastVerifiedAt": "2026-10-29T13:25:00Z",
+      "nextReviewAt": "2026-10-30T13:25:00Z"
     },
     {
       "id": "memoh-cloud-free-plan-202610",
@@ -2334,6 +2344,134 @@
         }
       ],
       "discoveredAt": "2026-10-29T12:58:56Z"
+    },
+    {
+      "id": "aws-free-plan-200-credits-2026",
+      "title": "AWS 新客户免费计划：最高 200 美元服务抵扣金（6 个月）",
+      "provider": "Amazon Web Services (AWS)",
+      "category": "cloud",
+      "description": "AWS 官方「从这里开始 / 免费套餐」页面写明：新客户开户后立即获得 100 美元服务抵扣金，探索关键服务时最多再获取 100 美元，合计最高 200 美元；免费计划期内可访问 90 多种服务进行搭建与试验，全程不产生费用；另有 30 多种服务在月度使用限额内始终免费。免费计划账户会在开户 6 个月后或抵扣金用尽时自动关闭（先到者为准），除非主动转为付费计划。多数新客户可使用 Google/GitHub 等既有账号注册且无需信用卡。",
+      "quota": "开户即得 100 美元 + 探索关键服务最多再得 100 美元 = 最高 200 美元服务抵扣金；有效期最长 6 个月或至抵扣金耗尽（先到者为准）；免费计划可用 90+ 种服务；30+ 种服务按月度限额永久免费（官方示例：Lambda 每月 100 万次请求）。官方中文页未逐项列出 EC2/Lightsail 免费实例规格。",
+      "benefitValue": "最高 200 美元服务抵扣金（按 $1≈¥7.1 粗算约 ¥1,400，官方未给人民币口径，汇率浮动不作承诺）。",
+      "eligibility": "AWS 新客户（此前未注册过 AWS 账号、未绑定过同一支付方式）；免费计划支持邮箱/Google/GitHub 自助注册，官方称大多数新客户无需信用卡（少数国家/地区可能要求验证支付方式）；同一身份或支付方式重复注册可能被判滥用并撤销抵扣金。",
+      "regions": "全球；本次核对的是 aws.amazon.com/cn 中文页面，中国区（北京/宁夏）账号与国际区账号的资格与可用服务不同，未逐区核对。",
+      "validity": "抵扣金自开户起最长 6 个月，或使用额度用尽即止；免费计划到期后账户自动关闭、资源停止，需转为付费计划才能继续使用。",
+      "deadlineNote": "属长期开放的新客户计划，官方未设统一报名截止日；单账号 6 个月窗口自注册时间起算。",
+      "officialUrl": "https://aws.amazon.com/cn/start-here/",
+      "claimUrl": "https://portal.aws.amazon.com/billing/signup",
+      "discoveryUrl": "https://aws.amazon.com/cn/free/",
+      "discoveredAt": "2026-10-29T13:25:00Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费计划期间不会产生账单，也不会因超额自动扣费（官方称设有项目级硬支出上限）；一旦转为付费计划即按即用即付计费，超出抵扣金部分自付，且转为付费后不可退回免费计划。Bedrock 等按 token 计费的 AI 服务同样消耗抵扣金。30+ 服务的「永久免费」仅在月度限额内成立，超出即按标准价计费。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "AWS 官方中文页面（start-here 与 free 两页）明确写出：新客户立即获得 100 美元、最多再获取 100 美元、合计最高 200 美元、免费计划最长 6 个月、90+ 服务可用、30+ 服务月度限额内始终免费、账户 6 个月后或额度用尽即自动关闭、大多数新客户无需信用卡；额度、时限、计费边界均可直接核对，故标 active/high。",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/cn/start-here/",
+          "summary": "「您的账户如何运作」段落：新客户立即获得 100 美元 AWS 免费套餐服务抵扣金，试用关键服务时最多再获取 100 美元；在 6 个月内构建试验或直到抵扣金用完；「大多数新客户无需信用卡即可开始使用」；付费计划可设项目级支出限额。",
+          "checkedAt": "2026-10-29T13:25:00Z"
+        },
+        {
+          "url": "https://aws.amazon.com/cn/free/",
+          "summary": "「AWS 免费套餐」页：使用最高 200 美元服务抵扣金免费开始；免费计划最长 6 个月访问 90 多种服务、无意外超额费用；账户在开户 6 个月后或抵扣金用完时自动关闭，除非转为付费计划；30 多个服务在免费计划与付费计划的月度限额内始终免费（如 Lambda 每月 100 万次请求）。",
+          "checkedAt": "2026-10-29T13:25:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-29T13:25:00Z",
+          "status": "active",
+          "note": "由公开检索发现「AWS 新客户最高 200 美元抵扣金」线索，转官方 start-here 与 free 两页逐项核对：100+100 美元、6 个月、90+ 服务、30+ 永久免费服务、账户自动关闭与硬支出上限均可查证，按 active/high 首次入库；未注册实测领取。"
+        }
+      ],
+      "lastVerifiedAt": "2026-10-29T13:25:00Z",
+      "nextReviewAt": "2026-10-30T13:25:00Z"
+    },
+    {
+      "id": "cloudflare-workers-ai-free-10000-neurons-2026",
+      "title": "Cloudflare Workers AI 免费额度：每天 10,000 Neurons",
+      "provider": "Cloudflare",
+      "category": "ai",
+      "description": "Cloudflare 官方开发者文档的 Workers AI 定价页写明：Workers Free 计划每天免费提供 10,000 Neurons 的推理额度，可直接调用 Workers AI 目录里的开源模型（Llama、Qwen、Mistral、Whisper 等）并绑定 Workers、Pages 等边缘服务部署；Neurons 是官方统一的 GPU 计算计量单位，各模型按 token 折算单价。超出每日免费额度后需升级到 Workers Paid，按每 1,000 Neurons 0.011 美元计费。",
+      "quota": "每天 10,000 Neurons（按天重置）；官方模型价目示例：llama 类 8B 模型 2,457 Neurons/百万输入 tokens、18,252 Neurons/百万输出 tokens；更大模型 4,625/30,475 与 26,668/204,805 Neurons 每百万 tokens。按 8B 输入单价粗算，10,000 Neurons ≈ 约 400 万输入 tokens/天。免费计划同时受 Workers 请求数与 CPU 时间限额约束。",
+      "benefitValue": "10,000 Neurons/天，按付费单价 $0.011/1,000 Neurons 折算约 $0.11/天（约 $3.3/月）；按 8B 模型输入单价约合 400 万输入 tokens/天。",
+      "eligibility": "注册 Cloudflare 账号并启用 Workers Free 计划即可，无需单独申请或绑卡；同一账号多项目共享这 10,000 Neurons/天。",
+      "regions": "全球（Cloudflare 边缘网络就近执行）；中国大陆访问控制台与 API 的网络质量受本地链路影响，官方未设地域限制。",
+      "validity": "每日额度按自然日重置，长期有效；官方未承诺「永久免费」，也未公布结束日期。",
+      "deadlineNote": "官方未披露结束日期，属常态化免费额度（非限时活动）。",
+      "officialUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "claimUrl": "https://dash.cloudflare.com/sign-up/workers-and-pages",
+      "discoveryUrl": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "discoveredAt": "2026-10-29T13:25:00Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "超出 10,000 Neurons/天需开通 Workers Paid（官方标价 $5/月起）按 $0.011/1,000 Neurons 计费，按实际用量结算；免费计划下 Workers 脚本另有每日请求数（10 万次）与 CPU 时间限制，超限请求会失败而非自动扣费；模型单价按 token 折算，输出 token 通常比输入贵 6–8 倍，长输出场景额度消耗显著更快。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Cloudflare 官方开发者文档 Workers AI 定价页可直接读取：明确「free allocation 为每天 10,000 Neurons」、Workers Free/Paid 两档对照表（10,000 Neurons/天 免费、超出 $0.011/1,000 Neurons）、以及按模型的 Neurons 单价表；额度、重置周期与计费方式均为官方原文，故标 active/high。",
+      "evidence": [
+        {
+          "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "summary": "Workers AI 定价页原文：「Our free allocation allows anyone to use a total of 10,000 Neurons per day at no charge」；Free 与 Paid 计划对照显示 Workers Free 为 10,000 Neurons/天、Workers Paid 同额度免费且超出部分 $0.011/1,000 Neurons；同页给出按模型的 Neurons/token 单价（如 2,457 Neurons 每百万输入 tokens、18,252 每百万输出 tokens）。",
+          "checkedAt": "2026-10-29T13:25:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-29T13:25:00Z",
+          "status": "active",
+          "note": "由公开检索的免费 LLM 额度清单发现线索，转 Cloudflare 官方 Workers AI 定价文档核实：每日 10,000 Neurons 免费额度、Workers Free/Paid 对照、按模型 Neurons 单价均可查证，按 active/high 首次入库；未注册实测调用。"
+        }
+      ],
+      "lastVerifiedAt": "2026-10-29T13:25:00Z",
+      "nextReviewAt": "2026-10-30T13:25:00Z"
+    },
+    {
+      "id": "china-mobile-ecloud-moma-25m-tokens-202610",
+      "title": "移动云 MoMA 模型服务平台：新用户 2500 万 tokens 免费试用",
+      "provider": "移动云（中国移动）",
+      "category": "ai",
+      "description": "移动云官方帮助中心《2500万Tokens免费试用指南》说明：活动期为 2026-02-15 至 2026-12-31，首次使用平台的新用户可获 2500 万 tokens 免费额度，有效期 30 天；仅部分自营模型支持该额度（官方举例自营 Qwen3.5-35B-A3B 不支持），合作模型与机密模型不参与；限流 3000 tokens/min；同一用户身份信息下所有账号合计仅能领取一次。领取路径为登录 MoMA 控制台 → 模型广场 → 右上角「新用户2500wTokens免费体验」。",
+      "quota": "2500 万 tokens/用户身份（有效期 30 天）；限流 3,000 tokens/min；仅部分自营模型可用，合作模型与机密模型不参与；免费期优先消耗免费额度、不产生计费，额度用尽且未订购模型时服务自动暂停。",
+      "benefitValue": "2500 万 tokens；官方未给出统一金额口径，按各模型单价折算差异较大，故按官方表述记录 token 数量。",
+      "eligibility": "未领取过本次 2500 万额度、首次使用平台的新用户（官方称支持政企类与互联网用户）；同一身份信息下的多个账号只有最先领取的账号成功；需实名开通移动云账号并在 MoMA 控制台手动领取。",
+      "regions": "中国大陆（移动云公有云，模型服务平台 MoMA）。",
+      "validity": "自领取确认起 30 天，或额度用尽，先到者为准；到期未用部分失效。",
+      "deadlineNote": "官方写明活动时间为 2026-02-15 至 2026-12-31；只给日期未写时区，此处按北京时间当日 24:00（UTC 2026-12-31T16:00Z）记录 endsAt。",
+      "officialUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+      "claimUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+      "discoveryUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+      "discoveredAt": "2026-10-29T13:25:00Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "免费额度用尽后，未订购的模型服务会自动暂停而不继续计费；若完成订购则按模型定价按量计费，官方文档未说明是否需绑定支付方式或预充值，也未说明余额不足时的行为。合作模型与机密模型完全不参与免费额度，误选会直接产生费用。",
+      "startsAt": "2026-02-15T00:00:00+08:00",
+      "endsAt": "2026-12-31T16:00:00Z",
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "条款来自移动云官方帮助中心文章，额度、时限、限流、资格与不可用模型范围写得具体；但该帮助中心为前端渲染 SPA，直连只返回 3 KB 空壳 HTML、渲染代理亦失败，条款文字是经搜索引擎收录的官方原文核对，未能由本次运行直连复读，也未登录验证领取入口，故按规则保持 pending/medium，待人工在浏览器确认。",
+      "evidence": [
+        {
+          "url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+          "summary": "官方帮助中心《2500万Tokens免费试用指南》（本次直连仅得到 SPA 空壳，条款经搜索引擎收录的官方原文核对）：活动时间 2026-02-15 至 2026-12-31；每位用户 2500 万 tokens、限时 30 天；支持政企类与互联网用户；仅部分自营模型支持（自营 Qwen3.5-35B-A3B 不支持 2500 万额度）；合作模型、机密模型不支持；单个用户身份下所有账号仅能领一次；限流 3,000 tokens/min；额度用尽且未订购则服务自动暂停；领取路径为 MoMA 控制台模型广场右上角「新用户2500wTokens免费体验」。",
+          "checkedAt": "2026-10-29T13:25:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-29T13:25:00Z",
+          "status": "pending",
+          "note": "由公开检索发现移动云 2500 万 tokens 试用线索，定位到官方帮助中心文章并核对其条款；因页面为 SPA、本次未能直连复读全文，也未登录验证领取入口，按 pending/medium 入库，留给人工在浏览器确认。"
+        }
+      ],
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-30T13:25:00Z"
     }
   ]
 }
