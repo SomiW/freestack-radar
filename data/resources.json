@@ -812,8 +812,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "华为云官方活动页内嵌商品数据与规则文本可读，确认机型规格（2 核 2G2M/100G 月流量/40G 盘/华北-北京四/1 年）、现价 36 元与同页原价 395.28 元、V0 新客与限购 1 台条件、活动期 2026-08-28 至 12-31、以及“续费不适用促销价”规则；未登录下单实测，实时库存无法确认。",
-      "lastVerifiedAt": "2026-10-28T06:00:09Z",
-      "nextReviewAt": "2026-10-29T06:00:09Z",
+      "lastVerifiedAt": "2026-10-29T06:39:19Z",
+      "nextReviewAt": "2026-10-30T06:39:19Z",
       "evidence": [
         {
           "url": "https://activity.huaweicloud.com/phbcecs.html",
@@ -839,6 +839,11 @@
           "url": "https://activity.huaweicloud.com/phbcecs.html",
           "summary": "复核活动页：内嵌商品数据仍为 Flexus L实例-2核2G2M、系统盘 40GB SAS、华北-北京四、1 年，current 36 / origin 395.28，规格码 ahf.large.1.40g.2m.linux；标签仍为「V0新客专享」「限购1台」；规则区仍写活动时间 2026年8月28日-2026年12月31日、秒杀每日0点限量发售，并注明「续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格」。条款未见变化。",
           "checkedAt": "2026-10-28T06:00:09Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "复核活动页：内嵌商品数据仍为 Flexus L实例-2核2G2M、系统盘 40GB SAS（SAS_for_smb）、华北-北京四（cn-north-4）、时长 1 年，规格码 ahf.large.1.40g.2m.linux，current 36 / origin 395.28；卡片标签仍为「V0新客专享」「限购1台」，区块副标题仍写「秒杀每日0点限量发售，新客限购1次」。本轮「活动规则」为 JS 弹窗（ruleHtml 未内联），活动期 8-28 至 12-31 与「续费不适用促销价」条款本次静态 HTML 中读不到，保留上次核实结论，价格/规格/资格未见变化。",
+          "checkedAt": "2026-10-29T06:39:19Z"
         }
       ],
       "history": [
@@ -856,6 +861,11 @@
           "at": "2026-10-28T06:00:09Z",
           "status": "active",
           "note": "复核成功：官方活动页价格 36 元/原价 395.28 元、2核2G2M/40G 盘/华北-北京四/1 年规格、V0 新客限购 1 台、活动期 8-28 至 12-31、续费不适用促销价均未见变化。未登录、未下单。"
+        },
+        {
+          "at": "2026-10-29T06:39:19Z",
+          "status": "active",
+          "note": "复核成功：活动页 36 元 / 原价 395.28、2核2G2M/40G SAS 盘/华北-北京四/1 年规格、V0 新客限购 1 台、每日 0 点限量均未见变化；活动规则弹窗改为 JS 加载，本轮未能重读期限与续费条款，沿用上次记录。未登录、未下单。"
         }
       ]
     },
@@ -954,8 +964,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Kiro 官方定价页可读，明确 Kiro Free 为 $0/月 50 credits 的长期免费档、可用模型清单、登录方式限制（社交/AWS Builder ID，Identity Center 不适用）、GovCloud 例外，以及付费档价格与 add-on 单价；限速具体数值未公布，未登录实测额度消耗。",
-      "lastVerifiedAt": "2026-10-28T06:00:09Z",
-      "nextReviewAt": "2026-10-29T06:00:09Z",
+      "lastVerifiedAt": "2026-10-29T06:39:19Z",
+      "nextReviewAt": "2026-10-30T06:39:19Z",
       "evidence": [
         {
           "url": "https://kiro.dev/pricing/",
@@ -981,6 +991,11 @@
           "url": "https://kiro.dev/pricing/",
           "summary": "复核定价页：KIRO FREE 仍为 $0 per month / 50 credits，可用开源权重模型与 Claude Sonnet 4.5；Pro $20/1,000、Pro+ $40/2,000、Pro Max $100/5,000、Power $200/10,000，add-on $0.04/credit；FAQ 仍称 Free tier 为 perpetual；脚注仍限定社交登录或 AWS Builder ID，并注明 rate limits 与「部分高级模型非所有国家/地区可用」。条款未见变化。",
           "checkedAt": "2026-10-28T06:00:09Z"
+        },
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "复核定价页：KIRO FREE 仍为 $0 per month / 50 credits，脚注仍写明社交登录或 AWS Builder ID 的 Free 档可用 Claude Sonnet 4.5 与 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1 等开源权重模型（受 rate limits 约束）；Pro $20/1,000、Pro+ $40/2,000、Pro Max $100/5,000、Power $200/10,000，add-on $0.04/credit；FAQ 仍称 Free tier 为 perpetual；GovCloud 约贵 20% 且不含 Free 档。条款未见变化。",
+          "checkedAt": "2026-10-29T06:39:19Z"
         }
       ],
       "history": [
@@ -998,6 +1013,11 @@
           "at": "2026-10-28T06:00:09Z",
           "status": "active",
           "note": "复核成功：官方定价页 Free 档 $0/50 credits、perpetual 表述、可用模型、付费档与 add-on 单价均未见变化。未注册、未实测额度消耗。"
+        },
+        {
+          "at": "2026-10-29T06:39:19Z",
+          "status": "active",
+          "note": "复核成功：Free 档 $0/50 credits、perpetual 表述、免费档可用模型清单、付费档与 add-on 单价、GovCloud 例外均未见变化。未注册、未实测额度消耗。"
         }
       ]
     },
@@ -1784,8 +1804,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Modal 官方定价页与 FAQ 可读，明确 Starter 档 $0/月含 $30 计算额度、覆盖 Functions/Sandboxes（按秒计 CPU/内存/GPU）与 1 TiB 卷、1 TiB 出网、3 seat、100 容器/10 GPU 并发，并明确 Shared Endpoints token 不计入额度、Sandbox 按 3 倍非抢占价计费；未注册实测额度，绑卡要求官方页面未说明。",
-      "lastVerifiedAt": "2026-10-28T06:00:09Z",
-      "nextReviewAt": "2026-10-29T06:00:09Z",
+      "lastVerifiedAt": "2026-10-29T06:39:19Z",
+      "nextReviewAt": "2026-10-30T06:39:19Z",
       "evidence": [
         {
           "url": "https://modal.com/pricing",
@@ -1801,6 +1821,11 @@
           "url": "https://modal.com/pricing",
           "summary": "FAQ「I'm on the Starter plan. Why am I being charged?」：Starter 无月费、含每月 $30 compute，超出或不覆盖的用量计费；「Free usage of Shared Endpoints is not part of the Starter plan」，该规则 2026-09-01 起生效。定价页另载 Sandboxes 按非抢占费率 3 倍 list price 计费、学术 credit 最高 $10k。",
           "checkedAt": "2026-10-28T06:00:09Z"
+        },
+        {
+          "url": "https://modal.com/pricing",
+          "summary": "复核定价页：Starter 仍为 $0 + compute/月、含 $30/月 free credits、3 workspace seats、100 containers + 10 GPU concurrency、1 TiB/月免费出网；Team $250 + compute/月含 $100/月 credits；卷 $0.09/GiB/月、出网 $0.04/GiB。FAQ 仍写明额度只覆盖 Functions 与 Sandboxes 的按秒 CPU/内存/GPU 及 1 TiB 卷，不覆盖按 token 计费的 Shared Endpoints，且该规则自 2026-09-01 起生效。条款未见变化。",
+          "checkedAt": "2026-10-29T06:39:19Z"
         }
       ],
       "history": [
@@ -1808,6 +1833,11 @@
           "at": "2026-10-28T06:00:09Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区「Modal 30+250美元」帖发现线索，直接读取 modal.com/pricing 与 FAQ 核实：Starter 档为 $0/月含 $30/月计算额度，覆盖 Functions/Sandboxes 与 1 TiB 卷，Shared Endpoints token 不计入；帖子所称 $250/$280 额度在官方页面无对应（$250 为 Team 档月费），故不采信。未注册、未实测额度。"
+        },
+        {
+          "at": "2026-10-29T06:39:19Z",
+          "status": "active",
+          "note": "复核成功：Starter $0/月含 $30 计算额度、3 seat、100 容器 + 10 GPU 并发、1 TiB 出网与卷，Shared Endpoints 不计入额度，均未见变化。未注册、未实测额度。"
         }
       ]
     },
@@ -2063,6 +2093,103 @@
           "at": "2026-10-29T00:23:31Z",
           "status": "pending",
           "note": "由 LINUX DO 福利羊毛区多条同主题帖发现（topic 3088648、3087327、3088291）。尝试在 zcode.z.ai 文档（含闲时任务、使用统计、Q&A、更新日志）与 z.ai/subscribe 定价页核实，均无每日 3 亿 GLM-5.3-Flash 免费额度的官方条文；官方仅说明闲时任务对 Coding Plan 订阅用户免费执行。按 pending/low 入库，待人工在客户端内核对领取入口与额度原文。"
+        }
+      ]
+    },
+    {
+      "id": "openai-chatgpt-api-credits-benefit-202610",
+      "title": "ChatGPT Pro / Business 订阅每月可领最高 500 美元 OpenAI API 额度",
+      "provider": "OpenAI",
+      "category": "ai",
+      "description": "2026-10-28 开放的订阅权益：符合条件的 ChatGPT Pro 与 Business 付费订阅可把订阅费按档位换成等额的 OpenAI API 额度（Pro $100/$200/$500 档分别对应每月 $100/$200/$500；Business 按付费 Standard 席位 $20、Premium 席位 $100 汇总，每工作区每月上限 $500），额度直接充入关联的 API 组织，可用于 Responses、Agents、Realtime/GPT-Live、Images 与内置工具等 API 用量。这是订阅附带权益，不是免费额度，必须先有付费订阅。",
+      "quota": "Pro 档每月 $100 / $200 / $500（与订阅档位一致）；Business 每付费 Standard 席位 $20、Premium 席位 $100，按工作区汇总，每月上限 $500；年付一次性发放全年额度，上限 $6,000/年。额度只授予一个已关联的 API 组织。",
+      "benefitValue": "相当于每月把 Pro 订阅费全额返还为 API 额度（$100–$500/月）；Business 每工作区每月最高 $500、年付最高 $6,000。按官方档位标价，属于付费订阅回赠，不是免费额度。",
+      "eligibility": "仅 ChatGPT Pro（$100/$200/$500 档）与含付费 Standard/Premium 席位的 Business 工作区；订阅需已生效至少 7 天；Plus、Go、Free、Enterprise、Edu、免费试用/赠送订阅及旧版 Codex 席位不适用。领取人须同时是订阅（或工作区）所有者与接收额度 API 组织的所有者，且 ChatGPT 与 API 账号邮箱一致；仅工作区成员或管理员角色不够。",
+      "regions": "官方文档未列出国家/地区清单，仅说明权益可用性随开放名单与地区而定；OpenAI API 平台本身另有支持国家/地区范围限制，未逐条核实。",
+      "validity": "按月发放并自动续发（订阅保持有效期间）；首次领取按当期剩余天数折算；未使用额度在该计费周期结束时清零、不结转；年付 Business 额度在年度计费周期末到期。",
+      "deadlineNote": "官方未公布权益结束日期，仅说明权益可能调整或取消，不能视为永久承诺；2026-10-28 起开放领取，需主动在 ChatGPT 账单设置或 API 平台完成一次激活。",
+      "officialUrl": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+      "claimUrl": "https://chatgpt.com/settings/billing",
+      "discoveryUrl": "https://linux.do/t/topic/3088919",
+      "discoveredAt": "2026-10-29T06:39:19Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "required",
+      "autoRenewal": "yes",
+      "costNotes": "不是免费额度：必须已有付费 ChatGPT Pro 或 Business 订阅（Pro 自 $100/月起）。额度只抵扣关联 API 组织的平台用量（Responses、Agents 含托管沙箱、Decisions、GPT-Live/Realtime、Images、网页搜索/文件搜索/代码解释器等内置工具及其存储），不含用 API Key 调用 Codex 的费用，也不提高 ChatGPT 或登录态 Codex 的用量上限。免费额度先于已购额度消耗，用尽后按普通 API 计费，无余额时返回 429 credit_balance_exhausted，可开启 Auto Recharge。每个订阅只能关联一个 API 组织；降级到 Plus/Go/Free 会在计费周期末解除关联；升级 Pro 档或新增席位按比例补发，席位减少从下一周期生效；更换接收组织需联系客服。",
+      "confidence": "high",
+      "confidenceReason": "OpenAI 官方开发者文档页面与其 Markdown 全文（developers.openai.com/api/docs/guides/chatgpt-api-credits）直接读到了档位金额表、席位折算与 $500/$6,000 上限、7 天订阅门槛、所有者与同邮箱要求、按周期清零与首次折算、额度覆盖范围与「Codex via API keys 不支持」条款；未登录账号实测领取流程。",
+      "lastVerifiedAt": "2026-10-29T06:39:19Z",
+      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "evidence": [
+        {
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+          "summary": "官方文档额度表：Pro $100/$200/$500 档分别每月 $100/$200/$500 API 额度；Business 每付费 Standard 席位 $20、Premium 席位 $100，按工作区汇总且每月上限 $500；年付一次性发放全年额度，上限 $6,000 并在年度周期末到期。",
+          "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+          "summary": "官方文档资格与期限条款：订阅须为付费 Pro/Business 且生效满 7 天，免费试用与赠送订阅不适用；须为订阅（或工作区）所有者与 API 组织所有者且同邮箱；首次额度按当期剩余时间折算，未用额度在计费周期末清零不结转；无需绑定 API 付款方式即可使用。",
+          "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+          "summary": "官方文档覆盖范围：额度用于关联组织的 API 平台用量（Responses、Agents 含托管沙箱、Decisions、GPT-Live/Realtime、Images、内置工具及存储）；明确「Codex usage through API keys is not supported by this benefit」，且不提高 ChatGPT/Codex 登录态用量；用尽后按普通计费，无余额返回 429 credit_balance_exhausted。",
+          "checkedAt": "2026-10-29T06:39:19Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-29T06:39:19Z",
+          "status": "active",
+          "note": "从 LINUX DO 福利羊毛区「GPT pro/Business 可白嫖 500 美元 API 额度」帖发现线索，直接读取 OpenAI 官方开发者文档（含 .md 全文）核实档位金额、席位折算、7 天门槛、同邮箱与所有者要求、按周期清零、覆盖范围及 Codex 除外条款，确认该权益 2026-10-28 起开放。帖文所称「自动续费、无需每月操作」与官方「激活一次后随订阅续期自动发放」一致；未登录领取。"
+        }
+      ]
+    },
+    {
+      "id": "requesty-free-tier-200-requests-daily-202610",
+      "title": "Requesty 免费档：每天 200 次请求，全部免费模型可用",
+      "provider": "Requesty",
+      "category": "ai",
+      "description": "Requesty 是 OpenAI 兼容的 LLM 网关（宣称 600+ 模型）。官方定价页提供 Free 档：$0，可用目录中的全部免费模型，每天 200 次请求，包含路由策略、缓存与自动回退、用量分析、EU 数据驻留，且无需信用卡；付费模型与自带 Key 需升级到按量付费（在模型原价上加 5%）。",
+      "quota": "每天 200 次请求；仅限模型目录中定价为免费的模型（清单随时调整，社区帖子举例 ling-3.1-flash、gemma-4-31b-it、nemotron-3-ultra-550b-a55b 等，未在官方页面逐条确认）；免费档不含 600+ 付费模型与 bring-your-own-key。",
+      "benefitValue": "官方标价 $0/月；价值随所用免费模型定价浮动，无法换算成固定金额，按 200 次请求/日的上限计量。",
+      "eligibility": "注册 Requesty 账号即可使用；官方 FAQ 明确免费档「no credit card required」。是否需要额外认证或企业邮箱未披露。",
+      "regions": "官方未列国家/地区限制；免费档同样可选 EU 数据驻留（router.eu.requesty.ai）。",
+      "validity": "官方定价页当前列示的长期免费档，按日限流 200 次请求；未公布结束日期。",
+      "deadlineNote": "官方未公布免费档结束日期；每日请求上限与免费模型清单可能随时调整，不能视为永久承诺。",
+      "officialUrl": "https://www.requesty.ai/pricing",
+      "claimUrl": "https://app.requesty.ai/sign-up",
+      "discoveryUrl": "https://linux.do/t/topic/3089709",
+      "discoveredAt": "2026-10-29T06:39:19Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费档 $0、无月费，无信用卡要求；超出每日 200 次请求或调用付费模型需升级按量付费：在供应商原价基础上统一加价 5%（官方示例：模型 $10/百万 token → 经网关 $10.50）；自带供应商 Key 仍在付费档。官方未披露免费档的并发、上下文长度与免费模型速率限制，也未说明超额请求是报错还是被拒。",
+      "confidence": "high",
+      "confidenceReason": "Requesty 官方定价页正文与页面内嵌 FAQ 结构化数据均写明：Free 档 $0、可用全部免费模型、200 requests per day、无需信用卡，并列出付费档 5% 加价与 600+ 模型/自带 Key 的差异；未注册实测请求额度与当前免费模型清单。",
+      "lastVerifiedAt": "2026-10-29T06:39:19Z",
+      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "evidence": [
+        {
+          "url": "https://www.requesty.ai/pricing",
+          "summary": "官方定价页 Free 方案：$0，「Access to all free models」「200 requests per day」，含 routing/caching/fallbacks 与 spend tracking，标注 No credit card required；对比表另列 Free 档不含 600+ 付费模型与 bring-your-own-keys。",
+          "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://www.requesty.ai/pricing",
+          "summary": "官方 FAQ（页面结构化数据）：「The free tier gives you the full platform (routing, caching, fallbacks, analytics and EU data residency) on free models, with a limit of 200 requests per day and no credit card required」，并说明按量付费在原价上加 5%。",
+          "checkedAt": "2026-10-29T06:39:19Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-29T06:39:19Z",
+          "status": "active",
+          "note": "从 LINUX DO 福利羊毛区「requesty.ai 每天 200 次 ling-3.1-flash / gemma-4-31b-it / nemotron-3-ultra」帖发现线索，读取 requesty.ai 官方定价页与 FAQ 确认 Free 档 $0、200 请求/日、仅限免费模型、免绑卡、付费档 5% 加价；社区列举的具体免费模型未在官方页面逐条核对，故不写入权益。未注册实测。"
         }
       ]
     }
