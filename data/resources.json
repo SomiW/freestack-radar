@@ -599,8 +599,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "GitHub 官方 billing 文档明确列出 Free/Pro 档的每月计算与存储额度、各机型单价、无支付方式时的阻断规则与重置方式；未登录实测创建 codespace。",
-      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
-      "nextReviewAt": "2026-10-28T23:57:08.603Z",
+      "lastVerifiedAt": "2026-10-29T00:23:31Z",
+      "nextReviewAt": "2026-10-30T00:23:31Z",
       "evidence": [
         {
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
@@ -621,6 +621,11 @@
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
           "summary": "复核：官方 billing 文档免费配额表仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；计价表 2/4/8/16/32 核 $0.18/$0.36/$0.72/$1.44/$2.88 与存储 $0.07/GB-month 未变；仍写明组织与企业计划无免费配额、EMU 仓库不可用 Codespaces、无有效支付方式超额即阻断。条款未见变化。",
           "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "复核：文档表格仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；计价表 2/4/8/16/32 核仍为 $0.18/$0.36/$0.72/$1.44/$2.88、存储 $0.07/GB-month（2 核额度倍率 2）；仍写明 managed user account 拥有的仓库不可用、超额按个人账户计费。条款未见变化。",
+          "checkedAt": "2026-10-29T00:23:31Z"
         }
       ],
       "history": [
@@ -638,6 +643,11 @@
           "at": "2026-10-27T23:57:08.603Z",
           "status": "active",
           "note": "复核成功：官方 billing 文档的 Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month、各机型单价、存储 $0.07/GB-month 与「无有效支付方式超额即阻断」均未见变化。未登录创建 codespace。"
+        },
+        {
+          "at": "2026-10-29T00:23:31Z",
+          "status": "active",
+          "note": "复核成功：官方 billing 文档的免费配额（Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month）、各机型单价与存储价、EMU 仓库限制均未见变化。未登录创建 codespace。"
         }
       ]
     },
@@ -665,8 +675,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Google 官方限制页确认每周 50 小时配额、5 GB 持久盘及 120 天删除规则、40 分钟空闲终止与 12 小时会话上限，价格页确认免费；绑卡要求未在文档中规定、未实测登录，故 creditCard 记 unknown。",
-      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
-      "nextReviewAt": "2026-10-28T23:57:08.603Z",
+      "lastVerifiedAt": "2026-10-29T00:23:31Z",
+      "nextReviewAt": "2026-10-30T00:23:31Z",
       "evidence": [
         {
           "url": "https://docs.cloud.google.com/shell/docs/limitations",
@@ -702,6 +712,16 @@
           "url": "https://cloud.google.com/shell/pricing",
           "summary": "复核价格页：仍为一句「Cloud Shell is free for users with a Google Cloud account」，页面未列出 Cloud Shell 自身任何收费项。",
           "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/limitations",
+          "summary": "复核限制页：默认每周配额仍为 50 小时、$HOME 仍为 5 GB 免费持久盘、120 天未访问删除、单会话上限 12 小时、非交互会话 40 分钟结束、配额用尽需等待重置或改 Cloud Workstations；条款未见变化。",
+          "checkedAt": "2026-10-29T00:23:31Z"
+        },
+        {
+          "url": "https://cloud.google.com/shell/pricing",
+          "summary": "复核价格页：正文仍为「Cloud Shell is free for users with a Google Cloud account」，未列出 Cloud Shell 自身任何收费项。",
+          "checkedAt": "2026-10-29T00:23:31Z"
         }
       ],
       "history": [
@@ -719,6 +739,11 @@
           "at": "2026-10-27T23:57:08.603Z",
           "status": "active",
           "note": "复核成功：官方限制页 50 小时/周、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟空闲终止与年龄限制均未变化；价格页仍写明对 Google Cloud 账号用户免费。未登录实测。"
+        },
+        {
+          "at": "2026-10-29T00:23:31Z",
+          "status": "active",
+          "note": "复核成功：限制页 50 小时/周、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟非交互终止均未变化；价格页仍写明对 Google Cloud 账号用户免费。未登录实测。"
         }
       ]
     },
@@ -1284,14 +1309,14 @@
       "discoveredAt": "2026-10-26T23:34:07Z",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "costNotes": "免费档 ¥0；付费档 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），均连续包月自动续费。权益表显示免费档使用 GLM-5.3 无折扣，Seed-2.1-Turbo、Seed-Code、DeepSeek-V4.1-Flash 为闲时 5 折，DeepSeek-V4-Pro 闲时 5 折——即免费档调用这些模型仍需消耗积分但享折扣。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均未披露。",
+      "costNotes": "免费档 ¥0；付费档 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），均连续包月自动续费。本轮权益表细目：免费档 GLM-5.3 无折扣、Seed-2.1-Turbo 与 Seed-Code 5 折、DeepSeek-V4.1-Flash 与 DeepSeek-V4-Pro 闲时 5 折；付费档 GLM-5.3 与 Seed 系列 5 折/2.5 折、DeepSeek-V4.1-Flash 全时段 5 折、DeepSeek-V4-Pro 闲时 5 折——免费档调用这些模型仍消耗积分但享折扣。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均未披露。",
       "startsAt": null,
       "endsAt": null,
       "status": "active",
       "confidence": "high",
       "confidenceReason": "trae.cn 官方定价页明确列示免费档 ¥0 / 每月 500 积分 / 所有功能免费使用 / 2 个云端任务并发，并同页给出各付费档价格与积分；积分清零规则、免费档可用模型清单与实名要求未在该页披露，未注册实测额度消耗。",
-      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
-      "nextReviewAt": "2026-10-28T23:57:08.603Z",
+      "lastVerifiedAt": "2026-10-29T00:23:31Z",
+      "nextReviewAt": "2026-10-30T00:23:31Z",
       "evidence": [
         {
           "url": "https://www.trae.cn/pricing",
@@ -1307,6 +1332,11 @@
           "url": "https://www.trae.cn/pricing",
           "summary": "复核定价页：免费 Free 档仍为 ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」；付费档 Lite ¥39（¥49）2,000 积分、Pro ¥69（¥99）4,000、Pro+ ¥219（¥239）12,000、Ultra ¥629（¥699）40,000，签到多得 3,000，云端并发 2/2/10/10/20。权益表新增按模型折扣细目：免费档 GLM-5.3 无折扣，Seed-2.1-Turbo/Seed-Code/DeepSeek-V4.1-Flash 均为「闲时 5 折」，DeepSeek-V4-Pro 闲时 5 折。核心免费条款未见变化。",
           "checkedAt": "2026-10-27T23:57:08.603Z"
+        },
+        {
+          "url": "https://www.trae.cn/pricing",
+          "summary": "复核定价页：免费 Free 档仍为 ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」，付费档 ¥39/¥69/¥219/¥629（原价 ¥49/¥99/¥239/¥699）与 2,000/4,000/12,000/40,000 积分未变。模型折扣表本轮改为：GLM-5.3 免费档无折扣、付费档 5 折；Seed-2.1-Turbo 与 Seed-Code 免费档 5 折、付费档 2.5 折；DeepSeek-V4.1-Flash 免费档闲时 5 折、付费档全时段 5 折；DeepSeek-V4-Pro 各档闲时 5 折。",
+          "checkedAt": "2026-10-29T00:23:31Z"
         }
       ],
       "history": [
@@ -1319,6 +1349,11 @@
           "at": "2026-10-27T23:57:08.603Z",
           "status": "active",
           "note": "复核成功：官方定价页免费档仍为 ¥0/每月 500 积分/全部功能/2 并发云端任务，付费档价格与积分数未变；同页权益表补充了各档按模型折扣细目（免费档 GLM-5.3 无折扣、其余模型闲时 5 折），已同步 costNotes。未注册实测。"
+        },
+        {
+          "at": "2026-10-29T00:23:31Z",
+          "status": "active",
+          "note": "复核成功：免费档核心条款（¥0、500 积分/月、全部功能、2 并发云端任务）与付费档价格、积分数未变；模型折扣细目有更新（付费档 DeepSeek-V4.1-Flash 由闲时 5 折变为全时段 5 折，Seed 系列免费档明确 5 折、付费档 2.5 折），已同步 costNotes。未注册实测。"
         }
       ]
     },
@@ -1947,6 +1982,87 @@
           "at": "2026-10-28T18:14:43Z",
           "status": "pending",
           "note": "经 LINUX DO 福利帖发现，官方定价页确认 $50 免绑卡额度与价目；额度有效期与资格未披露，按 pending/medium 入库。未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "gpuflow-50-eur-card-credit-202610",
+      "title": "GPU Flow 绑卡送 50 欧元余额（LLM 推理 / Agent Sandbox / B200 GPU 通用）",
+      "provider": "GPU Flow（BIAI Technology Project S.L.）",
+      "category": "both",
+      "description": "西班牙 AI 基础设施服务商，三类产品共用一份欧元余额：Token Factory（兼容 OpenAI/Anthropic SDK 的开源模型推理 API）、Sandbox（带 SSH 的持久容器 + Agent 模板）、独占 NVIDIA B200（整卡或 MIG 切片）。官方首页与 FAQ 写明新账户绑定银行卡后即赠 50 欧元余额，可用于任一产品。",
+      "quota": "绑卡后一次性 50 欧元余额；Token Factory 输入价自 0.06 欧元/百万 tokens 起，Sandbox 自 0.15 欧元/小时 + 持久卷自 5 欧元/月起，独占 B200 自 1.10 欧元/小时（整卡或 MIG 分片）。欧洲创业公司可另申请最高 5,000 欧元信贷。",
+      "benefitValue": "50 欧元账户余额（含增值税口径）。按官方起价约可覆盖 8.3 亿输入 tokens（0.06 欧元/百万）或约 333 小时 Sandbox（0.15 欧元/小时）；不可提现，不折算人民币。",
+      "eligibility": "注册账户（邮箱或 SSO）并绑定可验证的国际信用卡，验卡时扣 1 欧元后返还；官方未说明是否仅限新用户或每账户仅一次。",
+      "regions": "数据与算力位于西班牙（欧盟），发票为西班牙欧元发票；官方未列账户注册的地区限制，需可验证的国际信用卡。",
+      "validity": "50 欧元为账户预付余额，官方未披露有效期；余额按实际用量扣减。",
+      "deadlineNote": "官方未公布活动结束时间与 50 欧元的有效期，也未说明是否每账户仅发放一次，不能视为长期或可重复领取。",
+      "officialUrl": "https://gpuflow.ai/en",
+      "claimUrl": "https://gpuflow.ai/en",
+      "discoveryUrl": "https://www.nodeseek.com/post-1016191-1",
+      "discoveredAt": "2026-10-28T16:17:25Z",
+      "creditCard": "required",
+      "autoRenewal": "no",
+      "costNotes": "预付制、无月费与承诺消费：余额用尽后自行充值（充值起点 10 欧元），按实际 tokens/小时扣减，价格已含增值税。验卡 1 欧元会返还，但属于真实扣款再退款。Sandbox 可配置空闲自动挂起以停止计费，持久卷仍按 5 欧元/月起单独计费；GPU 独占按小时 1.10 欧元起。50 欧元到期时间、超额后是否自动停机与是否支持非欧盟持卡人均未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方首页与 FAQ 明确「绑卡得 50 欧元、验卡 1 欧元返还、预付制、价格含 IVA」及三类产品起价，属官方一手证据；但 50 欧元有效期、是否仅限新用户/每账户一次、注册地区限制均未披露，未注册实测，故按 pending 保留待核实。",
+      "lastVerifiedAt": "2026-10-29T00:23:31Z",
+      "nextReviewAt": "2026-10-30T00:23:31Z",
+      "evidence": [
+        {
+          "url": "https://gpuflow.ai/en",
+          "summary": "官方首页（英文）：CTA 为「start free with €50」；FAQ 写明「Cuenta sí… Añades tu tarjeta y recibes 50 € de saldo para llamar a la API o levantar un Sandbox. El cargo de verificación de 1 € se reembolsa」；Token Factory 自 0.06 欧元/百万 tokens、Sandbox 自 0.15 欧元/小时（卷自 5 欧元/月）、独占 B200 自 1.10 欧元/小时；预付充值起点 10 欧元，价格含 IVA。",
+          "checkedAt": "2026-10-29T00:23:31Z"
+        },
+        {
+          "url": "https://gpuflow.ai/pricing",
+          "summary": "官方定价页：预付制、无月费无承诺期，按实际用量计费，含 IVA；Token Factory / Sandbox / 独占 GPU 三类产品共用同一欧元余额；页面另有欧洲创业公司最高 5,000 欧元信贷入口。",
+          "checkedAt": "2026-10-29T00:23:31Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-29T00:23:31Z",
+          "status": "pending",
+          "note": "由 NodeSeek 与 LINUX DO 福利帖发现（称验卡 €50、扣 1 欧元），转读官方首页与定价页确认：绑卡即得 50 欧元余额、验卡 1 欧元返还、预付制含 IVA、三类产品起价均属实。余额有效期与资格限制未披露，按 pending/medium 入库。未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "zcode-daily-300m-glm53-flash-202610",
+      "title": "ZCode 每日发放 GLM-5.3-Flash 免费额度（社区口径，约 3 亿 tokens/天）",
+      "provider": "ZCode（智谱 / Z.ai）",
+      "category": "ai",
+      "description": "LINUX DO 福利羊毛区连续多日出现同一线索：ZCode 桌面端每日在固定时段发放 GLM-5.3-Flash 免费额度（社区称约 3 亿 tokens/天），需在 App 内领取，额度仅在夜间时间窗内可用。ZCode 官方文档、更新日志与 GLM Coding Plan 定价页本轮均未找到对应条文，故仅按社区线索记录。",
+      "quota": "社区口径：每日 300M tokens，模型固定为 GLM-5.3-Flash；约北京时间 19:00 开放领取，可用窗口约 23:00 至次日 09:00，未用完不结转。",
+      "benefitValue": "无法可靠估值：官方未公布 GLM-5.3-Flash 的单 token 价格（文档仅给出约 $0.045/任务 的折扣后成本），社区口径的 3 亿 tokens/天不可换算为确定金额。",
+      "eligibility": "需安装 ZCode 桌面端并登录智谱 / Z.ai 账号后在 App 内领取；是否要求 Coding Plan 订阅、是否限新用户均未证实。",
+      "regions": "未披露。社区帖均来自国内用户；BigModel（国内）与 Z.ai（海外）账号是否都参与未知。",
+      "validity": "社区口径为每日发放、当日有效、仅夜间窗口可用；官方未披露。",
+      "deadlineNote": "官方未公布活动起止日期。社区帖显示 2026-10-28 前后仍在发放，并称存在「当日未发」的情况，是否延续未知。",
+      "officialUrl": "https://zcode.z.ai/cn",
+      "claimUrl": "https://zcode.z.ai/cn",
+      "discoveryUrl": "https://linux.do/t/topic/3088648",
+      "discoveredAt": "2026-10-28T21:09:31Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "按社区描述，免费额度只覆盖夜间窗口，其余时段消耗 Coding Plan 套餐额度或 API 余额；ZCode 客户端本身免费，但官方 Q&A 明确需要自备 API Key 或模型套餐，Start Plan 与纯 API Key 模式不支持闲时免费通道。是否需绑卡、超额后是否自动转付费均未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "low",
+      "confidenceReason": "仅有 LINUX DO 多个独立帖子的口径（每日 3 亿 tokens、19:00 领取、23:00–09:00 可用），ZCode 官方文档、更新日志与 z.ai 定价页均无对应条文，官方页面不可证；未安装客户端实测。",
+      "lastVerifiedAt": null,
+      "nextReviewAt": "2026-10-30T00:23:31Z",
+      "evidence": [],
+      "history": [
+        {
+          "at": "2026-10-29T00:23:31Z",
+          "status": "pending",
+          "note": "由 LINUX DO 福利羊毛区多条同主题帖发现（topic 3088648、3087327、3088291）。尝试在 zcode.z.ai 文档（含闲时任务、使用统计、Q&A、更新日志）与 z.ai/subscribe 定价页核实，均无每日 3 亿 GLM-5.3-Flash 免费额度的官方条文；官方仅说明闲时任务对 Coding Plan 订阅用户免费执行。按 pending/low 入库，待人工在客户端内核对领取入口与额度原文。"
         }
       ]
     }
