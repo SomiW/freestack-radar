@@ -1140,8 +1140,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方活动页（qoder.com/activities）直接列示 300 Credits 欢迎礼、2 周试用、领取方式、邀请奖励规则与 Credits 30 天有效期，并同期展示 Qwen3.8-Flash 限免与每日 100 Credits 活动的官方条文；未注册实测领取，欢迎礼截止日与 Credits 货币折算官方未披露。",
-      "lastVerifiedAt": "2026-10-29T12:58:56Z",
-      "nextReviewAt": "2026-10-30T12:58:56Z",
+      "lastVerifiedAt": "2026-10-30T13:13:57Z",
+      "nextReviewAt": "2026-10-31T13:13:57Z",
       "evidence": [
         {
           "url": "https://qoder.com/activities",
@@ -1167,6 +1167,11 @@
           "url": "https://qoder.com/activities",
           "summary": "复核（满 24 小时，渲染整页）：首屏仍为 \"Sign up now 300 Credits as your welcome gift\"、\"New users 2-Week Trial\"、\"Register to claim 300 Credits\"；邀请奖励 1,000/500（受邀首购 500、邀请人 1,000，注册后 30 天内首购、T+14 发放）、Community Boost 1,024 SOTA Credits、\"Double Credits on Your First Subscription\"、Qwen3.8-Flash 限免（2026-09-18 10:00 起 0.1×→0.0×）、每日 100 Credits 条文均在，未见撤销或额度缩减；欢迎礼仍未公布截止日，Credits 自发放 30 天有效未变。",
           "checkedAt": "2026-10-29T12:58:56Z"
+        },
+        {
+          "url": "https://qoder.com/activities",
+          "summary": "复核（满 24 小时）：渲染整页后首屏仍为 \"Sign up now 300 Credits as your welcome gift\"、\"New users 2-Week Trial\"、\"Register to claim 300 Credits\"；每日 100 Credits、Qwen3.8-Flash 限免、首次订阅双倍 Credits 条文均在。邀请奖励改为三档明文：好友 7 天内下载并对话/跑任务→邀请人 50 Credits；好友 7 天内活跃 3 天→100 Credits；好友 30 天内首付→双方分别 1,000/500 Credits，30 天有效、T+14 发放，最多 50 个名额。Community Boost 卡片写作 \"Join & Claim 1,024 SOTA Credits. Up to 10,240 Total.\"（=欢迎包+Round1–3，Round4 另计），与 docs 的分轮细则一致。欢迎礼截止日与 Credits 货币折算仍未公布。",
+          "checkedAt": "2026-10-30T13:13:57Z"
         }
       ],
       "history": [
@@ -1189,6 +1194,11 @@
           "at": "2026-10-29T12:58:56Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：官方页面条文与上轮记录一致，额度/资格/期限未见变化；仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-10-30T13:13:57Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：300 Credits 欢迎礼与 2 周试用未见变化；活动页把邀请奖励展开为签到 50 / 活跃 100 / 首付 1,000 三档并在页内给出完整 FAQ（名额上限 50、30 天有效），属既有邀请项目的规则细化，不影响本条目权益；仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -1262,8 +1272,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "ampcode.com 官方定价页明确写出 Hobby=Free 档的免费范围（自托管 Orb 不限量免费、BYOK、无 token 费用与上限）与付费边界（托管 Orb 按量、Individual $20/45,000 分钟），无冲突信息；托管 Orb 单价与是否需要绑卡未展开，未注册实测。",
-      "lastVerifiedAt": "2026-10-29T12:58:56Z",
-      "nextReviewAt": "2026-10-30T12:58:56Z",
+      "lastVerifiedAt": "2026-10-30T13:13:57Z",
+      "nextReviewAt": "2026-10-31T13:13:57Z",
       "evidence": [
         {
           "url": "https://ampcode.com/pricing",
@@ -1289,6 +1299,11 @@
           "url": "https://ampcode.com/pricing",
           "summary": "复核（满 24 小时）：Hobby = Free 档 6 项条文与上轮逐字一致——All product features、Pay-as-you-go for Amp-hosted orbs、Unlimited self-hosted orbs free、Or use your own runners for free、Use tokens from anywhere / your ChatGPT·Claude & other subs、BYOK、No Amp token fees or limits；付费档仍为 Megawatt/Gigawatt $20/mo 含 45,000 minutes of orbin' time，Teams \"No extra charge\"、Enterprise Custom。免费与付费边界未变。",
           "checkedAt": "2026-10-29T12:58:56Z"
+        },
+        {
+          "url": "https://ampcode.com/pricing",
+          "summary": "复核（满 24 小时）：Hobby=Free 档 9 项条文与上轮一致——All product features、Pay-as-you-go for Amp-hosted orbs、Unlimited self-hosted orbs free、Or use your own runners for free、Use tokens from anywhere、Use your ChatGPT, Claude & other subs、BYOK、No Amp token fees or limits、Public/private repositories；付费档仍为 Individual $20/mo（含 Megawatt/Gigawatt 切换、45,000 minutes of orbin' time），Teams 标 \"No extra charge\"、Enterprise 定制。免费与付费边界未变。",
+          "checkedAt": "2026-10-30T13:13:57Z"
         }
       ],
       "history": [
@@ -1311,6 +1326,11 @@
           "at": "2026-10-29T12:58:56Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：官方页面条文与上轮记录一致，额度/资格/期限未见变化；仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-10-30T13:13:57Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：Hobby 免费范围、BYOK、无 token 加价与 $20/45,000 分钟付费边界均未见变化，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -2050,8 +2070,8 @@
       "status": "active",
       "startsAt": null,
       "endsAt": null,
-      "lastVerifiedAt": "2026-10-29T12:58:56Z",
-      "nextReviewAt": "2026-10-30T12:58:56Z",
+      "lastVerifiedAt": "2026-10-30T13:13:57Z",
+      "nextReviewAt": "2026-10-31T13:13:57Z",
       "evidence": [
         {
           "url": "https://regolo.ai/pricing",
@@ -2062,6 +2082,11 @@
           "url": "https://regolo.ai/pricing/",
           "summary": "复核（满 24 小时）：Free Trial 档条文未变——「START YOUR 30-DAY FREE TRIAL」「Get full access to all Core Models」「No credit card required, no commitment」「1 month duration」「1M tokens per day」「Stricter rate limits, fair usage throttling applies」；订阅档 €39/€89/€169/€319 与日 2,000 万/5,000 万/1 亿/2 亿 tokens 未变；Embedding/STT/Image/OCR 在订阅档仍标 Not included，而免费档卡片新增「Complete access to chat, embedding, and more」措辞，两处表述不一致，页面未逐项说明免费档是否覆盖非 Chat 能力，故不改 quota 结论。",
           "checkedAt": "2026-10-29T12:58:56Z"
+        },
+        {
+          "url": "https://regolo.ai/pricing/",
+          "summary": "复核（满 24 小时）：Free Trial 卡片条文未变——\"START YOUR 30-DAY FREE TRIAL\"、\"Get full access to all Core Models\"、\"No credit card required, no commitment\"、\"1 month duration\"、\"1M tokens per day\"、\"Stricter rate limits / Fair usage throttling applies\"、\"All Core Models / Complete access to chat, embedding, and more\"；订阅档 Core €39（首 3 个月 7 折、月 6 亿 tokens、日 2,000 万）、Boost €89、Pro €169 仍在页。免费档与非 Chat 能力的覆盖仍只有概述性措辞，未逐项说明，quota 结论不变。",
+          "checkedAt": "2026-10-30T13:13:57Z"
         }
       ],
       "history": [
@@ -2074,6 +2099,11 @@
           "at": "2026-10-29T12:58:56Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：官方页面条文与上轮记录一致，额度/资格/期限未见变化；仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-10-30T13:13:57Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：30 天试用、每日 100 万 tokens、全量 Core 模型、免绑卡均未变化；订阅档价格未变，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -2441,8 +2471,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方文档三处互相印证：FAQ 明确「有验证手机号的新账号可用免费档」、models 页「Free tier」条目、rate-limits 页逐模型列出每日 token 上限、UTC 重置规则、256k 上下文上限与免费档每分钟限速。未登录实测领取，账号侧实际到账与实体号验证结果以注册为准。",
-      "lastVerifiedAt": "2026-10-29T12:58:56Z",
-      "nextReviewAt": "2026-10-30T12:58:56Z",
+      "lastVerifiedAt": "2026-10-30T13:13:57Z",
+      "nextReviewAt": "2026-10-31T13:13:57Z",
       "evidence": [
         {
           "url": "https://docs.munito.ai/rate-limits",
@@ -2463,6 +2493,11 @@
           "url": "https://munito.ai/llms.txt",
           "summary": "官方 llms.txt 列出 api.munito.ai / api.eu.munito.ai / api.us.munito.ai 三个 OpenAI 兼容端点、Anthropic 兼容端点与可用模型清单（DeepSeek-V4-Flash、DeepSeek-V4.1-Flash-1017、GLM-5.3-Flash、Gemma 4 12B、Qwen3.8-27B、Kolibri 1、LightOnOCR-3-4B、Cygnet、pplx-decider-v1.2 等）。",
           "checkedAt": "2026-10-29T12:58:56Z"
+        },
+        {
+          "url": "https://docs.munito.ai/rate-limits",
+          "summary": "复核（满 24 小时）：官方限速页「Free tier limits」未变——免费档运行在闲置容量、优先级低于付费流量；deepseek-ai/deepseek-v4.1-flash-1017、zai-org/glm-5.3-flash、deepseek-ai/deepseek-v4-flash 每组织每日各 2,000,000 tokens，其余聊天模型 4,000,000；输入（含缓存读取）与输出合并计入、UTC 00:00 重置、超限返回 429 free_daily_limit_exceeded；免费档单请求上下文上限 256,000 tokens；「Free limits do not rise automatically」。",
+          "checkedAt": "2026-10-30T13:13:57Z"
         }
       ],
       "history": [
@@ -2470,6 +2505,11 @@
           "at": "2026-10-29T12:58:56Z",
           "status": "active",
           "note": "据 linux.do 福利羊毛线索（munito.ai 每日 2M tokens）核对官方文档后新增：免费档需手机号验证，主力三模型各 200 万 tokens/天、其余聊天模型各 400 万/天，UTC 00:00 重置，上下文单请求上限 256k，免费档 10 RPM。未注册实测。"
+        },
+        {
+          "at": "2026-10-30T13:13:57Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：免费档逐模型日额度、256k 上下文上限、UTC 重置与 429 错误码均未变化，仅刷新核实时间与下次复核时间。"
         }
       ],
       "discoveredAt": "2026-10-29T12:58:56Z"
@@ -2974,6 +3014,93 @@
       ],
       "discoveredAt": "2026-10-30T07:08:35Z",
       "discoveryUrl": "https://linux.do/t/topic/3095526"
+    },
+    {
+      "id": "jina-ai-10m-free-tokens-per-key-202610",
+      "title": "Jina AI 新 API Key 赠送 1000 万 tokens（Reader / Search / Embedding / Reranker 通用）",
+      "provider": "Jina AI",
+      "category": "ai",
+      "description": "Jina AI 官方 Reader 页面在限速与计价表下方明确写「Every new API key comes with 10M free tokens!」，并说明一个 API Key 即可访问 Search Foundation 全部产品：Reader（r.jina.ai，URL 转 LLM 友好文本）、Search（s.jina.ai，搜索后转文本）、Embedding（api.jina.ai/v1/embeddings）与 Reranker（api.jina.ai/v1/rerank）。免费 Key 的限速高于匿名调用，token 用尽后可为同一 Key 充值继续使用。",
+      "quota": "新 API Key 一次性赠送 10,000,000 tokens，四个产品共用同一 token 余额；免费 Key 限速：Reader 500 RPM、Search 100 RPM（每次请求固定按 10,000 tokens 起计）、Embedding 500 RPM 且 2,000,000 TPM、Reranker 500 RPM 且 2,000,000 TPM；不带 Key 的匿名 Reader 为 20 RPM。Reader 按输出 token 计费，Embedding/Reranker 按输入 token 计费。",
+      "benefitValue": "官方赠送面值 1,000 万 tokens，跨 Reader/Search/Embedding/Reranker 通用；官方 token 单价表未在本轮逐项提取，故不给出货币折算金额。",
+      "eligibility": "注册 Jina 账号并生成新的 API Key，官方表述为「every new API key」即附带 10M tokens；页面未要求绑定信用卡；额度是否按账号还是按 Key 反复发放，官方未说明。",
+      "regions": "官方页面未列出国家/地区限制；官方提示结算币种可能因地区为 USD、EUR 等并可能含税。",
+      "validity": "额度随新 Key 发放，官方页面未公布有效期或过期清零规则；用尽后需在同一 Key 上充值。",
+      "deadlineNote": "官方未公布该赠送的结束日期，也未说明是否长期提供，不能视为永久有效。",
+      "officialUrl": "https://jina.ai/reader/",
+      "claimUrl": "https://jina.ai/api-dashboard/",
+      "discoveryUrl": "https://jina.ai/reader/",
+      "discoveredAt": "2026-10-30T13:13:57Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "免费额度为一次性 10M tokens，用尽后按官方 token 单价为同一 Key 充值；Search（s.jina.ai）每请求固定消耗 10,000 tokens 起，Reader 按输出 token、Embedding/Reranker 按输入 token 计费，失败请求不扣 token（官方 FAQ）。可选的自动充值需保存支付方式并在余额低于阈值时自动续购，不开启则不会自动扣费。",
+      "confidence": "high",
+      "confidenceReason": "jina.ai/reader 官方页面直接写明新 API Key 赠送 10M tokens，并给出免费 Key 各产品的 RPM/TPM 限速与 token 计费口径，条款内部一致；残留未知为额度有效期、是否按账号限领与是否需绑卡，未注册实测。",
+      "lastVerifiedAt": "2026-10-30T13:13:57Z",
+      "nextReviewAt": "2026-10-31T13:13:57Z",
+      "evidence": [
+        {
+          "url": "https://jina.ai/reader/",
+          "summary": "官方 Reader 页限速/计价区原文：「Don't panic! Every new API key comes with 10M free tokens!」，并说明「One API key gives you access to all search foundation products」，计价基于 token 用量。",
+          "checkedAt": "2026-10-30T13:13:57Z"
+        },
+        {
+          "url": "https://jina.ai/reader/",
+          "summary": "官方限速表：Reader（r.jina.ai）无 Key 20 RPM / 免费 Key 500 RPM；Search（s.jina.ai）100 RPM、每请求固定 10,000 tokens 起；Embedding 与 Reranker 免费 Key 均 500 RPM & 2,000,000 TPM；Reader 按输出 token、Embedding/Reranker 按输入 token 计费。",
+          "checkedAt": "2026-10-30T13:13:57Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T13:13:57Z",
+          "status": "active",
+          "note": "官方 Reader 页核实后新增：新 API Key 赠送 1000 万 tokens、免费 Key 的逐产品限速、token 计量口径与充值方式均可查证，按 active/high 入库；未注册实测，额度有效期与是否按账号限领未知。"
+        }
+      ]
+    },
+    {
+      "id": "groq-free-plan-rate-limits-202610",
+      "title": "Groq Free Plan：按模型限速的免费推理额度（gpt-oss-120b 每日 20 万 tokens）",
+      "provider": "Groq",
+      "category": "ai",
+      "description": "Groq Cloud 官方限速文档把「Free Plan」与 Developer Plan 并列，并逐模型列出免费档的 RPM / RPD / TPM / TPD 上限；免费档覆盖 openai/gpt-oss-120b、gpt-oss-20b、qwen3.8-27b、prompt-guard 系列、whisper-large-v3(-turbo) 语音转写与 Orpheus TTS。API 为 OpenAI 兼容（https://api.groq.com/openai/v1），缓存 token 不计入限速。文档同时说明限速按组织（organization）维度统计，实际精确值需在控制台 limits 页查看。",
+      "quota": "Free Plan（每组织）：gpt-oss-120b、gpt-oss-20b、qwen3.8-27b 各 30 RPM / 1,000 RPD / 8,000 TPM / 200,000 TPD；gpt-oss-safeguard-20b 3 RPM / 1,000 RPD / 2,000 TPM / 200,000 TPD；prompt-guard-2-22m 与 -86m 30 RPM / 14,400 RPD / 15,000 TPM / 500,000 TPD；whisper-large-v3 与 turbo 20 RPM / 2,000 RPD / 7,200 音频秒/小时 / 28,800 音频秒/天；Orpheus TTS（英文/阿拉伯语）10 RPM / 100 RPD / 1,200 TPM / 3,600 TPD。达任一项即限流，返回 429。",
+      "benefitValue": "免费档 $0，主力开源模型每日 200,000 tokens、每分钟 8,000 tokens 的推理额度；官方未提供等值金额，无法可靠折算。",
+      "eligibility": "需注册 Groq Cloud 账号并创建 API Key；官方限速文档将 Free Plan 作为现有档位列出，但未写明新注册是否默认进入免费档、是否需绑卡或需绑定手机号。",
+      "regions": "官方限速文档未列地区限制；模型可用性与各地区合规政策另计，本次未核实。",
+      "validity": "免费档为常设档位，官方未公布结束日期；限速按组织维度实时统计，可在控制台 limits 页查看当前精确值，升级 Developer Plan 后获得更高额度。",
+      "deadlineNote": "官方未公布 Free Plan 结束时间，也未说明免费档是否会因政策调整取消，不能视为永久有效。",
+      "officialUrl": "https://console.groq.com/docs/rate-limits",
+      "claimUrl": "https://console.groq.com/",
+      "discoveryUrl": "https://console.groq.com/docs/rate-limits",
+      "discoveredAt": "2026-10-30T13:13:57Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "免费档本身不收费；超出限速时返回 429 并按 retry-after 等待，不会自动转付费。升级 Developer Plan 后为更高额度并开放 Batch / Flex 处理，按 token 计费；缓存命中的 token 不计入限速。免费档是否有总量上限、是否需绑卡官方文档未说明。",
+      "confidence": "medium",
+      "confidenceReason": "Groq 官方限速文档逐模型列出 Free Plan 的 RPM/RPD/TPM/TPD 与 429 处理方式，条款可信；但未说明新账号是否默认获得免费档、是否需绑卡、是否有试用期限或功能限制，故保持待核实而非 active。",
+      "lastVerifiedAt": "2026-10-30T13:13:57Z",
+      "nextReviewAt": "2026-10-31T13:13:57Z",
+      "evidence": [
+        {
+          "url": "https://console.groq.com/docs/rate-limits",
+          "summary": "官方限速文档分「Free Plan Limits / Developer Plan Limits」两个页签，免费档逐模型给出 RPM/RPD/TPM/TPD/ASH/ASD；gpt-oss-120b 为 30 RPM、1K RPD、8K TPM、200K TPD；文档说明缓存 token 不计入限速、限速按组织统计、超限返回 429 并带 retry-after。",
+          "checkedAt": "2026-10-30T13:13:57Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T13:13:57Z",
+          "status": "pending",
+          "note": "由官方限速文档发现 Free Plan 逐模型额度并入库：免费档覆盖 gpt-oss-120b/20b、qwen3.8-27b、whisper、Orpheus TTS 等；因未确认新账号是否默认获得免费档、是否需绑卡，按 pending/medium 发布，未注册实测。"
+        }
+      ]
     }
   ]
 }
