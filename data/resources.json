@@ -881,14 +881,14 @@
       "discoveredAt": "2026-10-26T04:37:32Z",
       "creditCard": "required",
       "autoRenewal": "unknown",
-      "costNotes": "36 元/年是付费购买，不是免费额度。官方活动规则写明“续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格”，即第二年续费不是 36 元，须按当时官网价支付；2 Mbps 带宽、100 GB/月流量，超出流量按量计费；快照、备份、额外云盘、公网 IP 等按标准价另计。社区提到可叠加“2026 华为开发者大赛”200 元无门槛代金券续费，但该券不属于本活动条款，名额、有效期与适用机型均未核实，不并入本条权益。",
+      "costNotes": "36 元/年是付费购买，不是免费额度；官方活动页本轮显示该机型原价 395.28 元/年、活动价 36 元/年（1 年付，华北-北京四、40 GB 系统盘、100 GB/月流量）。官方活动规则写明“续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格”，即第二年续费不是 36 元，须按当时官网价支付；变更（升配/降配/扩容）价格同理按当期官网价。2 Mbps 带宽、100 GB/月流量，超出流量按量计费；快照、备份、额外云盘、公网 IP 等按标准价另计；活动规则同时写明本次活动不可与其他优惠折扣叠加、部分产品不支持退订、退订后 V0 用户可再次享受新用户专享而 V1 及以上不可。社区提到可叠加“2026 华为开发者大赛”200 元无门槛代金券续费，但该券不属于本活动条款，名额、有效期与适用机型均未核实，不并入本条权益。",
       "startsAt": "2026-08-27T16:00:00Z",
       "endsAt": "2026-12-31T15:59:59Z",
       "status": "active",
       "confidence": "high",
       "confidenceReason": "华为云官方活动页内嵌商品数据与规则文本可读，确认机型规格（2 核 2G2M/100G 月流量/40G 盘/华北-北京四/1 年）、现价 36 元与同页原价 395.28 元、V0 新客与限购 1 台条件、活动期 2026-08-28 至 12-31、以及“续费不适用促销价”规则；未登录下单实测，实时库存无法确认。",
-      "lastVerifiedAt": "2026-10-29T06:39:19Z",
-      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "lastVerifiedAt": "2026-10-30T07:08:19Z",
+      "nextReviewAt": "2026-10-31T07:08:19Z",
       "evidence": [
         {
           "url": "https://activity.huaweicloud.com/phbcecs.html",
@@ -919,6 +919,11 @@
           "url": "https://activity.huaweicloud.com/phbcecs.html",
           "summary": "复核活动页：内嵌商品数据仍为 Flexus L实例-2核2G2M、系统盘 40GB SAS（SAS_for_smb）、华北-北京四（cn-north-4）、时长 1 年，规格码 ahf.large.1.40g.2m.linux，current 36 / origin 395.28；卡片标签仍为「V0新客专享」「限购1台」，区块副标题仍写「秒杀每日0点限量发售，新客限购1次」。本轮「活动规则」为 JS 弹窗（ruleHtml 未内联），活动期 8-28 至 12-31 与「续费不适用促销价」条款本次静态 HTML 中读不到，保留上次核实结论，价格/规格/资格未见变化。",
           "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "官方活动页本轮「活动规则」内联可读：Flexus L实例-2核2G2M 1年，数据中心华北-北京四、系统盘 40GB、固定带宽 100G/月，券前 price current=36 元 / origin=395.28 元；账号限制 V0新客（不限个企）、限购 1 台；规则明确「续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格」，变更价同；支持先选任意镜像下单后切换 Windows 镜像。",
+          "checkedAt": "2026-10-30T07:08:19Z"
         }
       ],
       "history": [
@@ -941,6 +946,11 @@
           "at": "2026-10-29T06:39:19Z",
           "status": "active",
           "note": "复核成功：活动页 36 元 / 原价 395.28、2核2G2M/40G SAS 盘/华北-北京四/1 年规格、V0 新客限购 1 台、每日 0 点限量均未见变化；活动规则弹窗改为 JS 加载，本轮未能重读期限与续费条款，沿用上次记录。未登录、未下单。"
+        },
+        {
+          "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：36 元/年、2 核 2G 2M、100 GB/月流量、华北-北京四、限购 1 台、续费按当期官网价等条款与上次一致；本轮首次读到官方原价 395.28 元/年，已补记 costNotes。"
         }
       ]
     },
@@ -1039,8 +1049,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Kiro 官方定价页可读，明确 Kiro Free 为 $0/月 50 credits 的长期免费档、可用模型清单、登录方式限制（社交/AWS Builder ID，Identity Center 不适用）、GovCloud 例外，以及付费档价格与 add-on 单价；限速具体数值未公布，未登录实测额度消耗。",
-      "lastVerifiedAt": "2026-10-29T06:39:19Z",
-      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "lastVerifiedAt": "2026-10-30T07:08:19Z",
+      "nextReviewAt": "2026-10-31T07:08:19Z",
       "evidence": [
         {
           "url": "https://kiro.dev/pricing/",
@@ -1071,6 +1081,11 @@
           "url": "https://kiro.dev/pricing/",
           "summary": "复核定价页：KIRO FREE 仍为 $0 per month / 50 credits，脚注仍写明社交登录或 AWS Builder ID 的 Free 档可用 Claude Sonnet 4.5 与 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1 等开源权重模型（受 rate limits 约束）；Pro $20/1,000、Pro+ $40/2,000、Pro Max $100/5,000、Power $200/10,000，add-on $0.04/credit；FAQ 仍称 Free tier 为 perpetual；GovCloud 约贵 20% 且不含 Free 档。条款未见变化。",
           "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://kiro.dev/pricing/",
+          "summary": "官方定价页当前仍列 KIRO FREE $0 per month / 50 credits / Access to open weight models* and Claude Sonnet 4.5；付费档 KIRO PRO $20 per user/月 1,000 credits、PRO+ $40 2,000 credits，add-on credits $0.04/credit；页面标注首次升级付费档（社交登录或 AWS Builder ID）可得抵扣。",
+          "checkedAt": "2026-10-30T07:08:19Z"
         }
       ],
       "history": [
@@ -1093,6 +1108,11 @@
           "at": "2026-10-29T06:39:19Z",
           "status": "active",
           "note": "复核成功：Free 档 $0/50 credits、perpetual 表述、免费档可用模型清单、付费档与 add-on 单价、GovCloud 例外均未见变化。未注册、未实测额度消耗。"
+        },
+        {
+          "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：免费档 $0、50 credits/月、涵盖开源权重模型与 Claude Sonnet 4.5，付费档价格与 add-on 单价均未见变化。"
         }
       ]
     },
@@ -1959,8 +1979,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Modal 官方定价页与 FAQ 可读，明确 Starter 档 $0/月含 $30 计算额度、覆盖 Functions/Sandboxes（按秒计 CPU/内存/GPU）与 1 TiB 卷、1 TiB 出网、3 seat、100 容器/10 GPU 并发，并明确 Shared Endpoints token 不计入额度、Sandbox 按 3 倍非抢占价计费；未注册实测额度，绑卡要求官方页面未说明。",
-      "lastVerifiedAt": "2026-10-29T06:39:19Z",
-      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "lastVerifiedAt": "2026-10-30T07:08:19Z",
+      "nextReviewAt": "2026-10-31T07:08:19Z",
       "evidence": [
         {
           "url": "https://modal.com/pricing",
@@ -1981,6 +2001,11 @@
           "url": "https://modal.com/pricing",
           "summary": "复核定价页：Starter 仍为 $0 + compute/月、含 $30/月 free credits、3 workspace seats、100 containers + 10 GPU concurrency、1 TiB/月免费出网；Team $250 + compute/月含 $100/月 credits；卷 $0.09/GiB/月、出网 $0.04/GiB。FAQ 仍写明额度只覆盖 Functions 与 Sandboxes 的按秒 CPU/内存/GPU 及 1 TiB 卷，不覆盖按 token 计费的 Shared Endpoints，且该规则自 2026-09-01 起生效。条款未见变化。",
           "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://modal.com/pricing",
+          "summary": "官方定价页 Starter 仍为 $0 + compute/月、含 $30/月 free credits、3 workspace seats、100 containers + 10 GPU 并发、1 TiB/月免费出网；Team $250/月含 $100/月额度。FAQ 仍写明 included usage 只覆盖 Functions 与 Sandboxes 的按秒 CPU/内存/GPU 计费，不覆盖 Shared Endpoints（token 自首次请求即计费，2026-09-01 起）；Sandboxes 按非抢占资源 3 倍 list price 计费。",
+          "checkedAt": "2026-10-30T07:08:19Z"
         }
       ],
       "history": [
@@ -1993,6 +2018,11 @@
           "at": "2026-10-29T06:39:19Z",
           "status": "active",
           "note": "复核成功：Starter $0/月含 $30 计算额度、3 seat、100 容器 + 10 GPU 并发、1 TiB 出网与卷，Shared Endpoints 不计入额度，均未见变化。未注册、未实测额度。"
+        },
+        {
+          "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：Starter $30/月计算额度、3 seat、100 容器/10 GPU 并发、1 TiB 出网与 Shared Endpoints 不计入额度的条款均未变化。"
         }
       ]
     },
@@ -2295,8 +2325,8 @@
       "costNotes": "不是免费额度：必须已有付费 ChatGPT Pro 或 Business 订阅（Pro 自 $100/月起）。额度只抵扣关联 API 组织的平台用量（Responses、Agents 含托管沙箱、Decisions、GPT-Live/Realtime、Images、网页搜索/文件搜索/代码解释器等内置工具及其存储），不含用 API Key 调用 Codex 的费用，也不提高 ChatGPT 或登录态 Codex 的用量上限。免费额度先于已购额度消耗，用尽后按普通 API 计费，无余额时返回 429 credit_balance_exhausted，可开启 Auto Recharge。每个订阅只能关联一个 API 组织；降级到 Plus/Go/Free 会在计费周期末解除关联；升级 Pro 档或新增席位按比例补发，席位减少从下一周期生效；更换接收组织需联系客服。",
       "confidence": "high",
       "confidenceReason": "OpenAI 官方开发者文档页面与其 Markdown 全文（developers.openai.com/api/docs/guides/chatgpt-api-credits）直接读到了档位金额表、席位折算与 $500/$6,000 上限、7 天订阅门槛、所有者与同邮箱要求、按周期清零与首次折算、额度覆盖范围与「Codex via API keys 不支持」条款；未登录账号实测领取流程。",
-      "lastVerifiedAt": "2026-10-29T06:39:19Z",
-      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "lastVerifiedAt": "2026-10-30T07:08:19Z",
+      "nextReviewAt": "2026-10-31T07:08:19Z",
       "evidence": [
         {
           "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
@@ -2312,6 +2342,11 @@
           "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
           "summary": "官方文档覆盖范围：额度用于关联组织的 API 平台用量（Responses、Agents 含托管沙箱、Decisions、GPT-Live/Realtime、Images、内置工具及存储）；明确「Codex usage through API keys is not supported by this benefit」，且不提高 ChatGPT/Codex 登录态用量；用尽后按普通计费，无余额返回 429 credit_balance_exhausted。",
           "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits.md",
+          "summary": "官方文档（Markdown 全文）仍为：Pro $100/$200/$500 档每月返等额 API credits；Business Standard 每付费席位 $20、Premium 每席位 $100，工作区每月上限 $500，年付一次性发放全年额度上限 $6,000/年；资格须付费订阅满 7 天、订阅与 API 组织同一邮箱且均为 owner；额度按计费周期清零不结转；不含 API Key 调用 Codex。",
+          "checkedAt": "2026-10-30T07:08:19Z"
         }
       ],
       "history": [
@@ -2319,6 +2354,11 @@
           "at": "2026-10-29T06:39:19Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区「GPT pro/Business 可白嫖 500 美元 API 额度」帖发现线索，直接读取 OpenAI 官方开发者文档（含 .md 全文）核实档位金额、席位折算、7 天门槛、同邮箱与所有者要求、按周期清零、覆盖范围及 Codex 除外条款，确认该权益 2026-10-28 起开放。帖文所称「自动续费、无需每月操作」与官方「激活一次后随订阅续期自动发放」一致；未登录领取。"
+        },
+        {
+          "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：额度金额、席位口径、7 天门槛、同邮箱 owner 要求、周期末清零与不含 API Key 跑 Codex 等条款均未变化。"
         }
       ]
     },
@@ -2346,8 +2386,8 @@
       "costNotes": "免费档 $0、无月费，无信用卡要求；超出每日 200 次请求或调用付费模型需升级按量付费：在供应商原价基础上统一加价 5%（官方示例：模型 $10/百万 token → 经网关 $10.50）；自带供应商 Key 仍在付费档。官方未披露免费档的并发、上下文长度与免费模型速率限制，也未说明超额请求是报错还是被拒。",
       "confidence": "high",
       "confidenceReason": "Requesty 官方定价页正文与页面内嵌 FAQ 结构化数据均写明：Free 档 $0、可用全部免费模型、200 requests per day、无需信用卡，并列出付费档 5% 加价与 600+ 模型/自带 Key 的差异；未注册实测请求额度与当前免费模型清单。",
-      "lastVerifiedAt": "2026-10-29T06:39:19Z",
-      "nextReviewAt": "2026-10-30T06:39:19Z",
+      "lastVerifiedAt": "2026-10-30T07:08:19Z",
+      "nextReviewAt": "2026-10-31T07:08:19Z",
       "evidence": [
         {
           "url": "https://www.requesty.ai/pricing",
@@ -2358,6 +2398,11 @@
           "url": "https://www.requesty.ai/pricing",
           "summary": "官方 FAQ（页面结构化数据）：「The free tier gives you the full platform (routing, caching, fallbacks, analytics and EU data residency) on free models, with a limit of 200 requests per day and no credit card required」，并说明按量付费在原价上加 5%。",
           "checkedAt": "2026-10-29T06:39:19Z"
+        },
+        {
+          "url": "https://www.requesty.ai/pricing",
+          "summary": "官方定价页 Free 档仍为 $0：Access to all free models、200 requests per day、routing/caching/fallbacks、spend tracking、EU data residency、No credit card required；付费档为按量 + 5% 加价（官方示例 $10/1M tokens → $10.50），600+ 模型、自带 Key 属付费档。",
+          "checkedAt": "2026-10-30T07:08:19Z"
         }
       ],
       "history": [
@@ -2365,6 +2410,11 @@
           "at": "2026-10-29T06:39:19Z",
           "status": "active",
           "note": "从 LINUX DO 福利羊毛区「requesty.ai 每天 200 次 ling-3.1-flash / gemma-4-31b-it / nemotron-3-ultra」帖发现线索，读取 requesty.ai 官方定价页与 FAQ 确认 Free 档 $0、200 请求/日、仅限免费模型、免绑卡、付费档 5% 加价；社区列举的具体免费模型未在官方页面逐条核对，故不写入权益。未注册实测。"
+        },
+        {
+          "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：免费档 200 请求/日、仅免费模型、免绑卡与 5% 加价口径均未变化。"
         }
       ]
     },
@@ -2827,6 +2877,103 @@
           "note": "核对数据缺口时发现本项目未收录 Azure 新客户免费账户，据官方免费账户页与免费服务清单页新增：$200/30 天、65+ always-free、20+ 服务 12 个月、spending protection 与到期转付费规则。未注册实测。"
         }
       ]
+    },
+    {
+      "id": "ifm-k2-horizon-10m-tokens-daily-202610",
+      "title": "IFM（MBZUAI）：K2 Horizon 375B 每 API Key 每天 1000 万 tokens",
+      "provider": "IFM（MBZUAI Institute of Foundation Models）",
+      "category": "ai",
+      "description": "IFM 是阿联酋穆罕默德·本·扎耶德人工智能大学（MBZUAI）下属基础模型研究院，通过 OpenAI 兼容端点 https://api.ifm.ai/v1 提供 K2 Horizon、Jais 3 与 Jais ASR。官方文档规定每个 API Key 每天 1000 万 token 的日额度，用完当日请求一律返回 429，次日 00:00 UTC 重置。K2 Horizon 权重在 Hugging Face 开源，官方另提供 vLLM/SGLang/llama.cpp/Ollama 自托管指南。",
+      "quota": "每 API Key 每天 10,000,000 tokens（prompt + completion 合计），UTC 00:00 重置，超出返回 429 rate_limit_error，响应头带 x-ratelimit-remaining-tokens-daily 与 Retry-After。可调用托管模型：IFM/K2-Horizon-375B-A23B（512K 上下文，英/阿及 30+ 语言）、IFM/Jais-3-MoVA-36B-A4B、IFM/Jais-ASR；K2 Horizon 其余尺寸（MoVA-36B、32B、7B、3.7B、0.9B）与 Jais 3 更大尺寸只开源权重、不提供托管 API。",
+      "benefitValue": "每天 1000 万 tokens 的 375B 级（A23B 激活）前沿模型调用额度，按官方日额度计、不按金额计；官方未公布 token 单价，无法折算货币价值。",
+      "eligibility": "在 platform.ifm.ai 创建 API Key 即可调用；官方文档未说明是否需绑卡、实名或机构邮箱，也未说明单账号可创建的 Key 数量。社区帖称“0 门槛、可临时邮箱、登录就有”（非官方说明，官方未表态）。",
+      "regions": "官方文档未声明国家/地区限制；服务由阿联酋 MBZUAI 提供，接口为全球可访问的 https://api.ifm.ai/v1。",
+      "validity": "日额度按 UTC 自然日重置，持续有效；官方文档未公布该额度的结束日期（文档 Last updated: September 2, 2026）。",
+      "deadlineNote": "官方未公布活动截止日期或额度终止时间，不能视为永久有效；已公布的边界只有“每日 00:00 UTC 重置”。",
+      "costNotes": "官方文档只给出日额度与限速头，未公布任何计费、付费档或绑卡要求，因此“完全免费”目前只有官方文档的额度描述与社区实测支撑，缺少官方明文；平台另有未公开数值的每分钟请求/token 守卫，触发时按 Retry-After 退避。额度按 Key 计而非按账号计，但官方未说明多 Key 是否受限，批量建 Key 规避日额度可能违反服务条款。社区帖称仪表盘显示每天 3000 万 tokens，与官方文档 10,000,000 不符，本条以官方文档为准。模型权重开源（Hugging Face IFM 集合），可自行部署，自托管成本另计。",
+      "officialUrl": "https://docs.ifm.ai/docs/limits.md",
+      "claimUrl": "https://platform.ifm.ai/api-keys",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方文档确证 API 端点、每 Key 每日 1000 万 token 上限、重置时间与托管模型清单；但“免费/无需付费门槛”、绑卡要求、地区资格官方文档均未写明，且社区实测额度（3000 万/天）与官方文档（1000 万/天）冲突，故按待核实收录，不升 active。",
+      "lastVerifiedAt": "2026-10-30T07:08:35Z",
+      "nextReviewAt": "2026-10-31T07:08:35Z",
+      "evidence": [
+        {
+          "url": "https://docs.ifm.ai/docs/limits.md",
+          "summary": "官方 Limits 文档：Every API key gets 10,000,000 tokens per day（prompt + completion 合计），00:00 UTC 重置，超限 429 rate_limit_error；另有未公开数值的每分钟请求/token 守卫；列出 x-ratelimit-* 与 Retry-After 响应头。文档 Last updated: September 2, 2026。",
+          "checkedAt": "2026-10-30T07:08:35Z"
+        },
+        {
+          "url": "https://docs.ifm.ai/docs/quickstart.md",
+          "summary": "官方 Quickstart：在 platform.ifm.ai/api-keys 创建 Key，base URL https://api.ifm.ai/v1，示例模型 IFM/K2-Horizon-375B-A23B，OpenAI 兼容 chat/completions；未提及计费、绑卡或地区限制。Last updated: October 29, 2026。",
+          "checkedAt": "2026-10-30T07:08:35Z"
+        },
+        {
+          "url": "https://docs.ifm.ai/docs/model-catalog.md",
+          "summary": "官方模型清单：IFM/K2-Horizon-375B-A23B（512K 上下文、英/阿 + 30 余语言、托管 API 可用）、IFM/Jais-3-MoVA-36B-A4B、IFM/Jais-ASR 可用；其余尺寸仅开源权重。K2-Think-V2 API 已于 2026-10-03 退役。",
+          "checkedAt": "2026-10-30T07:08:35Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T07:08:35Z",
+          "status": "pending",
+          "note": "据 linux.do 福利羊毛线索（“每天白嫖 30M、800 TPS、阿联酋补贴 K2 Horizon”）核对 IFM 官方文档新增：官方确证每日 1000 万 tokens/Key、UTC 重置、OpenAI 兼容端点与托管模型；免费门槛、绑卡、地区资格官方未写明，且社区称 3000 万与官方 1000 万冲突，暂按待核实收录。"
+        }
+      ],
+      "discoveredAt": "2026-10-30T07:08:35Z",
+      "discoveryUrl": "https://linux.do/t/topic/3095192"
+    },
+    {
+      "id": "meta-muse-free-cloud-vm-202610",
+      "title": "Meta Muse：每个用户免费获得一台持久云端 Linux 电脑（Muse Secure VM）",
+      "provider": "Meta（Muse）",
+      "category": "both",
+      "description": "Muse 是 Meta Superintelligence Labs 的个人 AI Agent，在手机、Mac、Web 与 WhatsApp 上使用。官方首页写明「Every Muse user shares their own computer in the cloud with their Muse」：Muse Secure VM 是一台持久、隔离的 Linux 计算机，带完整浏览器、存储、CPU 与内存，用户与 Agent 都能在其上安装软件、编译代码、浏览网页；Agent 运行在隔离的 Runtime Cell 内，敏感凭据存放在 cell 之外，由 Sentinel 进程监督敏感操作并要求人工批准。",
+      "quota": "每个 Muse 用户 1 台持久云端 Linux 虚拟机（Ubuntu 镜像、独立 root 文件系统、完整浏览器），官方首页未公布 vCPU/内存/磁盘/带宽具体数值；官方未公布免费档的用量上限（消息/任务次数或 VM 运行时长）。",
+      "benefitValue": "功能上等价于一台可长期持有的云端 Linux 开发机 + 浏览器 + 个人 AI Agent；官方未公布免费档额度数值，无法折算货币价值。",
+      "eligibility": "注册 Muse 账号（手机号或邮箱）即可使用，官方首页展示登录/注册入口；第三方报道称面向美国、加拿大 18 岁以上用户（官方首页未声明地区与年龄限制，需人工核实）。",
+      "regions": "官方首页未声明可用国家/地区；第三方报道当前限美国与加拿大（未在官方页面核实）。",
+      "validity": "官方称该云端电脑为持久（persistent）实例，随账号长期存在；免费档用量上限与重置周期、VM 被回收/替换的触发条件官方均未公开。",
+      "deadlineNote": "官方未公布免费档结束日期或额度重置周期；第三方报道的付费档（Power/Max）价格亦未经官方页面核实，不视为已确认长期免费。",
+      "costNotes": "定价页 https://muse.ai/pricing 返回 401（需登录），本次无法核实免费档具体限制与付费档价格；第三方报道为免费档含用量上限、Power $20/月、Max $100/月，未采信为官方条款。社区实践提示：家目录为持久存储，/etc 等系统配置在 VM 被替换后丢失，systemd 单元需同时挂载 default.target 与 multi-user.target 才能在替换后自启；VM 被替换后需自行恢复环境，官方未承诺保留系统层修改。免费额度用尽后的行为（限流/降级/要求升级）官方未披露。",
+      "officialUrl": "https://muse.ai/",
+      "claimUrl": "https://muse.ai/",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方首页明确写明每个用户拥有一台持久云端 Linux 计算机（Muse Secure VM，含浏览器与独立 root 文件系统），安全架构有官方博客佐证；但“免费”与具体额度、地区/年龄资格、付费档价格只在第三方报道与高管社交媒体出现，muse.ai/pricing 需登录（401）无法核实，故按待核实收录。",
+      "lastVerifiedAt": "2026-10-30T07:08:35Z",
+      "nextReviewAt": "2026-10-31T07:08:35Z",
+      "evidence": [
+        {
+          "url": "https://muse.ai/",
+          "summary": "官方首页：Every Muse user shares their own computer in the cloud with their Muse — Muse Secure VM 为 persistent、isolated 的 Linux 计算机，带完整浏览器、存储/CPU/内存，可安装软件与编译代码；凭据存于 Muse 看不到的 secure credential store，购物使用一次性卡号；支持手机/Mac/Web/WhatsApp。首页未出现任何价格、免费额度或地区限制表述。",
+          "checkedAt": "2026-10-30T07:08:35Z"
+        },
+        {
+          "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+          "summary": "原 security.muse.ai 重定向至此：Muse Secure VM 的 Runtime Cell 与 Sentinel 架构（凭据在 cell 外、root 文件系统隔离、敏感操作需批准）官方说明。",
+          "checkedAt": "2026-10-30T07:08:35Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T07:08:35Z",
+          "status": "pending",
+          "note": "据 linux.do 福利羊毛线索（用 Muse 自带 VM + Cloudflare Tunnel 白嫖博客主机）核对官方首页后新增：官方确证每用户一台持久云端 Linux 计算机；免费额度、地区/年龄资格与付费档价格官方页面不可读（pricing 401），暂按待核实收录。"
+        }
+      ],
+      "discoveredAt": "2026-10-30T07:08:35Z",
+      "discoveryUrl": "https://linux.do/t/topic/3095526"
     }
   ]
 }
