@@ -649,8 +649,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "GitHub 官方 billing 文档明确列出 Free/Pro 档的每月计算与存储额度、各机型单价、无支付方式时的阻断规则与重置方式；未登录实测创建 codespace。",
-      "lastVerifiedAt": "2026-10-29T00:23:31Z",
-      "nextReviewAt": "2026-10-30T00:23:31Z",
+      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
+      "nextReviewAt": "2026-10-31T01:01:10.059Z",
       "evidence": [
         {
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
@@ -676,6 +676,11 @@
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
           "summary": "复核：文档表格仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；计价表 2/4/8/16/32 核仍为 $0.18/$0.36/$0.72/$1.44/$2.88、存储 $0.07/GB-month（2 核额度倍率 2）；仍写明 managed user account 拥有的仓库不可用、超额按个人账户计费。条款未见变化。",
           "checkedAt": "2026-10-29T00:23:31Z"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "复核：免费配额表仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；计价表 2/4/8/16/32 核仍为 $0.18/$0.36/$0.72/$1.44/$2.88（2 核额度倍率 2）、存储 $0.07/GB-month；仍写明组织与企业计划无免费配额、managed user account 拥有的仓库不可用 Codespaces。条款未见变化。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
         }
       ],
       "history": [
@@ -698,6 +703,11 @@
           "at": "2026-10-29T00:23:31Z",
           "status": "active",
           "note": "复核成功：官方 billing 文档的免费配额（Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month）、各机型单价与存储价、EMU 仓库限制均未见变化。未登录创建 codespace。"
+        },
+        {
+          "at": "2026-10-30T01:01:10.059Z",
+          "status": "active",
+          "note": "复核成功：官方 billing 文档的 Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month、各机型单价与存储价、EMU 仓库限制均未见变化。未登录创建 codespace。"
         }
       ]
     },
@@ -713,7 +723,7 @@
       "regions": "分布在多个 Google Cloud 区域，首次连接自动分配最近的可用区域，用户不能手动选择；每用户每会话独立分配实例。",
       "validity": "每周 50 小时配额，按周重置，用完需等到重置时间；实例在 40 分钟不活动后终止（官方“运作方式”页写 1 小时，两页不一致，以限制页 40 分钟为准）；单会话上限 12 小时；$HOME 连续 120 天未访问会被删除且不可恢复。",
       "deadlineNote": "官方未公布免费策略结束日期；属长期免费产品，但不等同承诺永久免费，配额不可扩容。",
-      "officialUrl": "https://docs.cloud.google.com/shell/docs/limitations",
+      "officialUrl": "https://docs.cloud.google.com/shell/docs/quotas-limits",
       "claimUrl": "https://shell.cloud.google.com/",
       "discoveryUrl": "https://docs.cloud.google.com/shell/docs/limitations",
       "discoveredAt": "2026-10-25T22:32:42Z",
@@ -725,8 +735,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Google 官方限制页确认每周 50 小时配额、5 GB 持久盘及 120 天删除规则、40 分钟空闲终止与 12 小时会话上限，价格页确认免费；绑卡要求未在文档中规定、未实测登录，故 creditCard 记 unknown。",
-      "lastVerifiedAt": "2026-10-29T00:23:31Z",
-      "nextReviewAt": "2026-10-30T00:23:31Z",
+      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
+      "nextReviewAt": "2026-10-31T01:01:10.059Z",
       "evidence": [
         {
           "url": "https://docs.cloud.google.com/shell/docs/limitations",
@@ -772,6 +782,16 @@
           "url": "https://cloud.google.com/shell/pricing",
           "summary": "复核价格页：正文仍为「Cloud Shell is free for users with a Google Cloud account」，未列出 Cloud Shell 自身任何收费项。",
           "checkedAt": "2026-10-29T00:23:31Z"
+        },
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/quotas-limits",
+          "summary": "复核：原 /shell/docs/limitations 现 301 跳转到 /shell/docs/quotas-limits（官方文档改版，条款未变）——默认每周配额仍 50 小时、5 GB 免费持久盘作 $HOME、120 天未访问自动删除且不可恢复、会话上限 12 小时、非交互会话 40 分钟结束、配额用尽须等待重置或改用 Cloud Workstations；交互式用途限制仍在。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://cloud.google.com/shell/pricing",
+          "summary": "复核价格页：正文仍为「Cloud Shell is free for users with a Google Cloud account」，未列出 Cloud Shell 自身任何收费项。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
         }
       ],
       "history": [
@@ -794,6 +814,11 @@
           "at": "2026-10-29T00:23:31Z",
           "status": "active",
           "note": "复核成功：限制页 50 小时/周、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟非交互终止均未变化；价格页仍写明对 Google Cloud 账号用户免费。未登录实测。"
+        },
+        {
+          "at": "2026-10-30T01:01:10.059Z",
+          "status": "active",
+          "note": "复核成功：限制页条目已迁到 quotas-limits（旧链接 301），50 小时/周、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟非交互终止均未变化；价格页仍写明对 Google Cloud 账号用户免费。officialUrl 已改为新地址。未登录实测。"
         }
       ]
     },
@@ -1415,8 +1440,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "trae.cn 官方定价页明确列示免费档 ¥0 / 每月 500 积分 / 所有功能免费使用 / 2 个云端任务并发，并同页给出各付费档价格与积分；积分清零规则、免费档可用模型清单与实名要求未在该页披露，未注册实测额度消耗。",
-      "lastVerifiedAt": "2026-10-29T00:23:31Z",
-      "nextReviewAt": "2026-10-30T00:23:31Z",
+      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
+      "nextReviewAt": "2026-10-31T01:01:10.059Z",
       "evidence": [
         {
           "url": "https://www.trae.cn/pricing",
@@ -1437,6 +1462,11 @@
           "url": "https://www.trae.cn/pricing",
           "summary": "复核定价页：免费 Free 档仍为 ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」，付费档 ¥39/¥69/¥219/¥629（原价 ¥49/¥99/¥239/¥699）与 2,000/4,000/12,000/40,000 积分未变。模型折扣表本轮改为：GLM-5.3 免费档无折扣、付费档 5 折；Seed-2.1-Turbo 与 Seed-Code 免费档 5 折、付费档 2.5 折；DeepSeek-V4.1-Flash 免费档闲时 5 折、付费档全时段 5 折；DeepSeek-V4-Pro 各档闲时 5 折。",
           "checkedAt": "2026-10-29T00:23:31Z"
+        },
+        {
+          "url": "https://www.trae.cn/pricing",
+          "summary": "复核定价页：免费 Free 档仍为 ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」；付费档 Lite 首月 ¥39/原价 ¥49（2,000 积分）、Pro ¥69/¥99（4,000）、Pro+ ¥219/¥239（12,000）、Ultra ¥629/¥699（40,000），签到多得 3,000 积分，云端并发 2/2/10/10/20 均未变。模型折扣表与上轮一致：GLM 5.3 免费档无折扣、付费档 5 折；Seed-2.1-Turbo 与 Seed-Code 免费档 5 折、付费档 2.5 折；DeepSeek-V4.1-Flash 免费档闲时 5 折、付费档全时段 5 折；DeepSeek-V4-Pro 各档闲时 5 折。条款未见变化。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
         }
       ],
       "history": [
@@ -1454,6 +1484,11 @@
           "at": "2026-10-29T00:23:31Z",
           "status": "active",
           "note": "复核成功：免费档核心条款（¥0、500 积分/月、全部功能、2 并发云端任务）与付费档价格、积分数未变；模型折扣细目有更新（付费档 DeepSeek-V4.1-Flash 由闲时 5 折变为全时段 5 折，Seed 系列免费档明确 5 折、付费档 2.5 折），已同步 costNotes。未注册实测。"
+        },
+        {
+          "at": "2026-10-30T01:01:10.059Z",
+          "status": "active",
+          "note": "复核成功：免费档（¥0、500 积分/月、全部功能、2 并发云端任务）、付费档价格与积分数、模型折扣细目均与上轮一致，无变化。未注册实测。"
         }
       ]
     },
@@ -2652,6 +2687,144 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "由第三方免费额度目录发现 Mercury 1 亿 token 线索，转到官方 docs 三页（Quick Start / FAQ / Rate Limits）核对：一次性 1 亿、全模型共享、免绑卡、Free 档限速均一致，按 active/high 首次入库；有效期官方未披露，已写入 deadlineNote；未注册实测领取。"
+        }
+      ]
+    },
+    {
+      "id": "oracle-cloud-always-free-tier-2026",
+      "title": "Oracle Cloud Always Free：Ampere A1 2 OCPU/12 GB + 2 台 1 GB 微实例 + 200 GB 块存储",
+      "provider": "Oracle Cloud（OCI）",
+      "category": "cloud",
+      "description": "OCI 官方 Always Free 资源文档说明：每个账户在其 home region 内可长期（for the life of the account）免费持有固定额度资源，包括 Arm 架构 Ampere A1 Flex 实例、2 台 1/8 OCPU 的 AMD 微实例、200 GB 块存储、10 TB/月出网流量，以及 Autonomous Database、负载均衡、对象/归档存储等配套服务；新注册账户另有 US$300 的 30 天试用信用额，可用于全部 OCI 服务。适合长期跑小体量 VPS、反向代理、博客与轻量 Agent 任务。",
+      "quota": "Always Free 计算：Ampere A1 Flex 合计 2 OCPU + 12 GB 内存（可单实例全用，或拆成最多 2 台各 1 OCPU）；VM.Standard.E2.1.Micro（AMD）最多 2 台，每台 1/8 OCPU、1 GB 内存、1 个 VNIC+公网 IP、最高 50 Mbps 公网带宽（同区域/私网 480 Mbps）；块存储 200 GB（每实例引导卷最小 47 GB）；出网流量 10 TB/月；另含 2 个 Autonomous Database、1 个灵活负载均衡（10 Mbps）、对象与归档存储、VPN、Bastion 等 Always Free 服务；新账户另含 US$300 / 30 天信用额。",
+      "benefitValue": "长期免费的 2 OCPU/12 GB Arm 云主机 + 2 台 1 GB 微实例 + 200 GB 块存储 + 10 TB/月出网，官方未公布等价金额，不折算货币价值；另有 US$300 面值的 30 天试用信用额。",
+      "eligibility": "需注册 OCI 账户并选定 home region；Always Free 额度只在 home region 生效。官方免费层页面未逐项列明是否必须绑定信用卡/借记卡完成身份验证，本次未注册实测，故支付方式要求记为未知。$300 信用额面向新账户。",
+      "regions": "Always Free 资源仅在租户的 home region 免费，注册后更改 home region 受限；具体可用区域与容量由各区域库存决定，A1 机型创建时常遇容量不足需重试。",
+      "validity": "Always Free 资源在账户存续期内长期有效，按月刷新额度；空闲实例可能被回收——官方判定标准为连续 7 天内 CPU 95 百分位使用率 < 20%、网络使用率 < 20%、A1 机型内存使用率 < 20%。US$300 信用额自开通起 30 天内有效。",
+      "deadlineNote": "Always Free 无官方结束日期（写为账户存续期内免费），但官方保留调整额度与回收空闲实例的权利；US$300 信用额 30 天后失效，未升级为按需付费账户时超额资源无法创建。",
+      "officialUrl": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+      "claimUrl": "https://www.oracle.com/cloud/free/",
+      "discoveryUrl": "https://www.oracle.com/cloud/free/",
+      "discoveredAt": "2026-10-30T01:01:10.059Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "Always Free 额度内 $0；超出额度或未在免费范围内创建的资源，需将账户升级为按需付费（Pay As You Go）后按量计费。官方明确 Always Free 实例可能因空闲被回收，长期挂机需保持一定负载。引导卷最小 47 GB，200 GB 块存储需在实例与备份间分配；home region 之外不享受免费额度。社区长期反馈 A1 容量紧张、创建失败需重试，官方未承诺随时可开通。注意：社区与旧文章常称 Arm 免费额度为 4 OCPU/24 GB，当前官方文档已写为 2 OCPU/12 GB。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "OCI 官方 Always Free 文档逐项列出 A1 2 OCPU + 12 GB、E2.1.Micro 规格与带宽、200 GB 块存储、10 TB/月出网、空闲回收的三项判定阈值；oracle.com/cloud/free 同页确认 US$300/30 天信用额与 Always Free 服务清单。未注册实测开通与扣费，支付方式要求未在文档中列明。",
+      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
+      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "evidence": [
+        {
+          "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+          "summary": "官方文档：Always Free 资源在 home region 内、账户存续期内免费；Ampere A1 Flex「2 OCPUs total / 12 GB total」（可拆为最多两台各 1 OCPU）；VM.Standard.E2.1.Micro 1/8 OCPU + 1 GB + 50 Mbps；200 GB Always Free 块存储、引导卷最小 47 GB；出网 10 TB/月；空闲回收判定为 7 天内 CPU P95 < 20%、网络 < 20%、A1 内存 < 20%。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://www.oracle.com/cloud/free/",
+          "summary": "官方免费层页面：新账户先获 US$300 云信用额、30 天内可用于全部 OCI 服务，并同时享有 Always Free 服务；30 天后可选择升级为按需付费，否则 Always Free 资源继续可用、超额资源不可创建。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T01:01:10.059Z",
+          "status": "active",
+          "note": "核对数据缺口时发现本项目尚未收录任何 OCI 条目，据官方 Always Free 文档与免费层页面新增：A1 2 OCPU/12 GB、2 台 E2.1.Micro、200 GB 块存储、10 TB/月出网与 $300/30 天信用额；同时纠正社区常见的「4 OCPU/24 GB」旧口径。未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "google-cloud-free-trial-300-90days-2026",
+      "title": "Google Cloud 免费试用：90 天内 US$300 信用额 + 20+ 长期免费产品",
+      "provider": "Google Cloud",
+      "category": "cloud",
+      "description": "Google Cloud 官方免费层文档说明：从未付费使用过 Google Cloud / Google Maps Platform / Firebase、且未参加过免费试用的新用户，可开通 Free Trial 计费账户，获得 90 天有效的 US$300 Welcome 信用额，试用期内不产生实际扣费；同时可叠加 Free Tier 每月免费额度，例如 us-west1/us-central1/us-east1 各 1 台 e2-micro 非抢占式 VM、30 GB 标准持久盘、每月 1 GB 出网，以及 20+ 长期免费产品。适合验证 GCP 架构、跑 Vertex AI / AI API 与短期计算任务。",
+      "quota": "US$300 Welcome 信用额，90 天内有效，可用于免费试用计划覆盖的产品（含超出 Free Tier 限额的部分）；Free Tier 每月额度示例：1 台 e2-micro 非抢占式 VM（us-west1、us-central1、us-east1 任选，按月总小时数计算）、30 GB-months 标准持久盘、每月 1 GB 从北美出网（不含中国与澳大利亚）；另有 20+ 长期免费产品。",
+      "benefitValue": "US$300 面值信用额（90 天）+ 每月免费 e2-micro 与 30 GB 持久盘等 Free Tier 额度；官方未折算人民币，仅按面值计。",
+      "eligibility": "仅限同时满足两条的新用户：从未作为付费用户使用 Google Cloud、Google Maps Platform 或 Firebase；从未注册过 Free Trial。注册时须提供在试用期内有效的信用卡或其他付款方式，部分国家还需验证银行账户。需注意 Google Workspace 教育版、18 周岁以下用户等另有产品级限制。",
+      "regions": "Free Trial 信用额可用于绝大多数支持的产品与区域；Free Tier 的 e2-micro 仅限 us-west1（俄勒冈）、us-central1（爱荷华）、us-east1（南卡罗来纳），且跨区域合并计算小时数；部分产品与区域在试用期可能限制访问以防滥用。",
+      "validity": "信用额与试用期均为 90 天，自开通 Free Trial 计费账户起算；可在试用期内随时升级为付费计费账户，剩余信用额保留并继续享有 Free Tier；90 天到期或信用额用尽后，Free Trial 计费账户关闭，关联项目与资源停止运行。",
+      "deadlineNote": "官方未公布该计划的整体结束日期（属长期开放的新用户优惠）；单个账户的 90 天窗口自注册起算，到期后信用额失效、资源停服，未升级付费则需重新开通。",
+      "officialUrl": "https://cloud.google.com/free/docs/free-cloud-features",
+      "claimUrl": "https://cloud.google.com/free",
+      "discoveryUrl": "https://cloud.google.com/free/docs/free-cloud-features",
+      "discoveredAt": "2026-10-30T01:01:10.059Z",
+      "creditCard": "required",
+      "autoRenewal": "no",
+      "costNotes": "试用期内官方声明不会对 Google Cloud 用量扣费；注册时必须提供有效信用卡或其他付款方式用于身份与付款验证（部分国家还需银行账户验证），验证不等于扣费。90 天到期或 $300 用尽后 Free Trial 账户关闭、资源停止，需主动升级为付费计费账户才能继续；升级后超出 Free Tier 的用量按各产品价目计费。Free Tier 免费额度按区域合并计算，超出即按量收费。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方 free-cloud-features 文档明确写出 $300 / 90 天、试用期不扣费、资格双条件（从未付费、从未注册过 Free Trial）、注册须提供有效付款方式、到期或用尽后账户关闭并停止资源，以及 e2-micro 的区域与 30 GB 持久盘额度；本次未登录注册实测扣费与资源开通。",
+      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
+      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "evidence": [
+        {
+          "url": "https://cloud.google.com/free/docs/free-cloud-features",
+          "summary": "官方文档：Free Trial 为 90 天计划，新增用户获 $300 Welcome 信用额、90 天有效，试用期内不为 Google Cloud 用量计费；资格要求为「从未是 Google Cloud / Maps Platform / Firebase 付费用户」且「从未注册过 Free Trial」；注册须提供有效信用卡或其他付款方式，部分国家需银行账户验证；90 天到期或用尽信用额后 Free Trial 账户关闭、项目与资源停止，升级付费账户可保留剩余信用额。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://cloud.google.com/free/docs/free-cloud-features",
+          "summary": "同页 Free Tier 额度：Compute Engine 每月 1 台非抢占 e2-micro（仅 us-west1/us-central1/us-east1）+ 30 GB-months 标准持久盘 + 每月 1 GB 北美出网（不含中国、澳大利亚），e2-micro 免费按小时总量而非实例数计算，跨区域合并；另有 20+ 长期免费产品。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T01:01:10.059Z",
+          "status": "active",
+          "note": "核对数据缺口时发现本项目仅有 Cloud Shell 条目、未收录 GCP 新用户信用额，据官方 free-cloud-features 文档新增：$300/90 天、资格双条件、绑卡验证要求与到期停服规则，并记录 Free Tier 的 e2-micro/30 GB 额度。未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "azure-free-account-200-30days-2026",
+      "title": "Azure 免费账户：US$200 信用额（30 天）+ 65+ 长期免费服务 + 20+ 服务 12 个月免费",
+      "provider": "Microsoft Azure",
+      "category": "cloud",
+      "description": "Microsoft 官方 Azure 免费账户页面说明：新用户注册后可获 US$200 信用额，用于 30 天内在全部服务目录（不超过免费额度）内试用；同时享有 65+ 项对所有 Azure 客户长期免费的服务，以及 20+ 项热门服务仅对新客户开放的 12 个月每月免费额度。页面明确「spending protection：信用卡不会被扣款」，30 天后不自动转付费，需主动升级为按量付费（Pay As You Go）才能继续使用超出免费额度的资源。",
+      "quota": "US$200 信用额，30 天内有效，可用于服务目录内不超过免费额度的全部服务；65+ 项 always-free 服务的每月免费额度（对所有 Azure 客户长期有效）；20+ 项热门服务的每月免费额度，仅新客户可享 12 个月。具体单项额度以官方免费服务清单页逐项列示为准。",
+      "benefitValue": "US$200 面值信用额（30 天）+ 65+ 项长期免费服务额度 + 20+ 项服务 12 个月免费额度；官方未折算人民币，仅按面值计。",
+      "eligibility": "仅限 Azure 新客户；需完成注册并提供信用卡用于身份验证（官方表述为 spending protection、信用卡不会被扣款）；同一用户不可重复开通免费账户。是否需企业/教育资质、地区限制以注册页为准。",
+      "regions": "信用额与免费服务额度可用于 Azure 公开区域；具体服务与机型在各区域的可用性不同，部分 always-free 额度限定特定区域与机型，需按官方免费服务清单核对。",
+      "validity": "信用额 30 天内有效，用尽或到期后不再补充；always-free 服务的每月额度长期有效并按月刷新；12 个月免费额度自开通起 12 个月内有效。30 天后不自动转付费，未升级则超出免费额度的资源无法继续使用。",
+      "deadlineNote": "官方未公布该新客户计划整体结束日期；单个账户的 $200 信用额 30 天到期、12 个月免费额度按开通日滚动到期，均不再补充。",
+      "officialUrl": "https://azure.microsoft.com/en-us/free/",
+      "claimUrl": "https://azure.microsoft.com/en-us/free/",
+      "discoveryUrl": "https://azure.microsoft.com/en-us/free/",
+      "discoveredAt": "2026-10-30T01:01:10.059Z",
+      "creditCard": "required",
+      "autoRenewal": "no",
+      "costNotes": "免费额度内 $0，官方写明 spending protection（免费账户期间信用卡不会被扣款）、无预付承诺、可随时取消；30 天后需主动升级为按量付费（Pay As You Go）才能继续超出免费额度的用量，否则相关资源将受限/停用。always-free 与 12 个月免费额度均按每月上限计算，超出部分在升级后按各服务价目计费；部分服务另需单独启用或受配额限制。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Azure 官方免费账户页明确写出 $200 信用额、30 天窗口、65+ always-free 服务、20+ 新客户 12 个月免费服务、spending protection（信用卡不扣款）与「30 天后需转按量付费否则超出额度不可用」；具体单项免费额度分散在官方免费服务清单页，本次未逐项抄录、未注册实测扣费。",
+      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
+      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "evidence": [
+        {
+          "url": "https://azure.microsoft.com/en-us/free/",
+          "summary": "官方免费账户页：新客户可试用 Azure 最长 30 天，含 US$200 信用额用于服务目录（不超过免费额度）内全部服务；65+ 项 always-free 服务每月免费额度；20+ 项热门服务 12 个月每月免费额度（仅新客户）；spending protection——信用卡不会被扣款；无预付承诺、可随时取消；30 天后需转 Pay As You Go 才能继续超出免费额度的使用。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://azure.microsoft.com/en-us/pricing/free-services",
+          "summary": "官方免费服务清单页：区分「对所有 Azure 客户长期免费」与「仅新客户前 12 个月免费」两类，按服务逐项给出每月免费额度；具体额度以该页为准。",
+          "checkedAt": "2026-10-30T01:01:10.059Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T01:01:10.059Z",
+          "status": "active",
+          "note": "核对数据缺口时发现本项目未收录 Azure 新客户免费账户，据官方免费账户页与免费服务清单页新增：$200/30 天、65+ always-free、20+ 服务 12 个月、spending protection 与到期转付费规则。未注册实测。"
         }
       ]
     }
