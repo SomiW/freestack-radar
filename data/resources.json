@@ -55,9 +55,9 @@
       "description": "社区支持的免费 Linux VPS，提供 SSH root 访问；免费库存有限，需要每天续期，不适合无人值守关键业务。",
       "quota": "1 vCore、2 GB RAM、6 GB NVMe；SSH root；官网介绍有 IPv6，免费名额先到先得。",
       "benefitValue": "官方套餐免费（$0），不提供可核实的等价付费估值。",
-      "eligibility": "需 GitHub 账户注册且账户年龄至少 30 天；免费机实时名额有限，未确认当前是否有可抢名额。",
+      "eligibility": "需 GitHub 账户注册且账户年龄至少 30 天，登录要求启用 2FA（认证器验证码）；免费机实时名额有限，先到先得，未确认当前是否有可抢名额。",
       "regions": "官网「Locations」区当前标注：Europe 为 Free 免费档可用但显示「Full right now」（满额），Asia 仅付费档开放，USA「Coming soon」未上线；国家/地区注册资格仍未公布。",
-      "validity": "免费机需在控制台手动续期：每 24 小时可续期一次（需过 CAPTCHA），每次续期将服务器延长运行 48 小时；未续期即停机，连续停机 3 天会删除。",
+      "validity": "免费机需在控制台手动续期：每 24 小时可续期一次（需过 CAPTCHA），每次续期将服务器延长运行 48 小时；未续期即停机，停机后官方页面两处口径不一致（FAQ 写 3 天删除、控制台提示写 14 天），以实际控制台提示为准。",
       "deadlineNote": "官网未披露福利结束时间；受实时库存限制，不能保证当前有空位。",
       "officialUrl": "https://vyce.cloud/",
       "claimUrl": "https://vyce.cloud/",
@@ -71,8 +71,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官网确认免费配置、无需绑卡、GitHub 账号门槛、续期和删除规则；实际可抢库存无法在未登录情况下确认，活动有效不代表保证领取。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://vyce.cloud/",
@@ -98,6 +98,11 @@
           "url": "https://vyce.cloud/",
           "summary": "2026-10-29 复核：官网前端包内文案确认 Vps-Mini 免费（1 vCore/2 GB/6 GB NVMe）、无卡注册、GitHub 账号 30 天门槛、免费名额先到先得；续期规则细化为「免费机每 24 小时可续期一次」，续期弹窗写「extend your server for 48 hours」（需过 CAPTCHA）；停机 3 天删除；付费档 Vps-Plus $1.99 / Vps-Pro $3.99 每 30 天、不自动续费；Locations 仍为 Europe 满额、Asia 仅付费、USA 即将上线。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://vyce.cloud/",
+          "summary": "首页与控制台前端包（assets/index-DbKeiNoQ.js）复核：Vps-Mini 免费档仍为 1 vCore / 2 GB RAM / 6 GB NVMe；续期规则为每 24 小时可续一次、需过 CAPTCHA、每次延长 48 小时；登录需 GitHub 账号满 30 天且启用 2FA；免费名额实时放出、先到先得。停机删除期限官方两处口径不一致：FAQ 写 3 天、控制台提示写 14 天。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -125,6 +130,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功。免费配置、免绑卡与删除规则无变化；补充确认续期频率为每 24 小时一次、每次延长 48 小时。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，核心权益未变（1 vCore/2 GB/6 GB、每 24 小时续期一次各延长 48 小时）；补充登录需 GitHub 账号满 30 天 + 2FA，并记录停机删除期限官方两处口径不一致（FAQ 3 天 / 控制台 14 天）。"
         }
       ]
     },
@@ -152,8 +162,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Render 官方免费部署指南及 2026 免费套餐说明明确免费服务、750 小时、无信用卡和超额计费机制；未实际创建账号或部署实例。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://render.com/docs/free",
@@ -184,6 +194,11 @@
           "url": "https://render.com/docs/free",
           "summary": "2026-10-29 复核：官方 docs/free 页条款未变——每工作区每自然月 750 Free instance hours、免费 Web Service 空闲 15 分钟（无任何入站流量）即休眠约 1 分钟、静态站点免费、免费 Postgres 创建 30 天后过期（1 GB 上限、单工作区 1 个、过期后 14 天宽限再删除）、免费 Key Value 仅内存、超出出站带宽/构建分钟数在已绑卡时补缴、未绑卡则当月暂停。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://render.com/docs/free",
+          "summary": "官方 Free 文档复核：每工作区每自然月 750 免费实例小时且月初重置不结转；免费 Web 服务空闲 15 分钟休眠；免费 Render Postgres 创建 30 天后过期，过期后有 14 天宽限期可升级付费，逾期删除；条款未见变化。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -211,6 +226,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，额度与限制无变化；补充记录免费 Postgres 1 GB 上限与 14 天宽限期。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，750 小时/月、15 分钟休眠、Postgres 30 天过期 + 14 天宽限期均无变化。"
         }
       ]
     },
@@ -238,8 +258,8 @@
       "startsAt": "2026-10-19T16:00:00Z",
       "endsAt": "2026-10-31T16:00:00Z",
       "status": "active",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T16:00:00Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/flashoffer",
@@ -270,6 +290,11 @@
           "url": "https://docs.qoder.com/events/deepseek-flash-free",
           "summary": "2026-10-29 复核：docs.qoder.com/events/deepseek-flash-free（.md 纯文本）条款未变——2026-10-20 00:00 起至 2026-10-31 24:00（UTC+8），DeepSeek-V4.1-Flash-1017 每日免费额度内倍率由 0.1× 降至 0.0×，无需领取，Free 账号与 0 Credits 账号同样适用，Teams/Enterprise 不适用，付费订阅者每日次数更多，额度次日恢复。未见再次延期公告。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/deepseek-flash-free",
+          "summary": "活动页复核：促销期仍为 2026-10-20 00:00 至 10-31 24:00（UTC+8，即 2026-10-31T16:00Z），未再次延期；每日免费次数、0.0× 计费、Free 账号与零余额账号可用、reasoning effort 拉满仍不扣费均未变化；Teams/Enterprise 不适用。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -302,6 +327,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，条款无变化；活动按官方口径于 2026-10-31 24:00（UTC+8，即 10-31T16:00Z）结束，下轮将判定是否延期或转 expired。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，截止时间仍为 2026-10-31 24:00（UTC+8），条款无变化；下次复核已对齐到截止时刻。"
         }
       ]
     },
@@ -426,8 +456,8 @@
       "startsAt": "2026-09-18T02:00:00Z",
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/flashoffer",
@@ -458,6 +488,11 @@
           "url": "https://docs.qoder.com/events/flashoffer",
           "summary": "2026-10-29 复核：docs.qoder.com/events/flashoffer（.md）条款未变——Qwen3.8-Flash 仍为 0.0×（原为 0.1×），原定 9-30 结束后已延期且结束日期仍待该页提前公告；Teams/Enterprise 不适用；仅实际由该模型完成的调用免费，执行过程中调用其他模型按各自价格计费。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/flashoffer",
+          "summary": "活动页复核：Qwen3.8-Flash 仍按 0.0× 计费（0 Credits），原定 2026-09-30 结束后已延期且结束日期仍在页面提前公告前保持免费；附带说明部分功能内部调用的其他模型不计入本优惠。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -485,6 +520,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，条款无变化；结束时间仍为官方待公告。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，仍为延期状态免费、0.0× 计费，结束日期官方仍未公布。"
         }
       ]
     },
@@ -512,8 +552,8 @@
       "startsAt": "2026-09-18T02:00:00Z",
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/100credits",
@@ -544,6 +584,11 @@
           "url": "https://docs.qoder.com/events/100credits",
           "summary": "2026-10-29 复核：docs.qoder.com/events/100credits（.md）条款未变——每账号每个领取窗口（每日 10:00 至次日 10:00，UTC+8）手动领取 100 Credits，奖励自领取起 30 天有效、未用部分不展期，未领取不结转；仅限 Qoder 桌面端 Usage 面板礼物图标领取；可用于 Qoder/IDE/JetBrains/CLI/QoderWake/Cloud Agents/Mobile/Web；结束时间仍为 To be announced。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/100credits",
+          "summary": "活动页复核：每日 10:00（UTC+8）开新领取窗口、每账号每窗口限领一次 100 Credits、奖励 30 天有效且逐笔独立到期、仅桌面端可领、结束时间仍为 To be announced。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -571,6 +616,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，条款无变化。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，每窗口 100 Credits、30 天有效期、结束时间未公布，条款无变化。"
         }
       ]
     },
@@ -1358,8 +1408,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "zcode.z.ai 官方文档直接列出「首次使用 5 天免费体验」、每日 GLM-5.3 300 万 + GLM-5-turbo 200 万 Token 及「5 天后失效，并非长期每天都有」的警示；BigModel 官方 GLM Coding Plan 页可佐证订阅价格与模型归属；未注册实测领取，地区、绑卡与限速未披露。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://zcode.z.ai/cn/docs",
@@ -1390,6 +1440,11 @@
           "url": "https://zcode.z.ai/cn/docs",
           "summary": "2026-10-29 复核：zcode.z.ai/cn/docs 仍写明「新用户专享 5 天免费体验」——GLM-5.3 300 万 Token/天 + GLM-5-turbo 200 万 Token/天，合计 500 万 Token/天，仅这 5 天内每日发放、5 天后失效，官方明确「并非长期每天都有」；闲时任务仍为订阅用户专属（算力富余时段免费、不消耗套餐额度）。活动结束日期官方仍未公布。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://zcode.z.ai/cn/docs",
+          "summary": "官方文档复核：「5 天免费体验」仍为首次使用起 5 天内每日发放 GLM-5.3 300 万 Token + GLM-5-turbo 200 万 Token（每日合计 500 万），5 天后失效；绑定 BigModel 或 Z.ai 账号；条款未见变化。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -1412,6 +1467,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，额度与规则无变化。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，5 天体验与每日 300 万/200 万 Token 额度均无变化。"
         }
       ]
     },
@@ -1683,6 +1743,11 @@
           "url": "https://intl.cloud.tencent.com/zh/document/product/1300/80423",
           "summary": "补充核对国际站 TokenHub《新人免费体验包》文档：领取方式（模型广场右上角「新用户福利免费体验」或首次调用自动领取）、所有语言模型 100 万 tokens/有效期 1 年、每账号每模型限一次，并新增「每领取一个模型免费包自动冻结账户 10 美金、删除 endpoint 后退回」的费用条款；该预冻结条款为中国站记录此前未覆盖的细节。",
           "checkedAt": "2026-10-29T13:25:00Z"
+        },
+        {
+          "url": "https://cloud.tencent.com/product/tokenhub",
+          "summary": "产品页复核：仍为「每个模型 100 万 tokens 免费体验包」，新用户零门槛领取入口与模型清单（K3.1 系列等）在页内更新，但额度口径与领取路径未变。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -1705,10 +1770,15 @@
           "at": "2026-10-29T13:25:00Z",
           "status": "active",
           "note": "补充性核对（未满 24 小时，不计入复核）：读国际站同产品文档发现「领取即预冻结 10 美元、删除 endpoint 退回」条款，已写入 costNotes 并追加证据；同时修正标题中残留的「90 天」表述，与已核实的 1 年有效期保持一致。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，每模型 100 万 tokens 免费体验包与 1 年有效期口径未变，模型清单有更新。"
         }
       ],
-      "lastVerifiedAt": "2026-10-29T13:25:00Z",
-      "nextReviewAt": "2026-10-30T13:25:00Z"
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z"
     },
     {
       "id": "memoh-cloud-free-plan-202610",
@@ -1771,11 +1841,11 @@
       "autoRenewal": "no",
       "startsAt": "2026-10-21T16:00:00Z",
       "endsAt": "2026-10-30T15:59:00Z",
-      "status": "active",
+      "status": "expired",
       "confidence": "high",
       "confidenceReason": "官方活动文档逐项列出欢迎包与 4 轮礼包的解锁门槛、Credits 数量、领取窗口、有效期、资格分层（Pro 自动参与 / Lite 需升级 / Free 需申请）与不可叠加规则；未登录实测领取，剩余 3 天窗口，Round 4 能否拿满取决于社区助力进度。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T15:59:00Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/communityboost",
@@ -1796,6 +1866,11 @@
           "url": "https://docs.qoder.com/events/communityboost",
           "summary": "2026-10-29 复核：docs.qoder.com/events/communityboost（.md）条款未变——活动至 2026-10-30 23:59（UTC+8），欢迎包 1,024 SOTA Credits（可用至 10-31 23:59）、Round 1/2/3 各 2,048/3,072/4,096（发放后 3 天内领、领取后 24 小时有效）、Round 4 于 10-28/29/30 每日 00:00 各放 4,096 且当日 23:59 失效；Pro 及以上自动入会，Lite 不支持 Sonus 需升级，免费用户需提交申请审核；积分仅限 Sonus 模型。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/communityboost",
+          "summary": "活动页复核：促销期为 2026-10-22 至 2026-10-30 23:59（UTC+8，即 2026-10-30T15:59Z）；申请、审核、入群与每日助力随活动结束一并关闭，各档奖励领取不得晚于活动结束。本次读取（2026-10-30 19:20Z）已过截止时间，活动结束。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -1813,6 +1888,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，条款无变化；活动 2026-10-30 23:59（UTC+8）关闭，本轮下次复核提前到截止时刻。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "expired",
+          "note": "活动按官方公告于 2026-10-30 23:59（UTC+8）结束，状态由 active 置为 expired，保留历史与全部证据。"
         }
       ],
       "discoveredAt": "2026-10-27T17:51:23Z"
@@ -1840,8 +1920,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方活动文档明确倍率变化（0.3×→0.0×）、适用产品线、付费计划清单、Free 计划在 Pro 试用期内的例外，以及 Service Account 不参与的限制；结束时间官方仅写「To be determined」，故 endsAt 为 null。未登录实测。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://docs.qoder.com/events/efficientunlimited",
@@ -1857,6 +1937,11 @@
           "url": "https://docs.qoder.com/events/efficientunlimited",
           "summary": "2026-10-29 复核：docs.qoder.com/events/efficientunlimited（.md）条款未变——Efficient 档位倍率由 0.3× 降至 0.0×、无需领取；资格为个人 Lite/Pro/Pro+/Ultra 及 Teams、Enterprise 席位（免费用户仅在 Pro 试用期且有 Credits 时适用）；Service Account 调用不适用；结束时间仍为 To be determined；官方提示高峰期限速或变慢。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.qoder.com/events/efficientunlimited",
+          "summary": "活动页复核：Efficient 档 0.3×→0.0× 仍有效，适用个人 Lite/Pro/Pro+/Ultra 与 Teams/Enterprise 席位，Free 用户在 Pro 试用期且账号有 Credits 时同样适用；Service Account 集成调用不参与；结束时间为 To be determined。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -1874,6 +1959,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，条款无变化；另确认 Teams/Enterprise 席位同样适用该免费档。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，Efficient 档 0.0× 与适用人群描述未变，结束时间仍未定。"
         }
       ],
       "discoveredAt": "2026-10-27T17:51:23Z"
@@ -2154,26 +2244,26 @@
       "provider": "Privatemode（Edgeless Systems）",
       "category": "ai",
       "description": "德国 Edgeless Systems 运营的机密计算（confidential computing）AI 平台，请求端到端加密并在可验证的 enclave 内执行。免费档含 Web Chat 与 Inference API，可调用 GLM-5.3、GLM-5.3-Flash、gpt-oss-120b、DeepSeek-OCR-2、Whisper large-v3、Voxtral Mini 3B 与 Qwen3-Embedding 4B。",
-      "quota": "新组织一次性 Initial Token Quota 5,000,000 token（prompt/completion/cached/音频按换算比例抵扣，用尽前不受月度上限约束）；用尽后免费档每月 prompt 1,000,000 token + completion 1,000,000 token，缓存 prompt 500,000/min，限速 40 请求/分钟、200,000 prompt token/分钟。模型倍率：GLM-5.3 / GLM-5.3-Flash / DeepSeek-OCR-2 为 1.0×，gpt-oss-120b 为 2.0×（有效月度额度相应降至 50 万），Qwen3-Embedding 4B 为 0.5×。",
+      "quota": "新组织一次性 Initial Token Quota 5,000,000 token（prompt/completion/cached/音频按换算比例统一抵扣）；官方文档已移除免费档每月循环额度，额度用尽后免费档请求返回 HTTP 402。免费档限速：40 请求/分钟、20 万 prompt token/分钟、2 万 completion token/分钟、缓存 50 万 token/分钟、音频 100 分钟/分钟。",
       "benefitValue": "按官方牌价粗略对照：500 万初始额度若全用 GLM-5.3-Flash（输入 €0.20／输出 €0.65 每百万 token）约合 €2–3 量级，若全用 GLM-5.3（€1.55／€5.74）约合 €15–30 量级；月度 100 万 prompt + 100 万 completion 亦在这一区间内。仅为量级推算，非官方估值。",
       "eligibility": "注册 Privatemode 账号即可获得，官方明确无需信用卡；额度按组织（organization）发放，每个新组织仅一次初始额度。官方未公布国家/地区限制、是否需企业邮箱或实名。",
       "regions": "服务运行在欧盟机密计算基础设施上（Edgeless Systems，德国，ISO 27001）；官方未列出注册国家/地区限制。",
-      "validity": "初始 500 万 token 为一次性额度，抵扣完为止；之后按自然月提供 100 万 prompt + 100 万 completion token。免费档终止日期官方未公布。",
+      "validity": "一次性额度，用尽为止，官方未公布到期日；用尽后必须主动启用 pay-as-you-go 或联系企业方案才能继续调用，仅添加支付方式不会自动开启付费。",
       "deadlineNote": "官方未公布免费档结束日期；初始额度用尽后自动进入每月免费配额，超出后需主动升级 Standard 按量计费，不升级不会产生费用。",
       "officialUrl": "https://privatemode.ai/pricing",
       "claimUrl": "https://portal.privatemode.ai/sign-in/create",
       "discoveryUrl": "https://linux.do/t/topic/3087713",
       "discoveredAt": "2026-10-28T12:51:09Z",
-      "creditCard": "not-required",
+      "creditCard": "unknown",
       "autoRenewal": "no",
-      "costNotes": "免费档 $0/€0；用尽后须主动升级 Standard 才按量计费，价格另加 VAT：GLM-5.3 €1.55 输入／€5.74 输出、GLM-5.3-Flash €0.20／€0.65、gpt-oss-120b €0.20／€0.65、DeepSeek-OCR-2 €0.77／€1.27（每百万 token），语音 Voxtral Mini 3B €0.004/分钟、Whisper large-v3 €0.014/分钟，嵌入 Qwen3-Embedding 4B €0.13/百万输入 token。无订阅制预付，不自动续费。",
+      "costNotes": "免费档 $0/€0；官方明确「解锁初始额度可能需要绑定支付卡」，但仅绑卡不会启用按量计费。用尽后升级 Standard 按量计费，价格另加 VAT：GLM-5.3 €1.55 输入／€5.74 输出、GLM-5.3-Flash €0.20／€0.65、gpt-oss-120b €0.20／€0.65、DeepSeek-OCR-2 €0.77／€1.27（每百万 token），语音 Voxtral Mini 3B €0.004/分钟、Whisper large-v3 €0.014/分钟，嵌入 Qwen3-Embedding 4B €0.13/百万输入 token。无订阅制预付，不自动续费。",
       "startsAt": null,
       "endsAt": null,
       "status": "active",
       "confidence": "high",
-      "confidenceReason": "官方定价页与官方文档同时给出免费档内容、初始 500 万 token 额度、月度免费配额、限速表、模型倍率与全部牌价；官方 FAQ 明确 Free 档无需信用卡。未注册实测额度到账。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "confidenceReason": "官方定价页与限速文档同时可读，明确一次性 500 万 token、用尽后 402、免费档限速数值；月度循环额度已被官方移除，绑卡要求官方表述为 may be required，故信用卡字段记为 unknown。",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://privatemode.ai/pricing",
@@ -2194,6 +2284,16 @@
           "url": "https://privatemode.ai/pricing",
           "summary": "2026-10-29 复核：privatemode.ai/pricing（现跳转 www.privatemode.ai/pricing）条款未变——Free 档 €0、无需信用卡，注册赠 Initial 5M chat tokens，之后每月额外 100 万 token；模型价格为 GLM-5.3 €1.55/€5.74、GLM-5.3-Flash €0.20/€0.65、gpt-oss-120b €0.20/€0.65、DeepSeek-OCR-2 €0.77/€1.27（每百万 token，另加 VAT）、Qwen3-Embedding 4B €0.13、Voxtral Mini 3B €0.004/分钟、Whisper large-v3 €0.014/分钟；免费档终止日期仍未公布。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.privatemode.ai/rate-limits",
+          "summary": "官方限速文档复核后改写：免费档已明确定义为「一次性 initial token quota 的试用」，新组织一次性 500 万 token，用尽后返回 HTTP 402，需启用 pay-as-you-go 才能继续；文档不再出现免费档每月 100 万 prompt + 100 万 completion 的循环额度。免费档限速为 40 请求/分钟、20 万 prompt token/分钟、2 万 completion token/分钟、缓存 50 万/分钟、音频 100 分钟/分钟。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
+        },
+        {
+          "url": "https://privatemode.ai/pricing",
+          "summary": "定价页复核：Free 档标 €0，权益写「One-time 5M tokens per organization」，并新增提示「A payment card may be required to unlock the initial budget. Adding a card alone does not activate pay-as-you-go.」——与早前「明确无需信用卡」的表述不同，绑卡可能成为解锁额度的前置条件。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -2206,6 +2306,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "复核成功，额度与价格无变化。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "条款实质变更：①免费档由「一次性 500 万 + 每月 100 万 prompt/100 万 completion 循环额度」收紧为纯一次性 500 万 token，月度循环额度已从官方文档移除；②官方新增「解锁初始额度可能需要绑定支付卡」的表述，原先记录的「明确无需信用卡」不再成立，信用卡要求改为未知。"
         }
       ]
     },
@@ -2594,6 +2699,11 @@
           "url": "https://aws.amazon.com/cn/free/",
           "summary": "「AWS 免费套餐」页：使用最高 200 美元服务抵扣金免费开始；免费计划最长 6 个月访问 90 多种服务、无意外超额费用；账户在开户 6 个月后或抵扣金用完时自动关闭，除非转为付费计划；30 多个服务在免费计划与付费计划的月度限额内始终免费（如 Lambda 每月 100 万次请求）。",
           "checkedAt": "2026-10-29T13:25:00Z"
+        },
+        {
+          "url": "https://aws.amazon.com/cn/start-here/",
+          "summary": "中文页复核：新客户最高 200 美元抵扣金（注册 100 美元 + 探索关键服务最多再 100 美元），有效期最长 6 个月或额度用尽为止；免费计划期间不收费、付费计划才产生账单；曾拥有 AWS 账号者不再享受；多数新客户无需付款方式，个别情况需额外验证。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -2601,10 +2711,15 @@
           "at": "2026-10-29T13:25:00Z",
           "status": "active",
           "note": "由公开检索发现「AWS 新客户最高 200 美元抵扣金」线索，转官方 start-here 与 free 两页逐项核对：100+100 美元、6 个月、90+ 服务、30+ 永久免费服务、账户自动关闭与硬支出上限均可查证，按 active/high 首次入库；未注册实测领取。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，100+100 美元、6 个月、免费计划不产生账单等条款无变化。"
         }
       ],
-      "lastVerifiedAt": "2026-10-29T13:25:00Z",
-      "nextReviewAt": "2026-10-30T13:25:00Z"
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z"
     },
     {
       "id": "cloudflare-workers-ai-free-10000-neurons-2026",
@@ -2635,6 +2750,11 @@
           "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
           "summary": "Workers AI 定价页原文：「Our free allocation allows anyone to use a total of 10,000 Neurons per day at no charge」；Free 与 Paid 计划对照显示 Workers Free 为 10,000 Neurons/天、Workers Paid 同额度免费且超出部分 $0.011/1,000 Neurons；同页给出按模型的 Neurons/token 单价（如 2,457 Neurons 每百万输入 tokens、18,252 每百万输出 tokens）。",
           "checkedAt": "2026-10-29T13:25:00Z"
+        },
+        {
+          "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "summary": "官方计价页复核：免费分配仍为每天 10,000 Neurons，超出需 Workers Paid 并按 $0.011/1,000 Neurons 计费；条款未见变化。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -2642,10 +2762,15 @@
           "at": "2026-10-29T13:25:00Z",
           "status": "active",
           "note": "由公开检索的免费 LLM 额度清单发现线索，转 Cloudflare 官方 Workers AI 定价文档核实：每日 10,000 Neurons 免费额度、Workers Free/Paid 对照、按模型 Neurons 单价均可查证，按 active/high 首次入库；未注册实测调用。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，每日 10,000 Neurons 免费额度与超额单价未变。"
         }
       ],
-      "lastVerifiedAt": "2026-10-29T13:25:00Z",
-      "nextReviewAt": "2026-10-30T13:25:00Z"
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z"
     },
     {
       "id": "china-mobile-ecloud-moma-25m-tokens-202610",
@@ -2696,7 +2821,7 @@
       "description": "首次开通阿里云百炼（模型服务平台 Model Studio）时，平台自动为各模型发放新人专属免费额度，通常每个模型 100 万 Token，有效期 90 天；额度仅可用于实时推理调用，只在中国华北 2（北京）地域生效。",
       "quota": "每个模型独立免费额度（官方表述「通常为 100 万 Token」），输入与输出 Token 共用同一总额度、不区分计算；不同模型（含带日期后缀的快照版本）额度互相独立、不互通不共享，用尽某模型不会自动切换到其他有额度的模型；主账号与 RAM 子账号共享同一额度；ASR 类模型需在控制台业务空间逐一开通权限后才能调用并消耗额度。",
       "benefitValue": "每模型约 100 万 Token 免费推理额度；账号可获总额取决于所开通模型的独立额度数量，官方页面未给出固定总额（社区流传的「5000 万 / 7000 万」累计口径未在官方文档出现，不采信）。",
-      "eligibility": "首次开通阿里云百炼的账号；官方明确无需实名认证即可获取并使用免费额度，但额度用完后未实名账号无法继续调用，须实名并充值后才能按量付费；同一实名认证主体下重新注册账号不能再次领取新人额度。",
+      "eligibility": "首次开通阿里云百炼的账号，且须先完成阿里云实名认证——官方明文「未完成实名认证不发放免费额度」；仅有华北 2（北京）地域模型享有免费额度；同一实名认证主体下重新注册账号不能再次领取新人额度。",
       "regions": "仅华北 2（北京）地域的模型享有免费额度，其他地域无免费额度。",
       "validity": "免费额度有效期 90 天，自开通百炼、模型发布或模型申请通过之日（取较晚者）起算；有效期内无论是否使用都不暂停计时，到期后剩余部分自动作废，不支持补发、延期或重置。",
       "deadlineNote": "无统一活动截止日，按账号维度 90 天窗口；官方说明 2025-09-08 11:00 前已开通百炼的账号免费额度有效期可能不足 90 天。",
@@ -2706,19 +2831,24 @@
       "discoveredAt": "2026-10-29T18:54:15Z",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "costNotes": "免费额度仅抵扣模型实时推理（调用）费用；Batch 调用、模型调优、模型部署、自定义/已部署模型、PAI-DSW、OSS 存储与请求费均不可抵扣。额度用尽后：未实名账号直接无法继续调用；已实名账号自动转为按量付费，可提前开启「免费额度用完即停」（未实名默认开启且不可关闭，开启后额度耗尽返回 HTTP 403 AllocationQuota.FreeTierOnly）。官方未承诺额度可循环或每月刷新。",
+      "costNotes": "免费额度仅抵扣模型实时推理（调用）费用；Batch 调用、模型调优、模型部署、自定义/已部署模型、PAI-DSW、OSS 存储与请求费均不可抵扣。「免费额度用完即停」默认关闭，需在控制台免费额度页或模型用量页手动开启，开启后额度耗尽返回 HTTP 403（AllocationQuota.FreeTierOnly）并停止计费；关闭该开关后状态同步约需半小时才恢复按量付费调用。免费额度用完后如需继续按量付费须先充值。ASR 类模型还需在业务空间逐一开通权限才能消耗额度。",
       "startsAt": null,
       "endsAt": null,
       "status": "active",
       "confidence": "high",
-      "confidenceReason": "阿里云帮助中心官方页面明确写出每模型独立免费额度（通常 100 万 Token）、90 天有效期起算与不可延期规则、仅华北 2（北京）生效、主/子账号共享、无需实名即可使用但用完需实名、以及「用完即停」机制；额度、地域、时效、资格均可直接核对，故标 active/high。累计总额官方未给固定值，故不作金额估算。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "confidenceReason": "阿里云官方帮助页可读，明确实名认证前置条件、每模型约 100 万 Token、90 天有效期、仅华北2（北京）、主账号与 RAM 共享、用完即停改为默认关闭等要点；未登录控制台实测到账。",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
           "summary": "「新人免费额度」页：首次开通百炼自动发放各模型新人专属额度，通常每模型 100 万 Token；仅华北 2（北京）享有；有效期 90 天，自开通/模型发布/申请通过（较晚者）起算，过期不补发不延期不重置；不同模型额度独立不互通，主账号与 RAM 子账号共享；无需实名即可获取使用，用完后未实名无法继续调用；免费额度仅抵扣实时推理，Batch/调优/部署/PAI-DSW/OSS 不抵扣；提供「免费额度用完即停」开关。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+          "summary": "官方帮助页复核后改写：现明文「开通阿里云百炼需先完成实名认证，未完成实名认证不发放免费额度」，与早前记录「无需实名即可领取」相反；「免费额度用完即停」明确为默认关闭、需用户在控制台自行开启（开启后额度耗尽返回 HTTP 403 AllocationQuota.FreeTierOnly）；每模型通常 100 万 Token、主账号与 RAM 子账号共享、不同模型与快照版本额度互相独立、仅华北2（北京）有额度、有效期 90 天等未变。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -2726,6 +2856,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "由公开检索发现阿里云百炼新用户免费额度线索，转到 help.aliyun.com 官方新人免费额度页逐项核对：每模型 100 万 Token、90 天、仅华北 2、免实名可领、用完即停均写在官方页面，按 active/high 首次入库；社区「累计 5000 万/7000 万」口径无官方条文，未写入额度字段；未注册实测领取。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "条款实质变更：①开通百炼与获取免费额度现要求先完成实名认证（此前记录为免实名可领）；②「用完即停」由默认开启改为默认关闭、需手动开启，未实名账号不再属于可领额度的人群；其余额度口径未变。"
         }
       ]
     },
@@ -2753,8 +2888,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方文档（Quick Start 与 FAQ）一致写明每个新账号一次性 1 亿免费 token、全模型共享、无需付款信息，限速页给出 Free 档 1,000 RPM / 100 万输入 / 10 万输出 token 每分钟；额度、资格与限速可核对，仅有效期未披露，故标 active/high 并在 validity 注明未知。",
-      "lastVerifiedAt": "2026-10-29T18:54:15Z",
-      "nextReviewAt": "2026-10-30T18:54:15Z",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
       "evidence": [
         {
           "url": "https://docs.inceptionlabs.ai/get-started",
@@ -2770,6 +2905,11 @@
           "url": "https://docs.inceptionlabs.ai/get-started/rate-limits",
           "summary": "Rate Limits 页：Free 档 1,000 API 请求/分钟、1,000,000 输入 token/分钟、100,000 输出 token/分钟；Pay-As-You-Go 为 3,000 / 3,000,000 / 300,000。",
           "checkedAt": "2026-10-29T18:54:15Z"
+        },
+        {
+          "url": "https://docs.inceptionlabs.ai/get-started",
+          "summary": "官方 Get Started 复核：仍为每个新账号 100 million free tokens、no payment details required，额度用尽后需在 Billing 添加支付信息才能继续；条款未见变化。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
         }
       ],
       "history": [
@@ -2777,6 +2917,11 @@
           "at": "2026-10-29T18:54:15Z",
           "status": "active",
           "note": "由第三方免费额度目录发现 Mercury 1 亿 token 线索，转到官方 docs 三页（Quick Start / FAQ / Rate Limits）核对：一次性 1 亿、全模型共享、免绑卡、Free 档限速均一致，按 active/high 首次入库；有效期官方未披露，已写入 deadlineNote；未注册实测领取。"
+        },
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "复核成功，一次性 1 亿 token、免付款信息均未变化。"
         }
       ]
     },
@@ -3099,6 +3244,93 @@
           "at": "2026-10-30T13:13:57Z",
           "status": "pending",
           "note": "由官方限速文档发现 Free Plan 逐模型额度并入库：免费档覆盖 gpt-oss-120b/20b、qwen3.8-27b、whisper、Orpheus TTS 等；因未确认新账号是否默认获得免费档、是否需绑卡，按 pending/medium 发布，未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "entire-trial-100-credit-202610",
+      "title": "Entire 新计费账户一次性 $100 Agent 试用额度",
+      "provider": "Entire",
+      "category": "ai",
+      "description": "Entire 是面向 Agent 的 Git 托管平台（Git forge for agents），Agent 会在每次 push 或手动触发时运行代码审查类任务。官方 Billing 文档写明每个计费账户可获得一次性 $100 试用额度，按 Agent 消耗的模型 token 抵扣，代码托管、Trails、会话存储、Continuous Memory、Agentic Search 与 Entire CLI 本身免费。",
+      "quota": "每个计费账户一次性 $100 试用额度，按 Agent 实际消耗的模型 token 从额度中扣减（模型按原厂价计，如 Claude Opus 5.5 $4.00/百万输入、$20.00/百万输出、缓存读取 $0.20/百万）；非 Agent 功能（代码托管、Trails、会话存储、Continuous Memory、Agentic Search、Entire CLI）免费。",
+      "benefitValue": "官方面值 $100（一次性，90 天内有效）",
+      "eligibility": "需在账户或组织设置中完成计费设置并添加已验证的信用卡或借记卡（官方称无需实际付款）；个人账号、Entire 组织与 GitHub 组织分别作为独立计费账户各计一次试用，GitHub 组织需该组织管理员操作；每个计费账户仅一次、不重置、不可转让。",
+      "regions": "官方未公布国家/地区限制",
+      "validity": "试用额度自发放起 90 天内有效，或用满 $100 即止，以先到者为准；额度无现金价值、不可转移。",
+      "deadlineNote": "官方未公布活动结束日期；单账户额度固定为发放后 90 天到期",
+      "officialUrl": "https://entire.com/pricing",
+      "claimUrl": "https://entire.com/",
+      "discoveryUrl": "https://linux.do/t/topic/3098306",
+      "discoveredAt": "2026-10-30T14:41:48Z",
+      "creditCard": "required",
+      "autoRenewal": "no",
+      "costNotes": "绑卡本身不产生扣费，试用额度用尽前不收费；余额归零后 Agent 停止，需手动充值或自行开启自动 top-up 才能继续，其余免费功能与官方预设 runner 不受影响。计费按 Agent 消耗的模型 token 以原厂价折算，具体模型单价随官方价目表调整。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Entire 官方 Billing 文档明文写「一次性 $100 试用额度、90 天或额度用尽即止、需验证的信用卡/借记卡、无实际付款」，定价页亦写明绑卡后才发放额度；未登录实测到账，社区所称「绑卡后不一定通过」属个体风控差异。",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
+      "evidence": [
+        {
+          "url": "https://docs.entire.com/billing",
+          "summary": "Billing 文档：每个计费账户获得一次性 $100 试用额度，$100 用尽或发放后 90 天先到者结束；额度在完成计费设置并添加已验证信用卡/借记卡后发放，无需实际付款；额度仅发放一次、不重置、不可转让；归零后 Agent 停止。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
+        },
+        {
+          "url": "https://entire.com/pricing",
+          "summary": "定价页：早期访问期按 pay-as-you-go 计 Agent 用量；「Free when you sign up」列出代码托管、Trails、会话存储、Continuous Memory、Agentic Search、Entire CLI；FAQ 明确需要绑卡但无需付款，绑卡同时可创建自定义与文件型 agent。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "新增：Entire 官方 Billing 文档确认每个计费账户一次性 $100 试用额度（90 天或额度用尽）、需绑定已验证银行卡但不产生扣费，按 Agent token 用量抵扣。"
+        }
+      ]
+    },
+    {
+      "id": "kiro-students-1000-credits-year-2026",
+      "title": "Kiro 学生计划：每月 1,000 Credits 免费一年",
+      "provider": "Kiro (AWS)",
+      "category": "ai",
+      "description": "Kiro 官方学生页写明：符合资格的在校大学生通过学生身份验证后，可免费获得每月 1,000 Credits、连续 12 个月，远高于 Kiro Free 档的每月 50 Credits。资格以官方 Eligible Schools 院校名单为准，名单以美国、欧洲、巴西、韩国、日本等院校为主。",
+      "quota": "每月 1,000 Credits，连续 12 个月（合计约 12,000 Credits）；与 Free 档每月 50 Credits 相比约 20 倍。",
+      "benefitValue": "12,000 Credits/年（每月 1,000，官方未单列货币价值；按 add-on $0.04/Credit 折算约 $480，仅供参考）",
+      "eligibility": "仅限官方 Eligible Schools 名单内院校的在校学生，需通过学生身份验证（页面提供学校申请入口，可提交本校加入）；名单当前以美国、欧洲、巴西、韩国、日本等院校为主，未见中国大陆与港澳台院校；同一学生是否可重复申领官方未说明。",
+      "regions": "仅官方 Eligible Schools 名单内院校（主要为美国、欧洲、巴西、韩国、日本等），当前名单未见中国大陆、港澳台院校",
+      "validity": "自学生验证通过起 12 个月，每月发放 1,000 Credits；到期后回落至 Free 档。",
+      "deadlineNote": "官方未公布学生计划整体结束日期；个人权益期为验证通过后 12 个月",
+      "officialUrl": "https://kiro.dev/students/",
+      "claimUrl": "https://kiro.dev/students/",
+      "discoveryUrl": "https://linux.do/t/topic/3098574",
+      "discoveredAt": "2026-10-30T15:54:22Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "学生权益为独立免费额度，不产生订阅扣费；额度用尽或 12 个月到期后需升级付费档（Pro $20/月含 1,000 credits）或按 $0.04/credit 购买 add-on。官方学生页未说明是否需要绑卡，也未列出限速细则。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "Kiro 官方学生页可读，明确「符合资格的在校大学生每月 1,000 Credits、免费一年」并公开 Eligible Schools 院校名单与学校申请入口；未登录实测验证流程，是否需绑卡官方未披露。",
+      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
+      "nextReviewAt": "2026-10-31T19:20:54.885Z",
+      "evidence": [
+        {
+          "url": "https://kiro.dev/students/",
+          "summary": "学生页：「Eligible university students get 1,000 credits per month free for one year」，提供 Sign up and verify、Instructions 与 Terms & Conditions 链接，并列出 Eligible Schools 院校清单（含 ASU、CMU、Georgia Tech、ETH Zurich、EPFL、Imperial College London、Yonsei 等，未见中国大陆/港澳台院校）与「Don’t see your school listed?」申请入口。",
+          "checkedAt": "2026-10-30T19:20:54.885Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-30T19:20:54.885Z",
+          "status": "active",
+          "note": "新增：Kiro 官方学生计划确认在校生每月 1,000 Credits、免费一年，资格限官方院校名单，当前名单未见中国大陆与港澳台院校。"
         }
       ]
     }
