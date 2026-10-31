@@ -699,8 +699,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "GitHub 官方 billing 文档明确列出 Free/Pro 档的每月计算与存储额度、各机型单价、无支付方式时的阻断规则与重置方式；未登录实测创建 codespace。",
-      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
-      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
@@ -731,6 +731,11 @@
           "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
           "summary": "复核：免费配额表仍为 GitHub Free 15 GB-month + 120 hrs、Pro 20 GB-month + 180 hrs；计价表 2/4/8/16/32 核仍为 $0.18/$0.36/$0.72/$1.44/$2.88（2 核额度倍率 2）、存储 $0.07/GB-month；仍写明组织与企业计划无免费配额、managed user account 拥有的仓库不可用 Codespaces。条款未见变化。",
           "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+          "summary": "复核 billing 文档「Free quota」段：GitHub Free for personal accounts 仍为 15 GB-month 存储 + 120 hrs 计算/月，GitHub Pro 为 20 GB-month + 180 hrs；组织/企业计划不含免费额度；无有效支付方式时额度用尽即阻断。另新增「受管用户（EMU）仓库不可用 Codespaces」的限制说明。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -758,6 +763,11 @@
           "at": "2026-10-30T01:01:10.059Z",
           "status": "active",
           "note": "复核成功：官方 billing 文档的 Free 120 hrs/15 GB-month、Pro 180 hrs/20 GB-month、各机型单价与存储价、EMU 仓库限制均未见变化。未登录创建 codespace。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：Free 档 15 GB-month/120 hrs、Pro 档 20 GB-month/180 hrs、超额阻断规则均未见变化；补充官方新写明的 EMU 仓库限制。"
         }
       ]
     },
@@ -785,8 +795,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Google 官方限制页确认每周 50 小时配额、5 GB 持久盘及 120 天删除规则、40 分钟空闲终止与 12 小时会话上限，价格页确认免费；绑卡要求未在文档中规定、未实测登录，故 creditCard 记 unknown。",
-      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
-      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://docs.cloud.google.com/shell/docs/limitations",
@@ -842,6 +852,11 @@
           "url": "https://cloud.google.com/shell/pricing",
           "summary": "复核价格页：正文仍为「Cloud Shell is free for users with a Google Cloud account」，未列出 Cloud Shell 自身任何收费项。",
           "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://docs.cloud.google.com/shell/docs/quotas-limits",
+          "summary": "复核 Quotas and limits 页：仍为默认每周 50 小时使用配额，5 GB 免费持久磁盘挂载为 $HOME（按用户、跨项目），配额用尽需等重置或升级 Cloud Workstations；每周配额不可扩容。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -869,6 +884,11 @@
           "at": "2026-10-30T01:01:10.059Z",
           "status": "active",
           "note": "复核成功：限制页条目已迁到 quotas-limits（旧链接 301），50 小时/周、5 GB $HOME、120 天删除、12 小时会话上限、40 分钟非交互终止均未变化；价格页仍写明对 Google Cloud 账号用户免费。officialUrl 已改为新地址。未登录实测。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：每周 50 小时配额与 5 GB 持久磁盘条款未见变化。"
         }
       ]
     },
@@ -1093,14 +1113,14 @@
       "discoveredAt": "2026-10-26T04:37:32Z",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "costNotes": "免费档 $0，官方仅说明升级付费档需要有效信用卡，未要求免费档绑卡。超出 50 credits 后需升级 Pro $20/月（1000 credits）、Pro+ $40、Pro Max $100、Power $200，或按 $0.04/credit 购买 add-on；付费订阅每月 1 日扣费；日本账单地址另计消费税；企业版与 GovCloud 不适用本免费档。首次升级任一付费档可获 $20 抵扣（需通过社交登录或 Builder ID 注册）。",
+      "costNotes": "免费档 $0，官方仅说明升级付费档需要有效信用卡，未要求免费档绑卡。超出 50 credits 后需升级 Pro $20/月（1000 credits）、Pro+ $40、Pro Max $100、Power $200，或按 $0.04/credit 购买 add-on；付费订阅每月 1 日扣费；日本账单地址另计消费税；企业版与 GovCloud 不适用本免费档。2026-11-01 之前首次升级付费档可获 $20 抵扣（需通过社交登录或 Builder ID 注册）；自 2026-11-01 起该抵扣被新试用政策替代：首次升级任意付费档（Pro/Pro+/Pro Max/Power）当个计费周期剩余时间免月费，另赠 500 试用 Credits（12 个月内有效，先用完套餐 Credits 才消耗，降级回 Free 档后仅能用于免费档模型），费用与 Credits 均按剩余秒数比例折算，仅首次升级适用。",
       "startsAt": null,
       "endsAt": null,
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Kiro 官方定价页可读，明确 Kiro Free 为 $0/月 50 credits 的长期免费档、可用模型清单、登录方式限制（社交/AWS Builder ID，Identity Center 不适用）、GovCloud 例外，以及付费档价格与 add-on 单价；限速具体数值未公布，未登录实测额度消耗。",
-      "lastVerifiedAt": "2026-10-30T07:08:19Z",
-      "nextReviewAt": "2026-10-31T07:08:19Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://kiro.dev/pricing/",
@@ -1136,6 +1156,11 @@
           "url": "https://kiro.dev/pricing/",
           "summary": "官方定价页当前仍列 KIRO FREE $0 per month / 50 credits / Access to open weight models* and Claude Sonnet 4.5；付费档 KIRO PRO $20 per user/月 1,000 credits、PRO+ $40 2,000 credits，add-on credits $0.04/credit；页面标注首次升级付费档（社交登录或 AWS Builder ID）可得抵扣。",
           "checkedAt": "2026-10-30T07:08:19Z"
+        },
+        {
+          "url": "https://kiro.dev/blog/kiros-new-free-trial-gives-you-500-extra-credits/",
+          "summary": "官方博客 2026-10-27：自 2026-11-01 起改为按比例计费 + 首次升级免首月月费，并赠 500 试用 Credits（12 个月有效、先用完套餐额度、降级后仅限免费档模型、仅首次升级适用）；11-01 前升级仍享 $20 抵扣。免费档 50 credits/月与各付费档价格未变。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -1163,6 +1188,11 @@
           "at": "2026-10-30T07:08:19Z",
           "status": "active",
           "note": "复核成功：免费档 $0、50 credits/月、涵盖开源权重模型与 Claude Sonnet 4.5，付费档价格与 add-on 单价均未见变化。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：Free 档仍为 $0/月 50 credits；付费升级优惠自 2026-11-01 起由 $20 抵扣改为“首月免月费 + 500 试用 Credits（12 个月有效）”，已写入 costNotes。"
         }
       ]
     },
@@ -1534,14 +1564,14 @@
       "discoveredAt": "2026-10-26T23:34:07Z",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "costNotes": "免费档 ¥0；付费档 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），均连续包月自动续费。本轮权益表细目：免费档 GLM-5.3 无折扣、Seed-2.1-Turbo 与 Seed-Code 5 折、DeepSeek-V4.1-Flash 与 DeepSeek-V4-Pro 闲时 5 折；付费档 GLM-5.3 与 Seed 系列 5 折/2.5 折、DeepSeek-V4.1-Flash 全时段 5 折、DeepSeek-V4-Pro 闲时 5 折——免费档调用这些模型仍消耗积分但享折扣。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均未披露。",
+      "costNotes": "免费档 ¥0；付费档 Lite ¥49/月（首月 ¥39）、Pro ¥99（¥69）、Pro+ ¥239（¥219）、Ultra ¥699（¥629），均连续包月自动续费。本轮权益表细目：免费档 GLM-5.3 无折扣、Seed-2.1-Turbo 与 Seed-Code 5 折、DeepSeek-V4.1-Flash 与 DeepSeek-V4-Pro 闲时 5 折；付费档 GLM-5.3 与 Seed 系列 5 折/2.5 折、DeepSeek-V4.1-Flash 全时段 5 折、DeepSeek-V4-Pro 闲时 5 折——免费档调用这些模型仍消耗积分但享折扣。免费档积分用尽后的行为、云端任务超出并发的计费、企业版价格（转火山引擎）均未披露。 2026-10-30 复核时官方定价页另列首月优惠价：Lite ¥39、Pro ¥69、Pro+ ¥219、Ultra ¥629（次月起恢复 ¥49/¥99/¥239/¥699）。",
       "startsAt": null,
       "endsAt": null,
       "status": "active",
       "confidence": "high",
       "confidenceReason": "trae.cn 官方定价页明确列示免费档 ¥0 / 每月 500 积分 / 所有功能免费使用 / 2 个云端任务并发，并同页给出各付费档价格与积分；积分清零规则、免费档可用模型清单与实名要求未在该页披露，未注册实测额度消耗。",
-      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
-      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://www.trae.cn/pricing",
@@ -1567,6 +1597,11 @@
           "url": "https://www.trae.cn/pricing",
           "summary": "复核定价页：免费 Free 档仍为 ¥0「每月 500 积分」「所有功能均可免费使用」「支持 2 个云端任务同时执行」；付费档 Lite 首月 ¥39/原价 ¥49（2,000 积分）、Pro ¥69/¥99（4,000）、Pro+ ¥219/¥239（12,000）、Ultra ¥629/¥699（40,000），签到多得 3,000 积分，云端并发 2/2/10/10/20 均未变。模型折扣表与上轮一致：GLM 5.3 免费档无折扣、付费档 5 折；Seed-2.1-Turbo 与 Seed-Code 免费档 5 折、付费档 2.5 折；DeepSeek-V4.1-Flash 免费档闲时 5 折、付费档全时段 5 折；DeepSeek-V4-Pro 各档闲时 5 折。条款未见变化。",
           "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://www.trae.cn/pricing",
+          "summary": "复核定价页：Free 档仍为 ¥0/月、500 积分/月、所有功能可用、2 个云端任务并发；付费档 Lite ¥49/2,000 积分、Pro ¥99/4,000、Pro+ ¥239/12,000、Ultra ¥699/40,000，并新列首月优惠价 ¥39/¥69/¥219/¥629；模型折扣细目与上轮一致（DeepSeek-V4.1-Flash 免费档闲时 5 折、付费档全时段 5 折）。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -1589,6 +1624,11 @@
           "at": "2026-10-30T01:01:10.059Z",
           "status": "active",
           "note": "复核成功：免费档（¥0、500 积分/月、全部功能、2 并发云端任务）、付费档价格与积分数、模型折扣细目均与上轮一致，无变化。未注册实测。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：免费档 500 积分/月与并发 2 不变；付费档新增首月优惠价（Lite ¥39、Pro ¥69、Pro+ ¥219、Ultra ¥629），已在 costNotes 记录。"
         }
       ]
     },
@@ -2949,8 +2989,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "OCI 官方 Always Free 文档逐项列出 A1 2 OCPU + 12 GB、E2.1.Micro 规格与带宽、200 GB 块存储、10 TB/月出网、空闲回收的三项判定阈值；oracle.com/cloud/free 同页确认 US$300/30 天信用额与 Always Free 服务清单。未注册实测开通与扣费，支付方式要求未在文档中列明。",
-      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
-      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
@@ -2961,6 +3001,11 @@
           "url": "https://www.oracle.com/cloud/free/",
           "summary": "官方免费层页面：新账户先获 US$300 云信用额、30 天内可用于全部 OCI 服务，并同时享有 Always Free 服务；30 天后可选择升级为按需付费，否则 Always Free 资源继续可用、超额资源不可创建。",
           "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+          "summary": "复核 Always Free 文档：Ampere A1 仍为每月 1,500 OCPU 小时 + 9,000 GB 小时，Always Free 账户等效 2 OCPU / 12 GB，可建 1–2 台；VM.Standard.E2.1.Micro 最多 2 台；块存储 200 GB（单实例引导卷最小 47 GB）；出网 10 TB/月；对象存储 Always Free 20 GB。条款未见变化。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -2968,6 +3013,11 @@
           "at": "2026-10-30T01:01:10.059Z",
           "status": "active",
           "note": "核对数据缺口时发现本项目尚未收录任何 OCI 条目，据官方 Always Free 文档与免费层页面新增：A1 2 OCPU/12 GB、2 台 E2.1.Micro、200 GB 块存储、10 TB/月出网与 $300/30 天信用额；同时纠正社区常见的「4 OCPU/24 GB」旧口径。未注册实测。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：A1 2 OCPU/12 GB、2 台微实例、200 GB 块存储、10 TB/月出网等额度均未见变化。"
         }
       ]
     },
@@ -2995,8 +3045,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方 free-cloud-features 文档明确写出 $300 / 90 天、试用期不扣费、资格双条件（从未付费、从未注册过 Free Trial）、注册须提供有效付款方式、到期或用尽后账户关闭并停止资源，以及 e2-micro 的区域与 30 GB 持久盘额度；本次未登录注册实测扣费与资源开通。",
-      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
-      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://cloud.google.com/free/docs/free-cloud-features",
@@ -3007,6 +3057,11 @@
           "url": "https://cloud.google.com/free/docs/free-cloud-features",
           "summary": "同页 Free Tier 额度：Compute Engine 每月 1 台非抢占 e2-micro（仅 us-west1/us-central1/us-east1）+ 30 GB-months 标准持久盘 + 每月 1 GB 北美出网（不含中国、澳大利亚），e2-micro 免费按小时总量而非实例数计算，跨区域合并；另有 20+ 长期免费产品。",
           "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://cloud.google.com/free/docs/free-cloud-features",
+          "summary": "复核 Free Tier 文档：Free Trial 仍为 $300 Welcome credit / 90 天，期间可使用 Free Tier；Compute Engine 每月 1 台非抢占 e2-micro（us-west1 / us-central1 / us-east1，按月总小时数计）、30 GB-months 标准持久盘、北美出网 1 GB/月（不含中国与澳大利亚）。页面已改版措辞但额度一致。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -3014,6 +3069,11 @@
           "at": "2026-10-30T01:01:10.059Z",
           "status": "active",
           "note": "核对数据缺口时发现本项目仅有 Cloud Shell 条目、未收录 GCP 新用户信用额，据官方 free-cloud-features 文档新增：$300/90 天、资格双条件、绑卡验证要求与到期停服规则，并记录 Free Tier 的 e2-micro/30 GB 额度。未注册实测。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：$300/90 天与 e2-micro、30 GB 持久盘、1 GB 北美出网额度均未见变化。"
         }
       ]
     },
@@ -3041,8 +3101,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Azure 官方免费账户页明确写出 $200 信用额、30 天窗口、65+ always-free 服务、20+ 新客户 12 个月免费服务、spending protection（信用卡不扣款）与「30 天后需转按量付费否则超出额度不可用」；具体单项免费额度分散在官方免费服务清单页，本次未逐项抄录、未注册实测扣费。",
-      "lastVerifiedAt": "2026-10-30T01:01:10.059Z",
-      "nextReviewAt": "2026-10-31T01:01:10.059Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://azure.microsoft.com/en-us/free/",
@@ -3053,6 +3113,11 @@
           "url": "https://azure.microsoft.com/en-us/pricing/free-services",
           "summary": "官方免费服务清单页：区分「对所有 Azure 客户长期免费」与「仅新客户前 12 个月免费」两类，按服务逐项给出每月免费额度；具体额度以该页为准。",
           "checkedAt": "2026-10-30T01:01:10.059Z"
+        },
+        {
+          "url": "https://azure.microsoft.com/en-us/free/",
+          "summary": "复核 Azure 免费账户页：仍为新客户 $200 信用额、30 天内使用；20+ 热门服务每月免费额度 12 个月（仅新客户）、65+ always-free 服务长期免费；注册验证时可能临时冻结 $1 并在验证后退回。条款未见变化。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -3060,6 +3125,11 @@
           "at": "2026-10-30T01:01:10.059Z",
           "status": "active",
           "note": "核对数据缺口时发现本项目未收录 Azure 新客户免费账户，据官方免费账户页与免费服务清单页新增：$200/30 天、65+ always-free、20+ 服务 12 个月、spending protection 与到期转付费规则。未注册实测。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：$200/30 天、20+ 服务 12 个月、65+ always-free 与 $1 临时预授权说明均未见变化。"
         }
       ]
     },
@@ -3298,12 +3368,12 @@
       "title": "Kiro 学生计划：每月 1,000 Credits 免费一年",
       "provider": "Kiro (AWS)",
       "category": "ai",
-      "description": "Kiro 官方学生页写明：符合资格的在校大学生通过学生身份验证后，可免费获得每月 1,000 Credits、连续 12 个月，远高于 Kiro Free 档的每月 50 Credits。资格以官方 Eligible Schools 院校名单为准，名单以美国、欧洲、巴西、韩国、日本等院校为主。",
-      "quota": "每月 1,000 Credits，连续 12 个月（合计约 12,000 Credits）；与 Free 档每月 50 Credits 相比约 20 倍。",
+      "description": "Kiro 官方学生页写明：符合资格的在校大学生通过 SheerID 学生身份验证后，可免费获得每月 1,000 Credits、连续 12 个月，远高于 Kiro Free 档的每月 50 Credits。资格以官方 Eligible Schools 院校名单为准（2026-09 首批 133 所，2026-10-28 官方博客再扩 41 所，约 174 所），名单以美国、欧洲、巴西、韩国、日本、新加坡等院校为主。",
+      "quota": "每月 1,000 Credits，连续 12 个月（合计约 12,000 Credits）；未用完额度不结转，且该档不可额外购买 Credits；与 Free 档每月 50 Credits 相比约 20 倍。",
       "benefitValue": "12,000 Credits/年（每月 1,000，官方未单列货币价值；按 add-on $0.04/Credit 折算约 $480，仅供参考）",
-      "eligibility": "仅限官方 Eligible Schools 名单内院校的在校学生，需通过学生身份验证（页面提供学校申请入口，可提交本校加入）；名单当前以美国、欧洲、巴西、韩国、日本等院校为主，未见中国大陆与港澳台院校；同一学生是否可重复申领官方未说明。",
-      "regions": "仅官方 Eligible Schools 名单内院校（主要为美国、欧洲、巴西、韩国、日本等），当前名单未见中国大陆、港澳台院校",
-      "validity": "自学生验证通过起 12 个月，每月发放 1,000 Credits；到期后回落至 Free 档。",
+      "eligibility": "仅限官方 Eligible Schools 名单内院校的在校学生（约 174 所，2026-10-28 新增 41 所），需通过 SheerID 学生验证（提交姓名、出生日期、学校邮箱，可能追加证明材料），验证仅能进行一次；名单当前以美国、欧洲、巴西、韩国、日本、新加坡等院校为主，未见中国大陆与港澳台院校；不在名单的学校可通过页面入口申请加入。",
+      "regions": "仅官方 Eligible Schools 名单内院校（约 174 所，主要为美国、欧洲、巴西、韩国、日本、新加坡等），当前名单未见中国大陆、港澳台院校",
+      "validity": "自学生验证通过起 12 个月，每月发放 1,000 Credits；到期后账号自动回落至 Kiro Free 档，不自动续期。",
       "deadlineNote": "官方未公布学生计划整体结束日期；个人权益期为验证通过后 12 个月",
       "officialUrl": "https://kiro.dev/students/",
       "claimUrl": "https://kiro.dev/students/",
@@ -3317,13 +3387,23 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Kiro 官方学生页可读，明确「符合资格的在校大学生每月 1,000 Credits、免费一年」并公开 Eligible Schools 院校名单与学校申请入口；未登录实测验证流程，是否需绑卡官方未披露。",
-      "lastVerifiedAt": "2026-10-30T19:20:54.885Z",
-      "nextReviewAt": "2026-10-31T19:20:54.885Z",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
       "evidence": [
         {
           "url": "https://kiro.dev/students/",
           "summary": "学生页：「Eligible university students get 1,000 credits per month free for one year」，提供 Sign up and verify、Instructions 与 Terms & Conditions 链接，并列出 Eligible Schools 院校清单（含 ASU、CMU、Georgia Tech、ETH Zurich、EPFL、Imperial College London、Yonsei 等，未见中国大陆/港澳台院校）与「Don’t see your school listed?」申请入口。",
           "checkedAt": "2026-10-30T19:20:54.885Z"
+        },
+        {
+          "url": "https://kiro.dev/blog/41-more-universities/",
+          "summary": "官方博客 2026-10-28：Kiro for Students 扩展至另外 41 所大学（此前 2026-09 为 133 所）；符合资格院校学生免费一年、每月 1,000 Credits 并可用付费档模型；说明验证流程（Settings → Students → SheerID）、验证仅一次、额度不结转、不可购买额外 Credits、一年后自动降级为 Free 档。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
+        },
+        {
+          "url": "https://kiro.dev/students/",
+          "summary": "复核学生页 Eligible Schools 清单（ASU、CMU、Georgia Tech、ETH Zurich、EPFL、Imperial College London、NUS、NTU、Kobe University、Yonsei 等），全文未出现 China / Hong Kong / Taiwan 院校，名单判断维持“无中国大陆与港澳台院校”。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
         }
       ],
       "history": [
@@ -3331,6 +3411,98 @@
           "at": "2026-10-30T19:20:54.885Z",
           "status": "active",
           "note": "新增：Kiro 官方学生计划确认在校生每月 1,000 Credits、免费一年，资格限官方院校名单，当前名单未见中国大陆与港澳台院校。"
+        },
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "复核成功：官方 2026-10-28 公告将学生计划扩展至另外 41 所院校（累计约 174 所），权益（每月 1,000 Credits / 一年 / 验证一次 / 不结转 / 到期降级）不变；名单仍无中国大陆与港澳台院校。"
+        }
+      ]
+    },
+    {
+      "id": "github-copilot-free-2000-completions-2026",
+      "title": "GitHub Copilot Free：每月 2,000 次补全 + AI Credits 额度（$0）",
+      "provider": "GitHub (Microsoft)",
+      "category": "ai",
+      "description": "GitHub 官方 Copilot 计划文档列出面向个人的 Copilot Free 档：$0/月，无需付费订阅，含每月 2,000 次代码补全（inline suggestions 与 Next edit suggestions）、IDE 内 Copilot Chat、GitHub Mobile / GitHub.com 聊天、Windows Terminal 与 CLI 中的 Copilot，并提供一份 GitHub AI Credits 额度；模型仅能通过自动选择使用，不含 agent 模式、云端 Copilot 与 MCP 等付费能力。",
+      "quota": "每月 2,000 次补全（inline suggestions + next edit suggestions）；聊天走 GitHub AI Credits 额度（官方计划页仅写「an allowance of GitHub AI Credits」，未公布具体数值，需在账号设置查看）；模型访问仅限 auto model selection；不含 Copilot in the cloud、agent 模式、Copilot code review（仅 VS Code 内 Review selection 可用）等付费功能。",
+      "benefitValue": "官方标价 $0/月；同页付费档为 Pro $10/月（1,500 AI credits）、Pro+ $39/月（7,000）、Max $100/月（20,000）。免费档仅能用少量 AI Credits，官方未给出该额度的具体数值，无法可靠折算金额。",
+      "eligibility": "面向没有通过组织或企业获得 Copilot 访问权的个人开发者；一个 GitHub 个人账号即可开通，无需付费。已验证教师与热门开源项目维护者另可免费获得 Copilot Pro。",
+      "regions": "官方计划页未列国家/地区限制；Copilot 服务可用地区以 GitHub 通用条款与 Copilot 服务条款为准，中国大陆地区访问稳定性未在文档中说明。",
+      "validity": "官方将其列为常设个人计划档位（$0/月），补全额度与 AI Credits 按月重置（随计费周期）；官方未给出该档结束日期。",
+      "deadlineNote": "官方未公布 Copilot Free 档结束时间；额度按月重置，不代表永久不变。",
+      "officialUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "claimUrl": "https://github.com/features/copilot/plans",
+      "discoveryUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "discoveredAt": "2026-10-31T01:31:34.207Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费档 $0，不需要支付方式；补全额度用尽后当月不再提供补全，需等下一个计费周期或升级付费档（Pro $10/月 = base 1,000 + flex 500 = 1,500 AI credits）。超出免费额度不会自动扣费，官方未说明免费档可单独购买 add-on。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "GitHub 官方文档「plans」页明确列出 Copilot Free 为 $0 档、每月 2,000 次补全、仅自动选模型、聊天计入 GitHub AI Credits 额度，并给出各付费档价格与 Credits 数；AI Credits 具体数值该页未公布，属官方未披露项而非冲突。",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
+      "evidence": [
+        {
+          "url": "https://docs.github.com/en/copilot/get-started/plans",
+          "summary": "Individual plans 表：Copilot Free「An allowance of GitHub AI Credits」「Limited」「Auto model selection only」；付费档 Pro $10/月（base 1,000 + flex 500 = 1,500 AI credits）、Pro+ $39（3,900+3,100=7,000）、Max $100（10,000+10,000=20,000）；另注明 Copilot Free 仅面向未通过组织/企业获得 Copilot 的个人开发者。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/get-started/plans",
+          "summary": "同页「Inline suggestions and Copilot Chat」段：inline suggestions 与 next edit suggestions 在 Copilot Free 上「Limited to 2000 completions per month」；Copilot Chat 覆盖 IDE、inline chat、slash commands、GitHub Mobile、GitHub.com、Windows Terminal，其中 1 项功能不适用于 Free。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "active",
+          "note": "新增：GitHub 官方计划文档确认 Copilot Free 为 $0 档，每月 2,000 次补全、聊天走 GitHub AI Credits 额度（数值未公布）、仅自动选模型；未注册实测额度消耗。"
+        }
+      ]
+    },
+    {
+      "id": "gemini-api-free-tier-202610",
+      "title": "Gemini API 免费层：免费层项目无需绑卡即可调用（逐模型限速）",
+      "provider": "Google (Gemini API / AI Studio)",
+      "category": "ai",
+      "description": "Gemini API 官方限速文档列出四个使用层级，其中 Free 层的资格为「active project or free trial」，无需关联结算账户即可使用，按模型分别限速（RPM / 输入 TPM / RPD），每日 RPD 额度在太平洋时间零点重置；Free 层不存在消费型限速，配额按项目而非按 API Key 计。",
+      "quota": "Free 层按模型提供 RPM / TPM / RPD 额度，具体数值官方限速页当前只在交互表格中展示，静态页面正文未列出 Free 层逐模型数字，需在 AI Studio 的项目限额页查看；官方另注明预览/实验模型限速更严，Google Search 接地在 Gemini 3 及更新模型上默认 1,500 RPD/项目。",
+      "benefitValue": "免费层不产生费用（官方限速表标明 Free 层消费型限速为 N/A），官方未给出等价金额，不折算货币价值。",
+      "eligibility": "拥有一个处于活跃状态的 Google Cloud / AI Studio 项目即可，官方限速表的 Free 层资格写为「Active project or free trial」，未要求绑定结算账户；升级到 Tier 1 需关联有效结算账户（结算上限 $250）。",
+      "regions": "Gemini API 可用地区以官方 Available regions 页为准，未在限速页逐国列出；中国大陆地区可用性未在文档中说明。",
+      "validity": "免费层为长期存在的用量层级，额度按模型限速 + 每日（太平洋时间零点）重置；官方保留调整各模型限速的权利，未承诺固定数值。",
+      "deadlineNote": "官方未公布免费层结束时间，但明示「Specified rate limits are not guaranteed and actual capacity may vary」，不构成永久额度承诺。",
+      "officialUrl": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "claimUrl": "https://aistudio.google.com/apikey",
+      "discoveryUrl": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "discoveredAt": "2026-10-31T01:31:34.207Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费层本身 $0；一旦在 AI Studio 关联结算账户即自动升为 Tier 1 并按用量计费（Tier 1 消费上限 $250/10 分钟，Tier 2 $2,000、Tier 3 $20,000–$100,000+），因此不能为测试额度随意绑卡。免费层数据可能被用于改进产品（付费层不用于训练），官方未在本页承诺免费层 SLA。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方限速页明确 Free 层存在（无需结算账户、按项目限速、太平洋时间零点重置 RPD）与各层级升级条件；但 Free 层逐模型 RPM/TPM/RPD 具体数值未在可读页面正文列出（仅交互表格/AI Studio 内可见），关键额度缺项，故保持待核实。",
+      "lastVerifiedAt": "2026-10-31T01:31:34.207Z",
+      "nextReviewAt": "2026-11-01T01:31:34.207Z",
+      "evidence": [
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+          "summary": "限速文档：三个维度 RPM / 输入 TPM / RPD，按项目而非 API Key 计，RPD 于太平洋时间零点重置；使用层级表写明 Free 层资格为「Active project or free trial」、结算上限 N/A；消费型限速表显示 Free 层为 N/A；并注明限速不保证、实际容量可能波动。页面末次更新 2026-10-28。",
+          "checkedAt": "2026-10-31T01:31:34.207Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-31T01:31:34.207Z",
+          "status": "pending",
+          "note": "新增：官方限速文档确认 Gemini API 免费层存在且无需结算账户，但逐模型 Free 层额度数值未在静态页面公布，保持 pending/medium 待人工在 AI Studio 核对具体 RPM/TPM/RPD。"
         }
       ]
     }
