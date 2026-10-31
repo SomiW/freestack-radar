@@ -957,8 +957,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "华为云官方活动页内嵌商品数据与规则文本可读，确认机型规格（2 核 2G2M/100G 月流量/40G 盘/华北-北京四/1 年）、现价 36 元与同页原价 395.28 元、V0 新客与限购 1 台条件、活动期 2026-08-28 至 12-31、以及“续费不适用促销价”规则；未登录下单实测，实时库存无法确认。",
-      "lastVerifiedAt": "2026-10-30T07:08:19Z",
-      "nextReviewAt": "2026-10-31T07:08:19Z",
+      "lastVerifiedAt": "2026-10-31T07:38:14Z",
+      "nextReviewAt": "2026-11-01T07:38:14Z",
       "evidence": [
         {
           "url": "https://activity.huaweicloud.com/phbcecs.html",
@@ -994,6 +994,11 @@
           "url": "https://activity.huaweicloud.com/phbcecs.html",
           "summary": "官方活动页本轮「活动规则」内联可读：Flexus L实例-2核2G2M 1年，数据中心华北-北京四、系统盘 40GB、固定带宽 100G/月，券前 price current=36 元 / origin=395.28 元；账号限制 V0新客（不限个企）、限购 1 台；规则明确「续费价格以当期官网价为准，本活动页面的促销价不适用于续费价格」，变更价同；支持先选任意镜像下单后切换 Windows 镜像。",
           "checkedAt": "2026-10-30T07:08:19Z"
+        },
+        {
+          "url": "https://activity.huaweicloud.com/phbcecs.html",
+          "summary": "2026-10-31 复核：官方活动页规则区本轮完整内联可读，Flexus L 实例-2 核 2G 2M 1 年、个人/企业新客（V0）专享、限购 1 台、活动时间 2026-08-28 至 2026-12-31 均未变化；规则明确「续费价格以当期官网价为准，本活动促销价不适用于续费」，变更价同理，活动不可与折扣叠加，退订按官网退订规则（每账号每年 10 台五天无理由）。",
+          "checkedAt": "2026-10-31T07:38:14Z"
         }
       ],
       "history": [
@@ -1021,6 +1026,11 @@
           "at": "2026-10-30T07:08:19Z",
           "status": "active",
           "note": "复核成功：36 元/年、2 核 2G 2M、100 GB/月流量、华北-北京四、限购 1 台、续费按当期官网价等条款与上次一致；本轮首次读到官方原价 395.28 元/年，已补记 costNotes。"
+        },
+        {
+          "at": "2026-10-31T07:38:14Z",
+          "status": "active",
+          "note": "复核成功：36 元/年套餐配置、活动期（至 2026-12-31）、新客与限购 1 台、续费按官网价等条款与上次一致，无实质变化。"
         }
       ]
     },
@@ -2129,8 +2139,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Modal 官方定价页与 FAQ 可读，明确 Starter 档 $0/月含 $30 计算额度、覆盖 Functions/Sandboxes（按秒计 CPU/内存/GPU）与 1 TiB 卷、1 TiB 出网、3 seat、100 容器/10 GPU 并发，并明确 Shared Endpoints token 不计入额度、Sandbox 按 3 倍非抢占价计费；未注册实测额度，绑卡要求官方页面未说明。",
-      "lastVerifiedAt": "2026-10-30T07:08:19Z",
-      "nextReviewAt": "2026-10-31T07:08:19Z",
+      "lastVerifiedAt": "2026-10-31T07:38:14Z",
+      "nextReviewAt": "2026-11-01T07:38:14Z",
       "evidence": [
         {
           "url": "https://modal.com/pricing",
@@ -2156,6 +2166,11 @@
           "url": "https://modal.com/pricing",
           "summary": "官方定价页 Starter 仍为 $0 + compute/月、含 $30/月 free credits、3 workspace seats、100 containers + 10 GPU 并发、1 TiB/月免费出网；Team $250/月含 $100/月额度。FAQ 仍写明 included usage 只覆盖 Functions 与 Sandboxes 的按秒 CPU/内存/GPU 计费，不覆盖 Shared Endpoints（token 自首次请求即计费，2026-09-01 起）；Sandboxes 按非抢占资源 3 倍 list price 计费。",
           "checkedAt": "2026-10-30T07:08:19Z"
+        },
+        {
+          "url": "https://modal.com/pricing",
+          "summary": "2026-10-31 复核：官方定价页 Starter 仍为 $0 + compute/月、含 $30/月 free credits、3 workspace seats、100 containers + 10 GPU 并发、1 TiB/月免费出网；Team $250/月含 $100/月额度。FAQ 仍写明 included usage 只覆盖 Functions 与 Sandboxes 的按秒 CPU/内存/GPU 计费，不覆盖 Shared Endpoints（按 token 计费，自首次请求起即计费）。",
+          "checkedAt": "2026-10-31T07:38:14Z"
         }
       ],
       "history": [
@@ -2173,6 +2188,11 @@
           "at": "2026-10-30T07:08:19Z",
           "status": "active",
           "note": "复核成功：Starter $30/月计算额度、3 seat、100 容器/10 GPU 并发、1 TiB 出网与 Shared Endpoints 不计入额度的条款均未变化。"
+        },
+        {
+          "at": "2026-10-31T07:38:14Z",
+          "status": "active",
+          "note": "复核成功：$30/月计算额度、3 seat、100 容器/10 GPU 并发、1 TiB 出网与 Shared Endpoints 不计入额度的条款均未变化。"
         }
       ]
     },
@@ -2500,8 +2520,8 @@
       "costNotes": "不是免费额度：必须已有付费 ChatGPT Pro 或 Business 订阅（Pro 自 $100/月起）。额度只抵扣关联 API 组织的平台用量（Responses、Agents 含托管沙箱、Decisions、GPT-Live/Realtime、Images、网页搜索/文件搜索/代码解释器等内置工具及其存储），不含用 API Key 调用 Codex 的费用，也不提高 ChatGPT 或登录态 Codex 的用量上限。免费额度先于已购额度消耗，用尽后按普通 API 计费，无余额时返回 429 credit_balance_exhausted，可开启 Auto Recharge。每个订阅只能关联一个 API 组织；降级到 Plus/Go/Free 会在计费周期末解除关联；升级 Pro 档或新增席位按比例补发，席位减少从下一周期生效；更换接收组织需联系客服。",
       "confidence": "high",
       "confidenceReason": "OpenAI 官方开发者文档页面与其 Markdown 全文（developers.openai.com/api/docs/guides/chatgpt-api-credits）直接读到了档位金额表、席位折算与 $500/$6,000 上限、7 天订阅门槛、所有者与同邮箱要求、按周期清零与首次折算、额度覆盖范围与「Codex via API keys 不支持」条款；未登录账号实测领取流程。",
-      "lastVerifiedAt": "2026-10-30T07:08:19Z",
-      "nextReviewAt": "2026-10-31T07:08:19Z",
+      "lastVerifiedAt": "2026-10-31T07:38:14Z",
+      "nextReviewAt": "2026-11-01T07:38:14Z",
       "evidence": [
         {
           "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
@@ -2522,6 +2542,11 @@
           "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits.md",
           "summary": "官方文档（Markdown 全文）仍为：Pro $100/$200/$500 档每月返等额 API credits；Business Standard 每付费席位 $20、Premium 每席位 $100，工作区每月上限 $500，年付一次性发放全年额度上限 $6,000/年；资格须付费订阅满 7 天、订阅与 API 组织同一邮箱且均为 owner；额度按计费周期清零不结转；不含 API Key 调用 Codex。",
           "checkedAt": "2026-10-30T07:08:19Z"
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits.md",
+          "summary": "2026-10-31 复核（官方 Markdown 全文）：Pro $100/$200/$500 档每月返等额 API credits，Business Standard 每付费席位 $20、Premium 每席位 $100、工作区每月上限 $500（年付一次性发放、上限 $6,000/年）；资格须付费订阅满 7 天、订阅与 API 组织同一邮箱且双方 owner、无需 API 付款方式；额度按计费周期清零不结转；不含 API Key 调用 Codex，也不提升 ChatGPT/Codex 用量上限。",
+          "checkedAt": "2026-10-31T07:38:14Z"
         }
       ],
       "history": [
@@ -2532,6 +2557,11 @@
         },
         {
           "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：额度金额、席位口径、7 天门槛、同邮箱 owner 要求、周期末清零与不含 API Key 跑 Codex 等条款均未变化。"
+        },
+        {
+          "at": "2026-10-31T07:38:14Z",
           "status": "active",
           "note": "复核成功：额度金额、席位口径、7 天门槛、同邮箱 owner 要求、周期末清零与不含 API Key 跑 Codex 等条款均未变化。"
         }
@@ -2561,8 +2591,8 @@
       "costNotes": "免费档 $0、无月费，无信用卡要求；超出每日 200 次请求或调用付费模型需升级按量付费：在供应商原价基础上统一加价 5%（官方示例：模型 $10/百万 token → 经网关 $10.50）；自带供应商 Key 仍在付费档。官方未披露免费档的并发、上下文长度与免费模型速率限制，也未说明超额请求是报错还是被拒。",
       "confidence": "high",
       "confidenceReason": "Requesty 官方定价页正文与页面内嵌 FAQ 结构化数据均写明：Free 档 $0、可用全部免费模型、200 requests per day、无需信用卡，并列出付费档 5% 加价与 600+ 模型/自带 Key 的差异；未注册实测请求额度与当前免费模型清单。",
-      "lastVerifiedAt": "2026-10-30T07:08:19Z",
-      "nextReviewAt": "2026-10-31T07:08:19Z",
+      "lastVerifiedAt": "2026-10-31T07:38:14Z",
+      "nextReviewAt": "2026-11-01T07:38:14Z",
       "evidence": [
         {
           "url": "https://www.requesty.ai/pricing",
@@ -2578,6 +2608,11 @@
           "url": "https://www.requesty.ai/pricing",
           "summary": "官方定价页 Free 档仍为 $0：Access to all free models、200 requests per day、routing/caching/fallbacks、spend tracking、EU data residency、No credit card required；付费档为按量 + 5% 加价（官方示例 $10/1M tokens → $10.50），600+ 模型、自带 Key 属付费档。",
           "checkedAt": "2026-10-30T07:08:19Z"
+        },
+        {
+          "url": "https://www.requesty.ai/pricing",
+          "summary": "2026-10-31 复核：官方定价页 Free 档仍为 $0（Access to all free models、200 requests per day、routing/caching/fallbacks、spend tracking、EU data residency、No credit card required）；付费档按量 + 5% 加价、600+ 模型与自带 Key 属付费档，未变化。",
+          "checkedAt": "2026-10-31T07:38:14Z"
         }
       ],
       "history": [
@@ -2588,6 +2623,11 @@
         },
         {
           "at": "2026-10-30T07:08:19Z",
+          "status": "active",
+          "note": "复核成功：免费档 200 请求/日、仅免费模型、免绑卡与 5% 加价口径均未变化。"
+        },
+        {
+          "at": "2026-10-31T07:38:14Z",
           "status": "active",
           "note": "复核成功：免费档 200 请求/日、仅免费模型、免绑卡与 5% 加价口径均未变化。"
         }
@@ -3503,6 +3543,108 @@
           "at": "2026-10-31T01:31:34.207Z",
           "status": "pending",
           "note": "新增：官方限速文档确认 Gemini API 免费层存在且无需结算账户，但逐模型 Free 层额度数值未在静态页面公布，保持 pending/medium 待人工在 AI Studio 核对具体 RPM/TPM/RPD。"
+        }
+      ]
+    },
+    {
+      "id": "tencent-cloud-double11-lighthouse-38-yuan-2026",
+      "title": "腾讯云 2026 双11：轻量应用服务器 4核4G3M（300GB 月流量）秒杀 38 元/年",
+      "provider": "腾讯云（Tencent Cloud）",
+      "category": "cloud",
+      "description": "腾讯云官方「2026 年终特惠 / 双11」会场（cloud.tencent.com/act/pro/double11-202611）秒杀专区上架「日常大促-秒杀-轻量 4核4G3M」：SKU 为 4核4G3M + 300GB 月流量，商品描述为国内特惠型、4 核 CPU / 4G 内存 / SSD 40GB / 峰值带宽 3M / 流量包 300GB，时长 1 年，镜像支持 Linux 与 Windows 类，可选地域为广州、上海、北京，实付 38 元、划线总价 780 元。秒杀按日分场限量放货（读取时 2026-10-31 的 10:00–12:00 场次已结束、状态「已结束」且库存 0），售完即止。活动整体窗口为即日起至 2026-11-30 23:59:59。",
+      "quota": "轻量应用服务器 1 台：4 核 / 4G / SSD 40GB / 峰值带宽 3M / 月流量包 300GB / 时长 1 年；地域可选广州、上海、北京；镜像 Linux 或 Windows；单个订单限购 1 台（商品限制 goodsNum 1–1）。",
+      "benefitValue": "38 元/年（页面原价/总价 780 元/年，约 4.9% 折扣，折合约 3.17 元/月）；属超低价云服务器，非免费资源。",
+      "eligibility": "腾讯云官网已注册且完成个人或企业实名认证的国内站用户（协作者与子用户账号除外）；活动页标题标注「新客 38 元/年起」，该秒杀商品的实际新客口径（是否要求从未付费购买过云资源）未在页面明示，需以下单页判定；同实名/同手机号/同设备/同 IP 视为同一用户。",
+      "regions": "中国大陆：广州、上海、北京（商品 limits 区域配置限国内区）。",
+      "validity": "秒杀按日分场开放（页面数据示例：2026-10-31 有 10:00–12:00 与 18:00 起的场次）；成功下单后「自购买一年内有效」，即 1 年包年包月；活动整体至 2026-11-30 23:59:59。",
+      "deadlineNote": "官方活动规则写「即日起至 2026 年 11 月 30 日 23:59:59」；秒杀场次与库存按日刷新，读取时当日 10:00–12:00 场次已结束、库存 0，需等到下一个场次放货。",
+      "officialUrl": "https://cloud.tencent.com/act/pro/double11-202611",
+      "claimUrl": "https://cloud.tencent.com/act/pro/double11-202611",
+      "discoveryUrl": "https://cloud.tencent.com/act",
+      "creditCard": "not-required",
+      "autoRenewal": "unknown",
+      "costNotes": "38 元是秒杀价、每单限 1 台，页面总价 780 元/年；续费价未在该商品卡片披露，活动页另设「同价续费专区（商品享新购续费同价）」，但未明示本秒杀 SKU 是否入选，续费前需自行核对；峰值带宽 3M，月流量包 300GB，超出部分按流量另行计费；同一会场「买赠专区」明确不支持退款，秒杀专区未单列退款条款；国内站需实名认证，未实名无法下单。",
+      "confidence": "medium",
+      "confidenceReason": "腾讯云官方活动页可直读，并从页面内嵌商品 JSON 解析出该秒杀档的 SKU（4核4G3M + 300GB 月流量）、实付 38 元 / 总价 780 元 / 12 个月、地域与镜像限制、活动期至 2026-11-30 与实名认证门槛；但「新客」具体口径、该 SKU 续费价与每日放货量官方未明示，故不足以标 active。",
+      "discoveredAt": "2026-10-31T07:38:14Z",
+      "startsAt": null,
+      "endsAt": "2026-11-30T15:59:59Z",
+      "status": "pending",
+      "lastVerifiedAt": "2026-10-31T07:38:14Z",
+      "nextReviewAt": "2026-11-01T07:38:14Z",
+      "evidence": [
+        {
+          "url": "https://cloud.tencent.com/act/pro/double11-202611",
+          "summary": "官方「2026 年终特惠/双11」会场页 meta 与首屏文案：「4核4G服务器新客 38元/年起」「Token Plan 低至28元/月」「免费领取6490元代金券礼包」；页面规则区写活动时间「即日起至2026年11月30日23:59:59」、活动对象「腾讯云官网已注册且完成企业或个人实名认证的国内站用户（协作者与子用户账号除外）」。",
+          "checkedAt": "2026-10-31T07:38:14Z"
+        },
+        {
+          "url": "https://cloud.tencent.com/act/pro/double11-202611",
+          "summary": "页面内嵌商品数据（act_id 1996855673581677）：「日常大促-秒杀-轻量 4核4G3M」，skuList 为 4核4G3M / 300GB 月流量，descp 为「国内[特惠型][cpu4核][内存4G][SSD40GB][峰值带宽3M][流量包300GB]」、镜像 Linux/Windows、时长 1 年；priceData 实付 3800 分（38 元）、总价 78000 分（780 元）、time_span 12 个月；attachList 地域「广州/上海/北京」。",
+          "checkedAt": "2026-10-31T07:38:14Z"
+        },
+        {
+          "url": "https://cloud.tencent.com/act/pro/double11-202611",
+          "summary": "秒杀场次数据：2026-10-31 的 10:00–12:00 场次 dynamic_status 为「已结束」，该商品 available=0；2026-11-01 场次「未开始」，说明按日分场限量放货。",
+          "checkedAt": "2026-10-31T07:38:14Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-31T07:38:14Z",
+          "status": "pending",
+          "note": "从腾讯云官方活动聚合页进入 2026 双11 会场，解析到轻量 4核4G3M 秒杀档实付 38 元/12 个月（总价 780 元）与实名认证门槛；因新客口径、续费价与放货量未披露，按 pending/medium 入库，未注册、未下单。"
+        }
+      ]
+    },
+    {
+      "id": "tencent-cloudbase-miniprogram-growth-plan-2026",
+      "title": "腾讯云 CloudBase 小程序成长计划（二期）：10 亿混元 Token + 10 万张生图 + 6 个月个人版环境",
+      "provider": "腾讯云 CloudBase（云开发）",
+      "category": "both",
+      "description": "微信公众平台与腾讯云 CloudBase 联合的「AI 应用及线上工具小程序成长计划」二期（2026-07-01 至 2026-12-31）。成功报名后按报名时的云开发环境情况发放权益：没有微信云开发环境 → 免费获得 6 个月有效个人版环境 + AI 资源包；已有「开发阶段免费体验」环境 → 自动升级为 6 个月个人版环境 + AI 资源包；已有「非开发阶段免费体验」环境 → 领取 120 元云开发代金券 + AI 资源包。二期 AI 资源包为 10 亿 Token（hy4-preview、hy3、deepseek-v4.1-flash）与 10 万张生图额度（HY-Image 3.0 系列），自申请成功起 6 个月有效，仅限小程序与云开发服务端调用。报名入口：微信公众平台 → 行业能力 → 小程序成长计划。",
+      "quota": "10 亿 Token（可用 hy4-preview、hy3、deepseek-v4.1-flash）+ 10 万张图片生成（HY-Image-3.0-Plus-4090-Tob-v1.0、HY-Image-v3.0-I2I-ToB-v1.0.1，官方公告两款生图模型于 2026-12-01 00:00 下线）+ 6 个月个人版环境（二期为资源点套餐）或 120 元云开发代金券；一个小程序账号只能参与一次。",
+      "benefitValue": "官方未公布本次赠送的等价金额：含 10 亿 Token、10 万张生图额度与 6 个月云开发个人版环境（官方页面把该档套餐的固定套餐费按 ￥199/月 举例，但不等同于赠送金额），整体价值无法可靠估值。",
+      "eligibility": "需在微信公众平台拥有小程序（小游戏走「功能 → 游戏能力地图 → AI 成长计划」入口）并在「行业能力 → 小程序成长计划」报名；一个小程序账号只能参与一次；报名时仅支持选择微信云开发环境，腾讯云创建的环境需先转换为微信云开发环境；官方 2026-07 加码公告称报名全行业开放（不再限类目），2026-01 首期文章中的类目限制（文娱/工具/社交/深度合成/资讯）以最新口径为准；个人主体可凭营业执照申请「深度合成」类目。",
+      "regions": "中国大陆微信小程序生态（微信公众平台报名）；官方未逐地区列明限制。",
+      "validity": "二期报名窗口 2026-07-01 至 2026-12-31；AI 资源包（Token 与生图额度）自申请成功之日起 6 个月有效；代金券自发放之日起 6 个月内有效、仅限云开发产品使用；6 个月个人版环境到期后需自行处理。",
+      "deadlineNote": "官方文档标注二期周期为 2026-07-01 至 2026-12-31，未给出具体截止时刻；资源包 6 个月有效期从申请成功日算起，可能延续到二期结束之后。",
+      "officialUrl": "https://docs.cloudbase.net/ai/ai-inspire-plan",
+      "claimUrl": "https://mp.weixin.qq.com",
+      "discoveryUrl": "https://cloud.tencent.com/act/pro/double11-202611",
+      "creditCard": "not-required",
+      "autoRenewal": "unknown",
+      "costNotes": "免费额度仅限小程序与云开发服务端使用，其他来源（如自建后端直调）不可用；Token 耗尽后平台不会在套餐外单独计费，但需把环境切换为资源点套餐才能继续调用，非资源点套餐会直接调用失败；生图额度耗尽后云开发套餐不支持抵扣；二期两款生图模型 2026-12-01 00:00 下线，需提前适配 hy-image-v3.5-preview；并发受限（EXCEED_CONCURRENT_REQUEST_LIMIT）且官方不支持提额；一个小程序限领一次，领取后不支持切换腾讯云账号或云开发环境；代金券仅限云开发产品。",
+      "confidence": "high",
+      "confidenceReason": "官方文档 docs.cloudbase.net/ai/ai-inspire-plan 明列二期周期（2026-07-01~12-31）、10 亿 Token / 10 万张图额度、可用模型清单、三档环境权益（6 个月个人版 / 自动升级 / 120 元代金券）、报名入口与「一个小程序限一次」「仅限小程序和云开发服务端」「资源包 6 个月有效」等关键限制；腾讯云 2026 双11 云开发分会场仍在推广该计划。未实际报名实测到账。",
+      "discoveredAt": "2026-10-31T07:38:14Z",
+      "startsAt": "2026-06-30T16:00:00Z",
+      "endsAt": "2026-12-31T16:00:00Z",
+      "status": "active",
+      "lastVerifiedAt": "2026-10-31T07:38:14Z",
+      "nextReviewAt": "2026-11-01T07:38:14Z",
+      "evidence": [
+        {
+          "url": "https://docs.cloudbase.net/ai/ai-inspire-plan",
+          "summary": "官方文档「小程序成长计划」：二期（2026-07-01~2026-12-31）Token 额度 10 亿、图片生成 10 万张，文本模型 hy4-preview/hy3/deepseek-v4.1-flash，生图模型 HY-Image 3.0 两款；报名时无环境免费得 6 个月个人版环境、开发阶段环境自动升级、非开发阶段环境给 120 元代金券，均附 AI 资源包；一个小程序账号只能参与一次；AI 资源包自申请成功起 6 个月有效，仅限小程序和云开发服务端使用；报名入口 mp.weixin.qq.com 行业能力。",
+          "checkedAt": "2026-10-31T07:38:14Z"
+        },
+        {
+          "url": "https://cloud.tencent.com/act/pro/double11-202611",
+          "summary": "腾讯云 2026 双11「云开发 CloudBase 分会场」仍在推广：新用户领取 6 个月免费体验，参与小程序成长计划即送 Token（分会场文案写「1亿 Hy4 preview tokens」，与官方文档二期 10 亿口径不一致，以文档为准）。",
+          "checkedAt": "2026-10-31T07:38:14Z"
+        },
+        {
+          "url": "https://cloudbase.net/blog/2026/07/07/wx-ai-miniapp-plan",
+          "summary": "CloudBase 官方博文（2026-07-07）二期中：Token 额度由 1 亿提升至 10 亿、生图由 1 万张提升至 10 万张，模型升级至 Hy3 与 HY-Image 3.0；资源包自申请成功起 6 个月有效；报名入口微信公众平台 → 行业能力 → 小程序成长计划。",
+          "checkedAt": "2026-10-31T07:38:14Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-10-31T07:38:14Z",
+          "status": "active",
+          "note": "从腾讯云双11 云开发分会场发现该计划，回到官方文档与官方博文核对二期额度（10 亿 Token / 10 万张图 / 6 个月个人版环境）、模型清单与报名限制，按 active/high 入库；未实际报名，未领取资源。"
         }
       ]
     }
