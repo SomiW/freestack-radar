@@ -3,30 +3,30 @@
   "resources": [
     {
       "id": "instabox-free-agent-machine-2026",
-      "title": "InstaBox 免费 Agent 云机器（新账户 1 台）",
+      "title": "InstaBox 免费 Agent 云机器（Free 档 1 台 4 vCPU / 8 GiB）",
       "provider": "InstaBox",
       "category": "cloud",
-      "description": "官方 Free 计划提供云端微型 Linux 虚拟机，适合 AI Agent、远程开发和云端浏览器场景；闲置 30 分钟自动暂停。",
-      "quota": "1 台云机器：4 vCPU、8 GiB 内存；5 个快照；免费套餐含每月 100 GiB 出站流量。",
-      "benefitValue": "官方 Free 计划 $0；不将机器按使用量模拟付费价值。",
-      "eligibility": "需注册 InstaBox；公开社区报道存在候补名单或邀请码，新账号是否立刻能创建未实测。2026-10-20 以前创建的账户到 12 月 1 日之前可能保留 5 台免费机器旧权益。",
-      "regions": "官方页面未完整列出注册及地区限制，待进一步核实。",
-      "validity": "免费套餐持续期限未披露；机器闲置 30 分钟后自动暂停。",
-      "deadlineNote": "官网未公布 Free 套餐结束日期；个别早期账户 5 台免费机过渡至 2026-12-01。",
+      "description": "InstaBox 为每个 Agent 提供一台独立 Linux 云机器；官方 Free 计划 $0，含 1 台 4 vCPU / 8 GiB 微型虚拟机、20 GiB 持久盘，闲置 30 分钟自动暂停，单次最长运行 480 分钟。",
+      "quota": "Free 档 1 台机器：4 vCPU / 8 GiB 内存、20 GiB /data 持久盘（Free 档固定）、5 个快照、100 GiB/月 出站流量、200 GiB 已存储数据上限；单次最长运行 480 分钟；闲置 30 分钟自动暂停（Free 档固定 30 分钟不可调）；Free 档仅支持 4/8 规格，且只能从 agent-browser 或 ci 模板创建。",
+      "benefitValue": "官方 Free 计划 $0，官方 billing 文档明确「A free sandbox is never billed, so a free month is $0.00」；不按使用量模拟付费价值。",
+      "eligibility": "需注册 InstaBox 账号；官方 Agent sign-up 流程允许无浏览器的 Agent 自行注册、由账号所有者持码确认后生效；公开社区报道存在候补名单或邀请码，新账号能否立即创建机器未实测。2026-10-20 前注册且 2026-10-25 07:45 UTC 前激活的账户可保留 5 台免费机器至 2026-12-01 00:00 UTC。",
+      "regions": "官方页面与文档未列出机房清单与地区限制。",
+      "validity": "Free 计划无期限披露；单次最长运行 480 分钟，闲置 30 分钟自动暂停（Free 档固定）。",
+      "deadlineNote": "官方未公布 Free 套餐结束日期；2026-10-20 前注册且 2026-10-25 07:45 UTC 前激活的账户，5 台免费机器过渡至 2026-12-01 00:00 UTC，官方将于 2026-11-26 邮件通知受影响账户。",
       "officialUrl": "https://instabox.sh/pricing",
       "claimUrl": "https://dashboard.instabox.sh/auth/workos/login?screen_hint=sign-up",
       "discoveryUrl": "https://instabox.sh/changelog",
       "discoveredAt": "2026-10-25T15:59:12Z",
       "creditCard": "unknown",
       "autoRenewal": "unknown",
-      "costNotes": "Free $0；100 GiB/月出站流量；价格页显示超额出站流量参考费率 $0.02/GiB，免费档超额如何结算尚未确认；是否要求绑卡不明。不可按传统 24/7 VPS 理解。",
+      "costNotes": "Free 档 $0，磁盘不收费，出站 100 GiB/月后 $0.02/GiB；官方单列价格为 vCPU $0.004/vCPU·小时、内存 $0.00225/GiB·小时、存储 $0.00011/GiB·小时、快照免费、入口流量免费。Free 档是否允许升级与超额付费未在官方文档确认。",
       "startsAt": null,
       "endsAt": null,
       "status": "pending",
       "confidence": "medium",
-      "confidenceReason": "官网证实 Free 套餐为每月 1 台；新账号开通资格、绑卡、超额处理以及当前可领取情况未实测。",
-      "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-26T15:59:12Z",
+      "confidenceReason": "官方 pricing.md、llms.txt 与 billing 文档已给出 Free 档完整规格、限额、计费口径与老账户过渡条款；但新账号领取资格、是否需要绑卡与超额处理仍未确认，故保持待核实。",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
       "evidence": [
         {
           "url": "https://instabox.sh/pricing",
@@ -37,6 +37,21 @@
           "url": "https://instabox.sh/changelog",
           "summary": "2026-10-20 更新：新 Free 为 1 台，老账户有 5 台临时过渡安排，闲置 30 分钟自动暂停。",
           "checkedAt": "2026-10-25T15:59:12Z"
+        },
+        {
+          "url": "https://instabox.sh/pricing.md",
+          "summary": "官方纯文本定价页：Free $0，含 1 machine 4 vCPU / 8 GiB、20 GiB disk（fixed）、5 snapshots、100 GiB egress / month；单列为 vCPU $0.004/小时、内存 $0.00225/GiB·小时、存储 $0.00011/GiB·小时、出站 $0.02/GiB；并写明 2026-10-20 前注册且 2026-10-25 07:45 UTC 前激活的账户拥有 5 台免费沙箱至 2026-12-01 00:00 UTC，其后仅同时运行 1 台，官方于 2026-11-26 邮件通知。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://instabox.sh/llms.txt",
+          "summary": "官方文档索引：Free 计划限制为 1 machine、5 snapshots、200 GiB stored data、idle pause 固定 30 分钟、max run 480 分钟；Free 档规格仅 4/8，只能从 agent-browser 或 ci 模板创建；机器为 Firecracker 微型虚拟机、Debian 13、4 vCPU / 8 GiB、16 GiB 系统盘 + 20 GiB 持久盘；付费档才有 Android 模板与可选 idle 时长。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://instabox.sh/docs/billing.md",
+          "summary": "官方计费文档：Free 档磁盘不收费，「A free sandbox is never billed, so a free month is $0.00」；按小时结算写入账本；账单门户可管理发票、付款方式与收据（Free 档是否必须绑定付款方式未说明）。",
+          "checkedAt": "2026-11-01T02:08:43Z"
         }
       ],
       "history": [
@@ -44,6 +59,11 @@
           "at": "2026-10-25T15:59:12Z",
           "status": "pending",
           "note": "官网免费档和配置可核对；草案直发，当前开通及费用条件尚未全面核实。"
+        },
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "pending",
+          "note": "本轮取到官方 pricing.md、llms.txt 与 billing.md 三份纯文本，补全 Free 档规格、限额、计费口径与老账户 5 台过渡条款；新账号领取资格、是否需绑卡与超额处理仍未确认，维持 pending/medium。未注册、未创建机器。"
         }
       ]
     },
@@ -433,35 +453,50 @@
     },
     {
       "id": "e2b-hobby-one-time-100-credit-2026",
-      "title": "E2B Hobby 一次性 100 美元沙箱额度（待核实）",
+      "title": "E2B Hobby 一次性 100 美元沙箱额度（免基础月费、免绑卡）",
       "provider": "E2B",
       "category": "both",
-      "description": "E2B 面向 AI Agent 代码执行提供 Hobby 计划及一次性使用赠金；官网确认基础额度，赠金有效期及用尽后的处理还需核对。",
-      "quota": "官网列示一次性 $100 usage credit、最多 20 个并发沙箱、单次会话最长 1 小时；默认 2 vCPU/4 GiB RAM，Hobby 10 GiB 存储。",
-      "benefitValue": "官方面值 100 美元的一次性沙箱使用额度；不是每月赠送，不可提现。",
-      "eligibility": "需创建 E2B 账号；官网写明无需信用卡即可开始。聚合源标注新用户，完整发放资格与账户审核条件尚未确认。",
-      "regions": "本次读取的定价页未列出完整可注册国家/地区及沙箱可选区域，待核实。",
-      "validity": "一次性赠金，不按月补充；单次会话上限 1 小时；赠金有效期及暂停/保留策略未从本次官方证据确认。",
-      "deadlineNote": "官网定价页未披露该赠金额度的领取截止或个人额度到期日，不能视为永久有效。",
+      "description": "E2B 为 AI Agent 代码执行提供云端沙箱；Hobby 计划无基础月费，新用户可获一次性 100 美元使用额度，官方定价页标注无需信用卡即可开始。",
+      "quota": "一次性 $100 usage credit（仅新用户）；单沙箱最长连续运行 1 小时；最多 20 个并发沙箱、20 个并发模板构建、沙箱创建速率 1 个/秒；上限 8 vCPU / 8 GiB 内存 / 10 GiB 磁盘；暂停沙箱无限期保留且无 TTL；默认分配 2 vCPU / 512 MiB。",
+      "benefitValue": "官方面值 100 美元的一次性额度；Hobby 基础月费 $0，超出额度后按秒计费。",
+      "eligibility": "需创建 E2B 账号；官方 billing 文档写明「新用户可获 $100 免费额度起步」，官方定价页标注「No credit card required」。额度用尽且未绑定付款方式时，工作区内所有项目会被阻断使用，绑定付款方式后可继续使用 E2B。",
+      "regions": "默认区域为官方主集群；官方 FAQ 说明欧盟（EU）共享集群在所有套餐提供，但需要绑定付款方式完成工作区验证并联系支持开通。",
+      "validity": "一次性赠金，不按月补充；官方未公布该额度的有效期。沙箱连续运行上限 1 小时，暂停后无限期保留、不计 TTL。",
+      "deadlineNote": "官方未公布 $100 额度的领取截止日或到期日；升级 Pro 不再附带额外额度（Pro 为 $150/月）。",
       "officialUrl": "https://e2b.dev/pricing",
-      "claimUrl": "https://console.e2b.dev/",
+      "claimUrl": "https://console.e2b.dev/sign-up?signup_source=pricing_hobby",
       "discoveryUrl": "https://aispoils.com/type/dev.html",
       "creditCard": "not-required",
-      "autoRenewal": "unknown",
-      "costNotes": "Hobby 计划无基础月费，但计算另按秒消耗额度：默认 2 vCPU $0.000028/秒、4 GiB RAM $0.000018/秒；Hobby 10 GiB 存储标为免费。额度用尽后的停用/扣费、网络、税费和暂停存储收费仍待确认，不自动升级 Pro（$150/月另加用量）。",
-      "confidence": "medium",
-      "confidenceReason": "E2B 官方定价页确认 $100 一次性赠金、无需绑卡、会话/并发上限和基础费率；赠金有效期、完整地区资格及用尽处理尚不充分，控制台跳转登录未继续。",
+      "autoRenewal": "no",
+      "costNotes": "Hobby 基础月费 $0；用量按秒计费（官方定价页计算器口径：默认 2 vCPU $0.000028/秒、4 GiB RAM $0.000018/秒），暂停或终止后立即停止计费；10 GiB 磁盘包含在 Hobby 内；升级 Pro 为 $150/月且不含额外额度；E2B 沙箱仅 CPU，无 GPU 选项。",
+      "confidence": "high",
+      "confidenceReason": "官方 billing.md 与定价页完整给出 Hobby $0/月、$100 一次性赠金、免信用卡、1 小时会话、20 并发、8 vCPU / 8 GiB / 10 GiB 磁盘、暂停无限保留与按秒计费规则，EU 集群需绑卡验证亦由官方 FAQ 佐证，条款已无关键缺项。",
       "discoveredAt": "2026-10-25T16:23:24.401Z",
       "startsAt": null,
       "endsAt": null,
-      "status": "pending",
-      "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-26T16:23:24.401Z",
+      "status": "active",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
       "evidence": [
         {
           "url": "https://e2b.dev/pricing",
           "summary": "Hobby 列示 $100 一次性赠金、20 并发、1 小时会话、无需信用卡；默认 2 vCPU/4 GiB，计算另按秒收费，Hobby 10 GiB 存储免费；未列明赠金有效期。",
           "checkedAt": "2026-10-25T16:23:24.401Z"
+        },
+        {
+          "url": "https://docs.e2b.dev/docs/billing.md",
+          "summary": "官方 billing 文档全文：Hobby 基础价 $0/月、Free credits $100（one-time）、Max vCPUs 8、Max memory 8 GiB、Disk 10 GiB、Max continuous runtime 1 小时、Concurrent sandboxes 20、Concurrent builds 20、创建速率 1/秒、Paused sandbox retention Unlimited（无 TTL）；文档开头写明「新用户可获 $100 免费额度起步」；FAQ 说明无付款方式时额度用尽后工作区被阻断、绑定付款方式后可继续，仅运行中的沙箱计费，默认分配 2 vCPU / 512 MiB。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://e2b.dev/pricing",
+          "summary": "官方定价页 Hobby 档：$100 one-time usage credit、会话最长 1 小时、20 并发沙箱、默认 CPU/RAM、报名按钮旁明确「✓ No credit card required」；Pro $150/月不附赠额度。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://docs.e2b.dev/faq/eu-region.md",
+          "summary": "官方 FAQ 目录条目：「Can I run sandboxes in the EU? — Yes. E2B offers a shared EU cluster on every plan, for workspaces verified by adding a payment method. Contact support to get access.」即欧盟集群需绑定付款方式完成工作区验证。",
+          "checkedAt": "2026-11-01T02:08:43Z"
         }
       ],
       "history": [
@@ -469,6 +504,11 @@
           "at": "2026-10-25T16:23:24.401Z",
           "status": "pending",
           "note": "从 AI Spoils 沙箱专题发现并读取 E2B 官方定价；关键额度有官方佐证，但时效和用尽处理尚未完成核实，未登录控制台或创建沙箱。"
+        },
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "active",
+          "note": "本轮用官方 billing.md 全文、定价页与 FAQ 索引完成复核，额度、并发/时长/磁盘上限、暂停保留、免绑卡、按秒计费与 EU 集群条件全部落地，条目由 pending/medium 升级为 active/high。未注册、未创建沙箱。"
         }
       ]
     },
@@ -689,27 +729,27 @@
       "title": "Daytona 注册赠送 200 美元沙箱算力（AI Agent 代码执行）",
       "provider": "Daytona",
       "category": "both",
-      "description": "Daytona 提供毫秒级启动的 AI 代码执行沙箱（容器/VM/GPU），官方定价页标注注册含 200 美元免费算力；免费层级需邮箱验证，按 vCPU/内存/磁盘预留量计费。",
-      "quota": "赠金 200 美元；Tier 1（邮箱验证）资源池 10 vCPU / 10 GiB RAM / 30 GiB 存储；单价 vCPU $0.0504/小时、内存 $0.0162/GiB/小时、存储 $0.000108/GiB/小时（前 5 GiB 免费）。",
-      "benefitValue": "官方面值 200 美元的免费算力额度；不可提现，且免费额度不能用于 GPU 沙箱。",
-      "eligibility": "注册 Daytona 组织并完成邮箱验证即进入 Tier 1；更高 Tier 需绑卡并充值（Tier 2 为绑卡 + 25 美元充值）。赠金是否需绑卡领取、是否有新用户限制，官方定价页未明示。",
-      "regions": "资源按组织默认区域配额；GPU 沙箱单独在 earth region 计配额，本次未核实全部可选区域与地区限制。",
-      "validity": "赠金为一次性免费算力余额，官方未公布有效期与每次活动轮次；沙箱停止/暂停/归档后的计费口径按官方 billing 文档执行。",
-      "deadlineNote": "官方未披露赠金领取截止日期与到期日；endsAt 保持 null，不能视为长期有效。",
+      "description": "Daytona 提供毫秒级启动的 AI 代码执行沙箱（容器/VM/GPU），官方定价页写明注册含 200 美元免费算力，并标注「Sign up for a free trial - no credit card required」；免费层级需邮箱验证。",
+      "quota": "赠金 200 美元（官方口径「$200 in free compute included」）；Tier 1 资源池 10 vCPU / 10 GiB 内存 / 30 GiB 存储；按预留量计费 vCPU $0.0504/小时、内存 $0.0162/GiB/小时、存储 $0.000108/GiB/小时（前 5 GiB 免费）。",
+      "benefitValue": "官方面值 200 美元的免费算力额度；不可提现，且官方 billing 文档明确免费额度不能用于 GPU 沙箱。",
+      "eligibility": "注册 Daytona 组织并完成邮箱验证即进入 Tier 1（官方 limits 文档）；官方定价页写明免费试用无需信用卡；Tier 2 起需绑定信用卡并充值 25 美元（100 vCPU / 200 GiB / 300 GiB），Tier 3 需 $500 充值、Tier 4 需每 30 天 $2,000 充值。官方未说明 200 美元赠金是否仅限新组织。",
+      "regions": "资源按组织所在区域配额；GPU 沙箱在 earth region 单独计配额，且不可使用免费额度；官方未公布完整可选区域与地区限制。",
+      "validity": "一次性免费算力余额，官方 billing 文档说明免费额度先于付费额度消耗；未公布试用期限与赠金到期日。",
+      "deadlineNote": "官方未披露赠金领取截止日期与到期时间，endsAt 保持 null，不能视为长期有效。",
       "officialUrl": "https://www.daytona.io/pricing",
       "claimUrl": "https://app.daytona.io/",
       "discoveryUrl": "https://aispoils.com/deal/daytona-sandbox.html",
       "discoveredAt": "2026-10-25T16:32:10Z",
-      "creditCard": "unknown",
+      "creditCard": "not-required",
       "autoRenewal": "no",
-      "costNotes": "超出赠金后按预留资源按量扣费；wallet 支持一次性充值与自动充值（自动充值需用户自行开启）；GPU 沙箱单独计费且不可用免费额度；网络出口、税费与快照存储费用本次未核实。",
+      "costNotes": "免费额度先于付费额度消耗；GPU 沙箱不可用免费额度；Tier 2 起需绑卡并充值，wallet 支持一次性充值与自动充值（自动充值需用户自行开启）；出口流量、税费与快照存储费用本次未核实。",
       "confidence": "medium",
-      "confidenceReason": "官方定价页确认 200 美元免费算力与单价，limits 文档确认 Tier 1 资源池与邮箱验证要求；赠金有效期、是否必须绑卡、完整地区与网络计费仍缺项，故保持待核实。",
+      "confidenceReason": "官方定价页与 limits / billing 文档已确认 200 美元免费算力、免费试用免绑卡、Tier 1 资源池与免费额度的使用规则；但赠金有效期、试用时长、是否限新组织与完整地区限制仍缺项，故保持待核实。",
       "startsAt": null,
       "endsAt": null,
       "status": "pending",
-      "lastVerifiedAt": null,
-      "nextReviewAt": "2026-10-26T16:32:10Z",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
       "evidence": [
         {
           "url": "https://www.daytona.io/pricing",
@@ -725,6 +765,21 @@
           "url": "https://www.daytona.io/docs/en/billing",
           "summary": "billing 文档：免费额度与付费额度分列、免费额度先消耗、不能用于 GPU 沙箱；wallet 支持优惠码与充值，自动充值需自行开启。",
           "checkedAt": "2026-10-25T16:32:10Z"
+        },
+        {
+          "url": "https://www.daytona.io/pricing",
+          "summary": "官方定价页原文含「$200 in free compute included.」与「Sign up for a free trial - no credit card required」；付费按预留资源量计费 vCPU $0.0504/h、内存 $0.0162/GiB/h、存储 $0.000108/GiB/h（前 5 GiB 免费）；页面未列赠金有效期或试用天数。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://www.daytona.io/docs/en/limits",
+          "summary": "官方 limits 文档：Tier 1 为 10 vCPU / 10 GiB / 30 GiB，条件为 Email verified；Tier 2 为 100 / 200 GiB / 300 GiB，条件为 Credit card linked + $25 top-up；Tier 3 $500 充值，Tier 4 每 30 天 $2,000 充值。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://www.daytona.io/docs/en/billing",
+          "summary": "官方 billing 文档：免费额度与付费额度分列、免费额度先被消耗、免费额度不能用于 GPU 沙箱；wallet 支持一次性充值与自动充值（自动充值需自行开启）。",
+          "checkedAt": "2026-11-01T02:08:43Z"
         }
       ],
       "history": [
@@ -732,6 +787,11 @@
           "at": "2026-10-25T16:32:10Z",
           "status": "pending",
           "note": "从 AI Spoils 沙箱分类发现，读取 Daytona 官方定价、limits、billing 文档；200 美元额度与 Tier 1 资源有官方佐证，但有效期与绑卡要求未明，保持待核实，未注册或创建沙箱。"
+        },
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "pending",
+          "note": "本轮复核官方定价页与 limits / billing 文档，确认 200 美元免费算力、免费试用免绑卡、Tier 1 资源池与免费额度使用规则，补全额度、资格、绑卡与费用字段；因赠金有效期、试用时长与新组织限制仍未公布，维持 pending/medium，不上调状态。未注册、未创建沙箱。"
         }
       ]
     },
@@ -1125,7 +1185,7 @@
       "eligibility": "需注册 GreenCloud 客户中心账号；公告未限定新老用户。13% 返现要求符合条件的已付购买/续费账单总额 ≥ 500 美元，充值余额与未付账单不计入；转盘按活动期真实付款消费计算，账户余额抵扣部分不计入。",
       "regions": "1313 覆盖 14 个机房：Toronto、Frankfurt、Chicago IL2、Kansas City、Buffalo NY、Staten Island NYC2、San Jose、Dallas、Coventry UK、Tokyo Softbank、Tokyo IIJ、Hong Kong DC2、Singapore DC1、Singapore DC2。",
       "validity": "活动期 2026-10-26 至 2026-10-31（UTC+0）；闪购库存有限、可能售罄；Windows VPS 送 6 个月仅限标准套餐 12 个月付或续费，促销套餐与折扣套餐续费不适用。",
-      "deadlineNote": "官方博客公告活动期为 2026-10-26 至 10-31（UTC+0），商店页未写补货时间；2026-10-31 之后应视为结束。库存多次读取均为 0 Available，不能视为可立即购买。",
+      "deadlineNote": "官方博客公告活动期为 2026-10-26 至 10-31（UTC+0），本轮复核时该窗口已结束（endsAt 2026-10-31T23:59:59Z 已过），条目按 expired 归档；商店页未写补货时间，未来是否有同档促销需另行观察。",
       "officialUrl": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
       "claimUrl": "https://greencloudvps.com/billing/store/13th-birthday-sale",
       "discoveryUrl": "https://www.nodeseek.com/post-1009411-1",
@@ -1135,11 +1195,11 @@
       "costNotes": "1313 系列为三年付 $123.00 USD（折合约 $41/年、$3.4/月），商店页明确标注「No refund/money back on this plan」，即该特价机型不支持退款。续费价未在商店页披露，需在账单/续费时确认；新加坡 DC2 为 /112 IPv6 而非 /64。本次读取时 13 个机房的 1313 系列与全部 Storage 4TB 机型库存均为 0 Available（售罄），下单按钮仍在但无法立即购买。",
       "startsAt": "2026-10-26T00:00:00Z",
       "endsAt": "2026-10-31T23:59:59Z",
-      "status": "pending",
+      "status": "expired",
       "confidence": "medium",
-      "confidenceReason": "官方博客可读并确认活动周期、1313 闪购存在、13% 返现门槛、Windows VPS 12+6 与转盘规则；但结算商店页与官网主站均返回 Cloudflare 挑战，套餐规格、价格、地区与续费条件无法读取，社区帖只给出一张套餐图与“1313”口头评价，故保持待核实。",
-      "lastVerifiedAt": "2026-10-27T23:57:08.603Z",
-      "nextReviewAt": "2026-10-28T23:57:08.603Z",
+      "confidenceReason": "官方 13 周年公告再次确认活动期为 2026-10-26 至 10-31（UTC+0），endsAt 已过期，判定为 expired；但结算商店页持续被 Cloudflare 拦截，续费价、补货节奏与部分库存信息始终无法从官方渠道读取，故置信度保持 medium。",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
       "evidence": [
         {
           "url": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
@@ -1170,6 +1230,16 @@
           "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
           "summary": "本轮复核失败（连续第 9 轮）：结算商店页与官网首页均返回 Cloudflare 403「Just a moment」挑战页（响应体约 3.2 KB，无套餐与价格内容），未能读取 1313 系列库存与续费价；按规则不刷新 lastVerifiedAt、保持 pending/medium。官方公告的活动期 2026-10-26 至 10-31（UTC+0）未变，2026-10-31T23:59:59Z 后由站点自动判定为已过期。",
           "checkedAt": "2026-10-31T13:56:00Z"
+        },
+        {
+          "url": "https://blog.greencloudvps.com/celebrating-13-years-of-greencloud.php",
+          "summary": "本轮复核通过只读代理成功读到官方 13 周年公告全文：活动期 2026-10-26 至 10-31（UTC+0），含 Birthday Flash Sale（1313 系列与其它限时套餐，部分叠加双倍资源、库存有限）、13% 账户余额返现（需符合条件的已付账单 ≥ 500 美元）、Windows VPS 买 12 个月送 6 个月（促销/折扣套餐不适用）、转盘按 50 美元起真实付款累计最多 5 次；公告未宣布活动延期或补货。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://greencloudvps.com/billing/store/13th-birthday-sale",
+          "summary": "本轮复核结算商店页仍返回 Cloudflare「Just a moment」挑战（约 5.5 KB，无套餐列表与价格内容），连续第 10 轮不可读；因此未刷新任何价格/库存字段，条目按官方公告的活动起止时间判定为已过期。",
+          "checkedAt": "2026-11-01T02:08:43Z"
         }
       ],
       "history": [
@@ -1187,6 +1257,11 @@
           "at": "2026-10-27T23:57:08.603Z",
           "status": "pending",
           "note": "官方商店活动页本次成功读取，补齐 1313 系列统一配置与 $123/三年付价格、13 个机房清单、不退款条款与 Storage 4TB $168/三年付；全部机型库存为 0 Available（售罄）。续费价仍未披露，保持 pending/medium。"
+        },
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "expired",
+          "note": "官方公告确认活动窗口 2026-10-26 至 10-31（UTC+0）已结束，endsAt 已过，按规则置为 expired；商店页连续第 10 轮被 Cloudflare 拦截，未能复核库存与续费价，故不改动价格字段，置信度保持 medium。未注册、未下单。"
         }
       ]
     },
@@ -4052,6 +4127,139 @@
           "at": "2026-10-31T13:56:00Z",
           "status": "active",
           "note": "新增：由 LINUX DO 福利羊毛线索（Zed 学生认证一年会员、每月 10 美元额度）转官方 zed.dev/education 与 /pricing 核实，Pro 全功能 12 个月、每月 $10 token 额度、资格（在校高校 + 18 岁 + 30 天以上 GitHub 账号 + 高校邮箱 + JetBrains 域名库）、排除模型与到期降级条款均可查证，按 active/high 入库；未提交申请，社区所称 edu.cn 可认证未经官方确认。"
+        }
+      ]
+    },
+    {
+      "id": "akamai-linode-us100-credit-60-days-202611",
+      "title": "Akamai Cloud（原 Linode）新客 US$100 云服务试用额度（60 天窗口）",
+      "provider": "Akamai Cloud（Linode）",
+      "category": "cloud",
+      "description": "Akamai Cloud（Linode 品牌）官方促销页提供新客户试用计划：注册并完成身份校验后可获得 100 美元云服务额度，可用于 Compute、Object Storage、Block Storage 与 NodeBalancers。官方定价页 FAQ 以「$100 credit for 60 days」说明试用窗口的计费模型。",
+      "quota": "一次性 US$100 云服务额度；可用于 Compute 套餐（GPU 套餐不参与本促销）、Object Storage、Block Storage、NodeBalancers；官方 FAQ 示例口径为 60 天试用窗口。",
+      "benefitValue": "官方面值 US$100 云服务额度（约合 ¥700，按 1 美元≈7 元粗估）；超出额度部分按官方标准价计费。",
+      "eligibility": "需注册 Akamai Cloud/Linode 账号，可用 Google 或 GitHub 单点登录，也可用邮箱注册。官方明确「A valid payment method is required to confirm your identity, but we will not charge you during your trial」，即必须绑定有效付款方式用于身份验证、试用期间不扣费；促销额度仅面向从未注册过免费试用（new customers who have not yet signed up for a free trial）的新客户。",
+      "regions": "官方促销页未列出可注册国家/地区清单，需以注册流程与账单地区为准；Compute 覆盖 Akamai Cloud 公开可用区。",
+      "validity": "额度在试用窗口内有效；官方定价页 FAQ 以「$100 credit for 60 days」举例说明，未用完的额度在试用期末自动失效。",
+      "deadlineNote": "官方未公布统一领取截止日期，属常设促销计划，不应视为长期有效；试用窗口结束后仍在运行的服务会按标准价从已绑定付款方式扣费，需主动停机。",
+      "officialUrl": "https://www.akamai.com/lp/free-credit-100",
+      "claimUrl": "https://login.linode.com/signup",
+      "discoveryUrl": "https://www.akamai.com/lp/free-credit-100",
+      "discoveredAt": "2026-11-01T02:08:43Z",
+      "creditCard": "required",
+      "autoRenewal": "no",
+      "costNotes": "试用期内不扣费；超过 US$100 的用量按官方标准价计费（超额部分计入绑卡账单）；试用窗口结束后仍在运行的服务继续按标准价扣费。赠金本身不自动续期。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方促销页直接确认 US$100 额度、需付款方式验证身份但试用期不扣费、仅限未注册过试用的新客户、GPU 套餐除外、未用额度自动失效；官方定价页 FAQ 给出 60 天窗口与扣费模型，活动当前在架且条款完整。",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
+      "evidence": [
+        {
+          "url": "https://www.akamai.com/lp/free-credit-100",
+          "summary": "官方促销页标题「Try Akamai Cloud with a US$100 Credit」；FAQ 写明需有效付款方式确认身份但试用期间不扣费、促销额度仅限未注册过免费试用的新客户、可用于 Compute（GPU 套餐除外）/Object Storage/Block Storage/NodeBalancers、超额按标准价计费、未用额度在试用期末自动失效；报名入口指向 login.linode.com/signup。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://www.linode.com/pricing/",
+          "summary": "官方定价页 FAQ：信用卡在促销额度用尽或促销窗口结束后扣款，示例口径为「$100 credit for 60 days」——60 天内花 $50 不扣费、花 $150 则 $100 额度耗尽后扣 $50，窗口结束后运行中的服务继续按标准价扣费。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "active",
+          "note": "本轮来源扫描发现官方促销页，经只读代理读到完整条款并用官方定价页 FAQ 交叉确认 60 天窗口与扣费模型；额度、资格、绑卡要求、适用产品与失效规则均有官方依据，标为 active/high。未注册、未领取额度。"
+        }
+      ]
+    },
+    {
+      "id": "intern-inkstone-token-plan-free-tokens-202611",
+      "title": "书生·端砚「墨点计划」科研模型 Token Plan（测试期每月免费 Token）",
+      "provider": "书生·端砚（上海人工智能实验室）",
+      "category": "ai",
+      "description": "上海人工智能实验室在 2026 浦江创新论坛升级发布「书生·端砚」科学发现平台，并推出科研模型「墨点计划」（Token Plan），统一组织多元模型与算力资源，为科研任务提供按需的智能服务。",
+      "quota": "官方口径：测试期间每位用户每月可获免费 Token，用于调用多元模型与相关科研服务；官方公告未公布每月赠送的具体 Token 数量。",
+      "benefitValue": "官方未公布赠送额度的具体数值，不折算金额；性质为按月发放而非一次性赠金。",
+      "eligibility": "需注册书生·端砚 / Token Plan 账号并完成平台侧认证；官方公告面向科研工作者开放，未说明是否限新用户、是否需要机构身份或实名。",
+      "regions": "官方公告未列出地区限制；平台同时提供云端 Web 工作台与本地桌面工作台。",
+      "validity": "免费 Token 按月发放，处于官方所述的「测试期间」；官方未公布测试结束日期。",
+      "deadlineNote": "仅在测试期间发放，官方未公告截止时间，需持续关注后续公告；不可按长期免费额度理解。",
+      "officialUrl": "https://discovery.SAGE-ai.org.cn/token-plan/home?tabIndex=0",
+      "claimUrl": "https://discovery.SAGE-ai.org.cn/token-plan/home?tabIndex=0",
+      "discoveryUrl": "https://www.shlab.org.cn/news/5444294",
+      "discoveredAt": "2026-11-01T02:08:43Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "官方仅说明「测试期间每位用户每月可获免费 Token」，未公布额度上限、是否消耗型余额与超额计费规则；Token Plan 统一组织的算力资源与云端/本地工作台是否另行计费未核实。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "上海人工智能实验室官方新闻明确「测试期间，每位用户每月可获免费 Token」并给出 Token Plan 详情页地址，方向有官方依据；但每月赠送数量、领取门槛、适用模型与超额计费均未在官方页面公布，故保持待核实。",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
+      "evidence": [
+        {
+          "url": "https://www.shlab.org.cn/news/5444294",
+          "summary": "上海人工智能实验室官方新闻（2026 浦江创新论坛）：「书生·端砚现已推出本地客户端及科研模型\"墨点计划\"（Token Plan）。测试期间，每位用户每月可获免费 Token，用于调用多元模型与相关科研服务」，并给出 Token Plan 详情页 https://discovery.SAGE-ai.org.cn/token-plan/home?tabIndex=0；未公布每月赠送数量。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        },
+        {
+          "url": "https://discovery.SAGE-ai.org.cn/token-plan/home?tabIndex=0",
+          "summary": "Token Plan 详情页为前端单页应用，直连与只读代理仅取到导航骨架，额度数量、领取条件与计费说明未能从官方页面读取，故未据此标 active。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "pending",
+          "note": "本轮来源扫描命中书生·端砚「墨点计划」免费 Token 线索，用上海人工智能实验室官方新闻核实了「测试期间每月免费 Token」这一核心事实与官方入口；Token Plan 前端页未渲染出额度细则，先以 pending/medium 入库，待官方公布具体数量后再升级。"
+        }
+      ]
+    },
+    {
+      "id": "dartnode-open-source-free-vps-202611",
+      "title": "DartNode 开源项目免费 VPS 资助计划",
+      "provider": "DartNode（Snaju Inc）",
+      "category": "cloud",
+      "description": "DartNode 官方「Free Cloud Compute」计划为符合条件的开源项目免费部署 KVM 虚拟服务器；官方页面标注已有 1203+ 个开源项目在其资助下运行。",
+      "quota": "官方页面未公布受资助实例的 CPU / 内存 / 磁盘规格；提供不限流量（Unlimited Bandwidth，受 AUP 约束）、100% 可用性承诺、分钟级开通、自定义 ISO、rDNS 指针与每日异地备份。",
+      "benefitValue": "官方标称免费（no-cost），页面购物车显示 $0.00；不对外公布折算金额。",
+      "eligibility": "项目须为公开 GitHub 仓库、star 数 ≥ 1,000、创建满 90 天、非 fork 且非归档；需在项目主 README.md 加入 DartNode logo 并回链 dartnode.com；提交仓库 URL 后会收到一个验证码（可写成不可见 HTML 注释）加入 README 以证明维护者身份；系统自动审核，全部通过即部署 VPS 并把连接信息邮件发出；申请需登录或注册 DartNode 账号。",
+      "regions": "官方页面未公布具体机房与地区限制，仅出现总部 Houston, TX、ARIN 成员信息与 Boston / Washington DC 的库存排期入口，实际分配机房未知。",
+      "validity": "官方未公布资助期限、续期条件与名额上限；页面以「1203+ 开源项目正在受资助」表述，倾向长期计划。",
+      "deadlineNote": "无官方申请截止日期；审核为自动流程，但审核时长、名额余量与是否会对热门仓库排队均未公布。",
+      "officialUrl": "https://dartnode.com/open-source",
+      "claimUrl": "https://app.dartnode.com/gateway/join?return=https://dartnode.com/open-source",
+      "discoveryUrl": "https://dartnode.com/open-source",
+      "discoveredAt": "2026-11-01T02:08:43Z",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "官方标称免费且不限流量，但未公布受资助实例规格与续期规则；流量与行为仍受官方 Acceptable Use Policy 约束，超限可能导致停机；是否需要绑定付款方式注册未在官方页面说明。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方页面完整给出资格门槛、四步申请流程与功能清单（含 1203+ 已资助项目），但未公布 VPS 规格、是否需要付款方式、资助期限与审核时效，故保持待核实。",
+      "lastVerifiedAt": "2026-11-01T02:08:43Z",
+      "nextReviewAt": "2026-11-02T02:08:43Z",
+      "evidence": [
+        {
+          "url": "https://dartnode.com/open-source",
+          "summary": "官方「Free Cloud Compute / Powering Open Source」页面：资格为公开 GitHub 仓库 1,000+ stars、创建满 90 天、非 fork/非归档；流程为 README 加 logo 回链 → 提交仓库 URL 获验证码 → 自动审核 → 部署并邮件通知；功能含 Unlimited Bandwidth、100% uptime、Instant Setup、rDNS、Custom ISO、每日异地备份；已资助 1203+ 项目；直连返回 Security Check，经只读代理可读。",
+          "checkedAt": "2026-11-01T02:08:43Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-01T02:08:43Z",
+          "status": "pending",
+          "note": "本轮来源扫描命中 DartNode 开源免费 VPS 计划，经只读代理读到官方资格与申请流程；因官方未公布实例规格、付款方式要求与资助期限，以 pending/medium 入库，未提交申请。"
         }
       ]
     }
