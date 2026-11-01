@@ -31,6 +31,13 @@ test('待核实可没有成功核实时间', () => {
 test('拒绝重复 id 和重复官方链接', () => {
   assert.ok(validateCatalog(catalog([resource(),resource()]),now).some(x=>x.includes('重复')));
 });
+test('不同发现来源转载相同官方活动仍需合并，fragment 与尾斜线不产生新活动', () => {
+  const first = resource();
+  const repost = {...resource(), id:'synthetic-repost', discoveryUrl:'https://example.org/repost',
+    officialUrl:first.officialUrl + '/#offer'};
+  assert.ok(validateCatalog(catalog([first,repost]),now).some(x=>x.includes('重复')));
+  assert.deepEqual(validateCatalog(catalog([first]),now), []);
+});
 test('拒绝脚本链接、额外字段和无效日期', () => {
   for (const patch of [{officialUrl:'javascript:alert(1)'},{extra:true},{endsAt:'2026-02-30T00:00:00Z'}])
     assert.ok(validateCatalog(catalog([{...resource(),...patch}]),now).length);

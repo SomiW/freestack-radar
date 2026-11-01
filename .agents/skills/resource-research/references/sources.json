@@ -1,0 +1,972 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "perq",
+      "name": "Perq",
+      "url": "https://perq.sh/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "gpu",
+        "developer-benefits"
+      ],
+      "methods": [
+        "json",
+        "html"
+      ],
+      "entryUrl": "https://perq.sh/api/search?q=&audience=anyone&category=llm-api,dev-tools,database-backend,cloud-gpu&sort=newest&limit=20",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:18Z",
+      "lastSuccessAt": "2026-11-01T22:17:18Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200，JSON 解析成功；anyone + category(llm-api,dev-tools,database-backend,cloud-gpu) + newest + limit=20 返回 results 20 条（total_matches 58）。本轮命中 ClickHouse Cloud $300/30 天试用、Turso 免费档、Bolt.new 每月 100 万 tokens 等候选，均已转官网核实；其余命中项与既有条目官方入口重复，未新增。"
+    },
+    {
+      "id": "aifree",
+      "name": "AI Free",
+      "url": "https://aifree.dev/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "ai-coding",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://aifree.dev/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "目录与官方跳转可读；新增及站方核实日期可见 2026-10-31。"
+    },
+    {
+      "id": "aispoils",
+      "name": "AI 羊毛 / AI Spoils",
+      "url": "https://aispoils.com/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "gpu",
+        "vps",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://aispoils.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:20Z",
+      "lastSuccessAt": "2026-11-01T22:17:20Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；首页标题「AI免费资源 - 1207 条 AI 免费额度与限免羊毛 - 门槛与有效期全标注 - 每日更新 - 羊毛专题」，条目标题计数较上一轮 1153 条上升，站内条目仍需转官网核实。"
+    },
+    {
+      "id": "aifuli",
+      "name": "AI 福利雷达",
+      "url": "https://aifuli.dev/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "ai-coding",
+        "developer-benefits"
+      ],
+      "methods": [
+        "rss",
+        "html"
+      ],
+      "entryUrl": "https://aifuli.dev/rss.xml",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:21Z",
+      "lastSuccessAt": "2026-11-01T22:17:21Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；40 条 RSS，已解析（频道「AI 福利雷达」）。"
+    },
+    {
+      "id": "token-pencil",
+      "name": "Token 羊毛党",
+      "url": "https://token.pencilai.top/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://token.pencilai.top/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "静态卡片及官方链接可读；总更新时间显示加载中，卡片含 10-11/10-12 等旧时点，不能假定全部当前有效。"
+    },
+    {
+      "id": "tokentab",
+      "name": "TokenTab",
+      "url": "https://www.tokentab.cn/deals.html",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "ai-coding"
+      ],
+      "methods": [
+        "html",
+        "rss"
+      ],
+      "entryUrl": "https://www.tokentab.cn/deals.html",
+      "status": "readable",
+      "checkedAt": "2026-11-01T10:34:08Z",
+      "lastSuccessAt": "2026-11-01T10:34:08Z",
+      "lastFailure": {
+        "at": "2026-11-01T03:09:00Z",
+        "reason": "页面注明调研时点 2026-10-26；可读分类，当前文本提取未得到完整卡片。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "正常匿名浏览器渲染出 37 张国内卡片；公开数据内核 UPDATED=2026-10-30，AGENT 20 / MODEL 17，海外 GLOBAL 15。HTML 明确引用 deals-core.js?v=13 与 deals.js?v=15，读取不依赖文本提取器。站点 feed.xml 为 200、28 条更新，仅补充发现，不能替代福利全量。价格有固定汇率折算，回官方核实原币种。"
+    },
+    {
+      "id": "usefree",
+      "name": "usefree.space",
+      "url": "https://www.usefree.space/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "developer-tools",
+        "ai-api",
+        "vps"
+      ],
+      "methods": [
+        "json",
+        "html"
+      ],
+      "entryUrl": "https://www.usefree.space/brands_new.json",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:36Z",
+      "lastSuccessAt": "2026-11-01T22:17:36Z",
+      "lastFailure": {
+        "at": "2026-11-01T03:09:00Z",
+        "reason": "仅提取到搜索与导航外壳，未得到福利清单或明确更新时间。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200 且 JSON 解析成功；items 实际 110 个品牌条目。本轮命中 Bolt.new「每月 100 万 tokens」，转官网定价页核实后入库；另有声称 Browser Use 赠 $15 credits 的条目，官方实为 $1 free credit，已排除。"
+    },
+    {
+      "id": "linux-do",
+      "name": "LINUX DO · 福利羊毛",
+      "url": "https://linux.do/",
+      "priority": "P0",
+      "kind": "community",
+      "topics": [
+        "ai-api",
+        "ai-coding",
+        "vps"
+      ],
+      "methods": [
+        "rss"
+      ],
+      "entryUrl": "https://linux.do/c/welfare/36.rss",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:23Z",
+      "lastSuccessAt": "2026-11-01T22:17:23Z",
+      "lastFailure": {
+        "at": "2026-11-01T03:06:40.035472+00:00",
+        "reason": "历史可读订阅源本次直连 HTTP 403；网页工具不支持 RSS 类型不代表成功；本次无内容更新时间证据。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；25 条 RSS，已解析（频道「福利羊毛 - LINUX DO」）；本轮用于定位云智手机签到、Memoh 免费档、Muse 免费额度、华为云成长券等社区线索并转官方核实。"
+    },
+    {
+      "id": "nodeseek",
+      "name": "NodeSeek",
+      "url": "https://www.nodeseek.com/",
+      "priority": "P0",
+      "kind": "community",
+      "topics": [
+        "vps",
+        "developer-tools"
+      ],
+      "methods": [
+        "rss"
+      ],
+      "entryUrl": "https://rss.nodeseek.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:25Z",
+      "lastSuccessAt": "2026-11-01T22:17:25Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；20 条 RSS，已解析（频道「NodeSeek」）；本轮用于定位 HKCloudX 年付特惠线索，社区口径与官方套餐表不一致，以官方为准。"
+    },
+    {
+      "id": "lowendtalk",
+      "name": "LowEndTalk · Offers",
+      "url": "https://lowendtalk.com/categories/offers",
+      "priority": "P0",
+      "kind": "community",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://lowendtalk.com/categories/offers",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "Offers 列表与商家帖子链接可读，含当日相对时间及 Halloween 活动；回复时间不等于活动起始日。"
+    },
+    {
+      "id": "lowendbox",
+      "name": "LowEndBox",
+      "url": "https://lowendbox.com/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "rss",
+        "html"
+      ],
+      "entryUrl": "https://lowendbox.com/feed/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:26Z",
+      "lastSuccessAt": "2026-11-01T22:17:26Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；20 条 RSS，已解析（频道「LowEndBox」）。"
+    },
+    {
+      "id": "v2ex",
+      "name": "V2EX",
+      "url": "https://www.v2ex.com/",
+      "priority": "P0",
+      "kind": "community",
+      "topics": [
+        "developer-tools",
+        "ai-coding",
+        "vps"
+      ],
+      "methods": [
+        "atom",
+        "html"
+      ],
+      "entryUrl": "https://www.v2ex.com/index.xml",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:32Z",
+      "lastSuccessAt": "2026-11-01T22:17:32Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 Atom HTTP 200，50 条；全站源需按开发者主题过滤。"
+    },
+    {
+      "id": "free-for-dev",
+      "name": "free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "priority": "P1",
+      "kind": "aggregator",
+      "topics": [
+        "developer-tools",
+        "vps",
+        "developer-benefits"
+      ],
+      "methods": [
+        "github"
+      ],
+      "entryUrl": "https://api.github.com/repos/ripienaar/free-for-dev",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:06:40.919013+00:00",
+      "lastSuccessAt": "2026-11-01T03:06:40.919013+00:00",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "GitHub 页面与元数据 API 可读；默认分支 master，pushed_at 2026-10-30T10:20:21Z，不代表每项福利已更新。"
+    },
+    {
+      "id": "free-llm-api",
+      "name": "free-llm-api-resources",
+      "url": "https://github.com/cheahjs/free-llm-api-resources",
+      "priority": "P1",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "github"
+      ],
+      "entryUrl": "https://api.github.com/repos/cheahjs/free-llm-api-resources",
+      "status": "unavailable",
+      "checkedAt": "2026-11-01T10:19:53Z",
+      "lastSuccessAt": null,
+      "lastFailure": {
+        "at": "2026-11-01T10:19:53Z",
+        "reason": "HTTP 404"
+      },
+      "canVerifyOfficial": false,
+      "observation": "本轮 HTTP 404；未作为活动终止依据，不影响其他来源。"
+    },
+    {
+      "id": "freeaiapis",
+      "name": "freeaiapis.org",
+      "url": "https://freeaiapis.org/",
+      "priority": "P1",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://freeaiapis.org/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "清单与单项详情可读；站方测试时点可见 2026-10-23，含推荐返利和模型网关，须独立核对提供方与风险。"
+    },
+    {
+      "id": "github-pack",
+      "name": "GitHub Student Developer Pack",
+      "url": "https://education.github.com/pack",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits",
+        "developer-tools",
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://education.github.com/pack",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "官方学生权益目录与合作伙伴入口可读；未提取到统一更新日期；合作方资格与收费仍须逐条核实。"
+    },
+    {
+      "id": "aws-activate",
+      "name": "AWS Activate Credits",
+      "url": "https://aws.amazon.com/startups/credits/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits",
+        "vps",
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://aws.amazon.com/startups/credits/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "官方创业赠金页面可读；未提取到统一更新日期，须继续核对资格和条款。"
+    },
+    {
+      "id": "aliyun",
+      "name": "阿里云活动",
+      "url": "https://www.aliyun.com/activity",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "gpu",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.aliyun.com/benefit",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 HTTP 200，旧入口跳转 /benefit，标题为智享 AI · 特惠活动；未确认统一更新日期或具体可领取性。"
+    },
+    {
+      "id": "tencent-cloud",
+      "name": "腾讯云优惠全站搜",
+      "url": "https://cloud.tencent.com/act/pro/searchall",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://cloud.tencent.com/act/pro/searchall",
+      "status": "restricted",
+      "checkedAt": "2026-11-01T10:29:13Z",
+      "lastSuccessAt": null,
+      "lastFailure": {
+        "at": "2026-11-01T10:29:13Z",
+        "reason": "普通 curl 返回 HTTP 200，但正文仅约 985 字节的 EO_Bot_Ssid 浏览器验证脚本，无可解析商品列表；停止本来源请求，不伪造验证 Cookie。"
+      },
+      "canVerifyOfficial": true,
+      "observation": "普通 curl 返回 HTTP 200，但正文仅约 985 字节的 EO_Bot_Ssid 浏览器验证脚本，无可解析商品列表；停止本来源请求，不伪造验证 Cookie。"
+    },
+    {
+      "id": "lowseek",
+      "name": "LowSeek 优惠雷达",
+      "url": "https://vps.lowseek.ai/",
+      "priority": "P1",
+      "kind": "price-reference",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "json",
+        "html"
+      ],
+      "entryUrl": "https://vps.lowseek.ai/data/deals.json",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:33Z",
+      "lastSuccessAt": "2026-11-01T22:17:33Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；JSON 已解析（records 80 条，LowEndTalk Offers + LowEndBox 合并去重）。"
+    },
+    {
+      "id": "serverhunter",
+      "name": "Server Hunter",
+      "url": "https://www.serverhunter.com/",
+      "priority": "P1",
+      "kind": "price-reference",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.serverhunter.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T10:34:08Z",
+      "lastSuccessAt": "2026-11-01T10:34:08Z",
+      "lastFailure": {
+        "at": "2026-11-01T03:09:00Z",
+        "reason": "比较筛选外壳可读，页面明确依赖 JavaScript；未读取具体搜索结果与更新日期。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "正常匿名浏览器 JavaScript 渲染成功，DOM 中 21 个 tr.offer-row、22 个 /offer/ 链接，含广告。原始 HTML 外壳不是完整报价数据；价格显示近似换算为 SGD，仅作价格参考，原币种、周期和库存须查商家官网。"
+    },
+    {
+      "id": "vpsbenchmarks",
+      "name": "VPSBenchmarks",
+      "url": "https://www.vpsbenchmarks.com/",
+      "priority": "P1",
+      "kind": "price-reference",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.vpsbenchmarks.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "性能试验及排名可读；最近试验日期 2026-11-01，评测时点不等于优惠生效时间。"
+    },
+    {
+      "id": "serverdeals",
+      "name": "ServerDeals",
+      "url": "https://serverdeals.cc/",
+      "priority": "P1",
+      "kind": "price-reference",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://serverdeals.cc/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:09:00Z",
+      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "价格配置清单及商家入口可读；标注最后更新 2026-10-29；须核实续费、库存和费用。"
+    },
+    {
+      "id": "nodeloc",
+      "name": "NodeLoc",
+      "url": "https://www.nodeloc.com/c/internet/5",
+      "priority": "P0",
+      "kind": "community",
+      "topics": [
+        "vps",
+        "developer-tools"
+      ],
+      "methods": [
+        "rss",
+        "html"
+      ],
+      "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:29Z",
+      "lastSuccessAt": "2026-11-01T22:17:29Z",
+      "lastFailure": {
+        "at": "2026-11-01T03:06:41.650787+00:00",
+        "reason": "HTTP 200，互联网服务栏目可读；文本主要是子分类，未得到完整最新主题及发布时间。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "本轮 curl 普通匿名读取 200；25 条 RSS，已解析（频道「互联网服务 - NodeLoc」）；列表含推广或不合规线索，仍须筛选与官方核实。"
+    },
+    {
+      "id": "aideal",
+      "name": "AIdeal",
+      "url": "https://www.aideal.kr/zh-CN/",
+      "priority": "P0",
+      "kind": "aggregator",
+      "topics": [
+        "ai-api",
+        "ai-coding",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.aideal.kr/zh-CN/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T03:06:41.914343+00:00",
+      "lastSuccessAt": "2026-11-01T03:06:41.914343+00:00",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "目录和官方链接可读；首页标注最后更新 10-27；保留旧来源，过滤身份或支付绕行线索。"
+    },
+    {
+      "id": "xianbao",
+      "name": "线报酷",
+      "url": "https://new.xianbao.fun/",
+      "priority": "P1",
+      "kind": "aggregator",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://new.xianbao.fun/",
+      "status": "restricted",
+      "checkedAt": "2026-11-01T10:29:15Z",
+      "lastSuccessAt": null,
+      "lastFailure": {
+        "at": "2026-11-01T10:29:15Z",
+        "reason": "普通 curl 返回访问确认页，要求浏览器环境与通行 Cookie 验证，未得到线报列表；停止本来源请求，不执行验证脚本或转代理绕过。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "普通 curl 返回访问确认页，要求浏览器环境与通行 Cookie 验证，未得到线报列表；停止本来源请求，不执行验证脚本或转代理绕过。"
+    },
+    {
+      "id": "zuanke",
+      "name": "赚客大家谈",
+      "url": "https://www.zuanke8.com/",
+      "priority": "P1",
+      "kind": "community",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.zuanke8.com/",
+      "status": "restricted",
+      "checkedAt": "2026-11-01T10:34:08Z",
+      "lastSuccessAt": null,
+      "lastFailure": {
+        "at": "2026-11-01T10:34:08Z",
+        "reason": "普通 curl 保留证书校验返回错误 60：证书链无法验证；网页读取返回 502，Firecrawl basic + skipTlsVerification=false 同样返回 SCRAPE_SSL_ERROR；未关闭 TLS 校验，需站方修复或提供可验证 HTTPS 入口。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "普通 curl 保留证书校验返回错误 60：证书链无法验证；网页读取返回 502，Firecrawl basic + skipTlsVerification=false 同样返回 SCRAPE_SSL_ERROR；未关闭 TLS 校验，需站方修复或提供可验证 HTTPS 入口。"
+    },
+    {
+      "id": "juejin",
+      "name": "掘金",
+      "url": "https://juejin.cn/",
+      "priority": "P1",
+      "kind": "community",
+      "topics": [
+        "developer-tools",
+        "ai-coding",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://juejin.cn/freebie?sort=newest",
+      "status": "readable",
+      "checkedAt": "2026-11-01T10:34:08Z",
+      "lastSuccessAt": "2026-11-01T10:34:08Z",
+      "lastFailure": {
+        "at": "2026-11-01T03:06:42.486716+00:00",
+        "reason": "直连 HTTP 200 标题稀土掘金，网页读取超时；未得到完整文章及可靠更新时间。"
+      },
+      "canVerifyOfficial": false,
+      "observation": "正常匿名浏览器渲染可读；/freebie 标题实际为开发工具，不是专属优惠区。默认页 20 个不同文章链接；页面明确提供的最新排序入口得到 21 个不同 /post/ 链接，可能含推荐/推广，需按目标筛选。仍有统计/附属资源控制台错误，不影响已验证列表。"
+    },
+    {
+      "id": "google-gemini-docs",
+      "name": "Google AI for Developers（Gemini API 文档）",
+      "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "status": "readable",
+      "checkedAt": "2026-11-01T15:45:39Z",
+      "lastSuccessAt": "2026-11-01T15:45:39Z",
+      "lastFailure": {
+        "at": "2026-11-01T15:44:22Z",
+        "reason": "带浏览器 UA 请求 /gemini-api/docs/pricing 时 302 跳 accounts.google.com OAuth，未取得正文；改用默认 curl UA 后同一入口返回 200 全文。"
+      },
+      "canVerifyOfficial": true,
+      "observation": "Gemini API 限速页与定价页可读全文，免费层资格、按消费速率限速、Batch 与 Priority 限制、逐模型 Free Tier 列均可提取。注意：必须用默认 curl UA（-A \"curl/8\"）请求，浏览器 UA 会被 302 到 Google OAuth；定价表含 Free Tier 与 Paid Tier 多列，必须按列头逐列对齐，否则会把付费列额度误记为免费层。"
+    },
+    {
+      "id": "claude-platform-docs",
+      "name": "Claude Platform 官方文档",
+      "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
+      "status": "readable",
+      "checkedAt": "2026-11-01T15:24:32Z",
+      "lastSuccessAt": "2026-11-01T15:24:32Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "platform.claude.com/docs 下页面为服务端渲染，正文与表格可直接提取；同目录 .md 后缀可取纯文本孪生页（如 .../pricing.md）。本轮用于核实订阅附赠 API credits 的面额、覆盖范围、申领步骤与过期规则。"
+    },
+    {
+      "id": "cockroachlabs-pricing",
+      "name": "Cockroach Labs 官方定价页",
+      "url": "https://www.cockroachlabs.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.cockroachlabs.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T15:24:39Z",
+      "lastSuccessAt": "2026-11-01T15:24:39Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，首屏与 FAQ 均含试用条款（30 天 / $400、Standard 免绑卡、Mission Critical 需卡、到期后集群暂停与 30 天宽限期）；注册入口为 cockroachlabs.cloud/signup。"
+    },
+    {
+      "id": "northflank-pricing",
+      "name": "Northflank 官方定价页",
+      "url": "https://northflank.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://northflank.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:12Z",
+      "lastSuccessAt": "2026-11-01T22:18:12Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，Sandbox / Pay as you go / Enterprise 三档与费率表均在正文；页面顶部仍挂安全事件通告横幅，注册入口 app.northflank.com/signup。"
+    },
+    {
+      "id": "northflank-status",
+      "name": "Northflank 官方状态页",
+      "url": "https://status.northflank.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://status.northflank.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:14Z",
+      "lastSuccessAt": "2026-11-01T22:18:14Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "Instatus 状态页可读，顶部仍为「Experiencing partial outage」+「Security incident · Identified · Major outage」；密钥轮换时间线最新为 2026-10-31 23:31 UTC（RabbitMQ add-on）、22:32 UTC（Minio add-on）、13:34 UTC（MySQL 与 Redis add-on），均已对全体客户开放。"
+    },
+    {
+      "id": "clickhouse-pricing",
+      "name": "ClickHouse Cloud 官方定价页",
+      "url": "https://clickhouse.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://clickhouse.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:55Z",
+      "lastSuccessAt": "2026-11-01T22:17:55Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，首页与 FAQ 均写明「Every new ClickHouse Cloud organization starts with $300 in credits to use over 30 days」，试用在额度用尽或 30 天到期时结束并转为按量付费；Basic / Scale 档均标「Start free trial」，注册入口 console.clickhouse.cloud/signUp。"
+    },
+    {
+      "id": "turso-pricing",
+      "name": "Turso 官方定价页",
+      "url": "https://turso.tech/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://turso.tech/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:17:57Z",
+      "lastSuccessAt": "2026-11-01T22:17:57Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，Free 档为 $0/month，含 100 个数据库、5GB 存储、每月读 500 Million 行、写 10 Million 行、3GB 同步、1 天审计日志保留；下一档 Developer 为 $4.99/月。"
+    },
+    {
+      "id": "boltnew-pricing",
+      "name": "Bolt.new 官方定价页",
+      "url": "https://bolt.new/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://bolt.new/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:01Z",
+      "lastSuccessAt": "2026-11-01T22:18:01Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，Free 档标注「Free forever, no card required」「1M tokens/month to try Bolt」，含公有与私有项目、站点 Bolt 品牌、不限数据库，并附每日用量限制说明。"
+    },
+    {
+      "id": "upstash-pricing",
+      "name": "Upstash 官方定价页",
+      "url": "https://upstash.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://upstash.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:04Z",
+      "lastSuccessAt": "2026-11-01T22:18:04Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，Free 档为 $0，含 250MB 数据、10GB 月流量、500K 月命令；Pay as You Go 为 $0.2/100K commands；同页列出 Redis / Vector / QStash / Workflow / Box / Blob 各产品免费档上限。"
+    },
+    {
+      "id": "china-mobile-ecloud-help",
+      "name": "移动云帮助中心 · MoMA 免费试用指南",
+      "url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:46Z",
+      "lastSuccessAt": "2026-11-01T22:18:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直接 curl 仅返回约 3KB 的 SPA 外壳，必须走只读渲染代理（r.jina.ai）才能取到正文；正文含活动时间 2026-02-15 至 2026-12-31、每用户 2500 万 tokens 限时 30 天、限流 3000 tokens/min、单一身份仅可领取一次、仅部分自营模型支持、合作与机密模型不支持、额度耗尽未订购则服务自动暂停。"
+    },
+    {
+      "id": "huaweicloud-grow",
+      "name": "华为云开发者成长中心",
+      "url": "https://developer.huaweicloud.com/grow",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developer.huaweicloud.com/grow",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:47Z",
+      "lastSuccessAt": "2026-11-01T22:18:47Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直接 curl 仅返回约 2.4KB 外壳，需只读渲染代理读取；公告写明「每天 16:00 代金券补货，数量有限先到先得；代金券设有兑换上限，具体限制可在兑换弹窗中查看；请勿多账号刷分，一经发现封禁处理」，签到任务标注 +10 积分；券面额、所需积分与有效期需登录后在弹窗查看。"
+    },
+    {
+      "id": "hkcloudx-cloud",
+      "name": "HKCloudX 官方云服务器页",
+      "url": "https://hkcloudx.com/cloud.html",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://hkcloudx.com/cloud.html",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:49Z",
+      "lastSuccessAt": "2026-11-01T22:18:49Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直接 curl 返回 Vue 模板占位符，需只读渲染代理取到渲染后套餐表；在售年付特惠为 HK-RAID10-Y01（1核2G/30GB SSD/200M/500GB）、Y02（2核4G/40GB/200M/1000GB）、Y03（4核8G/80GB/200M/2000GB），每档均含 1 个 IPv4 与 1 个 IPv6。"
+    },
+    {
+      "id": "qoder-docs",
+      "name": "Qoder 官方文档 · Community Boost",
+      "url": "https://docs.qoder.com/events/communityboost",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.qoder.com/events/communityboost",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:11Z",
+      "lastSuccessAt": "2026-11-01T22:18:11Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读，Promotion period 明确为 October 22, 2026 through October 30, 2026 at 23:59，Welcome Pack 领取窗口同刻截止、有效期至 October 31, 2026 23:59；同目录 /llms.txt 为纯文本索引页。"
+    },
+    {
+      "id": "meta-muse",
+      "name": "Meta Muse 官网",
+      "url": "https://muse.ai/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://muse.ai/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:51Z",
+      "lastSuccessAt": "2026-11-01T22:18:51Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 与只读渲染代理均可读；首页只介绍 Muse Secure VM 为持久隔离 Linux 电脑及产品定位，未出现价格、免费额度、赠金或地区限制表述。"
+    },
+    {
+      "id": "yunzhi-play-ai",
+      "name": "云智手机 AI 助手页",
+      "url": "https://yunzhi.play.cn/ai/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://yunzhi.play.cn/ai/",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:50Z",
+      "lastSuccessAt": "2026-11-01T22:18:50Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直接 curl 仅返回约 1.3KB 外壳；只读渲染代理取到页面为产品宣传与 App 下载入口，未出现免费额度、签到规则或有效期文字。"
+    },
+    {
+      "id": "memoh-docs",
+      "name": "Memoh 官方快速开始文档",
+      "url": "https://docs.memoh.ai/zh/guides/quick-start",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.memoh.ai/zh/guides/quick-start",
+      "status": "readable",
+      "checkedAt": "2026-11-01T22:18:19Z",
+      "lastSuccessAt": "2026-11-01T22:18:19Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "VitePress 服务端渲染，正文可直接提取；快速开始只含安装与接入步骤，未出现免费档、免费额度或到期时间表述。"
+    }
+  ]
+}
