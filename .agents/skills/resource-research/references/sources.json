@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?q=&audience=anyone&category=llm-api,dev-tools,database-backend,cloud-gpu&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-02T21:26:46Z",
+      "lastSuccessAt": "2026-11-02T21:26:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（590 KB）+ /api/search JSON 接口与 /llms.txt 索引可用，本轮用 category+sort=value 拉取 llm-api / cloud-gpu / agents-automation 清单比对存量；新条目的金额与条款均回到厂商官方页核对，未直接采信。"
+      "observation": "本轮 /api/search 直连 200（27 KB，newest/limit=20）与 category=cloud-gpu&sort=value（18 条）均解析成功；据此发现 Aiven Free plans 与 Lightning AI 30 credits/80 GPU 小时，两条均回官方页核实，未采信聚合站金额。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-02T21:26:46Z",
+      "lastSuccessAt": "2026-11-02T21:26:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "latest.rss 直连 200（67 KB，30 条），本轮标题多为闲聊、拼车、收码与渠道讨论，无可用官方福利线索。"
+      "observation": "福利羊毛 RSS（36.rss）直连 200（105 KB，25 条），本轮可用线索为 Bilibili Index-Translate 免费 API、千问办公积分、Exa 代金券；后两者无官方条款未入库，其余为拼车/收码/中转站推广。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-02T21:26:46Z",
+      "lastSuccessAt": "2026-11-02T21:26:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "rss.nodeseek.com 直连 200（10 KB，20 条），本轮全为二手交易/VPS 转手/测评闲聊，无官方福利线索。"
+      "observation": "RSS 直连 200（10 KB，20 条），本轮条目多为账号/机器交易与闲聊，无可用官方福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -1077,6 +1077,69 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（190 KB），FAQ 写明「initial 25 hours」≈「$50 US」赠金、存入后 10 天过期、关机仍计费，与 developer.amd.com 会员页「$100 credits」冲突，是 AMD 赠金条文的权威口径之一。"
+    },
+    {
+      "id": "aiven-free-tier",
+      "name": "Aiven 官方 Free Tier 页",
+      "url": "https://aiven.io/free-tier",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://aiven.io/free-tier",
+      "status": "readable",
+      "checkedAt": "2026-11-02T21:26:46Z",
+      "lastSuccessAt": "2026-11-02T21:26:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读（234 KB），含 Free Tier 说明、Compare Free Services 表与 FAQ：四类服务各 1 个免费实例、1 vCPU/1 GB RAM、PostgreSQL 1 GB 与其余 8 GB 存储、Kafka 250 kb/s 与 3 天保留、免 payment details、无到期时间、自动备份包含。"
+    },
+    {
+      "id": "lightning-pricing",
+      "name": "Lightning AI 官方定价页",
+      "url": "https://lightning.ai/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://lightning.ai/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-02T21:26:46Z",
+      "lastSuccessAt": "2026-11-02T21:26:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读（116 KB），Free 档 $0、up to 30 credits、约 80 免费 GPU 小时、1 个免费常驻 Studio（4 小时重启）、单卡最多 2 并发、200 GB 持久存储、No credit card；逐机型表列 Free hours to start 与按秒单价。"
+    },
+    {
+      "id": "bilibili-index-translate",
+      "name": "Bilibili Index-Translate 官方仓库",
+      "url": "https://github.com/bilibili/Index-Translate",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html",
+        "json"
+      ],
+      "entryUrl": "https://raw.githubusercontent.com/bilibili/Index-Translate/main/README.md",
+      "status": "readable",
+      "checkedAt": "2026-11-02T21:26:46Z",
+      "lastSuccessAt": "2026-11-02T21:26:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "README 纯文本可直读（40 KB），写明免费公网 API https://index-translate.bilibili.com/v1、模型 Index-Translate-35B-A3B、OpenAI 兼容 chat/completions 与 responses；匿名 POST 实测 200 正常返回，未公布限速与每日额度。"
     }
   ]
 }
