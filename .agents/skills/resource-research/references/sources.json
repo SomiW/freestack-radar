@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?q=&audience=anyone&category=llm-api,dev-tools,database-backend,cloud-gpu&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:18Z",
-      "lastSuccessAt": "2026-11-01T22:17:18Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200，JSON 解析成功；anyone + category(llm-api,dev-tools,database-backend,cloud-gpu) + newest + limit=20 返回 results 20 条（total_matches 58）。本轮命中 ClickHouse Cloud $300/30 天试用、Turso 免费档、Bolt.new 每月 100 万 tokens 等候选，均已转官网核实；其余命中项与既有条目官方入口重复，未新增。"
+      "observation": "直连 200（590 KB）+ /api/search JSON 接口与 /llms.txt 索引可用，本轮用 category+sort=value 拉取 llm-api / cloud-gpu / agents-automation 清单比对存量；新条目的金额与条款均回到厂商官方页核对，未直接采信。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-01T03:09:00Z",
-      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "目录与官方跳转可读；新增及站方核实日期可见 2026-10-31。"
+      "observation": "直连 000，走本机代理 200（191 KB）；238 条 offers，含 AgentRouter 每日签到 $25（中转属性，排除）与 Gemini 学生计划等。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:20Z",
-      "lastSuccessAt": "2026-11-01T22:17:20Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；首页标题「AI免费资源 - 1207 条 AI 免费额度与限免羊毛 - 门槛与有效期全标注 - 每日更新 - 羊毛专题」，条目标题计数较上一轮 1153 条上升，站内条目仍需转官网核实。"
+      "observation": "直连 200（63 KB），首页给出 1225 条在架与「最新限时羊毛」列表（腾讯混元、DeepSeek、xAI、MiniMax 等）；本轮仅作线索，未直接采信。"
     },
     {
       "id": "aifuli",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 读取 200，40 条（均为 7 月归档条目），据此定位到腾讯 CodeBuddy 官方定价页；其余条目与既有条目重复。"
+      "observation": "直连 200（6 KB），收录 40 条，本轮据此发现通义灵码个人版免费线索，再回阿里云官方价格页核实。"
     },
     {
       "id": "token-pencil",
@@ -129,14 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-01T10:34:08Z",
-      "lastSuccessAt": "2026-11-01T10:34:08Z",
-      "lastFailure": {
-        "at": "2026-11-01T03:09:00Z",
-        "reason": "页面注明调研时点 2026-10-26；可读分类，当前文本提取未得到完整卡片。"
-      },
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "正常匿名浏览器渲染出 37 张国内卡片；公开数据内核 UPDATED=2026-10-30，AGENT 20 / MODEL 17，海外 GLOBAL 15。HTML 明确引用 deals-core.js?v=13 与 deals.js?v=15，读取不依赖文本提取器。站点 feed.xml 为 200、28 条更新，仅补充发现，不能替代福利全量。价格有固定汇率折算，回官方核实原币种。"
+      "observation": "直连 200（22 KB），卡片列表为前端渲染，静态正文只有分类计数（Agent/编程 10 项、大模型 API 16 项），无逐条条款。"
     },
     {
       "id": "usefree",
@@ -155,14 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:36Z",
-      "lastSuccessAt": "2026-11-01T22:17:36Z",
-      "lastFailure": {
-        "at": "2026-11-01T03:09:00Z",
-        "reason": "仅提取到搜索与导航外壳，未得到福利清单或明确更新时间。"
-      },
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200 且 JSON 解析成功；items 实际 110 个品牌条目。本轮命中 Bolt.new「每月 100 万 tokens」，转官网定价页核实后入库；另有声称 Browser Use 赠 $15 credits 的条目，官方实为 $1 free credit，已排除。"
+      "observation": "直连 000，走本机代理 200（112 KB）；页面正文仅剩导航与站点信息，列表改为前端渲染，本轮无可用线索。"
     },
     {
       "id": "linux-do",
@@ -180,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl + 浏览器 UA 经本机代理读取 200，RSS 解析成功 25 条（福利羊毛）；命中 Exa「$70 代金券」、Docker Sandboxes「$250 额度」、TRAE 宝限免、CodeBuddy 等线索，其余为 CDK/机场/中转站/Team 交易帖，已排除。"
+      "observation": "latest.rss 直连 200（67 KB，30 条），本轮标题多为闲聊、拼车、收码与渠道讨论，无可用官方福利线索。"
     },
     {
       "id": "nodeseek",
@@ -201,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 读取 200，20 条，几乎全为二手交易、Team 拼车与闲聊帖，无可用福利线索；Muse「企鹅邮箱可注册」帖不足以改变既有 pending 判定。"
+      "observation": "rss.nodeseek.com 直连 200（10 KB，20 条），本轮全为二手交易/VPS 转手/测评闲聊，无官方福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -528,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 读取 200，25 条；除转载的 Exa 代金券帖外，其余为建站、域名、游戏与签到脚本类内容，未新增候选。"
+      "observation": "直连 000，走本机代理 200（1.4 MB）；列表页正文含大量机房促销帖，本轮无符合「官方可核实」标准的新条目。"
     },
     {
       "id": "aideal",
@@ -811,11 +805,11 @@
       ],
       "entryUrl": "https://upstash.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:18:04Z",
-      "lastSuccessAt": "2026-11-01T22:18:04Z",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 可读，Free 档为 $0，含 250MB 数据、10GB 月流量、500K 月命令；Pay as You Go 为 $0.2/100K commands；同页列出 Redis / Vector / QStash / Workflow / Box / Blob 各产品免费档上限。"
+      "observation": "直连 200（245 KB），Free 档 250 MB / 50 万命令/月 / 10 GB 带宽 / 1 个数据库，FAQ 明确免绑卡与超额停用行为；本轮据此新入库 upstash-free-redis-500k-commands-202611。"
     },
     {
       "id": "china-mobile-ecloud-help",
@@ -1023,6 +1017,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 直连 200（144 KB），Starter 档原文「Free $10 credits every month plus a $10 onboarding bonus. No payment method required」；未出现社区流传的 EXA50API 优惠码条文。"
+    },
+    {
+      "id": "lingma-pricing",
+      "name": "通义灵码价格页",
+      "url": "https://lingma.aliyun.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://lingma.aliyun.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（86 KB），四档对照内联在 HTML 中：个人基础版免费（对话 50 轮/月、单测智能体 50 方法/月）、个人专业版 ¥59/月限免、企业标准版 ¥79、企业专属版 ¥159；help.aliyun.com/zh/lingma/product-overview/pricing 是 404，勿再使用。"
+    },
+    {
+      "id": "ibm-cloud-free",
+      "name": "IBM Cloud 免费层",
+      "url": "https://www.ibm.com/products/cloud/free",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.ibm.com/products/cloud/free",
+      "status": "readable",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（190 KB），正文与 FAQ 完整：40+ Lite 计划永久免费、每服务 1 实例、绑卡约 $1 预授权、10 天休眠/30 天删除、USD 200 需升级 Pay-as-you-go、促销码 2026-12-31 到期。"
+    },
+    {
+      "id": "amd-developer-cloud-faq",
+      "name": "AMD Developer Cloud FAQ",
+      "url": "https://www.amd.com/en/developer/resources/cloud-access/amd-developer-cloud.html",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.amd.com/en/developer/resources/cloud-access/amd-developer-cloud.html",
+      "status": "readable",
+      "checkedAt": "2026-11-02T15:17:00Z",
+      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（190 KB），FAQ 写明「initial 25 hours」≈「$50 US」赠金、存入后 10 天过期、关机仍计费，与 developer.amd.com 会员页「$100 credits」冲突，是 AMD 赠金条文的权威口径之一。"
     }
   ]
 }
