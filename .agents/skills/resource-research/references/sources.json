@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:21Z",
-      "lastSuccessAt": "2026-11-01T22:17:21Z",
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；40 条 RSS，已解析（频道「AI 福利雷达」）。"
+      "observation": "本轮 RSS 读取 200，40 条（均为 7 月归档条目），据此定位到腾讯 CodeBuddy 官方定价页；其余条目与既有条目重复。"
     },
     {
       "id": "token-pencil",
@@ -180,14 +180,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:23Z",
-      "lastSuccessAt": "2026-11-01T22:17:23Z",
-      "lastFailure": {
-        "at": "2026-11-01T03:06:40.035472+00:00",
-        "reason": "历史可读订阅源本次直连 HTTP 403；网页工具不支持 RSS 类型不代表成功；本次无内容更新时间证据。"
-      },
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；25 条 RSS，已解析（频道「福利羊毛 - LINUX DO」）；本轮用于定位云智手机签到、Memoh 免费档、Muse 免费额度、华为云成长券等社区线索并转官方核实。"
+      "observation": "本轮 curl + 浏览器 UA 经本机代理读取 200，RSS 解析成功 25 条（福利羊毛）；命中 Exa「$70 代金券」、Docker Sandboxes「$250 额度」、TRAE 宝限免、CodeBuddy 等线索，其余为 CDK/机场/中转站/Team 交易帖，已排除。"
     },
     {
       "id": "nodeseek",
@@ -204,11 +201,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:25Z",
-      "lastSuccessAt": "2026-11-01T22:17:25Z",
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；20 条 RSS，已解析（频道「NodeSeek」）；本轮用于定位 HKCloudX 年付特惠线索，社区口径与官方套餐表不一致，以官方为准。"
+      "observation": "本轮 RSS 读取 200，20 条，几乎全为二手交易、Team 拼车与闲聊帖，无可用福利线索；Muse「企鹅邮箱可注册」帖不足以改变既有 pending 判定。"
     },
     {
       "id": "lowendtalk",
@@ -446,11 +443,11 @@
       ],
       "entryUrl": "https://vps.lowseek.ai/data/deals.json",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:33Z",
-      "lastSuccessAt": "2026-11-01T22:17:33Z",
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；JSON 已解析（records 80 条，LowEndTalk Offers + LowEndBox 合并去重）。"
+      "observation": "本轮读取 deals.json 200（约 182 KB），条目与既有 VPS 条目高度重复，且多为营销价，未新增候选；未采信其 availability/score 字段。"
     },
     {
       "id": "serverhunter",
@@ -531,14 +528,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:29Z",
-      "lastSuccessAt": "2026-11-01T22:17:29Z",
-      "lastFailure": {
-        "at": "2026-11-01T03:06:41.650787+00:00",
-        "reason": "HTTP 200，互联网服务栏目可读；文本主要是子分类，未得到完整最新主题及发布时间。"
-      },
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；25 条 RSS，已解析（频道「互联网服务 - NodeLoc」）；列表含推广或不合规线索，仍须筛选与官方核实。"
+      "observation": "本轮 RSS 读取 200，25 条；除转载的 Exa 代金券帖外，其余为建站、域名、游戏与签到脚本类内容，未新增候选。"
     },
     {
       "id": "aideal",
@@ -967,6 +961,68 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "VitePress 服务端渲染，正文可直接提取；快速开始只含安装与接入步骤，未出现免费档、免费额度或到期时间表述。"
+    },
+    {
+      "id": "docker-sandboxes-promo",
+      "name": "Docker Sandboxes $250 促销页",
+      "url": "https://www.docker.com/c/sbx-promo/",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.docker.com/c/sbx-promo/",
+      "status": "readable",
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML（262 KB）可直读，页内 FAQ 含额度金额、替代标准 $25、限领规则、绑卡要求、截止 2027-01-31 23:59 PT、6 个月有效期与 Micro→XL 逐档按秒单价。是本条 $250 促销的一手依据。"
+    },
+    {
+      "id": "codebuddy-cn-pricing",
+      "name": "腾讯 CodeBuddy 个人版定价",
+      "url": "https://www.codebuddy.cn/pricing/",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.codebuddy.cn/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "copilot.tencent.com/pricing 直连仅 7 KB SPA 空壳、正文 29 字符；改用只读渲染代理后取到完整个人版对照表（体验版限时免费 500 积分 / 标准版 ¥99 / 高级版 ¥199 / 旗舰版 ¥999 / Buddy One VIP ¥999）。"
+    },
+    {
+      "id": "exa-pricing",
+      "name": "Exa API 定价",
+      "url": "https://exa.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://exa.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-02T09:18:45Z",
+      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（144 KB），Starter 档原文「Free $10 credits every month plus a $10 onboarding bonus. No payment method required」；未出现社区流传的 EXA50API 优惠码条文。"
     }
   ]
 }
