@@ -2264,8 +2264,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "本轮只读渲染代理取到官方成长中心页面的可读文本，确认了签到/微认证/开发者活动的积分规则、每日 16:00 代金券补货与先到先得、代金券存在兑换上限、禁止多账号刷分封禁等官方公告；但可兑换奖品明细仍是前端异步加载的「加载中」，面额档位、所需积分与券有效期仍无官方文本，故维持 pending，置信度由 low 升为 medium。",
-      "lastVerifiedAt": "2026-11-01T22:13:39Z",
-      "nextReviewAt": "2026-11-02T22:13:39Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://developer.huaweicloud.com/grow",
@@ -2281,6 +2281,11 @@
           "url": "https://developer.huaweicloud.com/grow",
           "summary": "复核（此前数轮直连仅得「HDGrowthPortal doesn't work properly without JavaScript enabled」空壳，本轮只读渲染取到正文）：顶部【公告】「每天 16:00 代金券补货，数量有限先到先得；同时代金券设有兑换上限，具体限制可在兑换弹窗中查看。请勿多账号刷分，一经发现封禁处理」；每日连续签到 1–7 天各得 10 积分；「每周通过一项微认证」得 200 积分；「报名参加开发者活动」得 10 积分；积分兑换区提供「代金券」类型与 1-100 / 101-500 / 501-1000 / 1000 以上区间筛选，但可兑换奖品列表仍显示「加载中」，面额与所需积分未读到。",
           "checkedAt": "2026-11-01T22:13:39Z"
+        },
+        {
+          "url": "https://developer.huaweicloud.com/grow",
+          "summary": "只读渲染代理取到成长中心正文：公告仍为「每天 16:00 代金券补货，数量有限先到先得；同时代金券设有兑换上限，具体限制可在兑换弹窗中查看。请勿多账号刷分，一经发现封禁处理。」签到仍 +10 积分，需要登录后在兑换弹窗才能看到券面额与所需积分，本轮仍未能取得面额。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -2298,6 +2303,11 @@
           "at": "2026-11-01T22:13:39Z",
           "status": "pending",
           "note": "复核部分成功：只读渲染首次读到官方成长中心正文的公告与积分任务规则（16:00 补货、先到先得、设有兑换上限、禁止多号刷分、签到与微认证积分数），可兑换奖品明细仍为异步加载未读到；官方面额档位、所需积分与券有效期仍缺，按规则维持 pending，置信度由 low 升为 medium 并记录已证实的官方事实。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "pending",
+          "note": "到期复核：补货时间、先到先得、兑换上限与封禁规则与上轮一致，券面额仍只在登录弹窗内，维持 pending/medium。"
         }
       ]
     },
@@ -2326,7 +2336,7 @@
       "confidence": "low",
       "confidenceReason": "官方入口 https://yunzhi.play.cn/ai/ 返回 200 但只是 Vue 单页应用（HTML 约 1.3 KB），签到与权益规则全在前端脚本内，未读到任何条款；仅有社区帖描述「每天访问自动弹出、领 2 天、24 小时不休眠」。",
       "lastVerifiedAt": null,
-      "nextReviewAt": "2026-11-02T22:09:41Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://yunzhi.play.cn/ai/",
@@ -2342,6 +2352,11 @@
           "url": "https://yunzhi.play.cn/ai/",
           "summary": "复核：只读渲染代理取回页面可见文本，仅为「云智手机」产品页（下载 APP / 登录 / 技能使用 / 技能教程 / 快捷指令与示例对话图片），全文未出现签到、云手机时长、权益规则或价格文本；官方条款仍不可读，维持 pending/low。",
           "checkedAt": "2026-11-01T22:09:41Z"
+        },
+        {
+          "url": "https://yunzhi.play.cn/ai/",
+          "summary": "本轮再次经只读渲染代理读取（HTTP 200，正文约 1.8 KB）：页面为产品宣传与 App 下载入口，含「旗舰 全能助手」「技能使用 / 技能教程 / 快捷指令」等导航，未出现签到 2 天、免费时长或有效期文字。官方条款仍未取得，不刷新核实时间。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -2502,6 +2517,11 @@
           "url": "https://docs.memoh.ai/zh/guides/quick-start",
           "summary": "复核：只读渲染代理取回官方中文快速开始文档全文，正文确认 Memoh Cloud 托管 DeepSeek / Kimi / GPT / Claude 等模型、可自带 API Key，但全文仍无「免费 / 免费档 / 额度 / 限额 / 2C2G」任何免费档表述，社区「2C2G 申请审批」口径依旧无官方佐证，维持 pending/low。",
           "checkedAt": "2026-11-01T22:09:39Z"
+        },
+        {
+          "url": "https://docs.memoh.ai/zh/guides/quick-start",
+          "summary": "本轮再次读取文档站快速开始（HTTP 200，15 KB）：内容仅含安装、登录 Memoh Cloud、创建 Bot、BYOK 的步骤，明确「Memoh Cloud 内置了托管模型（DeepSeek、Kimi、GPT、Claude 等），上手不需要任何 API Key」，但未出现价格、免费额度或 2C2G 免费档条款；docs 站 /pricing、/plans、/free 均 404。官方免费档条款仍未取得，不刷新核实时间。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -2517,7 +2537,7 @@
         }
       ],
       "lastVerifiedAt": null,
-      "nextReviewAt": "2026-11-02T22:09:39Z"
+      "nextReviewAt": "2026-11-04T03:35:39Z"
     },
     {
       "id": "qoder-1024-community-boost-202610",
@@ -2791,8 +2811,8 @@
       "status": "pending",
       "confidence": "low",
       "confidenceReason": "本轮只读渲染取到官方 cloud.html 的三档年付特惠套餐与规格，但价格仍由动态配置器在购物车结算时生成，社区所称 $6/年 MiniV6 NAT 机型不在官方可读套餐表内，续费价与库存仍缺，故维持 pending/low。",
-      "lastVerifiedAt": "2026-11-01T22:09:38Z",
-      "nextReviewAt": "2026-11-02T22:09:38Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://hkcloudx.com/cloud.html",
@@ -2813,6 +2833,11 @@
           "url": "https://hkcloudx.com/cloud.html",
           "summary": "复核（此前直连为未渲染的 Vue 模板，本轮只读渲染取到可选套餐文本）：官方「香港 / 美国云服务器」KVM 弹性计费页，区域为中国香港，套餐表为入门年付特惠 HK-RAID10-Y01（1 核 2G / 30GB SSD / 200M / 500GB 流量 / 1 IPv4 + 1 IPv6）、进阶年付特惠 HK-RAID10-Y02（2 核 4G / 40GB / 1000GB 流量）、旗舰年付特惠 HK-RAID10-Y03（4 核 8G / 80GB / 2000GB 流量），三者均为含独立 IPv4 的年付特惠；页面未出现 MiniV6、NAT 或 $6/年档，价格未在可读文本中给出。",
           "checkedAt": "2026-11-01T22:09:38Z"
+        },
+        {
+          "url": "https://hkcloudx.com/cloud.html",
+          "summary": "只读渲染代理取到云服务器配置器正文：区域中国香港、KVM 弹性计费，三档年付特惠为 HK-RAID10-Y01（1核2G / 30GB SSD / 200M 带宽 / 500GB 流量 / 1 IPv4 + 1 IPv6）、Y02（2核4G / 40GB / 1000GB）、Y03（4核8G / 80GB / 2000GB），页面仍不显示价格，需登录结算才给出年付金额，社区所称 $6/年 MiniV6 NAT 机型未在该配置器中出现。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -2830,6 +2855,11 @@
           "at": "2026-11-01T22:09:38Z",
           "status": "pending",
           "note": "复核部分成功：只读渲染首次取到官方 cloud.html 的套餐与规格文本，确认官方在售的是三个含独立 IPv4 的年付特惠档（Y01/Y02/Y03），社区所称 $6/年 MiniV6 NAT 机型不在官方可读套餐表内且价格仍需购物车结算生成；官方未确认该机型存在或下架，按规则维持 pending/low（不将「官方未列出」当作活动终止），并已用官方套餐表替换原先的不可读描述。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "pending",
+          "note": "到期复核：三档年付套餐规格与 IPv4/IPv6 数量已按渲染正文核对，价格仍未公开（配置器不含价），社区 $6/年 MiniV6 NAT 无法在官方配置器证实，维持 pending/low 与 creditCard unknown。"
         }
       ]
     },
@@ -3915,6 +3945,11 @@
           "url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
           "summary": "复核（此前数轮只读渲染失败，本轮成功取到正文全文，文档标注更新时间 2026/10/27）：活动时间 2026年2月15日-2026年12月31日；每位用户 2500 万 tokens、限时 30 天；支持政企类用户与互联网用户；仅部分自营模型支持（官方举例自营 Qwen3.5-35B-A3B 不支持 2500 万 Token 额度）；合作模型、机密模型不支持；单个用户身份信息下所有账户合计仅能领取一次；限流每用户最多 3000 tokens/min；免费体验期间优先消耗免费额度、期间不产生计费，额度用尽且未订购的模型服务自动暂停，需完成订购后方可继续使用；领取路径为 MoMA 控制台模型广场右上角「新用户2500wTokens免费体验」；适用对象为未领取过本次额度的新老用户。",
           "checkedAt": "2026-11-01T22:13:37Z"
+        },
+        {
+          "url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+          "summary": "只读渲染代理取到帮助中心全文（页面更新时间 2026/10/27）：活动期仍为 2026-02-15 至 2026-12-31，每用户 2500 万 tokens、限时 30 天、限流 3000 tokens/min、单一身份信息下所有账户合计仅能领一次、仅部分自营模型支持（自营 Qwen3.5-35B-A3B 不支持）、不支持合作与机密模型、额度用尽且未订购则服务自动暂停，条款与上轮一致。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -3927,10 +3962,15 @@
           "at": "2026-11-01T22:13:37Z",
           "status": "active",
           "note": "复核成功并升级为 active/high：只读渲染代理本轮首次取到移动云帮助中心文章正文全文，2500 万 tokens、30 天时限、3000 tokens/min 限流、部分自营模型限定、单一身份仅领一次与「额度用尽且未订购则自动暂停」等关键限制均为官方原文确认，条款完整可判断领取；仍保留「官方未说明是否需绑定支付方式」这一未知项，不做推断。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "active",
+          "note": "满 24h 复核：移动云 MoMA 帮助中心全文仍为 2500 万 tokens / 30 天 / 3000 tokens·min⁻¹ / 单一身份一次，活动截止 2026-12-31 未变，仅刷新核实时间。"
         }
       ],
-      "lastVerifiedAt": "2026-11-01T22:13:37Z",
-      "nextReviewAt": "2026-11-02T22:13:37Z"
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z"
     },
     {
       "id": "aliyun-bailian-new-user-free-quota-2026",
@@ -4405,8 +4445,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方首页明确写明每个用户拥有一台持久云端 Linux 计算机（Muse Secure VM，含浏览器与独立 root 文件系统），安全架构有官方博客佐证；但「免费」与具体额度、地区/年龄资格、付费档价格只在第三方报道与高管社交媒体出现，且社区流传的 30 亿 / 50 亿 / 310 亿 tokens 三种口径互相矛盾，muse.ai/pricing 登录后可见、本轮只读渲染仍跳回首页无法核实，故按待核实收录。",
-      "lastVerifiedAt": "2026-11-01T22:09:38Z",
-      "nextReviewAt": "2026-11-02T22:09:38Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://muse.ai/",
@@ -4432,6 +4472,11 @@
           "url": "https://www.nodeseek.com/post-1025189-1",
           "summary": "社区来源（NodeSeek 2026-11-01 帖）：称可免费领取 MUSE 账号并获 50 亿词元；同日在 NodeSeek 1025199 称 30 亿 TOKEN、NodeLoc 116237 称 310 亿词元、NodeLoc 116251 称 50 亿 TOKEN，同一活动出现三种互相矛盾的数量口径，且官网与 pricing 页均无对应条文，故不作为官方额度采信。",
           "checkedAt": "2026-11-01T22:09:38Z"
+        },
+        {
+          "url": "https://muse.ai/",
+          "summary": "官网首页复读：仍写明每个 Muse 用户共享一台云端计算机「Muse Secure VM is a persistent, isolated Linux computer with a full browser」，可随时人工接管；/pricing 仍返回 401（需登录），官方仍未公开免费额度、地区限制或收费口径。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -4449,6 +4494,11 @@
           "at": "2026-11-01T22:09:38Z",
           "status": "pending",
           "note": "复核成功（结论不变）：官方首页确认文案与此前一致，仍无价格/免费额度/地区限制表述；社区侧新出现 30 亿 / 50 亿 / 310 亿 tokens 三种互相矛盾的额度说法，已作为社区来源记录并明确不予采信；pricing 页经只读渲染仍跳回首页无法核实免费档限制，维持 pending/medium。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "pending",
+          "note": "到期复核：首页 VM 定位表述未变，pricing 仍 401 无法取得免费额度与地区条款，维持 pending 且不改变额度描述。"
         }
       ],
       "discoveredAt": "2026-10-30T07:08:35Z",
@@ -5230,7 +5280,7 @@
       "confidence": "medium",
       "confidenceReason": "上海人工智能实验室官方新闻明确「测试期间，每位用户每月可获免费 Token」并给出 Token Plan 详情页地址，方向有官方依据；但每月赠送数量、领取门槛、适用模型与超额计费均未在官方页面公布，故保持待核实。",
       "lastVerifiedAt": "2026-11-01T02:08:43Z",
-      "nextReviewAt": "2026-11-02T02:08:43Z",
+      "nextReviewAt": "2026-11-06T03:35:39Z",
       "evidence": [
         {
           "url": "https://www.shlab.org.cn/news/5444294",
@@ -5251,6 +5301,11 @@
           "url": "https://discovery.SAGE-ai.org.cn/token-plan/home?tabIndex=0",
           "summary": "本轮复核失败：该域名当前无法解析（只读渲染代理返回「Domain 'discovery.sage-ai.org.cn' could not be resolved」），未取得正文，未刷新核实时间，列入积压。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://discovery.sage-ai.org.cn/token-plan/home",
+          "summary": "本轮域名 discovery.sage-ai.org.cn 解析到 198.18.0.21（本机被拦截的保留网段），curl 连接直接 000 失败，未取得任何页面内容；连续第 3 轮不可达，按规则停止重试并把复核间隔放宽到 72 小时，保留原有 pending/medium 记录。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -5286,7 +5341,7 @@
       "confidence": "medium",
       "confidenceReason": "官方页面完整给出资格门槛、四步申请流程与功能清单（含 1203+ 已资助项目），但未公布 VPS 规格、是否需要付款方式、资助期限与审核时效，故保持待核实。",
       "lastVerifiedAt": "2026-11-01T02:08:43Z",
-      "nextReviewAt": "2026-11-02T02:08:43Z",
+      "nextReviewAt": "2026-11-06T03:35:39Z",
       "evidence": [
         {
           "url": "https://dartnode.com/open-source",
@@ -5302,6 +5357,11 @@
           "url": "https://dartnode.com/open-source",
           "summary": "本轮复核失败：直连 403，只读渲染代理同样返回「Security Check / Please complete the security check」人机校验（Ray ID a544193d6d1bd6e5），未取得正文，未刷新核实时间，列入积压。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://dartnode.com/",
+          "summary": "本轮直连仍返回 HTTP 403 的人机校验页（约 1.1 MB challenge 页面），未取得任何活动条款；连续第 3 轮被风控拦截，按规则停止重试并把复核间隔放宽到 72 小时，保留原有 pending/medium 记录。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -5789,8 +5849,8 @@
       "autoRenewal": "no",
       "confidence": "medium",
       "confidenceReason": "免费档的额度、规格与免绑卡由官方定价页直接确认；但同一轮读到官方状态页显示安全事件仍在处置中（Major outage，页面顶部仍为 \"Experiencing partial outage\"），截至 2026-11-01T22:10Z 官方已陆续开放 Postgres/MongoDB、MySQL/Redis、Minio、RabbitMQ 的密钥轮换并为全部用户（含免费用户）开启审计日志，事件是否闭环与是否影响新开户仍无官方确认，故保持待核实。",
-      "lastVerifiedAt": "2026-11-01T22:10:56Z",
-      "nextReviewAt": "2026-11-02T22:10:56Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://northflank.com/pricing",
@@ -5811,6 +5871,16 @@
           "url": "https://status.northflank.com/",
           "summary": "复核：官方状态页顶部仍为「Experiencing partial outage」，Security incident 仍标记 Identified · Major outage；时间线最新更新为 2026-10-31 23:31 UTC（RabbitMQ add-on 密钥轮换已对全部客户开放，请尽快轮换）、2026-10-31 22:32 UTC（Minio add-on 密钥轮换开放）、2026-10-31 13:34 UTC（MySQL 与 Redis 密钥轮换开放）、2026-10-31 01:04 UTC（已为全部客户含免费用户启用审计日志）；事件处置仍在进行中，未见官方宣布结案。",
           "checkedAt": "2026-11-01T22:10:56Z"
+        },
+        {
+          "url": "https://northflank.com/pricing",
+          "summary": "官方定价页复读：Sandbox Free 仍为「No card needed」、2 services / 2 jobs / 1 database、Northflank Cloud 上每月最高 $20 资源、1 个 BYOC 集群 12 vCPU 与 48 GB、Always on no sleeping；页面顶部仍保留安全事件横幅。",
+          "checkedAt": "2026-11-03T03:35:39Z"
+        },
+        {
+          "url": "https://status.northflank.com/",
+          "summary": "状态页 2026-11-02T11:09Z 更新（仍标 Monitoring · Major outage / Experiencing partial outage）：攻击向量在首警后 1 小时内受控，未发现攻击者在其环境中留存，独立取证审计进行中；运行中工作负载未受影响、未见工作负载数据被访问，证据指向控制面密钥；forward-deployed / 专用控制面客户不受影响；已全机群修复 CVE-2026-98432（含仍连接 Northflank 的 BYOC 集群）；部分客户报告 AI 密钥被未授权使用，要求立即轮换全部集成与项目密钥。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -5823,6 +5893,11 @@
           "at": "2026-11-01T22:10:56Z",
           "status": "pending",
           "note": "复核成功（结论不变）：官方状态页显示安全事件仍未闭环，页面顶部保持「Experiencing partial outage」；本轮新增官方时间线信息——各类型 add-on 的密钥轮换已陆续对全部客户开放、且已为免费用户启用审计日志，这进一步支持官方「立即轮换全部存放于平台的密钥」的处置建议；免费档条款未变，但新开户与免费档是否受事件影响仍无官方确认，维持 pending/medium。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "pending",
+          "note": "到期复核：免费 Sandbox 额度与规格未变（$20/月、2 服务 2 任务 1 数据库、1 BYOC 12 vCPU/48GB），仅刷新核实时间。 另同步事件状态页：2026-11-02 11:09 UTC 更新称攻击向量在首警后一小时内受控、取证审计仍在进行、运行中的工作负载未受影响、已全机群修复 CVE-2026-98432，仍要求客户轮换全部密钥（含集成与项目密钥）。"
         }
       ]
     },
@@ -5848,13 +5923,18 @@
       "creditCard": "not-required",
       "autoRenewal": "no",
       "costNotes": "试用额度先用先扣；一旦在试用中绑定付款方式，额度耗尽或到期后组织自动转入按量计费并向该卡扣款，此后计算、存储、备份、ClickPipes 摄取与公网出网均单独计费（Ingress 免费），超额使用不会自动停止；官方在额度剩余 50% / 75% / 90% 时发邮件提醒。$300 本身不循环发放，但试用后按量计费会持续到主动停用或删除组织。",
-      "lastVerifiedAt": "2026-11-01T22:10:52Z",
-      "nextReviewAt": "2026-11-02T22:10:52Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://clickhouse.com/pricing",
           "summary": "官方定价页：「Start free with $300 in credits for 30 days」；N. Virginia (us-east-1) Basic 档「Includes: Up to 1 TB storage / 8-12 GiB total memory / Backups every 24h, retained for 1 day / 1 availability zone / Export backups to your own cloud account / Expert support with 1 business day response time / SSO using Google or Microsoft / MFA」，Storage $25.30 per 1TB/mo、Compute $0.2181 per unit/hr；FAQ「Every new ClickHouse Cloud organization starts with $300 in credits to use over 30 days. The trial ends when the credits are used up or the 30 days pass, whichever comes first, and the organization then moves to pay-as-you-go. If you add a payment method during the trial, your credits are still used first; the card is only charged once they are depleted or expire.」；「One compute unit is 8 GiB of RAM and 2 vCPUs」；「Trial and committed-spend customers are emailed automatically at 50%, 75% and 90% of their credits」；注册入口 console.clickhouse.cloud/signUp。",
           "checkedAt": "2026-11-01T22:10:52Z"
+        },
+        {
+          "url": "https://clickhouse.com/pricing",
+          "summary": "官方定价页与 FAQ 复读：仍为「Start free with $300 in credits for 30 days」「Every new ClickHouse Cloud organization starts with $300 in credits to use over 30 days」，试用结束条件仍为「额度用尽或 30 天到期，先到者为准」，Basic 档仍为最多 1 TB 存储 / 8–12 GiB 总内存 / 每 24h 备份保留 1 天 / 1 可用区，未出现条款变化或促销截止日期。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -5862,6 +5942,11 @@
           "at": "2026-11-01T22:10:52Z",
           "status": "active",
           "note": "新增 active/high：由 Perq 列表命中「$300 in ClickHouse Cloud credits for 30 days」后转官网核实，官方定价页首屏与 FAQ 逐项确认额度、30 天时限、结束条件、按量计费转换与「绑定卡后先扣额度」的顺序规则，并给出 Basic 档规格与费率；未注册实测。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "active",
+          "note": "满 24h 复核：官方定价页与 FAQ 条款与上轮一致（$300 / 30 天 / 每新组织一次 / 到期先到为准），未改动字段，仅刷新核实时间。"
         }
       ],
       "confidence": "high",
@@ -5889,13 +5974,18 @@
       "creditCard": "not-required",
       "autoRenewal": "no",
       "costNotes": "Free 档是硬性上限：超出 100 个数据库、5GB 存储、5 亿行读取或 1000 万行写入即无法继续使用，官方未在定价页给出 Free 档超额后的处理方式（Developer 档 $4.99/月起，存储 $0.75/GB、写入 $1/百万行、审计日志与时间点恢复均需更高档位）。官方公告 Turso 正在并入 Supabase，免费档条款后续可能调整。",
-      "lastVerifiedAt": "2026-11-01T22:10:54Z",
-      "nextReviewAt": "2026-11-02T22:10:54Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://turso.tech/pricing",
           "summary": "官方定价页：顶部公告「Turso is joining Supabase to give every agent its own database」；「Start free, no credit card required」；Free $0/month 档逐列给出 Databases 100 / Storage 5GB / Monthly Rows Read 500 Million / Monthly Rows Written 10 Million / Monthly Syncs 3GB / Audit Logs 3GB / Point-In-Time Restore 1 day / Support Community；Developer 档 $4.99/月（Unlimited 数据库、9GB + $0.75/GB、25 亿行 + $1/十亿、2500 万写 + $1/百万、10GB + $0.35/GB、审计日志 3 天、时间点恢复 10 天）；Scaler $24.92/月、Pro $416.58/月、Enterprise 定制。",
           "checkedAt": "2026-11-01T22:10:54Z"
+        },
+        {
+          "url": "https://turso.tech/pricing",
+          "summary": "官方定价页复读：Free 档仍为 $0/month、100 databases、5GB storage、500 Million 月读行、10 Million 月写行、3GB sync、1 day audit log；页首仍挂「Turso is joining Supabase to give every agent its own database」公告，未出现免费档数值变化。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -5903,6 +5993,11 @@
           "at": "2026-11-01T22:10:54Z",
           "status": "active",
           "note": "新增 active/high：由 Perq 列表命中「Free $0/month: 100 databases, 5GB storage, 500 million rows」后转官网核实，官方定价页逐列给出 Free 档全部资源上限、免绑卡明文与各付费档对照；并在条目标题/备注中披露官方公告的 Turso 并入 Supabase 一事。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "active",
+          "note": "满 24h 复核：Free 档四项数值（100 DB / 5GB / 5 亿读 / 1000 万写）与审计日志保留 1 天均未变，仅刷新核实时间。"
         }
       ],
       "confidence": "high",
@@ -5930,13 +6025,18 @@
       "creditCard": "not-required",
       "autoRenewal": "no",
       "costNotes": "免费档站点必须保留 Bolt 品牌标识；免费档存在官方未公布具体数值的每日限额，达到上限后的可用性受限；Pro $25/月、Teams $30/成员/月为解锁更高 token 额度与自有域名的路径。",
-      "lastVerifiedAt": "2026-11-01T22:10:55Z",
-      "nextReviewAt": "2026-11-02T22:10:55Z",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
       "evidence": [
         {
           "url": "https://bolt.new/pricing",
           "summary": "官方定价页：「Free $0 /month — Free forever, no card required — Start Free — Try Bolt with daily limits. No credit card. 1M tokens/month to try Bolt — Public and private projects — Bolt branding on websites — Unlimited databases — Website hosting」；「Pro $25 */month, Billed monthly — Everything in Free, plus real app capacity and your own domain — Your own domain, no Bolt branding — 10M tokens/month, rollover included — Expanded database capacity — Choice of database provider — Access to the newest AI models — Connectors and MCPs — SEO boosting」；Teams $30/成员/月。",
           "checkedAt": "2026-11-01T22:10:55Z"
+        },
+        {
+          "url": "https://bolt.new/pricing",
+          "summary": "官方定价页复读：Free 档仍为「$0 /month」「Free forever, no card required」「1M tokens/month to try Bolt」，含公有与私有项目、网页带 Bolt 品牌、不限数据库、含站点托管，并保留每日用量限制表述；Pro 档仍 $25/月。",
+          "checkedAt": "2026-11-03T03:35:39Z"
         }
       ],
       "history": [
@@ -5944,6 +6044,11 @@
           "at": "2026-11-01T22:10:55Z",
           "status": "active",
           "note": "新增 active/high：由 usefree.space 列表命中「Bolt.new — Get 1M free tokens on Bolt.new」后转官网核实，官方定价页明文给出 Free $0/月、free forever、免绑卡、每月 100 万 tokens、数据库与托管不限量，并披露免费档的 Bolt 品牌标识要求与未公开数值的每日限额。"
+        },
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "active",
+          "note": "满 24h 复核：Free 档「1M tokens/月、免绑卡、免费永久」表述未变，仅刷新核实时间。"
         }
       ],
       "confidence": "high",
@@ -6214,6 +6319,134 @@
           "note": "本轮由 LINUX DO 福利帖（3112381）发现 Bilibili Index-Translate 免费公网 API，回到官方 GitHub 仓库核实端点、模型与调用方式，并实际匿名调用一次成功；因官方未公布限速与额度，按 pending/medium 入库。"
         }
       ]
+    },
+    {
+      "id": "vercel-ai-gateway-free-5-usd-month-202611",
+      "title": "Vercel AI Gateway 免费档：每团队每月 $5 额度，零加价调用多家模型",
+      "provider": "Vercel（AI Gateway）",
+      "category": "ai",
+      "description": "Vercel 官方 AI Gateway 计费文档把额度分成 Free 与 Paid 两档：每个 Vercel 团队账号自动拥有免费档，每月含 $5 AI Gateway Credits，只能调用「Free Tier eligible models」子集，速率上限低于付费档、且不支持 BYOK；付费档才可用全部模型与自带密钥。两种档位都按 provider 列表价零加价、零平台费计费，购买 Credits 后按量扣减，超出免费档限额时返回 429 并在短暂等待后重试。",
+      "quota": "免费档：每月 $5 AI Gateway Credits，仅限 Free Tier eligible models（模型子集，官方另有专门列表），按模型设置较低的 rate limit；不支持 BYOK；无承诺消费。Tokens 按 provider 列表价计费，AI Gateway 不加价、不收平台费。",
+      "benefitValue": "每月 $5 等值 token 额度（按各 provider 列表价折算，实际可用 token 数随所选模型差异极大）；因免费档仅覆盖部分模型且限速更低，价值上限即每月 $5。额度按月发放，属循环权益而非一次性赠金。",
+      "eligibility": "每个 Vercel 团队账号（含免费 Hobby 团队）默认具备免费档，无需单独申请；官方文档未写明是否需绑定付款方式，也未限制新老账号。要使用免费档以外的模型必须另行购买 AI Gateway Credits 进入付费档。",
+      "regions": "Vercel 全球边缘网络提供的托管服务，官方计费文档未列出地域限制；具体可用模型以 Free Tier models 列表为准。",
+      "validity": "按月发放，每月 $5；官方未说明未用完的额度是否结转至下月。",
+      "deadlineNote": "无公开截止日期，属产品自带免费档，不是限时促销。",
+      "officialUrl": "https://vercel.com/docs/ai-gateway/pricing",
+      "claimUrl": "https://vercel.com/dashboard/ai-gateway",
+      "discoveryUrl": "https://perq.sh/",
+      "discoveredAt": "2026-11-03T03:35:39Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "免费档只覆盖部分模型，且 rate limit 低于付费档，超限返回 429；一旦购买 Credits 即进入付费档，此后所有调用按 provider 列表价从余额扣减（零加价、无平台费），余额耗尽会停止服务而非自动扣卡。BYOK 仅在付费档可用。官方未公布未用额度的结转规则。",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
+      "evidence": [
+        {
+          "url": "https://vercel.com/docs/ai-gateway/pricing",
+          "summary": "官方文档「Free and paid tiers」小节：『Every Vercel team account gets access to both a free tier and a paid tier for AI Gateway Credits.』对比表给出 Free tier：Monthly credit $5/month included、Model access「Free Tier eligible models」、Token pricing「Provider list rates, zero markup」、Rate limits「Lower limits per model」、BYOK Not available、Commitment None。正文补充：『The free tier includes a subset of models, not the full catalog... Free tier requests are also rate limited per model, with lower limits than the paid tier. If you exceed a limit, AI Gateway returns a 429 error』；『AI Gateway charges no markup and no platform fee on tokens. You pay the provider's list price on a pay-as-you-go basis.』",
+          "checkedAt": "2026-11-03T03:35:39Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "active",
+          "note": "新增 active/high：由 Perq 列表命中「Vercel AI Gateway free」后转官方文档核实，Free/Paid 对比表逐项确认每月 $5 额度、仅限 Free Tier eligible models、更低限速、不支持 BYOK 与零加价计费口径；官方未写明绑卡要求与额度结转规则，故 creditCard 记 unknown。"
+        }
+      ],
+      "confidence": "high",
+      "confidenceReason": "官方计费文档用 Free/Paid 对比表逐项列出每月额度、可用模型范围、限速与 BYOK 限制，并说明超限 429 与零加价口径，关键限制明确；仅绑卡要求与额度结转未披露，未注册实测。"
+    },
+    {
+      "id": "runloop-50-usage-credits-202611",
+      "title": "Runloop 新账号 $50 试用额度：免绑卡、含完整 Pro 功能",
+      "provider": "Runloop",
+      "category": "cloud",
+      "description": "Runloop 官方定价页 FAQ 写明新账号起始含 $50 usage credits 并开放完整 Pro 功能，且不需要信用卡；试用额度用尽后不会自动扣费，由用户自行选择转入 Basic（$0 订阅、按实际用量计费）或升级 Pro/Enterprise。平台提供给 AI Agent 用的 microVM 沙箱（Devbox）、快照分支、浏览器支持与 suspend/resume，按 CPU 秒、内存 GB 秒、存储 GB 秒计费。",
+      "quota": "新账号一次性 $50 usage credits，试用期内含完整 Pro 功能。计费单价（官方列表）：Devbox CPU $0.00003/CPU·秒、Devbox 内存 $0.000007/GB·秒、Blueprint Build $0.00007/秒、Devbox/Blueprint/Snapshot/Object Storage 均约 $0.00000002/GB·秒（Axon Storage $0.20/GB·月）。暂停中的 Devbox 不计 CPU 与内存费用，仅继续收存储费。",
+      "benefitValue": "面额 $50。按官方 FAQ 示例（2 vCPU / 4 GB Devbox，每天活跃 8 小时约 $2.73/天）折算，$50 约可支撑 18 个这样的活跃工作日；Pro 档月费 $250 另计，Basic 档订阅免费。",
+      "eligibility": "新注册 Runloop 账号即可获得，官方 FAQ 明确「New accounts start with $50 in usage credits and full Pro feature access. No credit card is required.」；未限制地区，未说明是否需要企业邮箱。",
+      "regions": "托管服务，官方支持 VPC 部署（把 Runloop 基础设施放进自己的云账号），定价页未列出沙箱的可用区域清单。",
+      "validity": "一次性 $50 额度，官方未公布有效期限；额度用尽即触发转档提示。",
+      "deadlineNote": "无公开截止日期；属常规新账号试用额度，非限时活动。",
+      "officialUrl": "https://runloop.ai/pricing",
+      "claimUrl": "https://platform.runloop.ai",
+      "discoveryUrl": "https://perq.sh/",
+      "discoveredAt": "2026-11-03T03:35:39Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "FAQ 明确「There is no automatic charge when the trial ends—you decide how to proceed」，不会自动扣卡；转入 Basic 后订阅免费但用量照常计费，Pro 档为 $250/月基础费 + 用量。暂停的 Devbox 只收存储费、不收 CPU/内存，适合间歇型 Agent 负载；Object/Snapshot 存储长期保留会持续产生费用。",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
+      "evidence": [
+        {
+          "url": "https://runloop.ai/pricing",
+          "summary": "官方定价页 FAQ「How does the free trial convert to a paid plan?」原文：『New accounts start with $50 in usage credits and full Pro feature access. No credit card is required. Once the trial usage limit is reached, you'll be prompted to choose how to continue: switch to the Basic plan (free subscription with usage billed based on what you use), or upgrade to a paid Pro or Enterprise plan. There is no automatic charge when the trial ends—you decide how to proceed.』另「Do I get charged for suspended devboxes?」说明暂停仅收存储费；定价表列出 Devbox CPU $0.00003/CPU-sec、Memory $0.000007/GB-sec、Storage $0.00000002/GB-sec、Axon Storage $0.20/GB-month。",
+          "checkedAt": "2026-11-03T03:35:39Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "active",
+          "note": "新增 active/high：由 Perq「$50 usage credit with full Pro features, no credit card required」线索转官网页核实，FAQ 原文确认额度、免绑卡、试用结束不自动扣费与转档选项，并取到按秒计费单价；额度有效期官方未披露。"
+        }
+      ],
+      "confidence": "high",
+      "confidenceReason": "官方定价页 FAQ 直接给出 $50 额度、Pro 功能、免绑卡、试用结束不自动扣费与 Basic/Pro 转档规则，另有逐项计费单价可核算价值；仅额度有效期与沙箱可用区域未披露，未注册实测。"
+    },
+    {
+      "id": "parallel-web-api-free-tier-5000-requests-202611",
+      "title": "Parallel Web API 免费档：每月 5,000 次请求 + $5 额度（注册最高 $80）",
+      "provider": "Parallel（parallel.ai）",
+      "category": "ai",
+      "description": "Parallel 面向 AI Agent 提供搜索、抓取、深度研究与监控类 Web API（Search / Extract / Task / Responses / Monitor / FindAll / Decisions）。官方定价页在 Pay-as-you-go 档位标注「Run up to 5,000 requests per month for free」，并列出注册权益「Earn up to $80 at signup + $5 in free credits per month」。计费按请求而非 token：Search $1–5/1,000 次、Extract $1/1,000 URL、Responses $10–250/1,000 次、Task $5–2,400/1,000 次。",
+      "quota": "免费额度：每月最多 5,000 次请求，另每月 $5 免费额度；注册最高可得 $80 赠金（官方仅写「up to」，未公布分档条件）。付费按请求计价：Search $1–$5/1,000 次（每次含 10 条结果，追加结果 $1/1,000）、Image Search $1–$5/1,000 次、Extract $1/1,000 URL、Decisions $1/1,000 次、Responses $10–$250/1,000 次、Monitor $3–$10/1,000 次检查、FindAll $0.25/次 + $0.03/匹配。",
+      "benefitValue": "每月 5,000 次 Search/Extract 级请求 + $5 额度，按 Search Turbo $1/1,000 次折算约合每月 $5 的请求量，与 $5 额度叠加后月度价值约 $10；注册赠金最高 $80（条件未披露，不计入保守估值）。",
+      "eligibility": "注册 Parallel 开发者平台账号即可；官方未披露是否必须绑定付款方式、$80 赠金的分档条件（是否需验证邮箱/手机/企业资质）以及是否限制新用户。另有面向合格初创企业的「up to $250 in free credits」申请通道，属独立项目，不等同于注册赠金。",
+      "regions": "在线 API 服务，官方定价页未列出地域限制。",
+      "validity": "每月循环发放 5,000 次免费请求与 $5 额度（官方未说明未用额度是否结转）；注册赠金有效期与领取窗口未披露。",
+      "deadlineNote": "无公开截止日期；官方定价页未标注促销结束时间，属常规免费档。",
+      "officialUrl": "https://parallel.ai/pricing",
+      "claimUrl": "https://platform.parallel.ai",
+      "discoveryUrl": "https://perq.sh/",
+      "discoveredAt": "2026-11-03T03:35:39Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "pending",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "免费额度只覆盖请求量，不计 token；超出后按请求计价，Task/Responses/FindAll 类高档处理器单次可达 $0.1–$2.4，容易在深度研究场景快速耗尽额度。$5/月额度与 5,000 次请求是否为同一池、未用余额是否结转、以及超限后是否自动转付费，官方页面均未说明。",
+      "lastVerifiedAt": "2026-11-03T03:35:39Z",
+      "nextReviewAt": "2026-11-04T03:35:39Z",
+      "evidence": [
+        {
+          "url": "https://parallel.ai/pricing",
+          "summary": "官方定价页 Pay as you go 区标题下写「Run up to 5,000 requests per month for free」，价目表上方横幅写「Earn up to $80 at signup + $5 in free credits per month」；逐 API 价格与限速：Search $0.001–$0.005/次（600 req/min）、Extract $0.001/次（600 req/min）、Responses $0.01–$0.25/次（300 req/min）、Task $0.005–$2.4/次（2,000 req/min）、Monitor $0.003–$0.01/次（300 req/min）、FindAll $0.03–$1/匹配（25/hr）；另有独立的『Get up to $250 in free credits / Qualified startups』申请入口。",
+          "checkedAt": "2026-11-03T03:35:39Z"
+        },
+        {
+          "url": "https://docs.parallel.ai/getting-started/pricing.md",
+          "summary": "文档站纯文本定价页只列各 API 费率（Search $1–$5/1,000 次、Extract $1/1,000 URL、Responses $10–$250/1,000 次、Task $5–$2,400/1,000 次、Monitor $3–$10/1,000 次、FindAll $0.25/次 + $0.03/匹配），未出现免费档额度、绑卡要求或赠金领取条件。",
+          "checkedAt": "2026-11-03T03:35:39Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T03:35:39Z",
+          "status": "pending",
+          "note": "新增 pending/medium：Perq 列表命中「Up to $80 at signup + $5 in free credits per month」，转官网定价页证实 5,000 次/月免费请求与 $5/月额度横幅文案；但文档站定价页无对应条款，绑卡要求、$80 分档条件、额度是否结转均未披露，故不升 active。"
+        }
+      ],
+      "confidence": "medium",
+      "confidenceReason": "官方定价页明确写出免费请求量与每月赠金数额，但只有营销横幅与一句话标题，缺少分档条件、绑卡要求、额度是否共享或结转等关键限制，文档站定价页也未同步免费条款；未注册实测。"
     }
   ]
 }
