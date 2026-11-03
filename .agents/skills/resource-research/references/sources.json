@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?q=&audience=anyone&category=llm-api,dev-tools,database-backend,cloud-gpu&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-03T15:45:03Z",
+      "lastSuccessAt": "2026-11-03T15:45:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮以 /api/search 两组查询读取：status=live&sort=newest&limit=20（返回 20 条，total_matches 未筛选时同量）与 type=signup-credit&sort=newest&limit=20（返回 20 条，total_matches 39）。最新一批偏 dev-tools SaaS（Checkly/Clerk/CrewAI/Dify/Knock/Logto/Mastra/Neon/Kinde/Novu/Portkey/Svix/Tinybird/WorkOS/Doppler/Descope），signup-credit 组命中 Steel、Skyvern、Databricks、Hyperbrowser、Apify、Railway、Vapi、Retell、SiliconFlow 等候选；据此转官网核实 3 条入库。"
+      "observation": "以 /api/search 多组查询读取：category=llm-api（29）、dev-tools（38）、cloud-gpu（42）、observability（24）、voice-audio（15）、database-backend（22）、type=signup-credit（39）、sort=value（245）、sort=newest（245）。最新批次仍以 dev-tools SaaS 免费档为主（Checkly/Clerk/CrewAI/Dify/Logto/Mastra/Mastra/Novu/Svix/WorkOS/Tinybird 等），赠金组仍为 Steel/Skyvern/Databricks/Hyperbrowser/Apify/Railway/Vapi/Retell/SiliconFlow 等；据此转官网核实 3 条入库（ElevenLabs / Mastra / Tinybird）。"
     },
     {
       "id": "aifree",
@@ -1286,6 +1286,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 403，经只读渲染代理读取；FAQ 仍以「$100 credit for 60 days」为例说明促销额度与标准价衔接，是 Akamai US$100 试用 60 天窗口的官方佐证。"
+    },
+    {
+      "id": "elevenlabs-pricing",
+      "name": "ElevenLabs 定价页",
+      "url": "https://elevenlabs.io/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://elevenlabs.io/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T15:45:03Z",
+      "lastSuccessAt": "2026-11-03T15:45:03Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 647 KB 可直连；价格卡与 FAQ 内联，逐档列出 Free $0（10,000 credits）至 Business $990，含 Studio 项目数、扣费倍率与 credits 滚动规则。"
+    },
+    {
+      "id": "mastra-pricing",
+      "name": "Mastra 平台定价页",
+      "url": "https://mastra.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://mastra.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T15:45:03Z",
+      "lastSuccessAt": "2026-11-03T15:45:03Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 573 KB 可直连；Starter/Teams/Enterprise 与自托管四列对照内联，Starter 明确 Free for everyone、100K events、24 CPU hours、15 天保留与超出单价。"
+    },
+    {
+      "id": "tinybird-pricing",
+      "name": "Tinybird 定价页",
+      "url": "https://www.tinybird.co/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.tinybird.co/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T15:45:03Z",
+      "lastSuccessAt": "2026-11-03T15:45:03Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 416 KB 可直连；Free 档明示 No credit card required、0.25 vCPU、1 线程/请求、1k 请求/日、10 GB 存储，Developer $49/月对照完整。"
     }
   ]
 }

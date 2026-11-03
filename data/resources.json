@@ -3443,7 +3443,7 @@
       "startsAt": null,
       "endsAt": null,
       "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://maas.xfyun.cn/overview",
@@ -3464,6 +3464,11 @@
           "url": "https://maas.xfyun.cn/overview",
           "summary": "经只读渲染代理读取官方 overview 正文：「常用功能 / Spark-X2.6赋能开发者 零门槛领取10亿tokens免费额度」，与既有记录一致；活动截止日与 31 天有效期仍未在公开页给出。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://maas.xfyun.cn/overview",
+          "summary": "本轮经只读渲染代理读取：页面仅剩「常用功能」卡片「Spark-X2.6 赋能开发者 零门槛领取 10 亿 tokens 免费额度」及导航文案，领取规则、有效期、限领次数仍未在任何公开页面提供；直连 HTML 仅 8 KB 空壳。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6167,8 +6172,8 @@
       "startsAt": null,
       "endsAt": null,
       "status": "active",
-      "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://neon.com/pricing",
@@ -6184,6 +6189,11 @@
           "url": "https://neon.com/pricing",
           "summary": "官方定价页 Free 档：「Build and learn free with no time limits and no credit card required」；每项目 100 CU-hours、1 GB 存储、账户合计 20 GB、5 GB/月网络传输、100 个项目；FAQ 明确「The Free plan is permanent, not a trial」「Does Neon pause Free plan projects when they are inactive? No.」——与上一轮记录的「空闲 5 分钟休眠」相反，已据官方更正。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://neon.com/pricing",
+          "summary": "官方定价页本轮全文可读：Free 仍为 USD 0/月、永久有效且免绑卡，每项目 100 CU-hours/月、1 GB 存储（账户合计 20 GB）、5 GB/月公网传输、100 个项目；FAQ 重申「The Free plan is permanent, not a trial」「Does Neon pause Free plan projects when they are inactive? No.」，空闲自动缩容到 0 不计 CU-hours。条款与上一轮一致，无变化。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6196,6 +6206,11 @@
           "at": "2026-11-02T15:17:00Z",
           "status": "active",
           "note": "复核官方定价页全文：确认 Free 为永久免费档、免绑卡，并更正「空闲 5 分钟休眠」的错误表述（官方明确不因空闲暂停）；关键额度与超限行为均已明确，故由 pending/medium 升为 active/high。"
+        },
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "满 24 小时复核：官方页面本轮可读，条款与上一轮一致，无实质变化；刷新核实时间并顺延下次复核。"
         }
       ]
     },
@@ -6209,22 +6224,22 @@
       "claimUrl": "https://console.deepgram.com/signup",
       "discoveredAt": "2026-11-01T10:19:55Z",
       "description": "语音识别、合成及 Voice Agent API 的试用额度；官方价格页确认无需信用卡即可开始，未实测领取。",
-      "quota": "一次性 USD 200 试用额度；实际可用音频时长随模型、功能和调用方式变化。",
+      "quota": "新账户一次性 USD 200 试用额度，官方 FAQ 给出换算口径：约合 43,000 分钟（700+ 小时）Nova-3 转写；额度跨 Speech-to-Text、Text-to-Speech、Voice Agent、Audio Intelligence 按各自单价抵扣。",
       "benefitValue": "官方赠金面值 USD 200，不换算人民币。",
-      "eligibility": "新账号通过官方注册入口开始；入口本轮显示需 JavaScript 的机器人验证，未继续操作。",
+      "eligibility": "官方价格页「Sign up free」入口注册即可，未设行业或身份门槛；官方 FAQ 明示「No credit card is required to start」。本轮未注册实测，未确认是否存在按账号/按邮箱的重复领取限制。",
       "regions": "本轮价格页未明确列出地区资格限制，待核实。",
       "creditCard": "not-required",
       "autoRenewal": "unknown",
-      "validity": "官方价格页称试用额度不失效；不是每月重复赠送。",
-      "deadlineNote": "未披露领取截止日；额度无到期说明不代表活动永久开放。",
-      "costNotes": "额度后进入按量付费；绑卡后是否自动充值、扣费触发方式及超额停用机制尚未核实，不能认定无自动扣款。",
-      "confidence": "medium",
-      "confidenceReason": "官方确认金额、免绑卡和额度有效期；注册验证及后续扣费条件仍不完整，保持 pending。",
+      "validity": "官方 FAQ 明示「It does not expire」，属一次性赠送而非每月重置；用尽后转按量付费（Pay as you go，无最低消费）。",
+      "deadlineNote": "官方未设置领取截止日；所赠额度本身不过期，最终以账户内余额为准。",
+      "costNotes": "额度用尽后转按量计费，无最低消费、无到期清零；Growth 档为年度预付（$4,000 起）并换取最高 20% 折扣与更高流式并发；Voice Agent 按 WebSocket 连接分钟计费，可自带模型。",
+      "confidence": "high",
+      "confidenceReason": "官方价格页与 FAQ 本轮完整可读并互相印证：Free $200 credit、额度不过期、免绑卡、约 43,000 分钟 Nova-3 换算均为官网条文；仅注册流程中的人机校验未人工通过、未实测到账，故不承诺已实领。",
       "startsAt": null,
       "endsAt": null,
-      "status": "pending",
-      "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "status": "active",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://deepgram.com/pricing",
@@ -6235,6 +6250,11 @@
           "url": "https://deepgram.com/pricing",
           "summary": "官方定价页仍为「Free $200 credit」，FAQ 原文「Roughly 43,000 minutes, over 700 hours, of Nova-3 transcription. It does not expire... No credit card is required to start.」，条款无变化。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://deepgram.com/pricing",
+          "summary": "定价页「Free $200 credit then pay-as-you-go」；FAQ 原文「What does the $200 free credit cover? Roughly 43,000 minutes, over 700 hours, of Nova-3 transcription. It does not expire… No credit card is required to start.」——金额、不过期与免绑卡三项关键限制均已由官方明文确认。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6247,6 +6267,11 @@
           "at": "2026-11-02T15:17:00Z",
           "status": "pending",
           "note": "复核官方定价页，$200 额度、不过期、免绑卡起用均无变化；注册入口的人机验证与超额扣费条件仍未核实，维持 pending/medium。"
+        },
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "复核官方定价页与 FAQ：$200 金额、额度不过期、免绑卡均由官网明文确认，此前阻塞项（仅缺注册实测）不影响条款完整性，故由 pending/medium 升为 active/high。"
         }
       ]
     },
@@ -6260,22 +6285,22 @@
       "claimUrl": "https://developer.amd.com/ai-developer-program/",
       "discoveredAt": "2026-11-01T10:19:55Z",
       "description": "AMD AI Developer Program 的云端 AI 开发赠金，需加入计划并按官方要求申请，不能保证每位注册者到账。",
-      "quota": "官方两处表述冲突：AI Developer Program 会员页写「Receive $100 in AMD Developer Cloud credits」；AMD Developer Cloud 官方 FAQ 写「initial 25 hours of complimentary cloud credit」且「approximately $50 US worth」。合格开发者的首次申请由 AMD 按用途自由裁量决定，可能给 25 小时（≈$50）。",
+      "quota": "官方 FAQ 现已统一为「initial $100 complimentary cloud credit」：加入 AMD AI Developer Program 并通过审核的合格开发者获一次性 USD 100 的 AMD Developer Cloud 额度（对应 AMD Instinct GPU 第三方云）。上一轮记录的「25 小时 ≈ $50」表述已从页面移除。",
       "benefitValue": "官方公布赠金面值 USD 100，不估算 GPU 小时数。",
-      "eligibility": "面向机器学习、底层编程和 AI 应用的独立开发者及开源贡献者；需 AMD 账号和开发者计划会员，提交用途说明，由 AMD 决定分配。",
+      "eligibility": "面向从事机器学习、底层编程与 AI 应用的独立开发者及开源项目贡献者；需创建 AMD AI Developer Program 账号、提交用途说明（推理/训练/微调）与使用计划，由 AMD 自行裁量分配；获批后 3 个工作日内入账，通过官方 $100 credit 链接创建或登录云账户后激活。",
       "regions": "地区与出口合规资格需按官方条款进一步确认，本轮未完成。",
       "creditCard": "unknown",
       "autoRenewal": "unknown",
-      "validity": "AMD Developer Cloud FAQ 明确「Complimentary credit hours expire ten (10) days from the date of deposit in your developer cloud account」；上一轮记录的「30 天」无对应官方条文，已按 FAQ 更正为 10 天。",
-      "deadlineNote": "未公布申请截止日；个人 30 天有效期从到账计算，不填成固定活动截止日。",
-      "costNotes": "赠金按小时计且实例关机仍继续计费/扣小时，需销毁实例才停止；超额或赠金用尽后按第三方云商按量价计费，付费接入另需付款信息；若账户绑定卡失效将失去 ADC 访问权。",
-      "confidence": "low",
-      "confidenceReason": "官方两处页面金额口径冲突（$100 会员权益 vs FAQ 的 25 小时≈$50），有效期也由上一轮记录的 30 天更正为 FAQ 的 10 天；在 AMD 未统一口径前无法给出唯一额度，故由 medium 降为 low，维持 pending。",
+      "validity": "官方 FAQ：额度自存入 developer cloud 账户之日起 30 天内有效（「thirty (30) days from the date of deposit」），除非额度确认邮件另有说明；上一轮依据旧版 FAQ 记录的 10 天已按现行文本更正。",
+      "deadlineNote": "无公开申请截止日；额度按账户单独发放，过期未用即失效。",
+      "costNotes": "额度用尽后可联系第三方云代表申请追加（由 AMD 自行决定），或绑定有效付款方式转按量付费；也可直接切换到生产云。申请需提供详细用途说明，非自动发放。",
+      "confidence": "medium",
+      "confidenceReason": "官方两处页面（AI Developer Program 会员页与 Developer Cloud FAQ）本轮已统一为 USD 100，有效期明确为存入后 30 天，此前「$100 vs 25 小时/$50」「30 天 vs 10 天」的冲突已消除；但额度由 AMD 按用途裁量分配、绑卡要求未披露，仍非人人可得，故维持 pending 并升为 medium。",
       "startsAt": null,
       "endsAt": null,
       "status": "pending",
-      "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://developer.amd.com/ai-developer-program/",
@@ -6291,6 +6316,11 @@
           "url": "https://www.amd.com/en/developer/resources/cloud-access/amd-developer-cloud.html",
           "summary": "官方 ADC FAQ 原文：「AMD is offering an initial 25 hours of complimentary cloud credit to qualified developers」「approximately $50 US worth of cloud credit」「Complimentary credit hours expire ten (10) days from the date of deposit」；另说明关机仍计费、卡失效将失去访问权。与会员页「$100 credits」冲突。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://www.amd.com/en/developer/resources/cloud-access/amd-developer-cloud.html",
+          "summary": "FAQ 本轮原文：AMD 提供 initial $100 complimentary cloud credit 给申请并加入 AI Developer Program 的合格开发者，额度自存入起 30 天有效，获批后 3 个工作日内入账、通过 $100 credit 链接激活；分配由 AMD 依用途自行裁量。上一轮的「25 小时 ≈ $50」「10 天」表述已不在页面中。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6303,6 +6333,11 @@
           "at": "2026-11-02T15:17:00Z",
           "status": "pending",
           "note": "本轮核对 AMD Developer Cloud FAQ，发现金额与有效期口径与既有记录（$100 / 30 天）不一致：FAQ 为 25 小时≈$50、存入后 10 天过期，会员页仍写 $100。按「官方口径冲突不择一」原则如实并列并降为 low，维持 pending 待 AMD 澄清。"
+        },
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "pending",
+          "note": "复核官方 FAQ：金额与有效期冲突已由官网统一为 $100 / 存入后 30 天，据此更正字段并把可信度由 low 调回 medium；因额度为裁量分配、绑卡要求未披露，继续 pending。"
         }
       ]
     },
@@ -6681,8 +6716,8 @@
       "status": "active",
       "startsAt": null,
       "endsAt": null,
-      "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://upstash.com/pricing",
@@ -6693,6 +6728,11 @@
           "url": "https://upstash.com/pricing",
           "summary": "同页 FAQ 关于零门槛入口：可直接获得一个免费 Redis 数据库，「with no signup, credit card, or API key」；付费档不再享有首 250 MB / 50 万条命令的免费额度；达到上限且未开 auto-upgrade 时数据库停止响应。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://upstash.com/pricing",
+          "summary": "官方定价页本轮可读：Free 档仍为 $0，250 MB 数据、10 GB 月流量、50 万次命令/月，与上一轮记录一致；付费档 $0.2/10 万命令。条款无变化。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6700,6 +6740,11 @@
           "at": "2026-11-02T15:17:00Z",
           "status": "active",
           "note": "来源扫描命中 Upstash 免费档，直读官方定价页与 FAQ 确认 250 MB / 50 万条命令/月 / 10 GB 带宽 / 1 个数据库、免绑卡与超额停用规则，证据充分且关键限制明确，首次入库即标 active/high；未注册、未领取。"
+        },
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "满 24 小时复核：官方页面本轮可读，条款与上一轮一致，无实质变化；刷新核实时间并顺延下次复核。"
         }
       ]
     },
@@ -6727,13 +6772,18 @@
       "status": "active",
       "startsAt": null,
       "endsAt": null,
-      "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://lingma.aliyun.com/pricing",
           "summary": "官方价格页四档对照：个人基础版「免费」，功能含行/函数级实时续写、注释生成代码、离线模型单行补全、跨文件感知、多结果推荐、研发问答、本地工程问答、多模态问答、终端问答、注释/解释/单测生成、代码优化、报错排查、AI 程序员（Beta）多文件修改与单元测试智能体，并标注「限制：对话 50轮次/月，单元测试智能体 50方法/月」；个人专业版「限免（¥59/月）」；企业标准版 ¥79/人/月（10 人起购）、企业专属版 ¥159/人/月（100 人起购）。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://lingma.aliyun.com/pricing",
+          "summary": "官方定价页本轮可读：个人基础版仍标注「免费」，限制仍为对话 50 轮次/月、单元测试智能体 50 方法/月；个人专业版继续「限免（¥59/月）」。条款无变化。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6741,6 +6791,11 @@
           "at": "2026-11-02T15:17:00Z",
           "status": "active",
           "note": "来源扫描命中通义灵码个人版免费线索，直读官方价格页确认个人基础版 ¥0 及对话 50 轮/月、单测 50 方法/月限制，并核对专业版 ¥59 限免与企业档价格；首次入库标 active/high，未注册、未领取。"
+        },
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "满 24 小时复核：官方页面本轮可读，条款与上一轮一致，无实质变化；刷新核实时间并顺延下次复核。"
         }
       ]
     },
@@ -6768,8 +6823,8 @@
       "status": "active",
       "startsAt": null,
       "endsAt": null,
-      "lastVerifiedAt": "2026-11-02T15:17:00Z",
-      "nextReviewAt": "2026-11-03T15:17:00Z",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
       "evidence": [
         {
           "url": "https://www.ibm.com/products/cloud/free",
@@ -6780,6 +6835,11 @@
           "url": "https://www.ibm.com/products/cloud/free",
           "summary": "同页 FAQ：注册须提供支付信息，会有约 USD 1 的验证性预授权，Lite 计划不收费；应用连续 10 天无开发活动休眠、Lite 实例连续 30 天无开发活动被删除；Lite 额度按 org 计算、达上限当月暂停；USD 200 额度需先升级 Pay-as-you-go 才会到账。促销区另有 Bare Metal for VPC USD 1,000/120 天、PowerVS USD 2,500/90 天、Backup and Recovery USD 5,000/90 天，均标注 Expires 31 December 2026。",
           "checkedAt": "2026-11-02T15:17:00Z"
+        },
+        {
+          "url": "https://www.ibm.com/products/cloud/free",
+          "summary": "官方免费页本轮可读：40+ Lite 产品永久免费且每服务 1 个实例；新账户仍含 USD 200 额度、有效期 30 天；绑卡要求未变（预授权约 USD 1.00）；无开发活动 10 天后应用休眠、30 天后 Lite 实例删除。条款无变化。",
+          "checkedAt": "2026-11-03T15:45:03Z"
         }
       ],
       "history": [
@@ -6787,6 +6847,11 @@
           "at": "2026-11-02T15:17:00Z",
           "status": "active",
           "note": "来源扫描命中 IBM Cloud 免费账户，直读官方免费页与 FAQ 确认 40+ Lite 计划永久免费、每服务 1 实例、绑卡与预授权规则、休眠/删除与额度到账条件；关键限制明确，首次入库标 active/high。未注册、未绑卡。"
+        },
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "满 24 小时复核：官方页面本轮可读，条款与上一轮一致，无实质变化；刷新核实时间并顺延下次复核。"
         }
       ]
     },
@@ -7050,6 +7115,134 @@
       ],
       "confidence": "medium",
       "confidenceReason": "官方定价页明确写出免费请求量与每月赠金数额，但只有营销横幅与一句话标题，缺少分档条件、绑卡要求、额度是否共享或结转等关键限制，文档站定价页也未同步免费条款；未注册实测。"
+    },
+    {
+      "id": "elevenlabs-free-plan-10k-credits-202611",
+      "title": "ElevenLabs 免费档（每月 1 万 credits）",
+      "provider": "ElevenLabs",
+      "category": "ai",
+      "officialUrl": "https://elevenlabs.io/pricing",
+      "discoveryUrl": "https://perq.sh/",
+      "claimUrl": "https://elevenlabs.io/sign-up",
+      "discoveredAt": "2026-11-03T15:45:03Z",
+      "description": "语音 AI 平台 ElevenLabs 的长期免费档：$0/月含每月 10,000 credits，可跨文本转语音、语音转文字、音效、声音设计、音乐、Productions 与图像生成共用；适合原型验证与低频个人使用。",
+      "quota": "Free $0/月：每月 10,000 credits（所有产品共享同一 credits 池）、Studio 内 3 个项目；不含商用 License、即时声音克隆与 Dubbing Studio 等付费能力。",
+      "benefitValue": "官方对照价 Starter 为 $6/月含 30,000 credits，按此折算 10,000 credits 约合每月 2 美元量级，仅作量级参考、非现金权益。",
+      "eligibility": "邮箱注册即可开通，官方价格页未设身份或地区门槛；免费档不含 Commercial License（商用授权自 Starter 档起提供）。",
+      "regions": "官方价格页未列地区限制，实际可用性以注册与登录页为准。",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "validity": "长期 $0 计划而非限时试用；credits 按计费周期重置（免费档未订阅，按自然周期发放）。",
+      "deadlineNote": "官方未设领取截止日；保留调整各档权益的权利。",
+      "costNotes": "超出 10,000 credits 需升级 Starter（$6/月 30,000 credits，首月 $1 促销）或购买额外 credits；不同功能扣费倍率不同，例如 Voice Isolator 1,000 credits/分钟、Dubbing 2,000–10,000 credits/分钟；官方说明未用 credits 可滚动最多两个月，但前提是保持有效付费订阅，免费档与降级/取消账户不适用。",
+      "confidence": "high",
+      "confidenceReason": "官方价格页本轮完整可读并逐档列出金额与 credits（Free $0 = 10,000 credits、Starter $6 = 30,000 credits），Studio 项目数、商用授权起始档位与 credits 重置/滚动规则均有明文；仅「免费档是否需绑卡」官方未明示，故不代填。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
+      "evidence": [
+        {
+          "url": "https://elevenlabs.io/pricing",
+          "summary": "价格页 Free 档：$0/月、10k credits per month、Studio 3 个项目，功能覆盖 TTS/STT/音效/声音设计/音乐/Productions/Image；Starter 起才列「Commercial License」。",
+          "checkedAt": "2026-11-03T15:45:03Z"
+        },
+        {
+          "url": "https://elevenlabs.io/pricing",
+          "summary": "FAQ 原文：各档月费与 credits 为 Free $0 (10,000)、Starter $6 (30,000)、Creator $22 (121,000)、Pro $99 (600,000)、Scale $299 (1,800,000)、Business $990 (6,000,000)；未用 credits 滚动上限两个月（最多 3 倍月额度），但要求保持付费订阅、降级或取消即作废。",
+          "checkedAt": "2026-11-03T15:45:03Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "入库：官方价格页与 FAQ 本轮直接读取，免费档金额、credits、项目数与商用授权边界均明确，标 active/high；绑卡要求官方未披露，记 unknown。"
+        }
+      ]
+    },
+    {
+      "id": "mastra-platform-starter-free-202611",
+      "title": "Mastra Platform Starter 免费档（10 万事件 + 24 CPU 小时）",
+      "provider": "Mastra",
+      "category": "ai",
+      "officialUrl": "https://mastra.ai/pricing",
+      "discoveryUrl": "https://perq.sh/",
+      "claimUrl": "https://mastra.ai/",
+      "discoveredAt": "2026-11-03T15:45:03Z",
+      "description": "开源 TypeScript Agent 框架 Mastra 的托管平台 Starter 档：$0/月，含每月 10 万条可观测性事件、24 CPU 小时与 15 天数据保留，用户/部署/项目数不限，适合把自建 Agent 部署到托管环境做小规模运行。",
+      "quota": "Starter $0/月：每月 100,000 条 observability events、24 CPU hours、15 天数据保留；用户数、部署数、项目数不限。超出后按 $10/100K events、$0.35/CPU hour 计。",
+      "benefitValue": "按官方超出单价折算，免费额度量级约 10 美元（事件）+ 8.4 美元（CPU）≈ 每月 18 美元，仅作量级参考。",
+      "eligibility": "官方标注「Free for everyone」，注册即可使用；框架本体另有 Apache 2.0 自托管方案，不依赖该免费档。",
+      "regions": "官方价格页未列地区限制。",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "validity": "长期 $0 档，事件与 CPU 时按月结算；超出部分转按量计费（是否自动扣费官方未写明）。",
+      "deadlineNote": "无领取截止日；官方保留调整档位权益的权利。",
+      "costNotes": "15 天后数据不可查；Teams 档 $250/月起才含多团队、SSO 与 SOC 2 文档；如需完全掌控数据可自托管 Apache 2.0 版本；超出额度按 $10/100K events、$0.35/CPU hour 累加。",
+      "confidence": "high",
+      "confidenceReason": "官方定价页本轮完整可读，Starter 三列（事件、CPU 时间、数据保留）与其超出单价、无限用户/部署/项目均为一手文本；仅绑卡与超额是否自动计费未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
+      "evidence": [
+        {
+          "url": "https://mastra.ai/pricing",
+          "summary": "价格页 Starter 档：Free for everyone、$0/month、100K observability events（超出 $10/100K）、24 CPU hours（超出 $0.35/hr）、15 天数据保留、无限 users/deployments/projects；Teams $250/月起。",
+          "checkedAt": "2026-11-03T15:45:03Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "入库：官方定价页直接读取，免费档额度、保留期与超出单价明确，标 active/high；绑卡要求与超额扣费方式官方未披露。"
+        }
+      ]
+    },
+    {
+      "id": "tinybird-free-plan-202611",
+      "title": "Tinybird Free 免费档（每日 1,000 次请求 + 10 GB 存储）",
+      "provider": "Tinybird",
+      "category": "cloud",
+      "officialUrl": "https://www.tinybird.co/pricing",
+      "claimUrl": "https://www.tinybird.co/signup",
+      "discoveryUrl": "https://perq.sh/",
+      "discoveredAt": "2026-11-03T15:45:03Z",
+      "description": "基于 ClickHouse 的托管实时分析平台 Tinybird 的永久免费档：免绑卡，0.25 vCPU 共享基础设施、每日 1,000 次 API 请求、10 GB 存储，可把 SQL 查询直接发布为 HTTP 端点，适合小型看板与原型。",
+      "quota": "Free：共享基础设施 0.25 vCPU、每请求 1 线程、每天 1,000 次 API 请求、10 GB 存储（含）、社区支持；官方明示「No credit card required」。",
+      "benefitValue": "官方对照价 Developer 档 $49/月（0.5 vCPU、25 GB 存储、2 副本、标准支持），免费档按规格折算约 20–30 美元/月量级，仅作参考。",
+      "eligibility": "注册即用，官方免费档明确「No credit card required」，未设身份门槛。",
+      "regions": "官方价格页未列可用区域，以控制台创建时的区域选项为准。",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "validity": "永久免费档而非试用；请求额度按日重置，存储为持续限额。",
+      "deadlineNote": "无领取截止日；官方保留调整档位规格的权利。",
+      "costNotes": "超出每日 1,000 请求或 10 GB 存储需升级 Developer（$49/月，0.5 vCPU、25 GB、2 副本）；免费档仅共享基础设施、无副本与 SLA，且仅社区支持；官方另提供每日自动备份。",
+      "confidence": "high",
+      "confidenceReason": "官方定价页本轮完整可读，免费档四项规格（vCPU、线程、请求/日、存储）与免绑卡均为页面明文；仅可用区域与超额后的具体报错行为未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-11-03T15:45:03Z",
+      "nextReviewAt": "2026-11-04T15:45:03Z",
+      "evidence": [
+        {
+          "url": "https://www.tinybird.co/pricing",
+          "summary": "价格页 Free 档：「No credit card required」、共享基础设施 0.25 vCPUs、1 thread/request、1k requests per day、10 GB included storage、社区支持；Developer $49/月为 0.5 vCPU、25 GB。",
+          "checkedAt": "2026-11-03T15:45:03Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T15:45:03Z",
+          "status": "active",
+          "note": "入库：官方定价页直接读取，免费档规格与免绑卡明确，标 active/high；区域与超额报错行为未披露。"
+        }
+      ]
     }
   ]
 }
