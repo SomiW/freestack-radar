@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?q=&audience=anyone&category=llm-api,dev-tools,database-backend,cloud-gpu&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮用 /api/search 默认查询（eligibility=anyone + sort=newest + limit=30）与 category=llm-api / cloud-gpu / type=signup-credit 三组筛选各读一次，返回 30/15/12/20 条；categories 枚举为 agents-automation、cloud-gpu、dev-tools、llm-api、observability、database-backend、voice-audio、perk-marketplace、vector-db、image-video、productivity、accelerator。category=ai-api 与 ai-coding 为无效值返回空数组。本轮据此定位 Parallel / Vercel AI Gateway / Runloop 三条新候选并转官网核实。"
+      "observation": "本轮以 /api/search 两组查询读取：status=live&sort=newest&limit=20（返回 20 条，total_matches 未筛选时同量）与 type=signup-credit&sort=newest&limit=20（返回 20 条，total_matches 39）。最新一批偏 dev-tools SaaS（Checkly/Clerk/CrewAI/Dify/Knock/Logto/Mastra/Neon/Kinde/Novu/Portkey/Svix/Tinybird/WorkOS/Doppler/Descope），signup-credit 组命中 Steel、Skyvern、Databricks、Hyperbrowser、Apify、Railway、Vapi、Retell、SiliconFlow 等候选；据此转官网核实 3 条入库。"
     },
     {
       "id": "aifree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读取 https://www.usefree.space/brands_new.json，110 个品牌 / 245 条权益，generated 2026-10-26T12:00:00Z；仅作发现用，未产生本轮入库条目。"
+      "observation": "读取 https://www.usefree.space/brands_new.json，items 110 个品牌、嵌套 deals 中含 credit/free/token/gpu 等关键词的权益 169 条；本轮仅用于比对存量，未产生新候选。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读取福利羊毛 RSS，25 条；内容以支付立减金、话费口令、API 中转站推广、账号/额度交易、抽奖为主，无符合范围的新福利，全部排除。"
+      "observation": "读取福利羊毛 RSS，25 条；内容以支付立减金、券商/银行小羊毛、Steam/Epic 喜加一、API 中转站推广（LV中转 10 元额度）、账号与 Team 席位交易、抽奖为主；ZCode「鸡蛋」类帖仍无官方条文，无符合范围的新福利，全部排除。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读取首页 RSS，20 条；以 VPS 二手交易、绿云/搬瓦工迁移、muse 账号出售、加速器赠送为主，无可核实的官方福利线索。"
+      "observation": "读取首页 RSS，20 条；以 VPS 测评/收机出机（含 Hkcloudx MiniV6 转手）、Oracle 注册与区域体验、银行与 eSIM 讨论为主，无新福利线索，全部排除。"
     },
     {
       "id": "lowendtalk",
@@ -887,11 +887,11 @@
       ],
       "entryUrl": "https://docs.qoder.com/events/communityboost",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:18:11Z",
-      "lastSuccessAt": "2026-11-01T22:18:11Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 可读，Promotion period 明确为 October 22, 2026 through October 30, 2026 at 23:59，Welcome Pack 领取窗口同刻截止、有效期至 October 31, 2026 23:59；同目录 /llms.txt 为纯文本索引页。"
+      "observation": "本轮读取三个活动页的 .md 纯文本孪生（events/100credits.md、events/efficientunlimited.md、events/flashoffer.md），均需 --compressed；每日 100 Credits、Efficient 限免、Qwen3.8-Flash 限免三项条款与结束时间均未变。"
     },
     {
       "id": "meta-muse",
@@ -971,11 +971,11 @@
       ],
       "entryUrl": "https://www.docker.com/c/sbx-promo/",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML（262 KB）可直读，页内 FAQ 含额度金额、替代标准 $25、限领规则、绑卡要求、截止 2027-01-31 23:59 PT、6 个月有效期与 Micro→XL 逐档按秒单价。是本条 $250 促销的一手依据。"
+      "observation": "促销页（直连 200，静态 HTML 可直接 grep）仍写 $250 一次性 compute credit、替代标准 $25、限 1 次/账号与账号、领取后 6 个月作废、需绑卡，各档按秒单价未变。"
     },
     {
       "id": "codebuddy-cn-pricing",
@@ -992,11 +992,11 @@
       ],
       "entryUrl": "https://www.codebuddy.cn/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "copilot.tencent.com/pricing 直连仅 7 KB SPA 空壳、正文 29 字符；改用只读渲染代理后取到完整个人版对照表（体验版限时免费 500 积分 / 标准版 ¥99 / 高级版 ¥199 / 旗舰版 ¥999 / Buddy One VIP ¥999）。"
+      "observation": "定价页为 SPA（静态正文仅 31 字符），经只读渲染代理读取；体验版 500 积分/月、补全限免不限次、全模型、自动任务限免 99 个、5 人协作、5GB 资料库等条款未变。"
     },
     {
       "id": "exa-pricing",
@@ -1012,11 +1012,11 @@
       ],
       "entryUrl": "https://exa.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 直连 200（144 KB），Starter 档原文「Free $10 credits every month plus a $10 onboarding bonus. No payment method required」；未出现社区流传的 EXA50API 优惠码条文。"
+      "observation": "定价页仍写 Starter Free 每月 $10 credits + 首次额外 $10 onboarding bonus、无需付款方式，条款未变。"
     },
     {
       "id": "lingma-pricing",
@@ -1203,6 +1203,89 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 可读（70 KB，Next.js 内联 JSON）：Pay-as-you-go 区写「Run up to 5,000 requests per month for free」，横幅写「Earn up to $80 at signup + $5 in free credits per month」；docs.parallel.ai 的 llms.txt 索引与 .md 纯文本孪生页同样可读，但 docs 定价页未同步免费档条款。"
+    },
+    {
+      "id": "steel-pricing",
+      "name": "Steel 定价与额度",
+      "url": "https://steel.dev/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://steel.dev/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "官方定价页静态 HTML（147 KB）可直接 curl 读取全文：Launch $0/月 + $30 一次性 credits、免绑卡、10 并发会话/15 分钟会话上限/3 席位/60 RPM/7 天数据保留与各单价，Scale $250/月含每月 $100 credits。"
+    },
+    {
+      "id": "skyvern-pricing",
+      "name": "Skyvern 定价与试用",
+      "url": "https://www.skyvern.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.skyvern.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "定价页静态 HTML（80 KB）可读；另有 .md 孪生页 https://www.skyvern.com/md/pricing.md 复述同一条款（14 天试用 30,000 credits、14 天内取消不收费、Hobby $29/Pro $149）。"
+    },
+    {
+      "id": "databricks-trial",
+      "name": "Databricks 试用与 Free Edition",
+      "url": "https://www.databricks.com/try-databricks",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.databricks.com/try-databricks",
+      "status": "readable",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "试用页静态 HTML（753 KB）可读：最高 $400 试用额度、免绑卡、自有云资源费用除外，另有 Free Edition 永久免费按日限额；页面未写试用天数与额度失效规则。"
+    },
+    {
+      "id": "linode-pricing",
+      "name": "Akamai Cloud / Linode 定价 FAQ",
+      "url": "https://www.linode.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.linode.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-03T12:52:53Z",
+      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 403，经只读渲染代理读取；FAQ 仍以「$100 credit for 60 days」为例说明促销额度与标准价衔接，是 Akamai US$100 试用 60 天窗口的官方佐证。"
     }
   ]
 }
