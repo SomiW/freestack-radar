@@ -4,7 +4,7 @@
     {
       "id": "perq",
       "name": "Perq",
-      "url": "https://perq.sh/",
+      "url": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "priority": "P0",
       "kind": "aggregator",
       "topics": [
@@ -16,13 +16,13 @@
         "json",
         "html"
       ],
-      "entryUrl": "https://perq.sh/api/search?q=&audience=anyone&category=llm-api,dev-tools,database-backend,cloud-gpu&sort=newest&limit=20",
+      "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-03T15:45:03Z",
-      "lastSuccessAt": "2026-11-03T15:45:03Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "以 /api/search 多组查询读取：category=llm-api（29）、dev-tools（38）、cloud-gpu（42）、observability（24）、voice-audio（15）、database-backend（22）、type=signup-credit（39）、sort=value（245）、sort=newest（245）。最新批次仍以 dev-tools SaaS 免费档为主（Checkly/Clerk/CrewAI/Dify/Logto/Mastra/Mastra/Novu/Svix/WorkOS/Tinybird 等），赠金组仍为 Steel/Skyvern/Databricks/Hyperbrowser/Apify/Railway/Vapi/Retell/SiliconFlow 等；据此转官网核实 3 条入库（ElevenLabs / Mastra / Tinybird）。"
+      "observation": "本轮实读 JSON API：type=signup-credit（39 条，取前 10）与 category=llm-api/cloud-gpu/database-backend/agents-automation/dev-tools 的 sort=newest 列表（各 29–47 条），每类返回 10 条；据此新增 Voyage AI、Tavily 两条并发现 Anyscale $100（另行核实）。startup 类项目一律不采信。"
     },
     {
       "id": "aifree",
@@ -161,7 +161,7 @@
     {
       "id": "linux-do",
       "name": "LINUX DO · 福利羊毛",
-      "url": "https://linux.do/",
+      "url": "https://linux.do/c/welfare/36.rss",
       "priority": "P0",
       "kind": "community",
       "topics": [
@@ -174,16 +174,16 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "读取福利羊毛 RSS，25 条；内容以支付立减金、券商/银行小羊毛、Steam/Epic 喜加一、API 中转站推广（LV中转 10 元额度）、账号与 Team 席位交易、抽奖为主；ZCode「鸡蛋」类帖仍无官方条文，无符合范围的新福利，全部排除。"
+      "observation": "本轮 RSS 25 条：多为抽奖、账号交易、代金券/立减金、\"鸡蛋\"类 ZCode/智谱短期额度，以及 chatgpt pro 领 API credit 的重复讨论；无可独立成条的官方新福利。"
     },
     {
       "id": "nodeseek",
       "name": "NodeSeek",
-      "url": "https://www.nodeseek.com/",
+      "url": "https://rss.nodeseek.com/",
       "priority": "P0",
       "kind": "community",
       "topics": [
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "读取首页 RSS，20 条；以 VPS 测评/收机出机（含 Hkcloudx MiniV6 转手）、Oracle 注册与区域体验、银行与 eSIM 讨论为主，无新福利线索，全部排除。"
+      "observation": "本轮 RSS 20 条：以 VPS 转让/收码/测评与日常提问为主，另有 RAKsmart 首月 0.91 刀（AFF 推广+优惠券叠加）等促销，无符合入库标准的新活动。"
     },
     {
       "id": "lowendtalk",
@@ -637,12 +637,9 @@
       ],
       "entryUrl": "https://ai.google.dev/gemini-api/docs/rate-limits",
       "status": "readable",
-      "checkedAt": "2026-11-01T15:45:39Z",
-      "lastSuccessAt": "2026-11-01T15:45:39Z",
-      "lastFailure": {
-        "at": "2026-11-01T15:44:22Z",
-        "reason": "带浏览器 UA 请求 /gemini-api/docs/pricing 时 302 跳 accounts.google.com OAuth，未取得正文；改用默认 curl UA 后同一入口返回 200 全文。"
-      },
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "Gemini API 限速页与定价页可读全文，免费层资格、按消费速率限速、Batch 与 Priority 限制、逐模型 Free Tier 列均可提取。注意：必须用默认 curl UA（-A \"curl/8\"）请求，浏览器 UA 会被 302 到 Google OAuth；定价表含 Free Tier 与 Paid Tier 多列，必须按列头逐列对齐，否则会把付费列额度误记为免费层。"
     },
@@ -660,8 +657,8 @@
       ],
       "entryUrl": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
       "status": "readable",
-      "checkedAt": "2026-11-01T15:24:32Z",
-      "lastSuccessAt": "2026-11-01T15:24:32Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "platform.claude.com/docs 下页面为服务端渲染，正文与表格可直接提取；同目录 .md 后缀可取纯文本孪生页（如 .../pricing.md）。本轮用于核实订阅附赠 API credits 的面额、覆盖范围、申领步骤与过期规则。"
@@ -680,8 +677,8 @@
       ],
       "entryUrl": "https://www.cockroachlabs.com/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-01T15:24:39Z",
-      "lastSuccessAt": "2026-11-01T15:24:39Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 可读，首屏与 FAQ 均含试用条款（30 天 / $400、Standard 免绑卡、Mission Critical 需卡、到期后集群暂停与 30 天宽限期）；注册入口为 cockroachlabs.cloud/signup。"
@@ -1093,8 +1090,8 @@
       ],
       "entryUrl": "https://aiven.io/free-tier",
       "status": "readable",
-      "checkedAt": "2026-11-02T21:26:46Z",
-      "lastSuccessAt": "2026-11-02T21:26:46Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 可读（234 KB），含 Free Tier 说明、Compare Free Services 表与 FAQ：四类服务各 1 个免费实例、1 vCPU/1 GB RAM、PostgreSQL 1 GB 与其余 8 GB 存储、Kafka 250 kb/s 与 3 天保留、免 payment details、无到期时间、自动备份包含。"
@@ -1114,8 +1111,8 @@
       ],
       "entryUrl": "https://lightning.ai/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-02T21:26:46Z",
-      "lastSuccessAt": "2026-11-02T21:26:46Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 可读（116 KB），Free 档 $0、up to 30 credits、约 80 免费 GPU 小时、1 个免费常驻 Studio（4 小时重启）、单卡最多 2 并发、200 GB 持久存储、No credit card；逐机型表列 Free hours to start 与按秒单价。"
@@ -1135,8 +1132,8 @@
       ],
       "entryUrl": "https://raw.githubusercontent.com/bilibili/Index-Translate/main/README.md",
       "status": "readable",
-      "checkedAt": "2026-11-02T21:26:46Z",
-      "lastSuccessAt": "2026-11-02T21:26:46Z",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "README 纯文本可直读（40 KB），写明免费公网 API https://index-translate.bilibili.com/v1、模型 Index-Translate-35B-A3B、OpenAI 兼容 chat/completions 与 responses；匿名 POST 实测 200 正常返回，未公布限速与每日额度。"
@@ -1347,6 +1344,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 416 KB 可直连；Free 档明示 No credit card required、0.25 vCPU、1 线程/请求、1k 请求/日、10 GB 存储，Developer $49/月对照完整。"
+    },
+    {
+      "id": "voyage-pricing",
+      "name": "Voyage AI 官方定价与限速文档",
+      "url": "https://docs.voyageai.com/docs/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.voyageai.com/docs/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态文档页可直读（约 240 行正文）：逐模型列出每百万 tokens 单价与免费 tokens 数量（voyage-4 系列与 voyage-code-3 各 2 亿、旧系列 5,000 万、多模态 2 亿文本 tokens + 1,500 亿像素）。限速文档另给免费期 RPM/TPM 与「添加支付方式后免费 tokens 仍适用」的说明。"
+    },
+    {
+      "id": "tavily-pricing",
+      "name": "Tavily 官方定价页",
+      "url": "https://www.tavily.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.tavily.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读：Free（Researcher）档 $0/月含 1,000 API credits/月且免绑卡，PAYG $0.008/credit；FAQ 给出每月 1 日重置与按 search/extract/crawl 扣减 credits 的口径。"
+    },
+    {
+      "id": "anyscale-pricing",
+      "name": "Anyscale 官方定价页",
+      "url": "https://www.anyscale.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.anyscale.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-03T21:54:30Z",
+      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 可读：首屏与 Pay as you go 段落均写「Get Started with $100 Credit」，Hosted 部署标注 Limited Regions、Billing 为 Monthly credit card invoices；额度有效期与绑卡要求无条文，FAQ 需展开。"
     }
   ]
 }

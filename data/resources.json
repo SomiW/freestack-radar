@@ -775,8 +775,8 @@
       "startsAt": null,
       "endsAt": null,
       "status": "pending",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://lightvela.com/about",
@@ -807,6 +807,11 @@
           "url": "https://lightvela.com/",
           "summary": "官方首页可读文本仍写「新用户免费体验1个月，送4500 AI 积分」「免费体验，10秒极速开通」；本轮未取得云电脑规格、积分换算与试用后计费条款。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://lightvela.com/",
+          "summary": "官方首页 CTA 仍为「免费体验，10秒极速开通」「新用户免费体验1个月，送4500 AI 积分」，页脚仍标「腾讯轻量云出品」；/subscribe 套餐页仍为纯前端渲染，云电脑规格、积分换算与试用后续费条款本轮未取得，未实测注册。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -829,6 +834,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "pending",
           "note": "复核成功（部分）：试用 1 个月 + 4500 AI 积分口径未变，/subscribe 仍为纯前端渲染拿不到规格与换算，维持 pending/medium 并刷新核实时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "pending",
+          "note": "复核（部分）：试用 1 个月 + 4500 AI 积分口径未变，订阅页仍无可读规格与换算，维持 pending/medium 并刷新核实时间。"
         }
       ]
     },
@@ -1981,8 +1991,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方活动页（qoder.com/activities）直接列示 300 Credits 欢迎礼、2 周试用、领取方式、邀请奖励规则与 Credits 30 天有效期，并同期展示 Qwen3.8-Flash 限免与每日 100 Credits 活动的官方条文；未注册实测领取，欢迎礼截止日与 Credits 货币折算官方未披露。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://qoder.com/activities",
@@ -2028,6 +2038,11 @@
           "url": "https://qoder.com/activities",
           "summary": "官方活动页（渲染后）本轮仍写「Sign up now 300 Credits as your welcome gift」「New users 2-Week Trial」「Register to claim 300 Credits」；页内邀请奖励为 50 / 100 / 1,000 Credits 三档、每人最多邀请 50 位新用户；活动区在 Qwen3.8-Flash 免费、每日领 100 Credits 之外新增 Qoder Ambassador Program（全年 Ultra，需申请审核）。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://qoder.com/pricing",
+          "summary": "本轮改读定价页（渲染后）：FAQ 明写新用户首次在客户端登录可获一次性 2 周（14 天）Pro 试用，含 300 Credits 与全部 Pro 功能，到期自动降级 Free、试用 Credits 清零、每账号限一次；Free 档权益列「30-day check-in: 3,000 Credits」。活动页 qoder.com/activities 仍为「Sign up now 300 Credits as your welcome gift」「Register to claim 300 Credits」，另有每日 100 Credits 与 Qwen3.8-Flash 限免（2026-09-18 10:00 起 0.1×→0.0×）。欢迎礼截止日与 Credits 货币折算仍未公布。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -2070,6 +2085,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：300 Credits 欢迎礼与 2 周 Pro 试用条款未变；活动页仅新增 Ambassador 计划入口，不影响本条权益，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：300 Credits 欢迎礼与 2 周试用未变；定价页 FAQ 补充了试用每账号限一次、未用试用 Credits 到期清零、提前升级则转 Credit Pack 的细则，并列出 Free 档 30 天签到 3,000 Credits，属既有权益的说明细化；仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -2173,8 +2193,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "ampcode.com 官方定价页明确写出 Hobby=Free 档的免费范围（自托管 Orb 不限量免费、BYOK、无 token 费用与上限）与付费边界（托管 Orb 按量、Individual $20/45,000 分钟），无冲突信息；托管 Orb 单价与是否需要绑卡未展开，未注册实测。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://ampcode.com/pricing",
@@ -2220,6 +2240,11 @@
           "url": "https://ampcode.com/pricing",
           "summary": "官方定价页 Hobby Free 仍写明：全部产品功能、自托管 Orb 不限量免费、可用自有 runner、可用自有 ChatGPT/Claude 等订阅、BYOK、无 Amp token 费用与上限、公有与私有仓库；Amp 托管 Orb 按量计费且无免费分钟数，Individual $20/月含 45,000 分钟托管时长。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://ampcode.com/pricing",
+          "summary": "定价页 Hobby 档仍为 Free：Amp 托管 orb 按量计费、自托管 orb 不限量免费、可用自有 runner 免费、BYOK 无 token 加价、可用自有 ChatGPT/Claude 订阅；Megawatt 个人档 $20/月含 45,000 orb 分钟，Teams 无额外席位费。未见额度缩减或条款撤销。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -2262,6 +2287,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：Hobby 免费档条目与付费档分钟数均未变化，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：Hobby 免费档条款与上轮逐项一致（自托管 orb 不限量、自有 runner 免费、BYOK 无加价），仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -3351,8 +3381,8 @@
       "status": "active",
       "startsAt": null,
       "endsAt": null,
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://regolo.ai/pricing",
@@ -3383,6 +3413,11 @@
           "url": "https://regolo.ai/pricing",
           "summary": "官方定价页 Free Trial 仍写 30 天全量 Core 模型、无需信用卡；免费档「1M tokens per day」「Daily token limit to explore all features」，付费档为每日 20M / 50M / 100M tokens。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://regolo.ai/pricing",
+          "summary": "定价页仍写 START YOUR 30-DAY FREE TRIAL：全量 Core 模型、每日 1M tokens、免绑卡、无承诺；FAQ 明确试用到期后转 Pay-as-you-Go、无自动扣费、API Key 与项目不中断；付费档 Core 默认日上限 2,000 万 tokens（Boost 5,000 万 / Pro 1 亿 / Scale 2 亿）。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -3415,6 +3450,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：30 天试用、每日 100 万 tokens 与免绑卡条款未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：30 天试用、每日 100 万 tokens、免绑卡、到期转 PAYG 且无自动扣费均未变，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -4037,7 +4077,7 @@
       "regions": "EU 与 US 两个区域（api.eu.munito.ai / api.us.munito.ai，全局 host 会落到其中之一）；免费档在两个区域均按官方限速表执行，官方未列出国家/地区限制。",
       "validity": "每日额度按 UTC 00:00 重置；免费档为常设档位（官方未公布结束日期），但明确「runs on spare capacity」——仅使用闲置容量、优先级低于付费流量，容量不足时可能返回 503。",
       "deadlineNote": "官方未公布免费档结束日期，不能视为永久有效；每日额度按 UTC 重置，免费档不随付费用量自动提升上限，充值 credits 后按付费档限速。",
-      "costNotes": "免费档本身不收费；超出每日额度或需要更高限速需在控制台购买预付 credits（卡支付，价格不含 VAT），余额归零后自动回落到免费档。计费受 service tier（priority > standard > flex）与区域影响，同一模型 EU/US 价格可能不同；overflow 开启时按所请求模型的价格计费。Metalboxes（Linux microVM 沙箱）、Document OCR、Speech-to-Text 按各自单价另计，官方限速页未说明这些能力是否包含在免费档内。",
+      "costNotes": "免费档本身不收费；超出每日额度或需要更高限速需在控制台购买预付 credits（卡支付，价格不含 VAT），余额归零后自动回落到免费档。计费受 service tier（priority > standard > flex）与区域影响，同一模型 EU/US 价格可能不同；overflow 开启时按所请求模型的价格计费。Metalboxes（Linux microVM 沙箱）、Document OCR、Speech-to-Text 按各自单价另计，官方限速页未说明这些能力是否包含在免费档内。免费档请求按 flex 服务层级（最低优先级）调度，官方明示免费层限额不会随用量自动提升，容量紧张时比付费流量更早返回 503；免费档请求 priority 层级会被拒（403）。",
       "officialUrl": "https://docs.munito.ai/models#pay-for-usage",
       "claimUrl": "https://console.munito.ai",
       "discoveryUrl": "https://linux.do/t/topic/3092040",
@@ -4048,8 +4088,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方文档三处互相印证：FAQ 明确「有验证手机号的新账号可用免费档」、models 页「Free tier」条目、rate-limits 页逐模型列出每日 token 上限、UTC 重置规则、256k 上下文上限与免费档每分钟限速。未登录实测领取，账号侧实际到账与实体号验证结果以注册为准。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://docs.munito.ai/rate-limits",
@@ -4090,6 +4130,11 @@
           "url": "https://docs.munito.ai/rate-limits",
           "summary": "官方 docs rate-limits 页 Free tier limits 段落仍写：每个组织每个聊天模型每日 deepseek-ai/deepseek-v4.1-flash-1017、zai-org/glm-5.3-flash、deepseek-ai/deepseek-v4-flash 各 2,000,000 tokens，其余聊天模型各 4,000,000 tokens/日；达到上限后该模型返回 429 free_daily_limit_exceeded 直至重置，其它模型不受影响；免费档跑闲置容量、优先级低于付费流量。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://docs.munito.ai/rate-limits",
+          "summary": "官方限速文档 Free tier 段与上轮一致：deepseek-v4.1-flash-1017、glm-5.3-flash、deepseek-v4-flash 各 200 万 tokens/天，其余每个聊天模型 400 万/天，输入（含缓存读取）与输出合并计入、00:00 UTC 重置、单请求 prompt+output 合计上限 256k；新增明文：免费额度以 flex 服务层级（最低优先级）运行、不随用量自动提升，容量紧张时更早返回 503，free tier 请求 priority 层级会返回 403。FAQ 仍要求「A new account with a verified phone number」。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -4117,6 +4162,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：免费档逐模型日额度与 429 行为未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：每日 200 万/400 万 tokens、256k 上下文、UTC 重置与手机号验证要求均未变；官方新增免费流量按 flex 层级运行、不自动提额的说明，已同步 costNotes。"
         }
       ],
       "discoveredAt": "2026-10-29T12:58:56Z"
@@ -5046,8 +5096,8 @@
       "costNotes": "免费额度为一次性 10M tokens，用尽后按官方 token 单价为同一 Key 充值；Search（s.jina.ai）每请求固定消耗 10,000 tokens 起，Reader 按输出 token、Embedding/Reranker 按输入 token 计费，失败请求不扣 token（官方 FAQ）。限速表同时列出付费档与 Premium 档：Reader 500 / 5,000 RPM，Search 100 / 1,000 RPM，Embedding 与 Reranker 500 RPM & 2,000,000 TPM / 5,000 RPM & 50,000,000 TPM。可选的自动充值需保存支付方式并在余额低于阈值时自动续购，不开启则不会自动扣费。",
       "confidence": "high",
       "confidenceReason": "jina.ai/reader 官方页面直接写明新 API Key 赠送 10M tokens，并给出免费 Key 各产品的 RPM/TPM 限速与 token 计费口径，本轮按表格列头（w/o API Key / w/ Free API Key / w/ Paid API Key / w/ Premium API Key）逐列核对并修正了上一轮把付费档限速误记为免费档的问题；残留未知为额度有效期、是否按账号限领与是否需绑卡，未注册实测。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://jina.ai/reader/",
@@ -5073,6 +5123,11 @@
           "url": "https://jina.ai/reader/",
           "summary": "官方 Reader 页面仍写「Every new API key comes with 10M free tokens!」，四产品共用同一 token 余额，价格按 token 用量计。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://jina.ai/reader/",
+          "summary": "Reader 页 FAQ 仍写「Don't panic! Every new API key comes with 10M free tokens!」；限速表按列头核对，无 Key 为 20 RPM、免费 Key 的 Reader/Search 为 500 RPM、Embedding 与 Reranker 均为 100 RPM & 100,000 TPM（付费档 500 RPM & 2,000,000 TPM、Premium 5,000 RPM & 50,000,000 TPM），与上轮记录一致。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -5095,6 +5150,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：新 Key 赠送 1,000 万 tokens 条款未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：1000 万免费 tokens 表述与免费 Key 各产品限速均未变化，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -5416,8 +5476,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方限速页与定价页全文均可读：免费层资格、免费输入输出 token、模型可用性范围、500 RPD 接地额度、Batch 与 Priority 限制、升级条件与计费口径都已在官方页面写明，关键限制明确，可按 active 入库；逐模型 RPM/TPM/RPD 官方明确只在 AI Studio 展示且不保证固定值，已在 quota 中如实说明；未实际注册与调用。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
@@ -5438,6 +5498,11 @@
           "url": "https://ai.google.dev/gemini-api/docs/pricing",
           "summary": "官方定价页逐列核对：Gemini 2.5 Flash Standard 免费层 Google Search 接地仍为「Free of charge, up to 500 RPD（与 Flash-Lite 共享 RPD）」；Gemini 2.5 Pro 与 Gemini 3 及更新模型免费层接地为 Not available；Gemini 3.8 Flash 免费层输入输出为 Free of charge；Gemini 4 Argon 免费层全部 Not available；限速页另写 Gemini 3 及更新模型接地默认上限 1,500 RPD/项目（付费层口径）。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/rate-limits",
+          "summary": "限速页可读：限速按项目而非 API Key 计、RPD 于太平洋时间零点重置；页面新增「Gemini 3 及更新模型的 Google Search 接地默认 1,500 RPD」一节，但 google-search 文档同处注明该 1,500 RPD 属 Paid Tier，免费层口径未变（2.5 Flash / 2.5 Flash-Lite 免费接地 ≤500 RPD，Gemini 3 及更新模型免费层接地不可用）。逐模型数值仍只在 AI Studio 展示。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -5455,6 +5520,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：免费层资格与 2.5 Flash 的 500 RPD 接地额度未变，本轮补充核对新模型档位（3.8 Flash 免费、4 Argon 无免费层），quota 无需改动，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：免费层资格、按项目限速、RPD 重置与免费搜索接地 500 RPD 口径未变；页面新增的 1,500 RPD 已核对为 Paid Tier 条款，不影响本条权益，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -5649,8 +5719,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方黑客松页（kiroween.devpost.com，页面标注 Kiro Managed by Devpost）的 Overview 与 Resources 两个页签逐条给出 4,000 credits 额度、申领截止（12-01 12:00 PM PT）、兑换截止（12-04）、积分过期时间（12-31 23:59 PM PT）、一次性发放、所需 Kiro 账号与 user ID 及参与地区排除名单，且 kiro.dev 首页 What's New 指向该活动，可确认官方归属；未实际申领，是否需绑卡与审核通过率官方未披露。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://kiroween.devpost.com/",
@@ -5681,6 +5751,11 @@
           "url": "https://kiroween.devpost.com/",
           "summary": "官方 Devpost 活动页仍写「Request 4,000 free Kiro credits on the Resources tab by December 1 at 12:00 pm PT」，一次性赠送、需在 Resources 页签提交申请。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://kiroween.devpost.com/",
+          "summary": "Devpost 页仍写「Request 4,000 free Kiro credits on the Resources tab by December 1 at 12:00 pm PT」；提交截止 Dec 4, 2026 2:00pm PST，项目须在 2026-10-30 至 12-04 提交期内构建（此前已开始的作品不合格）；另有 2,000 bonus credits 给含公开博客的 100 份高分作品。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -5698,6 +5773,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：4,000 Credits 与 12-01 12:00 PT 申领截止未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：4,000 Credits 申领入口、12-01 12:00 PT 申领截止与 12-04 提交截止均未变，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -5725,8 +5805,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "Zed 官方教育页与定价页可直接读取，权益（Pro 全功能 12 个月、每月 $10 token 额度、无限补全、12 个月后自动降级）、资格（在读高校 + 18 岁 + 30 天以上 GitHub 账号 + 高校邮箱 + JetBrains 域名库核验）、排除模型（Claude Fable / Claude Opus / GPT Pro）与免费期间的边界均逐条写明，条目内部一致；未实际提交申请，是否需绑卡与审核通过率官方未披露。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://zed.dev/education",
@@ -5747,6 +5827,11 @@
           "url": "https://zed.dev/education",
           "summary": "官方学生页仍写：审核通过后 Zed Pro 免费 12 个月、每月 $10 AI token 额度、无限 edit predictions；需 GitHub 账号满 30 天 + 有效高校邮箱，用 JetBrains 院校库核验；不含 Claude Fable / Claude Opus / GPT Pro 模型。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://zed.dev/education",
+          "summary": "教育页仍写 verified university students 可免费用 Zed Pro 一年：全部 Pro 功能 12 个月 + 每月 $10 AI token credits，12 个月后自动降为 Free；FAQ 明示学生计划不含 Claude Fable、Claude Opus、GPT Pro 模型，需 GitHub 登录并用 JetBrains 院校域名库核验在读身份。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -5764,6 +5849,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：学生计划条款与不包含的模型清单未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：免费一年 + 每月 $10 token、JetBrains 核验与到期降级均未变；补充记录学生计划不含 Claude Fable / Opus / GPT Pro 模型，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -6365,8 +6455,8 @@
       "autoRenewal": "yes",
       "confidence": "high",
       "confidenceReason": "官方平台文档完整给出额度面额、覆盖与不覆盖的产品、发放与过期规则、申领步骤与角色要求、Team 席位池上限与升级规则，关键限制明确，可按 active 入库；未实际订阅或申领，订阅本身的地区可得性未知。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
@@ -6387,6 +6477,11 @@
           "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
           "summary": "官方文档仍列：Max 每月 $100、Ultra 每月 $200、Team Standard $20/席、Premium $100/席，Team 全席位额度合并为一个月度池、上限 $500；新订阅需满 7 天方可领取，须在 Console 关联组织并接受条款，额度只适用于 Claude Console 内 Claude API，不适用于 Bedrock / Vertex / Foundry。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
+          "summary": "官方文档未变：Max $100/月、Ultra $200/月、Team 每 Standard 席位 $20、每 Premium 席位 $100 且全席位池化上限 $500/月；按账单周期（年付按月）发放、周期末清零不结转、新订阅满 7 天可领、领取无需在 Claude Platform 添加支付方式；仅适用于 Claude Console 的 Claude API，不含 AWS/Bedrock/GCP/Foundry。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -6399,6 +6494,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：各档月度额度、7 天等待与 $500 上限未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：各档金额、池化上限、7 天门槛与不结转条款均未变化，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -6426,8 +6526,8 @@
       "autoRenewal": "no",
       "confidence": "high",
       "confidenceReason": "官方定价页与 FAQ 给出额度金额、试用时长、绑卡要求、到期后集群暂停与宽限期、计费口径与免费入口，关键限制明确，可按 active 入库；未注册实测，是否对新组织数量或地区另有隐藏限制未获官方说明。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://www.cockroachlabs.com/pricing/",
@@ -6448,6 +6548,11 @@
           "url": "https://www.cockroachlabs.com/pricing/",
           "summary": "官方定价页与 FAQ 仍写：每个新建 Cloud 组织 30 天试用含 $400 额度，Standard 档试用不需要信用卡、Mission Critical 因专用基础设施需绑卡；试用在 30 天或额度用尽时结束，集群随后暂停并给 30 天宽限期。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://www.cockroachlabs.com/pricing/",
+          "summary": "定价页 FAQ 仍写每个新 Cloud 组织 30 天试用含 $400 credit：Standard 试用无需信用卡，Mission Critical 因独占基础设施需绑卡；试用在 30 天期满或 $400 用尽时结束，集群随即暂停并给 30 天宽限期，期内未添加支付方式则删除。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -6460,6 +6565,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "复核成功（满 24 小时）：$400 / 30 天与绑卡条件未变，仅刷新核实时间与下次复核时间。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：$400 / 30 天、Standard 免绑卡、到期暂停与 30 天宽限期条款均未变，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -6879,8 +6989,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方 Free Tier 页与定价页同时给出：四种服务各 1 个免费实例、1 专用 VM / 1 vCPU / 1 GB RAM、PostgreSQL 1 GB 与其余 8 GB 存储、Kafka 250 kb/s 与 3 天保留、无支付信息、无到期时间、自动备份包含在免费档、不可自选区域与无连接池，额度/资格/费用/期限四项关键限制均明确，故 active/high；未注册账号、未创建实例。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://aiven.io/free-tier",
@@ -6891,6 +7001,11 @@
           "url": "https://aiven.io/pricing",
           "summary": "官方定价页 Free 列：1 dedicated VM、1 CPU per VM、1 GB RAM per VM、1 GB total storage（无集成与连接池）；FAQ 写明免费档无时间限制但保留对违规或长期闲置服务关停的权利。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://aiven.io/free-tier",
+          "summary": "Free Tier 页仍写 PostgreSQL、Apache Kafka、OpenSearch、Valkey 四类托管服务各有永久免费实例，always-on、与付费档同一基础设施，注册「no payment details required」、无到期时间；页面仍提供 Compare Free Services 表与各服务 Free 资源页入口。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -6898,6 +7013,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "本轮由 Perq 云端 GPU/数据库清单发现 Aiven Free plans，回到官方 Free Tier 页与定价页逐项核实：四服务各 1 实例、1 vCPU/1 GB、1 GB（PG）与 8 GB（其余）存储、Kafka 250 kb/s 与 3 天保留、免绑卡、无到期时间，按 active/high 入库；未注册、未创建实例。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：四类服务各 1 个永久免费实例、免 payment details、无到期时间均未变，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -6925,13 +7045,18 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方定价页逐项列出 Free 档：$0、最多 30 credits、约 80 免费 GPU 小时、1 个免费常驻 Studio（4 小时重启）、32 核 CPU、仅单卡且最多 2 卡并发、200 GB 持久存储、No credit card；额度/资格/费用三项明确，期限为常设免费档（无到期日），故 active/high；未注册、未启动实例。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://lightning.ai/pricing/",
           "summary": "官方定价页：Get up to 80 free GPU hours to start；Free $0 档含 up to 30 credits、1 free active Studio（4 hour restarts）、32 core CPU Studios、单卡 GPU（L40S/A100/H100/H200）、最多 2 卡并发、持久存储 200 GB；页首写明 Run 1 Studio free 24/7、No credit card、No commitments；逐机型表给出每档 Free hours to start（T4 75、L4 31、L40S 5、RTX PRO 6000 3）与按秒单价。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://lightning.ai/pricing/",
+          "summary": "定价页仍写 Free 档 $0：起步 30 free credits（约 80 免费 GPU 小时）、1 个 Studio 免费 24/7 运行但需每 4 小时重启、No credit card、No commitments；Pro 及以上才解除重启限制并含 BYOC、自有 AWS/GCP 额度等企业能力。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -6939,6 +7064,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "active",
           "note": "本轮由 Perq cloud-gpu 清单发现 Lightning AI「up to 30 free credits / 80 GPU hours」，回到官方定价页核实 Free 档全部限制（免绑卡、单卡、2 卡并发、Studio 4 小时重启、200 GB 存储），按 active/high 入库；未注册、未启动实例。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "复核成功（满 24 小时）：$0 Free 档、30 credits≈80 GPU 小时、1 个 Studio 每 4 小时重启、免绑卡均未变，仅刷新核实时间与下次复核时间。"
         }
       ]
     },
@@ -6948,7 +7078,7 @@
       "provider": "Bilibili Index Team",
       "category": "ai",
       "description": "哔哩哔哩 Index 团队开源的 Index-Translate 多语言多模态翻译模型家族，官方在 index-translate.bilibili.com 提供免费公网 API：OpenAI 兼容接口、默认旗舰模型 Index-Translate-35B-A3B，支持纯文本翻译、图片翻译（image_url / base64，无需 OCR）与 Responses API，覆盖 150 种语言，可直接接入沉浸式翻译等客户端。",
-      "quota": "免费公网 API：Base URL https://index-translate.bilibili.com/v1，模型 Index-Translate-35B-A3B（预览旗舰），支持 /v1/chat/completions 与 /v1/responses，文本与图片输入，覆盖 150 种语言并支持术语表、格式保留与音节可控翻译；官方未公布 QPS 上限、每日调用额度或上下文长度上限。",
+      "quota": "免费公网 API：Base URL https://index-translate.bilibili.com/v1，模型 Index-Translate-35B-A3B（预览旗舰），支持 /v1/chat/completions 与 /v1/responses，文本与图片输入，覆盖 150 种语言并支持术语表、格式保留与音节可控翻译；官方未公布 QPS 上限、每日调用额度或上下文长度上限。 调用需用完整模型 id（如 Index-Translate-35B-A3B；写 index-translate 会返回 400）；当前公开模型含 Index-Translate 2B/9B/35B-A3B、Index-Nailong 9B/2B、Index-Homura 2B/9B，语音模型 Index-Echo-S2TT/S2ST 仅走 /api/echo/* 接口。",
       "benefitValue": "无需自备 GPU 即可调用 35B-A3B 翻译模型，官方未公布额度与等价金额；按同规模模型托管价折算价值可观，但因额度未披露不折算货币价值。",
       "eligibility": "无需注册、无需 API Key：官方 README 示例请求不带 Authorization 头，本地代理示例说明 API Key 可填任意字符串；仅限官方公网端点使用，不涉及账号体系。",
       "regions": "官方未列出地区限制；实际可用性受站点网络策略影响（浏览器扩展直连受 CORS/WAF 限制，官方建议用本地代理桥接）。",
@@ -6966,8 +7096,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方仓库 README 明确写出免费公网 API 地址、模型与 OpenAI 兼容调用方式，本轮还实际发送一条匿名请求并收到 200 正常翻译结果，可确认「免费、免 Key、可用」；但官方未公布限速、每日额度、上下文上限与结束时间，关键额度限制缺失，按规则保持 pending/medium。",
-      "lastVerifiedAt": "2026-11-02T21:26:46Z",
-      "nextReviewAt": "2026-11-03T21:26:46Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
       "evidence": [
         {
           "url": "https://github.com/bilibili/Index-Translate",
@@ -6978,6 +7108,11 @@
           "url": "https://index-translate.bilibili.com/v1/chat/completions",
           "summary": "本轮实测匿名 POST（无 Authorization 头）返回 HTTP 200，model 字段回显 Index-Translate-35B-A3B，choices[0].message.content 为正常英译结果，usage 计 18 prompt + 2 completion tokens；证明端点当前可用且不校验 Key。",
           "checkedAt": "2026-11-02T21:26:46Z"
+        },
+        {
+          "url": "https://index-translate.bilibili.com/v1/chat/completions",
+          "summary": "端点本轮实测可用：以 Authorization: Bearer index、model=Index-Translate-35B-A3B 匿名 POST 返回 200 与正常译文（vllm 后端，usage 正常计 token）；改用 model=index-translate 返回 400 并列出当前公开模型：文本 Index-Translate-2B/9B/35B-A3B、Index-Nailong-9B/2B、Index-Homura-2B/9B，语音 Index-Echo-S2TT/S2ST-2B/9B（仅 /api/echo/* 接口）。仍未见限速、额度或商用授权条款。",
+          "checkedAt": "2026-11-03T21:54:30Z"
         }
       ],
       "history": [
@@ -6985,6 +7120,11 @@
           "at": "2026-11-02T21:26:46Z",
           "status": "pending",
           "note": "本轮由 LINUX DO 福利帖（3112381）发现 Bilibili Index-Translate 免费公网 API，回到官方 GitHub 仓库核实端点、模型与调用方式，并实际匿名调用一次成功；因官方未公布限速与额度，按 pending/medium 入库。"
+        },
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "pending",
+          "note": "复核成功（部分）：端点匿名调用仍返回 200 可正常翻译；模型 id 需用完整名（如 Index-Translate-35B-A3B），官方已扩充到 Nailong/Homura/Echo 系列，额度与限速仍未公布，维持 pending/medium 并刷新核实时间。"
         }
       ]
     },
@@ -7241,6 +7381,134 @@
           "at": "2026-11-03T15:45:03Z",
           "status": "active",
           "note": "入库：官方定价页直接读取，免费档规格与免绑卡明确，标 active/high；区域与超额报错行为未披露。"
+        }
+      ]
+    },
+    {
+      "id": "voyage-ai-200m-free-embedding-tokens-202611",
+      "title": "Voyage AI 每账号免费 200M embedding tokens（voyage-4 系列）",
+      "provider": "Voyage AI（MongoDB）",
+      "category": "ai",
+      "description": "Voyage AI 官方定价文档写明：每个账号在 voyage-4-large、voyage-4、voyage-4-lite、voyage-context-4、voyage-code-3 上各有前 2 亿 tokens 免费，旧系列 voyage-multilingual-2、voyage-finance-2、voyage-law-2、voyage-code-2 为前 5,000 万 tokens 免费；多模态端点另有 2 亿文本 tokens 与 1,500 亿像素免费。属于长期存在的免费额度而非限时活动，适合 RAG、语义检索与代码检索的原型开发。",
+      "quota": "文本 embedding：voyage-4 系列与 voyage-code-3 每账号前 200,000,000 tokens 免费；voyage-multilingual-2 / finance-2 / law-2 / code-2 前 50,000,000 tokens 免费；多模态 voyage-multimodal-3.5 前 200M 文本 tokens + 150B 像素免费。免费期限速：voyage-4 / voyage-code-4 / voyage-3.5 系列 2,000 RPM & 8M TPM，voyage-3-large / context-3 / code-3 及 1、2 系列 2,000 RPM & 3M TPM。",
+      "benefitValue": "按官方单价折算：2 亿 tokens 若走 voyage-4（$0.06/M）约合 $12，走 voyage-4-large 或 voyage-code-4（$0.12/M）约合 $24；多模态部分未给出统一折算。官方未以美元整体标价该免费额度。",
+      "eligibility": "每个账号（organization）一次性的免费 token 池，按模型系列分别计算；无需绑定支付方式即可使用免费额度，绑定支付方式并升级 Tier 1 后免费 tokens 仍然有效。官方未限定必须为新注册用户，也未说明是否按个人/企业区分。",
+      "regions": "官方定价与限速文档未列出国家/地区限制；实际注册与调用可用性未实测。",
+      "validity": "官方表述为「first 200 million tokens … are free for every account」，未给出有效期；用尽免费额度后按 per-token 价格计费，账单按月结算。",
+      "deadlineNote": "官方未公布截止日期，属长期免费额度；官方保留调整价格与免费额度的权利，不能视为永久承诺。",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "超出免费 tokens 后按模型单价计费（voyage-4-lite $0.02/M 至 voyage-4-large/context-4/code-4 $0.12/M，百万 tokens 计）；纯按量计费、无订阅与自动续费；免费额度不因绑定支付方式失效，但绑定后会自动进入 Tier 1 限速档。多模态与 batch 之外的其它能力（如 rerank）计费口径未在本轮核实范围内。",
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方定价文档逐模型列出免费 tokens 数量与后续单价，限速文档给出免费期 RPM/TPM 并明确「即使添加支付方式，免费 tokens 仍然适用」，两页互相印证；未注册实测到账，免费额度有效期官方未披露。",
+      "officialUrl": "https://docs.voyageai.com/docs/pricing",
+      "claimUrl": "https://dashboard.voyageai.com/",
+      "discoveryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
+      "discoveredAt": "2026-11-03T21:54:30Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
+      "startsAt": null,
+      "endsAt": null,
+      "evidence": [
+        {
+          "url": "https://docs.voyageai.com/docs/pricing",
+          "summary": "Text Embeddings 段原文：The first 200 million tokens for voyage-4-large, voyage-4, voyage-4-lite, voyage-context-4, and voyage-code-3, or the first 50 million tokens for voyage-multilingual-2, voyage-finance-2, voyage-law-2, and voyage-code-2, are free for every account；同页表格逐模型列 free tokens 与每百万 tokens 单价。",
+          "checkedAt": "2026-11-03T21:54:30Z"
+        },
+        {
+          "url": "https://docs.voyageai.com/docs/rate-limits",
+          "summary": "限速页给出 voyage-4 / voyage-code-4 / voyage-3.5 系列 8M TPM & 2,000 RPM、voyage-3-large/context-3/code-3 与 1、2 系列 3M TPM & 2,000 RPM；并写明 Tier 1 才需要添加支付方式，且即使添加后免费 tokens（如 2 亿）仍然适用；购买 $100 用量额度可直接升至 Tier 2。",
+          "checkedAt": "2026-11-03T21:54:30Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "新增：由 Perq 注册赠金榜发现 Voyage AI 条目，转官方 docs 核实到逐模型免费 tokens（voyage-4 系列 2 亿、旧系列 5,000 万、多模态 2 亿文本 tokens + 1,500 亿像素）与免费期限速，官方明确免费额度不需要绑卡；未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "tavily-free-1000-credits-month-202611",
+      "title": "Tavily 免费档：每月 1,000 API credits、免绑卡（Agent 搜索/抓取）",
+      "provider": "Tavily",
+      "category": "ai",
+      "description": "Tavily 官方定价页的 Researcher（Free）档为 $0/月：每月 1,000 API credits，No credit card required；credits 按请求类型（search / extract / crawl）消耗，可用于给 AI Agent 提供联网搜索与网页正文抽取。",
+      "quota": "每月 1,000 API credits（$0/月档）；credits 按 search / extract / crawl 等请求类型分别扣减，具体每次请求消耗以官方文档为准；超出后需升级或按 Pay-as-you-go $0.008/credit 付费。",
+      "benefitValue": "按官方 Pay-as-you-go 单价 $0.008/credit 折算，每月 1,000 credits 约合 $8；持续循环发放，年度价值约 $96。",
+      "eligibility": "注册免费账号并在 dashboard 获取 API Key 即可，无需信用卡；官方未说明是否限制同一主体多账号。",
+      "regions": "官方定价与文档未列出国家/地区限制；实际注册可用性未实测。",
+      "validity": "credits 每月发放，官方 FAQ 写明「API credits reset on the first day of each month」，未用部分不结转。",
+      "deadlineNote": "长期免费档，官方未公布结束日期；价格与额度可随时调整。",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "免费档不收费也无自动续费；额度用尽后需主动升级（Project $30/月起）或走 Pay-as-you-go $0.008/credit；高级请求类型消耗更多 credits，重度 crawl 场景可能单日即耗尽月度额度。",
+      "status": "active",
+      "confidence": "high",
+      "confidenceReason": "官方定价页明文列出 Free 档 $0/月、1,000 API credits/月、No credit card required，并在 FAQ 给出月度重置规则与 credits 消耗说明；官方同时公开 PAYG 单价，可折算价值；未注册实测调用。",
+      "officialUrl": "https://www.tavily.com/pricing",
+      "claimUrl": "https://app.tavily.com/",
+      "discoveryUrl": "https://perq.sh/api/search?category=agents-automation&sort=newest&status=live",
+      "discoveredAt": "2026-11-03T21:54:30Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
+      "startsAt": null,
+      "endsAt": null,
+      "evidence": [
+        {
+          "url": "https://www.tavily.com/pricing",
+          "summary": "定价页 Researcher 档：Free / month、「1,000 API credits / month」、「No credit card required」；Pay As You Go 档 $0.008 / credit；FAQ 写明「You start with 1,000 free API credits per month with no credit card required」，且 credits 于每月 1 日重置、按 search/extract/crawl 请求类型消耗。",
+          "checkedAt": "2026-11-03T21:54:30Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "active",
+          "note": "新增：Perq agents/automation 类目发现 Tavily 免费档，官方定价页核实为每月 1,000 credits、免绑卡、每月 1 日重置，并可用官方 PAYG 单价折算约 $8/月；未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "anyscale-100-credit-202611",
+      "title": "Anyscale 新账号 $100 试用额度（Ray / GPU 平台）",
+      "provider": "Anyscale",
+      "category": "cloud",
+      "description": "Anyscale 官方定价页首屏与多处 CTA 均写「Get Started with $100 Credit」：注册免费账号即可以 pay-as-you-go 方式使用托管 Ray 平台与 GPU 算力，$100 额度用于抵扣用量。",
+      "quota": "官方仅写「$100 credit」，未公布额度有效期、可抵扣的具体资源（CPU/GPU 机型、存储、出网）与是否按区域限用；未说明额度用尽后的默认行为。",
+      "benefitValue": "官方面值 $100 平台额度，可按 Anyscale 按量价格折算为 GPU/CPU 机时；具体折合小时数未披露。",
+      "eligibility": "需注册 Anyscale 账号；官方页面未说明是否限新用户、是否必须绑定支付方式、是否需企业邮箱审核，也未说明多账号限制。",
+      "regions": "官方定价页列出 Hosted 部署存在「Limited Regions」，但未给出具体区域清单；$100 额度的适用区域未说明。",
+      "validity": "额度有效期、是否按月发放、是否随账号注销失效均未公布，不能视为长期有效。",
+      "deadlineNote": "官方未给出活动起止日期，也未说明 $100 额度的领取截止时间。",
+      "creditCard": "unknown",
+      "autoRenewal": "unknown",
+      "costNotes": "超出 $100 后按 pay-as-you-go 计费，官方写明按月信用卡开票（Monthly credit card invoices），因此实际使用大概率需要支付方式；未确认是否存在最低消费、GPU 机型是否可用该额度、BYOC 部署是否参与抵扣。",
+      "status": "pending",
+      "confidence": "medium",
+      "confidenceReason": "官方定价页多处写明「Get Started with $100 Credit」，金额可确认；但额度有效期、适用资源、是否绑卡、是否限新用户均无官方条文，故保持 pending/medium，待人工注册核对发放条件。",
+      "officialUrl": "https://www.anyscale.com/pricing",
+      "claimUrl": "https://www.anyscale.com/pricing",
+      "discoveryUrl": "https://perq.sh/api/search?category=cloud-gpu&sort=newest&status=live",
+      "discoveredAt": "2026-11-03T21:54:30Z",
+      "lastVerifiedAt": "2026-11-03T21:54:30Z",
+      "nextReviewAt": "2026-11-04T21:54:30Z",
+      "startsAt": null,
+      "endsAt": null,
+      "evidence": [
+        {
+          "url": "https://www.anyscale.com/pricing",
+          "summary": "定价页首屏与「Pay as you go」段落均写「Get Started with $100 Credit」「Get started with $100 in Anyscale Credits」；同页 Hosted 部署标注 Limited Regions、Billing 为 Monthly credit card invoices；FAQ 折叠未展开，未见额度有效期与绑卡要求的具体条文。",
+          "checkedAt": "2026-11-03T21:54:30Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-03T21:54:30Z",
+          "status": "pending",
+          "note": "新增：Perq cloud/GPU 类目发现 Anyscale $100 额度，官方定价页确认金额与 pay-as-you-go 计费方式，但有效期、适用资源与绑卡要求均未公布，按 pending/medium 入库；未注册实测。"
         }
       ]
     }
