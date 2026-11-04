@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-04T04:09:07Z",
-      "lastSuccessAt": "2026-11-04T04:09:07Z",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮实读 JSON API：type=signup-credit&sort=newest（39 条全量返回）、category=llm-api（29）与 cloud-gpu（42）的 sort=newest 列表，用 id+source_url 与 99 条存量双向去重。据此新增 Speechmatics $100、Gladia 50€、OpenRouter 免费模型限额三条；startup/加速器类（含 Koyeb、Civo、Fly.io、Baseten、AWS Activate 等）一律不采信为自助福利。"
+      "observation": "本轮实读 JSON API：category=llm-api / cloud-gpu / dev-tools / database-backend 各 sort=newest&limit=20，另加 type=signup-credit&sort=newest，去重后 88 条唯一记录。新候选里 Codex for OSS 入库；其余为通用 SaaS 免费档（Netlify/Resend/Stytch/Logto/WorkOS）、startup 加速器计划（Neon/Databricks、Pinecone/PingCAP/Prisma、Convex、SurrealDB）与面值过低项（Fireworks $1、AI21 $10、SiliconFlow $1、Browser Use $1），按现行口径排除。"
     },
     {
       "id": "aifree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "读取 https://www.usefree.space/brands_new.json，items 110 个品牌、嵌套 deals 中含 credit/free/token/gpu 等关键词的权益 169 条；本轮仅用于比对存量，未产生新候选。"
+      "observation": "本轮读取 brands_new.json（约 234 KB），items 品牌与嵌套 deals 中 236 条含 free/credit/token/gpu/trial 关键词；据此发现阿里云「云工开物」学生 ¥300 抵扣金线索并入库，其余为消费级软件学生折扣、referral 链接与 startup 计划。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-04T04:09:07Z",
-      "lastSuccessAt": "2026-11-04T04:09:07Z",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条实读：仅 1 条与已入库条目相关（ZCode/智谱夜间 3 亿 tokens 类重复帖，已归并 unavailable），其余为银行立减金、抽奖、机场与账号交易，无新增候选。"
+      "observation": "本轮 RSS 25 条实读：新增候选 1 条（Nous Portal 免费模型，topic 3120976），另有混元 4/WorkBuddy 限免（截图口径）、华为积分未到账吐槽（无规则变更条文）、智谱淘宝 5000 积分（第三方购买）、各类中转站与抽奖帖，均不入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-04T04:09:07Z",
-      "lastSuccessAt": "2026-11-04T04:09:07Z",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 20 条实读：全部为 VPS 二手交易、Team 车位、拼车与闲聊，无官方福利线索。"
+      "observation": "本轮 RSS 20 条实读：全为 0 刀 Team/收码交易、服务器测评与闲聊，无可用新候选。"
     },
     {
       "id": "lowendtalk",
@@ -437,11 +437,11 @@
       ],
       "entryUrl": "https://vps.lowseek.ai/data/deals.json",
       "status": "readable",
-      "checkedAt": "2026-11-02T09:18:45Z",
-      "lastSuccessAt": "2026-11-02T09:18:45Z",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读取 deals.json 200（约 182 KB），条目与既有 VPS 条目高度重复，且多为营销价，未新增候选；未采信其 availability/score 字段。"
+      "observation": "本轮读取 deals.json，records 82 条，基本为黑五/万圣节付费 VPS 促销与 giveaway，无免费额度类新候选。"
     },
     {
       "id": "serverhunter",
@@ -1468,6 +1468,71 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连可读：两处「Start with 50€ free credits」、Async 0.16–0.27€/hr 与 Real-time 0.68€/hr 费率表、附加功能 +0.02–0.07€/hr；FAQ 只说明充值额度不过期，未写 50€ 赠金有效期与绑卡要求。"
+    },
+    {
+      "id": "aliyun-yungongkaiwu",
+      "name": "阿里云百炼「云工开物」高校计划文档",
+      "url": "https://help.aliyun.com/zh/model-studio/introduction-to-yungongkaiwu",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://help.aliyun.com/zh/model-studio/introduction-to-yungongkaiwu",
+      "status": "readable",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连可读（HTTP 200，去标签正文约 2.4 KB）：活动期 2025-11-11 至 2027-03-31；学生实名认证领 300 元无门槛抵扣金，可抵推理（不含 Wan/HappyHorse/Omni）、训练、部署，1 年有效、退款不返还；教师 5 折、原价上限 40 万元（20 万补贴）；FAQ 含超额计费与不重复享受口径。"
+    },
+    {
+      "id": "nous-portal-pricing",
+      "name": "Nous Portal（Nous Research）定价与模型目录",
+      "url": "https://portal.nousresearch.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://portal.nousresearch.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "lastFailure": {
+        "at": "2026-11-04T10:20:40Z",
+        "reason": "portal.nousresearch.com/models 与 /plans 在连续请求后返回 HTTP 429 与 Vercel Security Checkpoint（仅 278 字节验证页）；首页定价与模型目录可读，子页本轮未取到。"
+      },
+      "canVerifyOfficial": true,
+      "observation": "首页直连可读（858 KB HTML，去标签正文约 22 KB）：Free $0（Free models only / Standard rate limits / $0 monthly credits）、Plus $20、Super $100、Ultra $200；模型目录 200+ 条中 FREE 标注为 Crouton Alpha、Reflection Beam 1.0 501B A23B、StepFun 3.7 Flash、Upstage Solar Mini 4。子页 /models、/plans 会触发 Vercel 速率限制，需间隔重试。"
+    },
+    {
+      "id": "openai-codex-oss",
+      "name": "OpenAI Codex for Open Source 计划页",
+      "url": "https://developers.openai.com/community/codex-for-oss",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developers.openai.com/community/codex-for-oss",
+      "status": "readable",
+      "checkedAt": "2026-11-04T10:20:40Z",
+      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连可读（336 KB HTML，去标签正文约 14 KB）：三项权益（6 个月 ChatGPT Pro with Codex、条件性 Codex Security、Codex Open Source Fund 的 API credits）、适用对象（核心维护者/广泛使用公开项目）、申请入口与 Program Terms 链接；API 额度金额未公布。注意该站 .md 后缀对 /community/* 会 404，只有文档路径支持。"
     }
   ]
 }

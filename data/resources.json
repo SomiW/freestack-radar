@@ -2,6 +2,139 @@
   "schemaVersion": 1,
   "resources": [
     {
+      "id": "aliyun-yungongkaiwu-student-300-voucher-202611",
+      "title": "阿里云百炼「云工开物」高校计划：学生实名认证领 300 元无门槛抵扣金（1 年有效）",
+      "provider": "阿里云（百炼 Model Studio）",
+      "category": "ai",
+      "description": "阿里云百炼以「云工开物」高校计划名义向学生与教师提供优惠。官方帮助文档写明活动期 2025-11-11 至 2027-03-31：中国高校学生完成实名认证后可领 300 元无门槛抵扣金，可抵扣百炼平台的大模型推理、训练与部署费用；教师可 5 折购买百炼服务，原价上限 40 万元。",
+      "quota": "学生：300 元无门槛抵扣金，可抵扣百炼的大模型推理费用（不含 Wan、HappyHorse、Omni）、训练费用与部署费用；自领取之日起 1 年有效。教师：5 折购买百炼产品服务，产品服务原价不超过 40 万元（对应 20 万元补贴额度）。超出额度或券过期后按标准资费付费。",
+      "benefitValue": "学生 300 元直接抵扣百炼调用与训练/部署开支（约为 300 元现金等值额度）；教师档最高 20 万元补贴额度，但需资质审核且限科研教学用途。",
+      "eligibility": "面向中国高校在校学生（官方明确含中国香港、中国澳门、中国台湾地区），覆盖专科、本科、硕士、博士与在职研究生；需完成阿里云实名认证与学生身份认证，再到「云工开物 — 高校学生通用权益」页点击领取。教师档面向国内高校/科研机构在职教师与研究人员，需提交申请表并说明应用场景，3 个工作日内短信通知审核结果，仅限科研教学用途、禁止商业转售。",
+      "regions": "阿里云中国站（aliyun.com）产品与计费体系；面向中国高校学生，含港澳台院校学生。",
+      "validity": "抵扣金自领取之日起 1 年内有效；活动公示期为 2025-11-11 至 2027-03-31；后台记录一年内累计优惠金额，下单即视为已享受，不重复领取。",
+      "deadlineNote": "活动公示截止 2027-03-31；抵扣金按各自领取时间起算 1 年，过期或用尽即止。各校名额、发放节奏与审核时长官方未公布。",
+      "officialUrl": "https://help.aliyun.com/zh/model-studio/introduction-to-yungongkaiwu",
+      "claimUrl": "https://university.aliyun.com/",
+      "discoveryUrl": "https://www.usefree.space/brands_new.json",
+      "discoveredAt": "2026-11-04T10:20:40Z",
+      "startsAt": "2025-11-10T16:00:00Z",
+      "endsAt": "2027-03-31T15:59:59Z",
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "抵扣金不覆盖 Wan、HappyHorse、Omni 三个模型；额度用尽或过期后按标准资费计费，订单退款时优惠券不返还；同一账号一年内累计优惠金额被记录，不能重复领取。领取是否需绑定支付方式官方未说明，仅要求实名与学生认证。",
+      "confidence": "high",
+      "confidenceReason": "阿里云官方帮助文档（百炼产品文档）给出活动期、300 元面值、可抵扣范围（含三项排除）、1 年有效期、学生与教师两类资格、领取路径与超额计费规则；仅各校名额与发放节奏、是否需绑卡未披露，不影响权益本身。",
+      "lastVerifiedAt": "2026-11-04T10:20:40Z",
+      "nextReviewAt": "2026-11-05T10:20:40Z",
+      "evidence": [
+        {
+          "url": "https://help.aliyun.com/zh/model-studio/introduction-to-yungongkaiwu",
+          "summary": "官方帮助文档「云工开物」高校计划-阿里云百炼活动：「活动时间 2025 年 11 月 11 日--2027 年 03 月 31 日」；「面向中国高校学生（包括中国香港、中国澳门和中国台湾地区），完成实名认证后即可领取 300 元无门槛抵扣金。该无门槛抵扣金可抵扣大模型的推理费用（不包括 Wan、HappyHorse 和 Omni）、训练费用、部署费用；自领取之日起一年内有效。如订单退款，优惠券不返还」；申请流程为实名认证 → 云工开物「高校学生通用权益」→ 领取；教师档「5 折购买…产品服务原价不超过 40 万元（即 20 万元补贴额度）」，需审核、仅限科研教学；FAQ 明确超额度按标准资费、一年内累计优惠金额不重复享受。",
+          "checkedAt": "2026-11-04T10:20:40Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-04T10:20:40Z",
+          "status": "active",
+          "note": "新增 active/high：由 usefree.space brands_new.json 的「¥300 Alibaba Cloud voucher for students」线索定位到阿里云百炼官方帮助文档，条文完整（活动期、面值、可抵扣范围与排除项、1 年有效期、学生/教师资格、超额计费），据此入库。"
+        }
+      ]
+    },
+    {
+      "id": "nous-portal-free-models-202611",
+      "title": "Nous Portal 免费档（$0/月）：仅免费模型、标准限速，Hermes Agent 与 API 共用账号",
+      "provider": "Nous Research（Nous Portal / Hermes）",
+      "category": "ai",
+      "description": "Nous Research 官方 Portal（portal.nousresearch.com，nousresearch.com 站内 Platform/Plans 直接指向）定价表列出 Free $0 档：仅可使用标记为 FREE 的模型、标准限速、无月度 credits。同页模型目录称「200+ models」，其中标注 FREE 的包括 Crouton Alpha、Reflection Beam 1.0 501B A23B、StepFun Step 3.7 Flash、Upstage Solar Mini 4。付费档为 Hermes Plus $20/月、Hermes Super $100/月、Hermes Ultra $200/月。",
+      "quota": "Free $0：仅免费（FREE 标签）模型可用；「Standard rate limits」（官方未公布具体 RPM/TPM/日请求数）；$0 月度 credits，即不给付费模型额度。免费档不含 Cloud agent 托管（Plus 起含一台 4 GB RAM / 25 GB 磁盘 Cloud agent）。",
+      "benefitValue": "零订阅成本调用 Portal 目录中标 FREE 的模型（本轮实见 4 个：Crouton Alpha、Reflection Beam 1.0 501B A23B、StepFun Step 3.7 Flash、Upstage Solar Mini 4），可在 Hermes TUI / Desktop 与 API Key 中选用；具体价值随免费名单轮换。",
+      "eligibility": "注册 Nous Portal 账号（Create account）即可使用免费档；官方未说明是否限新用户、是否需绑定支付方式，也未列学生/企业门槛。另可连接符合条件的 ChatGPT 账号做受支持推理，官方注明「No paid Nous subscription is required」。",
+      "regions": "官方定价页未列地区限制；由 portal.nousresearch.com 提供，受其访问策略约束（本轮直连曾触发 Vercel 速率限制）。",
+      "validity": "Free 为长期 $0/月档位，无到期日；免费模型名单与「standard rate limits」由官方随时调整。",
+      "deadlineNote": "无官方截止日期；免费模型名单会轮换（Crouton Alpha 等为 stealth/alpha 类代号，可能随时下线）。",
+      "officialUrl": "https://portal.nousresearch.com/",
+      "claimUrl": "https://portal.nousresearch.com/",
+      "discoveryUrl": "https://linux.do/t/topic/3120976",
+      "discoveredAt": "2026-11-04T10:20:40Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "Free 档不发放月度 credits，付费模型与超出免费名单的调用需充值（页面提供 $10/$20/$50/$100/$200 充值档，Stripe 支付）；官方写明「API keys always use your credits (pay-as-you-go), not included usage」；Hosted tools 与 Hermes Cloud agent 托管与模型额度分开计费。限速具体数值与是否需绑卡官方未披露。",
+      "confidence": "high",
+      "confidenceReason": "官方 Portal 定价表逐档给出 Free $0（Free models only / Standard rate limits / $0 monthly credits）与三档付费价格、Cloud agent 规格；同页模型目录对 4 个模型明确标注 FREE，nousresearch.com 官方站导航直达 Portal 可证域名归属。缺项为限速数值、绑卡要求与地区限制。",
+      "lastVerifiedAt": "2026-11-04T10:20:40Z",
+      "nextReviewAt": "2026-11-05T10:20:40Z",
+      "evidence": [
+        {
+          "url": "https://portal.nousresearch.com/",
+          "summary": "官方 Portal 定价区原文（去标签文本）：「Free $0 / Free models only / Standard rate limits / $0 monthly credits」；Plus $20 per month、Super $100 per month、Ultra $200 per month，Plus 起含「A Cloud agent with up to 4 GB RAM and 25 GB disk included」；另写明「API keys always use your credits (pay-as-you-go), not included usage」「Use your ChatGPT plan … No paid Nous subscription is required. Tools and Hermes Cloud hosting are charged separately」；模型目录 200+ 模型中标注 FREE 的为 Crouton Alpha、Reflection: Beam 1.0 501B A23B、StepFun: Step 3.7 Flash、Upstage: Solar Mini 4。",
+          "checkedAt": "2026-11-04T10:20:40Z"
+        },
+        {
+          "url": "https://nousresearch.com/",
+          "summary": "官方主站导航含「Portal Nous Portal Power your Hermes」与页脚「Platform / Portal / Plans」入口，可确认 portal.nousresearch.com 属 Nous Research 官方产品域名。",
+          "checkedAt": "2026-11-04T10:20:40Z"
+        },
+        {
+          "url": "https://linux.do/t/topic/3120976",
+          "summary": "社区线索（2026-11-04T07:41Z）：帖称 Hermes 官方提供免费模型含 stealth/crouton-alpha；回帖提及匿名测试模型。仅作发现来源，条款以官方 Portal 定价页为准。",
+          "checkedAt": "2026-11-04T10:20:40Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-04T10:20:40Z",
+          "status": "active",
+          "note": "新增 active/high：LINUX DO 福利帖给出发现线索，随后在 Nous Research 官方 Portal 定价表读到 Free $0 档（仅免费模型、标准限速、$0 credits）与 4 个 FREE 标注模型，并用 nousresearch.com 官方导航确认域名归属，据此入库。"
+        }
+      ]
+    },
+    {
+      "id": "openai-codex-for-oss-202611",
+      "title": "OpenAI Codex for Open Source：核心维护者申请可得 6 个月 ChatGPT Pro（含 Codex）与 API 额度",
+      "provider": "OpenAI",
+      "category": "ai",
+      "description": "OpenAI 开发者站「Codex for Open Source」页面：开源项目核心维护者可申请，通过后获得 6 个月 ChatGPT Pro（含 Codex）、按仓库单独审核的 Codex Security 访问，以及 Codex Open Source Fund（规模 100 万美元）下的 API credits，用于 PR 评审、维护者自动化、发布流程等核心开源工作。",
+      "quota": "6 个月 ChatGPT Pro with Codex（用于日常编码、分流、评审与维护者流程）；Codex Security 按仓库逐个审核开放；API credits 经 Codex Open Source Fund 发放，金额与节奏官方未公布。",
+      "benefitValue": "6 个月 ChatGPT Pro（官方定价 $20/月起，等值约 120 美元）+ 未公布金额的 API 额度 + 条件性 Codex Security；实际价值取决于项目用途与审核结果。",
+      "eligibility": "面向公开项目的核心维护者（具备写权限）或维护被广泛使用项目者；官方明示「If your project doesn't fit the criteria but it plays an important role in the ecosystem, apply anyway and explain why」；需 ChatGPT 账号、公开 GitHub 主页与仓库；提交申请即视为同意 Codex for Open Source Program Terms；滚动审核，由 OpenAI 裁量。",
+      "regions": "官方页面未列地区限制，实际以 ChatGPT / Codex 可用地区为准。",
+      "validity": "通过后 6 个月；到期不自动续期，API 额度按基金规则另行评估。",
+      "deadlineNote": "无申请截止日期，滚动审核；审核时长与通过率官方未公布。",
+      "officialUrl": "https://developers.openai.com/community/codex-for-oss",
+      "claimUrl": "https://developers.openai.com/community/codex-for-oss",
+      "discoveryUrl": "https://perq.sh/api/search?type=signup-credit&sort=newest",
+      "discoveredAt": "2026-11-04T10:20:40Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "非自助领取：需提交申请并通过审核，OpenAI 保留裁量权；Codex Security 为条件性权益（case by case 审核）；API credits 金额未公布；6 个月 Pro 到期后按标准订阅价续费，API Key 用量另计；申请不收费。",
+      "confidence": "high",
+      "confidenceReason": "官方开发者站专页逐项列出三项权益（6 个月 ChatGPT Pro with Codex、条件性 Codex Security、Codex Open Source Fund 的 API credits）、适用对象（核心维护者/广泛使用的公开项目）与申请入口，并给出项目条款链接；缺项为 API 额度金额、审核通过率与地区限制。",
+      "lastVerifiedAt": "2026-11-04T10:20:40Z",
+      "nextReviewAt": "2026-11-05T10:20:40Z",
+      "evidence": [
+        {
+          "url": "https://developers.openai.com/community/codex-for-oss",
+          "summary": "官方页面原文：「Open-source maintainers can apply for API credits, six months of ChatGPT Pro with Codex, and Codex Security」；「What the program includes：Six months of ChatGPT Pro with Codex …；Conditional access to Codex Security for repositories that need deeper security coverage；API credits through the Codex Open Source Fund for projects that use Codex in pull request review, maintainer automation, release workflows, or other core OSS work」；「Who should apply：If you're a core maintainer or run a widely used public project, apply. If your project doesn't fit the criteria but it plays an important role in the ecosystem, apply anyway and explain why」；「The Codex Open Source Fund ($1 million)」；提交申请即同意 Codex for Open Source Program Terms。",
+          "checkedAt": "2026-11-04T10:20:40Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-04T10:20:40Z",
+          "status": "active",
+          "note": "新增 active/high：Perq signup-credit 列表暴露 Codex for OSS 线索，随后在 OpenAI 官方开发者站专页核实三项权益、适用对象与申请条款，据此入库；API 额度金额官方未公布，已在配额与成本说明中标注。"
+        }
+      ]
+    },
+    {
       "id": "steel-browser-30-credit-202611",
       "title": "Steel 新账号一次性 30 美元浏览器会话额度（Launch 档 $0/月，免绑卡）",
       "provider": "Steel",
@@ -2709,7 +2842,7 @@
       "confidence": "low",
       "confidenceReason": "官方入口 https://yunzhi.play.cn/ai/ 返回 200 但只是 Vue 单页应用（HTML 约 1.3 KB），签到与权益规则全在前端脚本内，未读到任何条款；仅有社区帖描述「每天访问自动弹出、领 2 天、24 小时不休眠」。",
       "lastVerifiedAt": null,
-      "nextReviewAt": "2026-11-04T03:35:39Z",
+      "nextReviewAt": "2026-11-07T10:20:40Z",
       "evidence": [
         {
           "url": "https://yunzhi.play.cn/ai/",
@@ -2735,6 +2868,11 @@
           "url": "https://yunzhi.play.cn/ai/",
           "summary": "复核失败：官方活动页直连为纯前端空壳，只读渲染代理返回空正文（仅页面标题「云智手机」），签到规则、权益与时长仍未取到；保留上次可信记录与核实时间。",
           "checkedAt": "2026-11-04T04:09:07Z"
+        },
+        {
+          "url": "https://yunzhi.play.cn/ai/",
+          "summary": "本轮经只读渲染代理读取（HTTP 200，正文约 1.7 KB）：页面只有「云智手机」标题、下载 APP/登录、示例对话图片与「技能使用 / 积分兑换 / 技能教程」导航，仍未出现签到、2 天云手机时长、领取次数或有效期条款；官方条款连续 5 轮不可得，不刷新核实时间，复核间隔放宽至 72 小时。",
+          "checkedAt": "2026-11-04T10:20:40Z"
         }
       ],
       "history": [
@@ -2915,6 +3053,11 @@
           "url": "https://docs.memoh.ai/zh/guides/quick-start",
           "summary": "复核失败：官方文档 quick-start 本轮可读但只讲安装/登录/建 Bot 与 BYOK，全文无免费档、无 2C2G 或其他配置说明；docs.memoh.ai 的 /zh/pricing.html、/zh/guides/plans.html、sitemap.xml 与 memoh.ai/pricing 均 404，免费档规格仍无官方出处；保留上次可信记录与核实时间。",
           "checkedAt": "2026-11-04T04:09:07Z"
+        },
+        {
+          "url": "https://docs.memoh.ai/zh/guides/quick-start",
+          "summary": "本轮直连读取官方中文快速开始（HTTP 200，约 89 KB，去标签正文约 2.9 KB）：仅含安装、登录 Memoh Cloud、创建 Bot 与 BYOK 步骤，全文无「免费 / free / 额度 / 2C2G / 套餐 / 定价」任何表述；memoh.ai 首页仍是约 2.9 KB 的前端外壳。免费档条款连续 5 轮不可得，不刷新核实时间，复核间隔放宽至 72 小时。",
+          "checkedAt": "2026-11-04T10:20:40Z"
         }
       ],
       "history": [
@@ -2930,7 +3073,7 @@
         }
       ],
       "lastVerifiedAt": null,
-      "nextReviewAt": "2026-11-04T03:35:39Z"
+      "nextReviewAt": "2026-11-07T10:20:40Z"
     },
     {
       "id": "qoder-1024-community-boost-202610",
@@ -6008,7 +6151,7 @@
       "confidence": "medium",
       "confidenceReason": "上海人工智能实验室官方新闻明确「测试期间，每位用户每月可获免费 Token」并给出 Token Plan 详情页地址，方向有官方依据；但每月赠送数量、领取门槛、适用模型与超额计费均未在官方页面公布，故保持待核实。",
       "lastVerifiedAt": "2026-11-01T02:08:43Z",
-      "nextReviewAt": "2026-11-06T03:35:39Z",
+      "nextReviewAt": "2026-11-07T10:20:40Z",
       "evidence": [
         {
           "url": "https://www.shlab.org.cn/news/5444294",
@@ -6039,6 +6182,11 @@
           "url": "https://discovery.SAGE-ai.org.cn/token-plan/home?tabIndex=0",
           "summary": "复核失败（连续第 4 轮）：域名 discovery.sage-ai.org.cn 在本机 DNS 与只读渲染代理两侧均无法解析（curl 返回 000，渲染代理返回 422「Domain 'discovery.sage-ai.org.cn' could not be resolved」），未取得任何新条款；保留上次可信记录与核实时间。",
           "checkedAt": "2026-11-04T04:09:07Z"
+        },
+        {
+          "url": "https://discovery.sage-ai.org.cn/token-plan/home?tabIndex=0",
+          "summary": "复核失败（连续第 5 轮）：只读渲染代理返回 422「Domain 'discovery.sage-ai.org.cn' could not be resolved」，本机亦无法解析该域名，未取得任何新条款；按规则停止本轮重试，复核间隔放宽至 72 小时，保留上次可信记录与核实时间。",
+          "checkedAt": "2026-11-04T10:20:40Z"
         }
       ],
       "history": [
@@ -6073,8 +6221,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方页面完整给出资格门槛、四步申请流程与功能清单（含 1203+ 已资助项目），但未公布 VPS 规格、是否需要付款方式、资助期限与审核时效，故保持待核实。",
-      "lastVerifiedAt": "2026-11-01T02:08:43Z",
-      "nextReviewAt": "2026-11-06T03:35:39Z",
+      "lastVerifiedAt": "2026-11-04T10:20:40Z",
+      "nextReviewAt": "2026-11-05T10:20:40Z",
       "evidence": [
         {
           "url": "https://dartnode.com/open-source",
@@ -6100,6 +6248,11 @@
           "url": "https://dartnode.com/open-source",
           "summary": "复核失败（连续第 4 轮）：直连返回 403，r.jina.ai 渲染亦被人机校验页拦截（「We're verifying your browser…Ray ID」），open-source 专页条文未取得；同站首页本轮经渲染代理可读（仅营销文案，无赞助规格），保留上次可信记录与核实时间。",
           "checkedAt": "2026-11-04T04:09:07Z"
+        },
+        {
+          "url": "https://dartnode.com/open-source",
+          "summary": "复核成功（连续 4 轮被拦后首次读到）：r.jina.ai 渲染代理返回官方「Free Cloud Compute / Powering Open Source」全文——资格为公开 GitHub 仓库 1,000+ stars、创建满 90 天、非 fork 非归档；流程为 README 加 logo 回链 → 提交仓库 URL 获验证码（可写为不可见 HTML 注释）→ 自动审核 → 部署并邮件发连接信息；功能含 Unlimited Bandwidth（受 AUP 约束）、100% uptime、Instant Setup、rDNS、Custom ISO；已资助「1203+」开源项目；申请需登录/注册 app.dartnode.com 账号。页面仍未公布实例 CPU/内存/磁盘规格、资助期限与名额，故维持 pending/medium。",
+          "checkedAt": "2026-11-04T10:20:40Z"
         }
       ],
       "history": [
@@ -6107,6 +6260,11 @@
           "at": "2026-11-01T02:08:43Z",
           "status": "pending",
           "note": "本轮来源扫描命中 DartNode 开源免费 VPS 计划，经只读代理读到官方资格与申请流程；因官方未公布实例规格、付款方式要求与资助期限，以 pending/medium 入库，未提交申请。"
+        },
+        {
+          "at": "2026-11-04T10:20:40Z",
+          "status": "pending",
+          "note": "复核成功：官方 open-source 专页本轮经只读渲染代理可读（此前 4 轮均被人机校验拦截），确认资格门槛、四步申请流程、功能清单与 1203+ 资助规模均未变化；实例规格、期限与名额仍未公布，维持 pending/medium，刷新核实时间。"
         }
       ]
     },
