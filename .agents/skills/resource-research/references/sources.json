@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-03T21:54:30Z",
-      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮实读 JSON API：type=signup-credit（39 条，取前 10）与 category=llm-api/cloud-gpu/database-backend/agents-automation/dev-tools 的 sort=newest 列表（各 29–47 条），每类返回 10 条；据此新增 Voyage AI、Tavily 两条并发现 Anyscale $100（另行核实）。startup 类项目一律不采信。"
+      "observation": "本轮实读 JSON API：type=signup-credit&sort=newest（39 条全量返回）、category=llm-api（29）与 cloud-gpu（42）的 sort=newest 列表，用 id+source_url 与 99 条存量双向去重。据此新增 Speechmatics $100、Gladia 50€、OpenRouter 免费模型限额三条；startup/加速器类（含 Koyeb、Civo、Fly.io、Baseten、AWS Activate 等）一律不采信为自助福利。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-03T21:54:30Z",
-      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条：多为抽奖、账号交易、代金券/立减金、\"鸡蛋\"类 ZCode/智谱短期额度，以及 chatgpt pro 领 API credit 的重复讨论；无可独立成条的官方新福利。"
+      "observation": "本轮 RSS 25 条实读：仅 1 条与已入库条目相关（ZCode/智谱夜间 3 亿 tokens 类重复帖，已归并 unavailable），其余为银行立减金、抽奖、机场与账号交易，无新增候选。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-03T21:54:30Z",
-      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 20 条：以 VPS 转让/收码/测评与日常提问为主，另有 RAKsmart 首月 0.91 刀（AFF 推广+优惠券叠加）等促销，无符合入库标准的新活动。"
+      "observation": "本轮 RSS 20 条实读：全部为 VPS 二手交易、Team 车位、拼车与闲聊，无官方福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -698,11 +698,11 @@
       ],
       "entryUrl": "https://northflank.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "官方定价页复读：Sandbox Free 免绑卡、2 services / 2 jobs / 1 database、最高 $20/月资源、1 BYOC 12 vCPU/48GB、Always on；顶部安全事件横幅仍在。"
+      "observation": "直连可读：Sandbox 免绑卡、$20/月资源、2 services / 2 jobs / 1 database、1 BYOC 12 vCPU / 48 GB、always-on，未变。"
     },
     {
       "id": "northflank-status",
@@ -739,11 +739,11 @@
       ],
       "entryUrl": "https://clickhouse.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "官方定价页复读（300 KB HTML）：仍为 $300 / 30 天试用、每新组织一次、Basic 档 1 TB 存储与 8–12 GiB 内存，未出现条款变化。"
+      "observation": "直连 curl 可读：$300 / 30 天、每新组织一次、额度用尽或 30 天先到为准、Basic 档 1 TB 存储 8–12 GiB 内存，条款未变。"
     },
     {
       "id": "turso-pricing",
@@ -760,11 +760,11 @@
       ],
       "entryUrl": "https://turso.tech/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "官方定价页复读：Free 档仍 $0/month、100 DB、5GB、5 亿读行/1000 万写行/月、3GB sync、1 天审计日志；页首保留并入 Supabase 公告。"
+      "observation": "直连可读：Free $0、100 数据库、5 GB、5 亿行读 / 1000 万行写 / 月，页首新增「joining Supabase」横幅，Free 档额度未变。"
     },
     {
       "id": "boltnew-pricing",
@@ -781,11 +781,11 @@
       ],
       "entryUrl": "https://bolt.new/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "官方定价页复读：Free 档 $0/月、Free forever no card、1M tokens/月、含托管与不限数据库，未变。"
+      "observation": "直连可读：Free 档限制本轮全部展开（每日 30 万 tokens、每月 100 万、10MB 上传、333k 网页请求、不限数据库），FAQ 明确额度不结转，属实质补充。"
     },
     {
       "id": "upstash-pricing",
@@ -823,11 +823,11 @@
       ],
       "entryUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "经 r.jina.ai 取到全文（21.7 KB）：活动期 2026-02-15~12-31、2500 万 tokens/30 天、3000 tokens·min⁻¹、单一身份一次、仅部分自营模型，条款未变；页面更新时间 2026/10/27。"
+      "observation": "帮助中心为 SPA，经 r.jina.ai 取到全文（更新时间 2026/10/27）：2500 万 tokens / 30 天 / 每身份一次 / 3000 tokens/min / 仅部分自营模型，未变。"
     },
     {
       "id": "huaweicloud-grow",
@@ -843,11 +843,11 @@
       ],
       "entryUrl": "https://developer.huaweicloud.com/grow",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "经 r.jina.ai 取到正文（21.3 KB）：公告仍为每天 16:00 补货、先到先得、设兑换上限、禁多号刷分，签到 +10；券面额仍只在登录后兑换弹窗内。"
+      "observation": "SPA，经 r.jina.ai 首次取到完整兑换目录：7 档代金券（5–500 元，10 积分 = 1 元）与实时库存，任务积分值齐备；每人上限与券有效期仍只在登录弹窗。"
     },
     {
       "id": "hkcloudx-cloud",
@@ -863,11 +863,11 @@
       ],
       "entryUrl": "https://hkcloudx.com/cloud.html",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "经 r.jina.ai 取到配置器正文：中国香港 KVM，三档年付 HK-RAID10-Y01/Y02/Y03（1核2G/2核4G/4核8G，200M 带宽，500/1000/2000GB 流量，各 1 IPv4 + 1 IPv6），页面仍不含价格。"
+      "observation": "cloud.html 经 r.jina.ai 可读：中国香港 KVM 三档年付套餐规格；无价格、无 MiniV6 NAT $6/年机型。注：/cloud-server 已 302 到 login.htm。"
     },
     {
       "id": "qoder-docs",
@@ -905,11 +905,11 @@
       ],
       "entryUrl": "https://muse.ai/",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "官网首页复读：仍写明每位用户共享一台持久隔离的 Linux 云端计算机（Muse Secure VM）含完整浏览器；/pricing 仍 401，免费额度与地区限制依旧未披露。"
+      "observation": "首页直连可读（81 KB）：仍只写持久云 VM 与完整浏览器，无价格/免费额度文本，/pricing 与条款页不可读。"
     },
     {
       "id": "yunzhi-play-ai",
@@ -925,12 +925,15 @@
         "html"
       ],
       "entryUrl": "https://yunzhi.play.cn/ai/",
-      "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
+      "status": "restricted",
+      "checkedAt": "2026-11-04T04:09:07Z",
       "lastSuccessAt": "2026-11-03T03:35:39Z",
-      "lastFailure": null,
+      "lastFailure": {
+        "at": "2026-11-04T04:09:07Z",
+        "reason": "页面返回 200 但正文为空（纯前端渲染），r.jina.ai 渲染亦无内容，签到规则不可读"
+      },
       "canVerifyOfficial": true,
-      "observation": "经 r.jina.ai 复读（1.8 KB 正文）：仍为产品宣传与 App 下载，无签到、免费时长或有效期文字。"
+      "observation": "直连为纯前端空壳，r.jina.ai 返回空正文（仅标题），签到与权益条款仍不可得，标记为受限。"
     },
     {
       "id": "memoh-docs",
@@ -947,11 +950,11 @@
       ],
       "entryUrl": "https://docs.memoh.ai/zh/guides/quick-start",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "复读 /zh/guides/quick-start（15 KB）：仅安装/登录/建 Bot/BYOK 教程，无价格与免费额度；/pricing、/plans、/free 均 404。"
+      "observation": "quick-start 经 r.jina.ai 可读但只讲安装/BYOK，无免费档规格；/zh/pricing.html、/zh/guides/plans.html、sitemap.xml、memoh.ai/pricing 均 404。"
     },
     {
       "id": "docker-sandboxes-promo",
@@ -1153,11 +1156,11 @@
       ],
       "entryUrl": "https://vercel.com/docs/ai-gateway/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 可读（104 KB）：Free/Paid 对比表给出每月 $5 额度、仅限 Free Tier eligible models、更低限速、不支持 BYOK、零加价零平台费；超限返回 429。文档站另有 Rate Limits 与 BYOK 子页。"
+      "observation": "文档页直连可读：Free tier 仍每月 $5 AI Gateway Credits、付费档零加价。"
     },
     {
       "id": "runloop-pricing",
@@ -1174,11 +1177,11 @@
       ],
       "entryUrl": "https://runloop.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 可读（122 KB）：FAQ 原文给出新账号 $50 usage credits、完整 Pro 功能、免绑卡、试用结束不自动扣费；定价表按 CPU/内存/存储秒计费，暂停实例仅收存储费。"
+      "observation": "直连可读：新账号 $50 与 Pro 功能、免绑卡，试用限额 3 Devboxes / 5 blueprints / 10 snapshots / 3 objects，未变。"
     },
     {
       "id": "parallel-pricing",
@@ -1195,11 +1198,11 @@
       ],
       "entryUrl": "https://parallel.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 可读（70 KB，Next.js 内联 JSON）：Pay-as-you-go 区写「Run up to 5,000 requests per month for free」，横幅写「Earn up to $80 at signup + $5 in free credits per month」；docs.parallel.ai 的 llms.txt 索引与 .md 纯文本孪生页同样可读，但 docs 定价页未同步免费档条款。"
+      "observation": "直连可读：每月 5,000 次免费请求 + $5 月度额度 + 注册最高 $80，分档条件仍未公布。"
     },
     {
       "id": "steel-pricing",
@@ -1405,6 +1408,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 可读：首屏与 Pay as you go 段落均写「Get Started with $100 Credit」，Hosted 部署标注 Limited Regions、Billing 为 Monthly credit card invoices；额度有效期与绑卡要求无条文，FAQ 需展开。"
+    },
+    {
+      "id": "speechmatics-pricing",
+      "name": "Speechmatics 定价与额度 FAQ",
+      "url": "https://www.speechmatics.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.speechmatics.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连可读（9.5 KB 正文）：首屏 $100 credits / No card required，FAQ 给出 1 credit = $1、sign-up bonus 12 个月有效、免费档额度耗尽后暂停 API、33% 数据授权折扣默认关闭。"
+    },
+    {
+      "id": "openrouter-limits",
+      "name": "OpenRouter API 文档：速率与免费模型限额",
+      "url": "https://openrouter.ai/docs/api-reference/limits",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://openrouter.ai/docs/api-reference/limits.md",
+      "status": "readable",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "HTML 版表格数值由前端渲染读不到；同路径加 .md 后缀返回纯 Markdown（17 KB），表格原文完整：<10 美元 20 RPM/50 次每日，≥10 美元 1,000 次每日，并说明 free_model_daily_requests 查询字段。"
+    },
+    {
+      "id": "gladia-pricing",
+      "name": "Gladia 定价页",
+      "url": "https://www.gladia.io/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.gladia.io/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-04T04:09:07Z",
+      "lastSuccessAt": "2026-11-04T04:09:07Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连可读：两处「Start with 50€ free credits」、Async 0.16–0.27€/hr 与 Real-time 0.68€/hr 费率表、附加功能 +0.02–0.07€/hr；FAQ 只说明充值额度不过期，未写 50€ 赠金有效期与绑卡要求。"
     }
   ]
 }
