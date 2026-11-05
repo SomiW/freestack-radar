@@ -8830,6 +8830,149 @@
           "note": "Perq 列表发现，转 Perch 官方文档核实：免费个人档、每月 20,000 PT（1 PT=$0.001，约 $20）、免绑卡、按月刷新、无直连 API、模型轮换清单明确，以 active/high 入库。未注册。"
         }
       ]
+    },
+    {
+      "id": "nebius-ai-builder-program-credits-202611",
+      "title": "Nebius AI Builder Program：免费加入即领 $250 组合额度（Token Factory $25 + LangSmith $100 + Toloka/Tandem $100 + Tavily $25）",
+      "provider": "Nebius",
+      "category": "ai",
+      "officialUrl": "https://dev.nebius.com/builders",
+      "claimUrl": "https://dev.nebius.com/builders",
+      "discoveryUrl": "https://perq.sh/api/search?category=llm-api&sort=newest&status=live&limit=50",
+      "discoveredAt": "2026-11-05T00:47:00Z",
+      "description": "Nebius 面向 AI 开发者的免费会员计划（AI Builder Program）：注册并说明在做什么、验证邮箱后即可领取多家厂商的额度，用于推理、联网搜索、LLM 可观测性与模型评测。官方 FAQ 明确「The program is free to join for everyone」，并定位为学习、测试与原型验证，而非生产负载。",
+      "quota": "Nebius Token Factory $25 推理额度 + Tavily $25 联网搜索额度 + LangSmith $100 可观测性额度 + Toloka $50 与 Tandem $50 评测/人工判断额度；另含 $1 的 NVIDIA × Nebius 认证与免费的 Agentic AI 实践课程。",
+      "benefitValue": "按官方列举项合计面值 $250（$25 + $25 + $100 + $50 + $50），实际可用性取决于各合作方条款与资格审核。",
+      "eligibility": "对所有人免费开放，无前置经验要求；流程为注册 → 说明项目 → 验证邮箱后领取所需工具的额度。官方注明合作方权益「subject to eligibility, availability, and individual partner terms」，即部分额度可能需要额外审核或受合作方名额限制。",
+      "regions": "Nebius 侧以欧洲（EU）为重心，官方未按国家/地区限制会员注册；各合作方额度的可用区域以合作方条款为准。",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "validity": "会员免费、额度一次性发放；官方未公布额度有效期与是否按月补充。",
+      "deadlineNote": "无公布截止日期；官方保留调整会员权益与合作方额度的权利。",
+      "costNotes": "额度用尽后 Token Factory 按官方按量计费；计划定位为学习/测试/实验，官方明确生产负载需另走 Nebius 商务渠道。更大的算力支持需单独申请 compute grants，融资与加速走 Startup Program，均不与会员额度叠加。",
+      "confidence": "high",
+      "confidenceReason": "官方页面本轮直读（HTTP 200，正文 6.5K 字符），免费加入、四步领取流程、逐项额度面值与「合作方权益受各自条款约束」均为页面明文；绑卡要求与额度有效期官方未提及，已标 unknown 并写入 validity。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-11-05T00:47:00Z",
+      "nextReviewAt": "2026-11-06T00:47:00Z",
+      "evidence": [
+        {
+          "url": "https://dev.nebius.com/builders",
+          "summary": "官方页面：Join free to get credits；四步流程为 Join（免费注册并说明项目）→ Claim credits（验证邮箱后领取各工具额度）→ Build → Scale up。Included with your membership 列出 Inference $25 Token Factory credit、Web search and grounding $25 Tavily credit、LLM observability $100 LangSmith credit、Evaluation $100 Toloka credit、Certification $1 认证、免费 Agentic AI 课程。FAQ：「Is the Builder Program free? Yes. The program is free to join for everyone.」「How much credit is included? You'll receive $25 in Nebius Token Factory credits, $100 in LangSmith credit from LangChain, $50 in Toloka and $50 in Tandem credit, and $25 in Tavily credit」。另注明「Partner offers are subject to eligibility, availability, and individual partner terms」，且计划定位于 learning/testing/experimentation。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        },
+        {
+          "url": "https://perq.sh/api/search?category=llm-api&sort=newest&status=live&limit=50",
+          "summary": "Perq llm-api 最新列表命中 nebius-ai-builder-program，source_url 指向 dev.nebius.com/builders；仅作发现线索，额度与资格以官方页为准。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-05T00:47:00Z",
+          "status": "active",
+          "note": "Perq 列表发现，转官方 dev.nebius.com/builders 核实：免费加入、邮箱验证后领 $25 Token Factory / $100 LangSmith / $50 Toloka + $50 Tandem / $25 Tavily，合计面值 $250，合作方权益受各自条款约束；绑卡与有效期未披露，标 unknown；以 active/high 入库。未注册、未领取。"
+        }
+      ]
+    },
+    {
+      "id": "weaviate-free-forever-cloud-202611",
+      "title": "Weaviate Cloud Free Forever：永久免费向量库（10 万对象 / 1 GB 内存 / 10 GB 磁盘，含每日 2,000 次 Embeddings）",
+      "provider": "Weaviate",
+      "category": "cloud",
+      "officialUrl": "https://weaviate.io/pricing",
+      "claimUrl": "https://console.weaviate.cloud/",
+      "discoveryUrl": "https://perq.sh/api/search?category=vector-db&sort=newest&status=live&limit=50",
+      "discoveredAt": "2026-11-05T00:47:00Z",
+      "description": "Weaviate 官方托管向量数据库的永久免费档 Free Forever（$0/月，官方写明 No credit card required）：面向试用与原型，提供单集群托管实例，并在同一套餐内附带 Embeddings 与 Query Agent 的每日/每月调用额度，可升级 Flex（$45/月起，按量付费）而不迁移数据。",
+      "quota": "Free Forever $0/月：每用户 1 个集群、10 万对象、1 GB 内存、10 GB 磁盘、1 个 collection 最多 3 个 tenant；含 Weaviate Embeddings 每天 2,000 次请求、Query Agent 每月 1,000 次请求；基础支持。",
+      "benefitValue": "官方对照 Flex 档起价 $45/月（共享集群、按量付费、99.5% SLA），免费档按规格折算约 45 美元/月量级，仅作参考。",
+      "eligibility": "注册即用，官方自由档明确「No credit card required」；限制为每用户 1 个集群，可随时升级付费档。",
+      "regions": "官方定价页未按区域区分免费档可用区；Premium 档标注覆盖 AWS / GCP / Azure，免费档以控制台创建时的区域选项为准。",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "validity": "永久免费档而非试用；对象数、内存与磁盘为持续上限，Embeddings 按日、Query Agent 按月重置。",
+      "deadlineNote": "无领取截止日；官方保留调整免费档规格的权利。",
+      "costNotes": "超出 10 万对象 / 1 GB 内存 / 10 GB 磁盘需升级 Flex（$45/月起，按量付费，含副本与 99.5% SLA）；免费档仅 1 个 collection、最多 3 个 tenant，不适合多租户或索引结构频繁变更的场景。官方定价页另列 Embeddings 按 $0.025/1M tokens（Snowflake Arctic Embed M v1.5）等按量价。",
+      "confidence": "high",
+      "confidenceReason": "官方定价页本轮直读（HTTP 200，正文完整），Free Forever 档的五项硬指标（1 集群、10 万对象、1 GB 内存、10 GB 磁盘、1 collection/3 tenant）、Embeddings 2,000 次/日与 Query Agent 1,000 次/月、以及「No credit card required」均为页面明文；仅免费档可用区域未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-11-05T00:47:00Z",
+      "nextReviewAt": "2026-11-06T00:47:00Z",
+      "evidence": [
+        {
+          "url": "https://weaviate.io/pricing",
+          "summary": "官方定价页 Free Forever 档：「Always free Free Forever $0 /mo No credit card required」，✓ Always free — 1 cluster per user, upgrade to paid anytime；✓ 100,000 objects · 1 GB memory · 10 GB disk；✓ 1 collection, up to 3 tenants；✓ Embeddings (2,000 req/day) + Query Agent (1,000 req/mo)；✓ Basic Support。Flex 起价 $45/月，Premium 标注 AWS/GCP/Azure 全球覆盖。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        },
+        {
+          "url": "https://perq.sh/api/search?category=vector-db&sort=newest&status=live&limit=50",
+          "summary": "Perq vector-db 类目仅 8 条，命中 weaviate-free-forever（source_url 指向 weaviate.io/pricing），与存量 qdrant/upstash-vector 不重复；仅作发现线索。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-05T00:47:00Z",
+          "status": "active",
+          "note": "Perq 类目扫描发现，转官方 weaviate.io/pricing 核实：Free Forever $0、免绑卡、1 集群/10 万对象/1 GB 内存/10 GB 磁盘/1 collection 3 tenant、Embeddings 2,000 次/日 + Query Agent 1,000 次/月；以 active/high 入库。未注册。"
+        }
+      ]
+    },
+    {
+      "id": "cohere-trial-api-key-1000-calls-202611",
+      "title": "Cohere 试用（Trial）API Key：每月 1,000 次调用免费，每模型 20 次/分钟",
+      "provider": "Cohere",
+      "category": "ai",
+      "officialUrl": "https://docs.cohere.com/docs/rate-limits",
+      "claimUrl": "https://dashboard.cohere.com/api-keys",
+      "discoveryUrl": "https://perq.sh/api/search?category=llm-api&sort=newest&status=live&limit=50",
+      "discoveredAt": "2026-11-05T00:47:00Z",
+      "description": "Cohere 在账号创建时自动生成一个 Trial（evaluation）API Key，所有用该 Key 发起的 API 调用免费，但按月限 1,000 次调用、逐模型限速，且官方明确禁止用于生产或商业用途。需要正式上线时走 Go to Production 流程换 Production Key 并按量计费。",
+      "quota": "Trial Key：每月合计 1,000 次 API 调用；Chat 各模型 20 次/分钟（Command A+ / A Reasoning / A Translate / A Vision / Command A / R+ / R / R7B / North Mini Code）；Embed 2,000 inputs/分钟、Embed(Images) 5 inputs/分钟、EmbedJob 5 次/分钟、Rerank 10 次/分钟、Tokenize 100 次/分钟、Audio Transcriptions 5 次/分钟、Parse 500 次/分钟、其余端点默认 500 次/分钟。",
+      "benefitValue": "每月 1,000 次免费 API 调用，覆盖 Chat / Embed / Rerank / Parse 等端点；按 Cohere 生产按量价折算约数十美元量级（随模型与 token 数浮动），仅作参考。",
+      "eligibility": "创建 Cohere 账号即自动生成 Trial Key，无需申请；官方限定不得用于生产或商业用途（not permitted to be used for production or commercial purposes）。",
+      "regions": "官方文档未按区域限制 Trial Key；服务可用区域以平台实际部署为准，未声明大陆可用性。",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "validity": "长期有效但受每月 1,000 次调用上限约束，额度按自然月重置；官方未公布 Trial Key 的失效期限。",
+      "deadlineNote": "无公布截止日期；官方保留调整限速与试用配额的权利。",
+      "costNotes": "超出试用配额或需商用须切换 Production Key（账号 Owner 在 Billing 页完成 Go to Production 流程），之后按量计费；官方另提示较新的 Chat 模型（如 Command A Reasoning）即便用 Production Key 也按 Trial 限速处理，需联系 sales 扩容。",
+      "confidence": "high",
+      "confidenceReason": "官方文档 .md 纯文本版本轮直读，Trial/Production 双 Key 机制、每月 1,000 次调用上限、逐模型与逐端点限速表、商用禁止条款均为原文；官方定价页 FAQ 另佐证「API calls made from a Trial API key are free」；绑卡要求与 Trial Key 有效期未披露。",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "lastVerifiedAt": "2026-11-05T00:47:00Z",
+      "nextReviewAt": "2026-11-06T00:47:00Z",
+      "evidence": [
+        {
+          "url": "https://docs.cohere.com/docs/rate-limits",
+          "summary": "官方文档（.md 纯文本）：「Cohere offers two kinds of API keys: evaluation keys (free but limited in usage), and production keys」；Note：「Trial keys (and prod keys on newer Chat model variants) are limited to 1,000 API calls a month」；Chat 各模型 Trial 20 req/min；Other endpoints；Embed 2,000 inputs/min、Rerank 10 req/min、Tokenize 100 req/min、Audio Transcriptions 5 req/min、Parse 500 req/min、默认 500 req/min。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        },
+        {
+          "url": "https://cohere.com/pricing",
+          "summary": "官方定价页 FAQ：「When an account is created, we automatically create an Trial API key for you」「API calls made from a Trial API key are free. However, trial keys are rate limited and are not permitted to be used for production or commercial purposes」；Production Key 需 Owner 在 Billing 页完成 Go to Production 流程。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        },
+        {
+          "url": "https://perq.sh/api/search?category=llm-api&sort=newest&status=live&limit=50",
+          "summary": "Perq llm-api 列表命中 cohere-trial-keys（source_url 指向 cohere.com/pricing）；仅作发现线索。",
+          "checkedAt": "2026-11-05T00:47:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-05T00:47:00Z",
+          "status": "active",
+          "note": "Perq 列表发现，转官方 docs.cohere.com/docs/rate-limits 与 cohere.com/pricing 交叉核实：账号创建即自动生成 Trial Key、所有调用免费、每月 1,000 次上限、逐模型 20 req/min、禁止生产/商用；绑卡与有效期未披露，标 unknown；以 active/high 入库。未注册、未调用。"
+        }
+      ]
     }
   ]
 }
