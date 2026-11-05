@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-05T00:31:23Z",
+      "lastSuccessAt": "2026-11-05T00:31:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮实读 JSON API：category=llm-api / cloud-gpu / dev-tools / database-backend 各 sort=newest&limit=20，另加 type=signup-credit&sort=newest，去重后 88 条唯一记录。新候选里 Codex for OSS 入库；其余为通用 SaaS 免费档（Netlify/Resend/Stytch/Logto/WorkOS）、startup 加速器计划（Neon/Databricks、Pinecone/PingCAP/Prisma、Convex、SurrealDB）与面值过低项（Fireworks $1、AI21 $10、SiliconFlow $1、Browser Use $1），按现行口径排除。"
+      "observation": "本轮实读 5 次 JSON 查询：type=signup-credit&sort=newest（total 41）、llm-api（32）、cloud-gpu（42）、dev-tools（43）各取前 30。新候选 3 条入库（You.com、Hetzner Inference、Perch Starter）；其余为存量、startup/加速器计划与面值过低项。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-05T00:31:23Z",
+      "lastSuccessAt": "2026-11-05T00:31:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条实读：新增候选 1 条（Nous Portal 免费模型，topic 3120976），另有混元 4/WorkBuddy 限免（截图口径）、华为积分未到账吐槽（无规则变更条文）、智谱淘宝 5000 积分（第三方购买）、各类中转站与抽奖帖，均不入库。"
+      "observation": "本轮 latest.rss 直连 200（51 KB）读前 35 条：多为闲聊与账号交易，无新增可核实福利线索；ZCode/GLM 相关帖仍指向已归并条目。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-05T00:31:23Z",
+      "lastSuccessAt": "2026-11-05T00:31:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 20 条实读：全为 0 刀 Team/收码交易、服务器测评与闲聊，无可用新候选。"
+      "observation": "本轮 rss.nodeseek.com 直连 200（10 KB）读前 20 条：全部为 VPS 二手交易、拼车、求码帖，按现行口径排除。"
     },
     {
       "id": "lowendtalk",
@@ -1533,6 +1533,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连可读（336 KB HTML，去标签正文约 14 KB）：三项权益（6 个月 ChatGPT Pro with Codex、条件性 Codex Security、Codex Open Source Fund 的 API credits）、适用对象（核心维护者/广泛使用公开项目）、申请入口与 Program Terms 链接；API 额度金额未公布。注意该站 .md 后缀对 /community/* 会 404，只有文档路径支持。"
+    },
+    {
+      "id": "you-com-pricing",
+      "name": "You.com API 定价与免费额度",
+      "url": "https://you.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://you.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-05T00:31:23Z",
+      "lastSuccessAt": "2026-11-05T00:31:23Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（180 KB）：正文含「$10 free credit = 2,000 searches」与 $5/1k calls、MCP 免 Key 100 次/日；信用额度与绑卡条款在页面内嵌 FAQ 的 JSON-LD 里（Do I need a credit card / Do credits expire / Are there rate limits），需从 HTML 抓 JSON 才可读。"
+    },
+    {
+      "id": "hetzner-inference-docs",
+      "name": "Hetzner Inference API 实验服务文档",
+      "url": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
+      "status": "readable",
+      "checkedAt": "2026-11-05T00:31:23Z",
+      "lastSuccessAt": "2026-11-05T00:31:23Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（365 KB，正文 5.7K 字符）：免费判定、限速表（60s 4M 输入/100k 输出/10 请求）、模型 Qwen3.6-35B-A3B-FP8 与 Qwen3.8-27B（262,144 上下文）、数据留存口径均在正文。"
+    },
+    {
+      "id": "perch-starter-docs",
+      "name": "Perch AI Starter 免费档文档",
+      "url": "https://www.perchai.app/docs/plans/starter",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.perchai.app/docs/plans/starter",
+      "status": "readable",
+      "checkedAt": "2026-11-05T00:31:23Z",
+      "lastSuccessAt": "2026-11-05T00:31:23Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（24 KB，正文 8.1K 字符）：Starter 免费个人档、每月 20,000 PT、1 PT=$0.001、免绑卡、按月刷新、无直连 API、当前模型清单与 Qwen 3.8 Max 到期时间。"
     }
   ]
 }
