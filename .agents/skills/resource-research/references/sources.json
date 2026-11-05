@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮实读 2 个查询：audience=anyone&sort=newest&limit=20（total 145）与 audience=anyone&type=signup-credit&sort=newest&limit=20（total 41）。头部 20 条多为存量（Nebius/You.com/Perch/Mastra/Aiven/Runloop/Steel/Skyvern/Kiroween/ClickHouse/Cockroach/OpenAI/Parallel 等）；新入库 3 条（HeyGen Voice Turbo Free、CodeRabbit OSS、Fish Audio S2.1-Pro Free）。排除：Clerk/Logto/Kinde/Novu/Knock/CrewAI/Dify/Checkly 等通用 SaaS 免费档、Apify Creator（需 $1/月订阅且需发布 Actor）、ScraperAPI/ScrapingBee（面值过低）、Anthropic Claude API credits（存量）。"
+      "observation": "本轮以 type=signup-credit&sort=newest 请求 category=llm-api / cloud-gpu / agents-automation，total 分别为 7 / 9 / 13，头部条目与存量高度重合（Nebius、OpenAI、Anthropic、AMD、Akamai、Anyscale、Parallel、Steel 等均已入库）；ai-coding 与 developer-tools 两个类目名返回 400（合法枚举见本站 categories），不视为来源失效。本轮未产出可入库候选。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 000，走本机代理 200（191 KB）；238 条 offers，含 AgentRouter 每日签到 $25（中转属性，排除）与 Gemini 学生计划等。"
+      "observation": "直连 200（202 KB），首页 244 个 offer / 208 免卡 / 4 个截止跟踪；「New this week」为 OpenSEO、Voxcribe、Image2Img、ClearRemover、PlayableNotes、OMOPHub。本轮由三个 /offer/ 详情页定位官方入口（AkashML、Z.AI、T Cloud Public），三条均已入库。"
     },
     {
       "id": "aispoils",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮实读 brands_new.json：110 个品牌 / 245 条权益，均为存量品牌或通用 SaaS，无新增可核官方条款项。"
+      "observation": "brands_new.json 直连 200（234 KB，generated 2026-10-26T12:00Z，已十天未重新生成），brands 201 / deals 465；本轮未见新品牌或新云厂商券线索，仅作存量比对。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮直连 200（97 KB，25 条），全为代理/中转站促销、账号交易、话费消费券与抽奖，无可用普惠 AI/云福利，未入库。"
+      "observation": "RSS 直连 200（需浏览器 UA），25 条。本轮福利帖多为中转站/抽奖/账号交易：Qoder 国际版 2000 积分为 1024 活动报名者的邮件定向发放（有效期 3 天，无公开条款）、「GPT $15 credit」为广告投放额度、GLM「送鸡蛋」仍无官方条文，均未入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 20 条（11.6 KB）以论坛求助、账号买卖、VPS 出售为主，仅 1 条土耳其年付 VPS 帖，无官方条款可核，未入库。"
+      "observation": "RSS 直连 200，20 条，以 VPS 线路讨论、收码与 Team 席位交易为主；本轮无新增福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-05T00:47:00Z",
-      "lastSuccessAt": "2026-11-05T00:47:00Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200（37 KB）：自报 8 条 active listing，含 Qoder 300 credits、MarsAI 10M credits（referral 返利型）等，均与存量重复或属推广返利，未入库。"
+      "observation": "直连 200（37 KB），在架 listing 8 条（Qoder、MarsAI 等），均为存量或返利型网关，无新增。"
     },
     {
       "id": "github-pack",
@@ -1484,11 +1484,11 @@
       ],
       "entryUrl": "https://help.aliyun.com/zh/model-studio/introduction-to-yungongkaiwu",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连可读（HTTP 200，去标签正文约 2.4 KB）：活动期 2025-11-11 至 2027-03-31；学生实名认证领 300 元无门槛抵扣金，可抵推理（不含 Wan/HappyHorse/Omni）、训练、部署，1 年有效、退款不返还；教师 5 折、原价上限 40 万元（20 万补贴）；FAQ 含超额计费与不重复享受口径。"
+      "observation": "直连 200（54 KB），百炼帮助页正文完整：活动期 2025-11-11~2027-03-31、学生 300 元无门槛（排除 Wan/HappyHorse/Omni）、1 年有效、退款不返还、一年内累计优惠不重复领取、教师 5 折原价上限 40 万元。本轮条款无变化。"
     },
     {
       "id": "nous-portal-pricing",
@@ -1504,14 +1504,14 @@
       ],
       "entryUrl": "https://portal.nousresearch.com/",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": {
         "at": "2026-11-04T10:20:40Z",
         "reason": "portal.nousresearch.com/models 与 /plans 在连续请求后返回 HTTP 429 与 Vercel Security Checkpoint（仅 278 字节验证页）；首页定价与模型目录可读，子页本轮未取到。"
       },
       "canVerifyOfficial": true,
-      "observation": "首页直连可读（858 KB HTML，去标签正文约 22 KB）：Free $0（Free models only / Standard rate limits / $0 monthly credits）、Plus $20、Super $100、Ultra $200；模型目录 200+ 条中 FREE 标注为 Crouton Alpha、Reflection Beam 1.0 501B A23B、StepFun 3.7 Flash、Upstage Solar Mini 4。子页 /models、/plans 会触发 Vercel 速率限制，需间隔重试。"
+      "observation": "直连 200（862 KB），首页内联定价表与模型目录：Free $0 档未变；FREE 标注模型由 4 个增至 5 个（新增 Meituan LongCat 2.5）；新增「Use your ChatGPT plan」通道（连接符合条件的 ChatGPT 账号即可推理，无需付费订阅，Tools 与 Cloud 托管另计）。"
     },
     {
       "id": "openai-codex-oss",
@@ -1528,11 +1528,11 @@
       ],
       "entryUrl": "https://developers.openai.com/community/codex-for-oss",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连可读（336 KB HTML，去标签正文约 14 KB）：三项权益（6 个月 ChatGPT Pro with Codex、条件性 Codex Security、Codex Open Source Fund 的 API credits）、适用对象（核心维护者/广泛使用公开项目）、申请入口与 Program Terms 链接；API 额度金额未公布。注意该站 .md 后缀对 /community/* 会 404，只有文档路径支持。"
+      "observation": "直连 200（337 KB），Codex for OSS 专页三项权益（6 个月 ChatGPT Pro with Codex、条件性 Codex Security、Codex Open Source Fund API credits）与适用对象未变，仍未公布 API 额度金额。"
     },
     {
       "id": "you-com-pricing",
@@ -1736,6 +1736,68 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200、845 KB，正文与 FAQ 可读：公共仓库全功能免费、Marketplace 两次点击安装、免信用卡；含 $10M OSS 承诺实时进度（2026-11-05 为 $1,947,000 / 1,127,000 PR）。"
+    },
+    {
+      "id": "akashml",
+      "name": "AkashML（Akash Network 托管推理）",
+      "url": "https://akashml.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://akashml.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（173 KB），首页内联 6 个模型的每 1M tokens 价目与 JSON-LD FAQ（「New users receive free credits…automatically added」）；docs 站（akashml.com/docs/platform/settings）给出 credit-based 计费、Stripe 支付与 Key 级 RPM/TPM/并发配置；额度金额与「new accounts get $100」以 Akash 官方博客 akash.network/blog/akashml-managed-ai-inference-on-the-decentralized-supercloud/（2025-11-22）为准。"
+    },
+    {
+      "id": "z-ai-docs",
+      "name": "Z.AI 官方定价文档",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.z.ai/guides/overview/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（157 KB），并支持 `/guides/overview/pricing.md` 纯文本孪生（3 KB）。定价页逐模型列出输入/缓存/输出价目，GLM-4.7-Flash、GLM-4.5-Flash、GLM-4.6V-Flash 四项均为 Free。限速条目 /api-reference/rate-limit 307 跳登录后台 z.ai/manage-apikey/rate-limits，公开文档不给数值。"
+    },
+    {
+      "id": "t-cloud-public",
+      "name": "T Cloud Public（原 Open Telekom Cloud）",
+      "url": "https://www.t-cloud-public.com/en",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.t-cloud-public.com/en",
+      "status": "readable",
+      "checkedAt": "2026-11-05T13:19:04Z",
+      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（392 KB），首页明文 €250 starting credit、免最低合约期限，脚注给出凭证兑换截止 2026-12-31、签约后两个月到期、不可提现；三个 CTA 均带 voucherId=4UTCP250 指向 shop.t-systems.de 的 T_CLOUD_PUBLIC 商品页。资格主体与付款方式未说明。"
     }
   ]
 }
