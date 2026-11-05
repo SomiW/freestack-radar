@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-05T13:19:04Z",
-      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮以 type=signup-credit&sort=newest 请求 category=llm-api / cloud-gpu / agents-automation，total 分别为 7 / 9 / 13，头部条目与存量高度重合（Nebius、OpenAI、Anthropic、AMD、Akamai、Anyscale、Parallel、Steel 等均已入库）；ai-coding 与 developer-tools 两个类目名返回 400（合法枚举见本站 categories），不视为来源失效。本轮未产出可入库候选。"
+      "observation": "直连 /api/search?type=signup-credit&sort=newest&limit=50&status=live 返回 200、41 条 results（total_matches 41）；头部多为存量（Nebius/You.com/Parallel/Runloop/Steel/Skyvern/Databricks/GCP/Oracle/AWS/E2B/Speechmatics/Gladia 等），本轮由其中 apify-creator-plan 定位到 Apify 官方 Creator 计划页。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-05T13:19:04Z",
-      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（202 KB），首页 244 个 offer / 208 免卡 / 4 个截止跟踪；「New this week」为 OpenSEO、Voxcribe、Image2Img、ClearRemover、PlayableNotes、OMOPHub。本轮由三个 /offer/ 详情页定位官方入口（AkashML、Z.AI、T Cloud Public），三条均已入库。"
+      "observation": "首页 200，/offer/<slug> 共 49 条；本轮读 iteracompute / llm7-io / apinex / bai / freebuff 五个详情页，均因运营方身份不明、免费条款与官方价目冲突或仅限 25 国而未入库。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（63 KB），首页给出 1225 条在架与「最新限时羊毛」列表（腾讯混元、DeepSeek、xAI、MiniMax 等）；本轮仅作线索，未直接采信。"
+      "observation": "首页 200，标注 1967 条在架、最新 12 条（VLM Run Gateway、Vectoree、SimpleLLM、Sarvam AI、Sail Research、NovAI、MegaNova、Kiosapi、Hyperbolic 等）；列表为前端异步渲染，可读卡片标题但详情需逐条打开，本轮未取到可归属性官方入口。"
     },
     {
       "id": "aifuli",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（6 KB），收录 40 条，本轮据此发现通义灵码个人版免费线索，再回阿里云官方价格页核实。"
+      "observation": "RSS 200、40 条，但全部条目 pubDate 仍为 2026-07-06～07-08，内容未更新；本轮无新增候选。"
     },
     {
       "id": "token-pencil",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-05T13:19:04Z",
-      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 直连 200（234 KB，generated 2026-10-26T12:00Z，已十天未重新生成），brands 201 / deals 465；本轮未见新品牌或新云厂商券线索，仅作存量比对。"
+      "observation": "brands_new.json 200（110 品牌 / 245 权益）：本轮据此发现 TinyFish（$8 Wallet + Search/Fetch 永久免费）与 Google Antigravity（$0 档 + 4x 用量表述）；另见 UpCloud、DigitalOcean 赠金，官方页金额与本条不一致，未入库。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-05T13:19:04Z",
-      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直连 200（需浏览器 UA），25 条。本轮福利帖多为中转站/抽奖/账号交易：Qoder 国际版 2000 积分为 1024 活动报名者的邮件定向发放（有效期 3 天，无公开条款）、「GPT $15 credit」为广告投放额度、GLM「送鸡蛋」仍无官方条文，均未入库。"
+      "observation": "RSS 25 条（curl + 浏览器 UA，200）：本窗口多为中转站/Key 分享、临时邮箱、Team 拼车、游戏 CDK 与消费券，Qoder 积分与 GLM「鸡蛋」重复帖无新增官方条文，未入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-05T13:19:04Z",
-      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直连 200，20 条，以 VPS 线路讨论、收码与 Team 席位交易为主；本轮无新增福利线索。"
+      "observation": "RSS 200、20 条，但本站条目只给 guid 数字 id，title/description 均为空，无正文可判读；本轮按「只有链接」记录，未据此入库。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-05T13:19:04Z",
-      "lastSuccessAt": "2026-11-05T13:19:04Z",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（37 KB），在架 listing 8 条（Qoder、MarsAI 等），均为存量或返利型网关，无新增。"
+      "observation": "首页 200，仅 8 条 active listings（站方自称人工实测），无本轮可用新候选。"
     },
     {
       "id": "github-pack",
@@ -1798,6 +1798,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（392 KB），首页明文 €250 starting credit、免最低合约期限，脚注给出凭证兑换截止 2026-12-31、签约后两个月到期、不可提现；三个 CTA 均带 voucherId=4UTCP250 指向 shop.t-systems.de 的 T_CLOUD_PUBLIC 商品页。资格主体与付款方式未说明。"
+    },
+    {
+      "id": "tinyfish-pricing",
+      "name": "TinyFish 定价与 Wallet 说明",
+      "url": "https://www.tinyfish.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.tinyfish.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（24 KB 静态 HTML），正文含产品价目表（TinySearch / TinyFetch 为 $0 + 逐项限速，TinyAgent $0.016/step、TinyBrowser $0.002/min、TinyMonitor $0.005/check）与 FAQ（No card required、$8 起始 Wallet、$10 起充、$0 余额下 Search/Fetch 仍可用）。"
+    },
+    {
+      "id": "google-antigravity-pricing",
+      "name": "Google Antigravity 定价与模型文档",
+      "url": "https://antigravity.google/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://antigravity.google/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "定价页直连 200（38 KB），Individual $0/month + Generally Available + Unlimited Tab completions / Command requests / Basic weekly rate limits；docs/models 页给出 Free 档可用模型矩阵与「2026-11-18 移除 Claude Sonnet 4.6 / Opus 4.6 / GPT-OSS-120b」脚注；docs 需带浏览器 UA，/docs 会 302 到 /docs/getting-started。"
+    },
+    {
+      "id": "apify-creator-plan",
+      "name": "Apify Creator 计划（Actor 开发者）",
+      "url": "https://apify.com/pricing/creator-plan",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://apify.com/pricing/creator-plan",
+      "status": "readable",
+      "checkedAt": "2026-11-05T19:26:00Z",
+      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（54 KB），正文含 $1/月、$6/6 个月、一次性 $500 平台用量（6 个月内有效）、每账号仅一次、Store 仅 Universal Actors、月消费上限 $85 与代理/Actor 单价；meta description 亦复述同一优惠。"
     }
   ]
 }
