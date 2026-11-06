@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:30:00Z",
-      "lastSuccessAt": "2026-11-06T03:30:00Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 /api/search?type=signup-credit&sort=value&limit=30 与 sort=newest&limit=40 均 200（37 KB / 41 条 total），去重后与存量比对：头部 26 条已收录，新见 scraperapi/scrapingbee/hyperbrowser/serper/railway/baseten 等小额或试用型线索，Snowflake/Pinecone 官方页本轮补读（Pinecone 可读）。"
+      "observation": "本轮用 /api/search?category=<类目>&sort=newest&status=live 逐类目扫描（8 个合法类目），返回 total_matches 17–49；头部 signup-credit 榜已吃透，本轮 3 条新条目（v0 / Dify / Portkey）均来自 llm-api 与 agents-automation 的 newest 首屏。"
     },
     {
       "id": "aifree",
@@ -698,11 +698,11 @@
       ],
       "entryUrl": "https://northflank.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 167 KB 可读，Sandbox 免费档 $20/月、2 服务 2 任务 1 数据库、1 BYOC 集群 12 vCPU/48 GB、Always on 未变。"
+      "observation": "直连 200（167 KB），Sandbox 档「No card needed / Up to $20/mo / 2 services, 2 jobs, 1 database / 1 BYOC 12 vCPU 48 GB / Always on, no sleeping」仍为正文；FAQ 复述同一额度。"
     },
     {
       "id": "northflank-status",
@@ -718,11 +718,11 @@
       ],
       "entryUrl": "https://status.northflank.com/",
       "status": "readable",
-      "checkedAt": "2026-11-03T03:35:39Z",
-      "lastSuccessAt": "2026-11-03T03:35:39Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "状态页 2026-11-02T11:09Z 更新：攻击向量 1 小时内受控、取证审计进行中、工作负载未受影响、已修复 CVE-2026-98432、要求轮换全部密钥；仍标 Monitoring · Major outage。"
+      "observation": "直连 200（240 KB），顶部仍为「Experiencing partial outage」，Security incident 标记 Monitoring · Major outage，Services / Addons / Jobs / Builds / Logs and Metrics 全部 Major outage，最新官方更新仍为 2026-11-02 11:09 UTC；事件未闭环。"
     },
     {
       "id": "clickhouse-pricing",
@@ -739,11 +739,11 @@
       ],
       "entryUrl": "https://clickhouse.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 301 KB 可读，$300/30 天试用与 Basic 档 1 TB/8–12 GiB 未变。"
+      "observation": "直连 200（301 KB），「30 day trial and $300 credits」「Start free with $300 in credits for 30 days」与 Basic 档 1 TB / 8–12 GiB 上限、us-east-1 $0.2181/unit·hr 均可直读。"
     },
     {
       "id": "turso-pricing",
@@ -760,11 +760,11 @@
       ],
       "entryUrl": "https://turso.tech/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 283 KB 可读，Free 档 100 库/5GB/5 亿读/1000 万写未变，仍写 no credit card required。"
+      "observation": "直连 200（283 KB），免费档 $0 / 100 databases / 5GB 仍在正文；页面为 Next.js 静态输出，可 grep 到配额。"
     },
     {
       "id": "boltnew-pricing",
@@ -781,11 +781,11 @@
       ],
       "entryUrl": "https://bolt.new/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 122 KB 可读，Free 档 300K/日、1M/月、不结转、10MB 上传、333k 请求未变。"
+      "observation": "直连 200（123 KB），Free $0「Free forever, no card required」、300K tokens/日、1M/月、333k 网页请求、额度不结转 FAQ 全文可读。"
     },
     {
       "id": "upstash-pricing",
@@ -823,11 +823,11 @@
       ],
       "entryUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连仍为 3 KB SPA 壳，转 r.jina.ai 渲染取到全文（21.7 KB）：活动 2026-02-15~12-31、2500 万 tokens/30 天、3000 tokens·min⁻¹、单身份一次、仅部分自营模型，文章更新日 2026/10/27。"
+      "observation": "帮助中心仍为 SPA（直连 3.3 KB 壳），r.jina.ai 渲染后 21.8 KB 正文完整：2500 万 tokens、30 天、3000 tokens/min、新老用户、Qwen3.5-35B-A3B 例外。"
     },
     {
       "id": "huaweicloud-grow",
@@ -843,11 +843,11 @@
       ],
       "entryUrl": "https://developer.huaweicloud.com/grow",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 2.5 KB 外壳，渲染后 6.9 KB：代金券补货公告、5/10/20/50/100/200/500 元档位与签到 +10 可读；每人兑换上限与券有效期仍仅在登录弹窗。"
+      "observation": "直连 2.5 KB 壳；r.jina.ai 渲染本轮只出 4.7 KB（公告 + 任务积分 + 「1-100 / 101-500 / 501-1000 / 1000以上」筛选器），兑换目录（券面额表）未渲染，每人上限仍在登录弹窗。"
     },
     {
       "id": "hkcloudx-cloud",
@@ -862,12 +862,15 @@
         "html"
       ],
       "entryUrl": "https://hkcloudx.com/cloud.html",
-      "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
-      "lastFailure": null,
+      "status": "restricted",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": null,
+      "lastFailure": {
+        "at": "2026-11-06T07:49:46Z",
+        "reason": "直连 200（137 KB）但正文为 Vue 模板：价格区与配置区仍是 {{lang.config_mode}} / {{baseConfig}} 占位符，未渲染任何套餐型号或年付价，MiniV6 NAT 档是否存在无法判定。"
+      },
       "canVerifyOfficial": true,
-      "observation": "直连 137 KB 但价格区为动态配置器（含 {{…}} 占位），渲染后 2 KB 仍只有三档香港年付特惠规格，无价格、无 MiniV6 NAT 机型。"
+      "observation": "云服务器页是 KVM 动态配置器，服务器类型标签（香港 BGP 200M、国际 BGP 500M、特惠型、美国 BGP、vGPU、Cloudflare 云主机）可读，但型号与价格由前端异步渲染；本轮第 10 次复核仍未取到 MiniV6 NAT 年付价。"
     },
     {
       "id": "qoder-docs",
@@ -905,11 +908,11 @@
       ],
       "entryUrl": "https://muse.ai/",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "首页 81 KB 可读，仅产品介绍（Muse Secure VM），仍无价格/免费额度/地区条款。"
+      "observation": "直连 200（831 KB），首页仍只写「Every Muse user shares their own computer in the cloud with their Muse. Muse Secure VM is a persistent…」，无额度/计费数字；/pricing、/help、/legal/terms 需登录。"
     },
     {
       "id": "yunzhi-play-ai",
@@ -1156,11 +1159,11 @@
       ],
       "entryUrl": "https://vercel.com/docs/ai-gateway/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 958 KB 可读，免费档 $5/月、仅免费档模型、较低限速、不支持 BYOK 未变。"
+      "observation": "直连 200（960 KB），Free/Paid 对照表全文可读：Monthly credit $5/month included、仅 Free Tier eligible models、不支持 BYOK、超额 429。"
     },
     {
       "id": "runloop-pricing",
@@ -1177,11 +1180,11 @@
       ],
       "entryUrl": "https://runloop.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 122 KB 可读，$50 usage credit、免绑卡、sandbox 3 Devboxes/5 blueprints/10 snapshots 未变。"
+      "observation": "直连 200（122 KB），「New accounts start with $50 in usage credits and full Pro feature access. No credit card is required.」与 Basic 免费档说明可直读。"
     },
     {
       "id": "parallel-pricing",
@@ -1198,11 +1201,11 @@
       ],
       "entryUrl": "https://parallel.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 492 KB 可读，仍为「Run up to 5,000 requests per month for free」「Earn up to $80 at signup + $5/month」，分档条件仍缺。"
+      "observation": "直连 200（426 KB），本轮首次读到卡片级细节：Personal 走托管 MCP（No account needed / Billing None）、Developer「$5 free monthly with a card on file, plus up to $80 at signup」、Included usage「Up to $80 at signup, $5 per month」、Billing「Card」、「Up to 5,000 free requests per month」「All APIs」「Search and Extract 600/min」。"
     },
     {
       "id": "steel-pricing",
@@ -1423,11 +1426,11 @@
       ],
       "entryUrl": "https://www.speechmatics.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 336 KB 可读，$100 赠送、12 个月、免绑卡、额度耗尽暂停 API 未变。"
+      "observation": "直连 200（336 KB），「Start with $100 in free credits, no card required」与 FAQ「Sign-up bonus … last 12 months」、Real-time 免费档 2 并发可直读。"
     },
     {
       "id": "openrouter-limits",
@@ -1443,11 +1446,11 @@
       ],
       "entryUrl": "https://openrouter.ai/docs/api-reference/limits.md",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "limits.md 直读 17 KB，20 RPM + 50/1000 次日限（按累计充值 $10 分档）未变。"
+      "observation": "本轮直接取 /docs/api-reference/limits.md（18.8 KB 纯文本）：免费模型分档表「<10 credits → 20 RPM / 50 每日」「≥10 → 20 RPM / 1000 每日」与 /api/v1/key 的 free_model_daily_requests 字段均为原文。"
     },
     {
       "id": "gladia-pricing",
@@ -1463,11 +1466,11 @@
       ],
       "entryUrl": "https://www.gladia.io/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 116 KB 可读，新读到 FAQ「New accounts get 50€ in free credits, valid for one year」、Self-serve 25 并发、Solaria-3 阶梯费率与预付钱包计费。"
+      "observation": "直连 200（116 KB），三档卡「Start with 50€ free credits」与 FAQ「New accounts get 50€ in free credits, valid for one year」+ 312/185/73 小时换算均可直读。"
     },
     {
       "id": "aliyun-yungongkaiwu",
@@ -1711,11 +1714,11 @@
       ],
       "entryUrl": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200、247 KB（Mintlify SSR），TTS 价格表逐模型列出含 s2.1-pro-free $0.00/M UTF-8 bytes；并发限速按充值门槛分档（Starter <$100 → 5 并发）；models-overview 页另有 Free Development Model 段说明 fair-use 与无 TTFA/DPA。"
+      "observation": "直连 200（247 KB），TTS 价目表 s2.1-pro-free $0.00 / M UTF-8 bytes 仍为正文；同页新增 s1 于 2026-12-31 退役、drama-3 至 2026-11-12 09:00 PT 促销 $10.00。"
     },
     {
       "id": "coderabbit-oss",
@@ -1731,11 +1734,11 @@
       ],
       "entryUrl": "https://www.coderabbit.ai/oss",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200、845 KB，正文与 FAQ 可读：公共仓库全功能免费、Marketplace 两次点击安装、免信用卡；含 $10M OSS 承诺实时进度（2026-11-05 为 $1,947,000 / 1,127,000 PR）。"
+      "observation": "直连 200（845 KB），「Free for OSS」「2-click install」「$10.0M committed」「$1.947M counted」「2.1M+ OSS PRs」均可直读，无结束日期。"
     },
     {
       "id": "akashml",
@@ -2092,6 +2095,69 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（99 KB），首屏「19元起购算力额度」与三档 ECS 额度商品卡可读，活动规则段落（学生认证人群、300 元无门槛券、1 年有效、不可与折扣叠加）为正文；逐档售价由前端异步渲染，静态读取拿不到价格。"
+    },
+    {
+      "id": "v0-pricing",
+      "name": "v0（Vercel）定价",
+      "url": "https://v0.app/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://v0.app/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（273 KB），四档定价卡（Free/Plus/Business/Enterprise）正文可读：Free $0/月 + 7 message/day limit + 部署 Vercel/Design Mode/GitHub 同步；Plus $30 起含 $30 月度额度与每日登录 $2。"
+    },
+    {
+      "id": "dify-pricing",
+      "name": "Dify 云版定价",
+      "url": "https://dify.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://dify.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（141 KB），Sandbox 免费档与 Professional/Team 对比表内联：200 message credits、1 工作区 1 成员 5 应用、50 文档/50MB、知识库 10 请求每分钟；额度用尽可切自有 API Key。"
+    },
+    {
+      "id": "portkey-pricing",
+      "name": "Portkey 定价",
+      "url": "https://portkey.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://portkey.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-06T07:49:46Z",
+      "lastSuccessAt": "2026-11-06T07:49:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（1.0 MB），Developer「Free Forever」/Production/Enterprise 三档对比表全文可读：10K 请求/月、10k recorded logs/月、日志 3 天指标 30 天、超额日志不记录但请求不受影响。"
     }
   ]
 }
