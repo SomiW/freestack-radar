@@ -110,6 +110,11 @@ TokenTab https://tokentab.cn/feed.xml 是站点更新 RSS，曾读 28 条；
 | `qoder-docs` / Qoder 文档 | https://docs.qoder.com/events/communityboost | 静态 HTML 可读，Promotion period 与 Claim window 逐条给出；同目录 `/llms.txt` 为纯文本索引页，适合快速定位活动页 |
 | `memoh-docs` / Memoh 文档 | https://docs.memoh.ai/zh/guides/quick-start | VitePress 服务端渲染，正文可直接提取；快速开始只含安装与接入步骤，免费档需另找页面 |
 | `meta-muse` / Muse 官网 | https://muse.ai/ | 首页只讲 Muse Secure VM 的产品定位，未出现价格、免费额度、赠金或地区限制表述；确认「官方未披露」时按未知记录，不得据此推断活动终止 |
+| `tencent-dev-lighthouse` / 腾讯云开发者社区 · 腾讯轻量云官方号 | https://developer.cloud.tencent.com/user/8307438/articles | 服务端渲染（SSR HTML），只盯官方认证账号（`authorType="O"`，UID 8307438）文章列表，按 `【.*×.*】|免费领取|限时免费|0元|专属优惠|体验|成长计划` 过滤标题；文章详情页从 `<script id="__NEXT_DATA__">` 的 `articleInfo.plain` 提取完整活动规则 |
+| `tencent-dev-workbuddy-tag` / 腾讯云开发者社区 · WorkBuddy 产品标签 | https://developer.cloud.tencent.com/tag/18238?entry=article | 服务端渲染（SSR HTML），提取 `section.com-article-panel-v2` 中的 `a.com-article-panel-v2-link[href]` 与 `h3.com-article-panel-v2-title`；不抓普通水文，仅筛选含 `免费|限免|0元|积分|活动|体验` 的帖子并回官方核实 |
+| `aliyun-developer` / 阿里云开发者社区 | https://developer.aliyun.com/ | 不抓全站技术文章流；仅提取首屏官方活动导航、焦点轮播（含 `aliyun.com/activity/`、`platform.qianwenai.com`、`free.aliyun.com`、`edu.aliyun.com/trainingcamp`）与评测/试用入口 |
+| `huaweicloud-bbs` / 华为云开发者社区论坛 | https://bbs.huaweicloud.com/ | 不抓全站论坛水帖；仅提取首屏焦点活动横幅与官方专区链接（如 `developer.huaweicloud.com/grow`、`developer.huaweicloud.com/activity/experience-officer.html`、`edu.huaweicloud.com/signup/`） |
+| `volcengine-developer` / 火山引擎 Agent 开发者社区 | https://developer.volcengine.com/ | 提取首屏「AI 大模型体验中心」（`exp.volcengine.com`）与「Agent 评测集」（`/evaluation-set`）等官方体验入口；`/articles` 博客流仅按官方活动关键词过滤 |
 
 成功要求是取得可用发现条目或公开活动导航，且能区分标题、内容和链接；
 仅站名、菜单、加载占位、广告模板或访问确认页面不算列表成功。

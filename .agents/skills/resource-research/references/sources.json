@@ -1919,6 +1919,116 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（28 KB，正文 7.9 KB）：「Prototyping? Start free with 10,000 credits a month. Limits apply.」；Flex $125/月含 5 万 credits、超出 $25/1 万；credit 计量 1 credit/Episode(≤350B)、webhook 1/8 credit、检索与存储不计费。"
+    },
+    {
+      "id": "tencent-dev-lighthouse",
+      "name": "腾讯云开发者社区 · 腾讯轻量云官方号",
+      "url": "https://developer.cloud.tencent.com/user/8307438/articles",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "ai-coding",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developer.cloud.tencent.com/user/8307438/articles",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:12:00Z",
+      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 HTTP 200（104 KB SSR HTML），账号为腾讯轻量云官方号（UID 8307438，authorType=O）；文章列表含《【WorkBuddy × 腾讯云 Lighthouse】腾讯轻量云专家上线，免费领取一个月轻量应用服务器》（article/2727729）及 Hermes/OpenClaw/DeepSeek Harness 活动教程。按【.*×.*】/免费领取/限时免费/专属优惠过滤标题。"
+    },
+    {
+      "id": "tencent-dev-workbuddy-tag",
+      "name": "腾讯云开发者社区 · WorkBuddy 产品标签",
+      "url": "https://developer.cloud.tencent.com/tag/18238?entry=article",
+      "priority": "P1",
+      "kind": "community",
+      "topics": [
+        "ai-coding",
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developer.cloud.tencent.com/tag/18238?entry=article",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:12:00Z",
+      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": false,
+      "observation": "直连 HTTP 200（107 KB SSR HTML），含 section.com-article-panel-v2 列表（19 篇最新文章），可见 WorkBuddy / CodeBuddy 接入混元 Hy4/Hy3（2026-11-04 至 11-15 限时免费 0.00x 倍率）等实测帖；社区发帖仅作发现线索，需按标题关键词过滤并回官方核实。"
+    },
+    {
+      "id": "aliyun-developer",
+      "name": "阿里云开发者社区（首页活动与试用导航）",
+      "url": "https://developer.aliyun.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "vps",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developer.aliyun.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:12:00Z",
+      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 HTTP 200（201 KB SSR HTML），不抓全站水文流，仅提取首屏官方活动导航与焦点位：含千问 AI 双 11 Token Plan（aliyun.com/activity/hub/qianwenai1111）、模型体验（platform.qianwenai.com/home/try-ai）、云服务器学生包 19 元与免费试用（free.aliyun.com）。"
+    },
+    {
+      "id": "huaweicloud-bbs",
+      "name": "华为云开发者社区论坛（焦点活动与体验官）",
+      "url": "https://bbs.huaweicloud.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "ai-coding",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://bbs.huaweicloud.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:12:00Z",
+      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 HTTP 200（113 KB SSR HTML），仅提取首屏官方焦点活动与体验官入口：含「10亿Tokens免费领」（developer.huaweicloud.com/grow）、「3天学会 AI Coding」、「0元领开发者认证证书」及产品体验官（developer.huaweicloud.com/activity/experience-officer.html）。"
+    },
+    {
+      "id": "volcengine-developer",
+      "name": "火山引擎 Agent 开发者社区",
+      "url": "https://developer.volcengine.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "ai-coding",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developer.volcengine.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:12:00Z",
+      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 HTTP 200（163 KB SSR HTML），提供 AI 大模型体验中心（exp.volcengine.com）与 Agent 评测集（/evaluation-set）官方入口；技术博客流（/articles）仅按官方活动关键词筛选。"
     }
   ]
 }

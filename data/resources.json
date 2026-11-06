@@ -10500,6 +10500,47 @@
       "costNotes": "超出 10,000 credits 需转 Flex（$125/月含 5 万 credits，超出 $25/1 万，30 天结转）或 Enterprise（协商价）。免费档的项目数、RPM、MCP 席位、API 日志保留等限制官方只写「Limits apply」，未给数值；是否需要绑卡未说明。",
       "confidence": "medium",
       "confidenceReason": "额度与计量规则取自官方定价页，但免费档限制、是否限时、绑卡要求均未公开，故不升 active。"
+    },
+    {
+      "id": "tencent-lighthouse-workbuddy-expert-free-1m-2026",
+      "title": "WorkBuddy × 腾讯云 Lighthouse：对话轻量云专家 0 元新购/续费 1 个月轻量服务器",
+      "provider": "腾讯云 Lighthouse × WorkBuddy",
+      "category": "both",
+      "description": "腾讯云轻量应用服务器（Lighthouse）联合 WorkBuddy 上线「腾讯轻量云专家」AI 运维助手。2026 年 8 月 13 日至 11 月 13 日期间，WorkBuddy 个人版用户在客户端「成长计划」领取任务、完成腾讯云账号 OAuth 授权并与「腾讯轻量云专家」完成 1 次有效对话，即可跳转活动页 0 元新购 1 个月入门型 2核2G4M 轻量应用服务器，或对已有 2核2G4M / 4核4G3M 实例 0 元续费 1 个月（新购与续费二选一）。",
+      "quota": "新购与续费二选一（不可同时参与）：① 0 元新购入门型 2核2G4M 轻量应用服务器 1 个月（北京/上海/广州地域，镜像不限；页面正文写每日限量 900 台、首表写 400 台）；② 已持有对应套餐的用户可 0 元续费入门型 2核2G4M（每日 50 台）或入门型 4核4G3M（每日 50 台）实例 1 个月。每日 0 点刷新库存，先到先得。",
+      "benefitValue": "0 元获得 1 个月国内三地（北上广）2核2G4M 轻量应用服务器新购或 2核2G4M / 4核4G3M 老实例免费续费 1 个月，含老用户续费稀缺权益。",
+      "eligibility": "仅限 WorkBuddy 个人版用户（企业版不可参与），且须使用腾讯云国内站已完成个人或企业实名认证的主账号（协作者与子用户除外）。同一腾讯云实名认证主体在活动期间仅可参与 1 次（新购或续费二选一）。",
+      "regions": "中国站（cloud.tencent.com），实例可选地域为北京、上海、广州。",
+      "validity": "活动时间：2026 年 8 月 13 日 00:00:00 至 2026 年 11 月 13 日 23:59:59（北京时间）；赠送或续费的轻量服务器时长为 1 个月。",
+      "deadlineNote": "2026-11-13 23:59:59 截止；每日 0 点刷新库存（新购 400/900 台、续费各 50 台），当日领完即止。",
+      "officialUrl": "https://developer.cloud.tencent.com/article/2727729",
+      "claimUrl": "https://developer.cloud.tencent.com/article/2727729",
+      "discoveryUrl": "https://developer.cloud.tencent.com/user/8307438/articles",
+      "discoveredAt": "2026-11-06T03:12:00Z",
+      "startsAt": "2026-08-12T16:00:00Z",
+      "endsAt": "2026-11-13T15:59:59Z",
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "lastVerifiedAt": "2026-11-06T03:12:00Z",
+      "nextReviewAt": "2026-11-07T03:12:00Z",
+      "evidence": [
+        {
+          "url": "https://developer.cloud.tencent.com/article/2727729",
+          "summary": "腾讯轻量云官方账号（UID 8307438，authorType=O）于腾讯云开发者社区发布的活动公告全文可读：明确活动期 2026-08-13 至 2026-11-13、仅限 WorkBuddy 个人版 + 腾讯云实名主账号、四步领取流程（成长计划领任务→召唤腾讯轻量云专家并完成 OAuth 授权→发送 1 条运维对话→跳转 Lighthouse 活动页 0 元核销）、新购 2核2G4M 1 个月（表格写 400 台/日、规则段写 900 台/日）或续费 2核2G4M/4核4G3M 1 个月（各 50 台/日，每日 0 点刷新，二选一且同实名限 1 次）。",
+          "checkedAt": "2026-11-06T03:12:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-06T03:12:00Z",
+          "status": "active",
+          "note": "由新增的腾讯云开发者社区「腾讯轻量云」官方账号入口发现并核实入库：官方公告明确活动窗口至 2026-11-13、0 元新购/续费 1 个月条款与每日限量规则；未在客户端内实测登录核销。"
+        }
+      ],
+      "costNotes": "活动核销支付金额为 0 元；1 个月免费时长到期后若需继续使用需按腾讯云 Lighthouse 标准价格续费。一旦领取或续费成功不支持退回或更换地域/配置。官方公告未说明 0 元下单时是否校验账户余额或支付方式绑定。",
+      "confidence": "high",
+      "confidenceReason": "由腾讯云开发者社区官方认证账号「腾讯轻量云」（UID 8307438，authorType=O）发布，活动起止时间、资格、四步流程、配置地域与每日名额均完整明确（仅新购每日台数在首表 400 台与规则段 900 台间存在笔误，已如实披露）。"
     }
   ]
 }
