@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-06T01:41:41Z",
+      "lastSuccessAt": "2026-11-06T01:41:41Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 /api/search?type=signup-credit&sort=newest&limit=50&status=live 返回 200、41 条 results（total_matches 41）；头部多为存量（Nebius/You.com/Parallel/Runloop/Steel/Skyvern/Databricks/GCP/Oracle/AWS/E2B/Speechmatics/Gladia 等），本轮由其中 apify-creator-plan 定位到 Apify 官方 Creator 计划页。"
+      "observation": "直连 /api/search?type=signup-credit&sort=newest 与 9 个合法类目（cloud-gpu/database-backend/llm-api/agents-automation/dev-tools/observability/vector-db/voice-audio/image-video）均返回 200，去重后 83 条；头部已被存量吃透，本轮由 vector-db 与 agents-automation 定位到 Zilliz Free 与 CrewAI Basic 两条官方入口。"
     },
     {
       "id": "aifree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-06T01:41:41Z",
+      "lastSuccessAt": "2026-11-06T01:41:41Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 200（110 品牌 / 245 权益）：本轮据此发现 TinyFish（$8 Wallet + Search/Fetch 永久免费）与 Google Antigravity（$0 档 + 4x 用量表述）；另见 UpCloud、DigitalOcean 赠金，官方页金额与本条不一致，未入库。"
+      "observation": "brands_new.json 直读 200（234 KB，generated 2026-10-26，110 个 brand），按 verified >= 2026-10-25 过滤得 27 条；DigitalOcean「$200+$50」经官方 pricing 页 FAQ 证伪（官方只举 $5/90 天示例），DeepSeek Search&Fetch 已于 10-31 结束。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-06T01:41:41Z",
+      "lastSuccessAt": "2026-11-06T01:41:41Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 25 条（curl + 浏览器 UA，200）：本窗口多为中转站/Key 分享、临时邮箱、Team 拼车、游戏 CDK 与消费券，Qoder 积分与 GLM「鸡蛋」重复帖无新增官方条文，未入库。"
+      "observation": "curl + 浏览器 UA 直连 linux.do/c/welfare/36.rss 返回 200（14.7 KB，26 条），另经 127.0.0.1:7897 代理取 65 KB 版本，标题一致；当日全为邀请码/Epic 喜加一/中转站推广/账号交易，无可用新福利。"
     },
     {
       "id": "nodeseek",
@@ -1859,6 +1859,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（54 KB），正文含 $1/月、$6/6 个月、一次性 $500 平台用量（6 个月内有效）、每账号仅一次、Store 仅 Universal Actors、月消费上限 $85 与代理/Actor 单价；meta description 亦复述同一优惠。"
+    },
+    {
+      "id": "zilliz-pricing",
+      "name": "Zilliz Cloud 定价（Free 档）",
+      "url": "https://zilliz.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://zilliz.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-06T01:41:41Z",
+      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（37 KB，正文 10 KB）：Free 档 $0、5 GB storage、2.5M vCUs per month、Up to 5 collections、Community support；另有 AWS/GCP/Azure 三个市场入口与 vCU 定义段。"
+    },
+    {
+      "id": "crewai-pricing",
+      "name": "CrewAI 定价（Basic 免费档）",
+      "url": "https://www.crewai.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.crewai.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-06T01:41:41Z",
+      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（54 KB，正文 3 KB）：Basic Free、50 workflow executions/month、Studio 可视化编辑器、AI copilot、GitHub 集成、私有 agent/tool 仓库；Enterprise 为 Custom 报价。"
+    },
+    {
+      "id": "zep-pricing",
+      "name": "Zep 定价（免费 1 万 credits/月）",
+      "url": "https://www.getzep.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.getzep.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-06T01:41:41Z",
+      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（28 KB，正文 7.9 KB）：「Prototyping? Start free with 10,000 credits a month. Limits apply.」；Flex $125/月含 5 万 credits、超出 $25/1 万；credit 计量 1 credit/Episode(≤350B)、webhook 1/8 credit、检索与存储不计费。"
     }
   ]
 }
