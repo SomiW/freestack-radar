@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-06T01:41:41Z",
-      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 /api/search?type=signup-credit&sort=newest 与 9 个合法类目（cloud-gpu/database-backend/llm-api/agents-automation/dev-tools/observability/vector-db/voice-audio/image-video）均返回 200，去重后 83 条；头部已被存量吃透，本轮由 vector-db 与 agents-automation 定位到 Zilliz Free 与 CrewAI Basic 两条官方入口。"
+      "observation": "直连 /api/search?type=signup-credit&sort=value&limit=30 与 sort=newest&limit=40 均 200（37 KB / 41 条 total），去重后与存量比对：头部 26 条已收录，新见 scraperapi/scrapingbee/hyperbrowser/serper/railway/baseten 等小额或试用型线索，Snowflake/Pinecone 官方页本轮补读（Pinecone 可读）。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200，/offer/<slug> 共 49 条；本轮读 iteracompute / llm7-io / apinex / bai / freebuff 五个详情页，均因运营方身份不明、免费条款与官方价目冲突或仅限 25 国而未入库。"
+      "observation": "首页 62 个 /offer 链接，新见 DeepInfra DeepStart（50B tokens）、ChatGPT for Students、fal MiniMax H3 免费视频、Cline 免费模型等；DeepStart 经官方页核实后入库。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200，标注 1967 条在架、最新 12 条（VLM Run Gateway、Vectoree、SimpleLLM、Sarvam AI、Sail Research、NovAI、MegaNova、Kiosapi、Hyperbolic 等）；列表为前端异步渲染，可读卡片标题但详情需逐条打开，本轮未取到可归属性官方入口。"
+      "observation": "首页 JSON-LD ItemList 1973 条，首屏列出腾讯混元新人免费包、DeepSeek 500 万 tokens、xAI Grok $25+$150 等；混元与 TokenHub 存量重复、xAI 官方页未见 $25/$150 原文，均未入库。"
     },
     {
       "id": "aifuli",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 200、40 条，但全部条目 pubDate 仍为 2026-07-06～07-08，内容未更新；本轮无新增候选。"
+      "observation": "RSS 40 条仍为 2026-07 的历史条目（pubDate 2026-07-06~07-08），无新增，属长期未更新源；本轮未用于发现。"
     },
     {
       "id": "token-pencil",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-01T03:09:00Z",
-      "lastSuccessAt": "2026-11-01T03:09:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "静态卡片及官方链接可读；总更新时间显示加载中，卡片含 10-11/10-12 等旧时点，不能假定全部当前有效。"
+      "observation": "首页卡片仍为 Kilo Code 免费网关、Qoder 每日 100 Credits、ZCode、Antigravity、Copilot Free 等存量项；无新活动。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-06T01:41:41Z",
-      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 直读 200（234 KB，generated 2026-10-26，110 个 brand），按 verified >= 2026-10-25 过滤得 27 条；DigitalOcean「$200+$50」经官方 pricing 页 FAQ 证伪（官方只举 $5/90 天示例），DeepSeek Search&Fetch 已于 10-31 结束。"
+      "observation": "直连 brands_new.json 200（234 KB，generated 2026-10-26，110 品牌），仍未出现单价明确的新品牌；本轮候选主要来自「学生/创业计划」类条目（1Password、Airtable、HashiCorp 等），与本项目云/AI 范围不匹配，未入库。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-06T01:41:41Z",
-      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "curl + 浏览器 UA 直连 linux.do/c/welfare/36.rss 返回 200（14.7 KB，26 条），另经 127.0.0.1:7897 代理取 65 KB 版本，标题一致；当日全为邀请码/Epic 喜加一/中转站推广/账号交易，无可用新福利。"
+      "observation": "RSS 25 条（curl + 浏览器 UA），本轮多为邀请码、Epic 限免与第三方 API 中转站（快跑AI/91Token/SevenAI）营销帖；Qoder 2000 积分、Kiro 4000 积分到账帖均为存量活动的用户侧反馈，不构成新活动。"
     },
     {
       "id": "nodeseek",
@@ -1936,11 +1936,11 @@
       ],
       "entryUrl": "https://developer.cloud.tencent.com/user/8307438/articles",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:12:00Z",
-      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 HTTP 200（104 KB SSR HTML），账号为腾讯轻量云官方号（UID 8307438，authorType=O）；文章列表含《【WorkBuddy × 腾讯云 Lighthouse】腾讯轻量云专家上线，免费领取一个月轻量应用服务器》（article/2727729）及 Hermes/OpenClaw/DeepSeek Harness 活动教程。按【.*×.*】/免费领取/限时免费/专属优惠过滤标题。"
+      "observation": "官方号文章列表 200（130 KB），除已收录的 WorkBuddy × Lighthouse 免费 1 个月轻量服务器（article/2727729）外，其余为 OpenClaw/Hermes/DeepSeek Harness 部署教程与「专属优惠」付费推广，无新免费活动。"
     },
     {
       "id": "tencent-dev-workbuddy-tag",
@@ -1980,11 +1980,11 @@
       ],
       "entryUrl": "https://developer.aliyun.com/",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:12:00Z",
-      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 HTTP 200（201 KB SSR HTML），不抓全站水文流，仅提取首屏官方活动导航与焦点位：含千问 AI 双 11 Token Plan（aliyun.com/activity/hub/qianwenai1111）、模型体验（platform.qianwenai.com/home/try-ai）、云服务器学生包 19 元与免费试用（free.aliyun.com）。"
+      "observation": "首页 SSR 200（217 KB），首屏活动位：千问 AI 双 11（Token Plan 低至 5 折、千问办公 29.9 元、企业 2728 元礼包）、学生 19 元算力包、解决方案免费试用；学生算力包经官方页核实后入库，双 11 Token Plan 因价格「询价中」未入库。"
     },
     {
       "id": "huaweicloud-bbs",
@@ -2002,11 +2002,11 @@
       ],
       "entryUrl": "https://bbs.huaweicloud.com/",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:12:00Z",
-      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 HTTP 200（113 KB SSR HTML），仅提取首屏官方焦点活动与体验官入口：含「10亿Tokens免费领」（developer.huaweicloud.com/grow）、「3天学会 AI Coding」、「0元领开发者认证证书」及产品体验官（developer.huaweicloud.com/activity/experience-officer.html）。"
+      "observation": "首页 200（120 KB），焦点位仍是「10亿Tokens免费领→developer.huaweicloud.com/grow」（与存量 huawei-dev-growth-voucher 同一官方入口）、0 元开发者认证、产品体验官；无新增独立活动。"
     },
     {
       "id": "volcengine-developer",
@@ -2024,11 +2024,74 @@
       ],
       "entryUrl": "https://developer.volcengine.com/",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:12:00Z",
-      "lastSuccessAt": "2026-11-06T03:12:00Z",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 HTTP 200（163 KB SSR HTML），提供 AI 大模型体验中心（exp.volcengine.com）与 Agent 评测集（/evaluation-set）官方入口；技术博客流（/articles）仅按官方活动关键词筛选。"
+      "observation": "首页 200（171 KB），仅「AI 大模型体验中心 exp.volcengine.com」与 Agent 评测集入口，未出现新的免费额度条款。"
+    },
+    {
+      "id": "deepinfra-deepstart",
+      "name": "DeepInfra DeepStart 创业计划",
+      "url": "https://deepinfra.com/deepstart",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://deepinfra.com/deepstart",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（382 KB），页面直读「~50,000,000,000 free tokens*」「Have raised between 250K and 10M USD」「Founded in the last 2 years」「Credits expire 1 year after approval」；同页定价区可核模型单价，可用于换算额度口径。"
+    },
+    {
+      "id": "pinecone-pricing",
+      "name": "Pinecone 定价",
+      "url": "https://www.pinecone.io/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.pinecone.io/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 curl/8 200（287 KB）为可解析静态 HTML，档位卡（Starter/Builder/Standard/Enterprise）与「3 week trial includes $300 credits」「$50/month min. usage」均为正文；Starter 的「View included usage」为折叠内容，需展开才有具体配额。"
+    },
+    {
+      "id": "aliyun-student-compute",
+      "name": "阿里云高校学生算力包",
+      "url": "https://www.aliyun.com/activity/ecs/student-compute-package",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.aliyun.com/activity/ecs/student-compute-package",
+      "status": "readable",
+      "checkedAt": "2026-11-06T03:30:00Z",
+      "lastSuccessAt": "2026-11-06T03:30:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（99 KB），首屏「19元起购算力额度」与三档 ECS 额度商品卡可读，活动规则段落（学生认证人群、300 元无门槛券、1 年有效、不可与折扣叠加）为正文；逐档售价由前端异步渲染，静态读取拿不到价格。"
     }
   ]
 }
