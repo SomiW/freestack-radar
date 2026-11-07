@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮用 /api/search?type=signup-credit&sort=newest&category=<类目>&limit=20 扫 12 个类目，实返 41 条（agents-automation 13、cloud-gpu 9、llm-api 7、voice-audio 5、database-backend 4、dev-tools 1、vector-db 1、image-video 1；observability / productivity / perk-marketplace / accelerator 为 0 条空响应）；头部基本吃透，新增量仍是 agents-automation 与 llm-api 的中小额条目，本轮取 Retell（$10）、AI21（$10/7 天）两条入库，ScraperAPI/ScrapingBee/Hyperbrowser/Cerebras 因面值或试用期过短排除。"
+      "observation": "本轮用 /api/search?type=signup-credit&sort=newest&limit=20 扫 11 个类目：agents-automation 13、cloud-gpu 9、llm-api 7、voice-audio 5、database-backend 4、dev-tools 1、vector-db 1、image-video 1，observability / productivity / perk-marketplace 为 0；新增量集中在已知头部（Daytona/E2B/Skyvern/Steel 均已收录），本轮未从 perq 取新条目。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200（206 KB，245 offers，208 no card）：New this week 为 Mistral Education Plan（$5.99/月学生价、非免费）、OpenSEO、Voxcribe、Image2Img、ClearRemover、PlayableNotes，均为小额或非免费；4 条 deadline 中最紧为 Gemini 学生计划（2026-12-31）。"
+      "observation": "首页与 /offers 均 200（206 KB / 493 KB，245 条 offer 全量列出）；本轮新增由 /offer/ovhcloud-ai-endpoints-free-tier、/offer/assemblyai-free-credits、/offer/civo-free-trial-credit 三条定位官方页，OVHcloud 与 AssemblyAI 核实通过入库。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200（63 KB，1988 条在架）：最新收录 AI Clothes Changer、VLM Run Gateway、Vectoree、Tencent Cloud TokenHub、SimpleLLM、Sarvam AI 六条全部标「待核实」，无可引用的官方条目，本轮未采信。"
+      "observation": "首页 200（63 KB），1991 条在架；/deal/ 链接新增 simplellm、meganova、vectoree、sarvam、kiosapi 等多为聚合网关，未取到可核实的官方免费条款，本轮未入库。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200（79 KB，24 项免费内容）：仍为 Kilo Code 免费网关、Qoder CN 千问 3.8-Flash 与每日 100 Credits、智谱 ZCode、Antigravity、华为 CodeArts 个人版、美团 CatPaw 等存量卡片；新增可见项仅美团 CatPaw（长期免费），官方条款未在本轮读取，留待下一轮核实。"
+      "observation": "首页 200（79 KB）：Kilo Code 免费模型网关（A 级免账号/免 key、200 次/小时/IP）与 Qoder CN 每日 100 Credits 等条目已由本站覆盖；Kilo 官方文档站为 SPA（/docs 仅导航壳、/free-coding-models 无条款正文），未取得官方条款，本轮未入库。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 直连 200（234 KB，generated 2026-10-26，110 品牌）：本轮从中定位到 Kaggle 免费 GPU/TPU（官方文档核实后入库）；其余新增可见项仍是学生 SaaS 与消费订阅（1Password、Figma、Canva、Duolingo 等），AgentRouter 一类网关型条目按规则不入库。"
+      "observation": "brands_new.json 200（234 KB），generated 仍为 2026-10-26T12:00:00Z（12 天未更新），201 品牌 / 465 deals；头部条目（UpCloud $250、Parallel、OpenAI Codex OSS、Lovable、Ideogram）均为已见内容，本轮零新增。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 25 条（最新 2026-11-07T02:04Z）：主题仍以消费级羊毛为主（Switch/Epic 限免、多邻国、爱奇艺月卡、八达通、lloyds），技术向仅「zcode 周末羊毛」「智谱周末 5 亿 token」「火山 codingplan 40% 分享」「奥龙 11-09 送 5000 积分」「Linear AI 额度码」，均无官方落页，本轮未作为新增依据。"
+      "observation": "RSS 200（89 KB，25 条）：新增「Google Colab 免费获取 GPU 环境」「zcode 周末羊毛」「智谱又发 5 亿 token（周末限定）」等；智谱活动页 bigmodel.cn 仍为 6.5 KB SPA 壳，无可核实条文，未入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 20 条：多为 VPS 二手转卖、机房补货与线路讨论（DartNode 休斯顿独服续费 99 美元/年、绿云软银年付转让），无官方可核实的新福利；标题字段本轮正常返回。"
+      "observation": "RSS 200（11 KB，20 条）：仍以 VPS 转卖、账号交易、求助帖为主，无可用福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-05T19:26:00Z",
-      "lastSuccessAt": "2026-11-05T19:26:00Z",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200，仅 8 条 active listings（站方自称人工实测），无本轮可用新候选。"
+      "observation": "首页 200（37 KB），仍只有 8 条 active listing；本轮新见 MarsAI（10M credits，OpenAI/Anthropic 兼容网关 + 推荐奖励），属第三方网关且无官方条款页，按规则排除。"
     },
     {
       "id": "github-pack",
@@ -2343,6 +2343,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（约 38 KB 静态 HTML）：Free Trial 档「$10 credits for 7 days. No credit card needed」，另有 Pay As You Go（按量计费、不限席位）与企业定制档；页首写「Start with a free trial, no credit card required」。"
+    },
+    {
+      "id": "ovh-ai-endpoints",
+      "name": "OVHcloud AI Endpoints",
+      "url": "https://endpoints.ai.cloud.ovh.net/pricing",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://endpoints.ai.cloud.ovh.net/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "模型目录直连 200（1.2 MB），价格列逐模型给出 Free / Mtoken 单价；限速与免费档见 help.ovhcloud.com 的 getting-started 文档（匿名 2 rpm/IP/模型、带 key 400 rpm/项目/模型），计费与退役表有官方 .md 孪生（/guides/public-cloud/ai-machine-learning/ai-endpoints-billing.md，5.7 KB）。"
+    },
+    {
+      "id": "assemblyai-pricing",
+      "name": "AssemblyAI Pricing",
+      "url": "https://www.assemblyai.com/pricing",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.assemblyai.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "定价页直连 200（327 KB），价格表按模型列出 pay-as-you-go 单价（Universal-3.5 Pro $0.21/hr、Universal-Streaming $0.15/hr），FAQ 里写免费档 185h 预录 + 333h 流式且 no credit card required；模型价格表对搜索/筛选依赖前端，需 grep 表格单元格而非读取折叠摘要。"
+    },
+    {
+      "id": "civo-pricing",
+      "name": "Civo Pricing",
+      "url": "https://www.civo.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.civo.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T08:43:30Z",
+      "lastSuccessAt": "2026-11-07T08:43:30Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "定价页直连 200（197 KB），FAQ 段落写明新客户首月 $250 免费额度、控制平面免费、按 worker 节点与附加组件计费；绑卡要求与机型配额未在定价页披露，/faqs 页面仅 8 行无正文。"
     }
   ]
 }
