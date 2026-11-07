@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮用 /api/search?category=<12 类>&status=live&sort=newest&limit=20 扫全部合法类目：12 个类目均 200，去重后 166 条报价、96 条为新域名；新增量集中在 agents-automation（Jules、Airtop、Nango 型）与 observability（Logfire、Braintrust、Honeycomb、Grafana）两块，signup-credit 头部榜单已吃透。"
+      "observation": "本轮 12 个合法类目（dev-tools / agents-automation / cloud-gpu / llm-api / observability / database-backend / voice-audio / perk-marketplace / vector-db / image-video / productivity / accelerator）全部 200，去重后 165 条报价；与库存逐域比对后，新增量集中在 observability（Axiom Personal）、dev-tools（Blacksmith 3,000 分钟）、cloud-gpu（Thunder Compute $20 学生额度）三处，image-video 与 perk-marketplace 仍以大额 startup 计划为主（fal $1,000、Mux $500、Stripe Atlas），不属公开可领免费档。"
     },
     {
       "id": "aifree",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（22 KB），卡片列表为前端渲染，静态正文只有分类计数（Agent/编程 10 项、大模型 API 16 项），无逐条条款。"
+      "observation": "站点更新 RSS（feed.xml）直连 200，33 条：近 3 条为热力图/价格库更新（模型价格更新到 11-05、11-02），无新福利条目；价格库更新仅作模型价格参考。"
     },
     {
       "id": "usefree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 仍为 22.7 KB（generated 未更新），品牌清单无新增 AI/云条目，本轮无新候选。"
+      "observation": "本轮 brands_new.json 直连 200（22.7 KB），generated 仍为 2026-10-26，110 品牌 / 244 权益；新品牌绝大多数为 1Password、Canva、Figma 一类学生 SaaS 折扣，无新增 AI 算力或云资源额度可入本轮窗口。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条：Perch AI $20/月（已收录）、Qoder 2000 Credits（邮件定向，已收录）、智谱周末 5 亿 token（仅 SPA 壳，无官方条款）、zcode 周末羊毛（已收录）、Google Colab 免费 GPU（长期免费档，未入本轮窗口）；其余为游戏限免/流量包/账号抽奖，不入库。"
+      "observation": "本轮 RSS 25 条：Perch AI $20/月（已在库 perch-ai-starter-free-202611）、Qoder 2000 Credits（社区口述，官方活动页未列该面额）、华为新 300 元券拉人帖（已在库华为条目）、muse 账号抽奖与 Steam/eSIM 帖不属资源福利；无新增可核实线索。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 20 条几乎全为二手交易与测评贴（收鸡/出鸡/TQ 测试），仅 HKcloudx HKBGP 线路讨论与既有条目相关，无新福利线索。"
+      "observation": "本轮 RSS 20 条：以 GPT/Gemini 封号讨论、二手机器交易与甲骨文免费号讨论为主，未见可核实的新增免费额度；「Ultra20x 送的额度开的 Pro6000」为个人账号转述，无官方条款。"
     },
     {
       "id": "lowendtalk",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条以社区闲聊、教程与自建服务为主；「免费容器部署&免费家宽云桌面」为个人分享帖、无厂商官方条款，NodeLoc 免费 CDN 为社区自有服务，均不入库。"
+      "observation": "本轮 RSS 25 条：华为新 300 元券聚合帖（已在库）、Pixel Google AI Pro 卡密转赠、muse 账号交易与 Zgo 促销为主；卡密转赠属他人赠予非官方福利，主机促销为付费套餐，均不入库。"
     },
     {
       "id": "aideal",
@@ -2466,6 +2466,70 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "79.9 KB 静态 HTML；训练区块的限时免费横幅（Muse Glimmer 30B SFT）与 Serverless Training API 费率表（Prefill/Cached prefill/Sample/Train 四列）均内联可逐列对齐。"
+    },
+    {
+      "id": "axiom-pricing",
+      "name": "Axiom 定价",
+      "url": "https://axiom.co/pricing",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://axiom.co/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（274 KB）静态 HTML，Personal 档 $0/月 Permanent + 免信用卡 + 500 GB/10 GB·小时/25 GB/30 天保留全部内联；同页 Axiom Cloud $25/月平台费与 Always Free 1 TB/100 GB·小时/100 GB 可直接对照，无需渲染代理。"
+    },
+    {
+      "id": "blacksmith-pricing",
+      "name": "Blacksmith 定价",
+      "url": "https://www.blacksmith.sh/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.blacksmith.sh/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（23.3 KB），页脚「Start with 3,000 free minutes per month」与四个 runner 卡片的「3,000 free min/mo」重复出现，单价 $0.004/$0.0025/$0.008/$0.08 每分钟齐全；注册入口 app.blacksmith.sh 可读，无需渲染。"
+    },
+    {
+      "id": "thundercompute-students",
+      "name": "Thunder Compute 学生计划",
+      "url": "https://www.thundercompute.com/students",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.thundercompute.com/students",
+      "status": "readable",
+      "checkedAt": "2026-11-07T21:06:26Z",
+      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（35 KB），$20.00 学生额度、仅美国高校、学校邮箱自动校验、限 A6000/L40、用尽转按量付费与滥用条款均在正文与 FAQ 内联；根域 /pricing 页不含该活动，须直接用 /students 路径。"
     }
   ]
 }
