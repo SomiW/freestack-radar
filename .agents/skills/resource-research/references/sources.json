@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮用 /api/search?category=<类目>&eligibility=anyone&sort=newest&limit=20 扫 9 个合法类目（llm-api/cloud-gpu/agents-automation/dev-tools/vector-db/image-video/voice-audio/observability/database-backend），实返 126 条（各类目 20/18/20/20/6/3/11/16/12）；头部绝大多数为存量，新增量集中在 agents-automation 与 dev-tools 的中小额条目（Kernel、Inference.net、Nango、Browserless 等）；ai-api 仍是非法类目名（返回 400 并列出合法枚举），dev-tools 已恢复 200。"
+      "observation": "本轮用 /api/search?type=signup-credit&sort=newest&category=<类目>&limit=20 扫 12 个类目，实返 41 条（agents-automation 13、cloud-gpu 9、llm-api 7、voice-audio 5、database-backend 4、dev-tools 1、vector-db 1、image-video 1；observability / productivity / perk-marketplace / accelerator 为 0 条空响应）；头部基本吃透，新增量仍是 agents-automation 与 llm-api 的中小额条目，本轮取 Retell（$10）、AI21（$10/7 天）两条入库，ScraperAPI/ScrapingBee/Hyperbrowser/Cerebras 因面值或试用期过短排除。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-06T13:58:02Z",
-      "lastSuccessAt": "2026-11-06T13:58:02Z",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200（206 KB，244 offers）：顶部「New this week」为 OpenSEO/Voxcribe，Gemini 学生计划标注 55 天后结束（Dec 31, 2026）；AI/云免费档无明显新增。"
+      "observation": "首页 200（206 KB，245 offers，208 no card）：New this week 为 Mistral Education Plan（$5.99/月学生价、非免费）、OpenSEO、Voxcribe、Image2Img、ClearRemover、PlayableNotes，均为小额或非免费；4 条 deadline 中最紧为 Gemini 学生计划（2026-12-31）。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-06T13:58:02Z",
-      "lastSuccessAt": "2026-11-06T13:58:02Z",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 200（63 KB，1973 条在架）：新增「最新收录」多为待核实的小站 API（VLM Run Gateway/Vectoree/SimpleLLM/NovAI），并列出 Featherless AI 限时免费——本轮核对 featherless.ai/pricing 已无免费档（$25 起），故不采信。"
+      "observation": "首页 200（63 KB，1988 条在架）：最新收录 AI Clothes Changer、VLM Run Gateway、Vectoree、Tencent Cloud TokenHub、SimpleLLM、Sarvam AI 六条全部标「待核实」，无可引用的官方条目，本轮未采信。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:30:00Z",
-      "lastSuccessAt": "2026-11-06T03:30:00Z",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页卡片仍为 Kilo Code 免费网关、Qoder 每日 100 Credits、ZCode、Antigravity、Copilot Free 等存量项；无新活动。"
+      "observation": "首页 200（79 KB，24 项免费内容）：仍为 Kilo Code 免费网关、Qoder CN 千问 3.8-Flash 与每日 100 Credits、智谱 ZCode、Antigravity、华为 CodeArts 个人版、美团 CatPaw 等存量卡片；新增可见项仅美团 CatPaw（长期免费），官方条款未在本轮读取，留待下一轮核实。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 直连 200（234 KB，generated 2026-10-26，110 品牌）：与上轮一致，新增可见项仍以学生 SaaS 与消费订阅为主，AI/云方向无官方可核实的新条目。"
+      "observation": "brands_new.json 直连 200（234 KB，generated 2026-10-26，110 品牌）：本轮从中定位到 Kaggle 免费 GPU/TPU（官方文档核实后入库）；其余新增可见项仍是学生 SaaS 与消费订阅（1Password、Figma、Canva、Duolingo 等），AgentRouter 一类网关型条目按规则不入库。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 25 条：主题集中在消费级羊毛（Switch/Epic 限免、多邻国、爱奇艺月卡）与站内送号，技术相关为「zcode 的周末羊毛」「智谱周末 5 亿 token」「火山 codingplan 40% 分享」「奥龙 11-09 送 5000 积分」；前三者此前均无官方落页，本轮未作为新增依据。"
+      "observation": "RSS 25 条（最新 2026-11-07T02:04Z）：主题仍以消费级羊毛为主（Switch/Epic 限免、多邻国、爱奇艺月卡、八达通、lloyds），技术向仅「zcode 周末羊毛」「智谱周末 5 亿 token」「火山 codingplan 40% 分享」「奥龙 11-09 送 5000 积分」「Linear AI 额度码」，均无官方落页，本轮未作为新增依据。"
     },
     {
       "id": "nodeseek",
@@ -2282,6 +2282,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（135 KB 静态 HTML）：Free $0/mo（hard-capped、reset monthly）10 connections / 10 小时 compute / 10GB transfer；PAYG $50/月含 $50 抵扣，单价 $0.29/connection、$0.72/小时、$0.5/GB；功能表 Free 列含 1,000+ API 与 MCP 授权、10k+ 预置 tools、实时 webhook、UI 组件、白标、SOC 2 Type II。注册入口 app.nango.dev/signup。"
+    },
+    {
+      "id": "kaggle-docs",
+      "name": "Kaggle 官方文档（GPU/TPU/Notebooks）",
+      "url": "https://www.kaggle.com/docs/efficient-gpu-usage",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.kaggle.com/docs/efficient-gpu-usage",
+      "status": "readable",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 www.kaggle.com 返回 200 但正文为 reCAPTCHA 校验页（约 20 KB，可见文本仅 161 字符），改用只读渲染代理取得正文：efficient-gpu-usage 写明免费 P100、每周 30 小时 GPU 配额（有时更高）、交互会话 60 分钟空闲超时；/docs/tpu 写明每周 20 小时 TPU、单次最长 9 小时；/docs/notebooks 写明批量执行 12 小时（TPU 9 小时）。GPU 单次会话上限与是否需手机验证未在页面披露。"
+    },
+    {
+      "id": "retell-pricing",
+      "name": "Retell AI 定价",
+      "url": "https://www.retellai.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.retellai.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（约 456 KB 静态 HTML，Webflow 渲染）：PAYG 档「$10 in free credits」+ 全平台功能、语音 $0.07–$0.31/分钟、Chat $0.002+/条、20 路免费并发；订阅项表列知识库 $80/月免费价值（10 个）、号码 $2/月、SMS $20/月。额度有效期与绑卡要求未披露。"
+    },
+    {
+      "id": "ai21-pricing",
+      "name": "AI21 Labs 定价",
+      "url": "https://www.ai21.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.ai21.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-07T02:39:15Z",
+      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（约 38 KB 静态 HTML）：Free Trial 档「$10 credits for 7 days. No credit card needed」，另有 Pay As You Go（按量计费、不限席位）与企业定制档；页首写「Start with a free trial, no credit card required」。"
     }
   ]
 }
