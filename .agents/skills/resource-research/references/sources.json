@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮按 5 个类目各一次列表请求（agents-automation 14 / observability 0 / dev-tools 1 / database-backend 4 / cloud-gpu 9，共 28 条），条目均已入库或此前已排除（Steel / Skyvern / E2B / Daytona / Runloop / Parallel / You.com / Apify / CockroachDB / ClickHouse / Databricks / GCP / Oracle / AWS / Azure / Akamai / Anyscale / Baseten），新增量仅 Scrapfly 1,000 credits、Browser Use $1、Serper 免费额度，面值过低不采纳。"
+      "observation": "本轮按 13 个类目各一次 newest 列表请求（dev-tools 1 / agents-automation 14 / cloud-gpu 9 / llm-api 7 / observability 0 / database-backend 4 / voice-audio 5 / image-video 1 / vector-db 1 / productivity 0 / perk-marketplace 0 / accelerator 0 / ai-coding 0，共 42 条）：条目全部已入库或此前已排除，新增量只有 Zed Pro 14 天试用（$5 托管模型用量，面值过低），本轮未从 Perq 采纳新条目。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页 245 条报价、208 条免绑卡；New this week 为 Mistral Education（$165/年，实为 $14.99/月学生档）、OpenSEO、Voxcribe 120 分钟/月、Image2Img 1 张/天、ClearRemover 1 张/月、PlayableNotes 100 请求/天，面值或范围不足未采纳。"
+      "observation": "首页直连 200（212 KB，正文约 10 KB）：245 条 offer、208 条免卡、4 条截止跟踪；「New this week」为 Mistral Education（$14.99/月付费学生档）与 OpenSEO，均非免费额度；无可采纳新条目。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2006 条在架（限时 37）；今日新增 Nemotron 3.5 Lightning / Freellm / VLM Run Gateway / Vectoree / AI Clothes Changer 均为待核实小额或网关型；「腾讯混元新人免费体验包」与已入库 tencent-tokenhub 口径重叠，未重复入库。"
+      "observation": "首页直连 200（63 KB，正文约 6.1 KB）：2012 条在架，今日新增 PLaMo API（Preferred Networks）与 JZS Token。逐条读详情页：PLaMo 转官方定价页确认 Free 档 0 円/1M tokens 并入库；JZS Token $1.5、VLM Run Gateway $1、Freellm 200 req 面值过低，不采纳。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "24 项免费内容，清单由 JS 渲染只能取到部分卡片；可见项 Kilo Code 免费模型网关（免账号、200 次/小时/IP）属网关型不入库，Qoder CN 千问 3.8-Flash 已在库。"
+      "observation": "首页直连 200（78.7 KB，正文约 14 KB）：24 项免费内容 + 15 项优惠。新增可采纳线索为 OpenCode Zen 免费模型组（C 级需绑卡 $0 计费），转官方 docs/zen 核实 13 个 $0 模型后入库；其余（Kilo Code 免鉴权网关、Qoder CN、CatPaw、小浣熊、Charm Crush Hyper 免费层）或已入库、或官网未给免费条款（Charm Hyper 仅有付费订阅/预付）不采纳。"
     },
     {
       "id": "tokentab",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "调研时点 2026-10-30，Agent/编程助手 10 项、大模型 API 16 项，均为已入库或付费折扣，无新增可核实条目。"
+      "observation": "直连 200（23.5 KB，正文约 700 B）：情报站调研时点为 2026-10-30，仅工具/模型卡片索引，无可核实的本轮新增条款。"
     },
     {
       "id": "usefree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 110 个品牌，全部 deal 的 verified 日期仍为本轮之前的 2026-10-26（静态快照，约 13 天未更新）；可核对的新候选 UpCloud $250 / DigitalOcean $200 均带联盟追踪参数，官方页无对应条文，未采纳。"
+      "observation": "直连首页为 SPA 外壳（正文 280 B），经只读渲染代理读得列表：New arrivals 最新条目仍是 2026-10-26（Beautiful.ai、DigitalOcean $200+$50、Gamma 400 credits），无 11 月新增，本轮零新增。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-08T09:28:10Z",
-      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 25 条（浏览器 UA + curl 200）：x10hosting 永免虚拟主机、Cloady 免费领取、支付宝生活缴费红包、网易云黑胶会员、Steam 喜加一 等；ZeroCat / Crab-ai / PM-Plan 均为双 11 付费充值促销（中转站不计入），无新的可核实免费额度。"
+      "observation": "RSS 直连 200（64.5 KB）：最新帖以抽奖、会员领取、中转站推广为主；Kiro 4000 积分帖对应已入库的 kiro-kiroween-hackathon 条目，Perch AI $20/月帖对应已入库 perch-ai-starter，无新活动入口。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 20 条，均为交易/求购/测评与账号买卖类噪声；无新增合规福利线索（nuyek 黑五 VPS 仍未开售，11-14 复核）。"
+      "observation": "RSS 直连 200（10.5 KB）：25 条最新帖以 MUSE 邀请码、机场/VPS 讨论为主，未见新的官方免费额度活动。"
     },
     {
       "id": "lowendtalk",
@@ -525,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 25 条，多为站务与闲聊；「免费 4C8G 云电脑 + 每日 1000 credits」为已入库 InstaBox 的重复推广。"
+      "observation": "RSS 直连 200（73 KB）：两条线索跟进——cloady.io 免费容器（官网 cloady.io 直连 403 Cloudflare 挑战、/pricing 404，无官方条款可读，不采纳）；「永久免费 4C8G 云电脑 + 每日 1000 credits」帖正文需登录（JSON 首帖为「请登录后查看内容」），无法取得官方入口，留待人工。"
     },
     {
       "id": "aideal",
@@ -866,14 +866,14 @@
       ],
       "entryUrl": "https://hkcloudx.com/cloud.html",
       "status": "restricted",
-      "checkedAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
       "lastSuccessAt": null,
       "lastFailure": {
-        "at": "2026-11-07T14:59:10Z",
-        "reason": "直连 200（137 KB），正文仍为 Vue 模板占位符（221 处 {{ }}），未渲染任何套餐型号或年付价；第 12 轮未取得可读价格。"
+        "at": "2026-11-08T21:45:45Z",
+        "reason": "直连 200（137 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区仍是 {{...}} 占位符（第 14 轮），套餐型号与 MiniV6 NAT 档不可判定。"
       },
       "canVerifyOfficial": true,
-      "observation": "云服务器页是 KVM 动态配置器，服务器类型标签（香港 BGP 200M、国际 BGP 500M、特惠型、美国 BGP、vGPU、Cloudflare 云主机）可读，但型号与价格由前端异步渲染；本轮第 10 次复核仍未取到 MiniV6 NAT 年付价。"
+      "observation": "直连 200（137 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区仍是 {{...}} 占位符（第 14 轮），套餐型号与 MiniV6 NAT 档不可判定。"
     },
     {
       "id": "qoder-docs",
@@ -932,14 +932,14 @@
       ],
       "entryUrl": "https://yunzhi.play.cn/ai/",
       "status": "restricted",
-      "checkedAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
       "lastSuccessAt": "2026-11-03T03:35:39Z",
       "lastFailure": {
-        "at": "2026-11-07T14:59:10Z",
-        "reason": "直连 200 仅 1.3 KB 外壳；经只读渲染代理得到产品宣传图与「下载APP/登录」入口，仍无签到规则、免费时长与实例规格文字。"
+        "at": "2026-11-08T21:45:45Z",
+        "reason": "直连 200 仅 1.3 KB 外壳（去标签正文 4 字符「云智手机」），无签到/时长/额度条款（第 6 轮）。"
       },
       "canVerifyOfficial": true,
-      "observation": "直连为纯前端空壳，r.jina.ai 返回空正文（仅标题），签到与权益条款仍不可得，标记为受限。"
+      "observation": "直连 200 仅 1.3 KB 外壳（去标签正文 4 字符「云智手机」），无签到/时长/额度条款（第 6 轮）。"
     },
     {
       "id": "memoh-docs",
@@ -956,11 +956,11 @@
       ],
       "entryUrl": "https://docs.memoh.ai/zh/guides/quick-start",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "文档站可正常读取（quick-start 89 KB、llms.txt 索引 34.8 KB），但索引中只有 guides/self-hosted 章节，没有任何价格或免费档页面；官方仍未披露 2C2G 免费档的磁盘、可用时长与回收策略。"
+      "observation": "直连 200（89.4 KB，正文 2.9 KB）：仍只有安装/登录/创建 Bot 与 BYOK 步骤，全文无「免费 / free / 额度 / 2C2G / 定价」字样，连续第 6 轮无免费档条款，不刷新活动核实时间。"
     },
     {
       "id": "docker-sandboxes-promo",
@@ -1820,11 +1820,11 @@
       ],
       "entryUrl": "https://www.tinyfish.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（133 KB）：TinySearch/TinyFetch 仍为 $0 + 30 req/min·500/h、150 URL/min·1,000/日，TinyAgent $0.016/step、TinyBrowser $0.002/min、TinyMonitor $0.005/check；FAQ 重申 no card required、$8 起始 Wallet、$10 起充、$0 余额下 Search/Fetch 仍可用。站点新增 /students（bounty 换礼品卡）与 /accelerator（孵化项目）页，均为申请制、无公开额度。"
+      "observation": "直连 200（HTML 133.8 KB，正文约 5.4 KB），TinySearch / TinyFetch 免费限额与 $8 初始 Wallet 未变；复核成功。"
     },
     {
       "id": "google-antigravity-pricing",
@@ -1840,11 +1840,11 @@
       ],
       "entryUrl": "https://antigravity.google/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "定价页 200（138 KB）与 /docs/models 200（142 KB，需浏览器 UA）：Individual $0/月 GA；模型矩阵 Free & Google AI Plus 列仅 Gemini 3.8 Flash 为 ✅，Claude Sonnet/Opus 4.6 与 GPT-OSS-120b 标注「* Will be removed on November 18, 2026」，新增 Claude Sonnet/Opus 5.5 免费档 ❌。"
+      "observation": "定价页直连 200（142.6 KB，正文约 4.3 KB）$0/month 档未变；配套 docs/models 直连 200（34.8 KB）模型可用性表与 2026-11-18 移除脚注未变；复核成功。"
     },
     {
       "id": "apify-creator-plan",
@@ -1860,11 +1860,11 @@
       ],
       "entryUrl": "https://apify.com/pricing/creator-plan",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（357 KB）：仍为 $1/月 + $6/6 个月预付、一次性 $500 平台用量（6 个月内有效）、Store 仅 Universal Actors、月消费上限 $85、住宅代理 10 GB/月与 SERP/Unblocker 各 10,000 次/月。"
+      "observation": "直连 200（357.6 KB，正文约 6.2 KB）：$1/月、$6/6 个月、$500 前 6 个月一次性、$85 月上限与代理单价均未变；复核成功。"
     },
     {
       "id": "zilliz-pricing",
@@ -2239,11 +2239,11 @@
       ],
       "entryUrl": "https://kernel.sh/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（74 KB 静态 HTML），正文含 free/hobbyist/start-up/enterprise 四档：free $0/mo + $5 月额度、5 并发、stealth（captcha + 代理）、managed auth 3 连接、回放 1 天、3 vault；Usage costs $0.0000166667/GB-second（空闲与代理不计费）；FAQ 明确免绑卡、含 YC 折扣入口。注册入口 dashboard.onkernel.com/sign-up。"
+      "observation": "直连 200（74.7 KB，正文约 3.6 KB）：$5/月免费额度、5 并发与免绑卡 FAQ 未变；复核成功。"
     },
     {
       "id": "inference-net-pricing",
@@ -2259,11 +2259,11 @@
       ],
       "entryUrl": "https://inference.net/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（95 KB 静态 HTML）：Pay as you go $0 + usage 含 1M Gateway 请求/月、1M tracing spans/月、14 天日志、1 seat、30 req/min；Growth $250/月含 $50 一次性开户额度、50M 请求与 50M spans、250 req/min；Enterprise 定制。页首写明「Every plan includes monthly credits」。注册入口 /register/。"
+      "observation": "直连 200（95.4 KB，正文约 2.5 KB）：1M Gateway 请求/月、1M spans、14 天保留、30 req/min 未变；复核成功。"
     },
     {
       "id": "nango-pricing",
@@ -2280,11 +2280,11 @@
       ],
       "entryUrl": "https://nango.dev/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T20:16:47Z",
-      "lastSuccessAt": "2026-11-06T20:16:47Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（135 KB 静态 HTML）：Free $0/mo（hard-capped、reset monthly）10 connections / 10 小时 compute / 10GB transfer；PAYG $50/月含 $50 抵扣，单价 $0.29/connection、$0.72/小时、$0.5/GB；功能表 Free 列含 1,000+ API 与 MCP 授权、10k+ 预置 tools、实时 webhook、UI 组件、白标、SOC 2 Type II。注册入口 app.nango.dev/signup。"
+      "observation": "直连 200（135 KB，正文约 6.8 KB）：Free 10 connections / 10 小时 / 10GB hard-capped 未变；复核成功。"
     },
     {
       "id": "kaggle-docs",
@@ -2486,11 +2486,11 @@
       ],
       "entryUrl": "https://axiom.co/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（274 KB）静态 HTML，Personal 档 $0/月 Permanent + 免信用卡 + 500 GB/10 GB·小时/25 GB/30 天保留全部内联；同页 Axiom Cloud $25/月平台费与 Always Free 1 TB/100 GB·小时/100 GB 可直接对照，无需渲染代理。"
+      "observation": "直连 200（1.49 MB，正文约 11.5 KB）：Personal $0 永久档与 500 GB / 10 GB·小时 / 25 GB / 30 天保留未变；复核成功。"
     },
     {
       "id": "blacksmith-pricing",
@@ -2507,11 +2507,11 @@
       ],
       "entryUrl": "https://www.blacksmith.sh/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（23.3 KB），页脚「Start with 3,000 free minutes per month」与四个 runner 卡片的「3,000 free min/mo」重复出现，单价 $0.004/$0.0025/$0.008/$0.08 每分钟齐全；注册入口 app.blacksmith.sh 可读，无需渲染。"
+      "observation": "直连 200（150.3 KB，正文约 6.2 KB）：每月 3,000 分钟与各 runner 单价未变；复核成功。"
     },
     {
       "id": "thundercompute-students",
@@ -2528,11 +2528,11 @@
       ],
       "entryUrl": "https://www.thundercompute.com/students",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（35 KB），$20.00 学生额度、仅美国高校、学校邮箱自动校验、限 A6000/L40、用尽转按量付费与滥用条款均在正文与 FAQ 内联；根域 /pricing 页不含该活动，须直接用 /students 路径。"
+      "observation": "直连 200（171.3 KB，正文约 2.3 KB）：$20 学生额度、仅美国高校、限 A6000/L40 未变；复核成功。"
     },
     {
       "id": "codearts-agent",
@@ -2718,6 +2718,47 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 直连 200（43 KB），正文约 14 KB：Free $0 仅写「Limited AI usage / Limited agent requests / Limited Chat requests」，无任何数值口径；Plus $8/月起含共享 AI 用量池。免费档额度不可核实，条目保持 pending/medium。"
+    },
+    {
+      "id": "plamo-api",
+      "name": "PLaMo API 定价（Preferred Networks）",
+      "url": "https://plamo.preferredai.jp/api",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://plamo.preferredai.jp/api",
+      "status": "readable",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200 仅 1.8 KB 前端外壳；经只读渲染代理读得正文约 4.7 KB，四档（Free / Standard / Provider / On-Premise）价格与对比表全内联。Free 档 PLaMo 3.0 / 3.1 Prime 的 Input / Output 均为 0 円 per 1M tokens，附「利用量・レートリミットに制限あり」；搜索/Deep Research 免费回数截至 2026-11-30（每日 60 次、每月 200 次）。"
+    },
+    {
+      "id": "opencode-zen",
+      "name": "OpenCode Zen 文档与模型定价",
+      "url": "https://opencode.ai/docs/zen/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://opencode.ai/docs/zen/",
+      "status": "readable",
+      "checkedAt": "2026-11-08T21:45:45Z",
+      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（HTML 97 KB，正文约 25 KB），价格表把 13 个模型三列标 Free，逐条注明「free on OpenCode for a limited time」；同页给出免费档客户端限制（需 OpenCode）与 Crouton Alpha / Beam / Inkling 2 Small 的地区排除清单。"
     }
   ]
 }
