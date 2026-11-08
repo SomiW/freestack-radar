@@ -85,4 +85,12 @@
 
 ## 发布
 
-（推送后补记）
+- 提交：`6524abc`（`data/resources.json` + `sources.json` + 本报告），直接推送 `main`（`944e3d0..6524abc`），未强推、未绕过分支保护。
+- Pages run：<https://github.com/SomiW/freestack-radar/actions/runs/42442214804> — **success**。
+- Check（CI）run：<https://github.com/SomiW/freestack-radar/actions/runs/42442214823> — **success**。
+- 线上抽检：`https://somiw.github.io/freestack-radar/` 返回 200，引用 `assets/index-DejNWPQA.js`；下载该文件 1,227,977 B，SHA-256 `43451bc8…` 与本地 `dist/` 完全一致；三条新 id `huawei-codearts-agent-personal-free-202611`、`baidu-comate-free-personal-202611`、`modelscope-daily-free-api-quota-202611` 在线上 bundle 中各命中 1 次。
+- 阻碍与后续待办：
+  - 通义灵码（Qoder CN）免费额度已不量化，需人工在客户端核对体验版实际可用量后再决定回 active 还是维持 pending。
+  - 魔搭 ModelScope 限额页客户端渲染，需人工浏览器读取后决定升 active 或归档。
+  - 长期人工项不变：Muse、GreenCloud 续费价、华为券上限、云智手机、Memoh、HKCloudX、GPU Flow、Munito、Flonno、Gemini 逐模型、腾讯云 38 元新客、AMD、Anyscale、Gladia、T Cloud、iflytek、Zep、Pinecone、阿里云学生包、v0/Dify/Portkey 绑卡、Kernel 口径、Inference.net/Nango/Kaggle/Retell/AI21 绑卡、CodeArts 积分折算与实名要求、Comate 积分有效期。
+  - Nuyek 11-14 开售后复核；tencent-lighthouse（11-13）、tencent-double11（11-30）到期前须判延期或转 expired。
