@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 12 个合法类目全部 200（dev-tools 1 / agents-automation 10 / cloud-gpu 9 / llm-api 7 / database-backend 4 / voice-audio 5 / vector-db 1 / image-video 1，其余 4 类空数组），共 38 条报价；与库存去重后 10 条候选（Cerebras $5、Vapi $5、SiliconFlow $1、Browser Use $1、Stability 25 credits、Snowflake $400、Hyperbrowser 5,000 credits、ScraperAPI 5,000 credits/7 天、Railway $5/30 天、Baseten 未披露面值）面值均 <$10 或已在既有结论中排除，本轮无入库候选。"
+      "observation": "本轮 12 个合法类目全部 200（dev-tools 20 / agents-automation 20 / cloud-gpu 18 / llm-api 20 / observability 16 / database-backend 14 / voice-audio 11 / vector-db 6 / image-video 3，perk-marketplace / productivity / accelerator 为空数组），共 123 条去重报价；signup-credit 与 value 榜已吃透，新增量集中在 observability / dev-tools / database-backend 的干净免费档（Honeycomb Free 2,000 万 events、Clerk Hobby 5 万 MRU、Convex Free 100 万调用），另有 Anthropic/OpenAI/CodeRabbit 等已在库条目。面值 <$10 的 Cerebras $5、Vapi $5、SiliconFlow $1、Stability 25 credits、Railway $5、ScraperAPI 5,000 credits/7 天继续排除。"
     },
     {
       "id": "aifree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 110 个品牌 / 180 条 active deal；按 credits/compute/ai-model 过滤并与库存域名比对后，新增候选为 HashiCorp 学生 $500、Replit $20、Higgsfield $15、Krea 100 units、Ideogram/Meshy/JetBrains/MiniMax 等小额 UI 积分，面值与可核实性均不足以本轮入库。"
+      "observation": "brands_new.json 110 个品牌 / 245 条 deal（generated 仍为 2026-10-26T12:00Z，自 10-26 起未再更新）；与库存域名比对后无新增可入库候选，剩余为学生 SaaS 与小额 UI 积分。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条：Perch AI $20/月（已在库 perch-ai-starter-free-202611）、Qoder 2000 Credits（社区口述，官方活动页未列该面额）、华为新 300 元券拉人帖（已在库华为条目）、muse 账号抽奖与 Steam/eSIM 帖不属资源福利；无新增可核实线索。"
+      "observation": "RSS 25 条（浏览器 UA + curl 200）：x10hosting 永免虚拟主机、Cloady 免费领取、支付宝生活缴费红包、网易云黑胶会员、Steam 喜加一 等；ZeroCat / Crab-ai / PM-Plan 均为双 11 付费充值促销（中转站不计入），无新的可核实免费额度。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 可读，交易与测评帖为主，无新的免费额度线索。"
+      "observation": "RSS 20 条：GPT/Claude 封号、甲骨文注册、域名与 Adobe 讨论为主，无免费额度线索。"
     },
     {
       "id": "lowendtalk",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "互联网区列表可读，未产生可入库候选。"
+      "observation": "互联网区 25 条：以站务、广告与闲聊为主，「47 款免费模型」为社区自测清单、无官方条文，未产生候选。"
     },
     {
       "id": "aideal",
@@ -2594,6 +2594,66 @@
       },
       "canVerifyOfficial": true,
       "observation": "docs 导航确认存在「API Inference Usage Limits」专页，但正文取不到；社区称每日 2,000 次/每模型约 500 次，未获官方确认，对应条目保持 pending/low。"
+    },
+    {
+      "id": "honeycomb-pricing",
+      "name": "Honeycomb 定价",
+      "url": "https://www.honeycomb.io/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.honeycomb.io/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（700 KB），Free 档与 Pro 对照价直接在正文：Free「Best for testing and individual projects / Up to 20M events per month / Up to 100M metrics data points per month / Our introductory plan, free forever」，含 2 Triggers、分布式追踪、BubbleUp、OpenTelemetry 与 MCP；Pro $150/月起 50M events（可扩 750M）。绑卡要求未披露。"
+    },
+    {
+      "id": "clerk-pricing",
+      "name": "Clerk 定价",
+      "url": "https://clerk.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://clerk.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（642 KB）：Hobby Free「No credit card required」含 3 席位 / 无限应用 / 50,000 MRU per app / 5 次 impersonations；Pro $20/月（按年付）含 5 万 MRU 与 1 个 SSO 连接，超出 $0.02/月每个；MRU 定义（注册满 24 小时回访）在正文。"
+    },
+    {
+      "id": "convex-pricing",
+      "name": "Convex 定价",
+      "url": "https://www.convex.dev/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.convex.dev/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-08T09:28:10Z",
+      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（322 KB）：Free & Starter $0/月，逐项给出内置额度与按量单价（1M 函数调用 / 20 GB-hours / 0.5 GB 库 / 1 GB 文件 / 1 GB 出网；$2.20 每百万调用、$0.33/GB-hour、$0.22/GB、$0.033/GB、$0.132/GB），Professional $25/开发者/月；绑卡要求未披露。"
     }
   ]
 }
