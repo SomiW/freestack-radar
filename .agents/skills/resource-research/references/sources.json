@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-08T09:28:10Z",
-      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 12 个合法类目全部 200（dev-tools 20 / agents-automation 20 / cloud-gpu 18 / llm-api 20 / observability 16 / database-backend 14 / voice-audio 11 / vector-db 6 / image-video 3，perk-marketplace / productivity / accelerator 为空数组），共 123 条去重报价；signup-credit 与 value 榜已吃透，新增量集中在 observability / dev-tools / database-backend 的干净免费档（Honeycomb Free 2,000 万 events、Clerk Hobby 5 万 MRU、Convex Free 100 万调用），另有 Anthropic/OpenAI/CodeRabbit 等已在库条目。面值 <$10 的 Cerebras $5、Vapi $5、SiliconFlow $1、Stability 25 credits、Railway $5、ScraperAPI 5,000 credits/7 天继续排除。"
+      "observation": "本轮按 5 个类目各一次列表请求（agents-automation 14 / observability 0 / dev-tools 1 / database-backend 4 / cloud-gpu 9，共 28 条），条目均已入库或此前已排除（Steel / Skyvern / E2B / Daytona / Runloop / Parallel / You.com / Apify / CockroachDB / ClickHouse / Databricks / GCP / Oracle / AWS / Azure / Akamai / Anyscale / Baseten），新增量仅 Scrapfly 1,000 credits、Browser Use $1、Serper 免费额度，面值过低不采纳。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页新收录区与库存比对无新增厂商，详情页未产生本轮候选。"
+      "observation": "首页 245 条报价、208 条免绑卡；New this week 为 Mistral Education（$165/年，实为 $14.99/月学生档）、OpenSEO、Voxcribe 120 分钟/月、Image2Img 1 张/天、ClearRemover 1 张/月、PlayableNotes 100 请求/天，面值或范围不足未采纳。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "列表页与本轮库存比对无新增可核实条目。"
+      "observation": "2006 条在架（限时 37）；今日新增 Nemotron 3.5 Lightning / Freellm / VLM Run Gateway / Vectoree / AI Clothes Changer 均为待核实小额或网关型；「腾讯混元新人免费体验包」与已入库 tencent-tokenhub 口径重叠，未重复入库。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "免费模型/编程方案分区无新增官方可核实条目，仅重复既有厂商。"
+      "observation": "24 项免费内容，清单由 JS 渲染只能取到部分卡片；可见项 Kilo Code 免费模型网关（免账号、200 次/小时/IP）属网关型不入库，Qoder CN 千问 3.8-Flash 已在库。"
     },
     {
       "id": "tokentab",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "AI 羊毛情报站调研时点为 2026-10-30，国内/海外两页均为卡片索引，本轮未产生新候选。"
+      "observation": "调研时点 2026-10-30，Agent/编程助手 10 项、大模型 API 16 项，均为已入库或付费折扣，无新增可核实条目。"
     },
     {
       "id": "usefree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-08T09:28:10Z",
-      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 110 个品牌 / 245 条 deal（generated 仍为 2026-10-26T12:00Z，自 10-26 起未再更新）；与库存域名比对后无新增可入库候选，剩余为学生 SaaS 与小额 UI 积分。"
+      "observation": "brands_new.json 110 个品牌，全部 deal 的 verified 日期仍为本轮之前的 2026-10-26（静态快照，约 13 天未更新）；可核对的新候选 UpCloud $250 / DigitalOcean $200 均带联盟追踪参数，官方页无对应条文，未采纳。"
     },
     {
       "id": "linux-do",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T09:28:10Z",
-      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 20 条：GPT/Claude 封号、甲骨文注册、域名与 Adobe 讨论为主，无免费额度线索。"
+      "observation": "RSS 20 条，均为交易/求购/测评与账号买卖类噪声；无新增合规福利线索（nuyek 黑五 VPS 仍未开售，11-14 复核）。"
     },
     {
       "id": "lowendtalk",
@@ -324,10 +324,13 @@
         "html"
       ],
       "entryUrl": "https://freeaiapis.org/",
-      "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
+      "status": "unavailable",
+      "checkedAt": "2026-11-08T15:37:21Z",
       "lastSuccessAt": "2026-11-08T03:18:31Z",
-      "lastFailure": null,
+      "lastFailure": {
+        "at": "2026-11-08T15:37:21Z",
+        "reason": "curl TLS 握手失败（SSL_ERROR_SYSCALL，000），本轮未取得内容"
+      },
       "canVerifyOfficial": false,
       "observation": "列表页无新增免费 API 档位，与库存无明显冲突。"
     },
@@ -522,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-08T09:28:10Z",
-      "lastSuccessAt": "2026-11-08T09:28:10Z",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "互联网区 25 条：以站务、广告与闲聊为主，「47 款免费模型」为社区自测清单、无官方条文，未产生候选。"
+      "observation": "RSS 25 条，多为站务与闲聊；「免费 4C8G 云电脑 + 每日 1000 credits」为已入库 InstaBox 的重复推广。"
     },
     {
       "id": "aideal",
@@ -2654,6 +2657,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML 直连 200（322 KB）：Free & Starter $0/月，逐项给出内置额度与按量单价（1M 函数调用 / 20 GB-hours / 0.5 GB 库 / 1 GB 文件 / 1 GB 出网；$2.20 每百万调用、$0.33/GB-hour、$0.22/GB、$0.033/GB、$0.132/GB），Professional $25/开发者/月；绑卡要求未披露。"
+    },
+    {
+      "id": "ark-pricing",
+      "name": "火山引擎方舟计费说明",
+      "url": "https://www.volcengine.com/docs/82379/1544106",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.volcengine.com/docs/82379/1544106",
+      "status": "readable",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（167 KB），去 script 后正文约 19 KB 完整可读：Managed Agents 首次开通赠 30 小时运行时 + 500 次 web_search（每账号一次、2 年有效、优先抵扣）、web_search 0.02 元/次、联网内容插件 4 元/千次且每月 2 万次免费、图片/视频模型分档单价齐全。"
+    },
+    {
+      "id": "supabase-pricing",
+      "name": "Supabase 定价",
+      "url": "https://supabase.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://supabase.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（49 KB），正文约 20 KB：Free $0 含不限 API 请求、5 万 MAU、500 MB 库、共享 CPU/500 MB RAM、5 GB + 5 GB 缓存出网、1 GB 文件存储、社区支持，附注闲置 1 周暂停与最多 2 个活跃项目；Pro from $25/月。"
+    },
+    {
+      "id": "cursor-pricing",
+      "name": "Cursor 定价",
+      "url": "https://cursor.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://cursor.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-08T15:37:21Z",
+      "lastSuccessAt": "2026-11-08T15:37:21Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 直连 200（43 KB），正文约 14 KB：Free $0 仅写「Limited AI usage / Limited agent requests / Limited Chat requests」，无任何数值口径；Plus $8/月起含共享 AI 用量池。免费档额度不可核实，条目保持 pending/medium。"
     }
   ]
 }
