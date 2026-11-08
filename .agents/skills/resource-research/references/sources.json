@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 12 个合法类目（dev-tools / agents-automation / cloud-gpu / llm-api / observability / database-backend / voice-audio / perk-marketplace / vector-db / image-video / productivity / accelerator）全部 200，去重后 165 条报价；与库存逐域比对后，新增量集中在 observability（Axiom Personal）、dev-tools（Blacksmith 3,000 分钟）、cloud-gpu（Thunder Compute $20 学生额度）三处，image-video 与 perk-marketplace 仍以大额 startup 计划为主（fal $1,000、Mux $500、Stripe Atlas），不属公开可领免费档。"
+      "observation": "本轮 12 个合法类目全部 200（dev-tools 1 / agents-automation 10 / cloud-gpu 9 / llm-api 7 / database-backend 4 / voice-audio 5 / vector-db 1 / image-video 1，其余 4 类空数组），共 38 条报价；与库存去重后 10 条候选（Cerebras $5、Vapi $5、SiliconFlow $1、Browser Use $1、Stability 25 credits、Snowflake $400、Hyperbrowser 5,000 credits、ScraperAPI 5,000 credits/7 天、Railway $5/30 天、Baseten 未披露面值）面值均 <$10 或已在既有结论中排除，本轮无入库候选。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页新收录区无与既有条目冲突的新厂商，详情页未产生本轮入库候选。"
+      "observation": "首页新收录区与库存比对无新增厂商，详情页未产生本轮候选。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页推荐与「正在加载」区本轮无新增可核实条目，未取候选。"
+      "observation": "列表页与本轮库存比对无新增可核实条目。"
     },
     {
       "id": "aifuli",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "站点更新 RSS（feed.xml）直连 200，33 条：近 3 条为热力图/价格库更新（模型价格更新到 11-05、11-02），无新福利条目；价格库更新仅作模型价格参考。"
+      "observation": "AI 羊毛情报站调研时点为 2026-10-30，国内/海外两页均为卡片索引，本轮未产生新候选。"
     },
     {
       "id": "usefree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 brands_new.json 直连 200（22.7 KB），generated 仍为 2026-10-26，110 品牌 / 244 权益；新品牌绝大多数为 1Password、Canva、Figma 一类学生 SaaS 折扣，无新增 AI 算力或云资源额度可入本轮窗口。"
+      "observation": "brands_new.json 110 个品牌 / 180 条 active deal；按 credits/compute/ai-model 过滤并与库存域名比对后，新增候选为 HashiCorp 学生 $500、Replit $20、Higgsfield $15、Krea 100 units、Ideogram/Meshy/JetBrains/MiniMax 等小额 UI 积分，面值与可核实性均不足以本轮入库。"
     },
     {
       "id": "linux-do",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 20 条：以 GPT/Gemini 封号讨论、二手机器交易与甲骨文免费号讨论为主，未见可核实的新增免费额度；「Ultra20x 送的额度开的 Pro6000」为个人账号转述，无官方条款。"
+      "observation": "RSS 可读，交易与测评帖为主，无新的免费额度线索。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "清单无新增 Provider，未产生候选。"
+      "observation": "列表页无新增免费 API 档位，与库存无明显冲突。"
     },
     {
       "id": "github-pack",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-07T21:06:26Z",
-      "lastSuccessAt": "2026-11-07T21:06:26Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条：华为新 300 元券聚合帖（已在库）、Pixel Google AI Pro 卡密转赠、muse 账号交易与 Zgo 促销为主；卡密转赠属他人赠予非官方福利，主机促销为付费套餐，均不入库。"
+      "observation": "互联网区列表可读，未产生可入库候选。"
     },
     {
       "id": "aideal",
@@ -887,11 +887,11 @@
       ],
       "entryUrl": "https://docs.qoder.com/events/communityboost",
       "status": "readable",
-      "checkedAt": "2026-11-05T07:08:31Z",
-      "lastSuccessAt": "2026-11-05T07:08:31Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "docs.qoder.com/llms.txt 索引未变，活动页本轮未逐条重读（无到期任务）。"
+      "observation": "qoder.com/activities 渲染后仍为 300 Credits 欢迎礼 + 2 周试用 + 每日 100 Credits + Qwen3.8-Flash 免费；新增付费档「首次订阅双倍 Credits」。"
     },
     {
       "id": "meta-muse",
@@ -995,11 +995,11 @@
       ],
       "entryUrl": "https://www.codebuddy.cn/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "定价页为 SPA（静态正文仅 31 字符），经只读渲染代理读取；体验版 500 积分/月、补全限免不限次、全模型、自动任务限免 99 个、5 人协作、5GB 资料库等条款未变。"
+      "observation": "渲染代理读取定价表：体验版 500 积分/月、补全 5,000 次（限免不限次）、自动任务 3（限免 99）、成员 3（限免 5）、资料云 5 GB、云服务应用 10、单应用资源点 5,000（限免 10,000）。"
     },
     {
       "id": "exa-pricing",
@@ -1035,11 +1035,11 @@
       ],
       "entryUrl": "https://lingma.aliyun.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-02T15:17:00Z",
-      "lastSuccessAt": "2026-11-02T15:17:00Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（86 KB），四档对照内联在 HTML 中：个人基础版免费（对话 50 轮/月、单测智能体 50 方法/月）、个人专业版 ¥59/月限免、企业标准版 ¥79、企业专属版 ¥159；help.aliyun.com/zh/lingma/product-overview/pricing 是 404，勿再使用。"
+      "observation": "定价页现由 Qoder CN 定价体系承载：¥0 体验版（有限体验额度 + 2 周专业版试用及 300 Credits + 签到 30 天 3,000 Credits），原「对话 50 轮次/月」等数值已下线。"
     },
     {
       "id": "ibm-cloud-free",
@@ -1096,11 +1096,11 @@
       ],
       "entryUrl": "https://aiven.io/free-tier",
       "status": "readable",
-      "checkedAt": "2026-11-03T21:54:30Z",
-      "lastSuccessAt": "2026-11-03T21:54:30Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 可读（234 KB），含 Free Tier 说明、Compare Free Services 表与 FAQ：四类服务各 1 个免费实例、1 vCPU/1 GB RAM、PostgreSQL 1 GB 与其余 8 GB 存储、Kafka 250 kb/s 与 3 天保留、免 payment details、无到期时间、自动备份包含。"
+      "observation": "直读 200，每账号每服务 1 个免费实例，PostgreSQL 1 GB、Kafka/OpenSearch/Valkey 各 8 GB。"
     },
     {
       "id": "lightning-pricing",
@@ -1222,11 +1222,11 @@
       ],
       "entryUrl": "https://steel.dev/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "官方定价页静态 HTML（147 KB）可直接 curl 读取全文：Launch $0/月 + $30 一次性 credits、免绑卡、10 并发会话/15 分钟会话上限/3 席位/60 RPM/7 天数据保留与各单价，Scale $250/月含每月 $100 credits。"
+      "observation": "直读 200，免费档与记录一致。"
     },
     {
       "id": "skyvern-pricing",
@@ -1345,11 +1345,11 @@
       ],
       "entryUrl": "https://www.tinybird.co/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T15:45:03Z",
-      "lastSuccessAt": "2026-11-03T15:45:03Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "静态 HTML 416 KB 可直连；Free 档明示 No credit card required、0.25 vCPU、1 线程/请求、1k 请求/日、10 GB 存储，Developer $49/月对照完整。"
+      "observation": "直读 200，Free 档 1k requests/day、0.25 vCPU、免绑卡。"
     },
     {
       "id": "voyage-pricing",
@@ -1571,11 +1571,11 @@
       ],
       "entryUrl": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
       "status": "readable",
-      "checkedAt": "2026-11-05T00:31:23Z",
-      "lastSuccessAt": "2026-11-05T00:31:23Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（365 KB，正文 5.7K 字符）：免费判定、限速表（60s 4M 输入/100k 输出/10 请求）、模型 Qwen3.6-35B-A3B-FP8 与 Qwen3.8-27B（262,144 上下文）、数据留存口径均在正文。"
+      "observation": "实验页渲染可读：实验期免费、60 秒内 4M 输入 / 100k 输出 tokens、10 请求，超限 429。"
     },
     {
       "id": "perch-starter-docs",
@@ -1877,11 +1877,11 @@
       ],
       "entryUrl": "https://zilliz.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T01:41:41Z",
-      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（37 KB，正文 10 KB）：Free 档 $0、5 GB storage、2.5M vCUs per month、Up to 5 collections、Community support；另有 AWS/GCP/Azure 三个市场入口与 vCU 定义段。"
+      "observation": "直读 200，Free 档 5 GB / 2.5M vCU/月 / 5 collections。"
     },
     {
       "id": "crewai-pricing",
@@ -1897,11 +1897,11 @@
       ],
       "entryUrl": "https://www.crewai.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-06T01:41:41Z",
-      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（54 KB，正文 3 KB）：Basic Free、50 workflow executions/month、Studio 可视化编辑器、AI copilot、GitHub 集成、私有 agent/tool 仓库；Enterprise 为 Custom 报价。"
+      "observation": "直读 200，Basic Free 50 executions/月。"
     },
     {
       "id": "zep-pricing",
@@ -1917,11 +1917,11 @@
       ],
       "entryUrl": "https://www.getzep.com/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-06T01:41:41Z",
-      "lastSuccessAt": "2026-11-06T01:41:41Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（28 KB，正文 7.9 KB）：「Prototyping? Start free with 10,000 credits a month. Limits apply.」；Flex $125/月含 5 万 credits、超出 $25/1 万；credit 计量 1 credit/Episode(≤350B)、webhook 1/8 credit、检索与存储不计费。"
+      "observation": "直读 200，免费 10,000 credits。"
     },
     {
       "id": "tencent-dev-lighthouse",
@@ -2338,11 +2338,11 @@
       ],
       "entryUrl": "https://www.ai21.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（约 38 KB 静态 HTML）：Free Trial 档「$10 credits for 7 days. No credit card needed」，另有 Pay As You Go（按量计费、不限席位）与企业定制档；页首写「Start with a free trial, no credit card required」。"
+      "observation": "直读 200，Free Trial $10 / 7 天 / 免卡。"
     },
     {
       "id": "ovh-ai-endpoints",
@@ -2530,6 +2530,70 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（35 KB），$20.00 学生额度、仅美国高校、学校邮箱自动校验、限 A6000/L40、用尽转按量付费与滥用条款均在正文与 FAQ 内联；根域 /pricing 页不含该活动，须直接用 /students 路径。"
+    },
+    {
+      "id": "codearts-agent",
+      "name": "华为云码道 CodeArts 代码智能体开通页",
+      "url": "https://developer.huaweicloud.com/codeartsco.html",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developer.huaweicloud.com/codeartsco.html",
+      "status": "readable",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连仅 6.9 KB SPA 壳（正文 50 字符），渲染代理可读全文：个人体验版免费、订阅默认 1 个月到期免费自动续期、次数不限、每月赠 500 积分、支持 OpenPangu/GLM/鸿蒙增训与自定义模型。"
+    },
+    {
+      "id": "comate-pricing",
+      "name": "百度 Comate 价格页",
+      "url": "https://comate.baidu.com/zh/pricing",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://comate.baidu.com/zh/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 25 KB 但正文仅标题，渲染代理可读定价卡：个人标准版 Free 免费 + 首次注册 5,000 积分 + Auto-Free 150k tokens/h；专业版 ¥59/月 25,000 积分、旗舰版 ¥199/月 100,000 积分。"
+    },
+    {
+      "id": "modelscope-api-limits",
+      "name": "魔搭 ModelScope API 推理限额文档",
+      "url": "https://modelscope.cn/docs/model-service/API-Inference/limits",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://modelscope.cn/",
+      "status": "restricted",
+      "checkedAt": "2026-11-08T03:18:31Z",
+      "lastSuccessAt": null,
+      "lastFailure": {
+        "at": "2026-11-08T03:18:31Z",
+        "reason": "文档正文由客户端渲染，直连与渲染代理均只返回标题与导航（约 0.3 KB 正文），限额数值不可读"
+      },
+      "canVerifyOfficial": true,
+      "observation": "docs 导航确认存在「API Inference Usage Limits」专页，但正文取不到；社区称每日 2,000 次/每模型约 500 次，未获官方确认，对应条目保持 pending/low。"
     }
   ]
 }
