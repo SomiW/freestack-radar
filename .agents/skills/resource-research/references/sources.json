@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮回测发现查询参数已变更：`type=anyone` 现在返回 400「unknown type \"anyone\"」，合法 type 为 free-tier / startup-program / signup-credit / student-education / marketplace-perk / promo-code / accelerator-perk，人群改用 `audience=anyone`。改用 `type=free-tier&audience=anyone&category=<类目>&sort=newest&limit=20` 后 12 个类目均 200（ai-coding 仍 400），去重 106 条。free-tier 榜结构已稳定为「干净的长期免费档」，newest 侧新增量集中 observability / dev-tools / database-backend（New Relic、Better Stack、Sentry、Arize、Laminar、Comet 等）；signup-credit 头部榜单仍无 ≥$10 且条款干净的新条目。"
+      "observation": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50 返回 200（total_matches 125，一次取 50 条）；signup-credit 43 条同取。注意：`topic` 查询参数本轮不生效——按 7 类 type × 13 个 topic 发 91 次请求去重仍只有 44 条，与不带 topic 的结果集相同，改用 `limit=50` 才是扩容手段。最新 11-07~11-08 的干净免费档集中出现：Deno Deploy（已入库）、Lovable、Descope、Svix 50k、Novu 10k、Laminar 1 GB、Ably 500 MAU、Base44、Doppler、Infisical。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aifree.dev/ 直读 29.6 KB（245 offers / 208 no card / 4 deadlines）。New this week 仅 Mistral Education Plan（学生邮箱，$165 一年）与 OpenSEO（非 AI 核心）；头部榜单与上轮一致，无新增大额条目。"
+      "observation": "https://aifree.dev/ 直读 206 KB（245 offers / 208 no card / 4 deadlines）。New this week 仍只有 Mistral Education Plan 与 OpenSEO；「Ending next」为 Google Gemini Free Student Plan（2026-12-31 截止，非 AI 核心免费档且需学生邮箱）；Top verified picks 首位是 AgentRouter（网关型，不采信）。无新增入库条目。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aispoils.com/ 直读 13.2 KB，静态头部仍标「2023 条在架 / 37 条限时」；今日新增仍为 PLaMo（已入库）与 JZS Token / Nemotron 3.5 Lightning / Freellm（面值 $1–1.5，面值不足）。"
+      "observation": "https://aispoils.com/ 直连 63.7 KB 但列表由前端渲染，r.jina.ai 渲染 15.9 KB 可读：站内标「2027 条在架 / 37 条限时」（上轮 2023 条），更新于 2026-11-10。今日推荐与限时列表逐条比对后全部已在库：腾讯混元新用户包、DeepSeek 500 万 tokens、腾讯云模型广场 100 万 tokens、InstaBox 5 台云电脑、E2B $100、Daytona $200、xAI Grok $25、MiniMax ¥15。无新增。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://token.pencilai.top/ 直读 18.4 KB：24 项免费内容 / 15 优惠 / 9 刚结束；A 级榜首仍是 Kilo Code 免费模型网关（200 次/小时/IP、免账号免 key），免费档可能用于训练；Qoder CN 的 Qwen3.8-Flash 免费与每日 100 Credits 均对应库内既有条目，无新增。"
+      "observation": "https://token.pencilai.top/ 直读 64.9 KB：24 项免费内容 / 15 优惠 / 9 刚结束。A 级榜首仍是 Kilo Code 免费模型网关（16 个 :free 模型、200 次/小时/IP），但**官方 gateway 文档写「Balance check: Before proxying the request, the gateway verifies you have sufficient balance」**，与「免账号免 key」的社区说法不符，继续排除；Step 5 Preview 为阶跃一周限免（约 11-15 到期），属短期促销不单独立条。"
     },
     {
       "id": "tokentab",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://linux.do/c/welfare/36.rss 本轮 25 条（16.3 KB）。可用新线索仅 2 条：K-EXAONE 2.5 免费 API 帖（3145490，正文附官方 docs.exaone.ai 链接，已据此入库）、基元律动免费模型（3146447，正文仅「充值过的可以免费调用」+ 图，无官方条款）；其余为机场/中转站推广、话费与实物羊毛。华为云积分兑换帖（3143812）对应既有 pending 条目。"
+      "observation": "https://linux.do/c/welfare/36.rss 本轮 25 条（62.9 KB）：无新增可核福利。相关帖均指向既有条目或已排除对象——「华为云积分兑换代金卷有货了」（3143812，既有 huawei 系 pending 的社区口径）、「gumloop 每月100美金」（3145373，需 Lenny's Product Pass，已排除）、「基元律动免费模型」（3146447，无官方条款）、K-EXAONE（3145490，已入库）、RelayRouter ¥3.5 与各类中转站推广。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://rss.nodeseek.com/ 本轮 20 条（3.6 KB），全为交易/求机/闲聊；仅 Muse 注册相关多帖（1042622/1042623）指向既有 meta-muse pending 条目，无新增可核福利。"
+      "observation": "https://rss.nodeseek.com/ 本轮 20 条（10.2 KB），全为账号交易、求机、闲聊与家宽拼车；仅「羊毛 Kem 消费10u送5u黄金」「Plasma One 送一天 Premium」两条消费类，非 AI/云资源福利，不采纳。"
     },
     {
       "id": "lowendtalk",
@@ -525,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-09T16:10:00Z",
-      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://www.nodeloc.com/c/internet/5.rss 本轮 25 条（59.8 KB），新增信号为「华为云服务器一直白嫖续费方法」（117184，属既有 pending 条目的社区口径）与多帖 Muse 账号交易（117157/117167/117170，均为转卖不采信）。"
+      "observation": "https://www.nodeloc.com/c/internet/5.rss 本轮 25 条（206 KB）：新增信号仍是「华为云服务器一直白嫖续费方法」（117184，既有 pending 的社区口径）与多条 Muse 账号转卖/代注册（117157/117167/117170，不采信），无新的官方可核福利。"
     },
     {
       "id": "aideal",
@@ -826,11 +826,11 @@
       ],
       "entryUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
       "status": "readable",
-      "checkedAt": "2026-11-06T07:49:46Z",
-      "lastSuccessAt": "2026-11-06T07:49:46Z",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "帮助中心仍为 SPA（直连 3.3 KB 壳），r.jina.ai 渲染后 21.8 KB 正文完整：2500 万 tokens、30 天、3000 tokens/min、新老用户、Qwen3.5-35B-A3B 例外。"
+      "observation": "连续 3 轮只回导航壳后，本轮 r.jina.ai 第 4 次尝试首次取到 21.8 KB 正文：活动期 2026-02-15–2026-12-31、2500 万 tokens、限时 30 天、限流 3000 tokens/min、仅部分自营模型（自营 Qwen3.5-35B-A3B 亦不支持）、合作与机密模型不参与、面向未领取过该额度的新老用户。直连仍只有 3.3 KB SPA 壳。"
     },
     {
       "id": "huaweicloud-grow",
@@ -2945,6 +2945,69 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（45 KB，正文 20 KB）：免费卡「Free for personal projects $0 per month」内联列 10 monitors/heartbeats、1 status page、100,000 exceptions、5,000 replays、3 GB logs & traces（3 天）、30 GB metrics、3 GB web events（3 天）；付费档按席位与消费计费。"
+    },
+    {
+      "id": "deno-deploy-pricing",
+      "name": "Deno Deploy 定价",
+      "url": "https://deno.com/deploy/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://deno.com/deploy/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（203 KB，正文 14.4 KB），三档对比表全内联：Free $0/月 = 1M 请求 + 20GiB 出网 + 5 域名 + 10 小时活跃 CPU + 150 GiB-hr 内存 + 10 GiB 版本存储 + 10 应用 + 1 并发构建 + 15 构建/小时 + KV 1 GiB/100 万读/50 万写；Pro $20/月、Builder $200/月。无需渲染代理。"
+    },
+    {
+      "id": "lovable-pricing",
+      "name": "Lovable 定价",
+      "url": "https://lovable.dev/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://lovable.dev/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（193 KB，正文 7.5 KB），免费额度只写在 FAQ（「daily grant of 5 build credits (up to 30 a month), plus monthly grants of 20 Cloud credits」+ 4 个应用内 AI credits，日赠额当日过期）；档位价格卡片由前端渲染，HTML 内无 Pro/Business 月费数值。"
+    },
+    {
+      "id": "descope-pricing",
+      "name": "Descope 定价",
+      "url": "https://www.descope.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.descope.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T22:31:45Z",
+      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（214 KB，正文 14 KB），Free Forever $0 卡 8 项额度（7,500 MAU / 10 租户 / 3 SSO / 1 OIDC 联邦应用 / 5 测试用户 / 10,000 M2M / 2,000 MAC / 2,000 MATK）+ 8 项核心能力全内联，并明写「No overages. Upgrade required to exceed limits.」。"
     }
   ]
 }
