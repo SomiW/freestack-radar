@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮按 13 个类目各一次 newest 列表请求（dev-tools 1 / agents-automation 14 / cloud-gpu 9 / llm-api 7 / observability 0 / database-backend 4 / voice-audio 5 / image-video 1 / vector-db 1 / productivity 0 / perk-marketplace 0 / accelerator 0 / ai-coding 0，共 42 条）：条目全部已入库或此前已排除，新增量只有 Zed Pro 14 天试用（$5 托管模型用量，面值过低），本轮未从 Perq 采纳新条目。"
+      "observation": "本轮 12 个合法类目（llm-api 20 / agents-automation 20 / dev-tools 20 / cloud-gpu 18 / observability 18 / database-backend 14 / voice-audio 12 / vector-db 6 / image-video 3 / productivity 0 / perk-marketplace 0 / accelerator 0，共 131 条）各一次 newest 请求，全部 200：新增量集中在 voice-audio 与 observability 的免费档（Rime $50/月、Langfuse 50k units、AgentMail），三条已官方核实入库；其余为已入库或此前已排除的小额条目（Vapi $5、Cerebras $5、SiliconFlow $1、Cloudinary 25 credits、Stability 25 credits 等）。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直连 200（212 KB，正文约 10 KB）：245 条 offer、208 条免卡、4 条截止跟踪；「New this week」为 Mistral Education（$14.99/月付费学生档）与 OpenSEO，均非免费额度；无可采纳新条目。"
+      "observation": "首页直读 215 KB：245 个 offers、208 个标「no card」，与上轮数量一致，无新增条目。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直连 200（63 KB，正文约 6.1 KB）：2012 条在架，今日新增 PLaMo API（Preferred Networks）与 JZS Token。逐条读详情页：PLaMo 转官方定价页确认 Free 档 0 円/1M tokens 并入库；JZS Token $1.5、VLM Run Gateway $1、Freellm 200 req 面值过低，不采纳。"
+      "observation": "首页直读 62.9 KB：2015 条在架、13 类目；今日新增 PLaMo API（已入库）、JZS Token（$1.5，面值不足）、Nemotron 3.5 Lightning（模型级免费，非独立权益）、Freellm（200 req 免费，面值不足）、VLM Run Gateway、AI Clothes Changer（工具类，无额度）。本轮未从本站采纳新条目。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直连 200（78.7 KB，正文约 14 KB）：24 项免费内容 + 15 项优惠。新增可采纳线索为 OpenCode Zen 免费模型组（C 级需绑卡 $0 计费），转官方 docs/zen 核实 13 个 $0 模型后入库；其余（Kilo Code 免鉴权网关、Qoder CN、CatPaw、小浣熊、Charm Crush Hyper 免费层）或已入库、或官网未给免费条款（Charm Hyper 仅有付费订阅/预付）不采纳。"
+      "observation": "首页直读 78.7 KB：24 项免费内容，Qoder CN 千问 3.8-Flash 免费与每日 100 Credits 已入库；新增线索为 Kilo Code 免费模型网关（称 16 个 :free 模型、免账号/免 key、200 次/小时/IP），但官方 Gateway 文档只写 API key/会话鉴权与 ai-gateway.kilo.ai 端点，免鉴权说法未获官方确认，留候选。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连首页为 SPA 外壳（正文 280 B），经只读渲染代理读得列表：New arrivals 最新条目仍是 2026-10-26（Beautiful.ai、DigitalOcean $200+$50、Gamma 400 credits），无 11 月新增，本轮零新增。"
+      "observation": "brands_new.json 直读 234 KB：items 110 个品牌，generated 仍为 2026-10-26T12:00:00Z，New arrivals 无新增品牌，本轮未采纳候选。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直连 200（64.5 KB）：最新帖以抽奖、会员领取、中转站推广为主；Kiro 4000 积分帖对应已入库的 kiro-kiroween-hackathon 条目，Perch AI $20/月帖对应已入库 perch-ai-starter，无新活动入口。"
+      "observation": "福利羊毛频道 RSS 直读 25 条（49.8 KB），以求邀请码、账号合租与旧帖回帖为主，无新增可核实福利线索。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直连 200（10.5 KB）：25 条最新帖以 MUSE 邀请码、机场/VPS 讨论为主，未见新的官方免费额度活动。"
+      "observation": "RSS 直读 20 条（9.0 KB），以 VPS 测评与低价促销为主，无符合门槛的新增免费额度线索。"
     },
     {
       "id": "lowendtalk",
@@ -440,11 +440,11 @@
       ],
       "entryUrl": "https://vps.lowseek.ai/data/deals.json",
       "status": "readable",
-      "checkedAt": "2026-11-04T10:20:40Z",
-      "lastSuccessAt": "2026-11-04T10:20:40Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读取 deals.json，records 82 条，基本为黑五/万圣节付费 VPS 促销与 giveaway，无免费额度类新候选。"
+      "observation": "deals.json 直读 178 KB：83 条 records（上轮 81），新增 2 条为常规 VPS 月付促销，无免费额度或 $10 以上赠金，未采纳。"
     },
     {
       "id": "serverhunter",
@@ -525,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直连 200（73 KB）：两条线索跟进——cloady.io 免费容器（官网 cloady.io 直连 403 Cloudflare 挑战、/pricing 404，无官方条款可读，不采纳）；「永久免费 4C8G 云电脑 + 每日 1000 credits」帖正文需登录（JSON 首帖为「请登录后查看内容」），无法取得官方入口，留待人工。"
+      "observation": "internet 栏目 RSS 直读 25 条（54 KB），无新增官方福利线索。"
     },
     {
       "id": "aideal",
@@ -866,11 +866,11 @@
       ],
       "entryUrl": "https://hkcloudx.com/cloud.html",
       "status": "restricted",
-      "checkedAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
       "lastSuccessAt": null,
       "lastFailure": {
-        "at": "2026-11-08T21:45:45Z",
-        "reason": "直连 200（137 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区仍是 {{...}} 占位符（第 14 轮），套餐型号与 MiniV6 NAT 档不可判定。"
+        "at": "2026-11-09T03:53:19Z",
+        "reason": "直连 200（9.9 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区为 {{...}} 占位符（第 15 轮），MiniV6 NAT 套餐与价格不可判定。"
       },
       "canVerifyOfficial": true,
       "observation": "直连 200（137 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区仍是 {{...}} 占位符（第 14 轮），套餐型号与 MiniV6 NAT 档不可判定。"
@@ -2589,11 +2589,11 @@
       ],
       "entryUrl": "https://modelscope.cn/",
       "status": "restricted",
-      "checkedAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-09T03:53:19Z",
       "lastSuccessAt": null,
       "lastFailure": {
-        "at": "2026-11-08T03:18:31Z",
-        "reason": "文档正文由客户端渲染，直连与渲染代理均只返回标题与导航（约 0.3 KB 正文），限额数值不可读"
+        "at": "2026-11-09T03:53:19Z",
+        "reason": "限额页与 API-Inference/intro 直连均为 SPA 壳，r.jina.ai 渲染只返回导航与页脚（约 0.3 KB 正文），限额数值仍不可读（第 5 轮）。"
       },
       "canVerifyOfficial": true,
       "observation": "docs 导航确认存在「API Inference Usage Limits」专页，但正文取不到；社区称每日 2,000 次/每模型约 500 次，未获官方确认，对应条目保持 pending/low。"
@@ -2759,6 +2759,68 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（HTML 97 KB，正文约 25 KB），价格表把 13 个模型三列标 Free，逐条注明「free on OpenCode for a limited time」；同页给出免费档客户端限制（需 OpenCode）与 Crouton Alpha / Beam / Inkling 2 Small 的地区排除清单。"
+    },
+    {
+      "id": "rime-pricing",
+      "name": "Rime Labs 官方定价页",
+      "url": "https://rime.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://rime.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 49 KB，Free/Flex/Scale/Enterprise 四档与逐模型单价内联：Free $0 免绑卡、$50 用量按月刷新；Rime STT 标注 Free until Nov 19。"
+    },
+    {
+      "id": "langfuse-pricing",
+      "name": "Langfuse 官方定价页",
+      "url": "https://langfuse.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://langfuse.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 58 KB，Cloud Hobby/Core/Pro 与自托管对照表内联：Hobby Free、免绑卡、50k units/月、30 天数据、2 用户、1,000 请求/分钟摄取。"
+    },
+    {
+      "id": "agentmail-pricing",
+      "name": "AgentMail 官方定价页",
+      "url": "https://www.agentmail.to/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.agentmail.to/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T03:53:19Z",
+      "lastSuccessAt": "2026-11-09T03:53:19Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML 48 KB，Free/Developer/Startup 三档内联并带 inboxes/emails/domains 计价器：Free $0、3 inboxes、1 域名、3,000 封/月、3 GB、免绑卡。"
     }
   ]
 }
