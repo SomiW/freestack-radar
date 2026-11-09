@@ -16,13 +16,13 @@
         "json",
         "html"
       ],
-      "entryUrl": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
+      "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "Perq 12 个合法类目 newest 榜（eligibility=anyone）本轮共去重 131 条：dev-tools 20 / agents-automation 20 / llm-api 20 / cloud-gpu 18 / observability 18 / database-backend 14 / voice-audio 12 / vector-db 6 / image-video 3，perk-marketplace、productivity、accelerator 返回空数组。新增量集中在 observability 与 voice-audio（PostHog / Braintrust / Cartesia 三条已入库），头部 signup-credit 榜仍已吃透，未再出现 ≥$10 且条款干净的新条目。"
+      "observation": "本轮回测发现查询参数已变更：`type=anyone` 现在返回 400「unknown type \"anyone\"」，合法 type 为 free-tier / startup-program / signup-credit / student-education / marketplace-perk / promo-code / accelerator-perk，人群改用 `audience=anyone`。改用 `type=free-tier&audience=anyone&category=<类目>&sort=newest&limit=20` 后 12 个类目均 200（ai-coding 仍 400），去重 106 条。free-tier 榜结构已稳定为「干净的长期免费档」，newest 侧新增量集中 observability / dev-tools / database-backend（New Relic、Better Stack、Sentry、Arize、Laminar、Comet 等）；signup-credit 头部榜单仍无 ≥$10 且条款干净的新条目。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直读 29.6 KB（正文 10.3 KB）：245 个 offers，与上轮数量一致，无新增条目。"
+      "observation": "https://aifree.dev/ 直读 29.6 KB（245 offers / 208 no card / 4 deadlines）。New this week 仅 Mistral Education Plan（学生邮箱，$165 一年）与 OpenSEO（非 AI 核心）；头部榜单与上轮一致，无新增大额条目。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直读 13.4 KB（卡片列表前端渲染），r.jina.ai 渲染取到「2026 条在架 / 37 条限时 / 13 类目 / 每日更新」（上轮 2015 条）；今日精选仍为 PLaMo API、JZS Token、Nemotron 3.5 Lightning、Freellm、AI Clothes Changer——前三已入库或面值不足，本轮无新增高价值条目。"
+      "observation": "https://aispoils.com/ 直读 13.2 KB，静态头部仍标「2023 条在架 / 37 条限时」；今日新增仍为 PLaMo（已入库）与 JZS Token / Nemotron 3.5 Lightning / Freellm（面值 $1–1.5，面值不足）。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直读 18.4 KB：仍为 24 项免费内容，与上轮一致；Kilo Code 免费模型网关仍列 A 级（16 个 :free 模型、200 次/小时/IP），官方 Gateway 文档只写 API key/会话鉴权，继续留候选。"
+      "observation": "https://token.pencilai.top/ 直读 18.4 KB：24 项免费内容 / 15 优惠 / 9 刚结束；A 级榜首仍是 Kilo Code 免费模型网关（200 次/小时/IP、免账号免 key），免费档可能用于训练；Qoder CN 的 Qwen3.8-Flash 免费与每日 100 Credits 均对应库内既有条目，无新增。"
     },
     {
       "id": "tokentab",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "福利羊毛频道 RSS 直读 25 条（16.5 KB）：出现「韩国产品 K-EXAONE 2.5 模型 API 所有人免费使用」帖（转述 LG AI Research 11-09 发布会），其余为拼车、账号交易与旧帖回覆，无其它可核实新福利。"
+      "observation": "https://linux.do/c/welfare/36.rss 本轮 25 条（16.3 KB）。可用新线索仅 2 条：K-EXAONE 2.5 免费 API 帖（3145490，正文附官方 docs.exaone.ai 链接，已据此入库）、基元律动免费模型（3146447，正文仅「充值过的可以免费调用」+ 图，无官方条款）；其余为机场/中转站推广、话费与实物羊毛。华为云积分兑换帖（3143812）对应既有 pending 条目。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直读 20 条（3.7 KB）：以 VPS 测评、低价促销与闲聊为主，无符合门槛的免费额度线索。"
+      "observation": "https://rss.nodeseek.com/ 本轮 20 条（3.6 KB），全为交易/求机/闲聊；仅 Muse 注册相关多帖（1042622/1042623）指向既有 meta-muse pending 条目，无新增可核福利。"
     },
     {
       "id": "lowendtalk",
@@ -525,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "internet 栏目 RSS 直读 25 条（53.6 KB）：含 RelayRouter ¥3.5 体验额度、GoPass 优惠码、K-EXAONE 转述等第三方促销，均无官方条款页，未采纳。"
+      "observation": "https://www.nodeloc.com/c/internet/5.rss 本轮 25 条（59.8 KB），新增信号为「华为云服务器一直白嫖续费方法」（117184，属既有 pending 条目的社区口径）与多帖 Muse 账号交易（117157/117167/117170，均为转卖不采信）。"
     },
     {
       "id": "aideal",
@@ -2885,6 +2885,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（60 KB，正文 7.7 KB）：Free $0/月 20K credits + $1 agent 额度、分项分钟数与并发（TTS 2 / STT 8 / Agent 8）、Free 不含商业许可；FAQ 给出 credit 计费口径与每档 agent 分钟数。"
+    },
+    {
+      "id": "exaone-docs",
+      "name": "EXAONE API Platform 文档（LG AI Research）",
+      "url": "https://docs.exaone.ai/en/docs/changelog",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.exaone.ai/en/docs/changelog",
+      "status": "readable",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（53 KB，正文约 1 KB）：Next.js 站点但正文服务端渲染，Changelog 2026-11-09 条目直接写「This service is currently available free of charge」并列出 K-EXAONE 2.5(750B) 与 EXAONE Tabular；同目录 /en/docs/models、/en/docs/rate-limits、/en/docs/quick-start 均可直读。llms.txt 为 404。"
+    },
+    {
+      "id": "newrelic-pricing",
+      "name": "New Relic 定价",
+      "url": "https://newrelic.com/pricing",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://newrelic.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（104 KB，正文 32 KB）：Free 卡逐项列 100 GB/month ingest、1 full platform user + 不限 basic users、保留至少 8 天、免绑卡、perpetual free tier；FAQ 段用 schema.org acceptedAnswer 内联，可直读。"
+    },
+    {
+      "id": "betterstack-pricing",
+      "name": "Better Stack 定价",
+      "url": "https://betterstack.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://betterstack.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-09T16:10:00Z",
+      "lastSuccessAt": "2026-11-09T16:10:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（45 KB，正文 20 KB）：免费卡「Free for personal projects $0 per month」内联列 10 monitors/heartbeats、1 status page、100,000 exceptions、5,000 replays、3 GB logs & traces（3 天）、30 GB metrics、3 GB web events（3 天）；付费档按席位与消费计费。"
     }
   ]
 }
