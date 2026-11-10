@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50 返回 200（total_matches 125，本轮取 50）；signup-credit 43 条同取。库外新条目集中在「干净长期免费档」，本轮入库 deepset Studio / Checkly Hobby / Knock Free；另有 Ably（500 MAU）、ZenRows（5,000 credits≈$1.8）、Base44（25 message credits）、Hyperbrowser（5,000 credits≈$5）、Laminar（1 GB traces）面值偏低或已有同类条目，暂不入库；Kilo Code 仍与官方文档「Balance check」冲突，维持排除。"
+      "observation": "本轮 2026-11-10T17:35Z 实读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=20`：total_matches 129、返回 20 条，去重后新增量为 LiveKit Build 与 Daily（已入库）；其余为首轮已覆盖的 Render/Upstash/Val Town/Rime/deepset/Deno/Hookdeck/Langfuse/PostHog/Convex/Fireworks/MongoDB 等，另见 Ably 500 MAU、Base44、ZenRows 等面额偏低条目继续排除。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aifree.dev/ 直读 29.8 KB：246 offers / 208 no card / 4 deadlines；New this week 为 Sail Research Free Credits 与 Mistral Education Plan（$165，需教育身份）；Ending next 仍为 Google Gemini Free Student Plan（12-31）。Sail Research 官方 sailresearch.com/pricing 为 404、官网仅见 startups「up to $10,000」申请制，$5/月免费额度缺官方条文，不入库。"
+      "observation": "本轮 2026-11-10T17:35Z 直读（29.7 KB）：246 offers / 208 no card / 4 deadlines，本週新增仅「Sail Research Free Credits」「Mistral Education Plan」；Mistral 教育计划需学生资质、Sail 官方 pricing 页此前 404，均未入库。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aispoils.com/ 直读 14.9 KB：站内标「2042 条在架」（上轮 2027 条），今日推荐与限时列表逐条比对仍全部在库（腾讯混元新客包、DeepSeek 500 万 tokens、InstaBox 云电脑、E2B、Daytona、xAI Grok、MiniMax）。无新增。"
+      "observation": "本轮 2026-11-10T17:35Z 直读首页（15 KB）：页面标注「2046 条在架 / 37 条限时 / 13 个类别」，「最新羊毛」区仍是前端异步加载（正文只有「正在加载…」），可用信息为「最新收录」6 条（Runpod / Phala / Honeycomb for Builders / fal / ElevenLabs / E2B 均为创业扶持类，需资质）与「最新限时羊毛」角标（腾讯混元、DeepSeek 500 万 tokens、Tencent Cloud AI Model Square、InstaBox、E2B、Daytona、xAI Grok、MiniMax）；其中 E2B/Daytona/ElevenLabs/InstaBox 已入库，xAI 与 MiniMax 无官方免费额度页，未入库。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://token.pencilai.top/ 直读 18.4 KB：「24 项免费内容 / 15 优惠 / 9 刚结束」。Kilo Code 条目仍称「官方书面允许免费模型免鉴权」，与官方计费文档「Balance check」冲突，维持不入库；其余免费模型条目与库内一致。"
+      "observation": "本轮 2026-11-10T17:35Z 直读（83 KB）：24 项免费 + 62 优惠 + 39 重置，头部仍为 Kilo Code 免费模型网关（18 款 $0 模型、rate limit 未公布）；本轮未出现可核实的新官方免费档。"
     },
     {
       "id": "tokentab",
@@ -174,14 +174,14 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": {
         "at": "2026-11-10T04:38:53Z",
         "reason": "https://linux.do/c/welfare/36.rss 普通 curl（curl/8.7.1，未改 UA）返回 HTTP 403，本轮未取得订阅内容；保留上次成功时间，未换指纹或代理绕过。"
       },
       "canVerifyOfficial": false,
-      "observation": "https://linux.do/c/welfare/36.rss 本轮 200（17.6 KB，25 条）：无新增可核福利。有效信号为「腾讯云 11.11 秒杀 11 号 10 点开始、每整点 1 场共 13 场」（对应库内 tencent-cloud-double11，官方活动页本轮为 SPA 壳、渲染仅得导航，未能官方复核）、「免费两张 T4 GPU，每周 30 小时」实为 Kaggle 免费 GPU 操作帖（已在库）、以及大量中转站推广与 PT 邀请。上轮 403 为偶发，本轮恢复正常。"
+      "observation": "本轮 2026-11-10T17:35Z 用 curl + 浏览器 UA 读取 /c/welfare/36.rss：25 条。有效新线索为「mlh联合Grok Premium 免费一个月」（指向 events.mlh.com 的 Global Hack Week 页）；但 MLH 活动页正文未提 Grok Premium，优惠码实际在 Discord 内分发，且要求 MLH 账号与 GitHub 绑定满 30 天、活动 11-12 结束，官方证据不足未入库。其余为二手号交易、中转站送额度和区域话费券。"
     },
     {
       "id": "nodeseek",
@@ -198,11 +198,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://rss.nodeseek.com/ 本轮 20 条（3.3 KB），全为账号交易、求机、合租与闲聊（含大量 Muse 代注册/额度互助帖），无正式免费福利线索；Muse 社区额度说法与官方未披露冲突，不入库。"
+      "observation": "本轮 2026-11-10T17:35Z 读取 rss.nodeseek.com：20 条，主题为 VPS 二手交易、双十一商家活动（sadidc 香港 188 元/年）与账号买卖，无新增可核实 AI/云免费福利。"
     },
     {
       "id": "lowendtalk",
@@ -866,11 +866,11 @@
       ],
       "entryUrl": "https://hkcloudx.com/cloud.html",
       "status": "restricted",
-      "checkedAt": "2026-11-09T03:53:19Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
       "lastSuccessAt": null,
       "lastFailure": {
-        "at": "2026-11-09T03:53:19Z",
-        "reason": "直连 200（9.9 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区为 {{...}} 占位符（第 15 轮），MiniV6 NAT 套餐与价格不可判定。"
+        "at": "2026-11-10T17:37:21Z",
+        "reason": "cloud.html 直连 200（137 KB）但正文含 296 处 Vue 占位符（{{lang.…}}），套餐与价格未服务端渲染；r.jina.ai 渲染仅回「暂无推荐配置」与「0.00」。第 17 轮未取得固定套餐价。"
       },
       "canVerifyOfficial": true,
       "observation": "直连 200（137 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区仍是 {{...}} 占位符（第 14 轮），套餐型号与 MiniV6 NAT 档不可判定。"
@@ -932,11 +932,11 @@
       ],
       "entryUrl": "https://yunzhi.play.cn/ai/",
       "status": "restricted",
-      "checkedAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
       "lastSuccessAt": "2026-11-03T03:35:39Z",
       "lastFailure": {
-        "at": "2026-11-08T21:45:45Z",
-        "reason": "直连 200 仅 1.3 KB 外壳（去标签正文 4 字符「云智手机」），无签到/时长/额度条款（第 6 轮）。"
+        "at": "2026-11-10T17:37:21Z",
+        "reason": "直连 200 但正文 1,304 B / 6 字纯壳，仍无签到规则、额度与有效期（第 8 轮）。"
       },
       "canVerifyOfficial": true,
       "observation": "直连 200 仅 1.3 KB 外壳（去标签正文 4 字符「云智手机」），无签到/时长/额度条款（第 6 轮）。"
@@ -956,11 +956,11 @@
       ],
       "entryUrl": "https://docs.memoh.ai/zh/guides/quick-start",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（89.4 KB，正文 2.9 KB）：仍只有安装/登录/创建 Bot 与 BYOK 步骤，全文无「免费 / free / 额度 / 2C2G / 定价」字样，连续第 6 轮无免费档条款，不刷新活动核实时间。"
+      "observation": "本轮 2026-11-10T17:37Z 直读（89 KB，正文 2.9 KB）与 r.jina.ai 渲染（8.4 KB）均只有安装、登录、建 Bot 步骤，仍无免费档/2C2G 配置条文（第 8 轮）。"
     },
     {
       "id": "docker-sandboxes-promo",
@@ -1758,11 +1758,11 @@
       ],
       "entryUrl": "https://akashml.com/",
       "status": "readable",
-      "checkedAt": "2026-11-06T13:58:02Z",
-      "lastSuccessAt": "2026-11-06T13:58:02Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（173 KB），首页内联 6 个模型的每 1M tokens 价目与 JSON-LD FAQ（「New users receive free credits…automatically added」）；docs 站（akashml.com/docs/platform/settings）给出 credit-based 计费、Stripe 支付与 Key 级 RPM/TPM/并发配置；额度金额与「new accounts get $100」以 Akash 官方博客 akash.network/blog/akashml-managed-ai-inference-on-the-decentralized-supercloud/（2025-11-22）为准。"
+      "observation": "本轮 2026-11-10T17:37Z 重读：首页（184 KB）JSON-LD FAQ 现只写「New users receive free credits…automatically added to your account」，已删去 $100 金额；Akash 官方博客 akash.network/blog/akashml-managed-ai-inference-on-the-decentralized-supercloud/（2025-11-22）仍两处写「New accounts receive $100 in AI token credits…both in the Playground and the API platform」，故金额仍以官方博客为准并在资源条目内注明来源变化；docs 站（akashml.com/docs）可读，pricing 路径为 404。"
     },
     {
       "id": "z-ai-docs",
@@ -2422,11 +2422,11 @@
       ],
       "entryUrl": "https://jules.google/docs/usage-limits/",
       "status": "readable",
-      "checkedAt": "2026-11-07T14:59:10Z",
-      "lastSuccessAt": "2026-11-07T14:59:10Z",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "curl 必须加 --compressed，否则返回 gzip 二进制；解压后 40.6 KB，Plan 表内联三档任务数/并发/模型，FAQ 页另有「a plan available to all users without cost」明文。"
+      "observation": "本轮 2026-11-10T17:37Z 用 `curl --compressed` 才取到正文（此前 gzip 未解压显示乱码）：表格仍为 15/100/300 每日任务、3/15/60 并发、Gemini 2.5 Pro；付费档仅限 @gmail.com 说明未变。**该站必须带 --compressed**。"
     },
     {
       "id": "pydantic-logfire-pricing",
@@ -3150,6 +3150,47 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "免费档条款已从 /models（#pay-for-usage 锚点失效）迁至 /rate-limits，直连 178.5 KB 可读：「Free tier limits」写明三个模型各 2,000,000 tokens/天、其余聊天模型 4,000,000 tokens/天、输入含缓存读取与输出合并计入、00:00 UTC 重置、达限 429 free_daily_limit_exceeded、单请求 256,000 tokens。/models 现仅为模型价格目录。"
+    },
+    {
+      "id": "livekit-pricing",
+      "name": "LiveKit Cloud 定价",
+      "url": "https://livekit.io/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://livekit.io/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-10T17:37Z 实读 HTML（54 KB）与官方纯文本版 https://livekit.io/pricing.md（5.9 KB，条款全内联、比 HTML 更省字节）：Build $0/mo + No credit card required + 1,000 agent session minutes / 5 并发 / $2.50 推理额度 / 1 个免费美国号码；Ship $50、Scale $500 起。纯文本孪生页是核对配额的最快路径。"
+    },
+    {
+      "id": "daily-video-pricing",
+      "name": "Daily Video 定价",
+      "url": "https://www.daily.co/pricing/video-sdk/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.daily.co/pricing/video-sdk/",
+      "status": "readable",
+      "checkedAt": "2026-11-10T17:37:21Z",
+      "lastSuccessAt": "2026-11-10T17:37:21Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-10T17:37Z 直读（26 KB，静态 HTML 全内联）：首屏「10,000 free minutes every month」，阶梯表 First 10,000 minutes = Free $0，超额视频/音频 $0.0040/参与者分钟、纯音频 $0.00099；FAQ 说明每月重置且无硬上限，录制保留需 card on file。"
     }
   ]
 }
