@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50 返回 200（total_matches 125，一次取 50 条）；signup-credit 43 条同取。注意：`topic` 查询参数本轮不生效——按 7 类 type × 13 个 topic 发 91 次请求去重仍只有 44 条，与不带 topic 的结果集相同，改用 `limit=50` 才是扩容手段。最新 11-07~11-08 的干净免费档集中出现：Deno Deploy（已入库）、Lovable、Descope、Svix 50k、Novu 10k、Laminar 1 GB、Ably 500 MAU、Base44、Doppler、Infisical。"
+      "observation": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50 返回 200（total_matches 125，本轮取 50）；signup-credit 43 条同取。去重后库外条目以「干净长期免费档」为主，本轮新增 3 条入库候选（MongoDB Atlas M0 / Val Town / Hookdeck），另有 deepset Studio（100 pipeline hours）、Checkly Hobby（10 monitors + 1,000 browser checks）、Knock（10,000 消息）、Logto（50k MAU）、Kinde（10,500 MAU）、Laminar（1 GB trace）留候选；Ably 500 MAU、Base44 25 credits、Svix、Novu、Doppler、Infisical、Loops 面值过小继续排除。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aifree.dev/ 直读 206 KB（245 offers / 208 no card / 4 deadlines）。New this week 仍只有 Mistral Education Plan 与 OpenSEO；「Ending next」为 Google Gemini Free Student Plan（2026-12-31 截止，非 AI 核心免费档且需学生邮箱）；Top verified picks 首位是 AgentRouter（网关型，不采信）。无新增入库条目。"
+      "observation": "https://aifree.dev/ 直读 206.9 KB（正文 10.1 KB）：245 offers / 208 no card / 4 deadlines；New this week 仍只有 Mistral Education Plan（$165，需教育身份）与 OpenSEO（开源 SEO）；Ending next 为 Google Gemini Free Student Plan（2026-12-31，需学生邮箱）。两者资格门槛不符「普通开发者可直接领取」，不入库。"
     },
     {
       "id": "aispoils",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-06T03:30:00Z",
-      "lastSuccessAt": "2026-11-06T03:30:00Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 40 条仍为 2026-07 的历史条目（pubDate 2026-07-06~07-08），无新增，属长期未更新源；本轮未用于发现。"
+      "observation": "https://aifuli.dev/rss.xml 本轮 40 条（18.8 KB），pubDate 仍停在 2026-07-08（站方未更新），条目全部已在库（CodeBuddy 500 积分、通义灵码、OpenCode、TRAE 等），仅作存量对照。"
     },
     {
       "id": "token-pencil",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://token.pencilai.top/ 直读 64.9 KB：24 项免费内容 / 15 优惠 / 9 刚结束。A 级榜首仍是 Kilo Code 免费模型网关（16 个 :free 模型、200 次/小时/IP），但**官方 gateway 文档写「Balance check: Before proxying the request, the gateway verifies you have sufficient balance」**，与「免账号免 key」的社区说法不符，继续排除；Step 5 Preview 为阶跃一周限免（约 11-15 到期），属短期促销不单独立条。"
+      "observation": "https://token.pencilai.top/ 直读 78.7 KB（正文 14.0 KB）：「24 项免费内容 / 15 优惠 / 9 刚结束」。Kilo Code 条目仍称「官方书面允许免费模型免鉴权访问」，与此前官方文档「Balance check」表述冲突，维持不入库；Qoder CN 千问 3.8-Flash 免费条目已延期、与库内记录一致。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-09T03:53:19Z",
-      "lastSuccessAt": "2026-11-09T03:53:19Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 直读 234 KB：items 110 个品牌，generated 仍为 2026-10-26T12:00:00Z，New arrivals 无新增品牌，本轮未采纳候选。"
+      "observation": "https://www.usefree.space/brands_new.json 直读 234.4 KB，brands/deals 结构与上轮一致；本轮头条仍为已入库品牌（Cerebras、SiliconFlow、Rime 等），未出现未入库且面值达标的新条目。"
     },
     {
       "id": "linux-do",
@@ -173,10 +173,13 @@
         "rss"
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
-      "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
+      "status": "restricted",
+      "checkedAt": "2026-11-10T04:38:53Z",
       "lastSuccessAt": "2026-11-09T22:31:45Z",
-      "lastFailure": null,
+      "lastFailure": {
+        "at": "2026-11-10T04:38:53Z",
+        "reason": "https://linux.do/c/welfare/36.rss 普通 curl（curl/8.7.1，未改 UA）返回 HTTP 403，本轮未取得订阅内容；保留上次成功时间，未换指纹或代理绕过。"
+      },
       "canVerifyOfficial": false,
       "observation": "https://linux.do/c/welfare/36.rss 本轮 25 条（62.9 KB）：无新增可核福利。相关帖均指向既有条目或已排除对象——「华为云积分兑换代金卷有货了」（3143812，既有 huawei 系 pending 的社区口径）、「gumloop 每月100美金」（3145373，需 Lenny's Product Pass，已排除）、「基元律动免费模型」（3146447，无官方条款）、K-EXAONE（3145490，已入库）、RelayRouter ¥3.5 与各类中转站推广。"
     },
@@ -195,11 +198,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://rss.nodeseek.com/ 本轮 20 条（10.2 KB），全为账号交易、求机、闲聊与家宽拼车；仅「羊毛 Kem 消费10u送5u黄金」「Plasma One 送一天 Premium」两条消费类，非 AI/云资源福利，不采纳。"
+      "observation": "https://rss.nodeseek.com/ 本轮 20 条（10.2 KB），全为账号交易、求机、合租与闲聊（如「出 lowend cloud 年付 49.99」「165 收 Colab 2500 CU」），无正式免费福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -236,11 +239,11 @@
       ],
       "entryUrl": "https://lowendbox.com/feed/",
       "status": "readable",
-      "checkedAt": "2026-11-01T22:17:26Z",
-      "lastSuccessAt": "2026-11-01T22:17:26Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 curl 普通匿名读取 200；20 条 RSS，已解析（频道「LowEndBox」）。"
+      "observation": "https://lowendbox.com/feed/ 本轮 20 条（389.4 KB），为商家软文与抽奖（RackNerd 抽奖、GenixNode、Kainode、HostNamaste 等），无 AI/云免费档，继续仅作价格信号。"
     },
     {
       "id": "v2ex",
@@ -324,15 +327,12 @@
         "html"
       ],
       "entryUrl": "https://freeaiapis.org/",
-      "status": "unavailable",
-      "checkedAt": "2026-11-08T15:37:21Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
-      "lastFailure": {
-        "at": "2026-11-08T15:37:21Z",
-        "reason": "curl TLS 握手失败（SSL_ERROR_SYSCALL，000），本轮未取得内容"
-      },
+      "status": "readable",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "列表页无新增免费 API 档位，与库存无明显冲突。"
+      "observation": "https://freeaiapis.org/ 直读 37.4 KB，清单结构不变；站点仍以返利/网关类条目为主，本轮未出现带官方条款的新条目。"
     },
     {
       "id": "github-pack",
@@ -440,11 +440,11 @@
       ],
       "entryUrl": "https://vps.lowseek.ai/data/deals.json",
       "status": "readable",
-      "checkedAt": "2026-11-09T03:53:19Z",
-      "lastSuccessAt": "2026-11-09T03:53:19Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "deals.json 直读 178 KB：83 条 records（上轮 81），新增 2 条为常规 VPS 月付促销，无免费额度或 $10 以上赠金，未采纳。"
+      "observation": "https://vps.lowseek.ai/data/deals.json 直读 180.7 KB，records 结构与上轮一致；11-09~11-10 新增帖子集中在小商家低配年付（Kainode、GenixNode、EnderHost 等），无免费档，仅作价格参考，不入库。"
     },
     {
       "id": "serverhunter",
@@ -525,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://www.nodeloc.com/c/internet/5.rss 本轮 25 条（206 KB）：新增信号仍是「华为云服务器一直白嫖续费方法」（117184，既有 pending 的社区口径）与多条 Muse 账号转卖/代注册（117157/117167/117170，不采信），无新的官方可核福利。"
+      "observation": "https://www.nodeloc.com/c/internet/5.rss 本轮 25 条（102.7 KB），多为论坛杂谈与账号代注册（muse 代注册、能量交易），其中「华为云服务器，一直白嫖续费方法」属个人经验帖而非官方条款，不采纳。"
     },
     {
       "id": "aideal",
@@ -3008,6 +3008,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（214 KB，正文 14 KB），Free Forever $0 卡 8 项额度（7,500 MAU / 10 租户 / 3 SSO / 1 OIDC 联邦应用 / 5 测试用户 / 10,000 M2M / 2,000 MAC / 2,000 MATK）+ 8 项核心能力全内联，并明写「No overages. Upgrade required to exceed limits.」。"
+    },
+    {
+      "id": "mongodb-atlas-pricing",
+      "name": "MongoDB Atlas 定价与免费集群限制",
+      "url": "https://www.mongodb.com/cloud/atlas/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.mongodb.com/cloud/atlas/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "定价页直读 705.9 KB（正文 27 KB）可读：M0「Free forever」512 MB / 32 MB sort memory / 100 ops/s、Flex $0.011/小时（上限 $30/月）。配套 docs 限制页 https://www.mongodb.com/docs/atlas/reference/free-shared-limitations.md（markdown 孪生页 17.5 KB，URL 加 .md 即可）给出单项目 1 个 Free cluster、500 连接、100 库/500 集合等限制；docs 写 Free cluster 可启用每日快照（保留 4 份），与定价页「Free 档不含备份服务」口径不一致，引用时需注明出处。"
+    },
+    {
+      "id": "val-town-pricing",
+      "name": "Val Town 定价",
+      "url": "https://www.val.town/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.val.town/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 403（Cloudflare 挑战，4.7 KB 壳），r.jina.ai 渲染 1.3 KB 可读且条款全内联：Free 100,000 runs/day、Unlimited public vals、MCP、15 min cron、1 min wall clock、3 days 日志；Pro $21/月、Business $167/月起。渲染文本已足够核对额度，无需登录。"
+    },
+    {
+      "id": "hookdeck-pricing",
+      "name": "Hookdeck 定价",
+      "url": "https://hookdeck.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://hookdeck.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-10T04:38:53Z",
+      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直读 203.5 KB（正文 9.1 KB），Developer「Always $0/month」10,000 events / 3-day retention / 1 user 与 FAQ（重试免费、超额锁控制台）均为静态内联，无需渲染；Team $39/月起、Growth $499/月起。"
     }
   ]
 }
