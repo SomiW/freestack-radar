@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 2026-11-11T00:33Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 129）与 type=signup-credit（44 条）。去重后入库 3 条：Logto（5 万 MAU 免费）、Hyperbrowser（5,000 credits=$5）、Serper（2,500 次查询）；三者官方页均直读可核。排除：Make/Zapier/Ably/ZenRows/Base44/Novu/Svix/Doppler/Kinde（面值低或此前证据冲突）、Scrapfly（1,000 credits≈$0.15，面值过低）、Snowflake（signup 页无 $400 数值，perq 口径未获官方印证）、Baseten（官方未给数值）、Railway/Vapi/Cerebras/Fireworks/Stability（$0.25–$5 一次性，面值低）、ScraperAPI/ScrapingBee（试用期短）。"
+      "observation": "本轮 2026-11-11T10:44Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 129）与 type=signup-credit（44 条）。去重后新增 1 条：Lindy（$50 credits、免绑卡、7 天有效）。其余条目（Make/Zapier/Ably/ZenRows/Base44/Kinde/Novu/Portkey/Kilo/Scrapfly/ScraperAPI/Snowflake/Baseten/Railway/Vapi/SiliconFlow/Stability/Cerebras）仍面值低、无官方数值或与官方口径冲突，排除。Mastra 条目仍写「Starter free / 24 CPU hours」，与官方现页（Free $0 / 40 vCPU-hours）不符，perq 侧更新滞后。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-10T17:37:21Z",
-      "lastSuccessAt": "2026-11-10T17:37:21Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 2026-11-10T17:35Z 直读（29.7 KB）：246 offers / 208 no card / 4 deadlines，本週新增仅「Sail Research Free Credits」「Mistral Education Plan」；Mistral 教育计划需学生资质、Sail 官方 pricing 页此前 404，均未入库。"
+      "observation": "本轮首页 29.7 KB 可读：新增量为 Sail Research（$165/1年，官方 /pricing 此前 404）、AgentRouter、SmarToken $5，均无官方可核页面或面值偏低；Gemini 学生计划与 Groq/ElevenLabs 库内已有。无新增入库。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aispoils.com/ 直读 15.1 KB：页面标「2055 条在架 / 37 条限时 / 13 个类别」（上轮 2053/37）；今日新增仍为 Cheapllm（无额度数值 + 带 aff，未采信）；最新收录出现 Runpod Startup Program（创业扶持、需审核，未核）。分类计数：免费 API 额度 749、免费 AI 工具 728、学生 136、创业扶持 112、VPS 78。"
+      "observation": "本轮首页 14.9 KB：站内收录已到 2,060 条（免费 API 751、AI 工具 731、VPS 78、GPU 47），首屏仍以站内检索为主，「最新羊毛」区异步加载不可读；本轮无新增可核实线索。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://token.pencilai.top/ 直读 82.9 KB（与上轮同体积）：头部仍为 Kilo Code 免费网关、火山方舟新用户免费推理、华为 CodeArts、阿里云百炼、硅基流动 14 元、百度 Comate，均为库内已覆盖或人工待办；本轮无新可核实官方免费档。"
+      "observation": "本轮首页 82.9 KB 可读，条目与上轮基本一致，未见新的官方页可核候选。"
     },
     {
       "id": "tokentab",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 200（23.5 KB，正文约 700 B）：情报站调研时点为 2026-10-30，仅工具/模型卡片索引，无可核实的本轮新增条款。"
+      "observation": "本轮 9.4 KB 可读，仍为国内厂商优惠汇总，无新增可核官方条款。"
     },
     {
       "id": "usefree",
@@ -174,14 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
-      "lastFailure": {
-        "at": "2026-11-10T04:38:53Z",
-        "reason": "https://linux.do/c/welfare/36.rss 普通 curl（curl/8.7.1，未改 UA）返回 HTTP 403，本轮未取得订阅内容；保留上次成功时间，未换指纹或代理绕过。"
-      },
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://linux.do/c/welfare/36.rss 25 条：双 11 抽奖（600 刀额度）、中转站返额（Moonup/RelayRouter/TeamoRouter，带 aff）、PT 邀请码为主；「mlh联合Grok Premium」「qclaw 迁移送积分」均为第三方中转口径，无官方条文，未采信。"
+      "observation": "本轮读福利区 RSS（25 条）：新增线索「联通云 双11 AI 云桌面免费送 + ECS 2核4G 11.11元/6个月」，已回官方 cucloud.cn/bwnnov.html 核实并入库 pending。其余多为中转站/富可敌国广告（VelaMost、NEXA、YesCode、RelayRouter、君の星辰等），属转售非官方，排除；「qwen code 1.x + qoder auth 领 500 credit」只有社区帖、docs.qoder.com 无对应活动页，未入库。"
     },
     {
       "id": "nodeseek",
@@ -198,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://rss.nodeseek.com/ 20 条：VPS 二手交易、Team/Ultra 车位、账号买卖，以及《Anthropic 11 月 12 日更新不支持地区限制策略》讨论；无新增可核实 AI/云免费福利。"
+      "observation": "本轮 RSS 20 条，内容以 VPS 二手交易、机房涨价与小秘书/OVH 讨论为主，无可用新福利线索；未产生候选。"
     },
     {
       "id": "lowendtalk",
@@ -525,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://www.nodeloc.com/c/internet/5.rss 25 条：uppcoder 免费容器帖仍在（已于上轮入库）、其余为 UlziX 公益机、FurryBox 邀请码、Muse 注册经验等个人分享，无官方条款。"
+      "observation": "本轮 RSS 25 条：出现同一条联通云双11线索（已入库）、腾讯云双11 58 元/年（库内已有 double11 条目）、Termini Pro 限时 0 元（桌面工具，非云/额度资源，排除）。"
     },
     {
       "id": "aideal",
@@ -3291,6 +3288,48 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-11T00:33Z 直连 200（71.5 KB，正文 95 KB 静态内联）：注册送 2,500 次查询、免绑卡；付费四档 $50/50k–$3,750/12.5M（$1.00–$0.30 per 1k），credits 6 个月有效；/pricing 路径返回 404，价目在首页。"
+    },
+    {
+      "id": "unicom-cloud",
+      "name": "联通云活动页",
+      "url": "https://www.cucloud.cn/bwnnov.html",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.cucloud.cn/bwnnov.html",
+      "status": "readable",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-11T10:44Z 直连 200（170.4 KB）：规则文本内联在页面组件配置里可读（活动时间、新客户定义、限购、云桌面不含 OS 授权），但商品卡规格与库存走接口异步加载，云桌面 CPU/内存/时长与 Token Plan 额度需登录下单页确认。"
+    },
+    {
+      "id": "lindy-pricing",
+      "name": "Lindy Pricing",
+      "url": "https://www.lindy.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.lindy.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-11T10:44:46Z",
+      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-11T10:44Z 直连 200（15.4 KB 全内联）：$50 赠送、免绑卡、7 天有效期与全部 credits 档位价目一次读完，无需渲染代理。"
     }
   ]
 }
