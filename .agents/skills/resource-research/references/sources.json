@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 2026-11-11T10:44Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 129）与 type=signup-credit（44 条）。去重后新增 1 条：Lindy（$50 credits、免绑卡、7 天有效）。其余条目（Make/Zapier/Ably/ZenRows/Base44/Kinde/Novu/Portkey/Kilo/Scrapfly/ScraperAPI/Snowflake/Baseten/Railway/Vapi/SiliconFlow/Stability/Cerebras）仍面值低、无官方数值或与官方口径冲突，排除。Mastra 条目仍写「Starter free / 24 CPU hours」，与官方现页（Free $0 / 40 vCPU-hours）不符，perq 侧更新滞后。"
+      "observation": "本轮 2026-11-11T20:57Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 132）。50 条结果与库内已收录高度重合（Kiro/LiveKit/Daily/Val Town/Deepset/Deno/Hookdeck/PostHog/Convex/Fireworks/MongoDB/Portkey/Bolt/v0/Coderabbit/Lovable/Mastra/Checkly/Knock/Logto/Aiven/Deploy/Devin/Antigravity/opencode 均已在库），未出现可核实的新福利；仍被排除的低面值或冲突项：Make/Zapier/Ably/ZenRows/Base44/Kinde/Novu/Svix/Kilo/ChatGPT 学习页（无数值）。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 29.7 KB 可读：新增量为 Sail Research（$165/1年，官方 /pricing 此前 404）、AgentRouter、SmarToken $5，均无官方可核页面或面值偏低；Gemini 学生计划与 Groq/ElevenLabs 库内已有。无新增入库。"
+      "observation": "本轮首页 29.1 KB 可读：248 offers · 210 no card · 4 deadlines，本周新增仅 PixelSniff（图片检测 5 次/日）与 TokScript（转写），面值过低不入库；Gemini 学生计划（Ends Dec 31, 2026）与库内一致。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 14.9 KB：站内收录已到 2,060 条（免费 API 751、AI 工具 731、VPS 78、GPU 47），首屏仍以站内检索为主，「最新羊毛」区异步加载不可读；本轮无新增可核实线索。"
+      "observation": "本轮首页 8.1 KB：2,061 条在架（免费 API 752 / AI 工具 731 / 学生 136 / 创业 112 / VPS 78 / GPU 47），「最新羊毛」区仍异步加载不可读；最新收录为 EasySociable、Prompt Generator、Cheapllm、Runpod/Phala Startup，均无官方数值或属创业资质，不新增。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 82.9 KB 可读，条目与上轮基本一致，未见新的官方页可核候选。"
+      "observation": "本轮首页 115 KB 可读：24 项免费 / 63 免费模型与方案 / 39 优惠。本轮据此发现 MOSS API（platform.moss.cn）nex-n2.6 限时免费并完成官方核实入库；其余条目（七牛 Conatus 1024 活动页已 404、MonkeyCode 每日 10M 官网无该数值、SenseNova 公测页 404、ZenMux 免费模型组无官方限速口径）均未能取得官方依据，只留候选。Kilo 免费网关仍因官方 Balance check 与「免鉴权」说法冲突而排除。"
     },
     {
       "id": "tokentab",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读福利区 RSS（25 条）：新增线索「联通云 双11 AI 云桌面免费送 + ECS 2核4G 11.11元/6个月」，已回官方 cucloud.cn/bwnnov.html 核实并入库 pending。其余多为中转站/富可敌国广告（VelaMost、NEXA、YesCode、RelayRouter、君の星辰等），属转售非官方，排除；「qwen code 1.x + qoder auth 领 500 credit」只有社区帖、docs.qoder.com 无对应活动页，未入库。"
+      "observation": "本轮 RSS `/c/welfare/36.rss` 直读 19 KB / 25 帖（2026-11-11 07:54–15:36Z）。可核实线索 3 条：天翼云 TeleAgent「白嫖积分 4h8g」（落地页 agent.teleai.com.cn 为纯壳，无官方额度）、Nex-N2.6 免费（→ MOSS API 官方模型表已核实入库）、SuperGrok 1 个月（referral 码 + MLH 账号满 30 天，属推广码不入库）。其余为抽奖、邀请码与中转站广告。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 20 条，内容以 VPS 二手交易、机房涨价与小秘书/OVH 讨论为主，无可用新福利线索；未产生候选。"
+      "observation": "本轮 RSS 直读 3.9 KB / 25 条，以二手交易、甲骨文/谷歌账号与跨境网络讨论为主；「谷歌 300 赠金绑卡」「Google AI Pro 被退」两条为个案与风控经历，无官方额度页，不新增。"
     },
     {
       "id": "lowendtalk",
@@ -863,11 +863,11 @@
       ],
       "entryUrl": "https://hkcloudx.com/cloud.html",
       "status": "restricted",
-      "checkedAt": "2026-11-10T17:37:21Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
       "lastSuccessAt": null,
       "lastFailure": {
-        "at": "2026-11-10T17:37:21Z",
-        "reason": "cloud.html 直连 200（137 KB）但正文含 296 处 Vue 占位符（{{lang.…}}），套餐与价格未服务端渲染；r.jina.ai 渲染仅回「暂无推荐配置」与「0.00」。第 17 轮未取得固定套餐价。"
+        "at": "2026-11-11T20:57:00Z",
+        "reason": "cloud.html 直连 200（137 KB）但正文仍是 Vue 占位符（{{lang.…}}/{{item.…}}），套餐表与价格未服务端渲染；未取到固定套餐价（第 18 轮）。"
       },
       "canVerifyOfficial": true,
       "observation": "直连 200（137 KB）仍为 Vue 配置器外壳：正文只有服务器类型标签，价格区仍是 {{...}} 占位符（第 14 轮），套餐型号与 MiniV6 NAT 档不可判定。"
@@ -929,11 +929,11 @@
       ],
       "entryUrl": "https://yunzhi.play.cn/ai/",
       "status": "restricted",
-      "checkedAt": "2026-11-10T17:37:21Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
       "lastSuccessAt": "2026-11-03T03:35:39Z",
       "lastFailure": {
-        "at": "2026-11-10T17:37:21Z",
-        "reason": "直连 200 但正文 1,304 B / 6 字纯壳，仍无签到规则、额度与有效期（第 8 轮）。"
+        "at": "2026-11-11T20:57:00Z",
+        "reason": "直连 200（1.3 KB）/ r.jina.ai 渲染仅回图片列表与「晚上好」，无签到规则、额度与有效期（第 9 轮）。"
       },
       "canVerifyOfficial": true,
       "observation": "直连 200 仅 1.3 KB 外壳（去标签正文 4 字符「云智手机」），无签到/时长/额度条款（第 6 轮）。"
@@ -953,11 +953,11 @@
       ],
       "entryUrl": "https://docs.memoh.ai/zh/guides/quick-start",
       "status": "readable",
-      "checkedAt": "2026-11-10T17:37:21Z",
-      "lastSuccessAt": "2026-11-10T17:37:21Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮 2026-11-10T17:37Z 直读（89 KB，正文 2.9 KB）与 r.jina.ai 渲染（8.4 KB）均只有安装、登录、建 Bot 步骤，仍无免费档/2C2G 配置条文（第 8 轮）。"
+      "observation": "本轮 quick-start 文档直连 200（89 KB，正文 8.9 KB），但通篇无 free/免费档描述，未出现 2 vCPU / 2 GB 或任何额度数值；库内 pending 草案仍缺官方依据（第 9 轮）。"
     },
     {
       "id": "docker-sandboxes-promo",
@@ -2347,7 +2347,7 @@
     {
       "id": "ovh-ai-endpoints",
       "name": "OVHcloud AI Endpoints",
-      "url": "https://endpoints.ai.cloud.ovh.net/pricing",
+      "url": "https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-troubleshooting",
       "priority": "P0",
       "kind": "official",
       "topics": [
@@ -2356,13 +2356,13 @@
       "methods": [
         "html"
       ],
-      "entryUrl": "https://endpoints.ai.cloud.ovh.net/pricing",
+      "entryUrl": "https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-troubleshooting",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "模型目录 https://endpoints.ai.cloud.ovh.net/pricing 直读 142.7 KB：Qwen3Guard-Gen-0.6B / 8B、stable-diffusion-xl-base-v10 等价格列仍为 Free。限速与免费档见 help.ovhcloud.com getting-started 文档（匿名 2 rpm/IP/模型、带 API key 400 rpm/项目/模型，超限 429）；本轮新增读到「Discovery 模式（未绑卡）项目签发的 API Key 不能使用该服务」。计费与退役表有官方 .md 孪生。"
+      "observation": "本轮 AI Endpoints 产品页（www.ovhcloud.com/en/public-cloud/ai-endpoints/，140 KB）已改版：只保留 Base（Flow limit 400 requests per minute per project、99.5% SLA、按 token 计费）与 Batch（Beta）说明，原「价格表 Free 标记」区与匿名档说明被删除；匿名 2 rpm / 带 Key 400 rpm 的口径改由官方故障排查文档承载（docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-troubleshooting，104 KB），本条 url 已改为该文档。Free 模型清单需经 Model Catalogue 复核，本轮未取到等价页面。"
     },
     {
       "id": "assemblyai-pricing",
@@ -3330,6 +3330,27 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-11T10:44Z 直连 200（15.4 KB 全内联）：$50 赠送、免绑卡、7 天有效期与全部 credits 档位价目一次读完，无需渲染代理。"
+    },
+    {
+      "id": "moss-api-docs",
+      "name": "MOSS API 模型列表与计费",
+      "url": "https://platform.moss.cn/docs/models",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://platform.moss.cn/docs/models",
+      "status": "readable",
+      "checkedAt": "2026-11-11T20:57:00Z",
+      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（249 KB HTML，正文 2.6 KB）：模型表按「模型名称 / 说明 / 计费标准 / 流式输出 / 异步」逐行给出，nex-n2.6、moss-vl-1.0、moss-vl-realtime-1.0、moss-live-1.0 计费列为「限时免费 0 积分」，TTS/ASR/图像模型给出 ¥ 与积分双单价；页首公告 MOSS-Image API 自 11-11 12:00 开始计费。免费期结束时间与速率限制均未公布。"
     }
   ]
 }
