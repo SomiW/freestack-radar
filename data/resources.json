@@ -18888,6 +18888,129 @@
       ],
       "confidence": "high",
       "confidenceReason": "免费额度、超额单价、附加项（Radar、自定义域名）与绑卡要求均取自官方定价页与 FAQ 原文；缺项为 Enterprise SSO 价格与地区限制。"
+    },
+    {
+      "discoveredAt": "2026-11-11T00:34:09Z",
+      "startsAt": null,
+      "endsAt": null,
+      "autoRenewal": "no",
+      "id": "hyperbrowser-free-5000-credits-202611",
+      "title": "Hyperbrowser 免费档：$0 含 5,000 credits（等值 $5，可跨浏览器/沙箱/抓取/Agent 四个产品使用）",
+      "provider": "Hyperbrowser",
+      "category": "cloud",
+      "description": "Hyperbrowser 把无头浏览器、代码沙箱、网页抓取 API 与 Agent 运行时整合成一套「credits 通用」的平台：同一份额度可以在浏览器会话、沙箱、Web 数据抓取和 Agent 之间任意分配。免费档给 5,000 credits，按官方口径约等于 50 小时浏览器时长或 5,000 次页面抓取，适合给爬虫/Agent 项目做原型验证。",
+      "quota": "Free 档 $0：含 5,000 credits（官方换算 1,000 credits = $1 用量，即等值 $5），四个产品（browsers / sandboxes / web data / agents）共用；1 个并发会话；7 天数据留存。付费档对照：Startup $30/月（30,000 credits、25 并发、30 天留存）、Scale $100/月（100,000 credits、100 并发、30 天留存、高级住宅代理）、Enterprise 定制（另含 14 天全功能试用）。Free/Startup/Scale 使用单价一致，额度用尽后可额外加购 credits。",
+      "eligibility": "官方定价页写「Included with a free account 5,000 credits」「Free $0 to start · 5,000 credits included」，注册免费账号即得，未提邀请码、学生/企业资质或地区限制。是否强制绑卡官方未明说（页面未出现「no credit card」表述），按 unknown 记录。",
+      "regions": "官方定价页未列国家/地区限制；Enterprise 档支持 ACH 与年付发票。",
+      "validity": "免费档 credit 为账号初始赠额，官方未公布有效期与是否按月重置；付费档按账期计费，升级即时生效并按比例折算，降级在当期账期结束时生效。",
+      "deadlineNote": "无活动截止日期；5,000 credits 用尽后需加购或升级，官方未写免费档自动扣费机制（无绑定支付方式时不产生扣费）。",
+      "benefitValue": "按官方 1,000 credits = $1 口径，5,000 credits 等值 $5，约等于 50 小时浏览器时长或 5,000 次抓取；与库内 Kernel（$5/月循环额度）、Airtop（1,000 credits/月）相比属于一次性但可跨四类产品使用的入口额度。",
+      "officialUrl": "https://www.hyperbrowser.ai/pricing",
+      "claimUrl": "https://www.hyperbrowser.ai/",
+      "discoveryUrl": "https://perq.sh/api/search?type=signup-credit&audience=anyone&sort=newest&limit=50",
+      "status": "active",
+      "creditCard": "unknown",
+      "costNotes": "额度用尽即无法继续调用，需加购 credits 或升级付费档；免费档仅 1 并发、7 天留存，长任务与数据留存类需求需付费。官方未写免费档绑卡要求，也未公布 credit 有效期。",
+      "lastVerifiedAt": "2026-11-11T00:34:09Z",
+      "nextReviewAt": "2026-11-12T00:34:09Z",
+      "evidence": [
+        {
+          "url": "https://www.hyperbrowser.ai/pricing",
+          "summary": "直连 200（16.6 KB，主体服务端渲染）：Free 卡片「$0 to start · 5,000 credits included」「All four products · 1 concurrent session · 7 days of data retention」；页首「Included with a free account 5,000 credits」「Enough for 50 browser hours or 5,000 fetched pages at base rates」；换算「1,000 credits = $1 in usage」；付费档 Startup $30/月（30,000 credits、25 并发、30 天留存）、Scale $100/月（100,000 credits、100 并发、30 天留存、premium residential proxies）、Enterprise（14-day trial with full access）；FAQ「Paid plans support additional credit purchases」。",
+          "checkedAt": "2026-11-11T00:34:09Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-11T00:34:09Z",
+          "status": "active",
+          "note": "新增并标 active/high：官方定价页给出 5,000 credits、1,000 credits=$1、四产品通用、1 并发与 7 天留存；未知项为免费档绑卡要求与 credit 有效期，已披露。"
+        }
+      ],
+      "confidence": "high",
+      "confidenceReason": "额度数值、等值换算、并发/留存限制与付费档对照均为官方定价页原文；缺项仅为免费档是否绑卡与 credit 有效期（官方未写）。"
+    },
+    {
+      "discoveredAt": "2026-11-11T00:34:09Z",
+      "startsAt": null,
+      "endsAt": null,
+      "autoRenewal": "no",
+      "id": "logto-free-50000-mau-202611",
+      "title": "Logto 免费档：$0/月 最高 5 万 MAU + 50K tokens，免绑卡（含 M2M 与审计日志）",
+      "provider": "Logto",
+      "category": "cloud",
+      "description": "Logto 是开源的 OIDC 身份服务，云托管版免费档直接把 MAU 上限放到 5 万：包含用户认证、机器对机器（M2M）应用、账号设置类 Account API、审计日志与用户管理，且明写「no credit card required」。对同时需要 B2C 登录与 M2M 令牌的团队，它比按 MRU 计费的同类产品更容易起步；也有自托管方案。",
+      "quota": "Free $0/月：最高 50,000 MAU、50K tokens（access token 计入）、3 个应用、M2M 应用、Account API、审计日志与用户管理；无需信用卡。Pro 从 $24/月：MAU 与应用数不限、含 50K tokens 后按 $0.08/100 extra tokens 计费、自定义 claims、用户模拟、Passkey 登录、隐藏 Logto 品牌；Enterprise 另含 SLA 与迁移支持。自托管（开源版）单独计价。",
+      "eligibility": "官方定价页原文「Free $0/mo For starting out and trying Logto, no credit card required.」——注册即可用，免绑卡；未提邀请码、学生/企业资质限制。",
+      "regions": "官方定价页未列地区限制；数据驻留与合规选项归 Enterprise 档。",
+      "validity": "长期免费档，官方未标注结束日期；MAU 与 token 按自然月统计，降级时各档配额不同需自行确认。",
+      "deadlineNote": "无活动截止日期；超出 50K token 或 5 万 MAU 需升级 Pro（$24/月起），免费档不产生超额账单。",
+      "benefitValue": "按 Pro $24/月起步价折算，5 万 MAU 免费档相当于每月省 $24 起；与库内 Clerk（5 万 MRU）、Descope（7,500 MAU）、WorkOS（100 万 MAU）对照，Logto 的差异点是把 M2M 与审计日志一起放进免费档。",
+      "officialUrl": "https://logto.io/pricing",
+      "claimUrl": "https://cloud.logto.io/",
+      "discoveryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
+      "status": "active",
+      "creditCard": "not-required",
+      "costNotes": "只有 access token 计入 50K token 配额，超额需升级 Pro；自定义域名、Passkey 与隐藏品牌属付费特性。自托管可绕开额度限制但需自行运维。",
+      "lastVerifiedAt": "2026-11-11T00:34:09Z",
+      "nextReviewAt": "2026-11-12T00:34:09Z",
+      "evidence": [
+        {
+          "url": "https://logto.io/pricing",
+          "summary": "直连 200（131.9 KB，正文 14.7 KB 静态内联）：Free 卡片「$0/mo」「no credit card required」「Up to 50,000 MAU」「50K tokens」，含 user authentication / machine-to-machine app / Account APIs / audit logs and user management；对比表 MAU 行 Free「Up to 50K」、Pro「Unlimited*」并「50K included $0.08 per 100 extra」、Applications Free「3」；Pro 起价 $24/mo；FAQ 支持自行降级到 Free。",
+          "checkedAt": "2026-11-11T00:34:09Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-11T00:34:09Z",
+          "status": "active",
+          "note": "新增并标 active/high：官方定价页给出 5 万 MAU、50K tokens、3 应用、免绑卡与 Pro $24/月对照；未知项为地区限制，已披露。"
+        }
+      ],
+      "confidence": "high",
+      "confidenceReason": "免费额度、token 计费口径、应用数与免绑卡表述均为官方定价页原文；缺项为地区限制与自托管计价细节。"
+    },
+    {
+      "discoveredAt": "2026-11-11T00:34:09Z",
+      "startsAt": null,
+      "endsAt": null,
+      "autoRenewal": "no",
+      "id": "serper-free-2500-queries-202611",
+      "title": "Serper 免费额度：注册送 2,500 次 Google 搜索查询，免绑卡",
+      "provider": "Serper",
+      "category": "ai",
+      "description": "Serper 是面向 AI/爬虫场景的 Google SERP API，直接实时查询 Google、不做缓存，支持 Search/Images/News/Maps/Places/Videos/Shopping/Scholar/Patents/Autocomplete 十类端点。新账号送 2,500 次查询且无需信用卡，适合给 RAG、SEO 工具或竞品监控做冷启动；付费为一次性买 credits 的 top-up 模式，没有月订阅。",
+      "quota": "免费：注册即得 2,500 次查询，无需信用卡。付费（一次性 credits，6 个月有效）：Starter $50 / 50k 次（$1.00/1k）、Standard $375 / 500k 次（$0.75/1k）、Scale $1,250 / 2.5M 次（$0.50/1k）、Ultimate $3,750 / 12.5M 次（$0.30/1k）；Ultimate 默认限速 300 次/秒，其余档 50–200 次/秒。",
+      "eligibility": "官方首页原文「Get 2,500 free queries No credit card required」——注册账号即得，免绑卡；未提邀请码、学生/企业资质或地区限制。",
+      "regions": "官方首页未列地区限制；查询可指定国家与语言（location 参数）。",
+      "validity": "官方未公布 2,500 次免费查询的有效期（付费 credits 明确 6 个月）；余额归零后停止接受新查询。",
+      "deadlineNote": "无活动截止日期；免费额度用尽后需购买 credits，退款政策为首次购买 7 天内且用量未超 20%。",
+      "benefitValue": "按最低档 $1.00/1k 口径，2,500 次免费查询等值约 $2.50；与库内 Tavily、Exa、TinyFish（TinySearch 500 请求/小时）对照，Serper 的门槛在于「免绑卡 + 一次性额度」，适合先验证 SERP 数据质量。",
+      "officialUrl": "https://serper.dev/",
+      "claimUrl": "https://serper.dev/signup",
+      "discoveryUrl": "https://perq.sh/api/search?type=signup-credit&audience=anyone&sort=newest&limit=50",
+      "status": "active",
+      "creditCard": "not-required",
+      "costNotes": "无月订阅，只有一次性 credits；免费额度无明确有效期，用尽即停服。免费档并发与 QPS 官方未单独列出（页面只给 Ultimate 的 300 次/秒口径）。",
+      "lastVerifiedAt": "2026-11-11T00:34:09Z",
+      "nextReviewAt": "2026-11-12T00:34:09Z",
+      "evidence": [
+        {
+          "url": "https://serper.dev/",
+          "summary": "直连 200（71.5 KB，正文 95 KB 静态内联）：首屏「Get 2,500 free queries No credit card required」，页脚「Try 2,500 queries for free」；价目 Starter $50 / 50k credits（$1.00/1k）、Standard $375 / 500k（$0.75/1k）、Scale $1,250 / 2.5M（$0.50/1k）、Ultimate $3,750 / 12.5M（$0.30/1k），付费 credits「valid for 6 months」；FAQ 明示实时查询不缓存、余额归零停止接受查询、首次购买 7 天内未超 20% 可全额退款。",
+          "checkedAt": "2026-11-11T00:34:09Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-11T00:34:09Z",
+          "status": "active",
+          "note": "新增并标 active/high：官方首页与价目表给出 2,500 次免费查询、免绑卡、四档单价与 6 个月有效期；未知项为免费额度有效期与免费档 QPS，已披露。"
+        }
+      ],
+      "confidence": "high",
+      "confidenceReason": "免费额度、免绑卡、付费单价与有效期均为官方首页原文；缺项为免费额度自身有效期与免费档并发限制。"
     }
   ]
 }

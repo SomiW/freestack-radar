@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 2026-11-10T23:44Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 129、返回 50）与 type=signup-credit（44 条）、type=startup-program（0 条）；去重后仅 WorkOS AuthKit 为库内未收录（已入库），其余 13 个未覆盖域名（Make/Zapier/Ably/ZenRows/Base44/Kilo/Logto/Kinde/Novu/Svix/Doppler/OpenAI Codex）均面值偏低或此前已判定证据冲突。offset 参数无效（p2 与 p1 结果相同）。"
+      "observation": "本轮 2026-11-11T00:33Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 129）与 type=signup-credit（44 条）。去重后入库 3 条：Logto（5 万 MAU 免费）、Hyperbrowser（5,000 credits=$5）、Serper（2,500 次查询）；三者官方页均直读可核。排除：Make/Zapier/Ably/ZenRows/Base44/Novu/Svix/Doppler/Kinde（面值低或此前证据冲突）、Scrapfly（1,000 credits≈$0.15，面值过低）、Snowflake（signup 页无 $400 数值，perq 口径未获官方印证）、Baseten（官方未给数值）、Railway/Vapi/Cerebras/Fireworks/Stability（$0.25–$5 一次性，面值低）、ScraperAPI/ScrapingBee（试用期短）。"
     },
     {
       "id": "aifree",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://aispoils.com/ 直读 15.2 KB：页面标「2053 条在架 / 37 条限时 / 13 个类别」（上轮 2046/37）。「最新羊毛」区仍为前端异步加载；「今日新增」仅 1 条 Cheapllm（详情页只有「长期免费档 / 需注册」，无额度数值、且领取链接带 ref 参数 → 未采信）。其余为库内条目与创业扶持类。"
+      "observation": "https://aispoils.com/ 直读 15.1 KB：页面标「2055 条在架 / 37 条限时 / 13 个类别」（上轮 2053/37）；今日新增仍为 Cheapllm（无额度数值 + 带 aff，未采信）；最新收录出现 Runpod Startup Program（创业扶持、需审核，未核）。分类计数：免费 API 额度 749、免费 AI 工具 728、学生 136、创业扶持 112、VPS 78。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://token.pencilai.top/ 直读 82.9 KB：24 项免费 + 62 优惠 + 39 重置 + 0 刚结束。头部为 Kilo Code 免费网关（18 款可见 $0 模型）、火山方舟新用户免费推理额度（11.11 活动页口径单模型 50 万 / 累计 2,500 万、至 2026-11-30）、华为 CodeArts、阿里云百炼、硅基流动 14 元、百度 Comate，全部为库内已覆盖或已在人工待办；本轮未出现可核实的新官方免费档。"
+      "observation": "https://token.pencilai.top/ 直读 82.9 KB（与上轮同体积）：头部仍为 Kilo Code 免费网关、火山方舟新用户免费推理、华为 CodeArts、阿里云百炼、硅基流动 14 元、百度 Comate，均为库内已覆盖或人工待办；本轮无新可核实官方免费档。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://www.usefree.space/brands_new.json 直读 22.7 KB（与上轮同体积）：头部品牌仍为库内条目（Rime、Cerebras、SiliconFlow 等），本轮无未入库且面值达标的新免费档。"
+      "observation": "https://www.usefree.space/brands_new.json 直读 22.7 KB：`generated` 仍为 2026-10-26T12:00:00Z（静态快照已 16 天未更新），brands 201 / deals 465 / items 110；items 以通用 SaaS（1Password、Airtable、Asana、Canva、Coursera）为主，无新增 AI/云开发类免费档。本来源本轮无入库价值。"
     },
     {
       "id": "linux-do",
@@ -174,14 +174,14 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": {
         "at": "2026-11-10T04:38:53Z",
         "reason": "https://linux.do/c/welfare/36.rss 普通 curl（curl/8.7.1，未改 UA）返回 HTTP 403，本轮未取得订阅内容；保留上次成功时间，未换指纹或代理绕过。"
       },
       "canVerifyOfficial": false,
-      "observation": "https://linux.do/c/welfare/36.rss（curl + 浏览器 UA）25 条：仍以抽奖、PT 邀请码、中转站推广为主；「mlh联合Grok Premium」为上轮已排除项，「qclaw迁移到workbuddy能获取一千积分」无官方条文（第三方中转站口径），未采信。"
+      "observation": "https://linux.do/c/welfare/36.rss 25 条：双 11 抽奖（600 刀额度）、中转站返额（Moonup/RelayRouter/TeamoRouter，带 aff）、PT 邀请码为主；「mlh联合Grok Premium」「qclaw 迁移送积分」均为第三方中转口径，无官方条文，未采信。"
     },
     {
       "id": "nodeseek",
@@ -198,11 +198,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://rss.nodeseek.com/ 20 条：主题为 VPS 交易、Muse/Claude 讨论与账号买卖，无新增可核实 AI/云免费福利。"
+      "observation": "https://rss.nodeseek.com/ 20 条：VPS 二手交易、Team/Ultra 车位、账号买卖，以及《Anthropic 11 月 12 日更新不支持地区限制策略》讨论；无新增可核实 AI/云免费福利。"
     },
     {
       "id": "lowendtalk",
@@ -525,11 +525,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://www.nodeloc.com/c/internet/5.rss 25 条（15.4 KB）：有效线索为「2G内存的免费新容器 uppcoder」→ 顺链找到官方定价页并入库（Spark €0 常驻栈）；其余为 Muse 代注册、PT 邀请码、UlziX 公益机等个人分享，无官方条款。"
+      "observation": "https://www.nodeloc.com/c/internet/5.rss 25 条：uppcoder 免费容器帖仍在（已于上轮入库）、其余为 UlziX 公益机、FurryBox 邀请码、Muse 注册经验等个人分享，无官方条款。"
     },
     {
       "id": "aideal",
@@ -3231,6 +3231,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-10T23:44Z 直连 200（67.6 KB，正文 8.1 KB 静态内联）：User Management/AuthKit $0/月、前 100 万 MAU 免费、超出每百万 $2,500/月；Radar 前 1,000 次检查免费、每 5 万次 $100/月；Custom Domain $99/月；FAQ 明确开发阶段免绑卡、上生产前才需付费方式。"
+    },
+    {
+      "id": "hyperbrowser-pricing",
+      "name": "Hyperbrowser 定价",
+      "url": "https://www.hyperbrowser.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.hyperbrowser.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-11T00:33Z 直连 200（16.6 KB，主体服务端渲染）：Free 档 5,000 credits、1,000 credits=$1、四产品通用、1 并发、7 天留存；Startup $30/月、Scale $100/月、Enterprise 14 天试用。免费档是否绑卡官方未写。"
+    },
+    {
+      "id": "logto-pricing",
+      "name": "Logto 定价",
+      "url": "https://logto.io/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://logto.io/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-11T00:33Z 直连 200（131.9 KB，正文 14.7 KB 静态内联）：Free $0/月、5 万 MAU、50K tokens、3 应用、免绑卡、含 M2M 与审计日志；Pro 起 $24/月、50K tokens 后 $0.08/100 extra。"
+    },
+    {
+      "id": "serper-pricing",
+      "name": "Serper 定价",
+      "url": "https://serper.dev/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://serper.dev/",
+      "status": "readable",
+      "checkedAt": "2026-11-11T00:34:23Z",
+      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮 2026-11-11T00:33Z 直连 200（71.5 KB，正文 95 KB 静态内联）：注册送 2,500 次查询、免绑卡；付费四档 $50/50k–$3,750/12.5M（$1.00–$0.30 per 1k），credits 6 个月有效；/pricing 路径返回 404，价目在首页。"
     }
   ]
 }
