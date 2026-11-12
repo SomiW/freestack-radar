@@ -7934,6 +7934,11 @@
           "url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
           "summary": "r.jina.ai 渲染连续第 2 轮成功（curl 直连仍只回 1.2 KB 导航壳）：活动期 2026-02-15~2026-12-31、每用户 2,500 万 tokens、体验期自确认起 30 天、限流 3,000 tokens/min、同一用户身份下所有账户合计仅可领取一次；仅部分自营模型支持额度（官方举例 Qwen3.5-35B-A3B 不支持）。条款与库内一致。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
+          "summary": "r.jina.ai 渲染 200（21.8 KB）：正文「本次营销活动时间为2026年2月15日-2026年12月31日…2500万tokens免费额度，限时30天」「每个用户最多3000个tokens/min」「仅部分自营模型支持…暂不支持合作模型、机密模型」逐条仍在，与上轮一致。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -7986,10 +7991,15 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：r.jina.ai 连续第二轮取到 21.8 KB 正文，额度/期限/限流与「同一身份仅一次」条款均与库内一致，零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 8 轮复核：活动窗口至 2026-12-31、2500 万 tokens/30 天、3000 tokens/min 均未变。"
         }
       ],
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z"
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z"
     },
     {
       "id": "aliyun-bailian-new-user-free-quota-2026",
@@ -10527,8 +10537,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方促销页直接确认 US$100 额度、需付款方式验证身份但试用期不扣费、仅限未注册过试用的新客户、GPU 套餐除外、未用额度自动失效；官方定价页 FAQ 给出 60 天窗口与扣费模型，活动当前在架且条款完整。",
-      "lastVerifiedAt": "2026-11-10T10:58:15Z",
-      "nextReviewAt": "2026-11-12T20:57:00Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://www.akamai.com/lp/free-credit-100",
@@ -10579,6 +10589,11 @@
           "url": "https://www.akamai.com/lp/free-credit-100",
           "summary": "促销落地页直连 403（398 B 403 页），改只读渲染读取（25.4 KB）：主标题「Try Akamai Cloud with US$100 in credits*」，脚注指向 Promotion Redemption Rules；「60 天」窗口在 www.linode.com/pricing FAQ 仍有效——原文例句「if you received a $100 credit for 60 days, then that $100 credit is automatically applied to your account…Your credit card gets charged for any active services after the promotional credit window expires」。优惠页自身的 FAQ 折叠区本轮未渲染，付款方式核验条款未在本轮读数中出现。",
           "checkedAt": "2026-11-10T10:58:15Z"
+        },
+        {
+          "url": "https://www.akamai.com/lp/free-credit-100",
+          "summary": "直连 akamai.com/lp/free-credit-100 与 linode.com/pricing 均 curl 403（398 B / 2.9 KB），改用只读渲染：落地页标题「Try Akamai Cloud with a US$100 Credit*」与主标题确认 US$100 额度仍在，FAQ 折叠区（含 60 天窗口原文）未展开，本轮未取到 60 天原句；Promotion Redemption Rules 页只写「Promo codes expire after one year」与「每个企业仅可兑换一次」，口径不同不可替代。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -10626,6 +10641,11 @@
           "at": "2026-11-10T10:58:15Z",
           "status": "active",
           "note": "24h 复核：直连仍 403，渲染可取；US$100 与 60 天窗口经 linode.com/pricing FAQ 复核一致，落地页 FAQ 折叠区未取到。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：$100 额度确认仍在；60 天窗口本轮不可读，沿用上轮官方 FAQ 结论并已在 evidence 注明。"
         }
       ]
     },
@@ -15844,8 +15864,8 @@
       "status": "active",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://www.tinyfish.ai/pricing",
@@ -15881,6 +15901,11 @@
           "url": "https://www.tinyfish.ai/pricing",
           "summary": "直连 200（24.8 KB，静态页）：TinySearch 30 请求/分 + 500 请求/小时、$0.00/请求；TinyFetch 150 URL/分 + 1,000 URL/天、$0.00/URL；TinyAgent $0.016/步、TinyBrowser $0.002/分、TinyMonitor $0.005/次检查、新号赠 $8；7 项额度数值全部在页命中，条款与上轮一致。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://www.tinyfish.ai/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（142 KB，正文 6.2 KB）：TinySearch 仍 $0.00/请求、30 req/min、500 req/hour；TinyFetch $0.00/url、150 urls/min、1,000 urls/day；TinyAgent $0.016/步、TinyBrowser $0.002/分，与上轮一致。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -15913,6 +15938,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：TinySearch/TinyFetch 免费额度与计费单价零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：TinySearch/TinyFetch 免费限速与计价未变。"
         }
       ],
       "costNotes": "TinySearch / TinyFetch 不扣 Wallet；TinyAgent、TinyBrowser、TinyMonitor 从 Wallet 预付余额扣费（$10 起充，可自动续充）。限速提升需联系销售而非购买；企业档另含 ISO 27001、SSO、VPC、99.99% SLA。",
@@ -15925,7 +15955,7 @@
       "provider": "Google（Antigravity）",
       "category": "ai",
       "description": "Google Antigravity 官方定价页把面向个人的 Individual 档标为 $0/month 且已 Generally Available：包含多种 agent 模型访问、不限次 Tab 补全、不限次命令请求，agent 调用按「basic weekly rate limits」与 5 小时窗口限流。免费档可用的推理模型为 Gemini 3.8 Flash、Claude Sonnet 4.6 (thinking)、Claude Opus 4.6 (thinking)、GPT-OSS-120B，Gemini 4 Argon 与 3.7/3.6 Flash、3.1 Pro 需付费档。",
-      "quota": "$0/月：不限次 Tab 补全、不限次命令请求、多个 agent 模型（受 basic weekly rate limits + 5 小时窗口约束，数值官方未公布）。免费档可用的 agent 模型（官方 docs/models「Free & Google AI Plus」列）：Gemini 3.8 Flash ✅、Claude Sonnet 4.6 (thinking) ✅*、Claude Opus 4.6 (thinking) ✅*、GPT-OSS-120b ✅*；* 标注「Will be removed on November 18, 2026」。新增 Claude Sonnet 5.5 (thinking) / Opus 5.5 (thinking) 仅 Google AI Pro 及以上可用（免费档 ❌）；Gemini 4 Argon、Gemini 3.7 Flash、Gemini 3.6 Flash、Gemini 3.1 Pro 在免费档不可用。",
+      "quota": "$0/月：不限次 Tab 补全、不限次命令请求、多个 agent 模型（受 basic weekly rate limits + 5 小时窗口约束，数值官方未公布）。官方 docs/models「Free & Google AI Plus」列免费档可用模型矩阵（本轮逐表读取）：Gemini 3.8 Flash ✅、Claude Sonnet 4.6 (thinking) ✅*、Claude Opus 4.6 (thinking) ✅*、GPT-OSS-120b ✅*；* 脚注仍为「Will be removed on November 18, 2026」。免费档不可用：Gemini 4 Carbon ❌、Gemini 4 Argon ❌（† 付费 Pro 或符合条件的高端设备试用）、Gemini 3.7 Flash ❌、Gemini 3.6 Flash ❌、Gemini 3.1 Pro ❌、Claude Sonnet 5.5 ❌、Claude Opus 5.5 ❌（** 脚注：仅 Google AI Pro 非试用订阅可用）。",
       "benefitValue": "零成本获得不限次的编辑器 Tab 补全与命令请求，以及 Gemini 3.8 Flash 与 Claude/GPT-OSS 模型的受限 agent 调用；官方未公布具体周额度数值，无法折算金额。对照同类 Agent IDE 免费档（如 Copilot Free 每月 2,000 次补全），补全不限次是主要差异点。",
       "eligibility": "使用 Google 账号登录 Antigravity（App / CLI / IDE 扩展 / SDK）后选择 Individual 免费档即可；官方定价页未要求订阅、未写绑卡。",
       "regions": "官方未公布地区限制；可用性以 Google 账号所在地区与 Antigravity 支持区域为准，本次未核实逐地区清单。",
@@ -15940,8 +15970,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://antigravity.google/pricing",
@@ -15982,6 +16012,11 @@
           "url": "https://antigravity.google/pricing",
           "summary": "antigravity.google/docs/models 直连 200（34.9 KB，正文 13.6 KB，表格服务端渲染）：Free & Google AI Plus 列仍为 Gemini 3.8 Flash ✅、Claude Sonnet 4.6 (thinking) ✅、Claude Opus 4.6 (thinking) ✅、GPT-OSS-120b ✅（三者标「Will be removed on November 18, 2026」）；Claude Sonnet 5.5 / Opus 5.5 仅 Google AI Pro（非试用）可用；Gemini 4 Argon/3.7 Flash/3.6 Flash/3.1 Pro 免费档不可用。与库内一致。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://antigravity.google/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（150 KB，正文 6.8 KB）：docs/models 的 Plan×Model 表逐格读取，Free & Google AI Plus 列为 ✓ 的仍是 Gemini 3.8 Flash、Claude Sonnet 4.6、Claude Opus 4.6、GPT-OSS-120b；新增模型 Gemini 4 Carbon 在免费档为 ❌，Claude Sonnet 5.5 / Opus 5.5 需 Pro 非试用订阅（** 脚注）；* 脚注仍写「Will be removed on November 18, 2026」。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -16014,6 +16049,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：docs/models 免费档模型矩阵未变，Sonnet 4.6 / Opus 4.6 / GPT-OSS-120b 仍标 2026-11-18 移除。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：免费档可用模型未变；新增 Gemini 4 Carbon 不可用于免费档、Sonnet/Opus 5.5 需 Pro 非试用订阅，已补入 quota。"
         }
       ],
       "costNotes": "免费档不产生订阅费用，但 agent 调用受周/5 小时窗口限流，超限需等窗口重置或升级 Google AI Pro / Ultra（含 AI credit pool）。Gemini 4 Argon 仅付费档与符合条件的高端设备试用可用。是否需绑定支付方式官方未说明。",
@@ -16041,8 +16081,8 @@
       "status": "active",
       "creditCard": "required",
       "autoRenewal": "yes",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://apify.com/pricing/creator-plan",
@@ -16078,6 +16118,11 @@
           "url": "https://apify.com/pricing/creator-plan",
           "summary": "直连 200（54.9 KB）：$1/月 Creator 档（6 个月一次性 $6）、一次性 $500 平台额度须前 6 个月用完、每月消费上限 $85、Actor $0.2/计算单元、住宅代理 $8/GB（含 30 IP，月上限 10 GB）、Google SERP $2.5/1,000 次、Unblocker $1.5/1,000 请求；6 项数值全部命中，条款未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://apify.com/pricing/creator-plan",
+          "summary": "curl 直连 --compressed + Chrome UA 200（361 KB，正文 6.2 KB）：页首仍写「Start for $1 a month, with $500 of platform usage for the first 6 months」，$85/月上限、$0.2/CU 等细项与上轮一致，条款无变化。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -16110,6 +16155,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：Creator 档 $1/月、$500 额度与月消费上限 $85 零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：$1/月 + 前 6 个月 $500 用量额度条款未变，刷新核实时间。"
         }
       ],
       "costNotes": "必须实际支付 $6 订阅费（非免费赠金）；额度用尽后按 $0.2/CU 与代理单价继续计费，且每月消费硬上限 $85。Store 全量 Actor 在 Creator 计划下不可用，只能用 Universal Actors，等于用权益换访问范围。个人技术培训 $150/小时、支持仅社区。",
@@ -17321,8 +17371,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免费额度按运行时长折算消耗（$0.0000166667/GB·秒，空闲与代理不计费），超出后需付费充值；免费档并发 5、回放 1 天、managed auth 3 连接、vault 3 个。官方 FAQ 另提供 YC 创业公司折扣（需单独申请）。",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://kernel.sh/pricing",
@@ -17348,6 +17398,11 @@
           "url": "https://kernel.sh/pricing",
           "summary": "直连 200（14.2 KB）：Free $0/月 + 每月 $5 免费额度、5 并发浏览器、live view、stealth、managed auth 3 连接、回放 1 天、3 个 vault；Hobbyist $30/月（$10 额度、10 并发）、Start-up $200/月（$50 额度、150 并发）；条款与上轮一致。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://kernel.sh/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（78 KB，正文 3.5 KB）：free 档仍为「$5 / month free credits」+ 5 并发浏览器 + managed auth 3 连接 + 回放 1 天 + 3 vault；FAQ「Your first $5 in usage is free」仍在，两处口径差异与上轮相同。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -17375,6 +17430,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：Free 档 $5/月额度与 5 并发零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：$5/月额度与并发/vault 限制未变。"
         }
       ],
       "confidence": "high",
@@ -17390,20 +17450,20 @@
       "provider": "Inference.net",
       "category": "ai",
       "description": "Inference.net 提供托管推理、LLM 网关路由与 observability（Observe/Trace/Train/Evaluate）。官方定价页最低档为 Pay as you go：$0 平台费 + usage，但每个套餐都含月度 credit，$0 档明确包含每月 100 万次 Gateway 请求、100 万条 tracing spans、14 天日志保留、1 个 seat 与 30 req/min 限速。适合把多模型路由和 trace 采集放到同一处，先用免费额度跑通。",
-      "quota": "Pay as you go $0 + usage：1,000,000 Gateway 请求/月、1,000,000 tracing spans/月、日志保留 14 天、1 seat、30 req/min。Growth $250/月：一次性 $50 开户额度、50,000,000 请求/月、50,000,000 spans/月、日志不限保留、不限 seat、250 req/min。Enterprise 定制（专属基础设施、SLA、专属支持）。",
+      "quota": "历史条款（已失效）：Pay as you go $0 + usage 曾含 1,000,000 Gateway 请求/月、1,000,000 tracing spans/月、日志 14 天、1 seat、30 req/min。2026-11-12 复核时官方定价页只剩 Operator $9/月（$10 月度额度）与 Studio $49/月（$60 月度额度）两档订阅，已无 $0 档与「1M included」表述。",
       "eligibility": "页内提供「Start for free」自助注册入口（inference.net/register/）；官方未写邀请码、学生或企业资质要求，也未说明是否必须绑定支付方式。",
       "regions": "官方定价页未列地域限制；Enterprise 档提供 dedicated infrastructure。",
-      "validity": "免费额度为按月重置的 included usage（1M requests / 1M spans per month），官方未公布结束日期。",
-      "deadlineNote": "无截止日期；超出每月 100 万请求/100 万 spans 后按 pay-as-you-go 用量计费，或升级 Growth（$250/月）。",
+      "validity": "免费档已被官方撤下（2026-11-12 复核，定价页与首页均不再出现 $0 档）；现仅保留 Free 账户层级 30 RPM 的限速说明，文档称免费 credits 改由 operator 授予，非自助领取。",
+      "deadlineNote": "官方未发布单独停发公告；以定价页/首页/账单文档改版为准。此前已领取的账户余额以 Billing 卡片显示为准。",
       "benefitValue": "每月 100 万次网关请求 + 100 万条 trace 的免费额度，可替代自建 LLM gateway 与 tracing 后端，按同类 SaaS 常见的按量计价口径即每月数十美元级的基础设施成本。",
       "officialUrl": "https://inference.net/pricing",
       "claimUrl": "https://inference.net/register/",
       "discoveryUrl": "https://perq.sh/offers/inference-net-free",
-      "status": "active",
+      "status": "unavailable",
       "creditCard": "unknown",
-      "costNotes": "平台费 $0，但 1M 请求/1M spans 之外的用量按 pay-as-you-go 计费；模型推理 token 费用另计。限速 30 req/min、1 seat、日志仅保留 14 天；官方未说明超量时是否强制绑卡。",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "costNotes": "现最低付费档 Operator $9/月含 $10 Gateway 额度、Studio $49/月含 $60；模型推理按 token 另计。免费请求额度不再提供。",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://inference.net/pricing",
@@ -17429,6 +17489,21 @@
           "url": "https://inference.net/pricing",
           "summary": "直连 200（19.7 KB，终态 /pricing/）：Pay as you go $0 + usage 仍为 1M Gateway 请求/月、1M tracing spans/月、14 天数据保留、1 seat、30 req/min；Growth $250/月对照未变。与库内一致（页面 URL 末尾仅多一个斜杠）。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://inference.net/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（37.7 KB，正文 2.2 KB）：定价页只剩「Operator $10 monthly allowance $9 / mo」「Studio $60 monthly allowance $49 / mo」，全文已无 Pay as you go $0、1M Gateway requests、1M spans、14-day retention 任何字样；首页同步改版为订阅制，docs/billing 仅写「if your account includes promotional or plan credit」。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        },
+        {
+          "url": "https://inference.net/",
+          "summary": "curl 直连 --compressed + Chrome UA 200（24.4 KB）：首页改为「Inference for developers」，通篇无 free tier / 1M requests 表述，仅列模型单价与订阅入口。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        },
+        {
+          "url": "https://inference.net/docs/rate-limits",
+          "summary": "curl 直连 --compressed + Chrome UA 200（8.5 KB）：仍列「Free 30 RPM / Paid 1,000 RPM」，并写「Free-tier teams granted free credits by an operator are raised to 200 RPM」——免费层级保留但额度改为运营方授予，非自助 1M 请求。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -17456,10 +17531,15 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：1M Gateway 请求/月与 30 req/min 零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "unavailable",
+          "note": "第 7 轮复核发现免费档消失：官方定价页/首页/账单文档均无 $0 档，转 unavailable 并保留历史条款。"
         }
       ],
       "confidence": "high",
-      "confidenceReason": "官方定价页逐项给出免费档的请求量、spans 量、日志保留与限速，并列出 Growth 对照；缺项为绑卡要求与超量计费的具体触发方式。"
+      "confidenceReason": "2026-11-12 三个官方页面（inference.net/pricing、inference.net 首页、inference.net/docs/billing）一致显示无 $0 免费档，docs/rate-limits 仍列 Free 层级 30 RPM 但无免费请求额度；属官方撤下，非抓取失败。"
     },
     {
       "discoveredAt": "2026-11-06T20:16:47Z",
@@ -17483,8 +17563,8 @@
       "status": "active",
       "creditCard": "unknown",
       "costNotes": "免费档 $0，但三项额度均为硬上限，超出即需升级；PAYG 按 $0.29/连接、$0.72/小时、$0.5/GB 计费，$50/月订阅含等额月度抵扣。企业功能（SAML SSO、HIPAA BAA、SCIM、自托管）不在免费档。",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://nango.dev/pricing",
@@ -17510,6 +17590,11 @@
           "url": "https://nango.dev/pricing",
           "summary": "直连 200（32 KB）：Free $0/月 10 connections + 10 小时 compute time + 10 GB 数据传输（hard-capped、月度重置）、1,000+ API 与 MCP；PAYG $50/月含 $50 抵扣（$0.29/connection、$0.72/小时、$0.5/GB）；条款未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://nango.dev/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（135 KB，正文 6.8 KB）：Free limits 表仍为 10 connections / 10 hours per mo / 10GB per mo，Pay-as-you-go $0.29/$0.72/$0.5 单价未变。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -17537,6 +17622,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：Free 档 10 connections / 10 小时 compute 零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：Free 档三项 hard cap 与付费单价未变。"
         }
       ],
       "confidence": "high",
@@ -18345,6 +18435,11 @@
           "url": "https://axiom.co/pricing",
           "summary": "直连 200（273.7 KB，静态全内联）：Personal $0/月永久 500 GB/月加载计算 + 10 GB·小时查询 + 25 GB 存储 + 30 天保留；Axiom Cloud $25/月平台费对照（Always Free 1 TB 加载 / 100 GB·小时 / 100 GB 存储）未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://axiom.co/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（1.49 MB，正文 11.5 KB）：Personal「$0 / month Permanent」「500 GB/mo data loading compute」「10 GB-hours query compute」「25 GB storage」「30-day retention」原文仍在；Axiom Cloud $25 平台费 + 1 TB/100 GB-hrs/100 GB Always Free 与上轮一致。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -18367,10 +18462,15 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：Personal 档 500 GB 加载 / 10 GB·小时查询零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：Personal 免费档与 Always Free 额度均未变，刷新核实时间。"
         }
       ],
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z"
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z"
     },
     {
       "id": "blacksmith-3000-free-ci-minutes-202611",
@@ -18416,6 +18516,11 @@
           "url": "https://www.blacksmith.sh/pricing",
           "summary": "直连 200（23.3 KB）：每种 runner 仍标 3,000 free min/mo；超额 $0.004（Ubuntu x64）/$0.0025（ARM）/$0.008（Windows）/$0.08（macOS M4）每分钟；Docker layer caching 与 sticky disks $0.50/GB·月、静态 IP $100/IP·月 未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://www.blacksmith.sh/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（150 KB，正文 6.1 KB）：Ubuntu x64/ARM、Windows、macOS 各 runner 仍标「3,000 free min/mo」，单价 $0.004/$0.0025/$0.008 与上轮一致；页面新增 Series C（Sequoia 领投、$1B 估值）公告，不影响免费额度。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -18438,10 +18543,15 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：3,000 免费 runner 分钟与超额单价零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：3,000 免费分钟/月未变，新增 Series C 公告属公司动态。"
         }
       ],
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z"
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z"
     },
     {
       "id": "thunder-compute-student-20-credit-202611",
@@ -18487,6 +18597,11 @@
           "url": "https://www.thundercompute.com/students",
           "summary": "直连 200（35 KB）：学生认证一次性 $20.00 账户额度、注册学校邮箱自动到账、仅限 RTX A6000 与 L40、用尽转按量；条款未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://www.thundercompute.com/students",
+          "summary": "curl 直连 --compressed + Chrome UA 200（175 KB，正文 2.3 KB）：仍写「Sign up with your student email to get $20 of free Thunder Compute credit」「Only students enrolled at US universities qualify」「Use on A6000 or L40 GPUs」，与上轮一致。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -18509,10 +18624,15 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：学生 $20 一次性额度与限定 GPU 型号零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：$20 学生额度与「仅美国高校」限制未变。"
         }
       ],
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z"
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z"
     },
     {
       "id": "huawei-codearts-agent-personal-free-202611",
@@ -18940,7 +19060,7 @@
       "provider": "Preferred Networks（PLaMo）",
       "category": "ai",
       "description": "Preferred Networks 官方 PLaMo API 定价页列四档（Free / Standard / Provider / On-Premise）。Free 档写明「PLaMo APIを気軽に試せる無料プラン」，注册后即可使用 PLaMo 3.1 Prime，Input / Output 单价均为 0 円 per 1M tokens，含 OpenAI 兼容 Chat Completions API、PLaMo Chat、Web 検索・Deep Research API；官方同时注明「利用量・レートリミットに制限あり」。搜索类 API 有回数上限，2026-11-30 前为每日 60 次、每月 200 次免费（Deep Research 每日约 2 次）。Standard 档 Input 60 円 / Output 250 円 per 1M tokens。",
-      "quota": "Free 档：PLaMo 3.0 / 3.1 Prime 计费单价 Input 0 円 / Output 0 円（每 1M tokens，128k tokens 以内单价口径）；含 OpenAI 兼容 Chat Completions API、PLaMo Chat、Web 検索・Deep Research API。利用量与速率限制存在但官方未公布数值；搜索回数上限为 2026-11-30 前每日 60 次、每月 200 次免费。对照 Standard：Input 60 円 / Output 250 円 每 1M tokens，且解除搜索回数上限、大幅放宽限速。",
+      "quota": "Free 档：PLaMo 3.0 / 3.1 Prime 计费单价 Input 0 円 / Output 0 円（每 1M tokens，128k tokens 以内单价口径）；PLaMo 3.0 Fin Beta 亦为 0 円，但标注「試用版・1利用者あたり24時間で50回まで」。含 OpenAI 兼容 Chat Completions API、PLaMo Chat、Web 検索・Deep Research API。Free 档整体「利用量・レートリミットに制限あり」但未公布具体数值；搜索回数上限为 2026-11-30 前每日 60 次、每月 200 次免费（Deep Research 约每日 2 次）。对照 Standard：Input 60 円 / Output 250 円 每 1M tokens，且解除搜索回数上限、大幅放宽限速。",
       "benefitValue": "官方未公布 Free 档可用量上限，无法折算固定金额；按 Standard 单价（Input 60 円 / Output 250 円 per 1M tokens）衡量，若实际可用量在每月数十万至数百万 tokens，等值约数十至数百日元量级，因限速数值未披露不作具体估算。",
       "eligibility": "注册 Preferred Networks PLaMo 账号即可，官方写「登録後すぐにPLaMo 3.1 Primeを無料で試せます」；页面未公布国籍、学生或企业身份限制，也未说明是否仅限日本境内主体。",
       "regions": "官方定价页未列地区限制；服务为日文界面、日元计价，模型主打日语能力。",
@@ -18955,8 +19075,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://plamo.preferredai.jp/api",
@@ -18972,6 +19092,11 @@
           "url": "https://plamo.preferredai.jp/api",
           "summary": "r.jina.ai 渲染 200（4.7 KB，正文全内联）：Free 档 PLaMo 3.0 / 3.1 Prime Input 0 円 / Output 0 円 每 1M tokens（128k tokens 以内口径），含 PLaMo Chat 与 Web 検索/Deep Research；搜索 2026-11-30 前每日 60 次、每月 200 次免费（Deep Research 约每日 2 次）；Standard Input 60 円 / Output 250 円。与库内一致。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://plamo.preferredai.jp/api",
+          "summary": "静态 HTML 仅 1.8 KB（纯壳），改用只读渲染：Free 档仍为 PLaMo 3.0/3.1 Prime Input 0 円 / Output 0 円；新增可见限制「PLaMo 3.0 Fin Beta…試用版・1利用者あたり24時間で50回まで」；搜索优惠仍为 2026-11-30 前 1 日 60 回・月 200 回；Standard 仍 60 円/250 円。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -18989,6 +19114,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：Free 档 0 円/0 円与搜索 60 次日/200 次月（至 2026-11-30）零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：主力模型 0 円未变；新增 Fin Beta 试用版 50 回/24h 限制，已写入 quota。"
         }
       ],
       "costNotes": "Free 档 0 円，无订阅费；官方明示「利用量・レートリミットに制限あり」但不公布数值。对比表把「入出力プロンプトを学習に利用しない」「ZDR」列为 Standard 及以上特性，Free 档未作此承诺，涉密或敏感数据不宜走 Free。超出限速需转 Standard（Input 60 円 / Output 250 円 per 1M tokens）。",
@@ -19001,7 +19131,7 @@
       "provider": "OpenCode（Anomaly）",
       "category": "ai",
       "description": "OpenCode 官方 Console 文档（docs/zen）价格表把 13 个模型列为 Free：Big Pickle、Iceman、Inkling 2 Small、Crouton Alpha、GLM-5.3-Flash、DeepSeek V4.1 Flash、Beam、Flint 40B、MiMo-V2.6-Flash、Nemotron 3 Ultra、Nemotron 3.5 Lightning、Nemotron 3.5 Super VL、Jev 1.13，Input / Output / Cached Read（部分含 Cached Write）全部标 Free。文档逐条注明这些模型「free on OpenCode for a limited time」，团队用于收集反馈与改进模型；免费档聊天模型只能通过 OpenCode 客户端调用，其他客户端需付费模型或 OpenCode Go 订阅。部分模型有地区限制：Crouton Alpha 与 Beam 不对中国（含香港、澳门）开放。",
-      "quota": "免费模型（每 1M tokens 的 Input / Output / Cached Read 均 Free，共 13 个 -free 变体）：Beam Free、DeepSeek V4.1 Flash Free、Flint 40B Free、GLM-5.3-Flash Free、Iceman Free、Inkling 2 Small Free、Jev 1.13 Free、LongCat 2.5 Free、MiMo-V2.6-Flash Free、MiniMax M3.1 Flash Free、Nemotron 3 Ultra Free、Nemotron 3.5 Lightning Free、Nemotron 3.5 Super VL Free。已下架：Crouton Alpha Free（2026-11-09）、Pulse Alpha Free（2026-11-06）列入 Deprecated models；Big Pickle 仍在模型清单但已无 -free 变体。付费模型按量计费，对照价如 DeepSeek V4.1 Flash $0.30/$1.20、GLM-5.3-Flash $0.15/$0.50、Claude Opus 5.5 $4/$20、GPT-5.5 $5/$30、Gemini 3.8 Flash $1.50/$7.50。",
+      "quota": "免费模型（每 1M tokens 的 Input / Output / Cached Read 均 Free，共 14 个）：Big Pickle（无 -free 后缀但价格表三列均为 Free）、Beam Free、DeepSeek V4.1 Flash Free、Flint 40B Free、GLM-5.3-Flash Free、Iceman Free、Inkling 2 Small Free、Jev 1.13 Free、LongCat 2.5 Free、MiMo-V2.6-Flash Free、MiniMax M3.1 Flash Free、Nemotron 3 Ultra Free、Nemotron 3.5 Lightning Free、Nemotron 3.5 Super VL Free。已下架：Crouton Alpha Free（2026-11-09）、Pulse Alpha Free（2026-11-06）列入 Deprecated models。付费对照价：DeepSeek V4.1 Flash $0.30/$1.20、GLM-5.3-Flash $0.15/$0.50、Claude Opus 5.5 $4/$20、GPT-5.5 $5/$30、Gemini 3.8 Flash 五折后 $0.75/$3.75。免费档模型需通过 OpenCode 客户端调用，其他客户端请用付费模型或 OpenCode Go。",
       "benefitValue": "13 个模型 $0 计费，按同页付费对照价折算（如 DeepSeek V4.1 Flash 官方付费价 $0.30/$1.20 per 1M tokens）可视为完全抵扣；官方未公布免费模型的调用上限或月度额度，实际价值取决于用量。",
       "eligibility": "注册 OpenCode Console 账号并在 Console 添加计费信息与额度后取 API key；免费档聊天模型限 OpenCode 客户端（TUI）调用，其它客户端需付费模型或 OpenCode Go 订阅。官方未提学生/企业身份门槛。",
       "regions": "Crouton Alpha 不对欧盟、阿富汗、白俄罗斯、中国（含香港与澳门）、柬埔寨、古巴、伊朗、伊拉克、利比亚、缅甸、朝鲜、巴基斯坦、俄罗斯、索马里、叙利亚、委内瑞拉等开放；Beam 不对中国（含香港与澳门）、俄罗斯、白俄罗斯、柬埔寨等开放；Inkling 2 Small 不对欧盟、俄罗斯等开放。其余免费模型未列地区限制。",
@@ -19016,8 +19146,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://opencode.ai/docs/zen/",
@@ -19033,6 +19163,11 @@
           "url": "https://opencode.ai/docs/zen/",
           "summary": "opencode.ai/docs/zen/ 302 到 docs/console/models/ 后直连 200（14.8 KB）：带 -free 后缀的 $0 模型仍为 13 个，但名单变动——新增 LongCat 2.5 Free、MiniMax M3.1 Flash Free；Crouton Alpha Free 于 2026-11-09、Pulse Alpha Free 于 2026-11-06 列入 Deprecated models；Big Pickle 仍在模型清单但已无 -free 变体。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://opencode.ai/docs/console/models/",
+          "summary": "curl 直连 --compressed + Chrome UA 200（91.8 KB）：价格表 107 行中 Input/Output/Cached Read 三列均为 Free 的共 14 条，较上轮多出 Big Pickle（big-pickle，此前为付费）；13 个 -free 变体逐一仍在；Deprecated 表仍列 Crouton Alpha Free（11-09）、Pulse Alpha Free（11-06）。页面新增「Free-tier chat models require OpenCode」限定。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -19050,6 +19185,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：免费模型仍为 13 个但名单轮换——新增 LongCat 2.5 Free、MiniMax M3.1 Flash Free；Crouton Alpha Free（11-09）与 Pulse Alpha Free（11-06）已下架；Big Pickle 无 -free 变体。官方入口 302 到 /docs/console/models/，已同步。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：Big Pickle 由付费转为 $0（免费模型 13→14），并新增「免费档需用 OpenCode 客户端」限定，已同步 quota。"
         }
       ],
       "costNotes": "$0 计费，无需订阅；官方「How it works」要求 Console 添加计费信息与额度，免费模型是否必须绑有效卡官方未逐字说明（第三方口径称需绑卡但 $0 计费）。限时模型随时可能下架或转付费；非 OpenCode 客户端只能走付费模型或 OpenCode Go 订阅。Crouton Alpha / Beam 等模型对中国大陆及港澳不可用。 2026-11-11 复核：免费名单为动态轮换，-free 变体随时增减（本轮新增 LongCat 2.5 / MiniMax M3.1 Flash，下架 Crouton Alpha / Pulse Alpha）。",
@@ -19670,8 +19810,8 @@
       "benefitValue": "对照 Pro 档 $20/月：免费档已覆盖 1/5 请求量、1/10 出网、1/5 活跃 CPU，按 Pro 单价折算约 $4/月量级；边缘部署 + KV 免运维，对个人项目属长期可用的免费后端。",
       "eligibility": "在 deno.com 注册账号后创建组织即可用 Free 档，无需付费订阅；官方定价页未写邀请码、学生或企业资质要求，也未说明是否需要绑定支付方式（本轮未注册实测）。",
       "regions": "官方定价页未列地区限制。",
-      "validity": "长期免费档（$0/月），请求/CPU/出网/KV 读写按月重置，KV 存储与版本存储按容量上限约束。",
-      "deadlineNote": "无活动截止日期；免费档长期在架，超限需升级 Pro 或被限流。",
+      "validity": "长期免费档（$0/月），请求/CPU/出网/KV 读写按月重置，KV 存储与版本存储按容量上限约束；官方已在 deno.com 全站挂出「Deno Deploy will be sunset in April 2027」横幅（2026-10-09 公告「Deno is joining Cloudflare」），免费档随产品在 2027-04 停服。",
+      "deadlineNote": "无活动截止日期；但 Deno Deploy 产品将于 2027 年 4 月停服（官方横幅 + 2026-10-09 博客公告），届时免费档随之终止，需提前迁移。",
       "officialUrl": "https://deno.com/deploy/pricing",
       "claimUrl": "https://dash.deno.com/",
       "discoveryUrl": "https://perq.sh/offers/deno-deploy-free",
@@ -19681,8 +19821,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://deno.com/deploy/pricing",
@@ -19698,6 +19838,16 @@
           "url": "https://deno.com/deploy/pricing",
           "summary": "直连 200（36.2 KB）：Free 1M 请求/月、20 GiB 出网、10 小时活跃 CPU、150 GiB-hr 内存、10 GiB 版本存储、10 个应用、1 并发构建、15 次构建/小时、KV 1 GiB + 100 万读 + 50 万写；Pro $20/月对照未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://deno.com/deploy/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（203 KB，正文 14.5 KB）：Free 档 1M 请求/月、20 GiB 出网、5 自定义域名、10 小时活跃 CPU、10 个应用等数值与上轮一致；页面顶部新增横幅「Deno Deploy will be sunset in April 2027 Read the announcement」。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        },
+        {
+          "url": "https://deno.com/blog",
+          "summary": "curl 直连 --compressed + Chrome UA 200：博客列表首条为 2026-10-09「Deno is joining Cloudflare」，与 Deploy 横幅「sunset in April 2027」对应；未见单独停服长文。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -19710,9 +19860,14 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：1M 请求/月、20 GiB 出网与 KV 额度零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：免费档配额未变；新增官方停服时间 2027-04（横幅），已写入 validity/deadlineNote。"
         }
       ],
-      "costNotes": "免费档 $0；Pro $20/月起，超量按 $2/百万请求、$0.20/GiB 出网、$0.10/小时 CPU 计费；Deno Deploy 与 Deno Subhosting 共用同一计价表。",
+      "costNotes": "免费档之外按 Pro $20/月（5M 请求、200 GiB 出网、50 小时 CPU）；产品将于 2027-04 停服，官方未公布迁移补偿或数据保留安排。",
       "confidence": "high",
       "confidenceReason": "12 项额度与三档对照价均取自官方定价页表格原文，条款全内联无 JS 依赖；未知项为是否需要绑卡，已在 eligibility 披露。",
       "id": "deno-deploy-free-1m-requests-202611"
@@ -19737,8 +19892,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://lovable.dev/pricing",
@@ -19754,6 +19909,11 @@
           "url": "https://lovable.dev/pricing",
           "summary": "直连 200（29 KB，仅 FAQ 有额度条文）：免费档每日 5 个 build credits（up to 30 a month）+ 每月 20 Cloud credits + 应用内 AI 功能；每日 build credits 当日有效不结转；付费档取消后回落 Free 档仅保留免费赠额。条款与库内一致。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://lovable.dev/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（197 KB，正文 7.5 KB）：免费档仍写「5 build credits (up to 30 a month), plus monthly grants of 20 Cloud credits」，与上轮一致。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -19766,6 +19926,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：每日 5 build credits（月上限 30）+ 20 Cloud credits 零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：每日 5 个 build credits（月上限 30）+ 20 Cloud credits 未变。"
         }
       ],
       "costNotes": "免费档 $0；Pro / Business 为订阅制，价格卡片由前端渲染本轮未取到数值，故不抄录具体月费。",
@@ -19793,8 +19958,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-10T23:44:53Z",
-      "nextReviewAt": "2026-11-11T23:44:53Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://www.descope.com/pricing",
@@ -19810,6 +19975,11 @@
           "url": "https://www.descope.com/pricing",
           "summary": "直连 200（214.5 KB）：Free Forever 7,500 MAU、10 租户、3 SSO、10,000 M2M、2,000 MAC/MATK，仍写「No overages. Upgrade required to exceed limits.」；条款未变。",
           "checkedAt": "2026-11-10T23:44:53Z"
+        },
+        {
+          "url": "https://www.descope.com/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（1.36 MB，正文 14 KB）：Free Forever 仍列 7,500 MAU、10 租户、3 SSO、1 联邦应用、5 测试用户、10,000 M2M、2,000 MAC、2,000 MATK，并保留「No overages. Upgrade required to exceed limits.」。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -19822,6 +19992,11 @@
           "at": "2026-11-10T23:44:53Z",
           "status": "active",
           "note": "复核（满 24 小时）：7,500 MAU 与 No overages 表述零变化。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：Free Forever 全部配额未变，刷新核实时间。"
         }
       ],
       "costNotes": "免费档 $0 且超额不扣费；Pro 档从 $249/月起（年付，10,000 MAU），Growth 从 $799/月起。",
@@ -20309,13 +20484,18 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免费档不自动扣费；自定义域名在 Spark 档未列出（Deploy 起 6 个、Team 16 个），免费档按平台分配的默认域名访问。AI 功能免费档仅限标准模型，付费档附 €2 Fast AI 一次性额度、充值自 €5 起。平台上线于 2026 年 10 月，稳定性待观察。",
-      "lastVerifiedAt": "2026-11-10T23:45:09Z",
-      "nextReviewAt": "2026-11-11T23:45:09Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://portal.uppcoder.com/pricing",
           "summary": "r.jina.ai 渲染 200（4.7 KB，正文全内联；直连 HTML 仅 4.6 KB 壳）：Spark「Free forever - 1 always-on stack」「€0/month」+ Stacks 1 / Databases 1 / DB Admin Tools 1 / IDEs 1 / Terminals 1 + Resources「CPU seconds a day 500 / stack」「Disk 2 GB / stack」「Memory 2 GB / stack」；FAQ「The free plan (Spark) has no time limit」「the free tiers need no card」「Every night each app's files and database are copied to a separate server…last seven days and one from each of the last four weeks」「60 days before」；对照价 Launch €5 / Deploy €15 / Team €39。",
           "checkedAt": "2026-11-10T23:45:09Z"
+        },
+        {
+          "url": "https://portal.uppcoder.com/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200 仅 16 KB 静态壳（档位按受众在客户端切换），改用只读渲染取到完整档位表：Spark「Free forever - 1 always-on stack」€0/月，500 CPU seconds a day/stack、2 GB disk、2 GB memory、1 数据库/1 IDE/1 终端；Launch €5（3,000 CPU 秒/日、5 GB 磁盘）、Deploy €15、Team €39 与上轮一致；FAQ 仍写「The free plan (Spark) has no time limit」。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -20323,6 +20503,11 @@
           "at": "2026-11-10T23:45:09Z",
           "status": "active",
           "note": "新增并标 active/high：官方定价页给出 Spark 档 €0、1 个常驻 Stack、每日 500 CPU 秒、2 GB 内存/磁盘，FAQ 明确无时间限制且免绑卡；未知项为免费档自定义域名与超额处理，已披露。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：Spark 免费档配额与付费档价目未变；本轮定价页改为按受众分栏，静态 HTML 不含档位数字。"
         }
       ],
       "confidence": "high",
@@ -20350,13 +20535,18 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免绑卡仅限开发阶段，上生产前需补付费方式；自定义域名 $99/月、Enterprise SSO 为独立计费产品（价格未公开）；Radar 超额按每 5 万次检查 $100/月。",
-      "lastVerifiedAt": "2026-11-10T23:45:09Z",
-      "nextReviewAt": "2026-11-11T23:45:09Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://workos.com/pricing",
           "summary": "直连 200（8.1 KB 正文，静态全内联）：AuthKit / User Management 卡片「$0 / month Free」「Up to 1 million users Free」「Per additional 1M users $2,500 / mo」；Radar「First 1,000 checks Free」「Per 50k checks $100 / mo」；Custom Domain「$99 / mo」；FAQ「WorkOS is free to get started and you don't need to add a credit card until you are ready to move to production.」「WorkOS User Management is free for up to 1 million monthly active users. A user is considered active if they perform any user action…」。",
           "checkedAt": "2026-11-10T23:45:09Z"
+        },
+        {
+          "url": "https://workos.com/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（224 KB，正文 8 KB）：仍为「first 1M users free」「$2,500 / mo」超出单价、Radar 1,000 checks 免费、自定义域名 $99/mo，与上轮一致。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -20364,6 +20554,11 @@
           "at": "2026-11-10T23:45:09Z",
           "status": "active",
           "note": "新增并标 active/high：官方定价页给出 100 万 MAU 免费、超出每百万 $2,500/月，FAQ 明确开发阶段免绑卡；未知项为 Enterprise SSO 单价与地区限制，已披露。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：100 万 MAU 免费额度与超量单价未变。"
         }
       ],
       "confidence": "high",
@@ -20391,13 +20586,18 @@
       "status": "active",
       "creditCard": "unknown",
       "costNotes": "额度用尽即无法继续调用，需加购 credits 或升级付费档；免费档仅 1 并发、7 天留存，长任务与数据留存类需求需付费。官方未写免费档绑卡要求，也未公布 credit 有效期。",
-      "lastVerifiedAt": "2026-11-11T00:34:09Z",
-      "nextReviewAt": "2026-11-12T00:34:09Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://www.hyperbrowser.ai/pricing",
           "summary": "直连 200（16.6 KB，主体服务端渲染）：Free 卡片「$0 to start · 5,000 credits included」「All four products · 1 concurrent session · 7 days of data retention」；页首「Included with a free account 5,000 credits」「Enough for 50 browser hours or 5,000 fetched pages at base rates」；换算「1,000 credits = $1 in usage」；付费档 Startup $30/月（30,000 credits、25 并发、30 天留存）、Scale $100/月（100,000 credits、100 并发、30 天留存、premium residential proxies）、Enterprise（14-day trial with full access）；FAQ「Paid plans support additional credit purchases」。",
           "checkedAt": "2026-11-11T00:34:09Z"
+        },
+        {
+          "url": "https://www.hyperbrowser.ai/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（109 KB，正文 4.2 KB）：仍写「Included with a free account 5,000 credits」「1,000 credits = $1」、Free 1 并发 + 7 天留存，Startup $30/30,000 credits、Scale $100/100,000 credits 未变。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -20405,6 +20605,11 @@
           "at": "2026-11-11T00:34:09Z",
           "status": "active",
           "note": "新增并标 active/high：官方定价页给出 5,000 credits、1,000 credits=$1、四产品通用、1 并发与 7 天留存；未知项为免费档绑卡要求与 credit 有效期，已披露。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：5,000 credits 与并发/留存限制未变。"
         }
       ],
       "confidence": "high",
@@ -20432,13 +20637,18 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "只有 access token 计入 50K token 配额，超额需升级 Pro；自定义域名、Passkey 与隐藏品牌属付费特性。自托管可绕开额度限制但需自行运维。",
-      "lastVerifiedAt": "2026-11-11T00:34:09Z",
-      "nextReviewAt": "2026-11-12T00:34:09Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://logto.io/pricing",
           "summary": "直连 200（131.9 KB，正文 14.7 KB 静态内联）：Free 卡片「$0/mo」「no credit card required」「Up to 50,000 MAU」「50K tokens」，含 user authentication / machine-to-machine app / Account APIs / audit logs and user management；对比表 MAU 行 Free「Up to 50K」、Pro「Unlimited*」并「50K included $0.08 per 100 extra」、Applications Free「3」；Pro 起价 $24/mo；FAQ 支持自行降级到 Free。",
           "checkedAt": "2026-11-11T00:34:09Z"
+        },
+        {
+          "url": "https://logto.io/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（589 KB，正文 14.7 KB）：Free 仍为 $0/mo、Up to 50,000 MAU、50K tokens、3 应用，Pro $24/mo 与 $0.08/100 extra tokens 未变。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -20446,6 +20656,11 @@
           "at": "2026-11-11T00:34:09Z",
           "status": "active",
           "note": "新增并标 active/high：官方定价页给出 5 万 MAU、50K tokens、3 应用、免绑卡与 Pro $24/月对照；未知项为地区限制，已披露。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：5 万 MAU 免费档与 Pro 起价未变。"
         }
       ],
       "confidence": "high",
@@ -20473,13 +20688,18 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "无月订阅，只有一次性 credits；免费额度无明确有效期，用尽即停服。免费档并发与 QPS 官方未单独列出（页面只给 Ultimate 的 300 次/秒口径）。",
-      "lastVerifiedAt": "2026-11-11T00:34:09Z",
-      "nextReviewAt": "2026-11-12T00:34:09Z",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
       "evidence": [
         {
           "url": "https://serper.dev/",
           "summary": "直连 200（71.5 KB，正文 95 KB 静态内联）：首屏「Get 2,500 free queries No credit card required」，页脚「Try 2,500 queries for free」；价目 Starter $50 / 50k credits（$1.00/1k）、Standard $375 / 500k（$0.75/1k）、Scale $1,250 / 2.5M（$0.50/1k）、Ultimate $3,750 / 12.5M（$0.30/1k），付费 credits「valid for 6 months」；FAQ 明示实时查询不缓存、余额归零停止接受查询、首次购买 7 天内未超 20% 可全额退款。",
           "checkedAt": "2026-11-11T00:34:09Z"
+        },
+        {
+          "url": "https://serper.dev/",
+          "summary": "curl 直连 --compressed + Chrome UA 200（1.04 MB，正文 95 KB）：首页仍写「2,500 free queries · No credit card required」，付费档 $50/50k、$375/500k、$1,250/2.5M、$3,750/12.5M 与 6 个月 credits 有效期未变。",
+          "checkedAt": "2026-11-12T07:16:58Z"
         }
       ],
       "history": [
@@ -20487,6 +20707,11 @@
           "at": "2026-11-11T00:34:09Z",
           "status": "active",
           "note": "新增并标 active/high：官方首页与价目表给出 2,500 次免费查询、免绑卡、四档单价与 6 个月有效期；未知项为免费额度有效期与免费档 QPS，已披露。"
+        },
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "第 7 轮复核：2,500 次免费查询与分档价目未变。"
         }
       ],
       "confidence": "high",
@@ -20619,6 +20844,103 @@
       "costNotes": "仅计费标准列标注「限时免费」的模型免积分；TTS ¥2.00/万字符、转写 ¥0.80–2.00/小时、文生图 ¥0.20/张起，均按积分或人民币扣减。官方未公布免费模型的速率限制与免费期结束时间，也未说明调用是否可用于商业用途。",
       "confidence": "high",
       "confidenceReason": "免费事实来自官方模型列表页「计费标准」列原文（限时免费 0 积分），接口路径与 snapshot 版本、付费对照单价均可核对；未知项为速率限制、免费期截止与实名/绑卡要求，已在 eligibility 与 deadlineNote 中披露。"
+    },
+    {
+      "id": "nvidia-nim-free-api-prototyping-202611",
+      "title": "NVIDIA NIM（build.nvidia.com）免费推理 API：全站模型可原型调用，多数 40 RPM 不计 token 费",
+      "provider": "NVIDIA",
+      "category": "ai",
+      "description": "NVIDIA 在 build.nvidia.com 提供托管 NIM 推理端点，官方 FAQ 明确「All models on build.nvidia.com are free to prototype with」，按请求速率（多数模型 40 RPM）限流、不按 token 计费。模型覆盖 Nemotron 3.5 Super VL / Lightning、DeepSeek V4.1 Flash 等开源权重模型，接口兼容 OpenAI SDK，适合在采购前验证模型效果或做轻量 agent 原型。",
+      "quota": "全站模型免费原型调用：官方 FAQ「All models on build.nvidia.com are free to prototype with」，免费档按限流运行「up to 40 requests per minute (RPM) for most models, with no per-token billing」，个人速率在控制台右上角显示；超出限流后需改用合作方 endpoint（AWS/Azure/GCP/OCI）或自部署 NIM 容器，API 不变。",
+      "benefitValue": "免 token 费访问 NVIDIA 自家 Nemotron 与多家开源权重前沿模型，40 RPM 足够个人原型与评测；按同级别商用推理价折算，相当于每月数十美元的试用额度，且无需预付费。",
+      "eligibility": "需注册 NVIDIA 开发者账号（Developer Program，注册即加入并接受 NVIDIA Technology Access Terms），在模型页或设置页生成 API Key；官方定位为原型/验证用途，未承诺生产 SLA。",
+      "regions": "官方未列地域限制；端点托管于 NVIDIA DGX Cloud，部分模型可能受出口管制约束（官方未在 FAQ 展开）。",
+      "validity": "官方 FAQ 将免费推理描述为常设能力（free tier runs on rate limits），未公布结束日期；限流与可用模型会随目录调整。",
+      "deadlineNote": "无截止日期；超出 40 RPM 或需要生产 SLA 时转合作方 endpoint 或自部署 NIM。",
+      "officialUrl": "https://build.nvidia.com/",
+      "claimUrl": "https://build.nvidia.com/settings/api-keys",
+      "discoveryUrl": "https://perq.sh/offers/nvidia-free",
+      "discoveredAt": "2026-11-12T07:16:58Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
+      "evidence": [
+        {
+          "url": "https://build.nvidia.com/api/runtime/content/help-center-faq.yaml",
+          "summary": "curl 直连 --compressed + Chrome UA 直取官方 FAQ YAML（200，717 B），原文：「Are all models free to use? — All models on build.nvidia.com are free to prototype with. Once you hit rate limits, see the Deploy section to use partner endpoints or deploy a NIM locally.」「How many requests can I make? — The free tier runs on rate limits - up to 40 requests per minute (RPM) for most models, with no per-token billing. Your personal rate limit is shown in the top-right of the dashboard.」",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        },
+        {
+          "url": "https://docs.api.nvidia.com/nim/docs/api-quickstart",
+          "summary": "curl 直连 --compressed + Chrome UA 200（116 KB）：Quickstart 写明在模型页点「Get API Key」、填邮箱即加入 NVIDIA Developer Program 并生成 Key，随后可直接调用 llama-3.1-8b-instruct 等模型；全文未提信用卡或付费。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        },
+        {
+          "url": "https://build.nvidia.com/",
+          "summary": "curl 直连 --compressed + Chrome UA 200（29.9 KB）：首页「Use Inference Endpoints — Free inference with leading models」列出 nvidia/nemotron-3.5-super-vl-120b-a12b、nemotron-3.5-lightning-30b-a3b、deepseek-ai/deepseek-v4.1-flash、nemotron-3-ultra-550b-a55b；API Key 页写「Free serverless APIs for development」。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "新增：官方 FAQ 明确全站模型可免费原型调用、多数模型 40 RPM 且不计 token 费；注册 NVIDIA 开发者账号即可生成 API Key，未提绑卡。"
+        }
+      ],
+      "costNotes": "免费档不计 token 费，但仅限限流内的原型使用；生产或高并发需转合作方云 endpoint（按各家定价）或自部署 NIM（需自备 GPU）。限流 per-account，官方未公布每日总量上限；信用卡要求官方未明说（Quickstart 只要求邮箱注册）。",
+      "confidence": "high",
+      "confidenceReason": "额度主体（全站模型免费、40 RPM、无 token 计费）来自 build.nvidia.com 官方 help-center FAQ 原文，注册路径见官方 Quickstart；仅「是否需绑卡」「每日总量」未明示，标 unknown 并在 costNotes 披露。"
+    },
+    {
+      "id": "kilo-code-free-models-gateway-202611",
+      "title": "Kilo Code 免费模型网关：$0 平台费，Auto Free 免额度路由到免费模型",
+      "provider": "Kilo Code",
+      "category": "ai",
+      "description": "Kilo Code 是 VS Code / JetBrains / CLI 的 agentic 编程助手。官方定价页把平台费与推理费拆开：个人档平台 $0/月，选择「Auto Free」时由 Kilo Gateway 把请求路由到免费模型，无需预存额度、也不需要自备 API Key；同时支持 BYOK 与本地 Ollama / LM Studio。适合想在 IDE 里用免费模型跑 agent 工作流、又不想绑定单一厂商的开发者。",
+      "quota": "平台费 $0/月（Free & Open Source，含 40K+ 包商用许可、agentic coding、代码补全）；推理可选三路：① Auto Free —— 「$0 /mo, No hosted credit required」，由 Kilo Gateway 把请求路由到免费模型（官方 kilo.ai/models?price=free 列表）；② BYOK —— 自带 Anthropic / OpenAI / Google / Azure / AWS Bedrock 等 Key；③ 本地模型（Ollama / LM Studio）。需按量付费时为 Kilo Gateway pay-as-you-go：$0/月 + 按 provider 原价计费（官方称无加价），Kilo Pass 可选从 $19/月。",
+      "benefitValue": "不需要预存额度即可在 IDE 内使用 Kilo Gateway 上的免费模型跑 agent 编程，等于把「免费模型 + 编程 harness」组合成本降到 0；对照 Kilo Pass $19/月起或 API 按量计费，属于可长期白用的一档。",
+      "eligibility": "注册 Kilo 账号即可用免费档；官方写明 Auto Free 无需 hosted credit，也不强制绑卡（支付方式仅在使用付费推理/Kilo Pass 时需要）。",
+      "regions": "官方未列地域限制；免费模型可用性取决于上游 provider 与 Kilo Gateway 路由。",
+      "validity": "平台免费档为常设（Free & Open Source），官方未给结束日期；Auto Free 能路由到哪些模型随上游变动，官方模型页可按 price=free 筛选。",
+      "deadlineNote": "无截止日期；免费模型清单会变动，选模型前以 kilo.ai/models?price=free 实时状态为准。",
+      "officialUrl": "https://kilo.ai/pricing",
+      "claimUrl": "https://kilo.ai/",
+      "discoveryUrl": "https://token.pencilai.top/",
+      "discoveredAt": "2026-11-12T07:16:58Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "lastVerifiedAt": "2026-11-12T07:16:58Z",
+      "nextReviewAt": "2026-11-13T07:16:58Z",
+      "evidence": [
+        {
+          "url": "https://kilo.ai/pricing",
+          "summary": "curl 直连 --compressed + Chrome UA 200（69.8 KB，正文 7.7 KB）：定价页分「Free & Open Source / Teams $15 per user/month / Enterprise」，并写「Auto Free, BYOK, or local — Use Kilo Code without a paid Kilo inference plan. $0 /mo No hosted credit required. Auto Free routes to free models through Kilo Gateway where available」；Kilo Gateway 档「$0 /mo + usage … Pay exact provider rates with no markup」；平台/推理/额度三部分拆分表亦标 Platform plan $0。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        },
+        {
+          "url": "https://kilo.ai/models?price=free",
+          "summary": "curl 直连 --compressed + Chrome UA 200（265 KB）：免费筛选入口存在，但页面为前端排序（服务端不返回按 free 过滤后的固定列表），本轮无法稳定计数 $0 模型，故 quota 不写具体数量。",
+          "checkedAt": "2026-11-12T07:16:58Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-12T07:16:58Z",
+          "status": "active",
+          "note": "新增：官方定价页确认平台 $0、Auto Free 免 hosted credit 路由免费模型、BYOK 与本地模型三路可选；此前因「Balance check 与免鉴权冲突」排除的口径已被官方「No hosted credit required」澄清。"
+        }
+      ],
+      "costNotes": "免费路径仅限 Auto Free 路由到的免费模型与本地/BYOK 推理；改用付费模型或 Kilo Gateway pay-as-you-go 时按 provider 原价计费（官方称无加价），Kilo Pass 从 $19/月。信用卡：官方写「No hosted credit required」，未要求绑卡；Teams $15/人/月含 14 天 Enterprise 试用。",
+      "confidence": "high",
+      "confidenceReason": "核心条款（平台 $0、Auto Free 无需 hosted credit、BYOK/本地可选）为官方定价页原文；仅免费模型具体数量与限速未在服务端页面固定披露，已在 quota 说明不写数量。"
     }
   ]
 }

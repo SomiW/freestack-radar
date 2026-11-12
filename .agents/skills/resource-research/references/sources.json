@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 2026-11-11T20:57Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 132）。50 条结果与库内已收录高度重合（Kiro/LiveKit/Daily/Val Town/Deepset/Deno/Hookdeck/PostHog/Convex/Fireworks/MongoDB/Portkey/Bolt/v0/Coderabbit/Lovable/Mastra/Checkly/Knock/Logto/Aiven/Deploy/Devin/Antigravity/opencode 均已在库），未出现可核实的新福利；仍被排除的低面值或冲突项：Make/Zapier/Ably/ZenRows/Base44/Kinde/Novu/Svix/Kilo/ChatGPT 学习页（无数值）。"
+      "observation": "本轮 2026-11-12T07:16Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 132）。50 条里库外候选 14 个：NVIDIA build.nvidia.com（→ 已官方核实入库）、Kilo Code（→ 已官方核实入库）、Devin/v0/Antigravity/Cognition 已在库或同活动重复；其余 Make 1,000 credits、Zapier Agents 400 activities、Ably 500 MAU、ZenRows 5,000 credits、Base44 25 credits、Kinde 10,500 MAU、Novu 10k runs、Svix 50k messages 面值低且与库内同类条目重复，不新增。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 29.1 KB 可读：248 offers · 210 no card · 4 deadlines，本周新增仅 PixelSniff（图片检测 5 次/日）与 TokScript（转写），面值过低不入库；Gemini 学生计划（Ends Dec 31, 2026）与库内一致。"
+      "observation": "本轮首页 208 KB / 正文 10.1 KB 可读：248 offers（210 no card、4 deadlines），本周新增仍为 PixelSniff（图片检测 5 次/日）与 TokScript（转写），面值过低；Gemini 学生计划仍标 Ends Dec 31, 2026，与库内一致。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 8.1 KB：2,061 条在架（免费 API 752 / AI 工具 731 / 学生 136 / 创业 112 / VPS 78 / GPU 47），「最新羊毛」区仍异步加载不可读；最新收录为 EasySociable、Prompt Generator、Cheapllm、Runpod/Phala Startup，均无官方数值或属创业资质，不新增。"
+      "observation": "本轮首页 72.5 KB / 正文 8.0 KB：2,071 条在架（免费 API 756 / AI 工具 733 / 学生 137 / 创业 112 / VPS 80 / GPU 47），「最新羊毛」区仍异步加载不可读；最新收录仍是 EasySociable、Prompt Generator、Cheapllm、Runpod/Phala Startup，无官方数值或属创业资质，不新增。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 115 KB 可读：24 项免费 / 63 免费模型与方案 / 39 优惠。本轮据此发现 MOSS API（platform.moss.cn）nex-n2.6 限时免费并完成官方核实入库；其余条目（七牛 Conatus 1024 活动页已 404、MonkeyCode 每日 10M 官网无该数值、SenseNova 公测页 404、ZenMux 免费模型组无官方限速口径）均未能取得官方依据，只留候选。Kilo 免费网关仍因官方 Balance check 与「免鉴权」说法冲突而排除。"
+      "observation": "本轮首页 299 KB / 正文 115 KB：24 项免费 / 63 免费模型与方案 / 39 优惠。据此定位 Kilo Code 免费模型网关（kilo.ai/pricing「Auto Free … No hosted credit required」）并完成官方核实入库；另记 Kilo 免费模型卡口径 18 款（16 款可见 $0.00），因官方模型页服务端不固定过滤，入库条目未写数量。"
     },
     {
       "id": "tokentab",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 9.4 KB 可读，仍为国内厂商优惠汇总，无新增可核官方条款。"
+      "observation": "本轮 25 KB 可读：仍为国内厂商优惠汇总（双十一/云厂商代金券），无新增可核官方条款。"
     },
     {
       "id": "usefree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS `/c/welfare/36.rss` 直读 19 KB / 25 帖（2026-11-11 07:54–15:36Z）。可核实线索 3 条：天翼云 TeleAgent「白嫖积分 4h8g」（落地页 agent.teleai.com.cn 为纯壳，无官方额度）、Nex-N2.6 免费（→ MOSS API 官方模型表已核实入库）、SuperGrok 1 个月（referral 码 + MLH 账号满 30 天，属推广码不入库）。其余为抽奖、邀请码与中转站广告。"
+      "observation": "本轮 RSS `/c/welfare/36.rss` 直读 18.7 KB / 25 帖（2026-11-12 01:53–07:08Z）：可核实线索仅「华为开发者大赛·小红书 skill 创新赛华为云代金券补库存」（社区口径，无官方页，与库内 huawei 券条目同源）；其余为中转站充值广告、VelaMost/Token2U 首充、muse 成品号与抽奖，均不入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 直读 3.9 KB / 25 条，以二手交易、甲骨文/谷歌账号与跨境网络讨论为主；「谷歌 300 赠金绑卡」「Google AI Pro 被退」两条为个案与风控经历，无官方额度页，不新增。"
+      "observation": "本轮 RSS 直读 3.7 KB / 20 帖（07:10–07:15Z）：全部为机器转让/求购与线路讨论，唯一与库相关的是「Hkcloudx-MiniV6-1000G 留档」（库内已有 pending 条目），无新增。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://freeaiapis.org/ 直读 8.1 KB（上轮 37.4 KB，结构变简）：清单仍以返利/网关条目为主，本轮无带官方条款的新条目。"
+      "observation": "本轮 76 KB / 正文 32.5 KB：「Showing 13 of 13 active listings」，本周新增 5 条中 NVIDIA NIM 已入库，其余 Google Gemini API、GroqCloud、OpenRouter、Cohere 均已在库或面值低。"
     },
     {
       "id": "github-pack",
@@ -1284,11 +1284,11 @@
       ],
       "entryUrl": "https://www.linode.com/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 403，经只读渲染代理读取；FAQ 仍以「$100 credit for 60 days」为例说明促销额度与标准价衔接，是 Akamai US$100 试用 60 天窗口的官方佐证。"
+      "observation": "linode.com/pricing 直连 curl 403（2.9 KB），只读渲染可取：定价页 FAQ 的「$100 credit」条目本轮折叠未展开，60 天窗口原文未取到；akamai.com/lp/free-credit-100 渲染仍确认 US$100 额度。"
     },
     {
       "id": "elevenlabs-pricing",
@@ -1837,11 +1837,11 @@
       ],
       "entryUrl": "https://antigravity.google/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "定价页直连 200（142.6 KB，正文约 4.3 KB）$0/month 档未变；配套 docs/models 直连 200（34.8 KB）模型可用性表与 2026-11-18 移除脚注未变；复核成功。"
+      "observation": "antigravity.google/pricing 仍无任何数值（正文 4.4 KB 纯前端）；免费档模型矩阵在 docs/models 的 Plan×Model 表：Gemini 3.8 Flash / Claude Sonnet 4.6 / Opus 4.6 / GPT-OSS-120b 可用，新增 Gemini 4 Carbon 免费档不可用。"
     },
     {
       "id": "apify-creator-plan",
@@ -2256,11 +2256,11 @@
       ],
       "entryUrl": "https://inference.net/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（95.4 KB，正文约 2.5 KB）：1M Gateway 请求/月、1M spans、14 天保留、30 req/min 未变；复核成功。"
+      "observation": "本轮直连 200（37.7 KB，正文 2.2 KB）：**定价页只剩 Operator $9/月（$10 额度）与 Studio $49/月（$60 额度），Pay as you go $0、1M Gateway requests、1M spans、14-day retention 全部消失**；首页同步改版无免费档表述。库内 inference-net 条目据此转 unavailable。"
     },
     {
       "id": "nango-pricing",
@@ -2730,11 +2730,11 @@
       ],
       "entryUrl": "https://plamo.preferredai.jp/api",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200 仅 1.8 KB 前端外壳；经只读渲染代理读得正文约 4.7 KB，四档（Free / Standard / Provider / On-Premise）价格与对比表全内联。Free 档 PLaMo 3.0 / 3.1 Prime 的 Input / Output 均为 0 円 per 1M tokens，附「利用量・レートリミットに制限あり」；搜索/Deep Research 免费回数截至 2026-11-30（每日 60 次、每月 200 次）。"
+      "observation": "plamo.preferredai.jp/api 静态 HTML 仅 1.8 KB（纯壳），只读渲染可读：Free 档 0 円未变，新增「PLaMo 3.0 Fin Beta 試用版・1利用者あたり24時間で50回まで」，搜索优惠仍到 2026-11-30（1 日 60 回/月 200 回）。"
     },
     {
       "id": "opencode-zen",
@@ -2751,11 +2751,11 @@
       ],
       "entryUrl": "https://opencode.ai/docs/zen/",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（HTML 97 KB，正文约 25 KB），价格表把 13 个模型三列标 Free，逐条注明「free on OpenCode for a limited time」；同页给出免费档客户端限制（需 OpenCode）与 Crouton Alpha / Beam / Inkling 2 Small 的地区排除清单。"
+      "observation": "官方文档路径已从 `/docs/zen/` 迁到 `/docs/console/models/`：价格表 107 行中三列全 Free 的共 14 条（新增 Big Pickle，13 个 -free 变体仍在）；新增「Free-tier chat models require OpenCode」限定。"
     },
     {
       "id": "rime-pricing",
@@ -2958,11 +2958,11 @@
       ],
       "entryUrl": "https://deno.com/deploy/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（203 KB，正文 14.4 KB），三档对比表全内联：Free $0/月 = 1M 请求 + 20GiB 出网 + 5 域名 + 10 小时活跃 CPU + 150 GiB-hr 内存 + 10 GiB 版本存储 + 10 应用 + 1 并发构建 + 15 构建/小时 + KV 1 GiB/100 万读/50 万写；Pro $20/月、Builder $200/月。无需渲染代理。"
+      "observation": "本轮直连 200（203 KB，正文 14.5 KB）：Free 档 1M 请求/月、20 GiB 出网、10 个应用未变；页面顶部新增「Deno Deploy will be sunset in April 2027」横幅，博客 2026-10-09 公告「Deno is joining Cloudflare」。"
     },
     {
       "id": "lovable-pricing",
@@ -3351,6 +3351,48 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（249 KB HTML，正文 2.6 KB）：模型表按「模型名称 / 说明 / 计费标准 / 流式输出 / 异步」逐行给出，nex-n2.6、moss-vl-1.0、moss-vl-realtime-1.0、moss-live-1.0 计费列为「限时免费 0 积分」，TTS/ASR/图像模型给出 ¥ 与积分双单价；页首公告 MOSS-Image API 自 11-11 12:00 开始计费。免费期结束时间与速率限制均未公布。"
+    },
+    {
+      "id": "nvidia-build",
+      "name": "NVIDIA build.nvidia.com",
+      "url": "https://build.nvidia.com/",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html",
+        "json"
+      ],
+      "entryUrl": "https://build.nvidia.com/api/runtime/content/help-center-faq.yaml",
+      "status": "readable",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "官方 FAQ 以 YAML 直出（717 B）：「All models on build.nvidia.com are free to prototype with」「up to 40 requests per minute (RPM) for most models, with no per-token billing」。docs.api.nvidia.com/nim/docs/api-quickstart 说明邮箱注册开发者账号即得 API Key、全文未提绑卡。据此新增 nvidia-nim 条目（active/high）。"
+    },
+    {
+      "id": "kilo-code",
+      "name": "Kilo Code 定价",
+      "url": "https://kilo.ai/pricing",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "ai-coding",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://kilo.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-12T07:17:20Z",
+      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（69.8 KB，正文 7.7 KB）：「Auto Free … $0 /mo No hosted credit required. Auto Free routes to free models through Kilo Gateway where available」，平台费 $0、Kilo Gateway 按 provider 原价无加价。kilo.ai/models?price=free 为前端过滤，服务端不返回固定免费清单，故入库条目未写模型数量。"
     }
   ]
 }
