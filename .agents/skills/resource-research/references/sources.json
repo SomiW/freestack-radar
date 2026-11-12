@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 2026-11-12T07:16Z 读 `/api/search?type=free-tier&audience=anyone&sort=newest&limit=50`（total_matches 132）。50 条里库外候选 14 个：NVIDIA build.nvidia.com（→ 已官方核实入库）、Kilo Code（→ 已官方核实入库）、Devin/v0/Antigravity/Cognition 已在库或同活动重复；其余 Make 1,000 credits、Zapier Agents 400 activities、Ably 500 MAU、ZenRows 5,000 credits、Base44 25 credits、Kinde 10,500 MAU、Novu 10k runs、Svix 50k messages 面值低且与库内同类条目重复，不新增。"
+      "observation": "本轮读 `/api/search?type=signup-credit&limit=50&sort=newest&status=live`（49 条）：库外候选 reducto（$150 免费用量，→ 已官方核实入库 active/high）、oumi（Up to $50/3 个月，→ 官方核实后入库 pending/medium）、nscale $5、browser-use $1、scrapfly 1,000 credits 面额低不新增；其余条目已在库。"
     },
     {
       "id": "aifree",
@@ -1035,11 +1035,11 @@
       ],
       "entryUrl": "https://lingma.aliyun.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "定价页现由 Qoder CN 定价体系承载：¥0 体验版（有限体验额度 + 2 周专业版试用及 300 Credits + 签到 30 天 3,000 Credits），原「对话 50 轮次/月」等数值已下线。"
+      "observation": "本轮直连 200（88.1 KB）：定价页档位重构为个人基础版（免费，对话 50 轮次/月 + 单元测试智能体 50 方法/月）、个人专业版（限免 ¥59）、企业标准版 ¥79/人/月、企业专属版 ¥159/人/月；旧的 19.9/169/559 与 Credits 表述下架。"
     },
     {
       "id": "ibm-cloud-free",
@@ -2298,11 +2298,11 @@
       ],
       "entryUrl": "https://www.kaggle.com/docs/efficient-gpu-usage",
       "status": "readable",
-      "checkedAt": "2026-11-07T02:39:15Z",
-      "lastSuccessAt": "2026-11-07T02:39:15Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 www.kaggle.com 返回 200 但正文为 reCAPTCHA 校验页（约 20 KB，可见文本仅 161 字符），改用只读渲染代理取得正文：efficient-gpu-usage 写明免费 P100、每周 30 小时 GPU 配额（有时更高）、交互会话 60 分钟空闲超时；/docs/tpu 写明每周 20 小时 TPU、单次最长 9 小时；/docs/notebooks 写明批量执行 12 小时（TPU 9 小时）。GPU 单次会话上限与是否需手机验证未在页面披露。"
+      "observation": "本轮 docs/efficient-gpu-usage 渲染后 3.0 KB：GPU 每周 30 小时确认；另成功读取 docs/tpu（16.8 KB）「up to 20 hours per week of TPUs and up to 9h at a time in a single session」，长期待办的 TPU 20 小时口径已闭环。"
     },
     {
       "id": "retell-pricing",
@@ -3041,11 +3041,11 @@
       ],
       "entryUrl": "https://www.val.town/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-10T04:38:53Z",
-      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 403（Cloudflare 挑战，4.7 KB 壳），r.jina.ai 渲染 1.3 KB 可读且条款全内联：Free 100,000 runs/day、Unlimited public vals、MCP、15 min cron、1 min wall clock、3 days 日志；Pro $21/月、Business $167/月起。渲染文本已足够核对额度，无需登录。"
+      "observation": "本轮静态页为 JS 壳（5.6 KB/60 字），渲染代理 200 取到 1.5 KB 正文：Free 100,000 runs/天等条款未变；页面顶部新增「Val Town is shutting down on January 10, 2027」公告，已在条目 validity/deadlineNote 记录。"
     },
     {
       "id": "hookdeck-pricing",
@@ -3061,11 +3061,11 @@
       ],
       "entryUrl": "https://hookdeck.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-10T04:38:53Z",
-      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直读 203.5 KB（正文 9.1 KB），Developer「Always $0/month」10,000 events / 3-day retention / 1 user 与 FAQ（重试免费、超额锁控制台）均为静态内联，无需渲染；Team $39/月起、Growth $499/月起。"
+      "observation": "本轮 2026-11-13T01:2xZ 直连 200（203.6 KB）：Developer $0「Up to 10,000 events / 3-day retention / 1 user」未变；付费用量区改为「Event pricing as low as $0.33 per 100k」+「$1.00 per additional 100k」，已据此修正库内「每万 $0.30 起」的旧口径。"
     },
     {
       "id": "deepset-pricing",
@@ -3304,11 +3304,11 @@
       ],
       "entryUrl": "https://www.cucloud.cn/bwnnov.html",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮 2026-11-11T10:44Z 直连 200（170.4 KB）：规则文本内联在页面组件配置里可读（活动时间、新客户定义、限购、云桌面不含 OS 授权），但商品卡规格与库存走接口异步加载，云桌面 CPU/内存/时长与 Token Plan 额度需登录下单页确认。"
+      "observation": "本轮静态页仍为 Vue 占位（827.6 KB/1.8 KB 正文），渲染代理 200 取到 7.7 KB 正文：商品卡规格与价格全部可读（AI 云桌面标准 4C8G/1 月/0 元/原价 ¥164.67、ECS 2核4G 3M 50GB 11.11 元/6 个月限 2 台、付费云桌面 ¥29.93/¥40.19/¥50.45、Token Plan Lite 随 OpenClaw 镜像赠送）。此前只能读到规则文本，商品规格需登录的结论作废。"
     },
     {
       "id": "lindy-pricing",
@@ -3325,11 +3325,11 @@
       ],
       "entryUrl": "https://www.lindy.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮 2026-11-11T10:44Z 直连 200（15.4 KB 全内联）：$50 赠送、免绑卡、7 天有效期与全部 credits 档位价目一次读完，无需渲染代理。"
+      "observation": "本轮直连 200（63.4 KB）：免费档 $50 credits / 7 天 / 免绑卡未变；付费 credits 包重构（5,000/$49.99 起，旧的 3,000/$29.99、4,000/$39.99 下架），已更新库内价目。"
     },
     {
       "id": "moss-api-docs",
@@ -3393,6 +3393,48 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（69.8 KB，正文 7.7 KB）：「Auto Free … $0 /mo No hosted credit required. Auto Free routes to free models through Kilo Gateway where available」，平台费 $0、Kilo Gateway 按 provider 原价无加价。kilo.ai/models?price=free 为前端过滤，服务端不返回固定免费清单，故入库条目未写模型数量。"
+    },
+    {
+      "id": "reducto-pricing",
+      "name": "Reducto 定价页",
+      "url": "https://reducto.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://reducto.ai/pricing",
+      "observation": "本轮首读：直连 200（27.7 KB），Standard 档 $150 免费用量与四个文档 API、5 席位、无页数上限均可直读；无需渲染。",
+      "status": "readable",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true
+    },
+    {
+      "id": "oumi-pricing",
+      "name": "Oumi 定价页",
+      "url": "https://oumi.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "gpu"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://oumi.ai/pricing",
+      "observation": "本轮首读：直连 200（39.7 KB），Free 档「Up to $50 in credits for 3 months」与 Hosted 平台细项单价均可直读；$50/$25 分档条件页面未写。",
+      "status": "readable",
+      "checkedAt": "2026-11-12T17:29:38Z",
+      "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true
     }
   ]
 }
