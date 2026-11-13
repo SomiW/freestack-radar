@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-13T03:40:03Z",
-      "lastSuccessAt": "2026-11-13T03:40:03Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直连 /api/search?q=anyone&sort=newest&limit=25 得 25 条（200，6.6 KB）：本轮可用增量仅 SambaNova 免费档；其余为已入库条目（Reducto、Oumi、LiveKit、Daily、NVIDIA、Kiro、PostHog、Convex、Val Town、Hookdeck、Langfuse、Rime、MongoDB 等）；Windsurf 的 windsurf-free 经查实际 308 到 devin.ai/pricing，与既有 devin-free-plan-202610 重复，未重复入库。"
+      "observation": "本轮按登记默认查询读取两组：free-tier（20 条 / 27.9 KB）与 signup-credit（20 条 / 28.2 KB），均 200 且 JSON 可解析。可用增量：Hatchet（1M runs + 1M events/月）与 Blaxel（Up to $200 免费额度）留作下一轮候选；其余为已入库条目（AgentQL、Greptile、Rime、Inception、Runloop、You.com、Mixedbread、Reducto、Oumi、Lindy、Nscale、Cloudflare 类创业额度）或面值过低（Scrapfly/ScraperAPI/ScrapingBee/Browser Use $1）。Tencent 条目的 WorkBuddy/CodeBuddy 11-04—11-15 与库内 tencent-lighthouse-workbuddy-expert-free-1m-2026 同源。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 208 KB / 正文 10.1 KB 可读：248 offers（210 no card、4 deadlines），本周新增仍为 PixelSniff（图片检测 5 次/日）与 TokScript（转写），面值过低；Gemini 学生计划仍标 Ends Dec 31, 2026，与库内一致。"
+      "observation": "首页直读 200（222 KB），结构已改为「Top verified picks / New this week / Upcoming deadlines」等分栏，卡片正文仍由前端注入，静态可读的只有栏目与少量问答；本轮未取到可入库的新条目。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-13T03:40:03Z",
-      "lastSuccessAt": "2026-11-13T03:40:03Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "aispoils.com 直连 200（14.9 KB）：静态推荐区仍为创业扶持与低面额工具类，「最新羊毛」区继续异步加载未取到，无新增候选。"
+      "observation": "首页直读 200（72.3 KB），96 个区块标题可读，「最新羊毛」区仍为异步未加载。可用线索：腾讯混元新人免费体验包（截至 12-31，每模型可领）、DeepSeek 新用户 500 万 tokens、Tencent Cloud AI Model Square 每模型 1M（90 天）、InstaBox 5 台免费云电脑；均缺官方二次核实，列入下一轮候选。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-13T03:40:03Z",
-      "lastSuccessAt": "2026-11-13T03:40:03Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "token.pencilai.top 直连 200（94.7 KB / 正文 129.6 KB）：页面计数为 69 项免费模型/方案、43 项优惠，抽样卡片（Kilo Code 免费网关等）均为已入库或已排除条目，本轮未见未入库的官方限免线索。"
+      "observation": "首页直读 200（331 KB），共 69 项免费内容 / 48 项已结束。本轮入库 3 条来自该站：AutoClaw 双11 50M Tokens、IteraCompute Auto 30M/月、七牛云 Conatus 1 亿/日。其余新面孔留候选：云知声 U Plan Free（每周 2,500 积分）、小米 MiMo ¥5 实名赠金、Kimi 实名 15 元券、国家超算互联网新客 1,000 万 token、さくらの AI Engine 3,000 请求/月、AIHubMix 72 款 $0。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://www.usefree.space/brands_new.json 直读 22.7 KB：`generated` 仍为 2026-10-26T12:00:00Z（静态快照已 16 天未更新），brands 201 / deals 465 / items 110；items 以通用 SaaS（1Password、Airtable、Asana、Canva、Coursera）为主，无新增 AI/云开发类免费档。本来源本轮无入库价值。"
+      "observation": "brands_new.json 直读 200（234 KB）：110 品牌 / 245 权益，generated 仍停在 2026-10-26T12:00:00Z，属静态快照、无增量。大额项仍为创业/学生资质类（Google Cloud $350k、Cloudflare $350k、YC $25k、ElevenLabs $4k、UpCloud $250、DigitalOcean $200+$50），不符合本轮面值+免资质口径，未入库。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-13T03:40:03Z",
-      "lastSuccessAt": "2026-11-13T03:40:03Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "/c/welfare/36.rss 直连 200（24.2 KB，25 条）：华为云成长中心上线/赶紧换代金券（佐证官方 11-20 停服、11-23 迁移公告）、instabox 结束候补（无官方域名，未入库）、腾讯羊毛（18 号结束，口径不明）；其余为转站推广、众安/美团/话费类非云资源。"
+      "observation": "RSS 直读 200（79.3 KB，25 条）。本轮新增线索：zcode 周末「5 亿鸡蛋」多帖（11-13）、Google Developer Program「每月 $10」（实为 Premium 权益，需 Google AI Pro 付费订阅，已排除）、AMD AI Developer Program $10（官方实为 $100，已有条目）、腾讯智囊团拉新、muse 白嫖提示词帖；无新增入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-13T03:40:03Z",
-      "lastSuccessAt": "2026-11-13T03:40:03Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "rss.nodeseek.com 直连 200（2.8 KB，20 条）：窗口内为闲聊、二手 VPS 转让与线路讨论（Netcup 续费、Lightlayer、VMISS 等），无云/AI 免费额度线索，本轮无候选入库。"
+      "observation": "RSS 直读 200（11.6 KB，20 条）。本轮条目以二手交易、节点与故障讨论为主（hkcloudx 转让、raksmart 秒杀回款、Claude 故障），无新的官方福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-13T03:40:03Z",
-      "lastSuccessAt": "2026-11-13T03:40:03Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "freeaiapis.org 直连 200（17.0 KB）：清单中的免费 API 均已入库或被前几轮排除（多为中转/低额度），无新增候选。"
+      "observation": "直读 200（76.2 KB），页面已是单供应商详情式结构（API setup/Listed model IDs/Verification/limits 等小节），首页不再给多供应商清单；本轮未取到可入库的新条目。"
     },
     {
       "id": "github-pack",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-11T10:44:46Z",
-      "lastSuccessAt": "2026-11-11T10:44:46Z",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 25 条：出现同一条联通云双11线索（已入库）、腾讯云双11 58 元/年（库内已有 double11 条目）、Termini Pro 限时 0 元（桌面工具，非云/额度资源，排除）。"
+      "observation": "RSS 直读 200（103 KB，25 条）。本轮以域名平台（NameHug/.xyz 首年 13 元）、邮箱故障与建站讨论为主，Cloudzyro 无限站点属建站服务推广、无官方额度条款，不入选。"
     },
     {
       "id": "aideal",
@@ -3455,6 +3455,66 @@
       "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": true
+    },
+    {
+      "id": "autoclaw-blog",
+      "name": "智谱 AutoClaw 官方博客",
+      "url": "https://autoclaw.zhipuai.cn/blog/news/M11W2/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://autoclaw.zhipuai.cn/blog/news/M11W2/",
+      "status": "readable",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮首读：直连 200（47.5 KB），静态 HTML 可直读活动公告正文（时间窗、50M Tokens、每账号限领一次、积分到期时间）与侧栏往期/下期公告列表，适合按「每周福利」节奏跟踪。"
+    },
+    {
+      "id": "iteracompute-free",
+      "name": "IteraCompute 免费档页",
+      "url": "https://iteracompute.com/free/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://iteracompute.com/free/",
+      "status": "readable",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮首读：直连 200（49.3 KB），免费额度（30M/月）、免绑卡、促销截止时间（2026-11-24 00:00 PT）与 Auto 调用示例均为静态正文，无需渲染。"
+    },
+    {
+      "id": "qiniu-conatus",
+      "name": "七牛云 Conatus 免费模型活动页",
+      "url": "https://www.qiniu.com/ai/free-models/conatus-2026",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.qiniu.com/ai/free-models/conatus-2026",
+      "status": "readable",
+      "checkedAt": "2026-11-13T13:50:16Z",
+      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "本轮首读：直连 200（78.8 KB），活动起止、实名认证与充值两档额度、计量方式、1M 上下文 / 128K 输出、BASEURL 与模型 ID 均在静态正文；页面自带 FAQ 可交叉确认不提供按量付费。"
     }
   ]
 }
