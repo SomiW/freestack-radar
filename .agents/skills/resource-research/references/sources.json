@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-12T17:29:38Z",
-      "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮读 `/api/search?type=signup-credit&limit=50&sort=newest&status=live`（49 条）：库外候选 reducto（$150 免费用量，→ 已官方核实入库 active/high）、oumi（Up to $50/3 个月，→ 官方核实后入库 pending/medium）、nscale $5、browser-use $1、scrapfly 1,000 credits 面额低不新增；其余条目已在库。"
+      "observation": "直连 /api/search?q=anyone&sort=newest&limit=25 得 25 条（200，6.6 KB）：本轮可用增量仅 SambaNova 免费档；其余为已入库条目（Reducto、Oumi、LiveKit、Daily、NVIDIA、Kiro、PostHog、Convex、Val Town、Hookdeck、Langfuse、Rime、MongoDB 等）；Windsurf 的 windsurf-free 经查实际 308 到 devin.ai/pricing，与既有 devin-free-plan-202610 重复，未重复入库。"
     },
     {
       "id": "aifree",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 72.5 KB / 正文 8.0 KB：2,071 条在架（免费 API 756 / AI 工具 733 / 学生 137 / 创业 112 / VPS 80 / GPU 47），「最新羊毛」区仍异步加载不可读；最新收录仍是 EasySociable、Prompt Generator、Cheapllm、Runpod/Phala Startup，无官方数值或属创业资质，不新增。"
+      "observation": "aispoils.com 直连 200（14.9 KB）：静态推荐区仍为创业扶持与低面额工具类，「最新羊毛」区继续异步加载未取到，无新增候选。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮首页 299 KB / 正文 115 KB：24 项免费 / 63 免费模型与方案 / 39 优惠。据此定位 Kilo Code 免费模型网关（kilo.ai/pricing「Auto Free … No hosted credit required」）并完成官方核实入库；另记 Kilo 免费模型卡口径 18 款（16 款可见 $0.00），因官方模型页服务端不固定过滤，入库条目未写数量。"
+      "observation": "token.pencilai.top 直连 200（94.7 KB / 正文 129.6 KB）：页面计数为 69 项免费模型/方案、43 项优惠，抽样卡片（Kilo Code 免费网关等）均为已入库或已排除条目，本轮未见未入库的官方限免线索。"
     },
     {
       "id": "tokentab",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS `/c/welfare/36.rss` 直读 18.7 KB / 25 帖（2026-11-12 01:53–07:08Z）：可核实线索仅「华为开发者大赛·小红书 skill 创新赛华为云代金券补库存」（社区口径，无官方页，与库内 huawei 券条目同源）；其余为中转站充值广告、VelaMost/Token2U 首充、muse 成品号与抽奖，均不入库。"
+      "observation": "/c/welfare/36.rss 直连 200（24.2 KB，25 条）：华为云成长中心上线/赶紧换代金券（佐证官方 11-20 停服、11-23 迁移公告）、instabox 结束候补（无官方域名，未入库）、腾讯羊毛（18 号结束，口径不明）；其余为转站推广、众安/美团/话费类非云资源。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 RSS 直读 3.7 KB / 20 帖（07:10–07:15Z）：全部为机器转让/求购与线路讨论，唯一与库相关的是「Hkcloudx-MiniV6-1000G 留档」（库内已有 pending 条目），无新增。"
+      "observation": "rss.nodeseek.com 直连 200（2.8 KB，20 条）：窗口内为闲聊、二手 VPS 转让与线路讨论（Netcup 续费、Lightlayer、VMISS 等），无云/AI 免费额度线索，本轮无候选入库。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 76 KB / 正文 32.5 KB：「Showing 13 of 13 active listings」，本周新增 5 条中 NVIDIA NIM 已入库，其余 Google Gemini API、GroqCloud、OpenRouter、Cohere 均已在库或面值低。"
+      "observation": "freeaiapis.org 直连 200（17.0 KB）：清单中的免费 API 均已入库或被前几轮排除（多为中转/低额度），无新增候选。"
     },
     {
       "id": "github-pack",
@@ -3433,6 +3433,26 @@
       "status": "readable",
       "checkedAt": "2026-11-12T17:29:38Z",
       "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true
+    },
+    {
+      "id": "sambanova-docs",
+      "name": "SambaNova 文档 · 限速与套餐",
+      "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.sambanova.ai/docs/en/models/rate-limits",
+      "observation": "本轮首读：直连 200（30.6 KB），Free Tier（无付款方式）× 5 个模型 20 RPM / 20 RPD / 200,000 TPD 全表可直读；cloud.sambanova.ai/plans（200，43.3 KB）的 Free 卡又写「Add a payment method and purchase credits」，两端口径冲突，已在资源条目披露。",
+      "status": "readable",
+      "checkedAt": "2026-11-13T03:40:03Z",
+      "lastSuccessAt": "2026-11-13T03:40:03Z",
       "lastFailure": null,
       "canVerifyOfficial": true
     }
