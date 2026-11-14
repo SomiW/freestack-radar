@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮按登记默认查询读取两组：free-tier（20 条 / 27.9 KB）与 signup-credit（20 条 / 28.2 KB），均 200 且 JSON 可解析。可用增量：Hatchet（1M runs + 1M events/月）与 Blaxel（Up to $200 免费额度）留作下一轮候选；其余为已入库条目（AgentQL、Greptile、Rime、Inception、Runloop、You.com、Mixedbread、Reducto、Oumi、Lindy、Nscale、Cloudflare 类创业额度）或面值过低（Scrapfly/ScraperAPI/ScrapingBee/Browser Use $1）。Tencent 条目的 WorkBuddy/CodeBuddy 11-04—11-15 与库内 tencent-lighthouse-workbuddy-expert-free-1m-2026 同源。"
+      "observation": "本轮 free-tier（20 条 / 5.7 KB）与 signup-credit（20 条 / 5.8 KB）两组均 200 可解析。free-tier 新增可用线索：Hatchet（1M runs + 1M events/月，已本轮入库）、Maritaca AI（S5-free 限时不计费）、AgentQL（Starter 50 调用 + 10 小时浏览器）、Greptile（50 credits/月）；signup-credit 侧 Blaxel「Up to $200」条件仍未披露、Maritaca/SambaNova 与库内重复。其余为已入库条目或面值过低（Scrapfly/ScraperAPI/ScrapingBee/Browser Use $1/Nscale $5）。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直读 200（222 KB），结构已改为「Top verified picks / New this week / Upcoming deadlines」等分栏，卡片正文仍由前端注入，静态可读的只有栏目与少量问答；本轮未取到可入库的新条目。"
+      "observation": "直读 200（31.3 KB）：首页为 Top verified picks / New this week / Upcoming deadlines 分栏，可读新增仅 SearchApi Free Requests、PixelSniff 5 次/日等小额项，无新入库。"
     },
     {
       "id": "aispoils",
@@ -63,11 +63,11 @@
       ],
       "entryUrl": "https://aispoils.com/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直读 200（72.3 KB），96 个区块标题可读，「最新羊毛」区仍为异步未加载。可用线索：腾讯混元新人免费体验包（截至 12-31，每模型可领）、DeepSeek 新用户 500 万 tokens、Tencent Cloud AI Model Square 每模型 1M（90 天）、InstaBox 5 台免费云电脑；均缺官方二次核实，列入下一轮候选。"
+      "observation": "直读 200（14.8 KB，2090 条在架统计）：今日新增 Beliq（需绑卡）、Rizamo（学生）、EasySociable、Prompt Generator、Cheapllm（无额度+带 aff）等小额或条件不明项，均留候选/排除。"
     },
     {
       "id": "aifuli",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "首页直读 200（331 KB），共 69 项免费内容 / 48 项已结束。本轮入库 3 条来自该站：AutoClaw 双11 50M Tokens、IteraCompute Auto 30M/月、七牛云 Conatus 1 亿/日。其余新面孔留候选：云知声 U Plan Free（每周 2,500 积分）、小米 MiMo ¥5 实名赠金、Kimi 实名 15 元券、国家超算互联网新客 1,000 万 token、さくらの AI Engine 3,000 请求/月、AIHubMix 72 款 $0。"
+      "observation": "直读 200（99.5 KB / 113 张卡片，69 免费 / 48 已结束）：本轮 3 条新面孔均完成核实——云知声 U Plan Free（已入库）、讯飞星辰 Spark-X2.6 10 亿 tokens（库内已有 pending 条目，官方首页倒计时约 6 天）、火山方舟新用户免费推理额度（官方文档 SPA 不可读，仅社区口径 500k tokens/模型）。另有小米 MiMo ¥5、Kimi 15 元券、Scaleway 100 万 tokens、AtomCode 等小额项留候选。"
     },
     {
       "id": "tokentab",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 直读 200（234 KB）：110 品牌 / 245 权益，generated 仍停在 2026-10-26T12:00:00Z，属静态快照、无增量。大额项仍为创业/学生资质类（Google Cloud $350k、Cloudflare $350k、YC $25k、ElevenLabs $4k、UpCloud $250、DigitalOcean $200+$50），不符合本轮面值+免资质口径，未入库。"
+      "observation": "brands_new.json 200（22.7 KB，110 品牌 / 465 权益），generated 仍为 2026-10-26 静态快照，无增量。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直读 200（79.3 KB，25 条）。本轮新增线索：zcode 周末「5 亿鸡蛋」多帖（11-13）、Google Developer Program「每月 $10」（实为 Premium 权益，需 Google AI Pro 付费订阅，已排除）、AMD AI Developer Program $10（官方实为 $100，已有条目）、腾讯智囊团拉新、muse 白嫖提示词帖；无新增入库。"
+      "observation": "福利羊毛分类 RSS 200（15.8 KB / 25 条）：telnyx 注册送 25 刀（AFF 帖）、腾讯智囊团认证 100、AMD 免费领 10 美元（官方实为 $100，库内已按官方口径）、google 每月 $10（实为付费 Google AI Pro 权益）等；均为社区线索或已否项，无新入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直读 200（11.6 KB，20 条）。本轮条目以二手交易、节点与故障讨论为主（hkcloudx 转让、raksmart 秒杀回款、Claude 故障），无新的官方福利线索。"
+      "observation": "RSS 200（4 KB / 20 条）：以交易、账号与 ChatGPT/Claude 话题为主，福利向只有「muse 登录成功」「HKCloudX 迁移 AMD」等既有条目讨论，无新增可入库线索。"
     },
     {
       "id": "lowendtalk",
@@ -325,11 +325,11 @@
       ],
       "entryUrl": "https://freeaiapis.org/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直读 200（76.2 KB），页面已是单供应商详情式结构（API setup/Listed model IDs/Verification/limits 等小节），首页不再给多供应商清单；本轮未取到可入库的新条目。"
+      "observation": "直读 200（17 KB，13 条在架）：新增 MarsAI（5M verification credits / 7 天，需 Discord+Telegram 验证）为小额且需社群验证，留候选；其余为已入库厂商（Groq/OpenRouter/Cohere/NVIDIA）。"
     },
     {
       "id": "github-pack",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "RSS 直读 200（103 KB，25 条）。本轮以域名平台（NameHug/.xyz 首年 13 元）、邮箱故障与建站讨论为主，Cloudzyro 无限站点属建站服务推广、无官方额度条款，不入选。"
+      "observation": "互联网服务栏目 RSS 200（14.1 KB / 25 条）：「速撸免费云电脑」指向 agent.teleai.com.cn TeleAgent + 邀请码（AFF，官方落地页仍为纯壳），维持排除；其余为机房/域名/交易话题。"
     },
     {
       "id": "aideal",
@@ -1024,7 +1024,7 @@
     {
       "id": "lingma-pricing",
       "name": "通义灵码价格页",
-      "url": "https://lingma.aliyun.com/pricing",
+      "url": "https://qoder.com.cn/pricing",
       "priority": "P1",
       "kind": "official",
       "topics": [
@@ -1033,13 +1033,13 @@
       "methods": [
         "html"
       ],
-      "entryUrl": "https://lingma.aliyun.com/pricing",
+      "entryUrl": "https://qoder.com.cn/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-12T17:29:38Z",
-      "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮直连 200（88.1 KB）：定价页档位重构为个人基础版（免费，对话 50 轮次/月 + 单元测试智能体 50 方法/月）、个人专业版（限免 ¥59）、企业标准版 ¥79/人/月、企业专属版 ¥159/人/月；旧的 19.9/169/559 与 Credits 表述下架。"
+      "observation": "入口 lingma.aliyun.com/pricing 现 302 至 qoder.com.cn/pricing（Qoder CN 定价页）：体验版 ¥0（有限体验额度 + 2 周专业版试用 300 Credits + 签到 30 天 3,000 Credits），专业版双11折扣价 ¥19.9 首月（原价 ¥59）；直读 8.5 KB 为 SPA 壳，正文需渲染代理。"
     },
     {
       "id": "ibm-cloud-free",
@@ -3515,6 +3515,47 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮首读：直连 200（78.8 KB），活动起止、实名认证与充值两档额度、计量方式、1M 上下文 / 128K 输出、BASEURL 与模型 ID 均在静态正文；页面自带 FAQ 可交叉确认不提供按量付费。"
+    },
+    {
+      "id": "unisound-token-plan",
+      "name": "云知声 Token Hub · U Plan 文档",
+      "url": "https://maas.unisound.com/docs/token-plan/overview",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://maas.unisound.com/docs/token-plan/overview",
+      "status": "readable",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直读 200（111 KB，Next.js 服务端渲染，权益表在 HTML 表格中可直接解析）：三档套餐权益表 + 积分刷新规则 + 「Free 档免费领」表述齐全，是本轮 unisound-u-plan-free-weekly-credits-202611 升为 active/high 的直接依据。"
+    },
+    {
+      "id": "hatchet-pricing",
+      "name": "Hatchet 定价",
+      "url": "https://hatchet.run/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://hatchet.run/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-14T00:02:42Z",
+      "lastSuccessAt": "2026-11-14T00:02:42Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直读 200（14 KB，静态 HTML）：Pay-as-you-go 免费额度与「No card / Card on file」两列限制表、超量单价、7 天保留与 MIT 开源说明均可直接解析，无需渲染代理。"
     }
   ]
 }
