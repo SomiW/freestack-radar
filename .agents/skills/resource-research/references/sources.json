@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-14T10:12:25Z",
-      "lastSuccessAt": "2026-11-14T10:12:25Z",
+      "checkedAt": "2026-11-14T20:23:02Z",
+      "lastSuccessAt": "2026-11-14T20:23:02Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 free-tier（20 条 / 5.7 KB）与 signup-credit（20 条 / 5.8 KB）两组均 200 可解析：命中 Rime $50/月、Inception 100M tokens、Upstash QStash 1,000/日、Render Hobby、Kiro 50 credits、Tavily 等，全部已在库内（对应 id 见源码），无新候选。"
+      "observation": "WebFetch 只读（服务端转 markdown）：signup-credit 排序值前 10 条为 CockroachDB $400 / Databricks $400 / ClickHouse $300 / GCP $300 / Oracle $300 / AWS $200 / Blaxel up to $200 / Daytona $200 / Deepgram $200 / Azure $200，全部已在库内（Daytona 为 pending），无新候选。"
     },
     {
       "id": "aifree",
@@ -40,11 +40,11 @@
       ],
       "entryUrl": "https://aifree.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-14T10:12:25Z",
-      "lastSuccessAt": "2026-11-14T10:12:25Z",
+      "checkedAt": "2026-11-14T20:23:02Z",
+      "lastSuccessAt": "2026-11-14T20:23:02Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直读 200（31.2 KB）：仍为 Top verified picks / New this week / Upcoming deadlines 分栏，未见未入库的新官方福利，无新增。"
+      "observation": "WebFetch 只读：首页 15 条为 SearchApi / PixelSniff / TokScript / AgentRouter / SmarToken / T Cloud Public €250 / AkashML / Inception / DeepInfra DeepStart / YepAPI / Tripo / fal / ElevenLabs / Bing / Gemini 学生计划；除 T Cloud（B2B 合同 + 需支付方式）外均已在库或面值过低。"
     },
     {
       "id": "aispoils",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-14T10:12:25Z",
-      "lastSuccessAt": "2026-11-14T10:12:25Z",
+      "checkedAt": "2026-11-14T20:23:02Z",
+      "lastSuccessAt": "2026-11-14T20:23:02Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "直读 200（99.5 KB）：免费卡片仍为 Kilo/火山方舟/华为 CodeArts/百炼/硅基流动/百度 Comate/七牛/EXAONE/IteraCompute/讯飞星辰/云知声/Qoder/OpenCode/GLM 等，全部已在库；无新面孔。"
+      "observation": "WebFetch 只读：最新卡片新增「Claude 访客通行证（7 天 Pro，含 Claude Code）」，其余（Antigravity / Devin Desktop / TRAE / WorkBuddy / GLM 免费组 / ZCode / MiMo ¥5 / Kiro / Cursor / 火山方舟 / CodeArts / 百炼 / 硅基流动 / Comate / 七牛 / EXAONE / IteraCompute / 星辰 / 云知声 / OpenCode / ZenMux / Copilot）均已在库或已定排除口径。"
     },
     {
       "id": "tokentab",
