@@ -78,11 +78,12 @@
 ## 交付
 
 - 文件差异：`data/resources.json`（50 条复核 + 1 条 expired + 3 条新增 + 1 条升档）、`.agents/skills/resource-research/references/sources.json`（刷新 perq / linux-do / nodeseek / aifuli / token-pencil / autoclaw-blog，新增 valyu-pricing、together-models）、本报告。
-- 提交与推送：见本轮提交记录（直推 main，未强推、未跳过分支保护）。
+- 提交：`6c21361`（数据+来源+报告），直推 main，未强推、未跳过分支保护（`7534171..6c21361`）。
 
 ## 发布
 
-- 触发方式：main 推送后由 `.github/workflows/pages.yml` 构建部署；结果与线上抽检见提交后的补记。
+- Pages run [43738062661](https://github.com/SomiW/freestack-radar/actions/runs/43738062661) success；Check run 43738062732 success。
+- 线上抽检（`https://somiw.github.io/freestack-radar/`）：index.html 200，引用 `assets/index-CEwLCOqR.js`；线上 bundle SHA-256 `4f4cacbd…b561f7`（1,942,434 B）与本地重建逐字节一致；`autoclaw-weekly-100m-tokens-202611`、`together-ternary-bonsai-27b-free-202611`、`valyu-free-2000-search-credits-month-202611` 与 coderabbit 新口径串「1.2M+ in cash delivered」各命中 1 次。
 
 ## 待办
 
