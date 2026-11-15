@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-14T20:23:02Z",
-      "lastSuccessAt": "2026-11-14T20:23:02Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "WebFetch 只读（服务端转 markdown）：signup-credit 排序值前 10 条为 CockroachDB $400 / Databricks $400 / ClickHouse $300 / GCP $300 / Oracle $300 / AWS $200 / Blaxel up to $200 / Daytona $200 / Deepgram $200 / Azure $200，全部已在库内（Daytona 为 pending），无新候选。"
+      "observation": "本轮抓取 /api/search?type=free-tier&audience=anyone&sort=newest&limit=50，返回 50 条报价：Keenable 100K/月、NeevCloud 1,500 沙箱分钟为新增合格候选（已各入库一条）；其余（Exa/Honeycomb/Kiro/NVIDIA/Render/Rime/deepset/Deno/Axiom/Langfuse/New Relic/Turso/Kilo/Lovable/Codex/OpenCode/v0/CodeRabbit/Cartesia/Perch/Checkly/Clerk/Ably/ZenRows/Base44/Make/Zapier/AgentQL/Greptile/Maritaca/Together 单模型/Bolt）均在库内或面值过低。"
     },
     {
       "id": "aifree",
@@ -107,11 +107,11 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-14T20:23:02Z",
-      "lastSuccessAt": "2026-11-14T20:23:02Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "WebFetch 只读：最新卡片新增「Claude 访客通行证（7 天 Pro，含 Claude Code）」，其余（Antigravity / Devin Desktop / TRAE / WorkBuddy / GLM 免费组 / ZCode / MiMo ¥5 / Kiro / Cursor / 火山方舟 / CodeArts / 百炼 / 硅基流动 / Comate / 七牛 / EXAONE / IteraCompute / 星辰 / 云知声 / OpenCode / ZenMux / Copilot）均已在库或已定排除口径。"
+      "observation": "本轮直读首页（99 KB），72 项免费内容逐条比对：Kilo 网关 16 个 $0 模型、火山方舟、华为码道、阿里云百炼、硅基流动、OpenCode Zen 14 款、Overrouter 14 款 :free、ZCode 800 万/日、MiMo、七牛、云知声、AutoClaw 等均已在库；仅新增候选 AIHubMix（10 次试用，面额过低）、AtomCode（额度未公布）、国家超算互联网 SCNet（/home/subject/maas 已 404）、SenseNova（/token-plan 为 SPA 壳，渲染 239 字节）、Sakura AI Engine（ai.sakura.ad.jp 无定价正文），本轮均未入库。"
     },
     {
       "id": "tokentab",
@@ -995,11 +995,11 @@
       ],
       "entryUrl": "https://www.codebuddy.cn/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "渲染代理读取定价表：体验版 500 积分/月、补全 5,000 次（限免不限次）、自动任务 3（限免 99）、成员 3（限免 5）、资料云 5 GB、云服务应用 10、单应用资源点 5,000（限免 10,000）。"
+      "observation": "渲染后读取「每月 500 积分」「5000次代码实时补全（限免无限次）」「3个自动任务（限免99个）」「每月基础2,000积分」等档位，与库内 codebuddy-cn 条目一致。"
     },
     {
       "id": "exa-pricing",
@@ -1035,11 +1035,11 @@
       ],
       "entryUrl": "https://qoder.com.cn/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-14T00:02:42Z",
-      "lastSuccessAt": "2026-11-14T00:02:42Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "入口 lingma.aliyun.com/pricing 现 302 至 qoder.com.cn/pricing（Qoder CN 定价页）：体验版 ¥0（有限体验额度 + 2 周专业版试用 300 Credits + 签到 30 天 3,000 Credits），专业版双11折扣价 ¥19.9 首月（原价 ¥59）；直读 8.5 KB 为 SPA 壳，正文需渲染代理。"
+      "observation": "本轮完整渲染档位表：体验版 ¥0「有限的体验额度」+2 周试用 300 Credits+签到 30 天 3,000 Credits；专业版双11 ¥19.9（原 ¥59）、高级版 ¥169、旗舰版 ¥559、团队版 ¥99/席位、资源包 ¥40/1,000 Credits。已据此更正 tongyi-lingma 条目中「¥169/¥559 已下架」的误判。"
     },
     {
       "id": "ibm-cloud-free",
@@ -1243,11 +1243,11 @@
       ],
       "entryUrl": "https://www.skyvern.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-03T12:52:53Z",
-      "lastSuccessAt": "2026-11-03T12:52:53Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "定价页静态 HTML（80 KB）可读；另有 .md 孪生页 https://www.skyvern.com/md/pricing.md 复述同一条款（14 天试用 30,000 credits、14 天内取消不收费、Hobby $29/Pro $149）。"
+      "observation": "定价 FAQ 确认「14-day trial: 30,000 credits … You add a card to start, and nothing is charged until day 14」，据此把库内 creditCard 由 unknown 改为 required。"
     },
     {
       "id": "databricks-trial",
@@ -1571,11 +1571,11 @@
       ],
       "entryUrl": "https://docs.hetzner.com/general/company-and-policy/experiments/inference/",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "实验页渲染可读：实验期免费、60 秒内 4M 输入 / 100k 输出 tokens、10 请求，超限 429。"
+      "observation": "文档确认 Qwen/Qwen3.6-35B-A3B-FP8、Qwen3.8-27B、262,144 上下文与 429 超限；每分钟限速表仍为前端渲染，数值未取到。"
     },
     {
       "id": "perch-starter-docs",
@@ -1613,11 +1613,11 @@
       ],
       "entryUrl": "https://dev.nebius.com/builders",
       "status": "readable",
-      "checkedAt": "2026-11-05T00:47:00Z",
-      "lastSuccessAt": "2026-11-05T00:47:00Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（186 KB，去脚本后正文 6.5K 字符）：免费加入、四步领取流程、逐项额度（$25 Token Factory / $25 Tavily / $100 LangSmith / $50 Toloka + $50 Tandem）、合作方条款免责与 FAQ 全文均在正文，无需渲染。"
+      "observation": "权益卡与 FAQ 仍为 $25 Token Factory + $25 Tavily + $50 Toloka（FAQ 原文一致），LangSmith $100 与 Tandem $50 仍不在页面。"
     },
     {
       "id": "weaviate-pricing",
@@ -1837,11 +1837,11 @@
       ],
       "entryUrl": "https://antigravity.google/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "antigravity.google/pricing 仍无任何数值（正文 4.4 KB 纯前端）；免费档模型矩阵在 docs/models 的 Plan×Model 表：Gemini 3.8 Flash / Claude Sonnet 4.6 / Opus 4.6 / GPT-OSS-120b 可用，新增 Gemini 4 Carbon 免费档不可用。"
+      "observation": "pricing 页仍只有「Basic weekly rate limits」无数值；docs/models 完整读到 14 行模型矩阵与「Will be removed on November 18, 2026」脚注。"
     },
     {
       "id": "apify-creator-plan",
@@ -2298,11 +2298,11 @@
       ],
       "entryUrl": "https://www.kaggle.com/docs/efficient-gpu-usage",
       "status": "readable",
-      "checkedAt": "2026-11-12T17:29:38Z",
-      "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮 docs/efficient-gpu-usage 渲染后 3.0 KB：GPU 每周 30 小时确认；另成功读取 docs/tpu（16.8 KB）「up to 20 hours per week of TPUs and up to 9h at a time in a single session」，长期待办的 TPU 20 小时口径已闭环。"
+      "observation": "efficient-gpu-usage 确认「quota resets weekly and is 30 hours」；docs/tpu 本轮仍为前端壳（2.7 KB 无正文），TPU 20 小时未能复取。"
     },
     {
       "id": "retell-pricing",
@@ -3304,11 +3304,11 @@
       ],
       "entryUrl": "https://www.cucloud.cn/bwnnov.html",
       "status": "readable",
-      "checkedAt": "2026-11-12T17:29:38Z",
-      "lastSuccessAt": "2026-11-12T17:29:38Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮静态页仍为 Vue 占位（827.6 KB/1.8 KB 正文），渲染代理 200 取到 7.7 KB 正文：商品卡规格与价格全部可读（AI 云桌面标准 4C8G/1 月/0 元/原价 ¥164.67、ECS 2核4G 3M 50GB 11.11 元/6 个月限 2 台、付费云桌面 ¥29.93/¥40.19/¥50.45、Token Plan Lite 随 OpenClaw 镜像赠送）。此前只能读到规则文本，商品规格需登录的结论作废。"
+      "observation": "渲染（jina）后读取活动页：AI 云桌面标准 4C8G ¥0.00（原价 ¥164.67）、ECS 2核4G/3M/50GB 11.11 元/6 个月（新客限 2 台，原价 ¥1473.54），与库内一致；活动规则仍在弹窗内，时间沿用官方原文 11-11 09:00—12-31 23:59。"
     },
     {
       "id": "lindy-pricing",
@@ -3470,11 +3470,11 @@
       ],
       "entryUrl": "https://autoclaw.zhipuai.cn/blog/news/M11W2/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮首读：直连 200（47.5 KB），静态 HTML 可直读活动公告正文（时间窗、50M Tokens、每账号限领一次、积分到期时间）与侧栏往期/下期公告列表，适合按「每周福利」节奏跟踪。"
+      "observation": "blog/news/M11W2 列表页新增公告「每周福利｜100M Tokens 等你领取！11 月 16 日至 11 月 22 日登录 AutoClaw，100M Tokens 即刻到账！」（2026-11-13 发布）；本期 11-09—11-15 50M 今日 23:59 结束。"
     },
     {
       "id": "iteracompute-free",
@@ -3556,6 +3556,47 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直读 200（14 KB，静态 HTML）：Pay-as-you-go 免费额度与「No card / Card on file」两列限制表、超量单价、7 天保留与 MIT 开源说明均可直接解析，无需渲染代理。"
+    },
+    {
+      "id": "keenable-pricing",
+      "name": "Keenable Pricing",
+      "url": "https://keenable.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://keenable.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "官方定价页直读（66 KB）：免费档每组织每月 100,000 次请求、免绑卡、10 RPS/组织，四类 SKU 各计 1 次；付费 $4/1,000 次、专用容量 $1/1,000 次（100+ RPS）。"
+    },
+    {
+      "id": "neevcloud-docs",
+      "name": "NeevCloud Docs（Agentic Studio）",
+      "url": "https://docs.ai.neevcloud.com/release-notes/nov-2026-release",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://docs.ai.neevcloud.com/release-notes/nov-2026-release",
+      "status": "readable",
+      "checkedAt": "2026-11-15T03:49:59Z",
+      "lastSuccessAt": "2026-11-15T03:49:59Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11 发布说明：每个已验证账号每月 1,500 免费沙箱分钟、免绑卡，≤2 vCPU/4 GB 全免、更大规格按比例折算；www.neevcloud.com/pricing 本轮返回 403。"
     }
   ]
 }
