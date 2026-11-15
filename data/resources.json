@@ -25821,6 +25821,98 @@
           "note": "新增收录：官方发布说明确认每个已验证账号每月 1,500 免费沙箱分钟、免绑卡、按规格加权计费；发现自 perq 报价列表。定价页 403，单价未取。"
         }
       ]
+    },
+    {
+      "id": "zhihu-open-platform-free-5000-daily-202611",
+      "title": "知乎数据开放平台 · 全网搜索 / 知乎搜索 API 每日免费 5,000 次（注册即发 Access Secret，实名后额度更高）",
+      "provider": "知乎（Zhihu）",
+      "category": "ai",
+      "description": "知乎数据开放平台把站内问答与全网信源打包成面向大模型的搜索与数据接口，提供全网搜索、知乎搜索、直答、知乎热榜、问题发现、知识库、PDF 解析、PPT 生成等 API，同时兼容 Skills / MCP 方式接入。官方首页写明「免费获取试用额度 · 注册免费获取 5000 次/天调用」，价格文档公布超出免费额度后的按次单价。",
+      "quota": "每日免费额度：官方首页原文「注册免费获取 5000 次/天调用」；官方价格文档说明「平台提供每日免费调用额度，部分服务共用同一额度组，调用组内任一服务都会消耗该组剩余次数」，同一知乎账号下多个 Access Secret 共用额度，每日按北京时间 00:00 重置、未用完不结转，且明示「每日免费额度属于限时优惠，后续可能根据活动情况调整」。各接口实际剩余额度以「个人中心 - 用量统计 - 各接口限免额度」或 `GET /api/v1/quota` 为准；接口文档另写明未实名等低额度用户在「问题发现」为 10 次/日、「创作能力」为 10 次/日（普通用户分别为 100 次/日、500 次/日）。超出后单价（人民币含税，元/千次）：全网搜索 5、知乎搜索 20、知乎热榜 10、直答 Agent 20、问题回答 20；用户数据与创作能力类各 10；知识库列表与内容列表 1、知识库文件上传与检索 10。鉴权失败、参数错误、限流等未成功请求不计费，流式服务在开始输出有效内容后按 1 次成功调用计量。",
+      "benefitValue": "按官方单价折算，若 5,000 次/日全部用于全网搜索约合 ¥25/日（≈¥750/月），用于知乎搜索约合 ¥100/日（≈¥3,000/月）；因官方未逐接口公布分配数额、且部分服务共享额度组，实际到手价值以控制台额度为准，此处仅作量级参考。",
+      "eligibility": "官方 FAQ：「开放平台现已面向所有用户开放」，注册知乎账号后在「个人中心」新建 Access Secret 即可调用；实名认证可提升每日额度（接口文档把「未实名」单列为 10 次/日的低额度档）；官方文档与价格页均未要求绑定信用卡或预充值，免费额度用尽后依次从体验余额、充值余额扣费。",
+      "regions": "面向中国大陆开发者（价格以人民币含税计价、额度按北京时间 00:00 重置）；官方未公布地区访问限制，未提海外主体注册限制。",
+      "validity": "每日免费额度按自然日（北京时间 00:00）重置，未用完次数不结转；官方明示该免费额度属于限时优惠、可能随活动调整，未公布结束日期。",
+      "deadlineNote": "无官方公布的固定截止日期；免费额度为限时优惠，随时可能调整，账号额度以「个人中心 - 用量统计」实时显示为准。",
+      "officialUrl": "https://developer.zhihu.com/docs",
+      "claimUrl": "https://developer.zhihu.com/profile",
+      "discoveryUrl": "https://linux.do/t/topic/3179270",
+      "discoveredAt": "2026-11-15T06:44:44Z",
+      "startsAt": null,
+      "endsAt": null,
+      "status": "active",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "lastVerifiedAt": "2026-11-15T06:44:44Z",
+      "nextReviewAt": "2026-11-16T06:44:44Z",
+      "confidence": "high",
+      "confidenceReason": "三处官方页面互证：首页横幅「注册免费获取 5000 次/天调用」、价格文档（每日免费额度、共享额度组、北京时间重置、限时优惠声明、各服务单价表）与接口文档（未实名 10 次/日的低额度档、额度查询接口）。Access Secret 自助开通与不计费规则亦为官方原文。未明确项：搜索类接口在 5,000 次/日内如何分配、QPS/并发限速未公布。",
+      "costNotes": "免费额度内 $0；超出后按元/千次计费（全网搜索 5、知乎搜索 20、热榜 10、直答 20），费用依次从体验余额、充值余额扣除，单次调用不拆分使用两种余额，余额不足时请求不执行；未成功请求不计费。用 OAuth 查询他人数据时费用归属发起调用的开发者账号。",
+      "evidence": [
+        {
+          "url": "https://developer.zhihu.com/",
+          "summary": "官方首页横幅原文：「免费获取试用额度 注册免费获取5000次/天调用」；导航列出的能力含全网搜索、知乎搜索、直答、热榜、问题发现、创作能力、知识库、PDF 解析、PPT 生成、知乎用户数据（OAuth）。",
+          "checkedAt": "2026-11-15T06:44:44Z"
+        },
+        {
+          "url": "https://developer.zhihu.com/docs",
+          "summary": "官方文档（/console/api/v3/docs 返回的完整 markdown）「服务价格」章：「平台提供每日免费调用额度。部分服务共用同一额度组：调用组内任一服务，都会消耗该组的剩余免费次数。同一知乎账号下的多个 Access Secret 共用该账号的额度。每日额度按北京时间 00:00 重置，未用完的次数不结转。每日免费额度属于限时优惠，后续可能根据活动情况调整。」单价表：全网搜索 5 元/千次、知乎搜索 20 元/千次、知乎热榜 10 元/千次、直答 Agent 20 元/千次、问题回答 20 元/千次、用户数据与创作能力各 10 元/千次、知识库列表/内容 1 元/千次、上传/检索 10 元/千次；「鉴权失败、参数错误、触发限流等未成功的请求不计费」。",
+          "checkedAt": "2026-11-15T06:44:44Z"
+        },
+        {
+          "url": "https://developer.zhihu.com/docs",
+          "summary": "官方文档「额度查询 API」：GET /api/v1/quota 按自然日返回 TotalQuota / TotalUsed / RemainingQuota，查询不消耗业务额度；覆盖 global_search、zhihu_search、hot_list、question_discovery、zhida_openai、tools、knowledge、user_data、creator。「问题推荐」「问题回答」文档写明「默认每个租户每个自然日 100 次，未实名等低额度用户为 10 次」，「创作能力」为 500 次 / 未实名 10 次。",
+          "checkedAt": "2026-11-15T06:44:44Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-15T06:44:44Z",
+          "status": "active",
+          "note": "新增收录：官方首页确认注册后 5,000 次/天免费调用、官方价格文档确认每日免费额度与各服务单价、接口文档确认未实名 10 次/日档与额度查询接口；未要求绑卡。发现自 linux.do 福利版帖（3179270）。"
+        }
+      ]
+    },
+    {
+      "id": "amazon-q-developer-free-tier-50-requests-202611",
+      "title": "Amazon Q Developer 永久免费档：每月 50 次 agentic 请求 + 1,000 行 Java 升级（Builder ID 登录，免绑卡）",
+      "provider": "Amazon Web Services (AWS)",
+      "category": "ai",
+      "description": "Amazon Q Developer 是 AWS 的 AI 编码与云运维助手，覆盖 IDE 插件、CLI 与 AWS 控制台问答。官方定价页把 Free Tier 写为「perpetual Free Tier」（永久免费档），每月给定额 agentic 请求与 Java 升级额度，超出后需升级 Pro 档（$19/月/人）。",
+      "quota": "免费档（$0/月）：每月 50 次 agentic requests（含 Q&A 对话与 agentic coding），可使用最新 Claude 模型；IDE 插件与 CLI 均含；Java 应用升级（transformation）每月 1,000 行代码；AWS 控制台通用问答与常见错误诊断可用；含引用追踪与公共代码建议抑制，可选退出数据收集。Pro 档 $19/月/人：更高的 agentic 请求上限、Java 升级 4,000 行/月/用户（按付款账号池化，超出 $0.003/行）、.NET 应用转换、Identity Center 支持与管理控制台、IP 赔偿。",
+      "benefitValue": "免费档按月计价 $0；Pro 档对照价 $19/月/人，若按 Pro 单价的请求额度折算，免费 50 次/月的确定性价值有限，主要价值在于免绑定付费即可长期使用 Claude 系模型的 agentic coding 与 1,000 行/月 Java 升级额度。",
+      "eligibility": "以 AWS Builder ID 或 AWS IAM 用户登录即可使用；官方注明「Free Tier limits in the IDE are available only to Builder ID users」，即 IDE 内免费额度仅对 Builder ID 用户开放；额度按账户（IAM 用户）或按用户（Builder ID）计；Free Tier 用户可用 Builder ID + AWS 账号升级个人 Pro 订阅。官方未要求信用卡即可用 Builder ID 免费档。",
+      "regions": "随 AWS 服务可用区域提供；官方声明为维持服务性能，账户用量可能因区域因素、支付历史、异常使用或配额提升审批而调整。",
+      "validity": "官方写明「perpetual Free Tier」（永久免费档），按月计算限额，未公布结束日期。",
+      "endsAt": null,
+      "deadlineNote": "官方称永久免费档、无活动截止日期；限额按月重置（官方未说明未用完额度是否结转）。",
+      "officialUrl": "https://aws.amazon.com/q/developer/pricing/",
+      "claimUrl": "https://aws.amazon.com/q/developer/",
+      "discoveryUrl": "https://token.pencilai.top/",
+      "discoveredAt": "2026-11-15T06:44:44Z",
+      "startsAt": null,
+      "status": "active",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "lastVerifiedAt": "2026-11-15T06:44:44Z",
+      "nextReviewAt": "2026-11-16T06:44:44Z",
+      "confidence": "high",
+      "confidenceReason": "AWS 官方定价页原文可读：「Amazon Q Developer offers a perpetual Free Tier with monthly limits available to users logged in as an IAM user or AWS Builder ID user」，功能对比表逐项列出 50 agentic requests/month、1,000 LOC/月 Java 升级、Pro 档 4,000 LOC 与 $0.003/行超量、$19/mo per user；Builder ID 与 IAM 的额度归属差异为同页原文。未明确项：免费档是否要求信用卡（官方未提，Builder ID 路径不需要）、限额重置的具体日期规则。",
+      "costNotes": "免费档 $0；Pro 档 $19/月/用户；Java 升级超出部分 Pro 档 $0.003/行（仅对返回升级建议的提交计费）；免费档无超量付费通道，用尽即等下月重置。",
+      "evidence": [
+        {
+          "url": "https://aws.amazon.com/q/developer/pricing/",
+          "summary": "官方定价页：Pricing Table「Included agentic requests (Q&A chat, agentic coding) — 50 agentic requests per month」「Amazon Q Developer transformation capability for Java upgrades — 1,000 lines of code per month」；正文「Amazon Q Developer offers a perpetual Free Tier with monthly limits available to users logged in as an AWS Identity and Access Management (IAM) user or AWS Builder ID user. Free Tier limits in the IDE are available only to Builder ID users. Free Tier limits apply at the account level when logged in as an IAM user, or at the user level for AWS Builder ID users.」「Free Tier: Advanced capabilities at zero cost / Pro Tier: Expanded limits $19/mo. per user」；Pro 档 Java 4,000 LOC/月池化，超出 $0.003/LOC。",
+          "checkedAt": "2026-11-15T06:44:44Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-15T06:44:44Z",
+          "status": "active",
+          "note": "新增收录：AWS 官方定价页确认 perpetual Free Tier（50 次 agentic 请求/月、1,000 行 Java 升级/月、IDE 与 CLI 可用、Builder ID 免绑卡路径、Pro $19/月对照）。发现自 token-pencil 免费模型清单。"
+        }
+      ]
     }
   ]
 }
