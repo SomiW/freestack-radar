@@ -17,10 +17,13 @@
         "html"
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
-      "status": "readable",
-      "checkedAt": "2026-11-15T16:51:44Z",
+      "status": "restricted",
+      "checkedAt": "2026-11-16T03:02:28Z",
       "lastSuccessAt": "2026-11-15T16:51:44Z",
-      "lastFailure": null,
+      "lastFailure": {
+        "at": "2026-11-16T03:02:28Z",
+        "reason": "TLS 握手失败（curl 35 SSL_ERROR_SYSCALL），perq.ai 与 perq.sh 均不可达，本轮未取到列表；新候选改由 linux.do / nodeseek RSS 与官方定价页扫描产生。"
+      },
       "canVerifyOfficial": false,
       "observation": "本轮抓取 free-tier 与 signup-credit 各 50 条（66 KB + 62 KB，last_verified 均为 2026-11-15）：与库内 201 条按官方 URL 去重后，合格新候选为 Together「Ternary Bonsai 27B 免费推理」与 Valyu「工作邮箱 2,000 credits/月」，两条已入库；Blacksmith、Rime、Inception、Hatchet、Keenable、NeevCloud、Z-ai、NVIDIA 等均已在库。其余为低成本/需申请/中转类（Blaxel「up to $200」条件未披露、Nscale $5、Scrapfly/ScraperAPI/ScrapingBee/Browser Use $1-$5、Snowflake $400 第 3 次无官方 $400 字样）。"
     },
@@ -1284,8 +1287,8 @@
       ],
       "entryUrl": "https://www.linode.com/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "linode.com/pricing 直连 curl 403（2.9 KB），只读渲染可取：定价页 FAQ 的「$100 credit」条目本轮折叠未展开，60 天窗口原文未取到；akamai.com/lp/free-credit-100 渲染仍确认 US$100 额度。"
@@ -1817,8 +1820,8 @@
       ],
       "entryUrl": "https://www.tinyfish.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（HTML 133.8 KB，正文约 5.4 KB），TinySearch / TinyFetch 免费限额与 $8 初始 Wallet 未变；复核成功。"
@@ -1857,8 +1860,8 @@
       ],
       "entryUrl": "https://apify.com/pricing/creator-plan",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（357.6 KB，正文约 6.2 KB）：$1/月、$6/6 个月、$500 前 6 个月一次性、$85 月上限与代理单价均未变；复核成功。"
@@ -2236,8 +2239,8 @@
       ],
       "entryUrl": "https://kernel.sh/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（74.7 KB，正文约 3.6 KB）：$5/月免费额度、5 并发与免绑卡 FAQ 未变；复核成功。"
@@ -2277,8 +2280,8 @@
       ],
       "entryUrl": "https://nango.dev/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（135 KB，正文约 6.8 KB）：Free 10 connections / 10 小时 / 10GB hard-capped 未变；复核成功。"
@@ -2483,8 +2486,8 @@
       ],
       "entryUrl": "https://axiom.co/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（1.49 MB，正文约 11.5 KB）：Personal $0 永久档与 500 GB / 10 GB·小时 / 25 GB / 30 天保留未变；复核成功。"
@@ -2504,8 +2507,8 @@
       ],
       "entryUrl": "https://www.blacksmith.sh/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（150.3 KB，正文约 6.2 KB）：每月 3,000 分钟与各 runner 单价未变；复核成功。"
@@ -2525,8 +2528,8 @@
       ],
       "entryUrl": "https://www.thundercompute.com/students",
       "status": "readable",
-      "checkedAt": "2026-11-08T21:45:45Z",
-      "lastSuccessAt": "2026-11-08T21:45:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（171.3 KB，正文约 2.3 KB）：$20 学生额度、仅美国高校、限 A6000/L40 未变；复核成功。"
@@ -2730,8 +2733,8 @@
       ],
       "entryUrl": "https://plamo.preferredai.jp/api",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "plamo.preferredai.jp/api 静态 HTML 仅 1.8 KB（纯壳），只读渲染可读：Free 档 0 円未变，新增「PLaMo 3.0 Fin Beta 試用版・1利用者あたり24時間で50回まで」，搜索优惠仍到 2026-11-30（1 日 60 回/月 200 回）。"
@@ -2751,8 +2754,8 @@
       ],
       "entryUrl": "https://opencode.ai/docs/zen/",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "官方文档路径已从 `/docs/zen/` 迁到 `/docs/console/models/`：价格表 107 行中三列全 Free 的共 14 条（新增 Big Pickle，13 个 -free 变体仍在）；新增「Free-tier chat models require OpenCode」限定。"
@@ -2958,8 +2961,8 @@
       ],
       "entryUrl": "https://deno.com/deploy/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮直连 200（203 KB，正文 14.5 KB）：Free 档 1M 请求/月、20 GiB 出网、10 个应用未变；页面顶部新增「Deno Deploy will be sunset in April 2027」横幅，博客 2026-10-09 公告「Deno is joining Cloudflare」。"
@@ -3000,8 +3003,8 @@
       ],
       "entryUrl": "https://www.descope.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（214 KB，正文 14 KB），Free Forever $0 卡 8 项额度（7,500 MAU / 10 租户 / 3 SSO / 1 OIDC 联邦应用 / 5 测试用户 / 10,000 M2M / 2,000 MAC / 2,000 MATK）+ 8 项核心能力全内联，并明写「No overages. Upgrade required to exceed limits.」。"
@@ -3203,8 +3206,8 @@
       ],
       "entryUrl": "https://portal.uppcoder.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-10T23:44Z：直连 200 仅 4.6 KB 壳（前端渲染），r.jina.ai 渲染 200（4.7 KB 纯文本）取到全部档位与 FAQ：Spark €0 常驻 1 Stack + 每日 500 CPU 秒 + 2 GB 内存/磁盘、Launch €5、Deploy €15、Team €39；FAQ 明确「free plan has no time limit」「free tiers need no card」「60 days before」通知期。"
@@ -3223,8 +3226,8 @@
       ],
       "entryUrl": "https://workos.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-10T23:45:25Z",
-      "lastSuccessAt": "2026-11-10T23:45:25Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-10T23:44Z 直连 200（67.6 KB，正文 8.1 KB 静态内联）：User Management/AuthKit $0/月、前 100 万 MAU 免费、超出每百万 $2,500/月；Radar 前 1,000 次检查免费、每 5 万次 $100/月；Custom Domain $99/月；FAQ 明确开发阶段免绑卡、上生产前才需付费方式。"
@@ -3243,8 +3246,8 @@
       ],
       "entryUrl": "https://www.hyperbrowser.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-11T00:33Z 直连 200（16.6 KB，主体服务端渲染）：Free 档 5,000 credits、1,000 credits=$1、四产品通用、1 并发、7 天留存；Startup $30/月、Scale $100/月、Enterprise 14 天试用。免费档是否绑卡官方未写。"
@@ -3263,8 +3266,8 @@
       ],
       "entryUrl": "https://logto.io/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-11T00:33Z 直连 200（131.9 KB，正文 14.7 KB 静态内联）：Free $0/月、5 万 MAU、50K tokens、3 应用、免绑卡、含 M2M 与审计日志；Pro 起 $24/月、50K tokens 后 $0.08/100 extra。"
@@ -3283,8 +3286,8 @@
       ],
       "entryUrl": "https://serper.dev/",
       "status": "readable",
-      "checkedAt": "2026-11-11T00:34:23Z",
-      "lastSuccessAt": "2026-11-11T00:34:23Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮 2026-11-11T00:33Z 直连 200（71.5 KB，正文 95 KB 静态内联）：注册送 2,500 次查询、免绑卡；付费四档 $50/50k–$3,750/12.5M（$1.00–$0.30 per 1k），credits 6 个月有效；/pricing 路径返回 404，价目在首页。"
@@ -3367,8 +3370,8 @@
       ],
       "entryUrl": "https://build.nvidia.com/api/runtime/content/help-center-faq.yaml",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "官方 FAQ 以 YAML 直出（717 B）：「All models on build.nvidia.com are free to prototype with」「up to 40 requests per minute (RPM) for most models, with no per-token billing」。docs.api.nvidia.com/nim/docs/api-quickstart 说明邮箱注册开发者账号即得 API Key、全文未提绑卡。据此新增 nvidia-nim 条目（active/high）。"
@@ -3388,8 +3391,8 @@
       ],
       "entryUrl": "https://kilo.ai/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-12T07:17:20Z",
-      "lastSuccessAt": "2026-11-12T07:17:20Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（69.8 KB，正文 7.7 KB）：「Auto Free … $0 /mo No hosted credit required. Auto Free routes to free models through Kilo Gateway where available」，平台费 $0、Kilo Gateway 按 provider 原价无加价。kilo.ai/models?price=free 为前端过滤，服务端不返回固定免费清单，故入库条目未写模型数量。"
@@ -3490,8 +3493,8 @@
       ],
       "entryUrl": "https://iteracompute.com/free/",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮首读：直连 200（49.3 KB），免费额度（30M/月）、免绑卡、促销截止时间（2026-11-24 00:00 PT）与 Auto 调用示例均为静态正文，无需渲染。"
@@ -3510,8 +3513,8 @@
       ],
       "entryUrl": "https://www.qiniu.com/ai/free-models/conatus-2026",
       "status": "readable",
-      "checkedAt": "2026-11-13T13:50:16Z",
-      "lastSuccessAt": "2026-11-13T13:50:16Z",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "本轮首读：直连 200（78.8 KB），活动起止、实名认证与充值两档额度、计量方式、1M 上下文 / 128K 输出、BASEURL 与模型 ID 均在静态正文；页面自带 FAQ 可交叉确认不提供按量付费。"
@@ -3679,6 +3682,27 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "模型页原文：「On Together AI it costs Free per 1M input tokens and Free per 1M output tokens」「Available free on Together AI」，262K 上下文、FP16 质量保留 95%、True Bits per Weight 1.71；未公布该模型速率限制。据此新增 together 免费模型条目（active/high）。"
+    },
+    {
+      "id": "blaxel-pricing",
+      "name": "Blaxel Pricing",
+      "url": "https://www.blaxel.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.blaxel.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-16T03:02:28Z",
+      "lastSuccessAt": "2026-11-16T03:02:28Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "官方定价页 162 KB 直读：Pay-as-you-go「/bin/zsh.00 + USAGE」「Up to  in free credits」、Tier 0 Free 10 沙箱、Tier 1 /月 50、Tier 2 /月起；Compute/Jobs/MCP 三项按 GB RAM·秒计价，存储与域名单独列价。credits 发放条件、有效期与绑卡要求均未披露。"
     }
   ]
 }
