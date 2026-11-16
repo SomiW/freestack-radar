@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-16T13:14:00Z",
-      "lastSuccessAt": "2026-11-16T13:14:00Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "TLS 故障已恢复：本轮 /api/search 恢复 200（signup-credit newest 28.6 KB、20 条；free-tier newest 37 KB、total_matches 152，dataset_latest_verified 2026-11-16T05:43-05:00）。与库内 202 条按官方 URL 去重后，合格新候选为 Scrapfly「注册 1,000 credits、免绑卡、无时间限制」与 ScrapingBee「1,000 免费 API credits、免绑卡」，两条已入库（后者限制不全，pending/medium）；Nscale「$5 free credit」经官方 docs 复核为「需先充值最少 $5 才可用」，属最低充值门槛而非免费额度，排除；Maritaca pricing 仍 404。OVHcloud/Reducto/Oumi/Inception/Lindy/Mixedbread/You.com/Nebius/Apify/Parallel/Runloop/Zed/Browser Use 等均已在库。"
+      "observation": "本轮 /api/search 按 6 个类目各取 30 条（agents-automation/cloud-gpu/database-backend/dev-tools/llm-api/voice-audio），`category=ai-api` 已不存在（改为 llm-api），传旧值返回 400。dataset_latest_verified 2026-11-16T05:43-05:00。与库内 204 条去重后入库 2 条：AgentQL「Starter $0/月 50 次调用 + 10 小时浏览器」、Ultravox「首 30 分钟免费、之后 $0.05/分钟」；Workato「50K 一次性 credits」官方定价页无对应条文，Scaleway/Maritaca 定价入口 404，均未入库。"
     },
     {
       "id": "aifree",
@@ -823,11 +823,11 @@
       ],
       "entryUrl": "https://ecloud.10086.cn/op-help-center/doc/article/92837",
       "status": "readable",
-      "checkedAt": "2026-11-09T22:31:45Z",
-      "lastSuccessAt": "2026-11-09T22:31:45Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "连续 3 轮只回导航壳后，本轮 r.jina.ai 第 4 次尝试首次取到 21.8 KB 正文：活动期 2026-02-15–2026-12-31、2500 万 tokens、限时 30 天、限流 3000 tokens/min、仅部分自营模型（自营 Qwen3.5-35B-A3B 亦不支持）、合作与机密模型不参与、面向未领取过该额度的新老用户。直连仍只有 3.3 KB SPA 壳。"
+      "observation": "直连 3.3 KB 壳（第 2 轮），经只读渲染代理稳定取到全文（21.8 KB）：活动期 2026-02-15—2026-12-31、2500 万 tokens/30 天、3,000 tokens/min、仅部分自营模型；条款与库内一致。"
     },
     {
       "id": "huaweicloud-grow",
@@ -843,11 +843,11 @@
       ],
       "entryUrl": "https://developer.huaweicloud.com/grow",
       "status": "readable",
-      "checkedAt": "2026-11-10T10:58:15Z",
-      "lastSuccessAt": "2026-11-10T10:58:15Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "复核成功（r.jina.ai，21.4 KB）：顶部公告仍为「每天 16:00 代金券补货，数量有限先到先得；同时代金券设有兑换上限，具体限制可在兑换弹窗中查看。请勿多账号刷分，一经发现封禁处理」；积分任务结构未变。渲染页另出现「您当前的总兑换数 10/10，已达上限无法兑换」提示，疑为单账号累计兑换上限 10 件，未登录无法确证，未写入条款。代金券档位与库存仍需登录。"
+      "observation": "直连 2.5 KB 壳，经渲染读取：顶部公告仍为「新平台 11-23 开放、旧平台 11-20 00:00—11-23 00:00 停服升级、未兑换积分自动迁移」；签到与任务积分规则一致；代金券库存需登录，本轮未登录。"
     },
     {
       "id": "hkcloudx-cloud",
@@ -929,14 +929,14 @@
       ],
       "entryUrl": "https://yunzhi.play.cn/ai/",
       "status": "restricted",
-      "checkedAt": "2026-11-14T10:12:25Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
       "lastSuccessAt": "2026-11-03T03:35:39Z",
       "lastFailure": {
-        "at": "2026-11-14T10:12:25Z",
-        "reason": "直连 200（1.3 KB）无签到规则、额度与有效期（第 10 轮）。"
+        "at": "2026-11-16T23:26:52Z",
+        "reason": "直连 200（1.3 KB）与只读渲染代理均为纯图片首页，无签到/额度/有效期条文（第 11 轮）。"
       },
       "canVerifyOfficial": true,
-      "observation": "直连 200 仅 1.3 KB 外壳（去标签正文 4 字符「云智手机」），无签到/时长/额度条款（第 6 轮）。"
+      "observation": "直连与 r.jina.ai 均只返回 9 张活动图与下载入口，没有任何可核对的免费额度文字（第 11 轮）。"
     },
     {
       "id": "memoh-docs",
@@ -1734,11 +1734,11 @@
       ],
       "entryUrl": "https://www.coderabbit.ai/oss",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "复核成功。直读官方 OSS 页（872 KB）：承诺计数器由 $2,059,000 升至 $2,092,000（Since Aug 12, 2026），「1,196,000 OSS pull requests reviewed since the pledge」（上轮 1,165,000），「$10.0M committed」「$1.2M+ in cash delivered」「2.2M+ OSS PRs reviewed since Mar 2026」未变；公共仓库全功能免费条款未变。"
+      "observation": "直连 865 KB 可读；页内嵌数据改报：累计覆盖成本 $7,239,936、自 2026-03 起 2,386,774 个 OSS PR、自 pledge 起 1,338,000、近 30 天 526,942（上轮分别为 $7,205,312.85 / 2,368,040 / 1,298,000 / 520,612）。旧公开 feed `oss/latest.json` 已 404，数值须从页面内嵌 JSON 提取。"
     },
     {
       "id": "akashml",
@@ -2566,11 +2566,11 @@
       ],
       "entryUrl": "https://comate.baidu.com/zh/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 25 KB 但正文仅标题，渲染代理可读定价卡：个人标准版 Free 免费 + 首次注册 5,000 积分 + Auto-Free 150k tokens/h；专业版 ¥59/月 25,000 积分、旗舰版 ¥199/月 100,000 积分。"
+      "observation": "直连仍为 25 KB Next.js 壳（连续第 6 轮），经只读渲染代理取证成功：Free 赠 5,000 积分、Pro ¥59/25,000、Max ¥199/100,000、Auto-Free 150k tokens/h 均与库内一致；新增「Max Auto-Free 500k tokens/h 限时不限量至 12-31」促销标注。此前「无法读取」的结论作废——壳页面必须补一次渲染尝试。"
     },
     {
       "id": "modelscope-api-limits",
@@ -2586,14 +2586,14 @@
       ],
       "entryUrl": "https://modelscope.cn/",
       "status": "restricted",
-      "checkedAt": "2026-11-14T10:12:25Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
       "lastSuccessAt": null,
       "lastFailure": {
-        "at": "2026-11-14T10:12:25Z",
-        "reason": "限额页直连 4.9 KB 壳，r.jina.ai 渲染仅返回导航与页脚（1.5 KB），限额数值仍不可读（第 6 轮）。"
+        "at": "2026-11-16T23:26:52Z",
+        "reason": "直连 5.3 KB、渲染后仅导航目录，无每日调用额度条文（第 8 轮）。"
       },
       "canVerifyOfficial": true,
-      "observation": "docs 导航确认存在「API Inference Usage Limits」专页，但正文取不到；社区称每日 2,000 次/每模型约 500 次，未获官方确认，对应条目保持 pending/low。"
+      "observation": "直连仅文档站导航，r.jina.ai 渲染同样只有目录树，配额正文需登录或前端动态加载（第 8 轮）。"
     },
     {
       "id": "honeycomb-pricing",
@@ -3041,11 +3041,11 @@
       ],
       "entryUrl": "https://www.val.town/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-14T10:12:25Z",
-      "lastSuccessAt": "2026-11-14T10:12:25Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 403（拦截页 5.6 KB），r.jina.ai 渲染成功：Free 100,000 runs/日 等条款与库内一致；定价页本体无 2027-01-10 关停横幅。"
+      "observation": "直连 403（5.3 KB 风控页），经只读渲染代理读取定价页：Free 100,000 runs/天、Pro $21/月、Business $167/月起，与库内一致。"
     },
     {
       "id": "hookdeck-pricing",
@@ -3613,11 +3613,11 @@
       ],
       "entryUrl": "https://developer.zhihu.com/",
       "status": "readable",
-      "checkedAt": "2026-11-15T06:44:44Z",
-      "lastSuccessAt": "2026-11-15T06:44:44Z",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "首页为 1.7 KB SPA 壳；文档正文由 /console/api/v3/docs 以 JSON 返回（135 KB，含全部 markdown：鉴权、额度查询、服务价格、全网/知乎搜索、直答、热榜、知识库、PDF/PPT 等），可直接 JSON 直读，无需渲染。首页横幅与价格文档给出每日免费额度口径，各接口实际额度仅控制台可见。"
+      "observation": "首页直连 1.7 KB 壳，渲染后确认「注册免费获取5000次/天调用」；文档 JSON `/console/api/v3/docs`（135.6 KB）可直接读取每日额度、重置与价格表，是比逐页渲染更省的取证路径。"
     },
     {
       "id": "aws-q-developer-pricing",
@@ -3700,6 +3700,48 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "官方定价页 162 KB 直读：Pay-as-you-go「/bin/zsh.00 + USAGE」「Up to  in free credits」、Tier 0 Free 10 沙箱、Tier 1 /月 50、Tier 2 /月起；Compute/Jobs/MCP 三项按 GB RAM·秒计价，存储与域名单独列价。credits 发放条件、有效期与绑卡要求均未披露。"
+    },
+    {
+      "id": "agentql-pricing",
+      "name": "AgentQL 定价",
+      "url": "https://www.agentql.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.agentql.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "服务端渲染静态 HTML（142.8 KB），定价页直接列出免费试用（300 次调用/1 小时浏览器/免卡）与 Starter $0/月（50 次/月、$0.02/次、10 小时浏览器、$0.12/小时、5 并发），无需渲染。"
+    },
+    {
+      "id": "ultravox-pricing",
+      "name": "Ultravox 定价",
+      "url": "https://www.ultravox.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.ultravox.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-16T23:26:52Z",
+      "lastSuccessAt": "2026-11-16T23:26:52Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "静态 HTML（268 KB）可读：Pay as you go $0/月含 30 分钟免费通话、之后 $0.05/分钟、并发 5；顶部公告已被 Inworld 收购，条款可能随整合变动。"
     }
   ]
 }
