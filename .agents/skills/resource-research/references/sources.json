@@ -17,15 +17,12 @@
         "html"
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
-      "status": "restricted",
-      "checkedAt": "2026-11-16T03:02:28Z",
-      "lastSuccessAt": "2026-11-15T16:51:44Z",
-      "lastFailure": {
-        "at": "2026-11-16T03:02:28Z",
-        "reason": "TLS 握手失败（curl 35 SSL_ERROR_SYSCALL），perq.ai 与 perq.sh 均不可达，本轮未取到列表；新候选改由 linux.do / nodeseek RSS 与官方定价页扫描产生。"
-      },
+      "status": "readable",
+      "checkedAt": "2026-11-16T13:14:00Z",
+      "lastSuccessAt": "2026-11-16T13:14:00Z",
+      "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮抓取 free-tier 与 signup-credit 各 50 条（66 KB + 62 KB，last_verified 均为 2026-11-15）：与库内 201 条按官方 URL 去重后，合格新候选为 Together「Ternary Bonsai 27B 免费推理」与 Valyu「工作邮箱 2,000 credits/月」，两条已入库；Blacksmith、Rime、Inception、Hatchet、Keenable、NeevCloud、Z-ai、NVIDIA 等均已在库。其余为低成本/需申请/中转类（Blaxel「up to $200」条件未披露、Nscale $5、Scrapfly/ScraperAPI/ScrapingBee/Browser Use $1-$5、Snowflake $400 第 3 次无官方 $400 字样）。"
+      "observation": "TLS 故障已恢复：本轮 /api/search 恢复 200（signup-credit newest 28.6 KB、20 条；free-tier newest 37 KB、total_matches 152，dataset_latest_verified 2026-11-16T05:43-05:00）。与库内 202 条按官方 URL 去重后，合格新候选为 Scrapfly「注册 1,000 credits、免绑卡、无时间限制」与 ScrapingBee「1,000 免费 API credits、免绑卡」，两条已入库（后者限制不全，pending/medium）；Nscale「$5 free credit」经官方 docs 复核为「需先充值最少 $5 才可用」，属最低充值门槛而非免费额度，排除；Maritaca pricing 仍 404。OVHcloud/Reducto/Oumi/Inception/Lindy/Mixedbread/You.com/Nebius/Apify/Parallel/Runloop/Zed/Browser Use 等均已在库。"
     },
     {
       "id": "aifree",
@@ -177,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-15T16:51:44Z",
-      "lastSuccessAt": "2026-11-15T16:51:44Z",
+      "checkedAt": "2026-11-16T13:14:00Z",
+      "lastSuccessAt": "2026-11-16T13:14:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 /c/welfare/36.rss 实读 25 条（75 KB）：有效线索为「华为云白嫖 5 个月新加坡 VPS」（帖内无官方链接，需官方活动页佐证，留候选）、「腾讯版 Muse 新用户试用 1 个月」（指向 lightvela.com，无法确认官方归属，排除）、「华为云 200 代金券」（与既有 huawei-dev-growth-voucher 长期人工项重复）。其余为公益站/中转站、B 站大会员、Muse 号赠送与充值推广，均排除。"
+      "observation": "本轮 /c/welfare/36.rss 实读 25 条（85.7 KB）：与库内条目比对后 0 条可入库线索——「zcode送3亿token」仍无官方额度页（连续第 3 轮不采信）、「workbuddy/opencode 免费 HY4 flash」对应模型组已在 opencode-zen-free-models-202611 覆盖、「免费网络搜索 API 汇总」为社区整理且所指 Keenable/知乎已在库；其余为中转站推广、账号买卖与一次性 key 赠送，按规则排除。"
     },
     {
       "id": "nodeseek",
@@ -198,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-15T16:51:44Z",
-      "lastSuccessAt": "2026-11-15T16:51:44Z",
+      "checkedAt": "2026-11-16T13:14:00Z",
+      "lastSuccessAt": "2026-11-16T13:14:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 https://rss.nodeseek.com/ 实读 20 条：仅标题/摘要可读，无合格新增福利（Google AI Pro 3 个月试用留档帖需绑卡且标题为留档、Duolingo/Spotify 会员非本项目范围），其余为线路争吵与账号交易。"
+      "observation": "本轮 https://rss.nodeseek.com/ 实读 20 条（10.5 KB）：全部为机器收售、溢价出让、奈飞/节点讨论与客户端开源推广，无福利线索，0 条候选。"
     },
     {
       "id": "lowendtalk",
