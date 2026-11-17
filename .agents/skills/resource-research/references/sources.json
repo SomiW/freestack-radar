@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
       "status": "readable",
-      "checkedAt": "2026-11-16T23:26:52Z",
-      "lastSuccessAt": "2026-11-16T23:26:52Z",
+      "checkedAt": "2026-11-17T09:37:00Z",
+      "lastSuccessAt": "2026-11-17T09:37:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 /api/search 按 6 个类目各取 30 条（agents-automation/cloud-gpu/database-backend/dev-tools/llm-api/voice-audio），`category=ai-api` 已不存在（改为 llm-api），传旧值返回 400。dataset_latest_verified 2026-11-16T05:43-05:00。与库内 204 条去重后入库 2 条：AgentQL「Starter $0/月 50 次调用 + 10 小时浏览器」、Ultravox「首 30 分钟免费、之后 $0.05/分钟」；Workato「50K 一次性 credits」官方定价页无对应条文，Scaleway/Maritaca 定价入口 404，均未入库。"
+      "observation": "2026-11-17 复核：signup-credit 与 free-tier 两组查询各 40 条均 HTTP 200（50.9 KB / 50.0 KB），last_verified 已推进到 11-16；去重后 signup-credit 仅剩 Cerebras $5、Nscale $5、Vapi $5、Browser Use $1、SiliconFlow $1、Railway $5 等低面值项，free-tier 侧产出 Browserless / Arize AX / Browserbase 三条入库候选。"
     },
     {
       "id": "aifree",
@@ -3742,6 +3742,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "静态 HTML（268 KB）可读：Pay as you go $0/月含 30 分钟免费通话、之后 $0.05/分钟、并发 5；顶部公告已被 Inworld 收购，条款可能随整合变动。"
+    },
+    {
+      "id": "browserless-pricing",
+      "name": "Browserless 定价",
+      "url": "https://www.browserless.io/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.browserless.io/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-17T09:37:00Z",
+      "lastSuccessAt": "2026-11-17T09:37:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-17 首次读取：直连 200（171.9 KB），Free $0/月 1k units、2 并发、2 分钟会话上限、免绑卡；付费档单价与附加项同页。"
+    },
+    {
+      "id": "arize-pricing",
+      "name": "Arize AX 定价",
+      "url": "https://arize.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://arize.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-17T09:37:00Z",
+      "lastSuccessAt": "2026-11-17T09:37:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-17 首次读取：直连 200（541 KB），AX Free 25k spans/月、1 GB/月摄取、15 天保留、免绑卡；AX Pro $50/月起。"
+    },
+    {
+      "id": "browserbase-pricing",
+      "name": "Browserbase 定价",
+      "url": "https://www.browserbase.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.browserbase.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-17T09:37:00Z",
+      "lastSuccessAt": "2026-11-17T09:37:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-17 首次读取：直连 200（290 KB），Free 3 并发 / 1 浏览器小时 / 3 agent runs / 1,000 search / 1,000 fetch / $5 tokens；Developer $20/月。"
     }
   ]
 }
