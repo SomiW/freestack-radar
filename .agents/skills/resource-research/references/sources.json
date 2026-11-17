@@ -4,7 +4,7 @@
     {
       "id": "perq",
       "name": "Perq",
-      "url": "https://perq.sh/api/search?type=signup-credit&sort=value&status=live",
+      "url": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "priority": "P0",
       "kind": "aggregator",
       "topics": [
@@ -16,13 +16,13 @@
         "json",
         "html"
       ],
-      "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=20",
+      "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-17T09:37:00Z",
-      "lastSuccessAt": "2026-11-17T09:37:00Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-17 复核：signup-credit 与 free-tier 两组查询各 40 条均 HTTP 200（50.9 KB / 50.0 KB），last_verified 已推进到 11-16；去重后 signup-credit 仅剩 Cerebras $5、Nscale $5、Vapi $5、Browser Use $1、SiliconFlow $1、Railway $5 等低面值项，free-tier 侧产出 Browserless / Arize AX / Browserbase 三条入库候选。"
+      "observation": "2026-11-17 复读：APIs 又改口径——`category=free-tier`/`developer-tools`/`vps`/`gpu` 全部返回 400「unknown category」，合法 category 改为 dev-tools、agents-automation、llm-api、cloud-gpu、database-backend、observability、voice-audio、vector-db、image-video、perk-marketplace、productivity、accelerator；free-tier 等已变成 `type` 枚举。按 type=free-tier + 6 个新类目（各 limit 30~50）共取 166 条去重，first_seen≥11-14 的 19 条中 3 条可入库（OVHcloud $200 Public Cloud trial、Mux Free、Scaleway Generative APIs free tier），其余为已收录或面值过低（Firebase Spark / Vercel Hobby / R2 10GB / Brevo 300 封 / Mailgun 100 封 / Algolia 10K 次 / Krea 100 units / Workato 50K 一次性 / Agora 10K 分钟 / HF ZeroGPU / AWS Q 已收录）。"
     },
     {
       "id": "aifree",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-15T16:51:44Z",
-      "lastSuccessAt": "2026-11-15T16:51:44Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 https://aifuli.dev/rss.xml 实读 40 条：条目以库内已有服务为主（CodeBuddy 500 积分/月、通义灵码、OpenCode、Devin/Windsurf、Stability、TRAE、Mistral、Cerebras、Amazon Q 等），未发现库外新增；Cerebras、Stability、Fireworks $1 面值低或已在库，继续排除。"
+      "observation": "2026-11-17 实读 https://aifuli.dev/rss.xml 40 条（18.8 KB）：条目仍停在 2026-07-08（CodeBuddy 500 积分、通义灵码、OpenCode、Windsurf、TRAE、Cerebras、Groq、SiliconFlow 等），全部已在库，无新增。"
     },
     {
       "id": "token-pencil",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-16T13:14:00Z",
-      "lastSuccessAt": "2026-11-16T13:14:00Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 /c/welfare/36.rss 实读 25 条（85.7 KB）：与库内条目比对后 0 条可入库线索——「zcode送3亿token」仍无官方额度页（连续第 3 轮不采信）、「workbuddy/opencode 免费 HY4 flash」对应模型组已在 opencode-zen-free-models-202611 覆盖、「免费网络搜索 API 汇总」为社区整理且所指 Keenable/知乎已在库；其余为中转站推广、账号买卖与一次性 key 赠送，按规则排除。"
+      "observation": "2026-11-17 实读 /c/welfare/36.rss 25 条（84.8 KB）：可入库线索 0——「免费试用 Canva 高级版 45 天」非本项目范围、「免费一级域名一年」为注册商活动需实名且价值低、「0 元购 Google Ultra / Gemini 0 元试用 ultra」属支付地区套利不采信、「哔哩公益站 1 亿 token」为第三方中转、「满血 GPT 0.06 倍率送 6 刀」为付费中转站，均排除。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-16T13:14:00Z",
-      "lastSuccessAt": "2026-11-16T13:14:00Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "本轮 https://rss.nodeseek.com/ 实读 20 条（10.5 KB）：全部为机器收售、溢价出让、奈飞/节点讨论与客户端开源推广，无福利线索，0 条候选。"
+      "observation": "2026-11-17 实读 https://rss.nodeseek.com/ 20 条（9.9 KB）：全为机器收售/溢价出让/节点讨论与客户端推广，0 条福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -995,11 +995,11 @@
       ],
       "entryUrl": "https://www.codebuddy.cn/pricing/",
       "status": "readable",
-      "checkedAt": "2026-11-15T03:49:59Z",
-      "lastSuccessAt": "2026-11-15T03:49:59Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "渲染后读取「每月 500 积分」「5000次代码实时补全（限免无限次）」「3个自动任务（限免99个）」「每月基础2,000积分」等档位，与库内 codebuddy-cn 条目一致。"
+      "observation": "2026-11-17 复核：静态直读 31 字符外壳，渲染 4.2 KB：免费档「每月 500 积分」「5000 次代码实时补全（限免无限次）」「3 个自动任务（限免 99 个）」「5GB 资料库」，与库内一致。"
     },
     {
       "id": "exa-pricing",
@@ -1035,11 +1035,11 @@
       ],
       "entryUrl": "https://qoder.com.cn/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-15T03:49:59Z",
-      "lastSuccessAt": "2026-11-15T03:49:59Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮完整渲染档位表：体验版 ¥0「有限的体验额度」+2 周试用 300 Credits+签到 30 天 3,000 Credits；专业版双11 ¥19.9（原 ¥59）、高级版 ¥169、旗舰版 ¥559、团队版 ¥99/席位、资源包 ¥40/1,000 Credits。已据此更正 tongyi-lingma 条目中「¥169/¥559 已下架」的误判。"
+      "observation": "2026-11-17 复核：静态直读仍只有外壳，只读渲染（9.7 KB）取得完整档位表——体验版 ¥0「有限的体验额度」+ 2 周专业版试用 300 Credits + 签到 30 天 3,000 Credits；专业版双 11 首月 ¥19.9（原 ¥59）、高级版 ¥169、旗舰版 ¥559，与库内一致。"
     },
     {
       "id": "ibm-cloud-free",
@@ -2298,11 +2298,11 @@
       ],
       "entryUrl": "https://www.kaggle.com/docs/efficient-gpu-usage",
       "status": "readable",
-      "checkedAt": "2026-11-15T03:49:59Z",
-      "lastSuccessAt": "2026-11-15T03:49:59Z",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "efficient-gpu-usage 确认「quota resets weekly and is 30 hours」；docs/tpu 本轮仍为前端壳（2.7 KB 无正文），TPU 20 小时未能复取。"
+      "observation": "2026-11-17 复核（渲染 2.4 KB）：「You can use up to a quota limit per week of GPU. The quota resets weekly and is 30 hours or sometimes higher depending on demand」；TPU 20 小时仍无同页条文。"
     },
     {
       "id": "retell-pricing",
@@ -3802,6 +3802,70 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-17 首次读取：直连 200（290 KB），Free 3 并发 / 1 浏览器小时 / 3 agent runs / 1,000 search / 1,000 fetch / $5 tokens；Developer $20/月。"
+    },
+    {
+      "id": "ovh-public-cloud-free-trial",
+      "name": "OVHcloud Public Cloud 免费试用",
+      "url": "https://www.ovhcloud.com/en/public-cloud/free-trial/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.ovhcloud.com/en/public-cloud/free-trial/",
+      "status": "readable",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-17 首次读取（直连 200，正文约 5.0 KB）：US$200 voucher、新客户（从未创建 Public Cloud 项目）、需保存有效支付方式、激活后 1 个月有效、仅一个项目、自 2022-06-30 23:00 BST 起生效且未公布结束日。"
+    },
+    {
+      "id": "mux-pricing",
+      "name": "Mux 定价",
+      "url": "https://www.mux.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.mux.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-17 首次读取（直连 200，正文约 15 KB）：Free 档每月 100K 分发分钟 + 100K Mux Robots 单位、最多 10 个视频、仅点播、免绑卡；付费按量计价（720p 基准，1080p 1.25×、2K 2×、4K 4×）。"
+    },
+    {
+      "id": "scaleway-mas-pricing",
+      "name": "Scaleway Generative APIs 定价",
+      "url": "https://www.scaleway.com/en/pricing/model-as-a-service/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.scaleway.com/en/pricing/model-as-a-service/",
+      "status": "restricted",
+      "checkedAt": "2026-11-17T19:48:00Z",
+      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "lastFailure": {
+        "at": "2026-11-17T19:48:00Z",
+        "reason": "直连 403（Cloudflare），经 r.jina.ai 只读渲染取得 29 KB 正文"
+      },
+      "canVerifyOfficial": true,
+      "observation": "2026-11-17 首次读取：直连 403，渲染后取得定价表与 FAQ 链接；Free Tier 限定 Serverless：1,000,000 tokens + 60 分钟音频转写，超出按百万 token/每分钟计费，Batches API 5 折；免费额度有效期与绑卡要求未披露。"
     }
   ]
 }
