@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-17T19:48:00Z",
-      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-17 复读：APIs 又改口径——`category=free-tier`/`developer-tools`/`vps`/`gpu` 全部返回 400「unknown category」，合法 category 改为 dev-tools、agents-automation、llm-api、cloud-gpu、database-backend、observability、voice-audio、vector-db、image-video、perk-marketplace、productivity、accelerator；free-tier 等已变成 `type` 枚举。按 type=free-tier + 6 个新类目（各 limit 30~50）共取 166 条去重，first_seen≥11-14 的 19 条中 3 条可入库（OVHcloud $200 Public Cloud trial、Mux Free、Scaleway Generative APIs free tier），其余为已收录或面值过低（Firebase Spark / Vercel Hobby / R2 10GB / Brevo 300 封 / Mailgun 100 封 / Algolia 10K 次 / Krea 100 units / Workato 50K 一次性 / Agora 10K 分钟 / HF ZeroGPU / AWS Q 已收录）。"
+      "observation": "2026-11-18 复读（口径沿用 11-17 变更后结构）：type=free-tier 与 type=signup-credit 各取 50/40 条（first_seen 最新 2026-11-17）。free-tier 组 50 条里可入库 3 条（Agora 10,000 RTC 分钟/月、ZenRows 5,000 credits/月、Greptile 50 credits/月），其余为已收录（Algolia/Firebase/HF ZeroGPU/Krea/Vercel/AWS Q/Mux/Scaleway/Valyu/Together/AgentQL/EXAONE/Z.ai/SambaNova/Kiro/NVIDIA/Daily/LiveKit/deepset/PostHog/Convex/Fireworks/Jules/Val Town 等）或面值过低；signup-credit 组 40 条几乎全部已收录（OVHcloud/Blaxel/Nscale/Reducto/Steel/Hyperbrowser/Skyvern/Apify 等），无新增。free-tier + signup-credit 两组均已高度饱和。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-17T19:48:00Z",
-      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-17 实读 /c/welfare/36.rss 25 条（84.8 KB）：可入库线索 0——「免费试用 Canva 高级版 45 天」非本项目范围、「免费一级域名一年」为注册商活动需实名且价值低、「0 元购 Google Ultra / Gemini 0 元试用 ultra」属支付地区套利不采信、「哔哩公益站 1 亿 token」为第三方中转、「满血 GPT 0.06 倍率送 6 刀」为付费中转站，均排除。"
+      "observation": "2026-11-18 实读 /c/welfare/36.rss 25 条（98.6 KB）：可入库线索 0——「免费虚机 GoogieHost」无官方条款页、「meshy 创作活动送 manus 会员」需创作投稿且非开发资源、其余为 API 中转站拼车/注册送额（VelaMost、SoleAPI、CodeRelay、MoonUp、AllRouter、飓星等）与 0 刀虚拟卡赠送，均按规则排除。"
     },
     {
       "id": "nodeseek",
@@ -1426,11 +1426,11 @@
       ],
       "entryUrl": "https://www.speechmatics.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "复核成功。直读官方定价页（336 KB）：「Start free • $100 in credits」「No card required」，Melia 1 $0.12/hr、Standard $0.23/hr、Enhanced $0.38/hr 未变；TTS 仍写「First 1 million characters free (about 20 hours of speech)」，实时档并发 50（Free 2）。条款未见变化。"
+      "observation": "2026-11-18 复读（渲染 93 KB）：$100 注册额度不变；预录 Melia 1 $0.12/hr、Enhanced $0.38/hr、Medical Oak 1 $0.15/hr、Standard $0.23/hr；实时档模型 $0.20/$0.40/$0.23/$0.15 per hour，页头改「from $0.12/hr」（原记录的 $0.24/hr 已不在页面）；FAQ 新增 Concurrent sessions「50（Free 档 2）」。"
     },
     {
       "id": "openrouter-limits",
@@ -1446,11 +1446,11 @@
       ],
       "entryUrl": "https://openrouter.ai/docs/api-reference/limits.md",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "复核成功。直读官方限速文档（423 KB，302 跳转至 /docs/api_reference/limits）：页面内联脚本仍含 FREE_MODEL_CREDITS_THRESHOLD=10 与 HAS_CREDITS_RPD=1e3，即累计充值 <$10 走 50 请求/天、≥$10 走 1,000 请求/天；免费模型 20 请求/分钟口径未变。"
+      "observation": "2026-11-18 复读：docs/api_reference/limits 渲染 195 KB，免费模型限额表单元格为空（数值由前端注入），20 RPM / 50 与 1,000 请求/日 本轮无法复现；页面措辞更新为 free model variant「ID ending in :」，并新增「高于阈值一 credit 即获更高日额度」说明。"
     },
     {
       "id": "gladia-pricing",
@@ -2546,11 +2546,11 @@
       ],
       "entryUrl": "https://developer.huaweicloud.com/codeartsco.html",
       "status": "readable",
-      "checkedAt": "2026-11-08T03:18:31Z",
-      "lastSuccessAt": "2026-11-08T03:18:31Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连仅 6.9 KB SPA 壳（正文 50 字符），渲染代理可读全文：个人体验版免费、订阅默认 1 个月到期免费自动续期、次数不限、每月赠 500 积分、支持 OpenPangu/GLM/鸿蒙增训与自定义模型。"
+      "observation": "2026-11-18 复读：codeartsco.html 渲染成功（29.7 KB）：个人版「此版本可免费使用（订阅周期默认 1 个月，到期免费自动续期，次数不限）」、每月赠送 500 积分、活动可另领积分、部分模型 Token 限免。"
     },
     {
       "id": "comate-pricing",
@@ -2835,11 +2835,11 @@
       ],
       "entryUrl": "https://posthog.com/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-09T10:03:03Z",
-      "lastSuccessAt": "2026-11-09T10:03:03Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（281 KB，正文 14.3 KB）：免费档「No credit card, not a trial」、额度每月重置、达限即停，13 个产品额度与 3 处 credit 面值均为页内原文可读；新增 PostHog 记录时首次登记。"
+      "observation": "2026-11-18 复读：直连页面无数字（前端注入），经 r.jina.ai 渲染取得免费额度全表。每月免费额度：Analytics 1M events、Session replay 5K recordings、Feature flags 1M requests、Experiments 随 feature flags、Error tracking 100K exceptions、Surveys 1500 responses、Sources 1M rows + 历史数据免费。"
     },
     {
       "id": "braintrust-pricing",
@@ -3041,11 +3041,11 @@
       ],
       "entryUrl": "https://www.val.town/pricing",
       "status": "readable",
-      "checkedAt": "2026-11-16T23:26:52Z",
-      "lastSuccessAt": "2026-11-16T23:26:52Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 403（5.3 KB 风控页），经只读渲染代理读取定价页：Free 100,000 runs/天、Pro $21/月、Business $167/月起，与库内一致。"
+      "observation": "2026-11-18 复读：直连为 Cloudflare 挑战页（403 壳），经 r.jina.ai 渲染取得定价页正文。Free $0 仍为 100,000 runs/天、cron 15 分钟、单次 1 分钟、日志 3 天、MCP 集成、不含自定义域名与 private vals；Pro $21/月、Business $167/月起；页首横幅与博客链接仍为「Val Town is shutting down on January 10, 2027」。"
     },
     {
       "id": "hookdeck-pricing",
@@ -3304,11 +3304,11 @@
       ],
       "entryUrl": "https://www.cucloud.cn/bwnnov.html",
       "status": "readable",
-      "checkedAt": "2026-11-15T03:49:59Z",
-      "lastSuccessAt": "2026-11-15T03:49:59Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "渲染（jina）后读取活动页：AI 云桌面标准 4C8G ¥0.00（原价 ¥164.67）、ECS 2核4G/3M/50GB 11.11 元/6 个月（新客限 2 台，原价 ¥1473.54），与库内一致；活动规则仍在弹窗内，时间沿用官方原文 11-11 09:00—12-31 23:59。"
+      "observation": "2026-11-18 复读：bwnnov.html 渲染成功（此前 Vue 壳 422，39 KB）：AI 云桌面 4C8G/1 月 ¥0.00（原价 ¥164.67）、ECS 2核4G ¥11.11/6 个月（原价 ¥1473.54，新客限 2 台）、付费云桌面 ¥29.93/¥40.19/¥50.45；Token Plan Lite 仍无额度数值。"
     },
     {
       "id": "lindy-pricing",
@@ -3346,11 +3346,11 @@
       ],
       "entryUrl": "https://platform.moss.cn/docs/models",
       "status": "readable",
-      "checkedAt": "2026-11-11T20:57:00Z",
-      "lastSuccessAt": "2026-11-11T20:57:00Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "直连 200（249 KB HTML，正文 2.6 KB）：模型表按「模型名称 / 说明 / 计费标准 / 流式输出 / 异步」逐行给出，nex-n2.6、moss-vl-1.0、moss-vl-realtime-1.0、moss-live-1.0 计费列为「限时免费 0 积分」，TTS/ASR/图像模型给出 ¥ 与积分双单价；页首公告 MOSS-Image API 自 11-11 12:00 开始计费。免费期结束时间与速率限制均未公布。"
+      "observation": "2026-11-18 复读：/docs/models 静态 HTML 无表格（Nuxt 前端渲染），经 r.jina.ai 取得模型表。免费款 nex-n2.6、moss-vl-1.0、moss-vl-realtime-1.0、moss-live-1.0 仍「限时免费 0 积分」；付费价整体下调（TTS ¥1.20/万字符、transcribe ¥0.48/小时、diarize-pro ¥1.20/小时、文生图 ¥0.12/¥0.18 每张）。"
     },
     {
       "id": "nvidia-build",
@@ -3613,11 +3613,11 @@
       ],
       "entryUrl": "https://developer.zhihu.com/",
       "status": "readable",
-      "checkedAt": "2026-11-16T23:26:52Z",
-      "lastSuccessAt": "2026-11-16T23:26:52Z",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "首页直连 1.7 KB 壳，渲染后确认「注册免费获取5000次/天调用」；文档 JSON `/console/api/v3/docs`（135.6 KB）可直接读取每日额度、重置与价格表，是比逐页渲染更省的取证路径。"
+      "observation": "2026-11-18 复读：首页壳 1.7 KB，渲染后取得「注册免费获取5000次/天调用」；/console/api/v3/docs 返回 135 KB JSON，服务价格页确认每日免费额度按额度组共享、北京时间 00:00 重置不结转、标注为限时优惠，单价 5–20 元/千次。"
     },
     {
       "id": "aws-q-developer-pricing",
@@ -3866,6 +3866,66 @@
       },
       "canVerifyOfficial": true,
       "observation": "2026-11-17 首次读取：直连 403，渲染后取得定价表与 FAQ 链接；Free Tier 限定 Serverless：1,000,000 tokens + 60 分钟音频转写，超出按百万 token/每分钟计费，Batches API 5 折；免费额度有效期与绑卡要求未披露。"
+    },
+    {
+      "id": "agora-rtc-pricing",
+      "name": "Agora RTC 定价",
+      "url": "https://www.agora.io/en/pricing/agora-rtc",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.agora.io/en/pricing/agora-rtc",
+      "status": "readable",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-18 首次读取（直连 200，160 KB；正文 7.8 KB）：首屏「10,000 free minutes every month — no credit card required」；免费档 Minutes included 10,000、Overuse policy Service suspension；Standard 语音 $0.99/1,000、视频 HD $3.99/1,000、Full HD $8.99/1,000 参与者分钟；预付费 Starter $45.99/月含 50,000 分钟；Cloud Recording $0.99/1,000 计入同一免费额度；页面注明 minutes are per participant。"
+    },
+    {
+      "id": "zenrows-pricing",
+      "name": "ZenRows 定价",
+      "url": "https://www.zenrows.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.zenrows.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-18 首次读取（直连 200，116 KB）：Free $0/月 5,000 credits、no card、除 standalone Residential Proxies 外全部功能、5 并发、社区支持、月刷新不结转；住宅带宽 25,000 credits/GB、浏览器 5 credits/分钟；Build $16/月 45K credits/20 并发、Launch $58/月 250K credits/50 并发；404/410 计费、失败请求不计费。"
+    },
+    {
+      "id": "greptile-pricing",
+      "name": "Greptile 定价",
+      "url": "https://www.greptile.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-coding"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.greptile.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-18T05:55:00Z",
+      "lastSuccessAt": "2026-11-18T05:55:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-18 首次读取（直连 200，209 KB）：Starter Free（1 active developer、50 free credits/月、Unlimited repositories）；Pro $1/credit（不限开发者与 agent、14 天试用）；Enterprise 定制。配套 /docs/account/billing-seats.md 说明 1 credit = $1、Base review 1、Plus 3、Apex 10、TREX +3、仅完成 review 扣费、用尽后 review 暂停、免费档不含 CLI review。"
     }
   ]
 }
