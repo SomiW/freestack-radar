@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-18T05:55:00Z",
-      "lastSuccessAt": "2026-11-18T05:55:00Z",
+      "checkedAt": "2026-11-18T16:07:00Z",
+      "lastSuccessAt": "2026-11-18T16:07:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-18 复读（口径沿用 11-17 变更后结构）：type=free-tier 与 type=signup-credit 各取 50/40 条（first_seen 最新 2026-11-17）。free-tier 组 50 条里可入库 3 条（Agora 10,000 RTC 分钟/月、ZenRows 5,000 credits/月、Greptile 50 credits/月），其余为已收录（Algolia/Firebase/HF ZeroGPU/Krea/Vercel/AWS Q/Mux/Scaleway/Valyu/Together/AgentQL/EXAONE/Z.ai/SambaNova/Kiro/NVIDIA/Daily/LiveKit/deepset/PostHog/Convex/Fireworks/Jules/Val Town 等）或面值过低；signup-credit 组 40 条几乎全部已收录（OVHcloud/Blaxel/Nscale/Reducto/Steel/Hyperbrowser/Skyvern/Apify 等），无新增。free-tier + signup-credit 两组均已高度饱和。"
+      "observation": "2026-11-18 复读（结构沿用 11-17 变更后口径）：type=free-tier 50 条 + type=signup-credit 40 条，first_seen 最新 2026-11-18。两组继续饱和：free-tier 里可入库 1 条（Cognition/Devin SWE-2 Flash 限时免费），其余为已收录（Colab/Firebase/HF ZeroGPU/Algolia/Krea/Brevo/Mailgun/Workato/Windsurf）或面值过低；signup-credit 40 条仅见 $10 级新面孔（VModel、SearchApi 100 次），无大额云抵扣金。Windsurf Free 本轮已核实为 Devin 价格表（windsurf.com/pricing 重定向），与库内 devin-free-plan 同源，作为重复排除。"
     },
     {
       "id": "aifree",
@@ -3926,6 +3926,27 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-18 首次读取（直连 200，209 KB）：Starter Free（1 active developer、50 free credits/月、Unlimited repositories）；Pro $1/credit（不限开发者与 agent、14 天试用）；Enterprise 定制。配套 /docs/account/billing-seats.md 说明 1 credit = $1、Base review 1、Plus 3、Apex 10、TREX +3、仅完成 review 扣费、用尽后 review 暂停、免费档不含 CLI review。"
+    },
+    {
+      "id": "cognition-blog-swe-2-flash",
+      "name": "Cognition 公告 / Devin 定价",
+      "url": "https://cognition.com/blog/swe-2-flash",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://cognition.com/blog/swe-2-flash",
+      "status": "readable",
+      "checkedAt": "2026-11-18T16:07:00Z",
+      "lastSuccessAt": "2026-11-18T16:07:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-18 首次读取：公告直连 200（403.7 KB），正文含 SWE-2 Flash 规格与页尾 CTA「Free through 11/30 / Try it today in Devin Desktop and CLI」；配套定价页 devin.ai/pricing 直连 200 但价格表由 JS 渲染，文本化后可见 Free $0「Light quota」与 Pro「Free use of SWE-2」。未公布调用额度/并发/地区。"
     }
   ]
 }
