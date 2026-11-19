@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-18T16:07:00Z",
-      "lastSuccessAt": "2026-11-18T16:07:00Z",
+      "checkedAt": "2026-11-19T02:27:00Z",
+      "lastSuccessAt": "2026-11-19T02:27:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-18 复读（结构沿用 11-17 变更后口径）：type=free-tier 50 条 + type=signup-credit 40 条，first_seen 最新 2026-11-18。两组继续饱和：free-tier 里可入库 1 条（Cognition/Devin SWE-2 Flash 限时免费），其余为已收录（Colab/Firebase/HF ZeroGPU/Algolia/Krea/Brevo/Mailgun/Workato/Windsurf）或面值过低；signup-credit 40 条仅见 $10 级新面孔（VModel、SearchApi 100 次），无大额云抵扣金。Windsurf Free 本轮已核实为 Devin 价格表（windsurf.com/pricing 重定向），与库内 devin-free-plan 同源，作为重复排除。"
+      "observation": "2026-11-19 复读：type=free-tier 50 条（first_seen 最新 2026-11-18）+ type=signup-credit 40 条。free-tier 仍饱和（Colab/Firebase/HF ZeroGPU/Algolia/Krea/Brevo/Mailgun/Workato/Make/Zapier/Ably 等），本轮可入库 1 条（Ably）；signup-credit 可入库 1 条（Snowflake $400/30 天），其余为 $1–$10 低面值（VModel、SearchApi 100 次、Nscale $5、Browser Use $1、Railway $5、Vapi $5、SiliconFlow $1）。opengame×fal $50 经官网页核对为「All claimed」，排除。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-18T05:55:00Z",
-      "lastSuccessAt": "2026-11-18T05:55:00Z",
+      "checkedAt": "2026-11-19T02:27:00Z",
+      "lastSuccessAt": "2026-11-19T02:27:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-18 实读 /c/welfare/36.rss 25 条（98.6 KB）：可入库线索 0——「免费虚机 GoogieHost」无官方条款页、「meshy 创作活动送 manus 会员」需创作投稿且非开发资源、其余为 API 中转站拼车/注册送额（VelaMost、SoleAPI、CodeRelay、MoonUp、AllRouter、飓星等）与 0 刀虚拟卡赠送，均按规则排除。"
+      "observation": "2026-11-19 实读 /c/welfare/36.rss 25 条（58.5 KB）：可入库 1 条（1free.eu 波兰 VPS 30 天免费，官方页条款完整）；其余为话费/支付红包、API 中转站拼车（CodeRelay 等）、抽奖与手搓账号交易、mistral 3 个月 Pro（社区称已无、走欧洲节点）、Nous Portal 折扣订阅，均按规则排除。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-17T19:48:00Z",
-      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "checkedAt": "2026-11-19T02:27:00Z",
+      "lastSuccessAt": "2026-11-19T02:27:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-17 实读 https://rss.nodeseek.com/ 20 条（9.9 KB）：全为机器收售/溢价出让/节点讨论与客户端推广，0 条福利线索。"
+      "observation": "2026-11-19 实读 https://rss.nodeseek.com/ 20 条（10.4 KB）：机器收售、溢价出让与节点讨论为主，0 条可用福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -3947,6 +3947,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-18 首次读取：公告直连 200（403.7 KB），正文含 SWE-2 Flash 规格与页尾 CTA「Free through 11/30 / Try it today in Devin Desktop and CLI」；配套定价页 devin.ai/pricing 直连 200 但价格表由 JS 渲染，文本化后可见 Free $0「Light quota」与 Pro「Free use of SWE-2」。未公布调用额度/并发/地区。"
+    },
+    {
+      "id": "1free-eu-vps",
+      "name": "1Free.eu VPS",
+      "url": "https://1free.eu/en/vps",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "vps"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://1free.eu/en/vps",
+      "status": "readable",
+      "checkedAt": "2026-11-19T02:27:00Z",
+      "lastSuccessAt": "2026-11-19T02:27:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-19 首次读取（直连 200，12.7 KB）：VPS S「5,00 PLN / month or 60,00 PLN per year」「30 days free. No card, no Stripe.」「Offer valid until 30.11.2026」，1 vCPU/1 GB/20 GB SSD/5 端口/1 备份/IPv4；波兰语版同页显示 VPS S 剩 9 台。"
+    },
+    {
+      "id": "snowflake-signup",
+      "name": "Snowflake 试用注册",
+      "url": "https://signup.snowflake.com/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://signup.snowflake.com/",
+      "status": "readable",
+      "checkedAt": "2026-11-19T02:27:00Z",
+      "lastSuccessAt": "2026-11-19T02:27:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-19 首次读取（直连仅 17 KB 外壳，经 r.jina.ai 取得正文）：「Start your 30-day trial with $400 in free credits」「Enterprise Edition」，可选 AWS/Azure/GCP 与区域，表单为 First/Last name + Work email，无信用卡字段。"
+    },
+    {
+      "id": "ably-pricing",
+      "name": "Ably 定价与限额",
+      "url": "https://ably.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://ably.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-19T02:27:00Z",
+      "lastSuccessAt": "2026-11-19T02:27:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-19 首次读取（直连 200，21.9 KB）：Free 档 $0/month、500 MAUs、Free for everyone、No commitment；Pro $29/月（1K MAU）、Business $349/月。限额文档 pricing/limits 的 Free 列：600 万条消息/月、500 条/秒、25 万条/小时、2,500 KiB/秒、1.19 GiB/小时、30 天存储、100 apps/100 keys。"
     }
   ]
 }
