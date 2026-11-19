@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-19T02:27:00Z",
-      "lastSuccessAt": "2026-11-19T02:27:00Z",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-19 复读：type=free-tier 50 条（first_seen 最新 2026-11-18）+ type=signup-credit 40 条。free-tier 仍饱和（Colab/Firebase/HF ZeroGPU/Algolia/Krea/Brevo/Mailgun/Workato/Make/Zapier/Ably 等），本轮可入库 1 条（Ably）；signup-credit 可入库 1 条（Snowflake $400/30 天），其余为 $1–$10 低面值（VModel、SearchApi 100 次、Nscale $5、Browser Use $1、Railway $5、Vapi $5、SiliconFlow $1）。opengame×fal $50 经官网页核对为「All claimed」，排除。"
+      "observation": "2026-11-19 读取两组（free-tier / signup-credit，各 limit=50、audience=anyone、sort=newest）：free-tier 50 条中 3 条新候选（Cognee、KRAFTON Raon-1 mini、Articul8 未在 free-tier）、其余为已收录或面值过低；signup-credit 50 条新增 Articul8 10 亿 tokens、Infomaniak 1M credits（需绑卡、单位含糊）、VModel/SearchApi 低面值。两组 last_verified 已推进到 11-19。"
     },
     {
       "id": "aifree",
@@ -86,8 +86,8 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-17T19:48:00Z",
-      "lastSuccessAt": "2026-11-17T19:48:00Z",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
       "observation": "2026-11-17 实读 https://aifuli.dev/rss.xml 40 条（18.8 KB）：条目仍停在 2026-07-08（CodeBuddy 500 积分、通义灵码、OpenCode、Windsurf、TRAE、Cerebras、Groq、SiliconFlow 等），全部已在库，无新增。"
@@ -107,8 +107,8 @@
       ],
       "entryUrl": "https://token.pencilai.top/",
       "status": "readable",
-      "checkedAt": "2026-11-15T16:51:44Z",
-      "lastSuccessAt": "2026-11-15T16:51:44Z",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
       "observation": "本轮直连 TLS 失败（SSL_ERROR_SYSCALL），经只读渲染代理读取（152 KB）：免费模型/方案 79 项，内容与库内高度重合（Kilo Code 免费网关 17 个 $0 模型 ID、NVIDIA 试用端点警示、Auto Free 路由条款），去重后无新候选；未发现新官方活动页。"
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-19T02:27:00Z",
-      "lastSuccessAt": "2026-11-19T02:27:00Z",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-19 实读 /c/welfare/36.rss 25 条（58.5 KB）：可入库 1 条（1free.eu 波兰 VPS 30 天免费，官方页条款完整）；其余为话费/支付红包、API 中转站拼车（CodeRelay 等）、抽奖与手搓账号交易、mistral 3 个月 Pro（社区称已无、走欧洲节点）、Nous Portal 折扣订阅，均按规则排除。"
+      "observation": "2026-11-19 读取福利羊毛 RSS 25 条：交易/求购/教程类为主，0 条可入库候选（Envato 限免 MiniMax H3 视频生成因需 Envato 账号且为站内活动，未取官方条款）。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-19T02:27:00Z",
-      "lastSuccessAt": "2026-11-19T02:27:00Z",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-19 实读 https://rss.nodeseek.com/ 20 条（10.4 KB）：机器收售、溢价出让与节点讨论为主，0 条可用福利线索。"
+      "observation": "2026-11-19 读取 RSS 20 条：VPS 交易与收购为主，0 条可入库候选。"
     },
     {
       "id": "lowendtalk",
@@ -4007,6 +4007,67 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-19 首次读取（直连 200，21.9 KB）：Free 档 $0/month、500 MAUs、Free for everyone、No commitment；Pro $29/月（1K MAU）、Business $349/月。限额文档 pricing/limits 的 Free 列：600 万条消息/月、500 条/秒、25 万条/小时、2,500 KiB/秒、1.19 GiB/小时、30 天存储、100 apps/100 keys。"
+    },
+    {
+      "id": "articul8-bivia",
+      "name": "Articul8 Bivia 产品页",
+      "url": "https://articul8.ai/bivia/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://articul8.ai/bivia/",
+      "status": "readable",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-19 首次读取（直连 200，73.7 KB）：上线优惠「First 10,000 early adopters / Get 1 billion tokens free / No subscription / Claim yours」；计价 $0.042 / M 输入 tokens、$0 输出 tokens；提供 Python / Node.js SDK。"
+    },
+    {
+      "id": "cognee-pricing",
+      "name": "Cognee 定价页",
+      "url": "https://www.cognee.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.cognee.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-19 首次读取（直连 200，26.9 KB）：Free $0/月 free forever、1 workspace + 1M tokens、不限用户与 API 调用、免绑卡；Standard $1.00/1M tokens + $5/额外 workspace。"
+    },
+    {
+      "id": "krafton-raon-mini",
+      "name": "KRAFTON Raon-1 mini 产品页",
+      "url": "https://raon-mini.krafton.ai/en",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://raon-mini.krafton.ai/en",
+      "status": "readable",
+      "checkedAt": "2026-11-19T12:40:00Z",
+      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-19 首次读取（直连 200，32.2 KB）：API「free for a limited time」、按用户 token 用量与请求数可能限流（阈值未公布）、申请后邮件邀请开通控制台；权重 Apache 2.0。"
     }
   ]
 }
