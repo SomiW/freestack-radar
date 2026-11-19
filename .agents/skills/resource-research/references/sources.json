@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-19T12:40:00Z",
-      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "checkedAt": "2026-11-19T22:30:00Z",
+      "lastSuccessAt": "2026-11-19T22:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-19 读取两组（free-tier / signup-credit，各 limit=50、audience=anyone、sort=newest）：free-tier 50 条中 3 条新候选（Cognee、KRAFTON Raon-1 mini、Articul8 未在 free-tier）、其余为已收录或面值过低；signup-credit 50 条新增 Articul8 10 亿 tokens、Infomaniak 1M credits（需绑卡、单位含糊）、VModel/SearchApi 低面值。两组 last_verified 已推进到 11-19。"
+      "observation": "2026-11-20 读取两组（free-tier / signup-credit，各 limit=50、audience=anyone、sort=newest）：free-tier 前 50 条里与库去重后仅 Algolia、Krea、Zapier（核心 Free 100 tasks）、Hugging Face ZeroGPU、Brevo 值得跟进；signup-credit 50 条仍为 $1–$10 低面值与 Infomaniak（单位含糊+绑卡）。两组 last_verified 已推进到 11-19，与库内已收录条目高度重合（连续第 4 轮饱和）。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-19T12:40:00Z",
-      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "checkedAt": "2026-11-19T22:30:00Z",
+      "lastSuccessAt": "2026-11-19T22:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-19 读取福利羊毛 RSS 25 条：交易/求购/教程类为主，0 条可入库候选（Envato 限免 MiniMax H3 视频生成因需 Envato 账号且为站内活动，未取官方条款）。"
+      "observation": "2026-11-20 读取 25 条：绝大多数为 Muse 自动注册教程、账号/邮箱分发、Devin 薅号攻略、中转站留 ID 送额度与抽奖，均按邀请刷量/身份伪造/密钥转卖口径排除；仅 RackNerd 黑五 VPS 属正常商家促销，但落地页出现 203.0.113.x/198.51.100.x 文档段 IP 与「AdminBolt」控制面板等异常内容，判定疑似合成页，本轮不入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-19T12:40:00Z",
-      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "checkedAt": "2026-11-19T22:30:00Z",
+      "lastSuccessAt": "2026-11-19T22:30:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-19 读取 RSS 20 条：VPS 交易与收购为主，0 条可入库候选。"
+      "observation": "2026-11-20 读取 20 条：Muse 号池抽奖、二手 VPS 收售、ChatGPT Team 拼车、Gmail 封号讨论为主，无可入库的官方福利线索；RackNerd 黑五帖同 linux.do 异常页问题。"
     },
     {
       "id": "lowendtalk",
@@ -4068,6 +4068,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-19 首次读取（直连 200，32.2 KB）：API「free for a limited time」、按用户 token 用量与请求数可能限流（阈值未公布）、申请后邮件邀请开通控制台；权重 Apache 2.0。"
+    },
+    {
+      "id": "algolia-pricing",
+      "name": "Algolia 定价页",
+      "url": "https://www.algolia.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.algolia.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-19T22:30:00Z",
+      "lastSuccessAt": "2026-11-19T22:30:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，584 KB）：Free 卡「Build for free … No credit card required」，10K 搜索请求/月、50K 记录、5K 推荐请求/月、5K 抓取/月；Grow 列超出 $0.50/1K 请求、$0.40/1K 记录，Plus 列超出 $1.75/1K 请求。"
+    },
+    {
+      "id": "krea-pricing",
+      "name": "Krea 定价页",
+      "url": "https://www.krea.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.krea.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-19T22:30:00Z",
+      "lastSuccessAt": "2026-11-19T22:30:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，2.2 MB）：Free 卡「100 units / day」「$0/month」「No credit card required」；页面内嵌 planCards JSON 的 free 档 computeUnits=100、computePeriod=\"day\"，video/3D 模型、LoRA 训练、App Builder、commercial license 均 included:false。help.krea.ai 直连失败（000），未登记。"
+    },
+    {
+      "id": "zapier-pricing",
+      "name": "Zapier 定价页",
+      "url": "https://zapier.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://zapier.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-19T22:30:00Z",
+      "lastSuccessAt": "2026-11-19T22:30:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，2.28 MB）：Free 卡「Free forever / $0 /month」「100 tasks per month」「Unlimited Zaps, Tables, and Forms」「Two-step Zaps」；Zaps 对照表 Free 列 polling 15 min；FAQ 说明 14 天 Professional 试用无需信用卡。页面另含 Agents Free 400 activities/月，本轮未入库。"
     }
   ]
 }
