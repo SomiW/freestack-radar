@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-20T08:40:00Z",
-      "lastSuccessAt": "2026-11-20T08:40:00Z",
+      "checkedAt": "2026-11-20T19:05:00Z",
+      "lastSuccessAt": "2026-11-20T19:05:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-20 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 50 条中与库去重后仅 Snyk（Free 5 项目 / Code 100 tests）、Firebase Spark（免付款方式）、Google Colab（免费 GPU 但配额未公布）值得跟进，其余为已收录或 Brevo／Mailgun／Make 等邮件与自动化小额度；signup-credit 50 条仍为 $1–$10 低面值（VModel/SearchApi/Cerebras/Vapi/SiliconFlow）与 Infomaniak（单位含糊）。两块 last_verified 仍在 2026-11-19T05:43-05:49-05:00，连续第 5 轮饱和。"
+      "observation": "2026-11-20 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 50 条几乎没有新增可用项——Workato（50K 一次性 credits）、Mailgun（100 封/天）、Brevo（300 封/天）仍是未入库的三条，本轮已按官方页核实；其余为库内已收录（Cognee/KRAFTON/Snyk/Firebase/HF/Valyu/Keenable 等）。signup-credit 50 条仍以 $5–$25 低面值为主（Smallest.ai $10、MixRoute $5、Sarvam ₹100、Mixedbread $5），以及库内已收录的 Reducto $150、Oumi $50、Lindy $50、Nebius $25、You.com、Apify（需 $1/月付费档）。两块 last_verified 停在 2026-11-20T05:39-05:00（连续第 6 轮饱和）。"
     },
     {
       "id": "aifree",
@@ -4190,6 +4190,69 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-20 首次读取（直连 200，48 KB）：「free of charge access to computing resources, including GPUs and TPUs」，但「resources are not guaranteed and not unlimited, and usage limits sometimes fluctuate」，未公布小时数与 GPU 型号；免费档重型 GPU 受限，稳定算力需 Colab Pro。"
+    },
+    {
+      "id": "workato-free",
+      "name": "Workato Free 计划页",
+      "url": "https://www.workato.com/free",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.workato.com/free",
+      "status": "readable",
+      "checkedAt": "2026-11-20T19:05:00Z",
+      "lastSuccessAt": "2026-11-20T19:05:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，32.2 KB）：Free $0/月 50K 一次性 credits、工作邮箱或 SSO 登录、No credit card；Pro $100/月 3.5k credits/月。FAQ 明确 credits 为一次性发放。"
+    },
+    {
+      "id": "mailgun-pricing",
+      "name": "Mailgun 定价页",
+      "url": "https://www.mailgun.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.mailgun.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-20T19:05:00Z",
+      "lastSuccessAt": "2026-11-20T19:05:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，63 KB）：Free $0/mo 100 emails/day、1 个发送域名、1 API key、1 天日志、1 条 inbound route；Basic $15/月 10,000 封。"
+    },
+    {
+      "id": "brevo-pricing",
+      "name": "Brevo 定价页",
+      "url": "https://www.brevo.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.brevo.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-20T19:05:00Z",
+      "lastSuccessAt": "2026-11-20T19:05:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，83 KB）：Free forever、no credit card；FAQ 写明审核通过后 300 封/天；Starter $9/月起 5,000 封/月。联系人上限未公布。"
     }
   ]
 }
