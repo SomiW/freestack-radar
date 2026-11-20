@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-19T22:30:00Z",
-      "lastSuccessAt": "2026-11-19T22:30:00Z",
+      "checkedAt": "2026-11-20T08:40:00Z",
+      "lastSuccessAt": "2026-11-20T08:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-20 读取两组（free-tier / signup-credit，各 limit=50、audience=anyone、sort=newest）：free-tier 前 50 条里与库去重后仅 Algolia、Krea、Zapier（核心 Free 100 tasks）、Hugging Face ZeroGPU、Brevo 值得跟进；signup-credit 50 条仍为 $1–$10 低面值与 Infomaniak（单位含糊+绑卡）。两组 last_verified 已推进到 11-19，与库内已收录条目高度重合（连续第 4 轮饱和）。"
+      "observation": "2026-11-20 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 50 条中与库去重后仅 Snyk（Free 5 项目 / Code 100 tests）、Firebase Spark（免付款方式）、Google Colab（免费 GPU 但配额未公布）值得跟进，其余为已收录或 Brevo／Mailgun／Make 等邮件与自动化小额度；signup-credit 50 条仍为 $1–$10 低面值（VModel/SearchApi/Cerebras/Vapi/SiliconFlow）与 Infomaniak（单位含糊）。两块 last_verified 仍在 2026-11-19T05:43-05:49-05:00，连续第 5 轮饱和。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-19T22:30:00Z",
-      "lastSuccessAt": "2026-11-19T22:30:00Z",
+      "checkedAt": "2026-11-20T08:40:00Z",
+      "lastSuccessAt": "2026-11-20T08:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-20 读取 25 条：绝大多数为 Muse 自动注册教程、账号/邮箱分发、Devin 薅号攻略、中转站留 ID 送额度与抽奖，均按邀请刷量/身份伪造/密钥转卖口径排除；仅 RackNerd 黑五 VPS 属正常商家促销，但落地页出现 203.0.113.x/198.51.100.x 文档段 IP 与「AdminBolt」控制面板等异常内容，判定疑似合成页，本轮不入库。"
+      "observation": "2026-11-20 读取 25 条：Qoder CN 加赠猫超卡/咖啡免单卡（实物赠品）、荣耀手机兑会员、RelayRouter/NewCodex 留 ID 送额度、阶跃星辰号池、白嫖号池、Muse 自动注册与 Gmail 分发、口令红包与抽奖为主；MiniMax H3「截至 21 点免费」为第三方渠道限免，无官方额度与资格说明。按邀请刷量／身份伪造／密钥转卖口径全部排除，本轮 0 条可入库线索。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-19T22:30:00Z",
-      "lastSuccessAt": "2026-11-19T22:30:00Z",
+      "checkedAt": "2026-11-20T08:40:00Z",
+      "lastSuccessAt": "2026-11-20T08:40:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-20 读取 20 条：Muse 号池抽奖、二手 VPS 收售、ChatGPT Team 拼车、Gmail 封号讨论为主，无可入库的官方福利线索；RackNerd 黑五帖同 linux.do 异常页问题。"
+      "observation": "2026-11-20 读取 20 条：二手 VPS 收售、代谷歌学生认证、Gemini/WhatsApp 账号与订阅比价、黑五时间讨论、个人节点项目为主；无官方福利条目，0 条可入库线索。"
     },
     {
       "id": "lowendtalk",
@@ -4128,6 +4128,68 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-20 首次读取（直连 200，2.28 MB）：Free 卡「Free forever / $0 /month」「100 tasks per month」「Unlimited Zaps, Tables, and Forms」「Two-step Zaps」；Zaps 对照表 Free 列 polling 15 min；FAQ 说明 14 天 Professional 试用无需信用卡。页面另含 Agents Free 400 activities/月，本轮未入库。"
+    },
+    {
+      "id": "snyk-plans",
+      "name": "Snyk 定价与 Free 档限额",
+      "url": "https://snyk.io/plans/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://snyk.io/plans/",
+      "status": "readable",
+      "checkedAt": "2026-11-20T08:40:00Z",
+      "lastSuccessAt": "2026-11-20T08:40:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，59 KB）：Free「$0 / month」、Projects 5、Snyk Code 100 tests/月；FAQ 分产品月度额度 OSS 200 / Code 100 / IaC 300 / Container 100；Team $25/月对应 100 项目、1,000 tests/月；Evo（AI 渗透测试）仅 Enterprise。"
+    },
+    {
+      "id": "firebase-pricing",
+      "name": "Firebase 定价（Spark 免费档）",
+      "url": "https://firebase.google.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://firebase.google.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-20T08:40:00Z",
+      "lastSuccessAt": "2026-11-20T08:40:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，107 KB）：Spark「No payment method needed」；Firestore 1 GiB / 10 GiB 出网 / 20K 写·50K 读·20K 删每日；Auth 50K MAU；Functions 2M 次 / 400K GB-秒 / 200K CPU-秒；Hosting 10 GB + 360 MB/日；Storage 5 GB + 1 GB/日下载；Cloud Build 120 分钟/日。AI Logic 按 Gemini/Google Cloud 单独计费。"
+    },
+    {
+      "id": "google-colab-faq",
+      "name": "Google Colab FAQ（免费资源口径）",
+      "url": "https://research.google.com/colaboratory/faq.html",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://research.google.com/colaboratory/faq.html",
+      "status": "readable",
+      "checkedAt": "2026-11-20T08:40:00Z",
+      "lastSuccessAt": "2026-11-20T08:40:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-20 首次读取（直连 200，48 KB）：「free of charge access to computing resources, including GPUs and TPUs」，但「resources are not guaranteed and not unlimited, and usage limits sometimes fluctuate」，未公布小时数与 GPU 型号；免费档重型 GPU 受限，稳定算力需 Colab Pro。"
     }
   ]
 }
