@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-21T05:15:00Z",
-      "lastSuccessAt": "2026-11-21T05:15:00Z",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=20，均 200）：free-tier 共 159 条，最新 20 条里可入库新品牌为零——Regolo/KRAFTON/Snyk/Devin/Colab/Algolia/Firebase/HF ZeroGPU/Krea/Vercel/Agora/Mux/Scaleway/Brevo/R2/Codespaces/Mailgun/Valyu 全部库内已收录（连续第 7 轮饱和）；signup-credit 共 58 条，最新 20 条仅 Smallest.ai $10、MixRoute $5、Sarvam ₹100、VModel $10、SearchApi 100 次等低面值，其余已收录或已排除。last_verified 停在 2026-11-20T05:39-05:44-05:00。"
+      "observation": "2026-11-21 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 返回 50 条，除库内已收录品牌外仅新增 packet.ai（Token Factory 上线期免费，已入库 pending），Hugging Face ZeroGPU / Windsurf / Make 仍未满足额度可核对口径；signup-credit 返回 50 条，新增百度千帆（17 模型 × 100 万 tokens，已入库 active）与阿里云 Model Studio 国际站（每模型 100 万 tokens，已入库 active），Baichuan ¥80 因官方定价页正文未出现赠送金条文未入库，Smallest.ai $10 / MixRoute $5 / Sarvam ₹100 / VModel $10 / Nscale $5 / SearchApi 100 次等面值偏低或为第三方中转，留候选。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-21T05:15:00Z",
-      "lastSuccessAt": "2026-11-21T05:15:00Z",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 首读 TLS 握手失败（curl 35），20 秒后改用普通 UA 重试 200（80.6 KB，25 条）：0 条合格线索——Google Pro 代开通/号池、zcode 免费分发、Qoder 高校赛积分、猫超卡实物、Leaflow 商业推广（官方站无免费档、需先充值 US$1）、opengame 第二波（Game Jam 需提交作品）均已排除；「Caffeine 黑五绑卡送 Studio 一个月」经核 caffeine.ai/pricing 为 Free $0（15 欢迎积分、仅 Remix），留作候选未入库。"
+      "observation": "2026-11-21 RSS 200（71.9 KB，25 条）：0 条合格线索——Devin Max 代开通/转卖、Google 学生认证与日区订阅、留 ID 送额度与 HUB 号池、建行立减金与瑞幸券均非开发者资源；两条值得记录但未入库：「AWS 最新福利 价值 25 刀的 Plus」（会员制权益，需核对会员资格）、「HiDNS 3 个免费域名」（24 小时有效期、需实名）。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-21T05:15:00Z",
-      "lastSuccessAt": "2026-11-21T05:15:00Z",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 RSS 200（10.4 KB，20 条）：全部为 VPS 收售/拼车/Google 订阅讨论，0 条可核福利线索。"
+      "observation": "2026-11-21 RSS 200（11.5 KB，20 条）：全部为 VPS 收售/拼车/Google 订阅与 VAT 讨论，0 条可核福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-21T05:15:00Z",
-      "lastSuccessAt": "2026-11-21T05:15:00Z",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 RSS 200（63.3 KB，25 条）：0 条合格线索；「又一个免费域名，2 年」主题需白银信任等级、正文不可读，未入库；Zerexa 域名与 net.lu 掉落均为站内推广/交易信息。"
+      "observation": "2026-11-21 RSS 200（83.9 KB，25 条）：仅「Token Factory 上线，3 个模型全免费，免绑卡」1 条指向 packet.ai 官方页（已入库 pending）；其余为域名项目互赞、1C128M 容器赠送（规格过低且无官方条款）、乐子AI/中转站推广与站内交易，均未入库。"
     },
     {
       "id": "aideal",
@@ -4296,6 +4296,66 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-21 直连 200 仅 SPA 壳（59 KB，正文 151 字符），经只读渲染代理（r.jina.ai）取正文 3.4 KB：Free ¥0、新用户 5,000 积分（30 天有效）、每日登录 2,000 积分、云服务 1 个 / 云函数 1 个 / 存储 1 GB / 并发 5 / 全栈发布 1；付费 ¥25、¥39、¥89 每档对应 20K / 40K / 200K 积分。"
+    },
+    {
+      "id": "qianfan-free-quota",
+      "name": "百度千帆 · 新用户免费额度文档",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg",
+      "status": "readable",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-21 直连 200（345 KB，服务端渲染）：页面「新用户免费额度」表格逐列 17 个模型 × 100 万 tokens × 3 个月（ERNIE-4.5/X1、DeepSeek-R1/V3.1、Kimi-K2、Qwen3 系列、bge 与 qianfan-sug）；适用范围仅在线推理，不支持批量推理；文档更新时间 2026-11-11。"
+    },
+    {
+      "id": "alibaba-model-studio-free-quota",
+      "name": "阿里云 Model Studio 国际站 · 新用户免费额度",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/new-free-quota",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.alibabacloud.com/help/en/model-studio/new-free-quota",
+      "status": "readable",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-21 直连 200（43.6 KB，服务端渲染，Last Updated: Nov 16, 2026）：新加坡区域首次开通自动发放，每模型约 100 万 tokens、90 天有效、仅限实时推理；账号与 RAM 用户共享额度；排除批量推理/微调/部署/自定义模型/PAI-DSW/OSS；可开 Free Quota Only 止损。"
+    },
+    {
+      "id": "packet-token-factory",
+      "name": "packet.ai · Token Factory 产品页与上线博客",
+      "url": "https://packet.ai/token-factory",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://packet.ai/token-factory",
+      "status": "readable",
+      "checkedAt": "2026-11-21T15:25:00Z",
+      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-21 直连 200（78 KB 产品页 / 121 KB 博客）：产品页写「Free at launch (one month), then billed per 1M tokens」，三模型 DeepSeek V4.1 Flash / MiniMax M3.1 Flash / Qwen2.5 1.5B；博客（2026-11-17）写 free for every user、no card required、未公布 rate limit、no published end date；两处对结束时间表述不一致。"
     }
   ]
 }
