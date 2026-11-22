@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-22T12:05:00Z",
-      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=30/30，均 200）：本轮新入库 Vercel Hobby、Cloudflare R2、Inworld On-Demand 三条（均官方定价页可核）；未入库剩 Hugging Face ZeroGPU（日配额无数值）、Xiaomi MiMo TTS（限时免费无期限数值）、Notte $10、Rev AI 5 小时 ASR（约 $1）、Baichuan ¥80、Smallest/MixRoute/Sarvam/VModel/Nscale/SearchApi/Mixedbread（面值 $5–10 或第三方中转）、Infomaniak（单位含糊 + 需绑卡）、ScraperAPI（7 天试用）、Zed（14 天 Pro 试用）。第 9 轮接近饱和。"
+      "observation": "2026-11-22 第 10 轮读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=30/30，均 200，共 60 条）：与库内比对后仅 Notte（$10 一次性无过期）、Hugging Face ZeroGPU、ScraperAPI（1,000 credits + 7 天 5,000 credits）为本轮实际新入库；其余 57 条为已收录（Runloop/Parallel/Together Bonsai/Valyu/AgentQL 等已在前几轮入库）或面值 $5–10、需绑卡、第三方中转项，两组持续饱和。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-22T12:05:00Z",
-      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 读取 25 条（200，69.5 KB）：多数为账号交易/订阅讨论。候选 Boxes.dev Pro（3 个月 4C8G100GB，帖内标截止 2026-11-21 已过）、Exa $10/月（已入库 exa-starter）、Google AI Pro via Coursera（需报名课程 + 支付方式验证，非普惠）、Cursor + Grok Bot 免费一月（原帖已标失效）；muse 批量注册/号池/留 ID 送额度均排除。0 条合格入库。"
+      "observation": "2026-11-22 读取福利羊毛频道 RSS（200，25 条）：均为公益 API 站、留 ID 送 token、账号/订阅代购、eSIM 与身份绕过类帖子，0 条符合官方可核实标准；按规则不抓全站、不入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-22T12:05:00Z",
-      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 读取 20 条（200，10 KB）：以二手交易（OVH/DMIT/vmiss/甲骨文号）与 muse 成品号为主，另有 claude 账号出租、教师邮箱后缀出售等违规项，全部排除；0 条合格。"
+      "observation": "2026-11-22 读取 RSS（200，20 条）：以 VPS 拼团/收机、Google AI Pro 学生资格讨论、账号代充为主，0 条可官方核实的普惠福利；未追加热帖。"
     },
     {
       "id": "lowendtalk",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-22T12:05:00Z",
-      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 读取 25 条（200，63.5 KB）：候选 Boxes.dev Pro（同上，截止已过）、Oxylabs $5（代理面值低）、MOFH 无限分销主机（转售型，非普通开发者权益）、Noxc/GLADOS 抽奖（排除）；0 条合格。"
+      "observation": "2026-11-22 读取 internet 栏目 RSS（200，25 条）：域名/eSIM 白嫖、抽奖、代注册 AWS 试用账号为主，0 条合格；代注册与号池类明确排除。"
     },
     {
       "id": "aideal",
@@ -4461,6 +4461,68 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "直连 200（102 KB，正文 10,539 字符）：On-Demand /bin/zsh 档「Up to 70 min TTS included」+ 100 自定义音色 + 2 专业克隆 + 商用许可；FAQ 复现 70 分钟 TTS / 400 分钟 STT；Payment 行显示 On-Demand 无需信用卡。"
+    },
+    {
+      "id": "notte-pricing",
+      "name": "Notte 定价页",
+      "url": "https://www.notte.cc/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.notte.cc/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-22 直连 200（74 KB，正文 3,233 字符）：Free $0 档 $10 credits 一次性无过期、5 路浏览器并发、15 分钟会话、免绑卡；计量单价浏览器会话 $0.01/小时、住宅代理 $10/GB、BYO 代理 $0.20/GB；付费档 Developer $20/月、Startup $100/月。"
+    },
+    {
+      "id": "huggingface-zerogpu-docs",
+      "name": "Hugging Face ZeroGPU 文档",
+      "url": "https://huggingface.co/docs/hub/en/spaces-zerogpu",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "gpu",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://huggingface.co/docs/hub/en/spaces-zerogpu",
+      "status": "readable",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-22 直连 200（231 KB，正文 10,687 字符）：ZeroGPU Spaces 对所有用户免费使用（RTX Pro 6000 Blackwell，动态分配）；免费个人账号（验证邮箱 + 账号满 30 天）可托管 2 个、PRO 10 个且额度 x8；每日配额 24 小时重置；超额 $1 / 10 分钟。免费档每日配额数值未公布。"
+    },
+    {
+      "id": "scraperapi-pricing",
+      "name": "ScraperAPI 定价页",
+      "url": "https://www.scraperapi.com/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.scraperapi.com/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-22T22:25:00Z",
+      "lastSuccessAt": "2026-11-22T22:25:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-22 直连 200（472 KB，正文 14,425 字符）：FAQ 写免费档 1,000 API credits（最多 5 并发），页面顶部另有「7-day trial and 5,000 API credits. No credit card required」；两处口径冲突、关系未说明。付费档 Hobby $49/月（年付 $44.10）。"
     }
   ]
 }
