@@ -2,6 +2,129 @@
   "schemaVersion": 1,
   "resources": [
     {
+      "id": "vercel-hobby-free-1m-function-invocations-202611",
+      "title": "Vercel Hobby 免费档：$0/月，每月 100 万次函数调用 + 100 GB 流量 + 100 万次 CDN 请求",
+      "provider": "Vercel",
+      "category": "cloud",
+      "description": "官方定价页计划对比表把 Hobby 列为 $0/月，含导入仓库即部署、自动 CI/CD、全球自动化 CDN、Web Application Firewall、Fluid compute、DDoS 缓解与流量/性能洞察；同一表格逐行给出 Hobby 列的月度额度（Fluid Active CPU、Provisioned Memory、Function Invocations、CDN Requests、Fast Data Transfer、Vercel Sandbox Active CPU、Blob 存储与操作、Image Optimization、Edge Config Writes、Bulk Redirects、Firewall 规则与速率限制）。FAQ 原文「Our Hobby plan is free and a great way to get started」，并说明 Pro $20/月 含 $20 用量抵扣、团队协作与冷启动预防。",
+      "quota": "Hobby $0/月，官方表格给出的每月额度：Fluid Active CPU 4 小时、Fluid Provisioned Memory 360 GB-hrs、Function Invocations 100 万次、CDN Requests 100 万次、Fast Data Transfer 100 GB、Vercel Sandbox Active CPU 5 小时、Blob 存储 1 GB / Simple Operations 1 万次 / Advanced Operations 2,000 次、Image Optimization 5,000 次转换 + 30 万次缓存读取、Edge Config Writes 20 万次、Bulk Redirects 每项目 1,000 条、Firewall Rate Limit 100 万允许请求、自定义 Firewall 规则最多 3 条、IP Blocking 最多 10 条。",
+      "benefitValue": "Hobby 常驻 $0；对照 Pro $20/月（含 $20 用量抵扣、团队协作、免费自定义域名）。超额单价：函数调用 $0.60/1M、Fluid Active CPU $0.128/小时、Provisioned Memory $0.0106/GB-hr、CDN 速率限制请求 $0.50/1M、Blob 存储 $0.023/GB。按小额个人项目估算，Hobby 额度足以覆盖纯静态站与轻量函数，无需付费。",
+      "eligibility": "注册 Vercel 账号即可（用 Git 仓库导入部署，官方页面未要求绑定付款方式）。官方定价页本条未列出商用/团队资格限制，Hobby 的用途边界以其服务条款与公平使用政策为准，本轮未直接读取条款正文，标注未知。",
+      "regions": "全球边缘网络（Global, automated CDN）；官方定价页未列地区限制。",
+      "validity": "常驻免费档，官方未公布结束时间；额度按月计算（表格逐项标注 / month）。",
+      "deadlineNote": "官方未公布截止日期；属常驻 Hobby 档，不按限时活动处理。",
+      "officialUrl": "https://vercel.com/pricing",
+      "claimUrl": "https://vercel.com/signup",
+      "discoveryUrl": "https://perq.sh/offers/vercel-hobby-free",
+      "discoveredAt": "2026-11-22T11:20:00Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "Hobby 本身 $0，不产生订阅费；超出额度需升级 Pro（$20/月）或按量付费，页面标注「prices shown are in USD and exclude VAT/GST」。商用与团队用途是否允许以条款为准，本轮未读取条款原文。",
+      "confidence": "high",
+      "confidenceReason": "官方 vercel.com/pricing 计划对比表直接给出 Hobby 价位与 13 项月度额度数值，FAQ 亦明写 Hobby 免费；仅「是否需要付款方式」「商用边界」缺官方文字，不影响核心权益成立，故 high + active。",
+      "status": "active",
+      "startsAt": null,
+      "endsAt": null,
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
+      "evidence": [
+        {
+          "url": "https://vercel.com/pricing",
+          "summary": "直连 200（1.2 MB，正文 15,598 字符）：Hobby $0/mo 卡片与对比表额度复现——Function Invocations 1M/月、CDN Requests 1M/月、Fast Data Transfer 100 GB/月、Fluid Active CPU 4 小时/月、Provisioned Memory 360 GB-hrs/月、Sandbox Active CPU 5 小时/月、Blob 1 GB + 10K + 2K、Image Optimization 5K + 300K 缓存读取、Edge Config Writes 200K、Bulk Redirects 1K/项目、Firewall Rate Limit 1M、自定义规则 ≤3、IP Blocking ≤10；FAQ「Our Hobby plan is free」。",
+          "checkedAt": "2026-11-22T12:05:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "由 Perq free-tier 组（Vercel Hobby，首见 2026-11-17）转官方核实：vercel.com/pricing 对比表逐项确认 Hobby $0 与 13 项月度额度，属常驻免费档，入库 active/high；未注册实测。"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare-r2-free-10gb-storage-202611",
+      "title": "Cloudflare R2 免费档：每月 10 GB 存储 + 100 万次 Class A + 1,000 万次 Class B，出网免费",
+      "provider": "Cloudflare",
+      "category": "cloud",
+      "description": "Cloudflare 官方 R2 计费文档的免费档表格列出：Free Storage 10 GB-month/月、Class A Operations 100 万次/月、Class B Operations 1,000 万次/月、Egress（数据传输到互联网）免费；并注明免费档只适用 Standard 存储，不适用 Infrequent Access。同一页面定义 Class A（写入类，如 PutObject、CopyObject、分片上传）与 Class B（读取类，如 GetObject、HeadObject），删除对象、删除桶、中止分片上传为 Free operations。",
+      "quota": "每月免费：存储 10 GB-month（按每日峰值平均值计算）、Class A 操作 100 万次、Class B 操作 1,000 万次、出网流量免费；免费档仅限 Standard 存储，Infrequent Access 存储不在免费范围。删除类操作不计费。",
+      "benefitValue": "按 Standard 存储 $0.015/GB-月、Class A $4.50/百万、Class B $0.36/百万估算，免费档约合每月 $0.15 存储 + $4.5 Class A + $3.6 Class B，叠加最关键的出网免费（对比 S3 出网 $0.09/GB），静态资源/图床类小项目可长期零成本。",
+      "eligibility": "需 Cloudflare 账号并在控制台开通 R2（开通 R2 是否必须添加付款方式，官方计费文档本轮未说明，标注未知）；免费额度对所有 R2 用户生效，无需申请。",
+      "regions": "Cloudflare 全球网络；官方文档未在免费档段落列出地区限制。",
+      "validity": "常驻免费额度，按月重置；官方未公布结束时间。",
+      "deadlineNote": "官方未公布截止日期，属常驻免费档。",
+      "officialUrl": "https://developers.cloudflare.com/r2/pricing/",
+      "claimUrl": "https://dash.cloudflare.com/",
+      "discoveryUrl": "https://perq.sh/offers/cloudflare-r2-free",
+      "discoveredAt": "2026-11-22T11:20:00Z",
+      "creditCard": "unknown",
+      "autoRenewal": "no",
+      "costNotes": "免费额度内 $0；超出后 Standard 存储 $0.015/GB-月、Class A $4.50/百万次、Class B $0.36/百万次，出网仍免费。Infrequent Access 存储有最低存储时长计费、且不适用免费额度。启用 R2 时是否需要绑定付款方式本轮未取得官方文字。",
+      "confidence": "high",
+      "confidenceReason": "官方 R2 计费文档直接给出免费档四项数值与「仅 Standard 存储」限制，Class A/B 定义与免费操作清单同页可读；仅「开通是否需绑卡」未说明，不影响核心额度成立，故 high + active。",
+      "status": "active",
+      "startsAt": null,
+      "endsAt": null,
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
+      "evidence": [
+        {
+          "url": "https://developers.cloudflare.com/r2/pricing/",
+          "summary": "直连 200（143 KB，正文 12,046 字符）：免费档表格「Free Storage 10 GB-month / month、Class A Operations 1 million requests / month、Class B Operations 10 million requests / month、Egress Free」+ Caution「The free tier only applies to Standard storage, and does not apply to Infrequent Access storage」全部复现。",
+          "checkedAt": "2026-11-22T12:05:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "由 Perq free-tier 组（Cloudflare R2，首见 2026-11-15）转官方核实：R2 计费文档免费档四项数值与 Standard-only 限制确认，入库 active/high；未注册实测、未开通 R2。"
+        }
+      ]
+    },
+    {
+      "id": "inworld-ondemand-free-70min-tts-202611",
+      "title": "Inworld On-Demand 免费档：$0 起用，含最高 70 分钟 TTS 或 400 分钟 STT",
+      "provider": "Inworld AI",
+      "category": "ai",
+      "description": "Inworld 官方定价页把 On-Demand 列为「Evaluation and prototyping」$0 按量付费档，含「Up to 70 min TTS included」、100 个自定义音色、2 个专业声音克隆、语音克隆与声音设计、Speech-to-Speech、Inworld Inference 上 100+ LLM 模型、商用许可与社区支持；FAQ 补充「On-Demand … comes with up to 70 minutes of TTS or 400 minutes of STT for free」。付费档 Creator $25/月起按 3 个月滚动 credit 计，On-Demand 无折扣价（TTS-2 $25/1M 字符、TTS-2 Flash $15/1M 字符、STT-1 $0.15/小时、LLM 起 $0.07/1M tokens）。",
+      "quota": "On-Demand $0 档：最高 70 分钟 TTS 或 400 分钟 STT 免费额度（二者同一表述下的等价额度）、100 个自定义音色、2 个专业声音克隆、语音克隆/声音设计、Speech-to-Speech、100+ LLM 模型推理、商用许可。超出后按 On-Demand 标价计费：TTS-2 $25/1M 字符、TTS-2 Flash $15/1M 字符、STT-1 $0.15/小时、LLM 起 $0.07/1M tokens。",
+      "benefitValue": "70 分钟 TTS 按 TTS-2 $25/1M 字符估算约合 6–7 万字符、≈$1.6；若走 STT 则 400 分钟 × $0.15/小时 ≈ $1。金额不高，但含声音克隆（2 个专业克隆 + 100 自定义音色）与商用许可，适合先做原型。",
+      "eligibility": "注册即用；官方对比表 Payment 行显示 On-Demand 为「–」（无信用卡要求），付费档才需 Credit card。页面未列学生/企业等额外资格限制。",
+      "regions": "官方定价页未列地区限制；数据驻留（EU/India）仅在更高档位提供。",
+      "validity": "官方未公布免费档结束时间；页面总述为「Choose a plan and get credits each month」，但 On-Demand 的 70 分钟是否按自然月重置未逐字说明（付费档 credit 为 3 个月滚动过期）。",
+      "deadlineNote": "官方未公布截止日期；按常驻 $0 On-Demand 档处理，不按限时活动计。",
+      "officialUrl": "https://www.inworld.ai/pricing",
+      "claimUrl": "https://platform.inworld.ai/",
+      "discoveryUrl": "https://perq.sh/offers/inworld-on-demand-free",
+      "discoveredAt": "2026-11-22T11:20:00Z",
+      "creditCard": "not-required",
+      "autoRenewal": "no",
+      "costNotes": "On-Demand 本身 $0，不绑卡；超额按量计费（TTS-2 $25/1M 字符等），On-Demand 无付费档折扣。升 Creator $25/月 才有 8 折左右费率与每月 $25 credits；付费档 credits 3 个月过期，降级或取消当期结束后余额作废。",
+      "confidence": "high",
+      "confidenceReason": "官方定价页卡片与 FAQ 两处独立给出「up to 70 min TTS / 400 min STT」及 100 音色、2 专业克隆、商用许可；Payment 行显示 On-Demand 无需信用卡。额度重置周期未逐字写明，已如实披露，不影响权益成立。",
+      "status": "active",
+      "startsAt": null,
+      "endsAt": null,
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
+      "evidence": [
+        {
+          "url": "https://www.inworld.ai/pricing",
+          "summary": "直连 200（102 KB，正文 10,539 字符）：On-Demand「$0 pay as you go」卡片列出「Up to 70 min TTS included / 100 custom voices / 2 professional voice clones / Commercial license」，FAQ 复现「up to 70 minutes of TTS or 400 minutes of STT for free」；Payment 行 On-Demand 为「–」、付费档为 Credit card。",
+          "checkedAt": "2026-11-22T12:05:00Z"
+        }
+      ],
+      "history": [
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "由 Perq free-tier 组（Inworld AI，首见 2026-11-22）转官方核实：定价页与 FAQ 双处确认 70 分钟 TTS / 400 分钟 STT 免费额度、On-Demand 免绑卡、含商用许可，入库 active/high；未注册实测。"
+        }
+      ]
+    },
+    {
       "startsAt": null,
       "endsAt": null,
       "status": "active",
@@ -6049,8 +6172,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "qoder.com/pricing（渲染后可读，9.7 KB）本轮首次直接列出 Free 档「30-day check-in: 3,000 Credits」「2-Week Pro Trial with 300 Credits」与 FAQ 原文「When new users sign in to the Qoder client (requires latest version; not available on virtual machines) for the first time, they will receive a one-time, free 2-week (14-day) Pro trial. This trial includes 300 Credits」——连续 9 轮缺失的 300 Credits 官方条文已取得，故由 pending/medium 恢复为 active/high。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://qoder.com/activities",
@@ -6181,6 +6304,11 @@
           "url": "https://qoder.com/pricing",
           "summary": "24h 复核（2026-11-21，渲染 200，9.4 KB）：Free 卡「2-Week Pro Trial with 300 Credits」与 FAQ「one-time, free 2-week (14-day) Pro trial … includes 300 Credits … requires latest version; not available on virtual machines」均复现，条款无变化。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://qoder.com/pricing",
+          "summary": "直连 35 字符壳，渲染 9.0 KB：定价页仍写新用户 300 credits 与限时「Double Credits on Your First Subscription」活动，页面另标 Activities 入口；300 credits 口径复现。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -6308,6 +6436,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Free 卡「2-Week Pro Trial with 300 Credits」与 FAQ「one-time, free 2-week (14-day) Pro trial … includes 300 Credits … require"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -7600,8 +7733,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "本轮只读渲染代理首次取到成长中心兑换目录全文：7 档代金券面额、对应所需积分（10 积分 = 1 元）、各档实时库存，以及每日/每周任务的积分值；仍缺「每人可兑张数上限」与「券有效期/抵扣范围」（官方仅指向登录后的兑换弹窗），故维持 pending/medium，不升 active。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-23T04:00:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://developer.huaweicloud.com/grow",
@@ -7697,6 +7830,11 @@
           "url": "https://developer.huaweicloud.com/grow",
           "summary": "24h 复核（2026-11-21，渲染 200，21.4 KB）：顶部公告仍为：新平台 11-23 开放、域名变更；旧平台 11-20 00:00—11-23 00:00 停服升级并下线任务与代金券库存。页面兑换区现显示「平台升级中，兑换暂停服务」。原 endsAt（旧平台 11-20 00:00 兑换截止）不代表权益终止——积分自动迁移至新平台，故置空并改为按新平台复核。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://developer.huaweicloud.com/grow",
+          "summary": "渲染 16.7 KB：公告仍为「新平台 11 月 23 日正式对外开放，平台域名将变更；旧平台 11 月 20 日 0 点至 11 月 23 日 0 点停服升级，期间下线全部任务及代金券库存，未兑换积分自动迁移」；兑换区仍显示「平台升级中，兑换暂停服务」，任务中心同样暂停。endsAt 保持空，待 11-23 新平台复核。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -7794,6 +7932,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：顶部公告仍为：新平台 11-23 开放、域名变更；旧平台 11-20 00:00—11-23 00:00 停服升级并下线任务与代金券库存。页面兑换区现显示「平台升级中，兑换暂停服务」。原 endsAt（旧平台 11-20 00:00 兑换截"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -7821,8 +7964,8 @@
       "status": "pending",
       "confidence": "low",
       "confidenceReason": "官方入口 https://yunzhi.play.cn/ai/ 返回 200 但只是 Vue 单页应用（HTML 约 1.3 KB），签到与权益规则全在前端脚本内，未读到任何条款；仅有社区帖描述「每天访问自动弹出、领 2 天、24 小时不休眠」。",
-      "lastVerifiedAt": null,
-      "nextReviewAt": "2026-11-15T10:12:25Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://yunzhi.play.cn/ai/",
@@ -7883,6 +8026,11 @@
           "url": "https://yunzhi.play.cn/ai/",
           "summary": "24h 复核（2026-11-21，渲染 200，2.5 KB）：渲染后仅产品宣传、APP 下载与登录入口，仍无签到/免费额度/有效期条文（连续第 14 轮）。保留原记录。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://yunzhi.play.cn/ai/",
+          "summary": "直连 200 但正文仅 4 字符（前端壳），渲染后 2.2 KB 仍只有「云智手机」产品宣传文案，签到送时长/2 天时长的条款仍无公开条文；维持 pending。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -7895,6 +8043,11 @@
           "at": "2026-11-01T22:09:41Z",
           "status": "pending",
           "note": "复核尝试（未取得条款）：只读渲染代理成功取回 yunzhi.play.cn/ai/ 的可见文本，但页面仅为产品宣传与示例对话，签到规则、2 天云手机时长与规格仍未出现在任何官方文本中；不刷新核实时间、不改状态，列为需人工浏览器核对的积压项。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -8248,6 +8401,11 @@
           "url": "https://docs.memoh.ai/zh/guides/quick-start",
           "summary": "24h 复核（2026-11-21，直连 200，89 KB（VitePress））：快速开始文档仍只有安装与接入步骤，未出现免费档额度、价格或地区条款；官方未披露，维持 pending。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://docs.memoh.ai/zh/guides/quick-start",
+          "summary": "渲染 4.9 KB：快速开始文档仍只有安装/登录/建 Bot/BYOK 步骤，未出现免费档配置、额度、价格或地区条款；维持 pending/low。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -8285,10 +8443,15 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：快速开始文档仍只有安装与接入步骤，未出现免费档额度、价格或地区条款；官方未披露，维持 pending。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z"
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z"
     },
     {
       "id": "qoder-1024-community-boost-202610",
@@ -9415,8 +9578,8 @@
       "status": "pending",
       "startsAt": null,
       "endsAt": null,
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://maas.xfyun.cn/overview",
@@ -9497,6 +9660,11 @@
           "url": "https://maas.xfyun.cn/overview",
           "summary": "24h 复核（2026-11-21，渲染 overview 200（2.6 KB）+ modelSquare 200（26 KB））：首页横幅仍为「Spark-X2.6赋能开发者 零门槛领取10亿tokens免费额度」，模型广场 Spark-X2.6 仍标「限时免费」；本轮仍无倒计时，且已过此前按倒计时推算的 2026-11-20T16:00Z 边界而无结束公告，故置空推算 endsAt，维持 pending 待官方明示截止。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://maas.xfyun.cn/overview",
+          "summary": "直连仅 13 字符壳，渲染 1.4 KB：首页「常用功能」首位仍为「Spark-X2.6 赋能开发者 零门槛领取 10 亿 tokens 免费额度」，公告区最新为 2026-11-19「26.12.16 批次下线模型」，无倒计时、无活动结束公告；维持 pending 与已置空的 endsAt。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -9564,6 +9732,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：首页横幅仍为「Spark-X2.6赋能开发者 零门槛领取10亿tokens免费额度」，模型广场 Spark-X2.6 仍标「限时免费」；本轮仍无倒计时，且已过此前按倒计时推算的 2026-11-20T16:00Z 边界而无结束公告，故置空推"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -13461,8 +13634,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方首页明确写明每个用户拥有一台持久云端 Linux 计算机（Muse Secure VM，含浏览器与独立 root 文件系统），安全架构有官方博客佐证；但「免费」与具体额度、地区/年龄资格、付费档价格只在第三方报道与高管社交媒体出现，且社区流传的 30 亿 / 50 亿 / 310 亿 tokens 三种口径互相矛盾，muse.ai/pricing 登录后可见、本轮只读渲染仍跳回首页无法核实，故按待核实收录。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://muse.ai/",
@@ -13558,6 +13731,11 @@
           "url": "https://muse.ai/",
           "summary": "24h 复核（2026-11-21，直连 200（81 KB）+ 渲染 7.3 KB）：muse.ai 首页仍只讲 Muse Secure VM 产品定位，无价格、免费额度、赠金或地区限制表述；官方未披露，维持 pending。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://muse.ai/",
+          "summary": "直连 235 字符壳，渲染 7.1 KB：首页仍只描述「Every Muse user shares their own computer in the cloud with their Muse／Muse Secure VM is a persistent, isolated Linux computer」，无价格、无免费额度数值、无地区条款；定价页仍 302 回首页，维持 pending/medium。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -13640,6 +13818,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：muse.ai 首页仍只讲 Muse Secure VM 产品定位，无价格、免费额度、赠金或地区限制表述；官方未披露，维持 pending。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
       "discoveredAt": "2026-10-30T07:08:35Z",
@@ -15839,8 +16022,8 @@
       "status": "active",
       "confidence": "high",
       "confidenceReason": "官方促销页直接确认 US$100 额度、需付款方式验证身份但试用期不扣费、仅限未注册过试用的新客户、GPU 套餐除外、未用额度自动失效；官方定价页 FAQ 给出 60 天窗口与扣费模型，活动当前在架且条款完整。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.akamai.com/lp/free-credit-100",
@@ -15931,6 +16114,11 @@
           "url": "https://www.akamai.com/lp/free-credit-100",
           "summary": "24h 复核（2026-11-21，直连 403（398 B）→ 渲染 200（25.4 KB））：页面现可读：「Try Akamai Cloud with US$100 in credits*」并链至 Promotion Redemption Rules & Conditions（/legal/promotion-redemption-rules-conditions）。US$100 复现；「60 天有效期」本轮正文仍未出现（条文在细则页，未逐条读取），沿用历史证据并披露缺口。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.akamai.com/lp/free-credit-100",
+          "summary": "直连 200（214.6 KB，正文 10861 字符）：关键数值 1/2 复现（命中 100；未命中 700（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -16018,6 +16206,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：页面现可读：「Try Akamai Cloud with US$100 in credits*」并链至 Promotion Redemption Rules & Conditions（/legal/promotion-redemption-"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -16045,8 +16238,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "上海人工智能实验室官方新闻明确「测试期间，每位用户每月可获免费 Token」并给出 Token Plan 详情页地址（域名已按官方链接更正为 discovery.intern-ai.org.cn）；但每月赠送数量、领取门槛、适用模型与超额计费仍需登录后查看，官方公开页未公布，故保持待核实。",
-      "lastVerifiedAt": "2026-11-13T03:39:45Z",
-      "nextReviewAt": "2026-11-15T10:12:25Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.shlab.org.cn/news/5444294",
@@ -16137,6 +16330,11 @@
           "url": "https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0",
           "summary": "24h 复核（2026-11-21，直连 200（979 B）+ 渲染 200（1.2 KB））：仍为登录壳，Token Plan 内容需登录后显示（连续第 9 轮）。保留原记录。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://discovery.intern-ai.org.cn/token-plan/home?tabIndex=0",
+          "summary": "直连 200 正文 21 字符，渲染 0.8 KB 仍为占位表格，RPM/TPM 列依旧为「-」，免费额度数值未公布；维持 pending。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -16149,6 +16347,11 @@
           "at": "2026-11-13T03:39:45Z",
           "status": "pending",
           "note": "复核并纠错：官方入口域名由不存在的 discovery.SAGE-ai.org.cn 更正为 discovery.intern-ai.org.cn（新闻页内嵌链接），新入口 200 但需登录，配额仍未知，维持 pending/medium。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -16176,8 +16379,8 @@
       "status": "pending",
       "confidence": "medium",
       "confidenceReason": "官方页面完整给出资格门槛、四步申请流程与功能清单（含 1203+ 已资助项目），但未公布 VPS 规格、是否需要付款方式、资助期限与审核时效，故保持待核实。 2026-11-21 渲染后首次读到完整资格条款（1,000 stars / 90 天 / 非 fork 归档 / README 验证码）；受资助实例规格仍未公布，故维持 medium。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://dartnode.com/open-source",
@@ -16248,6 +16451,11 @@
           "url": "https://dartnode.com/open-source",
           "summary": "24h 复核（2026-11-21，直连 403（Cloudflare）→ 渲染 200（12.0 KB））：连续 26 轮 403 后首次取到正文：资格为「public GitHub repository with 1,000+ stars that is at least 90 days old (no forks or archived repos)」，需在 README 放入验证码，申请需登录 app.dartnode.com，承诺 Unlimited Bandwidth（受 AUP 约束）与 100% uptime；受资助实例的 CPU/内存/磁盘规格仍未公布，维持 pending/medium，并补全 eligibility。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://dartnode.com/open-source",
+          "summary": "直连 403，经渲染代理 11.5 KB 取得正文：1,000 GitHub stars + 90 天免费 + 非 fork/归档 + README 验证码 + 不限流量等资格仍复现；规格（CPU/内存/磁盘）仍未公布，维持 pending。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -16270,6 +16478,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：连续 26 轮 403 后首次取到正文：资格为「public GitHub repository with 1,000+ stars that is at least 90 days old (no forks or archived re"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -17377,8 +17590,8 @@
       "startsAt": null,
       "endsAt": null,
       "status": "pending",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://developer.amd.com/ai-developer-program/",
@@ -17469,6 +17682,11 @@
           "url": "https://developer.amd.com/ai-developer-program/",
           "summary": "24h 复核（2026-11-21，直连 200，166 KB）：AMD AI Developer Program 条款与库内一致，未出现冲突数值。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://developer.amd.com/ai-developer-program/",
+          "summary": "直连 200（162.6 KB，正文 8945 字符）：关键数值 1/1 复现（命中 100），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -17556,6 +17774,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：AMD AI Developer Program 条款与库内一致，未出现冲突数值。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -18025,8 +18248,8 @@
       "autoRenewal": "no",
       "confidence": "medium",
       "confidenceReason": "免费档的额度、规格与免绑卡由官方定价页直接确认；但同一轮读到官方状态页显示安全事件仍在处置中（Major outage，页面顶部仍为 \"Experiencing partial outage\"），截至 2026-11-01T22:10Z 官方已陆续开放 Postgres/MongoDB、MySQL/Redis、Minio、RabbitMQ 的密钥轮换并为全部用户（含免费用户）开启审计日志，事件是否闭环与是否影响新开户仍无官方确认，故保持待核实。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://northflank.com/pricing",
@@ -18132,6 +18355,11 @@
           "url": "https://northflank.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，170 KB）：Sandbox 免费档条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://northflank.com/pricing",
+          "summary": "直连 200（165.7 KB，正文 18875 字符）：关键数值 4/4 复现（命中 1667、833、11657、2026），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -18224,6 +18452,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：Sandbox 免费档条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -24520,8 +24753,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "autoRenewal": "unknown",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.t-cloud-public.com/en",
@@ -24592,6 +24825,11 @@
           "url": "https://www.t-cloud-public.com/en",
           "summary": "24h 复核（2026-11-21，直连 200，374 KB）：250 EUR Starter credit 与试用条件复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.t-cloud-public.com/en",
+          "summary": "直连 200（365.2 KB，正文 18614 字符）：关键数值 1/1 复现（命中 250），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -24664,6 +24902,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：250 EUR Starter credit 与试用条件复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "额度用尽或过期后按官网 list price 付费；额度不可提现、不可转让；超过 2 个月未用部分作废。T-Systems 商店下单可能需要企业信息与付款方式，官方活动页未说明；如需开票与税号，以商店结算页为准。",
@@ -24691,8 +24934,8 @@
       "status": "active",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.tinyfish.ai/pricing",
@@ -24768,6 +25011,11 @@
           "url": "https://www.tinyfish.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，145 KB）：免费额度与限速复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.tinyfish.ai/pricing",
+          "summary": "直连 200（141.1 KB，正文 6328 字符）：关键数值 3/5 复现（命中 500、150、1000；未命中 30000、360000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -24840,6 +25088,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：免费额度与限速复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "TinySearch / TinyFetch 不扣 Wallet；TinyAgent、TinyBrowser、TinyMonitor 从 Wallet 预付余额扣费（$10 起充，可自动续充）。限速提升需联系销售而非购买；企业档另含 ISO 27001、SSO、VPC、99.99% SLA。",
@@ -25048,8 +25301,8 @@
       "status": "active",
       "creditCard": "required",
       "autoRenewal": "yes",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://apify.com/pricing/creator-plan",
@@ -25125,6 +25378,11 @@
           "url": "https://apify.com/pricing/creator-plan",
           "summary": "24h 复核（2026-11-21，直连 200，367 KB）：Creator 计划与 $500 奖励条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://apify.com/pricing/creator-plan",
+          "summary": "直连 200（358.5 KB，正文 6208 字符）：关键数值 3/4 复现（命中 500、1000、10000；未命中 2500（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -25197,6 +25455,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Creator 计划与 $500 奖励条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "必须实际支付 $6 订阅费（非免费赠金）；额度用尽后按 $0.2/CU 与代理单价继续计费，且每月消费硬上限 $85。Store 全量 Actor 在 Creator 计划下不可用，只能用 Universal Actors，等于用权益换访问范围。个人技术培训 $150/小时、支持仅社区。",
@@ -26029,8 +26292,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.pinecone.io/pricing/",
@@ -26096,6 +26359,11 @@
           "url": "https://www.pinecone.io/pricing/",
           "summary": "24h 复核（2026-11-21，直连 200，288 KB）：Starter 免费档与 Standard $300 试用复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.pinecone.io/pricing/",
+          "summary": "直连 200（280.9 KB，正文 9754 字符）：关键数值 3/5 复现（命中 660、1024、300；未命中 15000、50000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -26163,6 +26431,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：Starter 免费档与 Standard $300 试用复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "Standard 试用结束自动进入 $50/月最低消费（Enterprise 为 $500/月），超出按量；$300 credits 仅在 3 周试用期内有效。Starter 免费档的存储/读写/索引上限需在页面展开查看，本轮未取得数值；是否需绑卡官方未说明。",
@@ -26190,8 +26463,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.aliyun.com/activity/ecs/student-compute-package",
@@ -26257,6 +26530,11 @@
           "url": "https://www.aliyun.com/activity/ecs/student-compute-package",
           "summary": "24h 复核（2026-11-21，直连 200，99 KB）：学生机 19 元套餐条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.aliyun.com/activity/ecs/student-compute-package",
+          "summary": "直连 200（96.6 KB，正文 3715 字符）：关键数值 4/4 复现（命中 150、850、2000、300），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -26324,6 +26602,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：学生机 19 元套餐条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "各档具体售价在页面为异步渲染，本轮只读到「19 元起购」与 FAQ 中「29 元实例」示例，逐档价格未核实；额度不可用于 GPU、深度学习训练与模型微调；300 元券不可与折扣叠加、同单不可与其他券并用，退款后对应品类额度不可二次使用。",
@@ -27207,8 +27490,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "costNotes": "Free 档标价 $0/月；Starter $29/月、Professional $189/月、Enterprise $558/月。官方未公布 credits 超额后的计费方式与单 credit 折算，若一次性 10,000 credits 用尽且未升级，能否继续使用未说明。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.airtop.ai/pricing",
@@ -27274,6 +27557,11 @@
           "url": "https://www.airtop.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，123 KB）：1,000 credits 免费档复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.airtop.ai/pricing",
+          "summary": "直连 200（120.3 KB，正文 2507 字符）：关键数值 5/5 复现（命中 1000、10000、189、558、100），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -27341,6 +27629,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：1,000 credits 免费档复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "medium",
@@ -27368,8 +27661,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免费额度按运行时长折算消耗（$0.0000166667/GB·秒，空闲与代理不计费），超出后需付费充值；免费档并发 5、回放 1 天、managed auth 3 连接、vault 3 个。官方 FAQ 另提供 YC 创业公司折扣（需单独申请）。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://kernel.sh/pricing",
@@ -27435,6 +27728,11 @@
           "url": "https://kernel.sh/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，80 KB）：$5 试用额度条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://kernel.sh/pricing",
+          "summary": "直连 200（78.2 KB，正文 3635 字符）：关键数值 3/3 复现（命中 200、150、166667），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -27502,6 +27800,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：$5 试用额度条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -27660,8 +27963,8 @@
       "status": "active",
       "creditCard": "unknown",
       "costNotes": "免费档 $0，但三项额度均为硬上限，超出即需升级；PAYG 按 $0.29/连接、$0.72/小时、$0.5/GB 计费，$50/月订阅含等额月度抵扣。企业功能（SAML SSO、HIPAA BAA、SCIM、自托管）不在免费档。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://nango.dev/pricing",
@@ -27727,6 +28030,11 @@
           "url": "https://nango.dev/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，141 KB）：免费档 10 connections / 10 小时 compute / 10GB 传输复现；导航与正文 API 计数由此前 1,300+ 上修为「1,400+ APIs & MCPs」（第 4 次上修），其余条款无变化。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://nango.dev/pricing",
+          "summary": "直连 200（134.9 KB，正文 7076 字符）：关键数值 3/5 复现（命中 1400、2026、10000；未命中 1300、1000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -27799,6 +28107,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：免费档 10 connections / 10 小时 compute / 10GB 传输复现；导航与正文 API 计数由此前 1,300+ 上修为「1,400+ APIs & MCPs」（第 4 次上修），其余条款无变化。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -27828,8 +28141,8 @@
       "confidence": "high",
       "confidenceReason": "Kaggle 官方文档（efficient-gpu-usage、tpu、notebooks）分别给出每周 30 小时 GPU、每周 20 小时 TPU 与单次 9 小时的原文，以及空闲 60 分钟超时与批量 12 小时上限；未披露项（是否需手机验证、GPU 单次会话上限）已注明未知，不影响额度本身。",
       "costNotes": "免费额度之外无按量付费通道可选（Kaggle 不提供付费加速器），额度用尽需等下周重置；不使用 GPU/TPU 时不消耗配额。官方未说明是否需要绑卡或手机验证，本轮按未知处理。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.kaggle.com/docs/efficient-gpu-usage",
@@ -27900,6 +28213,11 @@
           "url": "https://www.kaggle.com/docs/efficient-gpu-usage",
           "summary": "24h 复核（2026-11-21，渲染 200（2.4 KB））：docs 页复现「quota … resets weekly and is 30 hours or sometimes higher depending on demand」；TPU 20 小时/周仍不在该页，沿用历史证据。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.kaggle.com/docs/efficient-gpu-usage",
+          "summary": "直连 47 字符壳，渲染 2.3 KB：官方 GPU 文档仍写「You can use up to a quota limit per week of GPU. The quota resets weekly and is 30 hours or sometimes higher depending on demand」，30 小时/周口径复现。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -27962,6 +28280,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：docs 页复现「quota … resets weekly and is 30 hours or sometimes higher depending on demand」；TPU 20 小时/周仍不在该页，沿用历史证据。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -28646,8 +28969,8 @@
       "creditCard": "unknown",
       "autoRenewal": "unknown",
       "costNotes": "首月 $250 额度用尽或首月结束后按 worker 节点与附加组件标准价计费；官方未公布是否预授权、税费与超额停机策略。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.civo.com/pricing",
@@ -28708,6 +29031,11 @@
           "url": "https://www.civo.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，197 KB）：首月 $250 credit 条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.civo.com/pricing",
+          "summary": "直连 200（191.9 KB，正文 19121 字符）：关键数值 1/1 复现（命中 250），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -28770,6 +29098,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：首月 $250 credit 条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "medium",
@@ -29347,6 +29680,11 @@
           "url": "https://axiom.co/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，1.50 MB）：Personal 免费档额度复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://axiom.co/pricing",
+          "summary": "直连 200（1465.4 KB，正文 11511 字符）：关键数值 2/2 复现（命中 500、100），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -29409,10 +29747,15 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Personal 免费档额度复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z"
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z"
     },
     {
       "id": "blacksmith-3000-free-ci-minutes-202611",
@@ -29498,6 +29841,11 @@
           "url": "https://www.blacksmith.sh/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，148 KB）：3,000 免费 CI 分钟复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.blacksmith.sh/pricing",
+          "summary": "直连 200（144.2 KB，正文 5791 字符）：关键数值 2/2 复现（命中 3000、100），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -29560,10 +29908,15 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：3,000 免费 CI 分钟复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z"
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z"
     },
     {
       "id": "thunder-compute-student-20-credit-202611",
@@ -29649,6 +30002,11 @@
           "url": "https://www.thundercompute.com/students",
           "summary": "24h 复核（2026-11-21，直连 200，175 KB）：学生 $20 额度与资格复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.thundercompute.com/students",
+          "summary": "直连 200（171.1 KB，正文 2335 字符）：关键数值 1/1 复现（命中 6000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -29711,10 +30069,15 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：学生 $20 额度与资格复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z"
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z"
     },
     {
       "id": "huawei-codearts-agent-personal-free-202611",
@@ -30042,8 +30405,8 @@
       "costNotes": "官方未公布单价与 Magicube 兑换比例；超出免费 Magicube 后的商业用法需转用商业平台 API。",
       "confidence": "medium",
       "confidenceReason": "「免费提供、按 Magicube 抵扣、需绑定阿里云账号并实名、并发动态限速」均为官方限额页原文；但社区流传的「每日 2,000 次 / 每模型 500 次」在官方页面没有任何对应数值，免费 Magicube 的发放量也未披露，因此不标 active。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://modelscope.cn/docs/model-service/API-Inference/limits",
@@ -30089,6 +30452,11 @@
           "url": "https://modelscope.cn/docs/model-service/API-Inference/limits",
           "summary": "24h 复核（2026-11-21，直连 200（5.3 KB 壳）→ 渲染 200（4.2 KB））：渲染后取到正文：API-Inference 对开发者「free of charge」，额度与并发按平台资源实时动态调整，禁止用于高并发/SLA 场景。限额具体数值仍未表格化，沿用历史证据。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://modelscope.cn/docs/model-service/API-Inference/limits",
+          "summary": "直连 17 字符壳，渲染 4.1 KB：API-Inference 使用限制页仍写「offering them free of charge」+ 并发与额度「real-time dynamic adjustments」，并要求魔搭账号绑定阿里云账号并完成实名；具体每日数值仍未公布。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -30121,6 +30489,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：渲染后取到正文：API-Inference 对开发者「free of charge」，额度与并发按平台资源实时动态调整，禁止用于高并发/SLA 场景。限额具体数值仍未表格化，沿用历史证据。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -30446,8 +30819,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://cursor.com/pricing",
@@ -30503,6 +30876,11 @@
           "url": "https://cursor.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，326 KB）：Free $0/月 +「Limited AI usage / Limited agent requests / Limited Chat requests」复现，官方仍未给出数值，维持 pending。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://cursor.com/pricing",
+          "summary": "渲染 5.9 KB：Free $0/月仍为「Limited AI usage / Limited agent requests / Limited Chat requests」三行，官方仍未给出数值；同页价梯为 Plus $8、Premium $30、Super $100、Ultra $200、Teams $30+/用户，与库内记录一致（页面已整体呈现为 Grok 系订阅文案）。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -30560,6 +30938,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：Free $0/月 +「Limited AI usage / Limited agent requests / Limited Chat requests」复现，官方仍未给出数值，维持 pending。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "Free 档 $0，不产生订阅费；Plus $8/月起。因官方未公布免费额度上限，无法判断超出后是否直接拦截或提示升级；如用于生产编码需先按 Plus 预算评估。",
@@ -30587,8 +30970,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://plamo.preferredai.jp/api",
@@ -30644,6 +31027,11 @@
           "url": "https://plamo.preferredai.jp/api",
           "summary": "24h 复核（2026-11-21，渲染 200（5.3 KB））：Free 档 0 円、PLaMo 3.0 Fin Beta「1利用者あたり24時間で50回まで」、Web 検索/Deep Research 活动至 2026-11-30 均复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://plamo.preferredai.jp/api",
+          "summary": "直连 5 字符壳，渲染 2.6 KB：Free 档仍为 PLaMo 3.0 / 3.1 Prime / 3.0 Fin Beta 各 1M tokens、Input/Output 0 円，试用限「1 利用者あたり 24 時間で 50 回まで」，Web 搜索与 Deep Research 注明「2026 年 11 月 30 日までのキャンペーン期間中」。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -30701,6 +31089,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Free 档 0 円、PLaMo 3.0 Fin Beta「1利用者あたり24時間で50回まで」、Web 検索/Deep Research 活动至 2026-11-30 均复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "Free 档 0 円，无订阅费；官方明示「利用量・レートリミットに制限あり」但不公布数值。对比表把「入出力プロンプトを学習に利用しない」「ZDR」列为 Standard 及以上特性，Free 档未作此承诺，涉密或敏感数据不宜走 Free。超出限速需转 Standard（Input 60 円 / Output 250 円 per 1M tokens）。",
@@ -30712,8 +31105,8 @@
       "title": "OpenCode Zen 免费模型组：13 个模型输入输出均 $0 / 1M tokens（限时，需 Console 计费信息）",
       "provider": "OpenCode（Anomaly）",
       "category": "ai",
-      "description": "OpenCode 官方 Console 文档（docs/zen）价格表把 12 个模型列为 Free：Big Pickle、Iceman、Inkling 2 Small、DeepSeek V4.1 Flash、Beam、Flint 40B、LongCat 2.5、Hy4 flash、MiMo-V2.6-Flash、Nemotron 3.5 Lightning、Nemotron 3.5 Super VL、Jev 1.13，Input / Output / Cached Read 全部标 Free。文档逐条注明这些模型「free on OpenCode for a limited time」，团队用于收集反馈与改进模型；免费档聊天模型只能通过 OpenCode 客户端调用，其他客户端需付费模型或 OpenCode Go 订阅。部分模型有地区限制：Beam 不对中国（含香港、澳门）开放。2026-11-18 起 GLM-5.3-Flash Free 进入弃用表（Deprecation date November 18, 2026），免费模型数由 14 降到 12。",
-      "quota": "免费模型（每 1M tokens 的 Input / Output / Cached Read 均 Free，共 12 个）：Big Pickle（无 -free 后缀但价格表三列均为 Free）、Beam Free、DeepSeek V4.1 Flash Free、Flint 40B Free、Hy4 flash Free、Iceman Free、Inkling 2 Small Free、Jev 1.13 Free（独立条目 jev-1.13-free，Cached Read 列标「-」，另有付费 jev-1.13 其 Output 亦 Free）、LongCat 2.5 Free（每日 100 次请求上限）、MiMo-V2.6-Flash Free、Nemotron 3.5 Lightning Free、Nemotron 3.5 Super VL Free。已下架：GLM-5.3-Flash Free（Deprecation date 2026-11-18）、Nemotron 3 Ultra Free（本轮价格表已无该行，弃用表未列）、MiniMax M3.1 Flash Free（2026-11-17）、Crouton Alpha Free（2026-11-09）、Pulse Alpha Free（2026-11-06）。付费对照价：DeepSeek V4.1 Flash $0.30/$1.20、GLM 5.3 Flash $0.15/$0.50（付费档仍在）、Claude Opus 5.5 $4/$20、GPT 5.5 $5/$30、Gemini 3.8 Flash 五折后 $0.75/$3.75。免费档模型需通过 OpenCode 客户端调用（文档原文「Free-tier chat models require OpenCode」），可用 OPENCODE_DISABLE_FREE_MODELS=1 隐藏。",
+      "description": "OpenCode 官方 Console 文档（docs/zen）价格表把 12 个模型列为 Free：Big Pickle、Iceman、Inkling 2 Small、DeepSeek V4.1 Flash、Beam、Flint 40B、LongCat 2.5、Hy4 flash、MiMo-V2.6-Flash、Nemotron 3.5 Lightning、Nemotron 3.5 Super VL、Jev 1.13，Input / Output / Cached Read 全部标 Free。文档逐条注明这些模型「free on OpenCode for a limited time」，团队用于收集反馈与改进模型；免费档聊天模型只能通过 OpenCode 客户端调用，其他客户端需付费模型或 OpenCode Go 订阅。部分模型有地区限制：Beam 不对中国（含香港、澳门）开放。2026-11-18 起 GLM-5.3-Flash Free 进入弃用表（免费模型数 14→12）；2026-11-19 Inkling 2 Small Free 亦进入弃用表，同时新增 Tidepool Alpha Free，总数仍为 12。",
+      "quota": "免费模型（每 1M tokens 的 Input / Output / Cached Read 均 Free，共 12 个）：Big Pickle（无 -free 后缀但价格表三列均为 Free）、Beam Free、DeepSeek V4.1 Flash Free、Flint 40B Free、Hy4 flash Free、Iceman Free、Jev 1.13 Free、Tidepool Alpha Free（2026-11-22 新增，stealth 模型，免费期收集数据用于改进模型）（独立条目 jev-1.13-free，Cached Read 列标「-」，另有付费 jev-1.13 其 Output 亦 Free）、LongCat 2.5 Free（每日 100 次请求上限）、MiMo-V2.6-Flash Free、Nemotron 3.5 Lightning Free、Nemotron 3.5 Super VL Free。已下架：Inkling 2 Small Free（Deprecation date 2026-11-19）、GLM-5.3-Flash Free（Deprecation date 2026-11-18）、Nemotron 3 Ultra Free（本轮价格表已无该行，弃用表未列）、MiniMax M3.1 Flash Free（2026-11-17）、Crouton Alpha Free（2026-11-09）、Pulse Alpha Free（2026-11-06）。付费对照价：DeepSeek V4.1 Flash $0.30/$1.20、GLM 5.3 Flash $0.15/$0.50（付费档仍在）、Claude Opus 5.5 $4/$20、GPT 5.5 $5/$30、Gemini 3.8 Flash 五折后 $0.75/$3.75。免费档模型需通过 OpenCode 客户端调用（文档原文「Free-tier chat models require OpenCode」），可用 OPENCODE_DISABLE_FREE_MODELS=1 隐藏。",
       "benefitValue": "12 个模型 $0 计费，按同页付费对照价折算（如 DeepSeek V4.1 Flash 官方付费价 $0.30/$1.20 per 1M tokens、GLM 5.3 Flash $0.15/$0.50）可视为完全抵扣；官方未公布免费模型的调用上限或月度额度，实际价值取决于用量。较上轮减少 2 个模型（GLM-5.3-Flash Free、Nemotron 3 Ultra Free），单个模型未计入 Billing 前无直接价格差。",
       "eligibility": "注册 OpenCode Console 账号并在 Console 添加计费信息与额度后取 API key；免费档聊天模型限 OpenCode 客户端（TUI）调用，其它客户端需付费模型或 OpenCode Go 订阅。官方未提学生/企业身份门槛。",
       "regions": "Crouton Alpha 不对欧盟、阿富汗、白俄罗斯、中国（含香港与澳门）、柬埔寨、古巴、伊朗、伊拉克、利比亚、缅甸、朝鲜、巴基斯坦、俄罗斯、索马里、叙利亚、委内瑞拉等开放；Beam 不对中国（含香港与澳门）、俄罗斯、白俄罗斯、柬埔寨等开放；Inkling 2 Small 不对欧盟、俄罗斯等开放。其余免费模型未列地区限制。",
@@ -30728,8 +31121,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://opencode.ai/docs/zen/",
@@ -30785,6 +31178,11 @@
           "url": "https://opencode.ai/docs/console/models/",
           "summary": "24h 复核（2026-11-21，直连 200，287 KB（文档站））：免费模型清单页可读，未见与库内冲突的条目或数值；本轮未逐条重数免费模型数量。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://opencode.ai/docs/console/models/",
+          "summary": "直连 106.6 KB（正文 31289 字符）：免费模型仍为 12 个，但清单变动——新增 **Tidepool Alpha Free**（stealth 模型，免费期收集数据用于改进模型），**Inkling 2 Small Free 进入弃用表（Deprecation date 2026-11-19）**；Big Pickle 仍在（价格三列 Free）。已同步更新 quota/description。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -30847,6 +31245,16 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：免费模型清单页可读，未见与库内冲突的条目或数值；本轮未逐条重数免费模型数量。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "条款变化：免费模型清单换血——新增 Tidepool Alpha Free（stealth，数据用于改进模型），Inkling 2 Small Free 于 2026-11-19 弃用；免费模型总数仍 12。"
         }
       ],
       "costNotes": "$0 计费，无需订阅；官方「How it works」要求 Console 添加计费信息与额度，免费模型是否必须绑有效卡官方未逐字说明（第三方口径称需绑卡但 $0 计费）。限时模型随时可能下架或转付费；非 OpenCode 客户端只能走付费模型或 OpenCode Go 订阅。Crouton Alpha / Beam 等模型对中国大陆及港澳不可用。 2026-11-11 复核：免费名单为动态轮换，-free 变体随时增减（本轮新增 LongCat 2.5 / MiniMax M3.1 Flash，下架 Crouton Alpha / Pulse Alpha）。",
@@ -32198,8 +32606,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://deno.com/deploy/pricing",
@@ -32260,6 +32668,11 @@
           "url": "https://deno.com/deploy/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，203 KB）：Deploy 免费档 1M 请求/月等额度复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://deno.com/deploy/pricing",
+          "summary": "直连 200（198.7 KB，正文 14464 字符）：关键数值 7/7 复现（命中 1000000、150、100、5000000、200、750、500000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -32312,6 +32725,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Deploy 免费档 1M 请求/月等额度复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "免费档之外按 Pro $20/月（5M 请求、200 GiB 出网、50 小时 CPU）；产品将于 2027-04 停服，官方未公布迁移补偿或数据保留安排。",
@@ -32475,8 +32893,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.descope.com/pricing",
@@ -32532,6 +32950,11 @@
           "url": "https://www.descope.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，1.36 MB）：Free forever 7,500 MAU 复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.descope.com/pricing",
+          "summary": "直连 200（1327.1 KB，正文 14079 字符）：关键数值 4/5 复现（命中 7500、10000、2000、249；未命中 2000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -32584,6 +33007,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Free forever 7,500 MAU 复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "免费档 $0 且超额不扣费；Pro 档从 $249/月起（年付，10,000 MAU），Growth 从 $799/月起。",
@@ -33711,8 +34139,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免费档不自动扣费；自定义域名在 Spark 档未列出（Deploy 起 6 个、Team 16 个），免费档按平台分配的默认域名访问。AI 功能免费档仅限标准模型，付费档附 €2 Fast AI 一次性额度、充值自 €5 起。平台上线于 2026 年 10 月，稳定性待观察。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://portal.uppcoder.com/pricing",
@@ -33758,6 +34186,11 @@
           "url": "https://portal.uppcoder.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200（17 KB 壳）→ 渲染 200（4.9 KB））：渲染后复现 Spark 档：Free forever、1 always-on stack、€0/月、1 CPU core、500 CPU seconds/日、2 GB 磁盘、2 GB 内存，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://portal.uppcoder.com/pricing",
+          "summary": "直连 200（16.6 KB，正文 5151 字符）：关键数值 1/3 复现（命中 3000；未命中 500、2026（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -33805,6 +34238,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：渲染后复现 Spark 档：Free forever、1 always-on stack、€0/月、1 CPU core、500 CPU seconds/日、2 GB 磁盘、2 GB 内存，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -33832,8 +34270,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免绑卡仅限开发阶段，上生产前需补付费方式；自定义域名 $99/月、Enterprise SSO 为独立计费产品（价格未公开）；Radar 超额按每 5 万次检查 $100/月。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://workos.com/pricing",
@@ -33879,6 +34317,11 @@
           "url": "https://workos.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，224 KB）：AuthKit 免费 1M MAU 复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://workos.com/pricing",
+          "summary": "直连 200（218.4 KB，正文 8082 字符）：关键数值 3/7 复现（命中 100、2500、1000；未命中 7500、2000000000、1000000、50000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -33926,6 +34369,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：AuthKit 免费 1M MAU 复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -33953,8 +34401,8 @@
       "status": "active",
       "creditCard": "unknown",
       "costNotes": "额度用尽即无法继续调用，需加购 credits 或升级付费档；免费档仅 1 并发、7 天留存，长任务与数据留存类需求需付费。官方未写免费档绑卡要求，也未公布 credit 有效期。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.hyperbrowser.ai/pricing",
@@ -34000,6 +34448,11 @@
           "url": "https://www.hyperbrowser.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，109 KB）：5,000 credits 免费档复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.hyperbrowser.ai/pricing",
+          "summary": "直连 200（106.9 KB，正文 4241 字符）：关键数值 5/5 复现（命中 5000、1000、30000、100、100000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -34047,6 +34500,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：5,000 credits 免费档复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -34074,8 +34532,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "只有 access token 计入 50K token 配额，超额需升级 Pro；自定义域名、Passkey 与隐藏品牌属付费特性。自托管可绕开额度限制但需自行运维。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://logto.io/pricing",
@@ -34121,6 +34579,11 @@
           "url": "https://logto.io/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，484 KB）：50,000 MAU 免费档复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://logto.io/pricing",
+          "summary": "直连 200（472.9 KB，正文 16101 字符）：关键数值 2/5 复现（命中 50000、100；未命中 7500、2000000、1000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -34168,6 +34631,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：50,000 MAU 免费档复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -34195,8 +34663,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "无月订阅，只有一次性 credits；免费额度无明确有效期，用尽即停服。免费档并发与 QPS 官方未单独列出（页面只给 Ultimate 的 300 次/秒口径）。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://serper.dev/",
@@ -34242,6 +34710,11 @@
           "url": "https://serper.dev/",
           "summary": "24h 复核（2026-11-21，直连 200，1.04 MB）：2,500 次免费查询复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://serper.dev/",
+          "summary": "直连 200（1019.9 KB，正文 95814 字符）：关键数值 10/10 复现（命中 2500、375、500、1250、3750、300、200、50000、1000、500000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -34289,6 +34762,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：2,500 次免费查询复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "high",
@@ -34688,8 +35166,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://build.nvidia.com/api/runtime/content/help-center-faq.yaml",
@@ -34740,6 +35218,11 @@
           "url": "https://build.nvidia.com/",
           "summary": "24h 复核（2026-11-21，直连 200（1.3 KB 壳）→ 渲染 200（14 KB））：FAQ 复现「All models on build.nvidia.com are free to prototype with」「up to 40 requests per minute (RPM) for most models, with no per-token billing」，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://build.nvidia.com/",
+          "summary": "直连 1,343 字符壳，渲染 13.6 KB：FAQ 仍为「All models on build.nvidia.com are free to prototype with」「up to 40 requests per minute (RPM) for most models, with no per-token billing」，40 RPM 口径复现。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -34782,6 +35265,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：FAQ 复现「All models on build.nvidia.com are free to prototype with」「up to 40 requests per minute (RPM) for most models, wi"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "免费档不计 token 费，但仅限限流内的原型使用；生产或高并发需转合作方云 endpoint（按各家定价）或自部署 NIM（需自备 GPU）。限流 per-account，官方未公布每日总量上限；信用卡要求官方未明说（Quickstart 只要求邮箱注册）。",
@@ -34809,8 +35297,8 @@
       "status": "active",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://kilo.ai/pricing",
@@ -34856,6 +35344,11 @@
           "url": "https://kilo.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，524 KB）：免费模型网关额度复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://kilo.ai/pricing",
+          "summary": "直连 512.0 KB 正文 7716 字符、渲染 11.7 KB：Kilo Code 定价页 $40,000 相关免费额度口径复现，Free 档未调整。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -34898,6 +35391,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：免费模型网关额度复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "免费路径仅限 Auto Free 路由到的免费模型与本地/BYOK 推理；改用付费模型或 Kilo Gateway pay-as-you-go 时按 provider 原价计费（官方称无加价），Kilo Pass 从 $19/月。信用卡：官方写「No hosted credit required」，未要求绑卡；Teams $15/人/月含 14 天 Enterprise 试用。",
@@ -35158,8 +35656,8 @@
       "status": "pending",
       "creditCard": "not-required",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
@@ -35200,6 +35698,11 @@
           "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
           "summary": "24h 复核（2026-11-21，直连 200，176 KB）：速率限制表可读，未出现与库内冲突的数值（部分模型上下文/参数量表述与库内不逐项对应，未据此改动）。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://docs.sambanova.ai/docs/en/models/rate-limits",
+          "summary": "直连 200（178.5 KB，正文 75946 字符）：关键数值 3/7 复现（命中 200000、120、12000；未命中 20000000、70000000000、120000000000、31000000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -35237,6 +35740,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：速率限制表可读，未出现与库内冲突的数值（部分模型上下文/参数量表述与库内不逐项对应，未据此改动）。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "medium",
@@ -35375,6 +35883,11 @@
           "url": "https://iteracompute.com/free/",
           "summary": "24h 复核（2026-11-21，直连 200，51 KB）：页面复现「The free promotion ends at 00:00 Pacific Time on November 24, 2026」，并新增说明「From November 24, free Auto access is reserved for eligible existing recharge users and plan subscribers；new recharges do not unlock these benefits」——与库内 endsAt 一致，补充截止后口径。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://iteracompute.com/free/",
+          "summary": "直连 200（49.8 KB，正文 10808 字符）：关键数值 4/10 复现（命中 128、8192、100、300；未命中 30000000、128000、100000000、300000000、27000000000、1000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -35412,6 +35925,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：页面复现「The free promotion ends at 00:00 Pacific Time on November 24, 2026」，并新增说明「From November 24, free Auto access is res"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "discoveredAt": "2026-11-13T13:49:52Z",
@@ -35420,8 +35938,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "confidence": "high"
     },
     {
@@ -35481,6 +35999,11 @@
           "url": "https://www.qiniu.com/ai/free-models/conatus-2026",
           "summary": "24h 复核（2026-11-21，直连 200，79 KB）：Conatus 免费 1 亿 tokens/日条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.qiniu.com/ai/free-models/conatus-2026",
+          "summary": "直连 200（76.9 KB，正文 3643 字符）：关键数值 3/7 复现（命中 100、128、1024；未命中 100000000、1000000、128000、1000000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -35518,6 +36041,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Conatus 免费 1 亿 tokens/日条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "discoveredAt": "2026-11-13T13:49:52Z",
@@ -35526,8 +36054,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "confidence": "high"
     },
     {
@@ -36420,8 +36948,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "autoRenewal": "unknown",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.blaxel.ai/pricing",
@@ -36447,6 +36975,11 @@
           "url": "https://www.blaxel.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，162 KB）：最高 $200 credits 条款复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.blaxel.ai/pricing",
+          "summary": "直连 200（158.5 KB，正文 12886 字符）：关键数值 2/2 复现（命中 200、100000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -36474,6 +37007,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：最高 $200 credits 条款复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "costNotes": "按活跃算力计费、空闲挂起不计费：Compute $0.0000115/GB RAM·秒、Batch Jobs $0.000006/GB RAM·秒、MCP Server $0.000007/GB RAM·秒；存储 $0.045/GB·月（镜像）、$0.12/GB·月（卷）、$0.20/GB·月（快照），Agent Drive 与数据操作 beta 期免费；自定义域名 $0.25/域名·月、通配符 $20/域名·月、专用出口 IP 与 egress gateway 运行费 beta 期免费。Tier 0 免费档超出并发或流量后的具体收费路径未披露。",
@@ -36664,8 +37202,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免费档 2 分钟会话上限会截断长任务；住宅代理按 6 units/请求额外计费，容易把 1,000 units 吃掉；持久会话与录制仅保留 1 天。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "confidence": "high",
       "confidenceReason": "官方定价页本轮实际读取原文：Free「$0/month」「no card required」「1k units/month」「2 max concurrent browsers」与各项限制逐条列出，免费档归属与超量计费口径明确。",
       "evidence": [
@@ -36688,6 +37226,11 @@
           "url": "https://www.browserless.io/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，220 KB）：1,000 units/月与 2 并发复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.browserless.io/pricing",
+          "summary": "直连 200（214.6 KB，正文 6622 字符）：关键数值 1/1 复现（命中 1000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -36710,6 +37253,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：1,000 units/月与 2 并发复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -36735,8 +37283,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "15 天保留意味着超过两周的 trace 会滚掉，做长周期评测要导出；超出 spans/摄取量需升级，免费档不产生超额账单（官方未写超额计费）。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "confidence": "high",
       "confidenceReason": "官方定价页本轮实际读取：AX Free 卡片逐条列出 25k spans/月、1 GB/月摄取、15 天保留、unlimited users 与 evals、10 issues/月，并明写「no credit card required」。",
       "evidence": [
@@ -36759,6 +37307,11 @@
           "url": "https://arize.com/pricing/",
           "summary": "24h 复核（2026-11-21，直连 200，541 KB）：25k spans/月免费档复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://arize.com/pricing/",
+          "summary": "直连 528.4 KB，正文 8356 字符：Arize AX 定价页 Free 档 25,000 spans/月与 50,000 spans 相关对照口径均复现（命中 25000、50000），未见档位调整。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -36781,6 +37334,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：25k spans/月免费档复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -36806,8 +37364,8 @@
       "status": "active",
       "creditCard": "not-required",
       "costNotes": "免费档只有 1 浏览器小时与 3 次 agent run，实际调试很快用尽；15 分钟单会话上限会截断长流程；$5 token 仅用于模型调用、不可挪作浏览器时长。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "confidence": "high",
       "confidenceReason": "官方定价页本轮实际读取：Free 列 3 concurrent browsers、1 browser hour、3 agent runs、1,000 search calls、1,000 fetch calls、15 minutes/session、$5 in tokens；Developer $20/mo 对照档同时可见。",
       "evidence": [
@@ -36830,6 +37388,11 @@
           "url": "https://www.browserbase.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，287 KB）：3 并发/1 浏览器小时等免费额度复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.browserbase.com/pricing",
+          "summary": "直连 200（279.8 KB，正文 10509 字符）：关键数值 2/2 复现（命中 1000、100），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -36852,6 +37415,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：3 并发/1 浏览器小时等免费额度复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -37308,8 +37876,8 @@
       "creditCard": "unknown",
       "autoRenewal": "unknown",
       "costNotes": "免费期结束后 SWE-2 Flash 是否按 token 计费、是否自动转入 Pro 订阅扣费，官方公告均未说明；Devin 定价页显示 SWE-2 模型本身需 Pro $20/月 起，试用结束前应自行确认账单设置。",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://cognition.com/blog/swe-2-flash",
@@ -37330,6 +37898,11 @@
           "url": "https://cognition.com/blog/swe-2-flash",
           "summary": "24h 复核（2026-11-21，直连 200，404 KB）：页面仍写「Free through 11/30」，Devin Desktop/CLI 入口未变；额度与并发仍未公布，维持 pending。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://cognition.com/blog/swe-2-flash",
+          "summary": "直连 200（394.3 KB，正文 6839 字符）：关键数值 2/4 复现（命中 2026、276；未命中 276000000000、12000000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -37347,6 +37920,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：页面仍写「Free through 11/30」，Devin Desktop/CLI 入口未变；额度与并发仍未公布，维持 pending。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "confidence": "medium",
@@ -37612,8 +38190,8 @@
       "status": "active",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.cognee.ai/pricing",
@@ -37634,6 +38212,11 @@
           "url": "https://www.cognee.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，213 KB）：Standard 起步档现写「$0 /month 100M tokens included — no card required + $0.10 per 1M tokens」「1 workspace included, more at $5 each per month」「Unlimited users & API calls」「Agentic integrations (Claude Code, Codex, MCP)」「Data source integrations: Slack, Notion, Linear, Google Drive」；Premium「$99 /month Plus token usage at the Standard rate」+ Auto-ontology / Ontology Editor / 更多数据域 / 优先支持。与库内原「1M tokens + $1.00/1M」不一致，判定为条款变化并更新。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.cognee.ai/pricing",
+          "summary": "直连 200（208.2 KB，正文 6343 字符）：关键数值 1/3 复现（命中 100；未命中 100000000、1000000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -37651,6 +38234,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "条款变化：Free 额度 1M → 100M tokens，超额单价 $1.00 → $0.10 / 1M，workspace 额外 $5/月不变，新增 Premium $99/月（Token 按 Standard 费率）。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ],
       "discoveredAt": "2026-11-19T12:40:00Z",
@@ -37678,8 +38266,8 @@
       "status": "pending",
       "creditCard": "unknown",
       "autoRenewal": "no",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://raon-mini.krafton.ai/en",
@@ -37695,6 +38283,11 @@
           "url": "https://raon-mini.krafton.ai/en",
           "summary": "24h 复核（2026-11-21，直连 200，170 KB）：「API access is currently free for a limited time. Per-user limits on token usage and the number of requests may apply」复现，仍未公布额度与期限，维持 pending。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://raon-mini.krafton.ai/en",
+          "summary": "直连 200（165.8 KB）、渲染 9.9 KB：页面仍写「we're offering the API service free for a limited time」，FAQ 仍为「Per-user limits on token usage and the number of requests may apply」，未公布额度与期限；本次新增读到 FAQ 补充「Any future charges and related policies will be announced separately」。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -37707,6 +38300,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "pending",
           "note": "24h 复核：「API access is currently free for a limited time. Per-user limits on token usage and the number of requests may apply」复现"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "pending",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ],
       "discoveredAt": "2026-11-19T12:40:00Z",
@@ -37752,8 +38350,8 @@
       "confidenceReason": "10,000 次搜索请求/月、50,000 条记录、5,000 次推荐请求/月、5,000 次抓取/月与「No credit card required」均取自官方定价页 Free 卡原文；付费档超额单价取自同页 Grow/Plus 列。未知项为 Free 档可用区域与是否限单账号，已在 regions/eligibility 披露。",
       "costNotes": "免费额度用尽后需升级付费档或按量计费；AI 相关检索能力与更长分析留存不在 Free 档。",
       "discoveredAt": "2026-11-19T22:30:00Z",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.algolia.com/pricing",
@@ -37769,6 +38367,11 @@
           "url": "https://www.algolia.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，585 KB）：10K 搜索请求/月、50K 记录等免费额度复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.algolia.com/pricing",
+          "summary": "直连 200（570.9 KB，正文 21960 字符）：关键数值 5/6 复现（命中 10000、5000、100、100000、1000；未命中 50000（多因页面口径不同或数值仅见于子页）），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -37781,6 +38384,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：10K 搜索请求/月、50K 记录等免费额度复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -37808,8 +38416,8 @@
       "confidenceReason": "「Free / 100 units / day / $0」与逐项包含/不包含清单取自官方定价页内嵌的 planCards 数据（tier:\"free\"、computePeriod:\"day\"、computeUnits:100），并明确列出 commercial license、video models、LoRA training 等为 included:false；「No credit card required」为 Free 卡独立特性项。未知项为单账号每日重置时区与是否限地区，已披露。",
       "costNotes": "超出每日 100 units 需购买 compute unit 包或升级付费档；免费档不含商用许可，商用需升级；视频/3D/LoRA 训练等能力不在免费档。",
       "discoveredAt": "2026-11-19T22:30:00Z",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://www.krea.ai/pricing",
@@ -37825,6 +38433,11 @@
           "url": "https://www.krea.ai/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，2.11 MB）：Free 档 100 units/日及不含商用许可/视频/3D 的边界复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://www.krea.ai/pricing",
+          "summary": "直连 200（1965.0 KB，正文 73601 字符）：关键数值 2/2 复现（命中 100、2000），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -37837,6 +38450,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Free 档 100 units/日及不含商用许可/视频/3D 的边界复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -37864,8 +38482,8 @@
       "confidenceReason": "「Free forever / $0 /month / 100 tasks per month / Unlimited Zaps, Tables, and Forms / Two-step Zaps」取自官方定价页 Free 卡；「轮询 15 分钟」「Filters & Paths 仅付费」取自同页 Zaps 对照表；「No credit card is required」取自官方 FAQ 的试用说明。未知项为 Free 档是否按月限单账号地区，已披露。",
       "costNotes": "多步 Zap、更高轮询频率与 Filters/Paths 需升级 Professional（$19.99/月起）；超出 100 tasks/月需升级或等下月重置。",
       "discoveredAt": "2026-11-19T22:30:00Z",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://zapier.com/pricing",
@@ -37881,6 +38499,11 @@
           "url": "https://zapier.com/pricing",
           "summary": "24h 复核（2026-11-21，直连 200，2.28 MB）：Free forever、100 tasks/月、two-step、轮询 15 分钟复现，未见变动。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://zapier.com/pricing",
+          "summary": "直连 200（2224.6 KB，正文 26264 字符）：关键数值 1/1 复现（命中 100），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -37893,6 +38516,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "24h 复核：Free forever、100 tasks/月、two-step、轮询 15 分钟复现，未见变动。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -38256,8 +38884,8 @@
       "confidenceReason": "免费版价格（¥0/永久）、「300 积分/日」与「每日 0 点重置·不累计·仅限标准模型」、文件上传 5 个/对话、500 MB 存储、100 文档等上限均取自官方定价页「方案对比」表原文；积分消耗口径（1 次对话 ≈ 1~5 积分）为同页「积分怎么用」段落。未知项：是否需实名认证、免费档可用模型清单细节、免费额度是否随活动调整，已披露。",
       "costNotes": "免费版不可购买加油包，也不含 PPT 创意模式 / PPTX 导出 / 自定义模板；超出每日 300 积分需升级个人版 ¥29.9/月（活动价 ¥11.11/月起），加油包 1,500 积分 ¥3.9 起、3,500 积分 ¥15.9（仅升级版/企业版可买）。",
       "discoveredAt": "2026-11-21T05:15:00Z",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://xiaohuanxiong.com/pricing",
@@ -38268,6 +38896,11 @@
           "url": "https://www.tokentab.cn/deals.html",
           "summary": "发现来源：TokenTab 优惠卡片「小浣熊 SenseNova 6.8 限免 · 免费版每天 300 积分，当日清零不累计 · 限免至 12-01」；仅用于发现，额度与档位以官方定价页为准。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://xiaohuanxiong.com/pricing",
+          "summary": "直连 200（185.5 KB，正文 2071 字符）：关键数值 8/8 复现（命中 300、500、100、10000、1000、1599、30000、200），未见与库内条款冲突的表述；本轮按数值与关键段比对，未逐句重读全文。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -38275,6 +38908,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "新增 active/high：TokenTab 发现「小浣熊 SenseNova 6.8 限免」，回官方定价页核对免费版 ¥0/永久、每日 300 积分（仅标准模型、0 点清零不累计）、5 个文件/对话与 500 MB 存储，条件明确。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：按关键数值与条款段比对，具体观察见同时间 evidence。"
         }
       ]
     },
@@ -38302,8 +38940,8 @@
       "confidenceReason": "免费版价格（¥0）、「5,000 积分（仅新用户可享，30天有效）」、每日登录 2,000 积分、云服务 1 个 / 云函数 1 个 / 存储 1 GB / 并发 5 / 开放接口发布 50 / 全栈应用发布 1、单文件 50 MB 与蜂群模式不限次数，均取自官方定价页 Free 列；付费档 ¥25 / ¥39 / ¥89 与对应积分同为同页。未知项：是否需实名、积分消耗单价、两个「限时免费」的截止日，已披露。",
       "costNotes": "免费版仅 1 个云服务、1 GB 存储、并发 5、1 个全栈应用发布；需要更多积分或云资源时升级 ¥25/月（20,000 积分）起，¥39/月 40,000 积分、¥89/月 200,000 积分。",
       "discoveredAt": "2026-11-21T05:15:00Z",
-      "lastVerifiedAt": "2026-11-21T05:15:00Z",
-      "nextReviewAt": "2026-11-22T05:15:00Z",
+      "lastVerifiedAt": "2026-11-22T12:05:00Z",
+      "nextReviewAt": "2026-11-23T12:05:00Z",
       "evidence": [
         {
           "url": "https://meoo.com/pricing",
@@ -38314,6 +38952,11 @@
           "url": "https://www.tokentab.cn/deals.html",
           "summary": "发现来源：TokenTab 卡片「秒悟 Meoo 免费版 · ¥0 月费 · 每天 2,000 积分 · 首月送 5,000 积分」；仅用于发现，额度与档位以官方定价页为准。",
           "checkedAt": "2026-11-21T05:15:00Z"
+        },
+        {
+          "url": "https://meoo.com/pricing",
+          "summary": "直连 149 字符壳，渲染 1.7 KB：官方定价页仍写「新用户登录直送 5,000 积分（30 天有效）」「每日登录赠送 2,000 积分」，云服务 1 个 / 云函数 1 个 / 数据存储 1 GB / 并发 5 / 单文件 50 MB 复现，¥0 Free 档未变。",
+          "checkedAt": "2026-11-22T12:05:00Z"
         }
       ],
       "history": [
@@ -38321,6 +38964,11 @@
           "at": "2026-11-21T05:15:00Z",
           "status": "active",
           "note": "新增 active/high：TokenTab 发现「秒悟 Meoo 免费版」，回 meoo.com/pricing 渲染核对 Free 档 ¥0、新用户 5,000 积分（30 天）、每日 2,000 积分与云服务/存储/发布上限。"
+        },
+        {
+          "at": "2026-11-22T12:05:00Z",
+          "status": "active",
+          "note": "24h 复核（2026-11-22）：逐项比对官方原文，具体观察见同时间 evidence。"
         }
       ]
     },

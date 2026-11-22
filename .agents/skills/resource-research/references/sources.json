@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-22T01:57:00Z",
-      "lastSuccessAt": "2026-11-22T01:57:00Z",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 50 条与 signup-credit 50 条的未入库品牌仅剩 Regolo.ai（已入库）、Hugging Face ZeroGPU（日配额无数值）、Windsurf（配额模糊）、Make（Free 1,000 credits/月，本轮按 pending/medium 入库）、Baichuan ¥80（定价页无赠金条文）、Infomaniak（单位含糊）、Smallest/MixRoute/Sarvam/VModel/Nscale/SearchApi/Browser Use/Railway/Vapi/SiliconFlow（面值过低或第三方中转）、ScraperAPI（7 天试用）。第 8 轮饱和。"
+      "observation": "2026-11-22 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=30/30，均 200）：本轮新入库 Vercel Hobby、Cloudflare R2、Inworld On-Demand 三条（均官方定价页可核）；未入库剩 Hugging Face ZeroGPU（日配额无数值）、Xiaomi MiMo TTS（限时免费无期限数值）、Notte $10、Rev AI 5 小时 ASR（约 $1）、Baichuan ¥80、Smallest/MixRoute/Sarvam/VModel/Nscale/SearchApi/Mixedbread（面值 $5–10 或第三方中转）、Infomaniak（单位含糊 + 需绑卡）、ScraperAPI（7 天试用）、Zed（14 天 Pro 试用）。第 9 轮接近饱和。"
     },
     {
       "id": "aifree",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-22T01:57:00Z",
-      "lastSuccessAt": "2026-11-22T01:57:00Z",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 RSS 200（60.4 KB，25 条）：命中 1 条新线索「AWS 最新福利 价值 25 刀的 Plus，会员免费 opus，sol 模型可用」（topic 3217970，2026-11-21）——追踪到 Amazon Quick 官方定价页，Free 档 $0/用户/月、限 1 用户、1GB 索引存储，已入库 active/high；其余为 Devin Max 代开通/转卖、Google 学生认证、日区订阅、留 ID 送额度、HUB 号池、建行立减金等非开发者资源。"
+      "observation": "2026-11-22 读取 25 条（200，69.5 KB）：多数为账号交易/订阅讨论。候选 Boxes.dev Pro（3 个月 4C8G100GB，帖内标截止 2026-11-21 已过）、Exa $10/月（已入库 exa-starter）、Google AI Pro via Coursera（需报名课程 + 支付方式验证，非普惠）、Cursor + Grok Bot 免费一月（原帖已标失效）；muse 批量注册/号池/留 ID 送额度均排除。0 条合格入库。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-22T01:57:00Z",
-      "lastSuccessAt": "2026-11-22T01:57:00Z",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 RSS 200（9.4 KB，20 条）：全部为 VPS 收售/拼车、Google 订阅与线路讨论，0 条可核福利线索。"
+      "observation": "2026-11-22 读取 20 条（200，10 KB）：以二手交易（OVH/DMIT/vmiss/甲骨文号）与 muse 成品号为主，另有 claude 账号出租、教师邮箱后缀出售等违规项，全部排除；0 条合格。"
     },
     {
       "id": "lowendtalk",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-22T01:57:00Z",
-      "lastSuccessAt": "2026-11-22T01:57:00Z",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-22 RSS 200（85.6 KB，25 条）：除 Token Factory（已入库 pending）外，出现「1C128M 洛杉矶容器」实测帖——核实为社区赠送机评测（US21 区域，非公开免费福利），不入库；其余为 Noxc/TerraDomain 免费域名配额、乐子AI 中转推广与站内交易，未入库。"
+      "observation": "2026-11-22 读取 25 条（200，63.5 KB）：候选 Boxes.dev Pro（同上，截止已过）、Oxylabs $5（代理面值低）、MOFH 无限分销主机（转售型，非普通开发者权益）、Noxc/GLADOS 抽奖（排除）；0 条合格。"
     },
     {
       "id": "aideal",
@@ -4400,6 +4400,67 @@
       },
       "canVerifyOfficial": true,
       "observation": "渲染后约 16 KB 文本：FAQ 明写 Free plan 每月 1,000 credits = 1 MB 数据 = 1 个 data store；credits 为计费单位、超额按 1,000/10,000 打包购买；价格卡片为图片/JS 渲染，未取到 Free 档标价与 scenario 上限。"
+    },
+    {
+      "id": "vercel-hobby-pricing",
+      "name": "Vercel 定价页（Hobby/Pro/Enterprise 对比表）",
+      "url": "https://vercel.com/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits",
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://vercel.com/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（1.2 MB，正文 15,598 字符）：Hobby /bin/zsh/mo 卡片 + 对比表逐项额度（函数调用 1M/月、CDN 1M/月、Fast Data Transfer 100 GB/月、Fluid Active CPU 4 h/月、Provisioned Memory 360 GB-hrs/月、Sandbox 5 h/月、Blob 1 GB+10K+2K、Image 5K+300K、Edge Config Writes 200K、Bulk Redirects 1K、Firewall 1M）；FAQ 明写 Hobby 免费。页面为 React 服务端渲染，直连即可取全文，无需渲染代理。"
+    },
+    {
+      "id": "cloudflare-r2-pricing",
+      "name": "Cloudflare R2 计费文档",
+      "url": "https://developers.cloudflare.com/r2/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://developers.cloudflare.com/r2/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（143 KB，正文 12,046 字符）：免费档表格 10 GB-month / 1M Class A / 10M Class B / Egress Free，并注明仅 Standard 存储适用；Class A/B 操作清单与 Free operations 同页可读。"
+    },
+    {
+      "id": "inworld-pricing",
+      "name": "Inworld AI 定价页",
+      "url": "https://www.inworld.ai/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.inworld.ai/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-22T12:05:00Z",
+      "lastSuccessAt": "2026-11-22T12:05:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（102 KB，正文 10,539 字符）：On-Demand /bin/zsh 档「Up to 70 min TTS included」+ 100 自定义音色 + 2 专业克隆 + 商用许可；FAQ 复现 70 分钟 TTS / 400 分钟 STT；Payment 行显示 On-Demand 无需信用卡。"
     }
   ]
 }
