@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-21T15:25:00Z",
-      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 返回 50 条，除库内已收录品牌外仅新增 packet.ai（Token Factory 上线期免费，已入库 pending），Hugging Face ZeroGPU / Windsurf / Make 仍未满足额度可核对口径；signup-credit 返回 50 条，新增百度千帆（17 模型 × 100 万 tokens，已入库 active）与阿里云 Model Studio 国际站（每模型 100 万 tokens，已入库 active），Baichuan ¥80 因官方定价页正文未出现赠送金条文未入库，Smallest.ai $10 / MixRoute $5 / Sarvam ₹100 / VModel $10 / Nscale $5 / SearchApi 100 次等面值偏低或为第三方中转，留候选。"
+      "observation": "2026-11-22 读取两组（type=free-tier / type=signup-credit，audience=anyone、sort=newest、limit=50，均 200）：free-tier 50 条与 signup-credit 50 条的未入库品牌仅剩 Regolo.ai（已入库）、Hugging Face ZeroGPU（日配额无数值）、Windsurf（配额模糊）、Make（Free 1,000 credits/月，本轮按 pending/medium 入库）、Baichuan ¥80（定价页无赠金条文）、Infomaniak（单位含糊）、Smallest/MixRoute/Sarvam/VModel/Nscale/SearchApi/Browser Use/Railway/Vapi/SiliconFlow（面值过低或第三方中转）、ScraperAPI（7 天试用）。第 8 轮饱和。"
     },
     {
       "id": "aifree",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-19T12:40:00Z",
-      "lastSuccessAt": "2026-11-19T12:40:00Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-17 实读 https://aifuli.dev/rss.xml 40 条（18.8 KB）：条目仍停在 2026-07-08（CodeBuddy 500 积分、通义灵码、OpenCode、Windsurf、TRAE、Cerebras、Groq、SiliconFlow 等），全部已在库，无新增。"
+      "observation": "2026-11-22 读取 https://aifuli.dev/rss.xml 40 条（18.8 KB）：条目仍停在 2026-07-08（CodeBuddy、通义灵码、OpenCode、Windsurf、TRAE、Cerebras、Groq、SiliconFlow、千帆、百炼等），全部已在库，无新增。"
     },
     {
       "id": "token-pencil",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-21T15:25:00Z",
-      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 RSS 200（71.9 KB，25 条）：0 条合格线索——Devin Max 代开通/转卖、Google 学生认证与日区订阅、留 ID 送额度与 HUB 号池、建行立减金与瑞幸券均非开发者资源；两条值得记录但未入库：「AWS 最新福利 价值 25 刀的 Plus」（会员制权益，需核对会员资格）、「HiDNS 3 个免费域名」（24 小时有效期、需实名）。"
+      "observation": "2026-11-22 RSS 200（60.4 KB，25 条）：命中 1 条新线索「AWS 最新福利 价值 25 刀的 Plus，会员免费 opus，sol 模型可用」（topic 3217970，2026-11-21）——追踪到 Amazon Quick 官方定价页，Free 档 $0/用户/月、限 1 用户、1GB 索引存储，已入库 active/high；其余为 Devin Max 代开通/转卖、Google 学生认证、日区订阅、留 ID 送额度、HUB 号池、建行立减金等非开发者资源。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-21T15:25:00Z",
-      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 RSS 200（11.5 KB，20 条）：全部为 VPS 收售/拼车/Google 订阅与 VAT 讨论，0 条可核福利线索。"
+      "observation": "2026-11-22 RSS 200（9.4 KB，20 条）：全部为 VPS 收售/拼车、Google 订阅与线路讨论，0 条可核福利线索。"
     },
     {
       "id": "lowendtalk",
@@ -236,11 +236,11 @@
       ],
       "entryUrl": "https://lowendbox.com/feed/",
       "status": "readable",
-      "checkedAt": "2026-11-10T04:38:53Z",
-      "lastSuccessAt": "2026-11-10T04:38:53Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "https://lowendbox.com/feed/ 本轮 20 条（389.4 KB），为商家软文与抽奖（RackNerd 抽奖、GenixNode、Kainode、HostNamaste 等），无 AI/云免费档，继续仅作价格信号。"
+      "observation": "https://lowendbox.com/feed/ 本轮 20 条（381.5 KB）：黑五预热与商家软文（Fast Moose、DediRock、RackNerd 抽奖、Godlike.Host 等），无 AI/云免费档，继续仅作价格信号。"
     },
     {
       "id": "v2ex",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-21T15:25:00Z",
-      "lastSuccessAt": "2026-11-21T15:25:00Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-21 RSS 200（83.9 KB，25 条）：仅「Token Factory 上线，3 个模型全免费，免绑卡」1 条指向 packet.ai 官方页（已入库 pending）；其余为域名项目互赞、1C128M 容器赠送（规格过低且无官方条款）、乐子AI/中转站推广与站内交易，均未入库。"
+      "observation": "2026-11-22 RSS 200（85.6 KB，25 条）：除 Token Factory（已入库 pending）外，出现「1C128M 洛杉矶容器」实测帖——核实为社区赠送机评测（US21 区域，非公开免费福利），不入库；其余为 Noxc/TerraDomain 免费域名配额、乐子AI 中转推广与站内交易，未入库。"
     },
     {
       "id": "aideal",
@@ -3459,7 +3459,7 @@
     {
       "id": "autoclaw-blog",
       "name": "智谱 AutoClaw 官方博客",
-      "url": "https://autoclaw.zhipuai.cn/blog/news/M11W3/",
+      "url": "https://autoclaw.zhipuai.cn/blog/news/",
       "priority": "P1",
       "kind": "official",
       "topics": [
@@ -3468,13 +3468,13 @@
       "methods": [
         "html"
       ],
-      "entryUrl": "https://autoclaw.zhipuai.cn/blog/news/M11W3/",
+      "entryUrl": "https://autoclaw.zhipuai.cn/blog/news/",
       "status": "readable",
-      "checkedAt": "2026-11-15T16:51:44Z",
-      "lastSuccessAt": "2026-11-15T16:51:44Z",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
       "lastFailure": null,
       "canVerifyOfficial": true,
-      "observation": "本轮读取 M11W2（本期 50M，11-15 23:59 结束）与 M11W3（新一期 100M，11-16 00:00—11-22 23:59 北京时间、=10,000 积分、每人一次、同期失效）：50M 条目持久化 expired，新一期入库为 autoclaw-weekly-100m-tokens-202611（active/high）。"
+      "observation": "本轮读取官方博客索引：M11W4（11-23 00:00—11-29 23:59 北京时间、100M Tokens、=10,000 积分、每人一次、同期失效）已发布，另立 autoclaw-weekly-100m-tokens-20261123（upcoming/high）；M11W3 本期仍在有效期内，到期后由 displayStatus 显示过期。"
     },
     {
       "id": "iteracompute-free",
@@ -4356,6 +4356,50 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-21 直连 200（78 KB 产品页 / 121 KB 博客）：产品页写「Free at launch (one month), then billed per 1M tokens」，三模型 DeepSeek V4.1 Flash / MiniMax M3.1 Flash / Qwen2.5 1.5B；博客（2026-11-17）写 free for every user、no card required、未公布 rate limit、no published end date；两处对结束时间表述不一致。"
+    },
+    {
+      "id": "aws-quick-pricing",
+      "name": "AWS Quick 定价页",
+      "url": "https://aws.amazon.com/quick/pricing/",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "ai-api",
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://aws.amazon.com/quick/pricing/",
+      "status": "readable",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "直连 200（约 546 KB，服务端渲染）：Free「Free for everyone $0 /user/month」、Maximum users 1、Index storage per user (pooled) 1GB 与六档功能对照表均在正文；Plus $20（年付）/$25（月付）、Max $100/$125、企业档 $3/$20/$40 + $250 账户基础设施费；FAQ 给出 30 天 Enterprise 试用（25 用户、免订阅与基础设施费、无需信用卡）。"
+    },
+    {
+      "id": "make-pricing",
+      "name": "Make 定价页",
+      "url": "https://www.make.com/en/pricing",
+      "priority": "P1",
+      "kind": "official",
+      "topics": [
+        "developer-tools"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://www.make.com/en/pricing",
+      "status": "readable",
+      "checkedAt": "2026-11-22T01:57:00Z",
+      "lastSuccessAt": "2026-11-22T01:57:00Z",
+      "lastFailure": {
+        "at": "2026-11-22T01:57:00Z",
+        "reason": "直连 403（5.5 KB，Cloudflare/风控），本轮改用只读渲染代理取得 16 KB 文本"
+      },
+      "canVerifyOfficial": true,
+      "observation": "渲染后约 16 KB 文本：FAQ 明写 Free plan 每月 1,000 credits = 1 MB 数据 = 1 个 data store；credits 为计费单位、超额按 1,000/10,000 打包购买；价格卡片为图片/JS 渲染，未取到 Free 档标价与 scenario 上限。"
     }
   ]
 }
