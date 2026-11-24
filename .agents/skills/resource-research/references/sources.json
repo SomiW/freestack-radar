@@ -18,11 +18,11 @@
       ],
       "entryUrl": "https://perq.sh/api/search?type=free-tier&audience=anyone&sort=newest&limit=50",
       "status": "readable",
-      "checkedAt": "2026-11-23T19:18:23Z",
-      "lastSuccessAt": "2026-11-23T19:18:23Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 第 12 轮读取 free-tier 组（type=free-tier、audience=anyone、sort=newest、limit=50，200，70 KB，50 条）：与全部存量 officialUrl 主机名比对后 0 个新主机，50 条均为已收录项（Notte/Inworld/Cognee/Vercel/R2/Algolia/Snyk/Colab/Firebase/Mailgun/Workato/SambaNova/Kiro/Windsurf/Valyu/AgentQL/NeevCloud/Scaleway/Upstash/Val Town/Rime/deepset/Hookdeck/Langfuse/PostHog 等）或面值 $5 级；free-tier 组已饱和，连续 2 轮 0 新增。"
+      "observation": "2026-11-24 第 13 轮读取 free-tier 组（type=free-tier、audience=anyone、sort=newest、limit=50，200，70 KB，50 条）：逐条按 source_url 主机名与全部存量比对，50 条均已有对应主机（Notte/Inworld/Vercel/R2/Algolia/Snyk/Colab/Firebase/Upstash/Val Town/Rime/deepset/Hookdeck/Langfuse 等）或面值 $5 级，0 个新主机；free-tier 组连续 3 轮 0 新增，判定饱和。"
     },
     {
       "id": "aifree",
@@ -86,11 +86,11 @@
       ],
       "entryUrl": "https://aifuli.dev/rss.xml",
       "status": "readable",
-      "checkedAt": "2026-11-23T08:42:18Z",
-      "lastSuccessAt": "2026-11-23T08:42:18Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 读取 https://aifuli.dev/rss.xml 40 条（18.8 KB）：条目仍停在 2026-07-08（CodeBuddy、通义灵码、OpenCode、Windsurf、TRAE、Cerebras、Groq 等），除 Windsurf 本轮另经官方定价页核实外无新增。"
+      "observation": "2026-11-24 读取 RSS（200，40 条）：条目 pubDate 仍为 2026-07-08 前后，全部为已在库或已过期的旧活动（CodeBuddy / 通义灵码 / OpenCode / Windsurf / Groq 等），0 条新增。"
     },
     {
       "id": "token-pencil",
@@ -129,11 +129,11 @@
       ],
       "entryUrl": "https://www.tokentab.cn/deals.html",
       "status": "readable",
-      "checkedAt": "2026-11-23T08:42:18Z",
-      "lastSuccessAt": "2026-11-23T08:42:18Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 直连 200 但仅 737 字符外壳（卡片由 JS 渲染，本轮未取到卡内容）：来源仍可访问，未产出新线索；保持 readable，下次优先渲染代理读取。"
+      "observation": "2026-11-24 读取站点更新 RSS（200，33 条）：均为站内功能/价格库/教程更新日志（最新 2026-11-06），无活动条目，0 条候选；deals.html 为浏览器渲染型，本轮未开浏览器。"
     },
     {
       "id": "usefree",
@@ -152,11 +152,11 @@
       ],
       "entryUrl": "https://www.usefree.space/brands_new.json",
       "status": "readable",
-      "checkedAt": "2026-11-14T00:02:42Z",
-      "lastSuccessAt": "2026-11-14T00:02:42Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "brands_new.json 200（22.7 KB，110 品牌 / 465 权益），generated 仍为 2026-10-26 静态快照，无增量。"
+      "observation": "2026-11-24 读取 brands_new.json（200，234 KB，110 品牌 / 245 权益）：新增候选中仅 OpenAI Codex for Open Source 有价值但已在库（openai-codex-for-oss-202611），其余为纯学生/地区限制（Cloudflare Workers Paid 仅 US .edu、Canva Education）、需绑卡付费档试用（DigitalOcean $200/60 天 无官方条文支撑）、第三方中转（AgentRouter）或面值 $2.5–15 的小额，0 条新增。"
     },
     {
       "id": "linux-do",
@@ -174,11 +174,11 @@
       ],
       "entryUrl": "https://linux.do/c/welfare/36.rss",
       "status": "readable",
-      "checkedAt": "2026-11-23T19:18:23Z",
-      "lastSuccessAt": "2026-11-23T19:18:23Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 读取福利羊毛 RSS（200，25 条）：命中 1 条可核实线索「qoder匿名模型免费畅蹬」，经官方 docs.qoder.com/events/hungerg-free 核实为 HungerG 隐身模型限时免费（已入库 active）；另有 Mistral Vibe Pro 欧洲限免（仅欧洲地区 + 需兑换码，按地区绕行排除）、muse/ChatGPT 账号交易、留 ID 送额度、生活类福利与付费档翻倍，均不合格。"
+      "observation": "2026-11-24 读取福利羊毛 RSS（200，25 条）：命中 1 条可核实线索「免绑卡0元VPS自建东京节点：每月150G免费低延迟流量，Azure学生包全流程」，经官方 azure.microsoft.com/en-us/free/students 核实后入库（Azure for Students $100/12 个月、免绑卡）；另有 Rime（已在库）、Claude 送 credit（已在库）、RelayRouter/AllRouter/Sidrune/VelaMost/NodeCodex 等中转站「留 ID 送 $」、账号交易、话费口令与机场赠送，均不合格。"
     },
     {
       "id": "nodeseek",
@@ -195,11 +195,11 @@
       ],
       "entryUrl": "https://rss.nodeseek.com/",
       "status": "readable",
-      "checkedAt": "2026-11-23T19:18:23Z",
-      "lastSuccessAt": "2026-11-23T19:18:23Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 读取 RSS（200，20 条）：以收/出机、线路测评与交易所讨论为主，含一条 HKCloudX MiniV6 $0.60/月测试留档（官网 cloud.html 仍 404，未采用），0 条可官方核实的普惠福利。"
+      "observation": "2026-11-24 读取 RSS（200，20 条）：全为收/出机、溢价收机、Gemini/GPT 拼车与账号交易、线路讨论，0 条可官方核实的普惠福利。"
     },
     {
       "id": "lowendtalk",
@@ -236,11 +236,11 @@
       ],
       "entryUrl": "https://lowendbox.com/feed/",
       "status": "readable",
-      "checkedAt": "2026-11-23T19:18:23Z",
-      "lastSuccessAt": "2026-11-23T19:18:23Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 读取 feed（200，20 条）：全为黑五付费 VPS/共享主机促销与 $100 抽奖活动，无免费档，0 条入库。"
+      "observation": "2026-11-24 读取 RSS（200，20 条）：黑五预热、$100 抽奖与商家低价 VPS 促销（RackNerd/DediRock/Fast Moose 等）为主，抽奖与账号类不采，商家促销无免费条文，0 条入库。"
     },
     {
       "id": "v2ex",
@@ -522,11 +522,11 @@
       ],
       "entryUrl": "https://www.nodeloc.com/c/internet/5.rss",
       "status": "readable",
-      "checkedAt": "2026-11-23T19:18:23Z",
-      "lastSuccessAt": "2026-11-23T19:18:23Z",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
       "lastFailure": null,
       "canVerifyOfficial": false,
-      "observation": "2026-11-23 读取 internet RSS（200，25 条）：免费二级域名（ipv64/noxc/loc.cc）、免费虚拟卡、家宽代理与「每人三个免费主机」类 MOFH 分销为主，均无官方额度条文，0 条入库。"
+      "observation": "2026-11-24 读取 internet RSS（200，但 channel 为空、0 条）：栏目已迁至 n/internet，c/internet 订阅无条目，本轮无候选；下轮改读 n/internet 端点。"
     },
     {
       "id": "aideal",
@@ -4560,6 +4560,27 @@
       "lastFailure": null,
       "canVerifyOfficial": true,
       "observation": "2026-11-23 直连 200（282 KB，正文 4,239 字符）：Free $0/month 卡片含 Unlimited Tab completions / inline edits、Light quota to code with agents、Limited model availability；对比表中 Premium models、Fast context 为「–」，Free SWE-2 标 Slow，Devin Cloud 不可用。"
+    },
+    {
+      "id": "azure-students",
+      "name": "Azure for Students 学生页",
+      "url": "https://azure.microsoft.com/en-us/free/students",
+      "priority": "P0",
+      "kind": "official",
+      "topics": [
+        "vps",
+        "developer-benefits"
+      ],
+      "methods": [
+        "html"
+      ],
+      "entryUrl": "https://azure.microsoft.com/en-us/free/students",
+      "status": "readable",
+      "checkedAt": "2026-11-24T05:30:04Z",
+      "lastSuccessAt": "2026-11-24T05:30:04Z",
+      "lastFailure": null,
+      "canVerifyOfficial": true,
+      "observation": "2026-11-24 默认 curl UA 直读 200（390 KB，正文约 28 KB）：Azure for Students 逐条给出「Available only to full-time university students」「No credit card required」「$100 credit within 12 months」、65+ always-free 与 12 个月免费项（每月 750 小时 B1s / B2pts v2 Arm / B2ats v2 AMD）及按年续期规则；同页并列 Azure for Students Starter 与 Azure for Startups（$1,000 起）。带浏览器 UA 时曾被跳转到追踪域，保持默认 UA。"
     }
   ]
 }
